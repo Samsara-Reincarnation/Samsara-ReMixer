@@ -46,7 +46,7 @@ OptionMenu "OptionsMenu"
 			Option "No bats", "mm_nobats", "OnOff"
 			Option "Initialization Reset", "mm_init", "OnOff"
 			Option "Fake Hitler Fire", "mm_fakehitlerfire", "OnOff"
-			Slider "Random Sets Per Map", "mm_randomcycle", 1, 26, 1
+			Slider "Random Sets Per Map", "mm_randomcycle", 1, 31, 1
 			Option "Spawn Mode", "mm_spawnmode", "SpawnMode"
 			
 			StaticText ""

@@ -230,6 +230,9 @@ ACTOR ZombiemanSpawnerCoop replaces Zombieman
 		SetPainkiller:
 			TNT1 A 1 A_SpawnItemEx("Painkiller_ZombieSoldier", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion
+		SetUnreal:
+			TNT1 A 1 A_SpawnItemEx("Zombieman3",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
 		SetRTCW:
 			TNT1 A 0 A_Jump(128,"SetRTCW2")
 			TNT1 A 0 A_Jump(2,"SetRTCW3")

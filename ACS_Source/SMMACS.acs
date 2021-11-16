@@ -20,7 +20,7 @@ str gameTypesStr[MAX_GAME_TYPES] =
 str gameSetsStr[MAX_GAME_TYPES] = {
 	"SetDoom", "SetChex", "SetHeretic", "SetWolf3d", "SetHexen1", "SetDuke3D", "SetMarathon", "SetQuake1", "SetRoTT", "SetBStone",
 	"SetBlood", "SetStrife", "SetErad", "SetC7", "SetRmr", "SetDarkF", "SetIPOG", "SetDisrup", "SetWitch", "SetHL", "SetSW", "SetCM", 
-	"SetExhumed", "SetRR", "SetQuake2", "SetHexen2", "SetGoldeneye", "SetCatacomb", "SetPainkiller", "SetDoom", "SetRTCW"
+	"SetExhumed", "SetRR", "SetQuake2", "SetHexen2", "SetGoldeneye", "SetCatacomb", "SetPainkiller", "SetUnreal", "SetRTCW"
 };
 
 str gameClassesSTR[MAX_GAME_TYPES] = {

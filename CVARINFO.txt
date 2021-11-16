@@ -30,6 +30,8 @@ server bool mm_hexen2 = true;
 server bool mm_goldeneye = true;
 server bool mm_catacomb = true;
 server bool mm_painkiller = true;
+server bool mm_unreal = true;
+server bool mm_rtcw = true;
 
 //Mode toggles
 server bool mm_doomrandomizer = false;

@@ -315,7 +315,13 @@ ACTOR SpectreSpawnerCoop replaces Spectre
 			Goto DeathForInvasion		
 		SetCatacomb4:
 			TNT1 A 1 A_SpawnItemEx("CatacombApocalypse_Spectre", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
-			Goto DeathForInvasion				
+			Goto DeathForInvasion	
+		SetPainkiller:
+			TNT1 A 1 A_SpawnItemEx("Spectre3",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
+		SetUnreal:
+			TNT1 A 1 A_SpawnItemEx("Spectre3",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
 		SetRTCW:
 			TNT1 A 1 A_SpawnItemEx("RTCW_Ghoul", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion

@@ -513,3 +513,4 @@ Script "SamsaraMixer_PlayerDeath" Death
 #include "m_sw.acs"
 #include "m_vdr.acs"
 #include "m_witch.acs"
+#include "m_painkiller.acs"
