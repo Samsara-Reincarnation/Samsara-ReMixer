@@ -1,0 +1,53 @@
+Actor RTCW_Humanoid_BlackGuard_Body1 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_Body2 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_BodyTrainyard : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_BodySWF : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_BodySnow : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_BodyCastle : RTCW_InfantrySSBody {}
+
+Actor RTCW_Humanoid_BlackGuard_Head1 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_Head2 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_Head3 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_Head4 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_Head5 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_Head6 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_Head7 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_HeadCastle1 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_HeadCastle2 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_HeadCastle3 : RTCW_InfantrySSBody {}
+
+Actor RTCW_Humanoid_BlackGuard_Blink : RTCW_Humanoid_Blink {}
+
+Actor RTCW_Humanoid_BlackGuard_Goggles : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_GogglesGlass : RTCW_InfantrySSBody { Renderstyle Translucent }
+Actor RTCW_Humanoid_BlackGuard_GogglesGlassSnow : RTCW_InfantrySSBody { Renderstyle Translucent }
+
+Actor RTCW_Humanoid_BlackGuard_Helmet : RTCW_InfantrySSHat {}
+Actor RTCW_Humanoid_BlackGuard_HelmetTrainyard : RTCW_InfantrySSHat {}
+Actor RTCW_Humanoid_BlackGuard_HelmetSWF : RTCW_InfantrySSHat {}
+Actor RTCW_Humanoid_BlackGuard_HelmetSnow : RTCW_InfantrySSHat {}
+Actor RTCW_Humanoid_BlackGuard_FieldCap : RTCW_InfantrySSHat {}
+
+Actor RTCW_Humanoid_BlackGuard_Backpack : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_BlackGuard_BackpackSnow : RTCW_InfantrySSBody {}
+
+Actor RTCW_Humanoid_BlackGuard_MP40 : RTCW_MaleMainArm {}
+Actor RTCW_Humanoid_BlackGuard_Mauser : RTCW_MaleMainArm {}
+Actor RTCW_Humanoid_BlackGuard_MauserSniper : RTCW_MaleMainArm {}
+Actor RTCW_Humanoid_BlackGuard_FG42 : RTCW_MaleMainArm {}
+Actor RTCW_Humanoid_BlackGuard_Venom : RTCW_MaleMainArm {}
+Actor RTCW_Humanoid_BlackGuard_Panzerfaust : RTCW_Humanoid_InfantrySS_Panzerfaust {}
+
+Actor RTCW_Humanoid_BlackGuard_LugerFlash : RTCW_GunFlash {}
+Actor RTCW_Humanoid_BlackGuard_MP40Flash : RTCW_GunFlash {}
+Actor RTCW_Humanoid_BlackGuard_MauserFlash : RTCW_GunFlash {}
+Actor RTCW_Humanoid_BlackGuard_FG42Flash : RTCW_GunFlash {}
+Actor RTCW_Humanoid_BlackGuard_VenomFlash : RTCW_GunFlash {}
+Actor RTCW_Humanoid_BlackGuard_PanzerfaustFlash : RTCW_Humanoid_InfantrySS_PanzerfaustFlash {}
+
+Actor RTCW_Humanoid_BlackGuard_Helmet_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_BlackGuard_HelmetTrainyard_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_BlackGuard_HelmetSWF_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_BlackGuard_HelmetSnow_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_BlackGuard_FieldCap_Drop : RTCW_EnemyScrap {}
+

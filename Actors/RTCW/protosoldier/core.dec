@@ -1,0 +1,18 @@
+Actor RTCW_ProtoSoldier : RTCW_SuperSoldierBrain
+{
+	DeathSound "RTCW/SuperSoldier/Death"
+	Health 1200
+	DamageFactor "Fire", 0.0
+	DamageFactor "RTCWFire", 0.0
+	PainChance "Fire", 0
+	PainChance "RTCWFire", 0
+	Tag "Proto-Soldat"
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_SuperSoldier",1)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",15)
+			RW0E A 2
+			Goto AlertIdle
+	}
+}

@@ -226,7 +226,21 @@ ACTOR ZombiemanSpawnerCoop replaces Zombieman
 			Goto DeathForInvasion	
 		SetTotenkopf2:
 			TNT1 A 1 A_SpawnItemEx("TotenkopfScientistSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
-			Goto DeathForInvasion		
+			Goto DeathForInvasion	
+		SetPainkiller:
+			TNT1 A 1 A_SpawnItemEx("Painkiller_ZombieSoldier", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
+		SetRTCW:
+			TNT1 A 0 A_Jump(128,"SetRTCW2")
+			TNT1 A 0 A_Jump(2,"SetRTCW3")
+			TNT1 A 1 A_SpawnItemEx("RTCW_Scientist", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
+		SetRTCW2:
+			TNT1 A 1 A_SpawnItemEx("RTCW_Mechanic", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
+		SetRTCW3:
+			TNT1 A 1 A_SpawnItemEx("RTCW_Zemph", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("BerzerkRobotYellow",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion

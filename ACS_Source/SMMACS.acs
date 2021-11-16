@@ -2,7 +2,7 @@
 #include "zcommon.acs"
 #include "commonFuncs.h"
 
-#define MAX_GAME_TYPES 28
+#define MAX_GAME_TYPES 31
 
 int SMMCVARINFO = 
 "Stuff";
@@ -14,19 +14,19 @@ str gameTypesStr[MAX_GAME_TYPES] =
 		{	"mm_doom", "mm_chex", "mm_heretic", "mm_wolf3d", "mm_hexen1", "mm_duke3d", "mm_marathon", "mm_quake1", 
 			"mm_rott", "mm_bstone", "mm_blood", "mm_strife", "mm_erad", "mm_c7", "mm_rmr", "mm_darkf", "mm_ipog", 
 			"mm_disrup", "mm_witch", "mm_halflife", "mm_sw", "mm_cm", "mm_ps", "mm_rr", "mm_quake2", "mm_hexen2", 
-			"mm_goldeneye", "mm_catacomb"
+			"mm_goldeneye", "mm_catacomb", "mm_painkiller", "mm_unreal", "mm_rtcw"
 };
 
 str gameSetsStr[MAX_GAME_TYPES] = {
 	"SetDoom", "SetChex", "SetHeretic", "SetWolf3d", "SetHexen1", "SetDuke3D", "SetMarathon", "SetQuake1", "SetRoTT", "SetBStone",
 	"SetBlood", "SetStrife", "SetErad", "SetC7", "SetRmr", "SetDarkF", "SetIPOG", "SetDisrup", "SetWitch", "SetHL", "SetSW", "SetCM", 
-	"SetExhumed", "SetRR", "SetQuake2", "SetHexen2", "SetGoldeneye", "SetCatacomb"
+	"SetExhumed", "SetRR", "SetQuake2", "SetHexen2", "SetGoldeneye", "SetCatacomb", "SetPainkiller", "SetDoom", "SetRTCW"
 };
 
 str gameClassesSTR[MAX_GAME_TYPES] = {
 	"DoomguyPlayer2", "ChexWarrior2", "CorvusPlayer2", "WolfenPlayer2", "HexenPlayer2", "DukePlayer2", "MarathonPlayer2", "QuakePlayer2", "IPFreeley2", "BlakeStone2",
 	"Caleb2", "StrifeGuyPlayer2", "Eleena2", "Corridor7Player2", "RebelMoonCommando2", "KatarnPlayer2", "POGreedPlayer2", "DisruptorPlayer2", "GrondovalPlayer2", 
-	"HalfLifePlayer2", "LoWangPlayer2", "CMPlayer2", "PSPlayer2", "Leonard2", "Bitterman2", "Demoness2", "JamesBond2", "PettonEverhail2"
+	"HalfLifePlayer2", "LoWangPlayer2", "CMPlayer2", "PSPlayer2", "Leonard2", "Bitterman2", "Demoness2", "JamesBond2", "PettonEverhail2", "DanielGarner2", "UnrealPlayer2", "RTCW_Blazkowicz2"
 };
 
 str doomModes[3] = { "SetDoom", "SetDoom64", "SetDoomRandom" };

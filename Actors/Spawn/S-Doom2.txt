@@ -217,7 +217,13 @@ ACTOR ShotgunGuySpawnerCoop replaces ShotgunGuy
 			Goto DeathForInvasion		
 		SetCatacomb2:
 			TNT1 A 1 A_SpawnItemEx("CatacombArmageddon_Zombie", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
-			Goto DeathForInvasion			
+			Goto DeathForInvasion	
+		SetPainkiller:
+			TNT1 A 1 A_SpawnItemEx("Painkiller_ZombieSoldier", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
+		SetRTCW:
+			TNT1 A 1 A_SpawnItemEx("RTCW_InfantrySS", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("BerzerkRobotYellow",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion

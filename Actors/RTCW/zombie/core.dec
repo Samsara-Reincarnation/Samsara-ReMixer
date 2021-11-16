@@ -1,0 +1,522 @@
+Actor RTCW_ZombieBrain
+{
+	Height 52
+	Radius 16
+	Health 160
+	Painchance 32
+	SeeSound "RTCW/Zombie/Sight"
+	PainSound "RTCW/Zombie/Pain"
+	DeathSound "RTCW/Zombie/Death"
+	Tag "Undead"
+	Monster
+	+NODROPOFF
+	States
+	{
+		AlertIdle:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_AlertIdle",1)
+		AlertIdleLoop:
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_ZombieSight",1)
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_ZombieSight",1)
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_ZombieSight",1)
+			TNT1 ABCDEFGHIJKLMNOPQR 2 A_GiveInventory("RTCW_ZombieSight",1)
+			Loop
+		See:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_AlertToCombat",1)
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_ZombieCombatSight",1)
+		CombatIdle:
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_CombatIdle",1)
+		CombatIdleLoop:
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_ZombieCombatSight",1)
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_ZombieCombatSight",1)
+			TNT1 ABCDEFGHIJKLMNOPQRST 2 A_GiveInventory("RTCW_ZombieCombatSight",1)
+			Loop
+		CombatMove:
+			TNT1 A 0 A_Jump(64,"CombatCharge")
+		CombatWalk:
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 A_ChangeVelocity(1,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Walk1",1)
+			TNT1 A 0 A_GiveInventory("RTCW_Enemy_MoveOrder",1)
+		CombatWalkLoop:
+			TNT1 A 0 A_Jump(32,"CombatIdle")
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_ZombieCombatSightMove",1)
+			TNT1 ABCDEFGHIJKLMNO 2 A_GiveInventory("RTCW_ZombieCombatSightMove",1)
+			Loop
+		CombatCharge:
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 A_ChangeVelocity(1.5,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Run",1)
+			TNT1 A 0 A_GiveInventory("RTCW_Enemy_MoveOrder",5)
+		CombatChargeLoop:
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 2 A_GiveInventory("RTCW_ZombieCombatSightMove",1)
+			Loop
+		Attack:
+			TNT1 A 0 A_JumpIfTargetInLOS(2,180,JLOSF_DEADNOJUMP,56)
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto CombatIdle
+			TNT1 A 0 A_Jump(128,2)
+			TNT1 A 0 A_PlaySound("RTCW/Zombie/Attack",CHAN_VOICE)
+			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)	
+			TNT1 A 0 A_Jump(256,"Attack1","Attack2","Attack3","Attack4","Attack5")
+		Attack1:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Attack1",1)
+			TNT1 ABCDEFGHIJKLMN 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 "OPQRSTUVWXYZ[" 2
+			Goto Attack
+		Attack2:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Attack2",1)
+			TNT1 ABCDEFGHIJK 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 LMNOPQRSTUV 2
+			Goto Attack
+		Attack3:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Attack3",1)
+			TNT1 ABCDEFGHIJKL 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 MNOPQRSTU 2
+			Goto Attack
+		Attack4:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Attack4",1)
+			TNT1 ABCDEFGHIJ 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 KLMNOPQR 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 "STUVWXYZ[\]" 2
+			Goto Attack
+		Attack5:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Attack5",1)
+			TNT1 ABCDEFGHIJ 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 KLMNOP 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 QRSTUVWXYZ 2
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_Melee",32,0,angle,CMF_AIMDIRECTION)
+			TNT1 "[\]" 2
+			TNT1 ABCD 2
+			Goto Attack
+		SpiritAttack:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_CombatIdle",1)
+			TNT1 A 0 A_PlaySound("RTCW/Zombie/SpiritStart",CHAN_5)
+			TNT1 A 0 A_PlaySound("RTCW/Zombie/SpiritLoop",CHAN_6,1.0,1)
+		SpiritAttackLoop:
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			TNT1 A 0 A_PlaySound("RTCW/Zombie/SpiritStart",CHAN_5)
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			TNT1 ABCDEFGHIJKLMNOPQRST 2
+			TNT1 A 0 A_GiveInventory("RTCW_SpiritChargeDelay",175)
+			TNT1 A 0 A_GiveToChildren("RTCW_ZombieSkullRemover",1)
+			TNT1 A 0 A_StopSound(CHAN_6)
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto CombatIdle
+		Pain:
+			TNT1 A 0 A_Pain
+			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 A_Jump(256,"Pain1","Pain2","Pain3","Pain4")
+		Pain1:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Pain1",1)
+			RW1A ABCDEFGHIJKLMNOPQR 2
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto CombatIdle
+		Pain2:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Pain2",1)
+			RW1B ABCDEFGHIJKLMNOPQRSTUVWX 2
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto CombatIdle
+		Pain3:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Pain3",1)
+			RW1C ABCDEFGHIJKLMNOP 2
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto CombatIdle
+		Pain4:
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Pain4",1)
+			RW1D ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto CombatIdle
+		Death:
+			TNT1 A 0 A_StopSound(CHAN_5)
+			TNT1 A 0 A_StopSound(CHAN_6)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_PlaySound("RTCW/Zombie/DeathFall",CHAN_BODY)
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Death",1)
+			TNT1 A 0 A_GiveToChildren("RTCW_ZombieSkullRemover",1)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieCorpse_Death1",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_Scream
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			TNT1 ABCDEFG 2
+		DeathLoop:
+			TNT1 H 595
+			TNT1 A -1 Thing_Raise(0)
+			Goto XDeath
+		Raise:
+			TNT1 A 0 A_StopSound(CHAN_BODY)
+			TNT1 A 0 A_GiveToChildren("RTCWBroadCast_Zombie_Revive",1)
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			TNT1 ABCDEFGHIJKLMNOPQRSTUV 2
+			Goto AlertIdle
+		XDeath:
+		RTCWXDeath:
+			//A_RemoveChildren has broken compatability on GZDoom, which requires a flag that Zandronum doesn't have to work over there
+			TNT1 A 0 A_GiveToChildren("RTCW_RemoveHatChild",1)
+			TNT1 A 0 A_GiveToChildren("RTCWRemoveChild",1)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_Decorate",20)
+			TNT1 A 0 A_NoBlocking	
+			TNT1 A 0 A_Playsound("RTCW/Zombie/Gib",CHAN_BODY)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Bone1",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieGib_Bone2",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieGib_Bone3",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Leg",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_LegBroke",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 1
+			Stop	
+		DyingGib:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_Decorate",20)
+			TNT1 A 0 A_GiveToChildren("RTCW_RemoveHatChild",1)
+			TNT1 A 0 A_GiveToChildren("RTCWRemoveChild",1)
+			TNT1 A 0 A_Playsound("RTCW/Zombie/Gib",CHAN_BODY)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Bone1",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieGib_Bone2",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieGib_Bone3",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Leg",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_LegBroke",frandom(-4,4),frandom(-4,4),32,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 1
+			Stop	
+		CorpseGib:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_Decorate",20)
+			TNT1 A 0 A_GiveToChildren("RTCW_RemoveHatChild",1)
+			TNT1 A 0 A_GiveToChildren("RTCWRemoveChild",1)
+			TNT1 A 0 A_Playsound("RTCW/Zombie/Gib",CHAN_BODY)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Bone1",frandom(-4,4),frandom(-4,4),8,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieGib_Bone2",frandom(-4,4),frandom(-4,4),8,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieGib_Bone3",frandom(-4,4),frandom(-4,4),8,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Leg",frandom(-4,4),frandom(-4,4),8,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_LegBroke",frandom(-4,4),frandom(-4,4),8,frandom(-4.0,4.0),frandom(-4.0,4.0),frandom(6.0,8.0),angle,SXF_USEBLOODCOLOR)
+			TNT1 A 1
+			Stop	
+	}
+}
+
+Actor RTCW_ZombieShootableCorpse : RTCW_HumanoidShootableCorpse
+{
+	Health 100
+	DamageFactor "RTCWFire", 0.0
+	+SHOOTABLE
+	-VULNERABLE
+	-NODAMAGE
+	States
+	{
+		Spawn:
+			TNT1 A 1 A_Warp(AAPTR_Master,0,0,0,0,SXF_NOCHECKPOSITION)
+			Loop
+		Death:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_CorpseDestroy")
+			TNT1 A 1
+			Stop
+		Raise:
+			TNT1 A 1
+			Stop
+	}
+}
+
+Actor RTCW_ZombieCorpse_Death1 : RTCW_ZombieShootableCorpse
+{
+	Height 52
+	DamageFactor "RTCWFire", 0.0
+	States
+	{
+		Spawn:
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3 A_Warp(AAPTR_Master,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieShootableCorpse",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_NOCHECKPOSITION)
+			Stop
+		Death:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_CorpseDestroy",1)
+			TNT1 A 1
+			Stop
+		Raise:
+			TNT1 A 1
+			Stop
+	}
+}
+
+Actor RTCW_ZombieSight : RTCWTrigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 A_LookEx(0,0,2048,2048,180)
+			Stop
+		See:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7)
+			Stop
+	}
+}
+
+Actor RTCW_ZombieCombatSight : RTCWTrigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 A_JumpIfTargetInLOS(1,180,JLOSF_DEADNOJUMP,56)
+			Goto CombatMove
+			TNT1 A 0 A_Jump(64,2)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7,3)
+			TNT1 A 0 A_FaceTarget(5)
+			Stop
+		CombatMove:	
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7,1)
+			Stop
+	}
+}
+
+Actor RTCW_ZombieSkullRemover : RTCWTrigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_FadeChild",1)
+			Stop
+	}
+}
+
+Actor RTCW_ZombieCombatSightMove : RTCWTrigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 A_JumpIfInventory("RTCW_SpiritChargeDelay",1,3)
+			TNT1 A 0 A_Jump(252,2)
+			TNT1 A 0 A_JumpIfTargetInLOS("SpiritAttack",180,JLOSF_DEADNOJUMP,1024)
+			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",5,"CombatCharge")
+			TNT1 A 0 A_JumpIfTargetInLOS(1,180,JLOSF_DEADNOJUMP,56)
+			Goto CombatMove
+			TNT1 A 0 A_ChangeVelocity(0,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7,2)
+			Stop
+		CombatMove:	
+			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",1,2)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7,1)
+			TNT1 A 0 A_JumpIfTargetInLOS(1,0,JLOSF_DEADNOJUMP,4096)
+			Goto CombatMove+4
+			TNT1 A 0 A_FaceTarget(5)
+			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",1,"Walk")
+			Stop
+		CombatCharge:
+			TNT1 A 0 A_JumpIfTargetInLOS("Attack",0,JLOSF_DEADNOJUMP,56)
+			TNT1 A 0 A_JumpIfTargetInLOS(1,0,JLOSF_DEADNOJUMP,384)
+			Goto CombatCharge+4
+			TNT1 A 0 A_FaceTarget(5)
+			TNT1 A 0 A_ChangeVelocity(1.5,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			Stop
+			TNT1 A 0 A_ChangeVelocity(0,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7,2)
+			Stop
+		Walk:
+			TNT1 A 0 A_ChangeVelocity(1,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			Stop
+		Attack:
+			TNT1 A 0 A_ChangeVelocity(0,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7,3)
+			Stop
+		SpiritAttack:
+			TNT1 A 0 A_ChangeVelocity(0,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",7,4)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_SpawnSpirits",1)
+			Stop
+	}
+}
+
+Actor RTCW_Zombie_SpiritShot : RTCWTrigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 A_CustomMissile("RTCW_Zombie_SpiritMissile",32)
+			Stop
+	}
+}
+
+Actor RTCW_Zombie_SpiritMissile
+{
+	Height 4
+	Radius 2
+	Speed 6
+	Damage (10)
+	Renderstyle Translucent
+	Alpha 0.33
+	Projectile
+	+SEEKERMISSILE
+	+BLOODLESSIMPACT
+	States
+	{
+		Spawn:
+			RW00 A 0 A_SpawnItemEx("RTCW_Zombie_SpiritTrail",0,0,0,0,0,0,0,SXF_TRANSFERPITCH)
+			RW00 A 0 A_SpawnItemEx("RTCW_Zombie_SpiritTrail",-8,0,0,0,0,0,0,SXF_TRANSFERPITCH)
+			RW00 A 0 A_SpawnItemEx("RTCW_Zombie_SpiritTrail",-16,0,0,0,0,0,0,SXF_TRANSFERPITCH)
+			RW00 A 1 A_SeekerMissile(5,10)
+			Loop
+		Death:
+			TNT1 A 1
+			Stop
+	}
+}
+
+Actor RTCW_Zombie_Melee : RTCW_KickProjectile { Speed 24 Height 32 Radius 16 Damage (5) }
+
+Actor RTCW_Zombie_Spirit
+{
+	Height 4
+	Radius 2
+	Renderstyle Translucent
+	Alpha 0.25
+	+NOGRAVITY
+	+NOINTERACTION
+	States
+	{
+		Spawn:
+			RW00 A 1
+			Loop
+	}
+}
+
+Actor RTCW_Zombie_SpiritTrail
+{
+	+NOINTERACTION
+	+NOBLOCKMAP
+	+CLIENTSIDEONLY
+	Radius 1
+	Height 1
+	Renderstyle Add
+	Alpha 0.125
+	States
+	{
+		Spawn:
+			RW00 ABCDEFGHI 2 A_Fadeout(0.1)
+			stop
+	}
+}
+
+Actor RTCW_ZombieBloodCloud : RTCW_SmokePuff
+{
+	Alpha 1.0
+	Scale 0.75
+	States
+	{
+		Spawn:
+			TNT1 A 0	
+			RW09 BBBBBBBBBB 2 A_Fadeout(0.1)
+			Stop
+	}
+}
+
+Actor RTCW_ZombieGib : RTCW_Gib
+{
+	BounceSound "RTCW/Zombie/Gib"
+	Gravity 0.75
+	+USEBOUNCESTATE
+	States
+	{
+		Spawn:
+			RW00 A 0 NoDelay A_SpawnItemEx("RTCW_ZombieBloodCloud",0,0,0,0,0,0,0,SXF_TRANSFERTRANSLATION)
+		SpawnLoop:
+			RW00 A 10
+		Death:
+			RW00 A 100
+			RW00 AAAAAAAA 1 A_Fadeout(0.1)
+			Stop
+	}
+}
+
+Actor RTCW_ZombieGib_Bone1 : RTCW_ZombieGib
+{
+	-USEBOUNCESTATE
+	States
+	{
+		Spawn:
+		SpawnLoop:
+			RW00 A 2
+			Loop
+		Death:
+			RW00 A 100
+			RW00 AAAAAAAA 1 A_Fadeout(0.1)
+			Stop
+	}
+}
+
+Actor RTCW_ZombieGib_Bone2 : RTCW_ZombieGib
+{
+	States
+	{
+		Spawn:
+		SpawnLoop:
+			RW00 A 2
+			Loop
+		Bounce:
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Bone1",0,0,0,velx/2,vely/2,velz,0,SXF_ABSOLUTEMOMENTUM)
+			Stop
+	}
+}
+Actor RTCW_ZombieGib_Bone3 : RTCW_ZombieGib
+{
+	States
+	{
+		Spawn:
+		SpawnLoop:
+			RW00 A 2
+			Loop
+		Bounce:
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Bone2",0,0,0,velx/2,vely/2,velz,0,SXF_ABSOLUTEMOMENTUM)
+			Stop
+	}
+}
+Actor RTCW_ZombieGib_LegBroke : RTCW_ZombieGib
+{
+	States
+	{
+		Bounce:
+			TNT1 AA 0 A_SpawnItemEx("RTCW_ZombieGib_Bone3",0,0,0,velx/2,vely/2,velz,0,SXF_ABSOLUTEMOMENTUM)
+			Stop
+	}
+}
+Actor RTCW_ZombieGib_Leg : RTCW_ZombieGib
+{
+	States
+	{
+		Bounce:
+			TNT1 A 0 A_SpawnItemEx("RTCW_ZombieGib_LegBroke",0,0,0,velx/2,vely/2,velz,0,SXF_ABSOLUTEMOMENTUM)
+			Stop
+	}
+}
+
+Actor RTCW_Undead : RTCW_ZombieBrain
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Zombie",1)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",8)
+			TNT1 A 2
+			Goto AlertIdle
+	}
+}
+
+Actor RTCW_Ghoul : RTCW_ZombieBrain
+{
+	Health 500
+	Tag "Ghoul"
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Zombie",1)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",8,1)
+			TNT1 A 2
+			Goto AlertIdle
+	}
+}

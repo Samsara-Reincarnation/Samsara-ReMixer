@@ -1,0 +1,93 @@
+Actor RTCW_IsScientist : Inventory { +INVENTORY.UNDROPPABLE Inventory.MaxAmount 1 Inventory.InterHubAmount 0 }
+Actor RTCW_ScientistFrightened : Inventory { +INVENTORY.UNDROPPABLE Inventory.MaxAmount 1 Inventory.InterHubAmount 0 }
+
+Actor RTCW_Scientist : RTCW_Humanoid
+{
+	Health 30
+	Painchance 96
+	Tag "Scientist"
+	States
+	{
+		Spawn:
+			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",3,random(0,4))
+			RW74 A 0 A_SetUserVar("user_aggression",128)
+			RW74 A 0 ACS_NamedExecuteWithResult("RTCW_Infantry")
+			RW74 A 0 A_GiveInventory("RTCW_EnemyLugerMag",8)
+			TNT1 A 2
+			Goto Relax
+		InstantCombat:
+			"####" "#" 0 A_Jump(16,"Frightened")
+			Goto Super::InstantCombat
+			"####" "#" 0 A_JumpIfInventory("RTCW_SeenPlayer",1,"Combat")
+			"####" "#" 0 A_JumpIfInventory("RTCW_FlameRetardant",1,"Combat")
+			"####" "#" 0 A_GiveInventory("RTCW_SeenPlayer",1)
+			"####" "#" 0 A_Jump(128,2)
+			"####" "#" 0 A_PlaySound("RTCW/InfantrySS/Combat",CHAN_VOICE)
+			Goto Combat
+		Combat:
+			"####" "#" 0 A_ChangeVelocity(0,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			"####" "#" 0 A_JumpIfInventory("RTCW_FlameRetardant",1,3)
+			"####" "#" 0 A_JumpIfInventory("RTCW_ScientistFrightened",1,"Frightened")
+			Goto Combat+4
+			"####" "#" 0 A_JumpIfTargetInLOS("Kick",180,JLOSF_DEADNOJUMP,64)
+			"####" "#" 0 A_JumpIfInventory("RTCW_FlameRetardant",1,3)
+			"####" "#" 0 A_Jump(224,2)
+			"####" "#" 0 A_PlaySound("RTCW/InfantrySS/Attack",CHAN_VOICE)
+			"####" "#" 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			"####" "#" 0 A_Jump(192,"CombatCrouch","CombatRun","CombatLeft","CombatRight")
+			Goto CombatStand
+		Frightened:
+			"####" "#" 0 A_JumpIfInventory("RTCW_SeenPlayer",1,6)
+			"####" "#" 0 A_GiveToChildren("RTCW_RemoveGun",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("RTCW_Decorate",16)
+			"####" "#" 0 A_GiveInventory("RTCW_SeenPlayer",1)
+			"####" "#" 0 A_ChangeFlag("COUNTKILL",0)
+			"####" "#" 0 A_PlaySound("RTCW/Scientist/Plead",CHAN_VOICE)
+			"####" "#" 0 A_GiveInventory("RTCW_ScientistFrightened",1)
+			"####" "#" 0 A_GiveToChildren("RTCWBroadCast_Frightened",1)
+			Goto FrightenedLoop
+		FrightenedLoop:
+			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			Loop
+		AlertRun:
+			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertRun_2H")
+		AlertRun_1H:
+			"####" A 0 A_ChangeVelocity(2,0,0,CVF_REPLACE|CVF_RELATIVE)
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertRun_1H",1)
+			"####" A 0 A_GiveInventory("RTCW_AlertRunning",1)
+			"####" ABCDEFGHIJKLMNABCDEFGHIJKLMN 3 A_GiveInventory("RTCW_AlertSight")
+			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
+			"####" A 0 A_Stop
+			Goto AlertIdle
+		CombatRun_1H:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertRun_1H",1)
+			"####" ABCDEFGHIJKLMN 3 A_GiveInventory("RTCW_CombatThink",1)
+			"####" A 0 A_Jump(32,"CombatStand")
+			Goto CombatRun
+		CombatTurn:
+		CombatTurnRight:
+			"####" A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
+			"####" ABCDEFG 3 A_SetAngle(angle-10)
+			Goto CombatRun
+	}
+}
+
+Actor RTCW_Zemph : RTCW_Scientist
+{
+	Health 120
+	Painchance 96
+	Tag "Professor Zemph"
+	States
+	{
+		Spawn:
+			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",3,5)
+			RW74 A 0 A_SetUserVar("user_aggression",96)
+			RW74 A 0 ACS_NamedExecuteWithResult("RTCW_Infantry")
+			RW74 A 0 A_GiveInventory("RTCW_EnemyLugerMag",8)
+			RW74 A 2
+			Goto Relax
+	}
+}

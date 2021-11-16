@@ -1,0 +1,1290 @@
+//monsters: -rotate -90 90 0 -scale 10.0
+
+Model Painkiller_ZombieSoldier
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_idle.md3"
+	Scale 0.325 0.325 0.325
+	ZOffset 34
+	
+	FrameIndex PK00 A 0 1
+	FrameIndex PK00 B 0 3
+	FrameIndex PK00 C 0 6
+	FrameIndex PK00 D 0 9
+	FrameIndex PK00 E 0 12
+	FrameIndex PK00 F 0 15
+	FrameIndex PK00 G 0 18
+	FrameIndex PK00 H 0 21
+	FrameIndex PK00 I 0 24
+	FrameIndex PK00 J 0 27
+	FrameIndex PK00 K 0 30
+	FrameIndex PK00 L 0 33
+	FrameIndex PK00 M 0 36
+	FrameIndex PK00 N 0 39
+	FrameIndex PK00 O 0 42
+	FrameIndex PK00 P 0 45
+	FrameIndex PK00 Q 0 48
+	FrameIndex PK00 R 0 51
+	
+	Model 0 "zombie_soldier_run.md3"
+	FrameIndex PK01 A 0 1
+	FrameIndex PK01 B 0 2
+	FrameIndex PK01 C 0 4
+	FrameIndex PK01 D 0 6
+	FrameIndex PK01 E 0 8
+	FrameIndex PK01 F 0 10
+	FrameIndex PK01 G 0 12
+	FrameIndex PK01 H 0 14
+	FrameIndex PK01 I 0 18
+	FrameIndex PK01 J 0 20
+	FrameIndex PK01 K 0 22
+	FrameIndex PK01 L 0 24
+	FrameIndex PK01 M 0 26
+	FrameIndex PK01 N 0 28
+	FrameIndex PK01 O 0 30
+	FrameIndex PK01 P 0 32
+	FrameIndex PK01 Q 0 34
+	FrameIndex PK01 R 0 36
+	FrameIndex PK01 S 0 38
+	
+	Model 0 "zombie_soldier_atak1.md3"
+	FrameIndex PK02 A 0 1
+	FrameIndex PK02 B 0 3
+	FrameIndex PK02 C 0 6
+	FrameIndex PK02 D 0 9
+	FrameIndex PK02 E 0 12
+	FrameIndex PK02 F 0 15
+	FrameIndex PK02 G 0 18
+	FrameIndex PK02 H 0 21
+	FrameIndex PK02 I 0 24
+	FrameIndex PK02 J 0 27
+	FrameIndex PK02 K 0 30
+	FrameIndex PK02 L 0 33
+	FrameIndex PK02 M 0 36
+	FrameIndex PK02 N 0 39
+	FrameIndex PK02 O 0 42
+	FrameIndex PK02 P 0 45
+	FrameIndex PK02 Q 0 48
+	FrameIndex PK02 R 0 50
+	
+	Model 0 "zombie_soldier_hit.md3"
+	FrameIndex PK06 A 0 1
+	FrameIndex PK06 B 0 3
+	FrameIndex PK06 C 0 6
+	FrameIndex PK06 D 0 9
+	FrameIndex PK06 E 0 12
+	FrameIndex PK06 F 0 15
+	FrameIndex PK06 G 0 18
+	FrameIndex PK06 H 0 21
+	FrameIndex PK06 I 0 24
+	FrameIndex PK06 J 0 26
+	
+	Model 0 "zombie_soldier_hit_a.md3"
+	FrameIndex PK07 A 0 1
+	FrameIndex PK07 B 0 3
+	FrameIndex PK07 C 0 6
+	FrameIndex PK07 D 0 9
+	FrameIndex PK07 E 0 12
+	FrameIndex PK07 F 0 15
+	FrameIndex PK07 G 0 18
+	FrameIndex PK07 H 0 21
+	FrameIndex PK07 I 0 24
+	FrameIndex PK07 J 0 26
+	
+	Model 0 "zombie_soldier_hit_b.md3"
+	FrameIndex PK08 A 0 1
+	FrameIndex PK08 B 0 3
+	FrameIndex PK08 C 0 6
+	FrameIndex PK08 D 0 9
+	FrameIndex PK08 E 0 12
+	FrameIndex PK08 F 0 15
+	FrameIndex PK08 G 0 18
+	FrameIndex PK08 H 0 21
+	FrameIndex PK08 I 0 24
+	FrameIndex PK08 J 0 26
+	
+	Model 0 "zombie_soldier_dead.md3"
+	FrameIndex PK09 A 0 1
+	FrameIndex PK09 B 0 3
+	FrameIndex PK09 C 0 5
+	FrameIndex PK09 D 0 7
+	FrameIndex PK09 E 0 9
+	FrameIndex PK09 F 0 11
+	FrameIndex PK09 G 0 13
+	FrameIndex PK09 H 0 15
+	FrameIndex PK09 I 0 17
+	FrameIndex PK09 J 0 19
+	FrameIndex PK09 K 0 21
+	FrameIndex PK09 L 0 23
+	FrameIndex PK09 M 0 25
+	FrameIndex PK09 N 0 27
+	FrameIndex PK09 O 0 29
+	FrameIndex PK09 P 0 31
+	FrameIndex PK09 Q 0 33
+	FrameIndex PK09 R 0 35
+	FrameIndex PK09 S 0 37
+	FrameIndex PK09 T 0 39
+	FrameIndex PK09 U 0 41
+	FrameIndex PK09 V 0 43
+	FrameIndex PK09 W 0 45
+	FrameIndex PK09 X 0 47
+	FrameIndex PK09 Y 0 49
+	FrameIndex PK09 Z 0 51
+	FrameIndex PK10 A 0 53
+	FrameIndex PK10 B 0 55
+	FrameIndex PK10 C 0 57
+	FrameIndex PK10 D 0 59
+	FrameIndex PK10 E 0 61
+	FrameIndex PK10 F 0 63
+	FrameIndex PK10 G 0 65
+	FrameIndex PK10 H 0 67
+	FrameIndex PK10 I 0 69
+	FrameIndex PK10 J 0 71
+	FrameIndex PK10 K 0 73
+	FrameIndex PK10 L 0 75
+	FrameIndex PK10 M 0 77
+	FrameIndex PK10 N 0 79
+	FrameIndex PK10 O 0 81
+	FrameIndex PK10 P 0 83
+	FrameIndex PK10 Q 0 85
+	FrameIndex PK10 R 0 87
+	FrameIndex PK10 S 0 89
+	
+	ZOffset 40
+	Model 0 "zombie_soldier_headless_death1.md3"
+	FrameIndex PK11 A 0 1
+	FrameIndex PK11 B 0 4
+	FrameIndex PK11 C 0 7
+	FrameIndex PK11 D 0 10
+	FrameIndex PK11 E 0 13
+	FrameIndex PK11 F 0 16
+	FrameIndex PK11 G 0 19
+	FrameIndex PK11 H 0 22
+	FrameIndex PK11 I 0 25
+	FrameIndex PK11 J 0 28
+	FrameIndex PK11 K 0 31
+	FrameIndex PK11 L 0 34
+	FrameIndex PK11 M 0 37
+	FrameIndex PK11 N 0 40
+	FrameIndex PK11 O 0 43
+	FrameIndex PK11 P 0 46
+	FrameIndex PK11 Q 0 49
+	FrameIndex PK11 R 0 52
+	FrameIndex PK11 S 0 55
+	FrameIndex PK11 T 0 58
+	FrameIndex PK11 U 0 61
+	FrameIndex PK11 V 0 64
+	FrameIndex PK11 W 0 67
+	FrameIndex PK11 X 0 70
+	FrameIndex PK11 Y 0 73
+	FrameIndex PK11 Z 0 75
+	
+	Model 0 "zombie_soldier_headless_death2.md3"
+	FrameIndex PK12 A 0 1
+	FrameIndex PK12 B 0 4
+	FrameIndex PK12 C 0 7
+	FrameIndex PK12 D 0 10
+	FrameIndex PK12 E 0 13
+	FrameIndex PK12 F 0 16
+	FrameIndex PK12 G 0 19
+	FrameIndex PK12 H 0 22
+	FrameIndex PK12 I 0 25
+	FrameIndex PK12 J 0 28
+	FrameIndex PK12 K 0 31
+	FrameIndex PK12 L 0 34
+	FrameIndex PK12 M 0 37
+	FrameIndex PK12 N 0 40
+	FrameIndex PK12 O 0 43
+	FrameIndex PK12 P 0 46
+	FrameIndex PK12 Q 0 49
+	FrameIndex PK12 R 0 52
+	FrameIndex PK12 S 0 55
+	FrameIndex PK12 T 0 58
+	FrameIndex PK12 U 0 61
+	FrameIndex PK12 V 0 64
+	FrameIndex PK12 W 0 67
+	FrameIndex PK12 X 0 70
+	FrameIndex PK12 Y 0 73
+	FrameIndex PK12 Z 0 76
+	FrameIndex PK13 A 0 79
+	FrameIndex PK13 B 0 82
+	FrameIndex PK13 C 0 85
+	FrameIndex PK13 D 0 88
+	FrameIndex PK13 E 0 91
+	FrameIndex PK13 F 0 94
+	FrameIndex PK13 G 0 96
+	
+	ZOffset 34
+	INHERITACTORPITCH
+	Model 0 "zombie_soldier_death1.md3"
+	FrameIndex PK03 A 0 1
+	FrameIndex PK03 B 0 3
+	FrameIndex PK03 C 0 6
+	FrameIndex PK03 D 0 9
+	FrameIndex PK03 E 0 12
+	FrameIndex PK03 F 0 15
+	FrameIndex PK03 G 0 18
+	FrameIndex PK03 H 0 21
+	FrameIndex PK03 I 0 24
+	FrameIndex PK03 J 0 27
+	FrameIndex PK03 K 0 30
+	FrameIndex PK03 L 0 33
+	FrameIndex PK03 M 0 36
+	FrameIndex PK03 N 0 39
+	FrameIndex PK03 O 0 42
+	FrameIndex PK03 P 0 45
+	FrameIndex PK03 Q 0 50
+	FrameIndex PK03 R 0 53
+	FrameIndex PK03 S 0 56
+	FrameIndex PK03 T 0 59
+	FrameIndex PK03 U 0 61
+	
+	Model 0 "zombie_soldier_death2.md3"
+	FrameIndex PK04 A 0 1
+	FrameIndex PK04 B 0 3
+	FrameIndex PK04 C 0 6
+	FrameIndex PK04 D 0 9
+	FrameIndex PK04 E 0 12
+	FrameIndex PK04 F 0 15
+	FrameIndex PK04 G 0 18
+	FrameIndex PK04 H 0 21
+	FrameIndex PK04 I 0 24
+	FrameIndex PK04 J 0 27
+	FrameIndex PK04 K 0 30
+	FrameIndex PK04 L 0 33
+	FrameIndex PK04 M 0 36
+	FrameIndex PK04 N 0 39
+	FrameIndex PK04 O 0 42
+	FrameIndex PK04 P 0 45
+	FrameIndex PK04 Q 0 50
+	FrameIndex PK04 R 0 53
+	FrameIndex PK04 S 0 56
+	FrameIndex PK04 T 0 59
+	FrameIndex PK04 U 0 63
+	FrameIndex PK04 V 0 66
+	FrameIndex PK04 W 0 69
+	FrameIndex PK04 X 0 72
+	FrameIndex PK04 Y 0 75
+	FrameIndex PK04 Z 0 78
+	
+	Model 0 "zombie_soldier_death3.md3"
+	FrameIndex PK05 A 0 1
+	FrameIndex PK05 B 0 3
+	FrameIndex PK05 C 0 6
+	FrameIndex PK05 D 0 9
+	FrameIndex PK05 E 0 12
+	FrameIndex PK05 F 0 15
+	FrameIndex PK05 G 0 18
+	FrameIndex PK05 H 0 21
+	FrameIndex PK05 I 0 24
+	FrameIndex PK05 J 0 27
+	FrameIndex PK05 K 0 30
+	FrameIndex PK05 L 0 33
+	FrameIndex PK05 M 0 36
+	FrameIndex PK05 N 0 39
+	FrameIndex PK05 O 0 42
+	FrameIndex PK05 P 0 45
+	FrameIndex PK05 Q 0 48
+	FrameIndex PK05 R 0 51
+	FrameIndex PK05 S 0 54
+	FrameIndex PK05 T 0 57
+	FrameIndex PK05 U 0 63
+	FrameIndex PK05 V 0 66
+	FrameIndex PK05 W 0 69
+	FrameIndex PK05 X 0 72
+	FrameIndex PK05 Y 0 74
+}
+
+Model Painkiller_ZombieSoldier_Atak1_Trail
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_atak1_trail.md3"
+	Scale 0.325 0.325 0.325
+	ZOffset 34
+	INHERITACTORPITCH
+	
+	FrameIndex PK02 A 0 1
+	FrameIndex PK02 B 0 3
+	FrameIndex PK02 C 0 6
+	FrameIndex PK02 D 0 9
+	FrameIndex PK02 E 0 12
+	FrameIndex PK02 F 0 15
+	FrameIndex PK02 G 0 18
+	FrameIndex PK02 H 0 21
+	FrameIndex PK02 I 0 24
+	FrameIndex PK02 J 0 27
+	FrameIndex PK02 K 0 30
+	FrameIndex PK02 L 0 33
+	FrameIndex PK02 M 0 36
+	FrameIndex PK02 N 0 39
+	FrameIndex PK02 O 0 42
+	FrameIndex PK02 P 0 45
+	FrameIndex PK02 Q 0 48
+	FrameIndex PK02 R 0 50
+}
+
+Model Painkiller_ZombieSoldier_Gib_ArmLeft
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_gib_armleft.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieSoldier_Gib_ArmRight
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_gib_armright.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieSoldier_Gib_LegLeft
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_gib_legleft.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieSoldier_Gib_LegRight
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_gib_legright.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieSoldier_Gib_Head
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_gib_head.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieSoldier_Gib_Torso
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_gib_torso.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieSoldier_Gib_Sword
+{
+	Path "Models/Painkiller/Zombie_Soldier"   
+	Model 0 "zombie_soldier_gib_sword.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+//Banshee
+
+Model Painkiller_Banshee
+{
+	Path "Models/Painkiller/Banshee"   
+	Model 0 "banshee_idle.md3"
+	Scale 0.403 0.403 0.403
+	ZOffset 8
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 1
+	FrameIndex PK00 B 0 3
+	FrameIndex PK00 C 0 6
+	FrameIndex PK00 D 0 9
+	FrameIndex PK00 E 0 12
+	FrameIndex PK00 F 0 15
+	FrameIndex PK00 G 0 18
+	FrameIndex PK00 H 0 21
+	FrameIndex PK00 I 0 24
+	FrameIndex PK00 J 0 27
+	FrameIndex PK00 K 0 30
+	FrameIndex PK00 L 0 33
+	FrameIndex PK00 M 0 36
+	FrameIndex PK00 N 0 39
+	FrameIndex PK00 O 0 42
+	FrameIndex PK00 P 0 45
+	FrameIndex PK00 Q 0 48
+	FrameIndex PK00 R 0 51
+	
+	Model 0 "banshee_atak1.md3"
+	FrameIndex PK03 A 0 1
+	FrameIndex PK03 B 0 3
+	FrameIndex PK03 C 0 6
+	FrameIndex PK03 D 0 9
+	FrameIndex PK03 E 0 12
+	FrameIndex PK03 F 0 15
+	FrameIndex PK03 G 0 18
+	FrameIndex PK03 H 0 21
+	FrameIndex PK03 I 0 24
+	FrameIndex PK03 J 0 27
+	FrameIndex PK03 K 0 30
+	FrameIndex PK03 L 0 33
+	FrameIndex PK03 M 0 36
+	FrameIndex PK03 N 0 39
+	FrameIndex PK03 O 0 42
+	FrameIndex PK03 P 0 45
+	FrameIndex PK03 Q 0 48
+	FrameIndex PK03 R 0 51
+	FrameIndex PK03 S 0 54
+	FrameIndex PK03 T 0 57
+	FrameIndex PK03 U 0 60
+	FrameIndex PK03 V 0 63
+	
+	Model 0 "banshee_atak2.md3"
+	FrameIndex PK04 A 0 1
+	FrameIndex PK04 B 0 3
+	FrameIndex PK04 C 0 6
+	FrameIndex PK04 D 0 9
+	FrameIndex PK04 E 0 12
+	FrameIndex PK04 F 0 15
+	FrameIndex PK04 G 0 18
+	FrameIndex PK04 H 0 21
+	FrameIndex PK04 I 0 24
+	FrameIndex PK04 J 0 27
+	FrameIndex PK04 K 0 30
+	FrameIndex PK04 L 0 33
+	FrameIndex PK04 M 0 36
+	FrameIndex PK04 N 0 39
+	FrameIndex PK04 O 0 42
+	FrameIndex PK04 P 0 45
+	FrameIndex PK04 Q 0 48
+	FrameIndex PK04 R 0 51
+	FrameIndex PK04 S 0 53
+	
+	Model 0 "banshee_hit1.md3"
+	FrameIndex PK05 A 0 1
+	FrameIndex PK05 B 0 3
+	FrameIndex PK05 C 0 6
+	FrameIndex PK05 D 0 9
+	FrameIndex PK05 E 0 12
+	FrameIndex PK05 F 0 15
+	FrameIndex PK05 G 0 18
+	
+	Model 0 "banshee_hit2.md3"
+	FrameIndex PK06 A 0 1
+	FrameIndex PK06 B 0 3
+	FrameIndex PK06 C 0 6
+	FrameIndex PK06 D 0 9
+	FrameIndex PK06 E 0 12
+	FrameIndex PK06 F 0 15
+	FrameIndex PK06 G 0 18
+	
+	ZOffset 10
+	Model 0 "banshee_death1.md3"
+	FrameIndex PK07 A 0 1
+	FrameIndex PK07 B 0 3
+	FrameIndex PK07 C 0 6
+	FrameIndex PK07 D 0 9
+	FrameIndex PK07 E 0 12
+	FrameIndex PK07 F 0 15
+	FrameIndex PK07 G 0 18
+	FrameIndex PK07 H 0 21
+	FrameIndex PK07 I 0 24
+	FrameIndex PK07 J 0 27
+	FrameIndex PK07 K 0 30
+	FrameIndex PK07 L 0 33
+	FrameIndex PK07 M 0 36
+	FrameIndex PK07 N 0 39
+	FrameIndex PK07 O 0 42
+	FrameIndex PK07 P 0 45
+	
+	Model 0 "banshee_death2.md3"
+	FrameIndex PK08 A 0 1
+	FrameIndex PK08 B 0 3
+	FrameIndex PK08 C 0 6
+	FrameIndex PK08 D 0 9
+	FrameIndex PK08 E 0 12
+	FrameIndex PK08 F 0 15
+	FrameIndex PK08 G 0 18
+	FrameIndex PK08 H 0 21
+	FrameIndex PK08 I 0 24
+	FrameIndex PK08 J 0 27
+	FrameIndex PK08 K 0 30
+	FrameIndex PK08 L 0 33
+	FrameIndex PK08 M 0 36
+	FrameIndex PK08 N 0 39
+	FrameIndex PK08 O 0 42
+	FrameIndex PK08 P 0 45
+	
+	Model 0 "banshee_death3.md3"
+	FrameIndex PK09 A 0 1
+	FrameIndex PK09 B 0 3
+	FrameIndex PK09 C 0 6
+	FrameIndex PK09 D 0 9
+	FrameIndex PK09 E 0 12
+	FrameIndex PK09 F 0 15
+	FrameIndex PK09 G 0 18
+	FrameIndex PK09 H 0 21
+	FrameIndex PK09 I 0 24
+	FrameIndex PK09 J 0 27
+	FrameIndex PK09 K 0 30
+	FrameIndex PK09 L 0 33
+	FrameIndex PK09 M 0 36
+	FrameIndex PK09 N 0 39
+	FrameIndex PK09 O 0 42
+	FrameIndex PK09 P 0 45
+	
+	ZOffset 8
+	INTERPOLATEDOUBLEDFRAMES
+	Model 0 "banshee_walk.md3"
+	FrameIndex PK01 A 0 1
+	FrameIndex PK01 B 0 3
+	FrameIndex PK01 C 0 6
+	FrameIndex PK01 D 0 9
+	FrameIndex PK01 E 0 12
+	FrameIndex PK01 F 0 15
+	FrameIndex PK01 G 0 18
+	FrameIndex PK01 H 0 21
+	FrameIndex PK01 I 0 24
+	FrameIndex PK01 J 0 27
+	FrameIndex PK01 K 0 30
+	FrameIndex PK01 L 0 33
+	FrameIndex PK01 M 0 36
+	FrameIndex PK01 N 0 39
+	FrameIndex PK01 O 0 42
+	FrameIndex PK01 P 0 45
+	
+	Model 0 "banshee_run.md3"
+	FrameIndex PK02 A 0 1
+	FrameIndex PK02 B 0 3
+	FrameIndex PK02 C 0 6
+	FrameIndex PK02 D 0 9
+	FrameIndex PK02 E 0 12
+	FrameIndex PK02 F 0 15
+	FrameIndex PK02 G 0 18
+	FrameIndex PK02 H 0 21
+	FrameIndex PK02 I 0 24
+	FrameIndex PK02 J 0 27
+	FrameIndex PK02 K 0 30
+	FrameIndex PK02 L 0 33
+	FrameIndex PK02 M 0 36
+	FrameIndex PK02 N 0 39
+}
+
+Model Painkiller_Banshee_Gib_ArmLeft
+{
+	Path "Models/Painkiller/Banshee"   
+	Model 0 "banshee_gib_armleft.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_Banshee_Gib_ArmRight
+{
+	Path "Models/Painkiller/Banshee"   
+	Model 0 "banshee_gib_armright.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_Banshee_Gib_Head
+{
+	Path "Models/Painkiller/Banshee"   
+	Model 0 "banshee_gib_head.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_Banshee_Gib_Torso
+{
+	Path "Models/Painkiller/Banshee"   
+	Model 0 "banshee_gib_torso.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_Banshee_Gib_Legs
+{
+	Path "Models/Painkiller/Banshee"   
+	Model 0 "banshee_gib_legs.md3"
+	Scale 4.5 4.5 4.5
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieWarlord
+{
+	Path "Models/Painkiller/Zombie_Warlord"   
+	Model 0 "warlord_idle.md3"
+	Scale 0.4875 0.4875 0.4875 //should be .585 but that's really too big for here
+	ZOffset 8
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 1
+	FrameIndex PK00 B 0 3
+	FrameIndex PK00 C 0 6
+	FrameIndex PK00 D 0 9
+	FrameIndex PK00 E 0 12
+	FrameIndex PK00 F 0 15
+	FrameIndex PK00 G 0 18
+	FrameIndex PK00 H 0 21
+	FrameIndex PK00 I 0 24
+	FrameIndex PK00 J 0 27
+	FrameIndex PK00 K 0 30
+	FrameIndex PK00 L 0 33
+	FrameIndex PK00 M 0 36
+	FrameIndex PK00 N 0 39
+	FrameIndex PK00 O 0 42
+	FrameIndex PK00 P 0 45
+	FrameIndex PK00 Q 0 48
+	FrameIndex PK00 R 0 51
+	FrameIndex PK00 S 0 54
+	FrameIndex PK00 T 0 57
+	FrameIndex PK00 U 0 60
+	FrameIndex PK00 V 0 63
+	FrameIndex PK00 W 0 66
+	FrameIndex PK00 X 0 69
+	FrameIndex PK00 Y 0 73
+	FrameIndex PK00 Z 0 75
+	
+	Model 0 "warlord_run.md3"
+	FrameIndex PK01 A 0 1
+	FrameIndex PK01 B 0 2
+	FrameIndex PK01 C 0 4
+	FrameIndex PK01 D 0 6
+	FrameIndex PK01 E 0 8
+	FrameIndex PK01 F 0 10
+	FrameIndex PK01 G 0 12
+	FrameIndex PK01 H 0 14
+	FrameIndex PK01 I 0 18
+	FrameIndex PK01 J 0 20
+	FrameIndex PK01 K 0 22
+	FrameIndex PK01 L 0 24
+	FrameIndex PK01 M 0 26
+	FrameIndex PK01 N 0 28
+	FrameIndex PK01 O 0 30
+	FrameIndex PK01 P 0 32
+	FrameIndex PK01 Q 0 34
+	FrameIndex PK01 R 0 36
+	FrameIndex PK01 S 0 38
+	
+	Model 0 "warlord_atak1.md3"
+	FrameIndex PK02 A 0 1
+	FrameIndex PK02 B 0 3
+	FrameIndex PK02 C 0 6
+	FrameIndex PK02 D 0 9
+	FrameIndex PK02 E 0 12
+	FrameIndex PK02 F 0 15
+	FrameIndex PK02 G 0 18
+	FrameIndex PK02 H 0 21
+	FrameIndex PK02 I 0 24
+	FrameIndex PK02 J 0 27
+	FrameIndex PK02 K 0 30
+	FrameIndex PK02 L 0 33
+	FrameIndex PK02 M 0 36
+	FrameIndex PK02 N 0 39
+	FrameIndex PK02 O 0 42
+	FrameIndex PK02 P 0 45
+	FrameIndex PK02 Q 0 48
+	FrameIndex PK02 R 0 50
+	FrameIndex PK02 S 0 53
+	
+	Model 0 "warlord_hit.md3"
+	FrameIndex PK06 A 0 1
+	FrameIndex PK06 B 0 3
+	FrameIndex PK06 C 0 6
+	FrameIndex PK06 D 0 9
+	FrameIndex PK06 E 0 12
+	FrameIndex PK06 F 0 15
+	FrameIndex PK06 G 0 18
+	FrameIndex PK06 H 0 21
+	FrameIndex PK06 I 0 24
+	FrameIndex PK06 J 0 26
+	
+	ZOffset 0
+	Model 0 "warlord_death1.md3"
+	FrameIndex PK03 A 0 1
+	FrameIndex PK03 B 0 3
+	FrameIndex PK03 C 0 6
+	FrameIndex PK03 D 0 9
+	FrameIndex PK03 E 0 12
+	FrameIndex PK03 F 0 15
+	FrameIndex PK03 G 0 18
+	FrameIndex PK03 H 0 21
+	FrameIndex PK03 I 0 24
+	FrameIndex PK03 J 0 27
+	FrameIndex PK03 K 0 30
+	FrameIndex PK03 L 0 33
+	FrameIndex PK03 M 0 36
+	FrameIndex PK03 N 0 39
+	FrameIndex PK03 O 0 42
+	FrameIndex PK03 P 0 45
+	FrameIndex PK03 Q 0 50
+	FrameIndex PK03 R 0 53
+	FrameIndex PK03 S 0 56
+	FrameIndex PK03 T 0 59
+	FrameIndex PK03 U 0 61
+	FrameIndex PK03 V 0 63
+	FrameIndex PK03 W 0 65
+	FrameIndex PK03 X 0 67
+	
+	Model 0 "warlord_death2.md3"
+	FrameIndex PK04 A 0 1
+	FrameIndex PK04 B 0 3
+	FrameIndex PK04 C 0 6
+	FrameIndex PK04 D 0 9
+	FrameIndex PK04 E 0 12
+	FrameIndex PK04 F 0 15
+	FrameIndex PK04 G 0 18
+	FrameIndex PK04 H 0 21
+	FrameIndex PK04 I 0 24
+	FrameIndex PK04 J 0 27
+	FrameIndex PK04 K 0 30
+	FrameIndex PK04 L 0 33
+	FrameIndex PK04 M 0 36
+	FrameIndex PK04 N 0 39
+	FrameIndex PK04 O 0 42
+	FrameIndex PK04 P 0 45
+	FrameIndex PK04 Q 0 50
+	FrameIndex PK04 R 0 53
+	FrameIndex PK04 S 0 56
+	FrameIndex PK04 T 0 59
+	FrameIndex PK04 U 0 63
+	FrameIndex PK04 V 0 66
+	FrameIndex PK04 W 0 68
+	
+	Model 0 "warlord_death3.md3"
+	FrameIndex PK05 A 0 1
+	FrameIndex PK05 B 0 3
+	FrameIndex PK05 C 0 6
+	FrameIndex PK05 D 0 9
+	FrameIndex PK05 E 0 12
+	FrameIndex PK05 F 0 15
+	FrameIndex PK05 G 0 18
+	FrameIndex PK05 H 0 21
+	FrameIndex PK05 I 0 24
+	FrameIndex PK05 J 0 27
+	FrameIndex PK05 K 0 30
+	FrameIndex PK05 L 0 33
+	FrameIndex PK05 M 0 36
+	FrameIndex PK05 N 0 39
+	FrameIndex PK05 O 0 42
+	FrameIndex PK05 P 0 45
+	FrameIndex PK05 Q 0 48
+	FrameIndex PK05 R 0 51
+	FrameIndex PK05 S 0 54
+	FrameIndex PK05 T 0 57
+	FrameIndex PK05 U 0 63
+	FrameIndex PK05 V 0 66
+	FrameIndex PK05 W 0 69
+	FrameIndex PK05 X 0 73
+}
+
+Model Painkiller_ZombieWarlord_Gib_Torso
+{
+	Path "Models/Painkiller/Zombie_Warlord"   
+	Model 0 "warlord_gib_torso.md3"
+	Scale 6.75 6.75 6.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieWarlord_Gib_Head
+{
+	Path "Models/Painkiller/Zombie_Warlord"   
+	Model 0 "warlord_gib_head.md3"
+	Scale 6.75 6.75 6.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieWarlord_Gib_Legs
+{
+	Path "Models/Painkiller/Zombie_Warlord"   
+	Model 0 "warlord_gib_legs.md3"
+	Scale 6.75 6.75 6.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieWarlord_Gib_Sword
+{
+	Path "Models/Painkiller/Zombie_Warlord"   
+	Model 0 "warlord_gib_sword.md3"
+	Scale 6.75 6.75 6.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieWarlord_Gib_ArmRight
+{
+	Path "Models/Painkiller/Zombie_Warlord"   
+	Model 0 "warlord_gib_armright.md3"
+	Scale 6.75 6.75 6.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_ZombieWarlord_Gib_ArmLeft
+{
+	Path "Models/Painkiller/Zombie_Warlord"   
+	Model 0 "warlord_gib_armleft.md3"
+	Scale 6.75 6.75 6.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_BlackDemon
+{
+	Path "Models/Painkiller/BlackDemon"   
+	Model 0 "blackdemon_idle1.md3"
+	Scale 0.75 0.75 0.75 //should be 1.3 but that may be too big
+	
+	FrameIndex PK00 A 0 1
+	FrameIndex PK00 B 0 3
+	FrameIndex PK00 C 0 5
+	FrameIndex PK00 D 0 7
+	FrameIndex PK00 E 0 9
+	FrameIndex PK00 F 0 11
+	FrameIndex PK00 G 0 13
+	FrameIndex PK00 H 0 15
+	FrameIndex PK00 I 0 17
+	FrameIndex PK00 J 0 19
+	FrameIndex PK00 K 0 21
+	FrameIndex PK00 L 0 23
+	FrameIndex PK00 M 0 25
+	FrameIndex PK00 N 0 27
+	FrameIndex PK00 O 0 29
+	FrameIndex PK00 P 0 31
+	FrameIndex PK00 Q 0 33
+	FrameIndex PK00 R 0 35
+	FrameIndex PK00 S 0 37
+	FrameIndex PK00 T 0 39
+	FrameIndex PK00 U 0 41
+	FrameIndex PK00 V 0 43
+	FrameIndex PK00 W 0 45
+	
+	Model 0 "blackdemon_idle2.md3"
+	FrameIndex PK01 A 0 1
+	FrameIndex PK01 B 0 3
+	FrameIndex PK01 C 0 5
+	FrameIndex PK01 D 0 7
+	FrameIndex PK01 E 0 9
+	FrameIndex PK01 F 0 11
+	FrameIndex PK01 G 0 13
+	FrameIndex PK01 H 0 15
+	FrameIndex PK01 I 0 17
+	FrameIndex PK01 J 0 19
+	FrameIndex PK01 K 0 21
+	FrameIndex PK01 L 0 23
+	FrameIndex PK01 M 0 25
+	FrameIndex PK01 N 0 27
+	FrameIndex PK01 O 0 29
+	FrameIndex PK01 P 0 31
+	FrameIndex PK01 Q 0 33
+	FrameIndex PK01 R 0 35
+	FrameIndex PK01 S 0 37
+	FrameIndex PK01 T 0 39
+	FrameIndex PK01 U 0 41
+	FrameIndex PK01 V 0 43
+	FrameIndex PK01 W 0 45
+	FrameIndex PK01 X 0 47
+	FrameIndex PK01 Y 0 49
+	FrameIndex PK01 Z 0 51
+	FrameIndex PK02 A 0 53
+	FrameIndex PK02 B 0 55
+	FrameIndex PK02 C 0 57
+	FrameIndex PK02 D 0 59
+	FrameIndex PK02 E 0 61
+	FrameIndex PK02 F 0 63
+	FrameIndex PK02 G 0 65
+	FrameIndex PK02 H 0 67
+	FrameIndex PK02 I 0 69
+	FrameIndex PK02 J 0 71
+	FrameIndex PK02 K 0 73
+	FrameIndex PK02 L 0 75
+	
+	Model 0 "blackdemon_walk.md3"
+	FrameIndex PK03 A 0 1
+	FrameIndex PK03 B 0 3
+	FrameIndex PK03 C 0 5
+	FrameIndex PK03 D 0 7
+	FrameIndex PK03 E 0 9
+	FrameIndex PK03 F 0 11
+	FrameIndex PK03 G 0 13
+	FrameIndex PK03 H 0 15
+	FrameIndex PK03 I 0 17
+	FrameIndex PK03 J 0 19
+	FrameIndex PK03 K 0 21
+	FrameIndex PK03 L 0 23
+	FrameIndex PK03 M 0 25
+	FrameIndex PK03 N 0 27
+	FrameIndex PK03 O 0 29
+	FrameIndex PK03 P 0 31
+	FrameIndex PK03 Q 0 33
+	FrameIndex PK03 R 0 35
+	FrameIndex PK03 S 0 37
+	FrameIndex PK03 T 0 39
+	FrameIndex PK03 U 0 41
+	FrameIndex PK03 V 0 43
+	FrameIndex PK03 W 0 45
+	
+	Model 0 "blackdemon_atak1.md3"
+	FrameIndex PK04 A 0 1
+	FrameIndex PK04 B 0 3
+	FrameIndex PK04 C 0 5
+	FrameIndex PK04 D 0 7
+	FrameIndex PK04 E 0 9
+	FrameIndex PK04 F 0 11
+	FrameIndex PK04 G 0 13
+	FrameIndex PK04 H 0 15
+	FrameIndex PK04 I 0 17
+	FrameIndex PK04 J 0 19
+	FrameIndex PK04 K 0 21
+	FrameIndex PK04 L 0 23
+	FrameIndex PK04 M 0 25
+	FrameIndex PK04 N 0 27
+	FrameIndex PK04 O 0 29
+	FrameIndex PK04 P 0 31
+	FrameIndex PK04 Q 0 33
+	FrameIndex PK04 R 0 35
+	FrameIndex PK04 S 0 37
+	FrameIndex PK04 T 0 39
+	FrameIndex PK04 U 0 41
+	FrameIndex PK04 V 0 43
+	FrameIndex PK04 W 0 45
+	
+	Model 0 "blackdemon_atak2.md3"
+	FrameIndex PK05 A 0 1
+	FrameIndex PK05 B 0 3
+	FrameIndex PK05 C 0 5
+	FrameIndex PK05 D 0 7
+	FrameIndex PK05 E 0 9
+	FrameIndex PK05 F 0 11
+	FrameIndex PK05 G 0 13
+	FrameIndex PK05 H 0 15
+	FrameIndex PK05 I 0 17
+	FrameIndex PK05 J 0 19
+	FrameIndex PK05 K 0 21
+	FrameIndex PK05 L 0 23
+	FrameIndex PK05 M 0 25
+	FrameIndex PK05 N 0 27
+	FrameIndex PK05 O 0 29
+	FrameIndex PK05 P 0 31
+	FrameIndex PK05 Q 0 33
+	FrameIndex PK05 R 0 35
+	FrameIndex PK05 S 0 37
+	FrameIndex PK05 T 0 39
+	FrameIndex PK05 U 0 41
+	FrameIndex PK05 V 0 43
+	FrameIndex PK05 W 0 45
+	
+	Model 0 "blackdemon_angry.md3"
+	FrameIndex PK06 A 0 1
+	FrameIndex PK06 B 0 3
+	FrameIndex PK06 C 0 5
+	FrameIndex PK06 D 0 7
+	FrameIndex PK06 E 0 9
+	FrameIndex PK06 F 0 11
+	FrameIndex PK06 G 0 13
+	FrameIndex PK06 H 0 15
+	FrameIndex PK06 I 0 17
+	FrameIndex PK06 J 0 19
+	FrameIndex PK06 K 0 21
+	FrameIndex PK06 L 0 23
+	FrameIndex PK06 M 0 25
+	FrameIndex PK06 N 0 27
+	FrameIndex PK06 O 0 29
+	FrameIndex PK06 P 0 31
+	FrameIndex PK06 Q 0 33
+	FrameIndex PK06 R 0 35
+	FrameIndex PK06 S 0 37
+	FrameIndex PK06 T 0 39
+	FrameIndex PK06 U 0 41
+	FrameIndex PK06 V 0 43
+	FrameIndex PK06 W 0 45
+	FrameIndex PK06 X 0 47
+	FrameIndex PK06 Y 0 49
+	FrameIndex PK06 Z 0 51
+	FrameIndex PK07 A 0 53
+	FrameIndex PK07 B 0 55
+	FrameIndex PK07 C 0 57
+	FrameIndex PK07 D 0 59
+	FrameIndex PK07 E 0 61
+	
+	Model 0 "blackdemon_rot90L.md3"
+	FrameIndex PK08 A 0 1
+	FrameIndex PK08 B 0 3
+	FrameIndex PK08 C 0 5
+	FrameIndex PK08 D 0 7
+	FrameIndex PK08 E 0 9
+	FrameIndex PK08 F 0 11
+	FrameIndex PK08 G 0 13
+	FrameIndex PK08 H 0 15
+	FrameIndex PK08 I 0 17
+	FrameIndex PK08 J 0 19
+	FrameIndex PK08 K 0 21
+	FrameIndex PK08 L 0 23
+	FrameIndex PK08 M 0 25
+	FrameIndex PK08 N 0 27
+	FrameIndex PK08 O 0 29
+	FrameIndex PK08 P 0 31
+	FrameIndex PK08 Q 0 33
+	FrameIndex PK08 R 0 35
+	FrameIndex PK08 S 0 37
+	FrameIndex PK08 T 0 39
+	FrameIndex PK08 U 0 41
+	FrameIndex PK08 V 0 43
+	FrameIndex PK08 W 0 45
+	FrameIndex PK08 X 0 47
+	FrameIndex PK08 Y 0 49
+	FrameIndex PK08 Z 0 51
+	FrameIndex PK09 A 0 53
+	FrameIndex PK09 B 0 55
+	FrameIndex PK09 C 0 57
+	FrameIndex PK09 D 0 59
+	
+	Model 0 "blackdemon_rot90R.md3"
+	FrameIndex PK10 A 0 1
+	FrameIndex PK10 B 0 3
+	FrameIndex PK10 C 0 5
+	FrameIndex PK10 D 0 7
+	FrameIndex PK10 E 0 9
+	FrameIndex PK10 F 0 11
+	FrameIndex PK10 G 0 13
+	FrameIndex PK10 H 0 15
+	FrameIndex PK10 I 0 17
+	FrameIndex PK10 J 0 19
+	FrameIndex PK10 K 0 21
+	FrameIndex PK10 L 0 23
+	FrameIndex PK10 M 0 25
+	FrameIndex PK10 N 0 27
+	FrameIndex PK10 O 0 29
+	FrameIndex PK10 P 0 31
+	FrameIndex PK10 Q 0 33
+	FrameIndex PK10 R 0 35
+	FrameIndex PK10 S 0 37
+	FrameIndex PK10 T 0 39
+	FrameIndex PK10 U 0 41
+	FrameIndex PK10 V 0 43
+	FrameIndex PK10 W 0 45
+	FrameIndex PK10 X 0 47
+	FrameIndex PK10 Y 0 49
+	FrameIndex PK10 Z 0 51
+	FrameIndex PK11 A 0 53
+	FrameIndex PK11 B 0 55
+	FrameIndex PK11 C 0 57
+	
+	Model 0 "blackdemon_spell.md3"
+	FrameIndex PK12 A 0 1
+	FrameIndex PK12 B 0 3
+	FrameIndex PK12 C 0 5
+	FrameIndex PK12 D 0 7
+	FrameIndex PK12 E 0 9
+	FrameIndex PK12 F 0 11
+	FrameIndex PK12 G 0 13
+	FrameIndex PK12 H 0 15
+	FrameIndex PK12 I 0 17
+	FrameIndex PK12 J 0 19
+	FrameIndex PK12 K 0 21
+	FrameIndex PK12 L 0 23
+	FrameIndex PK12 M 0 25
+	FrameIndex PK12 N 0 27
+	FrameIndex PK12 O 0 29
+	FrameIndex PK12 P 0 31
+	FrameIndex PK12 Q 0 33
+	FrameIndex PK12 R 0 35
+	FrameIndex PK12 S 0 37
+	FrameIndex PK12 T 0 39
+	FrameIndex PK12 U 0 41
+	FrameIndex PK12 V 0 43
+	FrameIndex PK12 W 0 45
+	FrameIndex PK12 X 0 47
+	FrameIndex PK12 Y 0 49
+	FrameIndex PK12 Z 0 51
+	FrameIndex PK13 A 0 53
+	FrameIndex PK13 B 0 55
+	FrameIndex PK13 C 0 57
+	FrameIndex PK13 D 0 59
+	FrameIndex PK13 E 0 61
+	
+	Model 0 "blackdemon_death1.md3"
+	FrameIndex PK14 A 0 1
+	FrameIndex PK14 B 0 3
+	FrameIndex PK14 C 0 5
+	FrameIndex PK14 D 0 7
+	FrameIndex PK14 E 0 9
+	FrameIndex PK14 F 0 11
+	FrameIndex PK14 G 0 13
+	FrameIndex PK14 H 0 15
+	FrameIndex PK14 I 0 17
+	FrameIndex PK14 J 0 19
+	FrameIndex PK14 K 0 21
+	FrameIndex PK14 L 0 23
+	FrameIndex PK14 M 0 25
+	FrameIndex PK14 N 0 27
+	FrameIndex PK14 O 0 29
+	FrameIndex PK14 P 0 31
+	FrameIndex PK14 Q 0 33
+	FrameIndex PK14 R 0 35
+	FrameIndex PK14 S 0 37
+	FrameIndex PK14 T 0 39
+	FrameIndex PK14 U 0 41
+	FrameIndex PK14 V 0 43
+	FrameIndex PK14 W 0 45
+	FrameIndex PK14 X 0 47
+	FrameIndex PK14 Y 0 49
+	FrameIndex PK14 Z 0 51
+	FrameIndex PK15 A 0 53
+	FrameIndex PK15 B 0 55
+	FrameIndex PK15 C 0 57
+	FrameIndex PK15 D 0 59
+	FrameIndex PK15 E 0 61
+	
+	Model 0 "blackdemon_death2.md3"
+	FrameIndex PK16 A 0 1
+	FrameIndex PK16 B 0 3
+	FrameIndex PK16 C 0 5
+	FrameIndex PK16 D 0 7
+	FrameIndex PK16 E 0 9
+	FrameIndex PK16 F 0 11
+	FrameIndex PK16 G 0 13
+	FrameIndex PK16 H 0 15
+	FrameIndex PK16 I 0 17
+	FrameIndex PK16 J 0 19
+	FrameIndex PK16 K 0 21
+	FrameIndex PK16 L 0 23
+	FrameIndex PK16 M 0 25
+	FrameIndex PK16 N 0 27
+	FrameIndex PK16 O 0 29
+	FrameIndex PK16 P 0 31
+	FrameIndex PK16 Q 0 33
+	FrameIndex PK16 R 0 35
+	FrameIndex PK16 S 0 37
+	FrameIndex PK16 T 0 39
+	FrameIndex PK16 U 0 41
+	FrameIndex PK16 V 0 43
+	FrameIndex PK16 W 0 45
+	FrameIndex PK16 X 0 47
+	FrameIndex PK16 Y 0 49
+	FrameIndex PK16 Z 0 51
+	FrameIndex PK17 A 0 53
+	FrameIndex PK17 B 0 55
+	FrameIndex PK17 C 0 57
+	FrameIndex PK17 D 0 59
+	FrameIndex PK17 E 0 61
+	
+	Model 0 "blackdemon_death3.md3"
+	FrameIndex PK18 A 0 1
+	FrameIndex PK18 B 0 3
+	FrameIndex PK18 C 0 5
+	FrameIndex PK18 D 0 7
+	FrameIndex PK18 E 0 9
+	FrameIndex PK18 F 0 11
+	FrameIndex PK18 G 0 13
+	FrameIndex PK18 H 0 15
+	FrameIndex PK18 I 0 17
+	FrameIndex PK18 J 0 19
+	FrameIndex PK18 K 0 21
+	FrameIndex PK18 L 0 23
+	FrameIndex PK18 M 0 25
+	FrameIndex PK18 N 0 27
+	FrameIndex PK18 O 0 29
+	FrameIndex PK18 P 0 31
+	FrameIndex PK18 Q 0 33
+	FrameIndex PK18 R 0 35
+	FrameIndex PK18 S 0 37
+	FrameIndex PK18 T 0 39
+	FrameIndex PK18 U 0 41
+	FrameIndex PK18 V 0 43
+	FrameIndex PK18 W 0 45
+	FrameIndex PK18 X 0 47
+	FrameIndex PK18 Y 0 49
+	FrameIndex PK18 Z 0 51
+	FrameIndex PK19 A 0 53
+	FrameIndex PK19 B 0 55
+	FrameIndex PK19 C 0 57
+	FrameIndex PK19 D 0 59
+	FrameIndex PK19 E 0 61
+}
+
+Model Painkiller_BlackDemon_Gib_Torso
+{
+	Path "Models/Painkiller/BlackDemon"   
+	Model 0 "BlackDemon_gib_torso.md3"
+	Scale 0.75 0.75 0.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_BlackDemon_Gib_Head
+{
+	Path "Models/Painkiller/BlackDemon"   
+	Model 0 "BlackDemon_gib_head.md3"
+	Scale 0.75 0.75 0.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_BlackDemon_Gib_LegLeft
+{
+	Path "Models/Painkiller/BlackDemon"   
+	Model 0 "BlackDemon_gib_legleft.md3"
+	Scale 0.75 0.75 0.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_BlackDemon_Gib_LegRight
+{
+	Path "Models/Painkiller/BlackDemon"   
+	Model 0 "BlackDemon_gib_legright.md3"
+	Scale 0.75 0.75 0.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_BlackDemon_Gib_ArmRight
+{
+	Path "Models/Painkiller/BlackDemon"   
+	Model 0 "BlackDemon_gib_armright.md3"
+	Scale 0.75 0.75 0.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}
+
+Model Painkiller_BlackDemon_Gib_ArmLeft
+{
+	Path "Models/Painkiller/BlackDemon"   
+	Model 0 "BlackDemon_gib_armleft.md3"
+	Scale 0.75 0.75 0.75
+	INHERITACTORPITCH
+	
+	FrameIndex PK00 A 0 0
+}

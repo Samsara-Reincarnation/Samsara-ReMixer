@@ -1,0 +1,34 @@
+Actor RTCW_Humanoid_OfficerSS_BodyEscape1 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_BodyEscape2 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_BodyVillage : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_BodyForest : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_BodySSVillage : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_BodyChateau1 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_BodyChateau2 : RTCW_InfantrySSBody {}
+
+Actor RTCW_Humanoid_OfficerSS_Blink : RTCW_Humanoid_Blink {}
+Actor RTCW_Humanoid_OfficerSS_BlinkHimmler : RTCW_Humanoid_Blink {}
+Actor RTCW_Humanoid_OfficerSS_Head1 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_Head2 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_Head3 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_Head4 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_Head5 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_Head6 : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_HeadHimmler : RTCW_InfantrySSBody {}
+
+Actor RTCW_Humanoid_OfficerSS_Glasses : RTCW_InfantrySSHat { Renderstyle Translucent }
+Actor RTCW_Humanoid_OfficerSS_GlassesHimmler : RTCW_InfantrySSHat { Renderstyle Translucent }
+Actor RTCW_Humanoid_OfficerSS_Cap1 : RTCW_InfantrySSHat {}
+Actor RTCW_Humanoid_OfficerSS_Cap3 : RTCW_InfantrySSHat {}
+Actor RTCW_Humanoid_OfficerSS_Cap4 : RTCW_InfantrySSHat {}
+Actor RTCW_Humanoid_OfficerSS_Cap5 : RTCW_InfantrySSHat {}
+
+Actor RTCW_Humanoid_OfficerSS_BeltL : RTCW_InfantrySSBody {}
+Actor RTCW_Humanoid_OfficerSS_BeltR : RTCW_InfantrySSBody {}
+
+Actor RTCW_Humanoid_OfficerSS_Glasses_Drop : RTCW_EnemyScrap { Renderstyle Translucent }
+Actor RTCW_Humanoid_OfficerSS_GlassesHimmler_Drop : RTCW_EnemyScrap { Renderstyle Translucent }
+Actor RTCW_Humanoid_OfficerSS_Cap1_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_OfficerSS_Cap3_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_OfficerSS_Cap4_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_OfficerSS_Cap5_Drop : RTCW_EnemyScrap {}

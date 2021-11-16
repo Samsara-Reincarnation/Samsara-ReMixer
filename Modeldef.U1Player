@@ -1,0 +1,73 @@
+Model UnrealPlayer2
+{
+	Model 0 "Models/Unreal/Prisoner849/Female1.md3"
+	Scale -1.0 1.0 1.2
+	Offset 0 0 10
+//	RollOffset 90
+//	PitchOffset -90
+	AngleOffset 90		
+
+	FrameIndex UN00 A 0 20 //breath
+	FrameIndex UN00 B 0 21
+	FrameIndex UN00 C 0 22
+	FrameIndex UN00 D 0 23
+	FrameIndex UN00 E 0 24
+	FrameIndex UN00 F 0 25
+	FrameIndex UN00 G 0 26
+	
+	FrameIndex UN01 A 0 228 //run one handed
+	FrameIndex UN01 B 0 229
+	FrameIndex UN01 C 0 230
+	FrameIndex UN01 D 0 231
+	FrameIndex UN01 E 0 232
+	FrameIndex UN01 F 0 233
+	FrameIndex UN01 G 0 234
+	FrameIndex UN01 H 0 235
+	FrameIndex UN01 I 0 236
+	FrameIndex UN01 J 0 237
+	FrameIndex UN01 K 0 238
+	FrameIndex UN01 L 0 239
+	FrameIndex UN01 M 0 240
+	FrameIndex UN01 N 0 241
+	FrameIndex UN01 O 0 242
+	FrameIndex UN01 P 0 243
+	FrameIndex UN01 Q 0 244
+	FrameIndex UN01 R 0 245
+	FrameIndex UN01 S 0 246
+	
+	FrameIndex UN02 A 0 273 //Fire one handed
+	FrameIndex UN02 B 0 274
+	FrameIndex UN02 C 0 275 
+	FrameIndex UN02 D 0 276 
+	FrameIndex UN02 E 0 277
+	FrameIndex UN02 F 0 278
+	
+	//pain animations. all one keyframe long, keep them here
+	FrameIndex UN03 A 0 180 // left side
+	FrameIndex UN03 B 0 0 // gut
+	FrameIndex UN03 C 0 206 // right side
+	FrameIndex UN03 D 0 175 // head
+	
+	FrameIndex UN04 A 0 439 // dead1
+	FrameIndex UN04 B 0 441
+	FrameIndex UN04 C 0 443
+	FrameIndex UN04 D 0 445
+	FrameIndex UN04 E 0 447
+	FrameIndex UN04 F 0 449
+	FrameIndex UN04 G 0 451
+	FrameIndex UN04 H 0 453
+	FrameIndex UN04 I 0 455
+	FrameIndex UN04 J 0 457
+	FrameIndex UN04 K 0 459
+	FrameIndex UN04 L 0 461
+	FrameIndex UN04 M 0 463
+	FrameIndex UN04 N 0 465
+	FrameIndex UN04 O 0 467
+	FrameIndex UN04 P 0 469
+	FrameIndex UN04 Q 0 471
+	FrameIndex UN04 R 0 473
+	FrameIndex UN04 S 0 475
+	FrameIndex UN04 T 0 477
+	FrameIndex UN04 U 0 479
+	FrameIndex UN04 V 0 481
+}	

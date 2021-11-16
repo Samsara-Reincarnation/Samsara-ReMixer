@@ -1,0 +1,137 @@
+Actor RTCW_Zombie_Body1 : RTCWPart
+{
+	States
+	{
+		Spawn:
+			RW03 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW03 A 0 A_SetScale(0.001)
+			RW03 A 1
+			RW03 A 0 ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW03 A 0 A_SetScale(1.0)
+		SpawnLoop:
+			RW03 A 1
+			Loop
+		AlertIdle:
+			"####" "#" 4
+		AlertIdleLoop:
+			RW03 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW04 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW05 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW06 ABCDEFGHIJKLMNOPQR 2
+			Loop
+		AlertToCombat:
+			"####" "#" 4
+		AlertToCombatLoop:
+			RW00 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			Loop
+		CombatIdle:
+			"####" "#" 4
+		CombatIdleLoop:
+			RW11 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW12 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW13 ABCDEFGHIJKLMNOPQRST 2
+			Loop
+		Walk1:
+			"####" "#" 4
+		Walk1Loop:
+			RW1F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW20 ABCDEFGHIJKLMNO 2
+			Loop
+		Run:
+			"####" "#" 4
+		RunLoop:
+			RW1E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 2
+			Loop
+		Attack1:
+			"####" "#" 4
+		Attack1Loop:
+			RW07 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 2
+			Stop
+		Attack2:
+			"####" "#" 4
+		Attack2Loop:
+			RW08 ABCDEFGHIJKLMNOPQRSTUV 2
+			Stop
+		Attack3:
+			"####" "#" 4
+		Attack3Loop:
+			RW09 ABCDEFGHIJKLMNOPQRSTU 2
+			Stop
+		Attack4:
+			"####" "#" 4
+		Attack4Loop:
+			RW0A "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			Stop
+		Attack5:
+			"####" "#" 4
+		Attack5Loop:
+			RW0B "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW0C ABCD 2
+			Stop
+		Pain1:
+			"####" "#" 4
+		Pain1Loop:
+			RW1A ABCDEFGHIJKLMNOPQR 2
+			Loop
+		Pain2:
+			"####" "#" 4
+		Pain2Loop:
+			RW1B ABCDEFGHIJKLMNOPQRSTUVWX 2
+			Loop
+		Pain3:
+			"####" "#" 4
+		Pain3Loop:
+			RW1C ABCDEFGHIJKLMNOP 2
+			Loop
+		Pain4:
+			"####" "#" 4
+		Pain4Loop:
+			RW1D ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			Loop
+		Raise:
+			"####" "#" 4
+		RaiseLoop:
+			RW27 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW28 ABCDEFGHIJKLMNOPQRSTUV 2
+			Stop
+		Death:
+			"####" "#" 4
+		DeathLoop:
+			RW17 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW18 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW19 ABCDEFG 2
+			RW19 H -1
+			Stop
+	}
+}
+
+Actor RTCW_Zombie_Body2 : RTCW_Zombie_Body1 {}
+Actor RTCW_Zombie_Body3 : RTCW_Zombie_Body1 {}
+Actor RTCW_Zombie_Body4 : RTCW_Zombie_Body1 {}
+Actor RTCW_Zombie_Body5 : RTCW_Zombie_Body1 {}
+
+Actor RTCW_Zombie_Head1 : RTCW_Zombie_Body1 {}
+Actor RTCW_Zombie_Head2 : RTCW_Zombie_Body1 {}
+Actor RTCW_Zombie_Head3 : RTCW_Zombie_Body1 {}
+Actor RTCW_Zombie_Head4 : RTCW_Zombie_Body1 {}
+Actor RTCW_Zombie_Head5 : RTCW_Zombie_Body1 {}
+
+Actor RTCW_Zombie_Hair : RTCW_Zombie_Body1 { Renderstyle Translucent }
+Actor RTCW_Zombie_Helmet : RTCW_Zombie_Body1 
+{
+	States
+	{
+		Spawn:
+			RW03 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW03 A 0 A_GiveInventory("RTCW_IsHat",1)
+			RW03 A 0 A_SetScale(0.001)
+			RW03 A 1
+			RW03 A 0 ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW03 A 0 A_SetScale(1.0)
+		SpawnLoop:
+			RW03 A 1
+			Loop
+	}
+}
+
+Actor RTCW_Zombie_Helmet_Drop : RTCW_EnemyScrap {}

@@ -1,0 +1,159 @@
+Actor RTCWBroadCast_Loper_Death1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,1)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_Death2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,2)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_Death3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,3)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_LegsBack : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,4)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_LegsJump : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,5)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_LegsLand : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,6)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_LegsRun : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,7)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_LegsTurn : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,8)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_LegsWalk : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,9)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_TorsoAttack1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,10)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_TorsoAttack2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,11)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_TorsoAttack3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,12)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_TorsoAttack4 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,13)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_TorsoAttack5 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,14)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_TorsoIdle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,15)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Loper_TorsoReload : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",14,16)
+			stop
+	}
+}

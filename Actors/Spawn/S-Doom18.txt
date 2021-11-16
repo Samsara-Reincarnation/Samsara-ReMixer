@@ -186,6 +186,9 @@ ACTOR WolfensteinSSSpawnerCoop replaces WolfensteinSS
 		SetCatacomb3:	
 			TNT1 A 1 A_SpawnItemEx("Hovertank3D_Hovertank", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL,0,tid)
 			Goto DeathForInvasion
+		SetRTCW: //placeholder before kingpin punk
+			TNT1 A 1 A_SpawnItemEx("RTCW_InfantrySS", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("BerzerkRobotBlue",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion

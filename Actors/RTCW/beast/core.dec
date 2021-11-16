@@ -1,0 +1,11 @@
+Actor RTCW_Olaric
+{
+	Monster
+	Tag "Olaric"
+	States
+	{
+		Spawn:
+			RW00 A 1
+			Loop
+	}
+}

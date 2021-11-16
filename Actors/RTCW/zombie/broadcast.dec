@@ -1,0 +1,259 @@
+Actor RTCWBroadCast_Zombie_AlertToCombat : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,1)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_AlertTurnL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,2)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_AlertTurnR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,3)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_AlertIdle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,4)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Attack1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,5)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Attack2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,6)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Attack3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,7)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Attack4 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,8)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Attack5 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,9)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Attack6 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,10)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Back : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,11)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_CombatTurnL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,12)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_CombatTurnR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,13)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_CombatIdle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,14)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Crouch : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,15)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_CrouchBack : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,16)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Death : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,17)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Pain1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,18)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Pain2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,19)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Pain3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,20)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Pain4 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,21)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Run : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,22)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Walk1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,23)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Walk2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,24)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_WalkDamaged : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,25)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Zombie_Revive : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",8,26)
+			stop
+	}
+}

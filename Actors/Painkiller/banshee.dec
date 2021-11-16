@@ -1,0 +1,122 @@
+ACTOR Painkiller_Banshee : Painkiller_AIBrain
+{
+	Health 80
+	Radius 20
+	Height 56
+	Speed 2
+	Mass 220
+	PainChance 200
+	SeeSound ""
+	PainSound "Painkiller/Banshee/Hit"
+	DeathSound "Painkiller/Banshee/Death"
+	Obituary "%o had their soul claimed by a banshee."
+	States
+	{
+		Spawn:
+			PK00 ABCDEFGHIJKLMNOPQR 3 A_Look
+			Loop
+		See:
+			PK01 AABBCCDDEEFFGGHHIIJJKKLLMMNNOOPP 2 A_Chase
+			Loop
+		Run:
+			PK02 AABBCCDDEEFFGGHHIIJJKKLLMMNN 2 A_Chase
+			Loop
+		Melee:
+			PK03 A 0 A_FaceTarget
+			PK03 A 0 A_Jump(128,"Melee2")
+			PK03 ABCDEFGHIJKLMNOPQRSTUV 3 
+			Goto See
+		Melee2:
+			PK04 ABCDEFGHIJKLMNOPQRS 3 
+			Goto See
+		Pain:
+			PK05 A 0 A_Pain
+			PK05 A 0 A_Jump(128,"Pain2")
+			PK05 ABCDEFG 3
+			Goto See
+		Pain2:
+			PK06 ABCDEFG 3
+			Goto See
+		Death:
+			PK07 A 0 A_Scream
+			PK07 A 0 A_NoBlocking
+			PK07 A 0 A_Jump(256,"Death1","Death2","Death3")
+		Death1:
+			PK07 ABCDEFGHIJKLMNOP 3
+			PK07 P -1
+			Stop
+		Death2:
+			PK08 ABCDEFGHIJKLMNOP 3
+			PK08 P -1
+			Stop
+		Death3:
+			PK09 ABCDEFGHIJKLMNOP 3
+			PK09 P -1
+			Stop
+		Pain.PainkillerIce:
+			"####" "#" 0 A_JumpIf(CallACS("Painkiller_FlagStorage",1,1)==1,1)
+			"####" "#" 0 A_JumpIf(CallACS("Painkiller_FlagStorage",1,2)==1,1)
+			"####" "#" 0 A_JumpIf(CallACS("Painkiller_FlagStorage",1,3)==1,1)
+			"####" "#" 0 A_ChangeFlag("NOPAIN",true)
+			"####" "#" 0 A_ChangeFlag("NOGRAVITY",false)
+			"####" "#" 0 A_ChangeFlag("NOBLOOD",true)
+			"####" "#" 0 A_StopSound(CHAN_BODY)
+			"####" "#" 0 A_PlaySound("Painkiller/Freezer/Freeze",CHAN_BODY)
+			"####" "#" 0 ACS_NamedExecuteAlways("Painkiller_Freeze",0,1)
+		PainkillerIceLoop:
+			"####" "#" 2
+			Loop
+		PainkillerIceThaw:
+			"####" "#" 0 A_PlaySound("Painkiller/Freezer/Unfreeze",CHAN_BODY)
+			"####" "#" 20
+			"####" "#" 0 A_ChangeFlag("NOPAIN",CallACS("Painkiller_FlagStorage",2,1))
+			"####" "#" 0 A_ChangeFlag("NOGRAVITY",CallACS("Painkiller_FlagStorage",2,2))
+			"####" "#" 0 A_ChangeFlag("NOBLOOD",CallACS("Painkiller_FlagStorage",2,3))
+			Goto See
+		Death.Painkiller:
+		Death.PainkillerBullet:
+		Death.PainkillerElectro:
+		Death.PainkillerExplosive:
+		Death.PainkillerShuriken:
+		Death.PainkillerFire:
+		Death.PainkillerDemon:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			Goto Death
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+			PK03 A 0 A_Jump(256,"StakeDeath1","StakeDeath2","StakeDeath3")
+		StakeDeath1:
+			PK07 B 2
+			Loop
+		StakeDeath2:
+			PK08 B 2
+			Loop
+		StakeDeath3:
+			PK09 B 2
+			Loop
+		XDeath:
+		PainkillerGib:
+			TNT1 A 0 A_PlaySound("Painkiller/Gib",CHAN_BODY)
+			TNT1 AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("Painkiller_Blood_Spray",0,0,height*2,frandom(-4,4),frandom(-4,4),velz+frandom(4,8),0,SXF_NOCHECKPOSITION)
+			TNT1 AAAAAAAA 0 A_SpawnItemEx("Painkiller_Blood",random(-8,8),random(-8,8),random(0,44),0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_Banshee_Gib_ArmRight",2,28,44,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_Banshee_Gib_ArmLeft",2,-28,44,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_Banshee_Gib_Torso",0,0,40,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_Banshee_Gib_Head",0,0,51,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_Banshee_Gib_Legs",-2,0,10,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 5 A_NoBlocking
+			Stop
+	}
+}
+
+Actor Painkiller_Banshee_Gib_ArmLeft : Painkiller_PotatoHeadGib {}
+Actor Painkiller_Banshee_Gib_ArmRight : Painkiller_PotatoHeadGib {}
+Actor Painkiller_Banshee_Gib_Head : Painkiller_PotatoHeadGib {}
+Actor Painkiller_Banshee_Gib_Legs : Painkiller_PotatoHeadGib {}
+Actor Painkiller_Banshee_Gib_Torso : Painkiller_PotatoHeadGib {}

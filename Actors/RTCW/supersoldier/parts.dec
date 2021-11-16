@@ -1,0 +1,181 @@
+Actor RTCW_SuperSoldier_Body : RTCWPart
+{
+	States
+	{
+		Spawn:
+			RW0E A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW0E A 0 A_SetScale(0.001)
+			RW0E A 1
+			RW0E A 0 ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW0E A 0 A_SetScale(1.0)
+		SpawnLoop:
+			RW0E A 1
+			Loop
+		AlertIdle:
+			"####" "#" 8
+		AlertIdleLoop:
+			RW0E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW0F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW10 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW11 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW12 ABCDEFGHIJKLMNO 2
+			Loop
+		AlertWalk:
+			"####" "#" 8
+		AlertWalkLoop:
+			RW13 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW14 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW15 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			Loop
+		AlertBack:
+			"####" "#" 8
+		AlertBackLoop:
+			RW16 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW17 ABCDEFGHIJKLMNOP 2
+			Loop
+		CombatIdle1:
+			"####" "#" 8
+		CombatIdle1Loop:
+			RW20 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW21 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 2
+			Loop
+		CombatIdle2:
+			"####" "#" 8
+		CombatIdle2Loop:
+			RW23 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW24 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW25 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW26 ABCD 2
+			Loop
+		CombatIdle3:
+			"####" "#" 8
+		CombatIdle3Loop:
+			RW28 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW29 ABCDEFGHIJKLMNO 2
+			Loop
+		CombatWalk1:
+			"####" "#" 8
+		CombatWalk1Loop:
+			RW18 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW19 ABCDEFGHIJKLM 2
+			Loop
+		CombatWalk2:
+			"####" "#" 8
+		CombatWalk2Loop:
+			RW1A "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW1B ABCDEFGHIJKLMNOPQRSTU 2
+			Loop
+		CombatWalk3:
+			"####" "#" 8
+		CombatWalk3Loop:
+			RW1C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW1D "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\" 2
+			Loop
+		StrafeL:
+			RW1E ABCDEFGHIJKLMNOPQ 2
+			Loop
+		StrafeR:
+			RW1F ABCDEFGHIJKLMNOPQ 2
+			Loop
+		PainChest:
+			RW07 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			Loop
+		PainShoulderL:
+			RW08 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW09 ABCD 2
+			Loop
+		PainShoulderR:
+			RW0A ABCDEFGHIJKLMNOPQRS 2
+			Loop
+		PainDaze:
+			RW0B "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW0C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW0D ABCDEFGHIJKLMNOPQRSTUV 2
+			Loop
+		Death1:
+			RW00 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 1
+			RW01 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 1
+			RW02 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 1
+			RW03 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 1
+			RW04 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 1
+			RW05 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 1
+			RW06 ABCDEFGHIJKLMNOP 1
+			RW06 Q -1
+			Stop
+	}
+}
+
+Actor RTCW_SuperSoldier_Gunflash : RTCW_SuperSoldier_Body 
+{
+	Alpha 0.0
+	Renderstyle Translucent
+	+BRIGHT
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_GiveInventory("RTCW_SuperSoldier_IsFlash",1)
+			Goto Super::Spawn
+	}
+}
+Actor RTCW_SuperSoldier_Armor_Chest : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_KneeLeft : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_KneeRight : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamCalfLeft1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamCalfRight1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamChest1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamFootLeft1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamFootRight1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamForearmLeft1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamForearmRight1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamShoulderLeft1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamShoulderRight1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamThighLeft1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamThighRight1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamUpperArmLeft1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamUpperArmRight1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamWaist1 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamCalfLeft2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamCalfRight2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamChest2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamFootLeft2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamFootRight2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamForearmLeft2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamForearmRight2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamShoulderLeft2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamShoulderRight2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamThighLeft2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamThighRight2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamUpperArmLeft2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamUpperArmRight2 : RTCW_SuperSoldier_Body {}
+Actor RTCW_SuperSoldier_Armor_DamWaist2 : RTCW_SuperSoldier_Body {}
+
+Actor RTCW_SuperSoldier_Scrap_KneeLeft : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_KneeRight : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_CalfLeft1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_CalfRight1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_Chest1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_FootLeft1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_FootRight1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ForearmLeft1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ForearmRight1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ShoulderLeft1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ShoulderRight1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ThighLeft1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ThighRight1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_UpperArmLeft1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_UpperArmRight1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_Waist1 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_CalfLeft2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_CalfRight2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_Chest2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_FootLeft2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_FootRight2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ForearmLeft2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ForearmRight2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ShoulderLeft2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ShoulderRight2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ThighLeft2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_ThighRight2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_UpperArmLeft2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_UpperArmRight2 : RTCW_EnemyScrap {}
+Actor RTCW_SuperSoldier_Scrap_Waist2 : RTCW_EnemyScrap {}

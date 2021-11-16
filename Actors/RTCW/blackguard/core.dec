@@ -1,0 +1,81 @@
+Actor RTCW_BlackGuardBrain : RTCW_Humanoid
+{
+	Health 200
+	Height 56
+	Painchance 48
+	Tag "Black Guard"
+}
+
+Actor RTCW_IsBlackGuard : Inventory { +INVENTORY.UNDROPPABLE Inventory.MaxAmount 1 Inventory.InterHubAmount 0 }
+
+Actor RTCW_BlackGuard_Melee : RTCW_KickProjectile 
+{ 
+	Speed 24 
+	Height 32 
+	Radius 16 
+	Damage (5) 
+	States
+	{
+		XDeath:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_Decorate",39)
+			Goto Super::XDeath
+	}
+}
+
+Actor RTCW_EnemyFG42Tracer : RTCW_Tracer
+{ 
+	Damage (5)
+	States
+	{
+		Death:
+		Crash:
+			TNT1 A 0 A_Jump(248,6)
+			TNT1 A 0 A_PlaySound("RTCW/Bullet/Ricochet",CHAN_BODY)
+			TNT1 AAAA 0 A_SpawnItemEx("RTCW_BulletRicochet",0,0,0,frandom(-1.0,1.0),frandom(-1.0,1.0),frandom(-0.5,0.5))
+			TNT1 AAAAAAAA 0 A_SpawnItemEx("RTCW_BulletParticle",0,0,0,frandom(-0.5,0.5),frandom(-0.5,0.5),frandom(0.1,0.5))
+			TNT1 A 0 A_SpawnItemEx("RTCW_SmokePuff",0,0,0,frandom(-0.25,0.25),frandom(-0.25,0.25),0.5)
+			TNT1 A 1
+			Stop
+		XDeath:
+			TNT1 A 0 A_PlaySound("RTCW/BulletHitFlesh",CHAN_BODY,0.5)
+			TNT1 A 0 A_FaceTarget(0,0)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_BloodGenerator_Offsets")
+			TNT1 A 0 A_GiveInventory("RTCW_BloodGenerator",1,AAPTR_TRACER)
+			TNT1 A 1
+			Stop
+	}
+}
+
+Actor RTCW_BlackGuardFG42 : CustomInventory
+{
+	-COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage ""
+	Inventory.PickupSound ""
+	States
+	{
+		Pickup:
+			TNT1 A 0 A_PlaySound("RTCW/FG42/Fire",CHAN_WEAPON)
+			TNT1 A 0 A_CustomMissile("RTCW_Casing",48,4,-random(85,105))
+			TNT1 A 0 A_TakeInventory("RTCW_EnemyFG42Mag",1)
+			Goto FireNormal
+		FireNormal:
+			TNT1 A 0 A_CustomMissile("RTCW_EnemyFG42Tracer",36,4,frandom(-8.0,8.0),0,frandom(-8.0,8.0))
+			Stop
+	}
+}
+
+Actor RTCW_BlackGuard : RTCW_BlackGuardBrain
+{
+	States
+	{
+		Spawn:
+			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",6,random(0,5))
+			RW74 A 0 ACS_NamedExecuteWithResult("RTCW_Infantry")
+			RW74 A 0 A_GiveInventory("RTCW_EnemyMP40Mag",32)
+			RW74 A 0 A_GiveInventory("RTCW_EnemyMauserMag",10)
+			RW74 A 0 A_GiveInventory("RTCW_EnemyFG42Mag",20)
+			RW74 A 2
+			Goto Relax
+	}
+}

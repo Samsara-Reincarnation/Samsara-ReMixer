@@ -1,0 +1,103 @@
+Actor RTCW_Humanoid_Mechanic_BodyDefault : RTCW_InfantrySSBody 
+{
+	States
+	{
+		AlertIdle_1H_TurnL:
+			"####" "#" 4
+		AlertIdle_1H_TurnLLoop:
+			RW0B ABCDEFGH 3
+			Loop
+		AlertIdle_1H_TurnR:
+			"####" "#" 4
+		AlertIdle_1H_TurnRLoop:
+			RW0C ABCDEFGH 3
+			Loop
+		Frightened:
+			"####" "#" 4
+		FrightenedLoop:
+			RW8E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW8F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW90 ABCDEFGHIJKL 3
+			Loop	
+	}
+}
+
+Actor RTCW_Humanoid_Mechanic_BodyRocket : RTCW_Humanoid_Mechanic_BodyDefault {}
+Actor RTCW_Humanoid_Mechanic_BodySWF : RTCW_Humanoid_Mechanic_BodyDefault {}
+Actor RTCW_Humanoid_Mechanic_BodyRadio : RTCW_Humanoid_Mechanic_BodyDefault {}
+
+Actor RTCW_Humanoid_Mechanic_Head1 : RTCW_Humanoid_Mechanic_BodyDefault {}
+Actor RTCW_Humanoid_Mechanic_Head2 : RTCW_Humanoid_Mechanic_BodyDefault {}
+Actor RTCW_Humanoid_Mechanic_Head3 : RTCW_Humanoid_Mechanic_BodyDefault {}
+
+Actor RTCW_Humanoid_Mechanic_Blink1 : RTCW_Humanoid_Blink
+{
+	States
+	{
+		AlertIdle_1H_TurnL:
+			"####" "#" 4
+		AlertIdle_1H_TurnLLoop:
+			RW0B ABCDEFGH 3
+			Loop
+		AlertIdle_1H_TurnR:
+			"####" "#" 4
+		AlertIdle_1H_TurnRLoop:
+			RW0C ABCDEFGH 3
+			Loop
+		Frightened:
+			"####" "#" 4
+		FrightenedLoop:
+			RW8E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW8F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW90 ABCDEFGHIJKL 3
+			Loop	
+	}
+}
+Actor RTCW_Humanoid_Mechanic_Blink3 : RTCW_Humanoid_Mechanic_Blink1 {}
+
+Actor RTCW_Humanoid_Mechanic_Cap : RTCW_Humanoid_Mechanic_BodyDefault
+{
+	States
+	{
+		Spawn:
+			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW74 A 0 A_GiveInventory("RTCW_IsHat",1)
+			RW74 A 0 A_SetScale(0.001)
+			RW74 A 1
+			RW74 A 0 ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW74 A 0 A_SetScale(1.0)
+		SpawnLoop:
+			RW74 A 1
+			Loop
+	}
+}
+Actor RTCW_Humanoid_Mechanic_Headset : RTCW_Humanoid_Mechanic_Cap {}
+
+Actor RTCW_Humanoid_Mechanic_Luger : RTCW_MaleSideArm 
+{
+	States
+	{
+		AlertIdle_1H_TurnL:
+			"####" "#" 4
+		AlertIdle_1H_TurnLLoop:
+			RW0B ABCDEFGH 3
+			Loop
+		AlertIdle_1H_TurnR:
+			"####" "#" 4
+		AlertIdle_1H_TurnRLoop:
+			RW0C ABCDEFGH 3
+			Loop
+		Frightened:
+			"####" "#" 4
+		FrightenedLoop:
+			RW8E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW8F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW90 ABCDEFGHIJKL 3
+			Loop
+	}
+}
+
+Actor RTCW_Humanoid_Mechanic_LugerFlash : RTCW_GunFlash {}
+
+Actor RTCW_Humanoid_Mechanic_Cap_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_Mechanic_HeadSet_Drop : RTCW_EnemyScrap {}

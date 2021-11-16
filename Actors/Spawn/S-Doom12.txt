@@ -165,7 +165,10 @@ ACTOR PainElementalSpawnerCoop replaces PainElemental
 			Goto DeathForInvasion			
 		SetCatacomb2:
 			TNT1 A 1 A_SpawnItemEx("CatacombArmageddon_EvilEye", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
-			Goto DeathForInvasion		
+			Goto DeathForInvasion
+		SetRTCW:
+			TNT1 A 1 A_SpawnItemEx("RTCW_Feuerdrohne", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
+			Goto DeathForInvasion
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("EvilOttoWeak",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion
