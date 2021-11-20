@@ -856,6 +856,9 @@
 #include "actors/Painkiller/zombiewarlord.dec"
 #include "actors/Painkiller/blackdemon.dec"
 
+// Unreal
+#include "actors/Unreal/Brute.udec"
+
 // RTCW
 #include "actors/RTCW/core.dec"
 #include "actors/RTCW/infantryss/core.dec"
