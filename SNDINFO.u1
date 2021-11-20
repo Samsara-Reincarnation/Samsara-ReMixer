@@ -1,0 +1,15 @@
+// Brute
+
+Unreal/Brute/Active1		"Sounds/Unreal/Brute/amb1br.wafv"
+Unreal/Brute/Active2		"Sounds/Unreal/Brute/nearby2br.wav"
+Unreal/Brute/Step1			"Sounds/Unreal/Brute/walk1br.wav"
+Unreal/Brute/Step2			"Sounds/Unreal/Brute/walk2br.wav"
+$Random Unreal/Brute/Step			{  Unreal/Brute/Step1  Unreal/Brute/Step2	 }
+Unreal/Brute/Melee			"Sounds/Unreal/Brute/pwhip1br.wav"
+Unreal/Brute/Hit				"Sounds/Unreal/Brute/pstlhit1br.wav"
+Unreal/Brute/Pain1			"Sounds/Unreal/Brute/injur1br.wav"
+Unreal/Brute/Pain2			"Sounds/Unreal/Brute/injur2br.wav"
+Unreal/Brute/Yell1			"Sounds/Unreal/Brute/yell1br.wav"
+Unreal/Brute/Yell2			"Sounds/Unreal/Brute/yell2br.wav"
+Unreal/Brute/Death1		"Sounds/Unreal/Brute/death1br.wav"
+Unreal/Brute/Death2		"Sounds/Unreal/Brute/death2br.wav"
