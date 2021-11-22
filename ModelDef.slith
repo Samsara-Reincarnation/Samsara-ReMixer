@@ -1,0 +1,377 @@
+Model "Unreal_Slith"
+{
+	Path "Models/Unreal/Slith"
+	Model 0 "Slith.md3"
+	Scale 1.0 1.0 1.0
+	
+	FrameIndex UN00 A 0 0
+	FrameIndex UN00 B 0 1
+	FrameIndex UN00 C 0 2
+	FrameIndex UN00 D 0 3
+	FrameIndex UN00 E 0 4
+	FrameIndex UN00 F 0 5
+	FrameIndex UN00 G 0 6
+	FrameIndex UN00 H 0 7
+	FrameIndex UN00 I 0 8
+	FrameIndex UN00 J 0 9
+	FrameIndex UN00 K 0 10
+	FrameIndex UN00 L 0 11
+	FrameIndex UN00 M 0 12
+	FrameIndex UN00 N 0 13
+	FrameIndex UN00 O 0 14
+	FrameIndex UN00 P 0 15
+	FrameIndex UN00 Q 0 16
+	FrameIndex UN00 R 0 17
+	FrameIndex UN00 S 0 18
+	FrameIndex UN00 T 0 19
+	FrameIndex UN00 U 0 20
+	FrameIndex UN00 V 0 21
+	FrameIndex UN00 W 0 22
+	FrameIndex UN00 X 0 23
+	FrameIndex UN00 Y 0 24
+	FrameIndex UN00 Z 0 25
+	FrameIndex UN00 [ 0 26
+	FrameIndex UN00 \ 0 27
+	FrameIndex UN00 ] 0 28
+	FrameIndex UN01 A 0 29
+	FrameIndex UN01 B 0 30
+	FrameIndex UN01 C 0 31
+	FrameIndex UN01 D 0 32
+	FrameIndex UN01 E 0 33
+	FrameIndex UN01 F 0 34
+	FrameIndex UN01 G 0 35
+	FrameIndex UN01 H 0 36
+	FrameIndex UN01 I 0 37
+	FrameIndex UN01 J 0 38
+	FrameIndex UN01 K 0 39
+	FrameIndex UN01 L 0 40
+	FrameIndex UN01 M 0 41
+	FrameIndex UN01 N 0 42
+	FrameIndex UN01 O 0 43
+	FrameIndex UN01 P 0 44
+	FrameIndex UN01 Q 0 45
+	FrameIndex UN01 R 0 46
+	FrameIndex UN01 S 0 47
+	FrameIndex UN01 T 0 48
+	FrameIndex UN01 U 0 49
+	FrameIndex UN01 V 0 50
+	FrameIndex UN01 W 0 51
+	FrameIndex UN01 X 0 52
+	FrameIndex UN01 Y 0 53
+	FrameIndex UN01 Z 0 54
+	FrameIndex UN01 [ 0 55
+	FrameIndex UN01 \ 0 56
+	FrameIndex UN01 ] 0 57
+	FrameIndex UN02 A 0 58
+	FrameIndex UN02 B 0 59
+	FrameIndex UN02 C 0 60
+	FrameIndex UN02 D 0 61
+	FrameIndex UN02 E 0 62
+	FrameIndex UN02 F 0 63
+	FrameIndex UN02 G 0 64
+	FrameIndex UN02 H 0 65
+	FrameIndex UN02 I 0 66
+	FrameIndex UN02 J 0 67
+	FrameIndex UN02 K 0 68
+	FrameIndex UN02 L 0 69
+	FrameIndex UN02 M 0 70
+	FrameIndex UN02 N 0 71
+	FrameIndex UN02 O 0 72
+	FrameIndex UN02 P 0 73
+	FrameIndex UN02 Q 0 74
+	FrameIndex UN02 R 0 75
+	FrameIndex UN02 S 0 76
+	FrameIndex UN02 T 0 77
+	FrameIndex UN02 U 0 78
+	FrameIndex UN02 V 0 79
+	FrameIndex UN02 W 0 80
+	FrameIndex UN02 X 0 81
+	FrameIndex UN02 Y 0 82
+	FrameIndex UN02 Z 0 83
+	FrameIndex UN02 [ 0 84
+	FrameIndex UN02 \ 0 85
+	FrameIndex UN02 ] 0 86
+	FrameIndex UN03 A 0 87
+	FrameIndex UN03 B 0 88
+	FrameIndex UN03 C 0 89
+	FrameIndex UN03 D 0 90
+	FrameIndex UN03 E 0 91
+	FrameIndex UN03 F 0 92
+	FrameIndex UN03 G 0 93
+	FrameIndex UN03 H 0 94
+	FrameIndex UN03 I 0 95
+	FrameIndex UN03 J 0 96
+	FrameIndex UN03 K 0 97
+	FrameIndex UN03 L 0 98
+	FrameIndex UN03 M 0 99
+	FrameIndex UN03 N 0 100
+	FrameIndex UN03 O 0 101
+	FrameIndex UN03 P 0 102
+	FrameIndex UN03 Q 0 103
+	FrameIndex UN03 R 0 104
+	FrameIndex UN03 S 0 105
+	FrameIndex UN03 T 0 106
+	FrameIndex UN03 U 0 107
+	FrameIndex UN03 V 0 108
+	FrameIndex UN03 W 0 109
+	FrameIndex UN03 X 0 110
+	FrameIndex UN03 Y 0 111
+	FrameIndex UN03 Z 0 112
+	FrameIndex UN03 [ 0 113
+	FrameIndex UN03 \ 0 114
+	FrameIndex UN03 ] 0 115
+	FrameIndex UN04 A 0 116
+	FrameIndex UN04 B 0 117
+	FrameIndex UN04 C 0 118
+	FrameIndex UN04 D 0 119
+	FrameIndex UN04 E 0 120
+	FrameIndex UN04 F 0 121
+	FrameIndex UN04 G 0 122
+	FrameIndex UN04 H 0 123
+	FrameIndex UN04 I 0 124
+	FrameIndex UN04 J 0 125
+	FrameIndex UN04 K 0 126
+	FrameIndex UN04 L 0 127
+	FrameIndex UN04 M 0 128
+	FrameIndex UN04 N 0 129
+	FrameIndex UN04 O 0 130
+	FrameIndex UN04 P 0 131
+	FrameIndex UN04 Q 0 132
+	FrameIndex UN04 R 0 133
+	FrameIndex UN04 S 0 134
+	FrameIndex UN04 T 0 135
+	FrameIndex UN04 U 0 136
+	FrameIndex UN04 V 0 137
+	FrameIndex UN04 W 0 138
+	FrameIndex UN04 X 0 139
+	FrameIndex UN04 Y 0 140
+	FrameIndex UN04 Z 0 141
+	FrameIndex UN04 [ 0 142
+	FrameIndex UN04 \ 0 143
+	FrameIndex UN04 ] 0 144
+	FrameIndex UN05 A 0 145
+	FrameIndex UN05 B 0 146
+	FrameIndex UN05 C 0 147
+	FrameIndex UN05 D 0 148
+	FrameIndex UN05 E 0 149
+	FrameIndex UN05 F 0 150
+	FrameIndex UN05 G 0 151
+	FrameIndex UN05 H 0 152
+	FrameIndex UN05 I 0 153
+	FrameIndex UN05 J 0 154
+	FrameIndex UN05 K 0 155
+	FrameIndex UN05 L 0 156
+	FrameIndex UN05 M 0 157
+	FrameIndex UN05 N 0 158
+	FrameIndex UN05 O 0 159
+	FrameIndex UN05 P 0 160
+	FrameIndex UN05 Q 0 161
+	FrameIndex UN05 R 0 162
+	FrameIndex UN05 S 0 163
+	FrameIndex UN05 T 0 164
+	FrameIndex UN05 U 0 165
+	FrameIndex UN05 V 0 166
+	FrameIndex UN05 W 0 167
+	FrameIndex UN05 X 0 168
+	FrameIndex UN05 Y 0 169
+	FrameIndex UN05 Z 0 170
+	FrameIndex UN05 [ 0 171
+	FrameIndex UN05 \ 0 172
+	FrameIndex UN05 ] 0 173
+	FrameIndex UN06 A 0 174
+	FrameIndex UN06 B 0 175
+	FrameIndex UN06 C 0 176
+	FrameIndex UN06 D 0 177
+	FrameIndex UN06 E 0 178
+	FrameIndex UN06 F 0 179
+	FrameIndex UN06 G 0 180
+	FrameIndex UN06 H 0 181
+	FrameIndex UN06 I 0 182
+	FrameIndex UN06 J 0 183
+	FrameIndex UN06 K 0 184
+	FrameIndex UN06 L 0 185
+	FrameIndex UN06 M 0 186
+	FrameIndex UN06 N 0 187
+	FrameIndex UN06 O 0 188
+	FrameIndex UN06 P 0 189
+	FrameIndex UN06 Q 0 190
+	FrameIndex UN06 R 0 191
+	FrameIndex UN06 S 0 192
+	FrameIndex UN06 T 0 193
+	FrameIndex UN06 U 0 194
+	FrameIndex UN06 V 0 195
+	FrameIndex UN06 W 0 196
+	FrameIndex UN06 X 0 197
+	FrameIndex UN06 Y 0 198
+	FrameIndex UN06 Z 0 199
+	FrameIndex UN06 [ 0 200
+	FrameIndex UN06 \ 0 201
+	FrameIndex UN06 ] 0 202
+	FrameIndex UN07 A 0 203
+	FrameIndex UN07 B 0 204
+	FrameIndex UN07 C 0 205
+	FrameIndex UN07 D 0 206
+	FrameIndex UN07 E 0 207
+	FrameIndex UN07 F 0 208
+	FrameIndex UN07 G 0 209
+	FrameIndex UN07 H 0 210
+	FrameIndex UN07 I 0 211
+	FrameIndex UN07 J 0 212
+	FrameIndex UN07 K 0 213
+	FrameIndex UN07 L 0 214
+	FrameIndex UN07 M 0 215
+	FrameIndex UN07 N 0 216
+	FrameIndex UN07 O 0 217
+	FrameIndex UN07 P 0 218
+	FrameIndex UN07 Q 0 219
+	FrameIndex UN07 R 0 220
+	FrameIndex UN07 S 0 221
+	FrameIndex UN07 T 0 222
+	FrameIndex UN07 U 0 223
+	FrameIndex UN07 V 0 224
+	FrameIndex UN07 W 0 225
+	FrameIndex UN07 X 0 226
+	FrameIndex UN07 Y 0 227
+	FrameIndex UN07 Z 0 228
+	FrameIndex UN07 [ 0 229
+}	
+
+Model Unreal_SlithSpit
+{
+	Model 0 "Models/Unreal/GESBioRifle/BioRGel.md3"
+	Scale 1.0 1.0 1.0
+	INHERITACTORPITCH
+	PITCHFROMMOMENTUM	
+	RollOffset 90
+	AngleOffset 90	
+
+	FrameIndex UN00 A 0 0 // flying
+	FrameIndex UN00 B 0 2
+	FrameIndex UN00 C 0 4
+	FrameIndex UN00 D 0 6
+	FrameIndex UN00 E 0 8
+	FrameIndex UN00 F 0 10
+	FrameIndex UN00 G 0 12
+	
+	FrameIndex UN00 H 0 13 //still
+	
+	FrameIndex UN01 A 0 14 // hit
+	FrameIndex UN01 B 0 16
+	FrameIndex UN01 C 0 18
+	FrameIndex UN01 D 0 20
+	FrameIndex UN01 E 0 22
+
+	FrameIndex UN02 A 0 24 // drip
+	FrameIndex UN02 B 0 26
+	FrameIndex UN02 C 0 28
+	FrameIndex UN02 D 0 30
+	FrameIndex UN02 E 0 32
+	FrameIndex UN02 F 0 34
+	FrameIndex UN02 G 0 36
+	
+	FrameIndex UN03 A 0 38 // slide
+	FrameIndex UN03 B 0 40
+	FrameIndex UN03 C 0 42
+	
+	FrameIndex UN04 A 0 44 // shrivel
+	FrameIndex UN04 B 0 46
+	FrameIndex UN04 C 0 48
+	FrameIndex UN04 D 0 50
+	FrameIndex UN04 E 0 52	
+}	
+
+Model Unreal_SlithSpitStatic
+{
+	Model 0 "Models/Unreal/GESBioRifle/BioRGel.md3"
+	Scale 1.0 1.0 1.0
+	INHERITACTORPITCH
+	PITCHFROMMOMENTUM	
+	RollOffset 90
+	AngleOffset 90	
+
+	FrameIndex UN00 A 0 0 // flying
+	FrameIndex UN00 B 0 2
+	FrameIndex UN00 C 0 4
+	FrameIndex UN00 D 0 6
+	FrameIndex UN00 E 0 8
+	FrameIndex UN00 F 0 10
+	FrameIndex UN00 G 0 12
+	
+	FrameIndex UN00 H 0 13 //still
+	
+	FrameIndex UN01 A 0 14 // hit
+	FrameIndex UN01 B 0 16
+	FrameIndex UN01 C 0 18
+	FrameIndex UN01 D 0 20
+	FrameIndex UN01 E 0 22
+
+	FrameIndex UN02 A 0 24 // drip
+	FrameIndex UN02 B 0 26
+	FrameIndex UN02 C 0 28
+	FrameIndex UN02 D 0 30
+	FrameIndex UN02 E 0 32
+	FrameIndex UN02 F 0 34
+	FrameIndex UN02 G 0 36
+	
+	FrameIndex UN03 A 0 38 // slide
+	FrameIndex UN03 B 0 40
+	FrameIndex UN03 C 0 42
+	
+	FrameIndex UN04 A 0 44 // shrivel
+	FrameIndex UN04 B 0 46
+	FrameIndex UN04 C 0 48
+	FrameIndex UN04 D 0 50
+	FrameIndex UN04 E 0 52	
+}	
+
+Model Unreal_GibSlithHead
+{
+	Model 0 "Models/Unreal/Slith/g_slih.md3"
+    Scale 0.80 0.80 0.80
+	Offset 0 0 2
+	PITCHFROMMOMENTUM	
+
+	
+	FrameIndex UN00 A 0 0
+}
+
+Model Unreal_GibSlithArm
+{
+	Model 0 "Models/Unreal/Slith/g_slia.md3"
+    Scale 0.80 0.80 0.80
+	Offset 0 0 2
+	PITCHFROMMOMENTUM	
+	RollOffset 90
+	
+	FrameIndex UN00 A 0 0
+}
+
+Model Unreal_GibSlithHand
+{
+	Model 0 "Models/Unreal/Slith/g_slih.md3"
+    Scale 0.80 0.80 0.80
+	Offset 0 0 2
+	PITCHFROMMOMENTUM	
+	
+	FrameIndex UN00 A 0 0
+}
+
+Model Unreal_GibSlithPart
+{
+	Model 0 "Models/Unreal/Slith/g_slib.md3"
+    Scale 0.80 0.80 0.80
+	Offset 0 0 2
+	PITCHFROMMOMENTUM	
+	
+	FrameIndex UN00 A 0 0
+}
+
+Model Unreal_GibSlithTail
+{
+	Model 0 "Models/Unreal/Slith/g_slit.md3"
+    Scale 0.80 0.80 0.80
+	Offset 0 0 2
+	PITCHFROMMOMENTUM	
+	
+	FrameIndex UN00 A 0 0
+}

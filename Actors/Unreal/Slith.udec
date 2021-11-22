@@ -1,0 +1,216 @@
+Actor Unreal_Slith
+{
+	Monster
+	Speed 5
+	Health 105 // was 210
+	Height 60
+	Radius 21
+	Mass 200
+	+MISSILEMORE
+	+NOINFIGHTING
+	SeeSound "Unreal/Slith/Yell3"
+	DeathSound "Unreal/Slith/DeathL"
+	ActiveSound "Unreal/Slith/Active"
+	DamageFactor "UnrealSludge", 0
+	DamageFactor "Poison", 0
+	DamageFactor "PoisonBolt", 0
+	States
+	{
+		Spawn:
+			TNT1 A 0 A_Jump(26, "IdleSlick")
+			TNT1 A 0 A_Jump(13, "IdleScratch")
+			UN00 ABCDE 6 A_Look
+			Loop
+		IdleSlick:
+			TNT1 A 0 A_PlaySound("Unreal/Slith/Ambient", CHAN_VOICE)		
+			UN05 "WXYZ[\]" 6 A_Look
+			UN06 ABCDEFG 6 A_Look
+			Goto Spawn
+		IdleScratch:
+			UN03 T 0 A_PlaySound("Unreal/Slith/Scratch", CHAN_VOICE)
+			UN03 "TUVWXYZ[\]" 6 A_Look
+			UN04 ABCDEFGHI 6 A_Look
+			Goto Spawn
+		See:
+			UN06 IJKL 2 A_Chase
+			UN06 M 0 A_PlaySound("Unreal/Slith/Slither", CHAN_BODY)
+			UN06 MNOP 2 A_Chase
+			UN06 Q 0 A_PlaySound("Unreal/Slith/Slither", CHAN_BODY)
+			UN06 QRST 2 A_Chase
+			UN06 U 0 A_PlaySound("Unreal/Slith/Slither", CHAN_BODY)
+			UN06 UV 2 A_Chase
+			Loop
+		Melee:
+			TNT1 A 0 A_PlaySound("Unreal/Slith/Yell2", CHAN_VOICE)
+			TNT1 A 0 A_Jump(128, "Slash")
+			UN03 E 2 A_FaceTarget
+			UN03 FGHI 2
+			UN03 JKL 2 A_FaceTarget
+			UN03 M 2 A_CustomMeleeAttack(9, "", "", "UnrealDamage", true)
+			UN03 NOPQRS 2
+			Goto See
+		Slash:
+			UN05 H 2 A_FaceTarget
+			UN05 IJKL 2
+			UN05 MN 2 A_FaceTarget
+			UN05 O 2 A_CustomMeleeAttack(9, "", "", "UnrealDamage", true)
+			UN05 PQRSTUV 2
+			Goto See
+		Missile:
+			TNT1 A 0 A_JumpIfCloser(270, "MovingAttack")
+			UN04 K 2 A_FaceTarget
+			UN04 L 2 A_FaceTarget
+			UN04 M 2 A_FaceTarget
+			UN04 N 2 A_FaceTarget
+			UN04 O 2 A_FaceTarget
+			UN04 P 2 A_FaceTarget
+			UN04 Q 2 A_CustomMissile("Unreal_SlithSpit", 40, 0,0)
+			UN04 R 2 
+			UN04 S 2
+			UN04 T 2 
+			UN04 U 2
+			UN04 V 2
+			UN04 W 2
+			Goto See
+		MovingAttack:
+			UN04 K 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 L 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 M 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 N 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 O 0 A_PlaySound("Unreal/Slith/Slither", CHAN_BODY)
+			UN04 O 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 P 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 Q 2 A_CustomMissile("Unreal_SlithSpit", 40, 0,0) TNT1 A 0 A_Recoil(-0.8)
+			UN04 R 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 S 0 A_PlaySound("Unreal/Slith/Slither", CHAN_BODY)
+			UN04 S 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 T 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 U 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 V 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			UN04 W 0 A_PlaySound("Unreal/Slith/Slither", CHAN_BODY)
+			UN04 W 2 A_FaceTarget TNT1 A 0 A_Recoil(-0.8)
+			Goto See			
+		Death:
+			UN01 M 2 A_Scream
+			UN01 NO 2 
+			UN01 P 2 A_NoBlocking
+			UN01 QRSTUVWX 2
+			UN01 Y -1
+			Stop
+		Death.UnrealDamage:
+		Death.UnrealPlasma:
+		Death.UnrealSludge:
+		Death.ASMDShockTrace:
+		Death.UnrealExplosive:
+		Death.UnrealRazor:
+			TNT1 A 0 A_JumpIfHealthLower(-20, "XDeath")
+			Goto Death			
+		Death.UnrealExtreme:
+		Death.UnrealRedeemer:
+		Death.UnrealShredded:			
+		XDeath:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibSlithHead",0,0,43,random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibSlithHand",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibSlithTail",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibSlithPart",random(-1,1),random(-1,1),random(8,40),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AAA 0 A_SpawnItemEx("Unreal_GibFlesh1",random(-1,1),random(-1,1),random(8,40),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_BloodSpot",0,0,0,0,0,0,0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_PlaySound("Unreal/EnemyGibbed",CHAN_BODY)
+			TNT1 A 5 A_Fall
+			stop				
+	}
+}	
+
+
+Actor Unreal_SlithSpit : Unreal_BioRGel
+{
+	Damage (12)
+	Speed 15
+	+NOGRAVITY
+	SeeSound "Unreal/Slith/Spit"
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_Jump(256,2)
+		SpawnLoop:
+			UN00 A 0 A_SetAngle(Angle+User_Angle)
+			UN00 ABCDEFG 3 A_SpawnItemEx("UnrealToxicGasPuff", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
+			Loop	
+		Death:
+			UN01 A 0 A_PlaySound("Unreal/Slith/Impact", CHAN_BODY)
+			TNT1 A 0 A_SpawnItemEx("Unreal_SlithSpitStatic", 0,0,0,0,0,0, angle, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSCALE)
+			stop	
+		Crash:	
+		XDeath:
+			TNT1 A 0 A_PlaySound("Unreal/BRifle/Explode", CHAN_BODY)
+			TNT1 A 0 A_Explode(scalex*12, scalex*200)
+			TNT1 AAA 0 A_SpawnItemEx("Unreal_GreenBlob", Random(-5,5), Random(-5,5), Random(-5,5), Random(0,2), Random(0,2), Random(2,7), Random(1,360), SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_SpawnItemEx("UnrealToxicGasPuff", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
+			TNT1 A 5
+			Stop	
+	}
+}
+
+Actor Unreal_SlithSpitStatic : Unreal_BioRGelStatic
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_CheckFloor("HitFloor")
+			TNT1 A 0 A_CheckCeiling("HitCeiling")
+			UN00 A 0 A_SetPitch(0)
+			UN00 A 0 A_SetAngle(angle)
+		Spawn2:
+			UN01 A 0 A_SetPitch(90)	
+			UN01 ABCDE 2
+			UN03 ABC 2						
+			Goto WallLoop
+		WallLoop:
+			UN03 C 0 A_LookEx(LOF_NOSOUNDCHECK, 0, 20, 0, 360, "Detonate")
+			UN03 C 0 A_JumpIfInventory("Unreal_BioGelTimer", 88, "Detonate")
+			UN03 C 0 A_GiveInventory("Unreal_BioGelTimer", 1)
+			UN03 C 0 A_SpawnItemEx("UnrealToxicGasPuff", 0,0,-5,0,0,8,0, SXF_NOCHECKPOSITION)
+			UN03 CCCCC 1 A_SetPitch(90)
+			Loop	
+		HitFloor:	
+			UN01 A 0 A_SetPitch(0)			
+			UN01 ABCDE 2					
+			Goto FloorLoop
+		FloorLoop:
+			UN01 A 0 A_LookEx(LOF_NOSOUNDCHECK, 0, 20, 0, 360, "Detonate")
+			UN01 A 0 A_JumpIfInventory("Unreal_BioGelTimer", 88, "Detonate")
+			UN01 A 0 A_GiveInventory("Unreal_BioGelTimer", 1)
+			UN01 A 0 A_SpawnItemEx("UnrealToxicGasPuff", 0,0,0,0,0,8,0, SXF_NOCHECKPOSITION)
+			UN01 AAAAA 1 A_SetPitch(0)
+			Loop	
+		HitCeiling:
+			UN01 A 0 A_ChangeFlag(NOGRAVITY, TRUE)
+			UN01 A 0 A_SetPitch(180)				
+			UN01 ABCDE 2
+			UN02 A 0 A_PlaySound("Unreal/BRifle/Drip", CHAN_BODY)
+			UN02 ABCDEFG 2			
+			Goto CeilingLoop
+		CeilingLoop:
+			UN02 G 0 A_LookEx(LOF_NOSOUNDCHECK, 0, 20, 0, 360, "Detonate")
+			UN02 G 0 A_JumpIfInventory("Unreal_BioGelTimer", 88, "Detonate")
+			UN02 G 0 A_GiveInventory("Unreal_BioGelTimer", 1)
+			UN02 G 0 A_SpawnItemEx("UnrealToxicGasPuff", 0,0,0,0,0,-8,0, SXF_NOCHECKPOSITION)
+			UN02 GGGGG 1 A_SetPitch(180)
+			Loop	
+		Detonate:
+			TNT1 A 0 A_PlaySound("Unreal/BRifle/Explode", CHAN_BODY)
+			TNT1 A 0 A_Explode(scalex*12, scalex*200)
+			TNT1 AAAAAA 0 A_SpawnItemEx("Unreal_GreenBlob", Random(-5,5), Random(-5,5), Random(-5,5), Random(0,2), Random(0,2), Random(2,7), Random(1,360), SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_SpawnItemEx("UnrealToxicGasPuff", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
+			TNT1 A 5
+			Stop			
+		}
+}		
+
+Actor Unreal_GibSlithHead : UnrealGore {}
+Actor Unreal_GibSlithArm : UnrealGore {}
+Actor Unreal_GibSlithHand : UnrealGore {}
+Actor Unreal_GibSlithPart : UnrealGore {}
+Actor Unreal_GibSlithTail : UnrealGore {}

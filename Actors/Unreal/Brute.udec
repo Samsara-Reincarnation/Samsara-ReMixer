@@ -146,8 +146,8 @@ Actor Unreal_LesserBrute
 			UN03 N 0 A_JumpIfCloser(270, 2)
 			UN03 N 0 A_Jump(128, "StillFire")
 			Goto See
-			UN04 N 0 A_Jump(128, "GutShot")
-			Goto See
+			UN04 N 0 A_Jump(203, "See")
+			Goto GutShot+18
 		WalkFire:
 			UN09 E 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
 			UN09 F 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
@@ -281,7 +281,7 @@ Actor Unreal_LesserBruteMissile
 	Radius 3
 	Height 4
 	Speed 14
-	Damage (0)
+	Damage (7)
 	DeathSound "Unreal/Flak/Explode2"
 	ActiveSound "Unreal/Rocket/Fly"
 	SeeSound "Unreal/Eightball/fire"
@@ -294,7 +294,7 @@ Actor Unreal_LesserBruteMissile
 			UN00 FGHIJKLMNOP 3 A_SpawnItemEx("UnrealSmoke", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
 			Loop
 		Death:	
-			TNT1 A 0 A_Explode(21, 50)
+			TNT1 A 0 A_Explode(7, 50)
 			TNT1 A 0 A_SpawnItemEX("Unreal_SmallExplosion", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
 			TNT1 A 5
 			Stop
@@ -303,10 +303,11 @@ Actor Unreal_LesserBruteMissile
 
 Actor Unreal_BruteMissile : Unreal_LesserBruteMissile
 {
+	Damage (10)
 	States
 	{
 		Death:	
-			TNT1 A 0 A_Explode(30, 95)
+			TNT1 A 0 A_Explode(10, 95)
 			TNT1 A 0 A_SpawnItemEX("Unreal_SmallExplosion", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
 			TNT1 A 5
 			Stop

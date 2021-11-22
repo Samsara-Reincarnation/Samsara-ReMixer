@@ -858,6 +858,7 @@
 
 // Unreal
 #include "actors/Unreal/Brute.udec"
+#include "actors/Unreal/Slith.udec"
 
 // RTCW
 #include "actors/RTCW/core.dec"
