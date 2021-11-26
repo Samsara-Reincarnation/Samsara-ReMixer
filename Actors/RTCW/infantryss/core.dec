@@ -86,21 +86,19 @@ Actor RTCW_Humanoid
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 3 A_GiveInventory("RTCW_AlertSight")
 			Goto AlertIdle
 		AlertIdle:
-			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertIdle_2H")
+			"####" A 0 A_Jump(32,"AlertIdleTurnLeft","AlertIdleTurnRight")
+			"####" A 0 A_Jump(128,"AlertWalk","AlertRun")
+			"####" A 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertIdle_2H")
 		AlertIdle_1H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H",1)
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3 A_GiveInventory("RTCW_AlertSight")
 			"####" ABCDEFGHIJKLMNOPQR 3 A_GiveInventory("RTCW_AlertSight")
-			"####" A 0 A_Jump(64,"AlertIdleTurnLeft","AlertIdleTurnRight")
-			"####" A 0 A_Jump(128,"AlertWalk","AlertRun")
-			Loop
+			Goto AlertIdle
 		AlertIdle_2H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_2H",1)
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3 A_GiveInventory("RTCW_AlertSight")
 			"####" ABCDEFGHIJK 3 A_GiveInventory("RTCW_AlertSight")
-			"####" A 0 A_Jump(64,"AlertIdleTurnLeft","AlertIdleTurnRight")
-			"####" A 0 A_Jump(128,"AlertWalk","AlertRun")
-			Loop
+			Goto AlertIdle
 		AlertIdleTurnLeft:
 			"####" A 0 A_JumpIfInventory("RTCW_IsScientist",1,"AlertIdleTurn_Scientist")
 			"####" A 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertIdleTurnLeft_2H")
@@ -108,14 +106,16 @@ Actor RTCW_Humanoid
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnL",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" ABCDEFG 3 A_SetAngle(angle-10)
-			Goto AlertIdle
+			"####" ABCDEFG 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
 		AlertIdleTurnLeft_2H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_2H_TurnL",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" ABCDEFG 3 A_SetAngle(angle-10)
-			Goto AlertIdle
+			"####" ABCDEFG 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
 		AlertIdleTurnRight:
 			"####" A 0 A_JumpIfInventory("RTCW_IsScientist",1,"AlertIdleTurn_Scientist")
 			"####" A 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertIdleTurnRight_2H")
@@ -123,20 +123,23 @@ Actor RTCW_Humanoid
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" ABCD 3 A_SetAngle(angle+10)
-			Goto AlertIdle
+			"####" ABCD 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
 		AlertIdleTurnRight_2H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_2H_TurnR",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" ABCD 3 A_SetAngle(angle+10)
-			Goto AlertIdle
+			"####" ABCD 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
 		AlertIdleTurn_Scientist:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" ABCDEFG 3 A_SetAngle(angle-10)
-			Goto AlertIdle
+			"####" ABCDEFG 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
 		AlertWalk:
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertWalk_2H")
 		AlertWalk_1H:
@@ -144,16 +147,18 @@ Actor RTCW_Humanoid
 			"####" A 0 A_GiveInventory("RTCW_AlertWalking",1)
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\" 3 A_GiveInventory("RTCW_AlertSight")
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
-			"####" "#" 0 A_GiveInventory("RTCW_StopMoving",1)
-			Goto AlertIdle
+			"####" A 0 A_GiveInventory("RTCW_StopMoving",1)
+			"####" A 0 A_Jump(32,"AlertIdle")
+			Loop
 		AlertWalk_2H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertWalk_2H",1)
 			"####" A 0 A_GiveInventory("RTCW_AlertWalking",1)
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3 A_GiveInventory("RTCW_AlertSight")
 			"####" ABCDEFGHIJKLM 3 A_GiveInventory("RTCW_AlertSight")
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
-			"####" "#" 0 A_GiveInventory("RTCW_StopMoving",1)
-			Goto AlertIdle
+			"####" A 0 A_GiveInventory("RTCW_StopMoving",1)
+			"####" A 0 A_Jump(32,"AlertIdle")
+			Loop
 		AlertRun:
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertRun_2H")
 		AlertRun_1H:
@@ -161,15 +166,17 @@ Actor RTCW_Humanoid
 			"####" A 0 A_GiveInventory("RTCW_AlertRunning",1)
 			"####" ABCDEFGHABCDEFGH 3 A_GiveInventory("RTCW_AlertSight")
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" "#" 0 A_GiveInventory("RTCW_StopMoving",1)
-			Goto AlertIdle
+			"####" A 0 A_GiveInventory("RTCW_StopMoving",1)
+			"####" A 0 A_Jump(32,"AlertIdle")
+			Loop
 		AlertRun_2H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertRun_2H",1)
 			"####" A 0 A_GiveInventory("RTCW_AlertRunning",1)
 			"####" ABCDEFGHIABCDEFGHI 3 A_GiveInventory("RTCW_AlertSight")
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" "#" 0 A_GiveInventory("RTCW_StopMoving",1)
-			Goto AlertIdle
+			"####" A 0 A_GiveInventory("RTCW_StopMoving",1)
+			"####" A 0 A_Jump(32,"AlertIdle")
+			Loop
 		InstantCombat:
 			"####" "#" 0 A_JumpIfInventory("RTCW_SeenPlayer",1,"Combat")
 			"####" "#" 0 A_JumpIfInventory("RTCW_FlameRetardant",1,"Combat")
@@ -405,23 +412,27 @@ Actor RTCW_Humanoid
 			"####" A 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"CombatTurnLeft_2H")
 		CombatTurnLeft_1H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnL",1)
-			"####" ABCDEFG 3 A_SetAngle(angle-10)
-			Goto CombatRun
+			"####" ABCDEFG 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
 		CombatTurnLeft_2H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_2H_TurnL",1)
-			"####" ABCDEFG 3 A_SetAngle(angle-10)
-			Goto CombatRun
+			"####" ABCDEFG 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
 		CombatTurnRight:
 			"####" A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
 			"####" A 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"CombatTurnRight_2H")
 		CombatTurnRight_1H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
-			"####" ABCD 3 A_SetAngle(angle+10)
-			Goto CombatRun
+			"####" ABCD 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
 		CombatTurnRight_2H:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_2H_TurnR",1)
-			"####" ABCD 3 A_SetAngle(angle+10)
-			Goto CombatRun
+			"####" ABCD 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
 		FireStand:
 			"####" "#" 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",8,"FireStand_Tesla")
@@ -1045,6 +1056,7 @@ Actor RTCW_Humanoid
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",6,"FireLeft_Flamethrower")
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",5,"FireLeft_FG42")
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",3,"FireLeft_Sten")
+			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",2,"FireStand_Mauser")
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"FireLeft_MP40")
 		FireLeft_Luger:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_FireStrafeL_1H",1)
@@ -1131,6 +1143,7 @@ Actor RTCW_Humanoid
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",6,"FireRight_Flamethrower")
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",5,"FireRight_FG42")
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",3,"FireRight_Sten")
+			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",2,"FireStand_Mauser")
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"FireRight_MP40")
 		FireRight_Luger:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_FireStrafeR_1H",1)
@@ -2028,11 +2041,13 @@ Actor RTCW_AlertSight : CustomInventory
 			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",0,3)
 			Stop
 		Walk:
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"Turn")
+			TNT1 A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,1)
+			Goto Turn
 			TNT1 A 0 A_ChangeVelocity(1.5,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
 		Run:
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"Turn")
+			TNT1 A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,1)
+			Goto Turn
 			TNT1 A 0 A_ChangeVelocity(3,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
 		Turn:
@@ -2052,44 +2067,45 @@ Actor RTCW_CombatThink : CustomInventory
 		Pickup:
 			TNT1 A 0
 			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",12)==1,"Dismiss")
+			TNT1 A 0 A_JumpIfTargetInLOS(1,0,JLOSF_DEADNOJUMP,2048)
+			Goto Pickup+4
+			TNT1 A 0 A_FaceTarget(15)
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",5,5)
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",4,"StrafeRight")
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",3,"StrafeLeft")
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",2,"RunBackward")
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",1,"RunForward")
-			TNT1 A 0 A_JumpIfTargetInLOS(1,0,JLOSF_DEADNOJUMP,2048)
-			Goto Pickup+10
 			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
-			TNT1 A 0 A_FaceTarget(15)
 			TNT1 A 0 A_ChangeVelocity(0,0,velz,CVF_REPLACE)
 			TNT1 A 0 A_AlertMonsters(512)
 			TNT1 A 0
 			Stop
 		RunForward:
-			TNT1 A 0 A_FaceTarget(15)
-			TNT1 A 0 A_Warp(AAPTR_Default,16,0,0,0,WARPF_TESTONLY,1)
+			TNT1 A 0 A_Warp(AAPTR_Default,4,0,0,0,WARPF_TESTONLY,1)
 			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,15))
 			TNT1 A 0 A_ChangeVelocity(3,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
 		RunBackward:
-			TNT1 A 0 A_FaceTarget(15)
-			TNT1 A 0 A_Warp(AAPTR_Default,-16,0,0,0,WARPF_TESTONLY,1)
+			TNT1 A 0 A_Warp(AAPTR_Default,-4,0,0,0,WARPF_TESTONLY,1)
 			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,15))
 			TNT1 A 0 A_ChangeVelocity(-3,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
 		StrafeLeft:
-			TNT1 A 0 A_FaceTarget(15)
-			TNT1 A 0 A_Warp(AAPTR_Default,0,-16,0,0,WARPF_TESTONLY,1)
+			TNT1 A 0 A_Warp(AAPTR_Default,0,-4,0,0,WARPF_TESTONLY,1)
 			Goto CombatStand
-			TNT1 A 0 A_ChangeVelocity(0,3,velz,CVF_RELATIVE|CVF_REPLACE)
-			Stop
-		StrafeRight:
-			TNT1 A 0 A_FaceTarget(15)
-			TNT1 A 0 A_Warp(AAPTR_Default,16,0,0,0,WARPF_TESTONLY,1)
-			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,15))
 			TNT1 A 0 A_ChangeVelocity(0,-3,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
+		StrafeRight:
+			TNT1 A 0 A_Warp(AAPTR_Default,0,4,0,0,WARPF_TESTONLY,1)
+			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,15))
+			TNT1 A 0 A_ChangeVelocity(0,3,velz,CVF_RELATIVE|CVF_REPLACE)
+			Stop
 		CombatStand:
+			TNT1 A 0 A_SpawnItemEx("RTCW_DoorUser",radius,0,0,0,0,0,angle,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
 			TNT1 A 0 A_JumpIfTargetInLOS(1,360,JLOSF_DEADNOJUMP,2048)
 			Goto CombatTurn
 			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
@@ -2103,25 +2119,6 @@ Actor RTCW_CombatThink : CustomInventory
 			TNT1 A 0 A_ClearTarget
 			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
 			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",0,8)
-			Stop
-	}
-}
-
-Actor RTCW_CombatCheckMovement : CustomInventory
-{
-	-COUNTITEM
-	+INVENTORY.ALWAYSPICKUP
-	Inventory.PickupMessage ""
-	Inventory.PickupSound ""
-	States
-	{
-		Pickup:
-			TNT1 A 0
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"CombatStand")
-			Stop
-		CombatStand:
-			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
-			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",0,7)
 			Stop
 	}
 }

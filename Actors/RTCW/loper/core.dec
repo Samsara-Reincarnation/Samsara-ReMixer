@@ -42,6 +42,11 @@ Actor RTCW_LoperBrain
 			"####" A 0 A_JumpIfTargetInLOS("TorsoLeap",180,JLOSF_DEADNOJUMP,400)
 			"####" IJKLMNOP 2 A_GiveInventory("RTCW_Loper_CombatSight",1)
 			Goto Combat
+		CombatTurn:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_Loper_LegsTurn",1)
+			"####" ABCDEFGHIJKLMNOPQRSTU 2 A_GiveInventory("RTCW_TurnLeft")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
 		TorsoLeap:
 			"####" "#" 0 A_Jump(128,"TorsoAttack4")
 		TorsoAttack3:
@@ -106,12 +111,28 @@ Actor RTCW_Loper_CombatSight : RTCWTrigger
 	{
 		Pickup:
 			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",12)==1,"Dismiss")
-			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_JumpIfTargetInLOS(1,0,JLOSF_DEADNOJUMP,2048)
+			Goto Pickup+3
+			TNT1 A 0 A_FaceTarget(15)
 			TNT1 A 0 A_CustomMissile("RTCW_LoperTeslaProjectile",0,0,random(0,360),CMF_AIMDIRECTION,random(-15,45))
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",1,"MoveForward")
 			Stop
 		MoveForward:
+			TNT1 A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,1)
+			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,15))
 			TNT1 A 0 A_ChangeVelocity(5,0,0,CVF_RELATIVE|CVF_REPLACE)
+			Stop
+		CombatStand:
+			TNT1 A 0 A_SpawnItemEx("RTCW_DoorUser",radius,0,0,0,0,0,angle,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+			TNT1 A 0 A_JumpIfTargetInLOS(1,360,JLOSF_DEADNOJUMP,2048)
+			Goto CombatTurn
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",13,1)
+			Stop
+		CombatTurn:
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",13,2)
 			Stop
 		Dismiss:
 			TNT1 A 0 A_ClearTarget

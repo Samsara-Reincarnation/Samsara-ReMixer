@@ -7,8 +7,8 @@ Actor RTCW_SuperSoldierBrain
 	PainChance 8
 	Monster
 	Tag "Super Soldat"
-	+NODROPOFF
 	+BOSS
+	+NODROPOFF
 	States
 	{
 		Alert:
@@ -45,10 +45,12 @@ Actor RTCW_SuperSoldierBrain
 			Goto Alert
 		See:
 		Combat:
+			"####" "#" 0 A_TakeInventory("RTCW_SuperSoldier_AlertTurnDirection",2)
 			"####" "#" 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
-			"####" "#" 0 A_JumpIfCloser(192,2)
-			"####" "#" 0 A_Jump(160,"CombatWalk","CombatBack","CombatStrafeL","CombatStrafeR")
+			"####" "#" 0 A_JumpIfTargetInLOS(2,360,JLOSF_DEADNOJUMP,192)
 		CombatIdle:
+			"####" "#" 0 A_Jump(224,"CombatWalk")
+			"####" "#" 0 A_Jump(64,"CombatBack","CombatStrafeL","CombatStrafeR")
 			"####" "#" 0 A_JumpIfHealthLower(CallACS("RTCW_Decorate",22,2),"CombatIdle3")
 			"####" "#" 0 A_JumpIfHealthLower(CallACS("RTCW_Decorate",22,1),"CombatIdle2")
 		CombatIdle1:
@@ -85,7 +87,8 @@ Actor RTCW_SuperSoldierBrain
 		CombatWalk1Loop:
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_SuperSoldier_CombatSight",1)
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 2 A_GiveInventory("RTCW_SuperSoldier_CombatSight",1)
-			Goto Combat
+			"####" A 0 A_Jump(32,"Combat")
+			Loop
 		CombatWalk2:
 			"####" "#" 0 A_GiveInventory("RTCW_Enemy_MoveOrder",1)
 			"####" "#" 0 A_ChangeVelocity(1,0,velz,CVF_RELATIVE|CVF_REPLACE)
@@ -94,7 +97,8 @@ Actor RTCW_SuperSoldierBrain
 		CombatWalk2Loop:
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_SuperSoldier_CombatSight",1)
 			"####" "ABCDEFGHIJKLMNOPQRSTU" 2 A_GiveInventory("RTCW_SuperSoldier_CombatSight",1)
-			Goto Combat
+			"####" A 0 A_Jump(32,"Combat")
+			Loop
 		CombatWalk3:
 			"####" "#" 0 A_GiveInventory("RTCW_Enemy_MoveOrder",1)
 			"####" "#" 0 A_ChangeVelocity(1,0,velz,CVF_RELATIVE|CVF_REPLACE)
@@ -103,7 +107,8 @@ Actor RTCW_SuperSoldierBrain
 		CombatWalk3Loop:
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2 A_GiveInventory("RTCW_SuperSoldier_CombatSight",1)
 			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\" 2 A_GiveInventory("RTCW_SuperSoldier_CombatSight",1)
-			Goto Combat
+			"####" A 0 A_Jump(32,"Combat")
+			Loop
 		CombatBack:
 			"####" "#" 0 A_GiveInventory("RTCW_Enemy_MoveOrder",2)
 			"####" "#" 0 A_ChangeVelocity(-1,0,velz,CVF_RELATIVE|CVF_REPLACE)
@@ -129,6 +134,20 @@ Actor RTCW_SuperSoldierBrain
 		CombatStrafeRLoop:
 			"####" ABCDEFGHIJKLMNOPQ 2 A_GiveInventory("RTCW_SuperSoldier_CombatSight")
 			Goto Alert
+		CombatTurn:
+			"####" A 0 A_Jump(128,"CombatTurnRight")
+		CombatTurnLeft:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_SuperSoldier_TurnL1",1)
+		CombatTurnLeftLoop:
+			"####" ABCDEFGHIJK 2 A_GiveInventory("RTCW_TurnLeft")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"CombatWalk")
+			Loop
+		CombatTurnRight:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_SuperSoldier_TurnL1",1)
+		CombatTurnRightLoop:
+			"####" ABCDEFGHIJK 2 A_GiveInventory("RTCW_TurnRight")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"CombatWalk")
+			Loop
 		Pain:
 			"####" "#" 0 A_Jump(256,"PainChest","PainShoulderL","PainShoulderR")
 		PainChest:
@@ -239,36 +258,23 @@ Actor RTCW_SuperSoldier_Sight : RTCWTrigger
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",2,"AlertBack")
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",1,"AlertWalk")
 			TNT1 A 0 A_ChangeVelocity(0,0,velz,CVF_RELATIVE|CVF_REPLACE)
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_DoTurn",1,1)
-			Goto End
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",2,"TurnRight")
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",1,"TurnLeft")
-			Stop
-		End:
-			TNT1 A 0
 			Stop
 		AlertWalk:	
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"StopWalking")
+			TNT1 A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,1)
+			Goto AlertIdle
 			TNT1 A 0 A_ChangeVelocity(1,0,velz,CVF_RELATIVE|CVF_REPLACE)
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",2,"MoveTurnRight")
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",1,"MoveTurnLeft")
 			Stop
 		AlertBack:	
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"StopWalking")
+			TNT1 A 0 A_Warp(AAPTR_Default,-2,0,0,0,WARPF_TESTONLY,1)
+			Goto AlertIdle
 			TNT1 A 0 A_ChangeVelocity(-1,0,velz,CVF_RELATIVE|CVF_REPLACE)
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",2,"MoveTurnRight")
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",1,"MoveTurnLeft")
 			Stop
-		MoveTurnLeft:
-			TNT1 A 0 A_SetAngle(angle-2)
-			Stop
-		MoveTurnRight:
-			TNT1 A 0 A_SetAngle(angle+2)
-			Stop
-		DoStep:
-			TNT1 A 0 A_TakeInventory("RTCW_SuperSoldier_AlertTurnDirection",2)
-			TNT1 A 0 A_GiveInventory("RTCW_SuperSoldier_AlertTurnDirection",random(0,2))
-			TNT1 A 0 A_Quake(1,15,0,256,"")
+		AlertIdle:
+			TNT1 A 0 A_SpawnItemEx("RTCW_DoorUser",radius,0,0,0,0,0,angle,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+			TNT1 A 0 A_JumpIfTargetInLOS(1,360,JLOSF_DEADNOJUMP,2048)
+			Goto CombatTurn
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",15,0)
 			Stop
 		StopWalking:
 			TNT1 A 0 A_TakeInventory("RTCW_SuperSoldier_AlertTurnDirection",2)
@@ -276,14 +282,6 @@ Actor RTCW_SuperSoldier_Sight : RTCWTrigger
 			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",15,0)
 			TNT1 A 0 A_GiveInventory("RTCW_SuperSoldier_AlertTurnDirection",random(0,2))
 			TNT1 A 0 A_GiveInventory("RTCW_SuperSoldier_DoTurn",45)
-			Stop
-		TurnLeft:
-			TNT1 A 0 A_TakeInventory("RTCW_SuperSoldier_DoTurn",1)
-			TNT1 A 0 A_SetAngle(angle-2)
-			Stop
-		TurnRight:
-			TNT1 A 0 A_TakeInventory("RTCW_SuperSoldier_DoTurn",1)
-			TNT1 A 0 A_SetAngle(angle+2)
 			Stop
 	}
 }
@@ -293,58 +291,56 @@ Actor RTCW_SuperSoldier_CombatSight : RTCWTrigger
 	States
 	{
 		Pickup:
-			TNT1 A 0 A_FaceTarget(8)
 			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",12)==1,"Dismiss")
 			TNT1 A 0 A_JumpIfTargetInLOS("DoAttack",180,JLOSF_DEADNOJUMP,4096)
+			TNT1 A 0 A_JumpIfTargetInLOS(1,0,JLOSF_DEADNOJUMP,2048)
+			Goto Pickup+4
+			TNT1 A 0 A_FaceTarget(8)
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",4,"CombatStrafeR")
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",3,"CombatStrafeL")
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",2,"CombatBack")
 			TNT1 A 0 A_JumpIfInventory("RTCW_Enemy_MoveOrder",1,"CombatWalk")
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_DoTurn",1,1)
-			Goto End
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",2,"TurnRight")
-			TNT1 A 0 A_JumpIfInventory("RTCW_SuperSoldier_AlertTurnDirection",1,"TurnLeft")
-			Stop
-		End:
 			TNT1 A 0
 			Stop
 		CombatWalk:
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"StopWalking")
+			TNT1 A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,1)
+			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,8))
 			TNT1 A 0 A_ChangeVelocity(1,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
 		CombatBack:	
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"StopWalking")
+			TNT1 A 0 A_Warp(AAPTR_Default,-2,0,0,0,WARPF_TESTONLY,1)
+			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,8))
 			TNT1 A 0 A_ChangeVelocity(-1,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
 		CombatStrafeL:	
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"StopWalking")
+			TNT1 A 0 A_Warp(AAPTR_Default,0,-2,0,0,WARPF_TESTONLY,1)
+			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,8))
 			TNT1 A 0 A_ChangeVelocity(0,1,velz,CVF_RELATIVE|CVF_REPLACE)	
 			Stop
-		CombatStrafeR:	
-			TNT1 A 0 A_JumpIf(CallACS("RTCW_Decorate",11)==0,"StopWalking")
+		CombatStrafeR:
+			TNT1 A 0 A_Warp(AAPTR_Default,0,2,0,0,WARPF_TESTONLY,1)
+			Goto CombatStand
+			TNT1 A 0 A_FaceTarget(random(1,8))
 			TNT1 A 0 A_ChangeVelocity(0,-1,velz,CVF_RELATIVE|CVF_REPLACE)
 			Stop
-		DoStep:
-			TNT1 A 0 A_TakeInventory("RTCW_SuperSoldier_AlertTurnDirection",2)
-			TNT1 A 0 A_GiveInventory("RTCW_SuperSoldier_AlertTurnDirection",random(0,2))
-			TNT1 A 0 A_Quake(1,15,0,256,"")
-			Stop
 		//No firing animation to interrupt, we can get away with this
-		StopWalking:
+		CombatStand:
+			TNT1 A 0 A_SpawnItemEx("RTCW_DoorUser",radius,0,0,0,0,0,angle,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS)
+			TNT1 A 0 A_JumpIfTargetInLOS(1,360,JLOSF_DEADNOJUMP,2048)
+			Goto CombatTurn
 			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
 			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",15,1)
+			Stop
+		CombatTurn:
+			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyState",15,3)
 			Stop
 		DoAttack:
 			TNT1 A 0 A_GiveInventory("RTCW_SuperSoldier_DoAttack",1)
 			Goto Pickup+3
-		TurnLeft:
-			TNT1 A 0 A_TakeInventory("RTCW_SuperSoldier_DoTurn",1)
-			TNT1 A 0 A_SetAngle(angle-2)
-			Stop
-		TurnRight:
-			TNT1 A 0 A_TakeInventory("RTCW_SuperSoldier_DoTurn",1)
-			TNT1 A 0 A_SetAngle(angle+2)
-			Stop
 		Dismiss:
 			TNT1 A 0 A_ClearTarget
 			TNT1 A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)

@@ -12,7 +12,7 @@ Actor RTCW_SuperSoldier_Body : RTCWPart
 			RW0E A 1
 			Loop
 		AlertIdle:
-			"####" "#" 8
+			"####" "#" 4
 		AlertIdleLoop:
 			RW0E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW0F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
@@ -21,26 +21,26 @@ Actor RTCW_SuperSoldier_Body : RTCWPart
 			RW12 ABCDEFGHIJKLMNO 2
 			Loop
 		AlertWalk:
-			"####" "#" 8
+			"####" "#" 4
 		AlertWalkLoop:
 			RW13 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW14 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW15 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			Loop
 		AlertBack:
-			"####" "#" 8
+			"####" "#" 4
 		AlertBackLoop:
 			RW16 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW17 ABCDEFGHIJKLMNOP 2
 			Loop
 		CombatIdle1:
-			"####" "#" 8
+			"####" "#" 4
 		CombatIdle1Loop:
 			RW20 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW21 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 2
 			Loop
 		CombatIdle2:
-			"####" "#" 8
+			"####" "#" 4
 		CombatIdle2Loop:
 			RW23 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW24 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
@@ -48,28 +48,33 @@ Actor RTCW_SuperSoldier_Body : RTCWPart
 			RW26 ABCD 2
 			Loop
 		CombatIdle3:
-			"####" "#" 8
+			"####" "#" 4
 		CombatIdle3Loop:
 			RW28 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW29 ABCDEFGHIJKLMNO 2
 			Loop
 		CombatWalk1:
-			"####" "#" 8
+			"####" "#" 4
 		CombatWalk1Loop:
 			RW18 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW19 ABCDEFGHIJKLM 2
 			Loop
 		CombatWalk2:
-			"####" "#" 8
+			"####" "#" 4
 		CombatWalk2Loop:
 			RW1A "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW1B ABCDEFGHIJKLMNOPQRSTU 2
 			Loop
 		CombatWalk3:
-			"####" "#" 8
+			"####" "#" 4
 		CombatWalk3Loop:
 			RW1C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW1D "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\" 2
+			Loop
+		TurnL1:
+			"####" "#" 4
+		TurnL1Loop:
+			RW2C ABCDEFGHIJK 2
 			Loop
 		StrafeL:
 			RW1E ABCDEFGHIJKLMNOPQ 2

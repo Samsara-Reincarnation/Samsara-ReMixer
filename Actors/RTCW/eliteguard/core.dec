@@ -98,14 +98,16 @@ Actor RTCW_Humanoid_EliteGuardBrain : RTCW_Humanoid
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnL",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" ABCDEFG 3 A_SetAngle(angle-10)
-			Goto AlertIdle
+			"####" ABCDEFG 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
 		AlertIdleTurnRight:
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
 			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
-			"####" ABCDE 3 A_SetAngle(angle+10)
-			Goto AlertIdle
+			"####" ABCDE 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
 		AlertWalk:
 			"####" "#" 0 A_JumpIfInventory("RTCW_InfantryWeapon",1,"AlertWalk_2H")
 		AlertWalk_1H:

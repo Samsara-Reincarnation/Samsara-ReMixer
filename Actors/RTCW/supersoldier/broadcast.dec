@@ -157,3 +157,33 @@ Actor RTCWBroadCast_SuperSoldier_CombatIdle3 : RTCWBroadcast
 			stop
 	}
 }
+
+Actor RTCWBroadCast_SuperSoldier_TurnL1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,17)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_TurnL3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,18)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_TurnR3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,19)
+			stop
+	}
+}

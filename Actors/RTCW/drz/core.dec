@@ -70,8 +70,9 @@ Actor RTCW_Scientist : RTCW_Humanoid
 		CombatTurnRight:
 			"####" A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
 			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
-			"####" ABCDEFG 3 A_SetAngle(angle-10)
-			Goto CombatRun
+			"####" ABCDEFG 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,1,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
 	}
 }
 

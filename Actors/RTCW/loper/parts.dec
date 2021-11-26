@@ -21,6 +21,11 @@ Actor RTCW_Loper_Body1 : RTCWPart
 		LegsRunLoop:
 			RW08 ABCDEFGHIJKLMNOP 2
 			Loop
+		LegsTurn:
+			"####" "#" 4
+		LegsTurnLoop:
+			RW09 ABCDEFGHIJKLMNOPQRSTU 2
+			Loop
 		TorsoAttack4:
 			"####" "#" 4
 		TorsoAttack4Loop:
@@ -35,8 +40,8 @@ Actor RTCW_Loper_Body1 : RTCWPart
 			Loop
 		Death1:
 			RW00 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
-			RW00 ABC 2
-			RW00 D -1
+			RW01 ABC 2
+			RW01 D -1
 			Stop
 		Death2:
 			RW02 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2

@@ -31,6 +31,16 @@ Actor RTCW_Zombie_Body1 : RTCWPart
 			RW12 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
 			RW13 ABCDEFGHIJKLMNOPQRST 2
 			Loop
+		CombatTurnL:
+			"####" "#" 4
+		CombatTurnLLoop:
+			RW0F ABCDEFGHIJKLMNO 2
+			Loop
+		CombatTurnR:
+			"####" "#" 4
+		CombatTurnRLoop:
+			RW10 ABCDEFGHIJKLMNO 2
+			Loop
 		Walk1:
 			"####" "#" 4
 		Walk1Loop:
