@@ -90,7 +90,6 @@ Actor RTCW_LoperBrain
 			"####" "]" 0 A_KillMaster
 			"####" "]" -1
 			Stop
-			
 	}
 }
 
@@ -206,6 +205,13 @@ Actor RTCW_LoperTeslaProjectile2 : RTCW_TeslaProjectile
 }
 
 Actor RTCW_LoperTeslaSegment : RTCW_TeslaSegment {}
+
+Actor RTCW_Loper_Gib_Skull : RTCW_Gib {}
+Actor RTCW_Loper_Gib_Abdomen : RTCW_Gib {}
+Actor RTCW_Loper_Gib_Intestine : RTCW_Gib {}
+Actor RTCW_Loper_Gib_Forearm : RTCW_Gib {}
+Actor RTCW_Loper_Gib_Leg : RTCW_Gib {}
+Actor RTCW_Loper_Gib_Foot : RTCW_Gib {}
 
 Actor RTCW_Loper : RTCW_LoperBrain
 {
