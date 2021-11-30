@@ -199,6 +199,7 @@ Actor MasterZilla
 		ZILL A 5 A_Look
 		Wait
 	Idle:
+		TNT1 A 0 A_SetTranslucent(1,0)
 		TNT1 A 0 A_ChangeFlag(NODAMAGE,0)
 		TNT1 A 0 A_ChangeFlag(NOPAIN,0)
 		ZILL A 5 A_Look
