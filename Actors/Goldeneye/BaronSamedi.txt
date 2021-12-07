@@ -16,6 +16,7 @@ Actor Goldeneye_BaronSamedi : Goldeneye_EnemyBase
 			GE00 AA 0 A_UnsetShootable
 			GE00 A 0 ACS_NamedExecuteAlways("GoldeneyeEnemyPartsPicker",0,16)
 			TNT1 A 2
+			TNT1 A 0 ACS_NamedExecuteWithResult("GoldeneyeEnemyLoop")
 			TNT1 A 0 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			TNT1 A 0 A_GiveInventory("AlreadySpawned",1)
@@ -67,6 +68,7 @@ Actor Goldeneye_BaronSamedi2 : 	Goldeneye_BaronSamedi
 			GE00 AA 0 A_UnsetShootable
 			GE00 A 0 ACS_NamedExecuteAlways("GoldeneyeEnemyPartsPicker",0,17)
 			TNT1 A 2
+			TNT1 A 0 ACS_NamedExecuteWithResult("GoldeneyeEnemyLoop")
 			Goto SpawnSamedi			
 		SpawnSamedi:
 			TNT1 A 0 A_GiveToChildren("Goldeneye_Broadcast_SpawnSamedi",1)
@@ -104,6 +106,7 @@ Actor Goldeneye_BaronSamediFinal : Goldeneye_EnemyBase
 			GE00 AA 0 A_UnsetShootable
 			GE00 A 0 ACS_NamedExecuteAlways("GoldeneyeEnemyPartsPicker",0,18)
 			TNT1 A 2
+			TNT1 A 0 ACS_NamedExecuteWithResult("GoldeneyeEnemyLoop")
 			Goto SpawnSamedi			
 		SpawnSamedi:
 			TNT1 A 0 A_GiveToChildren("Goldeneye_Broadcast_SpawnSamedi",1)
