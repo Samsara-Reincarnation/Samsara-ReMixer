@@ -1,73 +1,3 @@
-Script "DukeSlimer1" (void) //2313
-{
-	int i;
-	int bitten_num;
-	
-	GiveInventory("GettingSlimed",1);
-	ActivatorSound("slimer/attack",127);
-	DamageThing(6);
-	
-	for(i = 0; i < 6; i++)
-	{
-		bitten_num = strparam(s:"BITTEN_", d:i);
-		SetHudSize(320,200,0);SetFont(bitten_num);HudMessage(s:"A"; HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);	
-		Delay(PROTOZOID_BITE);
-	}
-		
-	ActivatorSound("slimer/attack",127);
-	DamageThing(6);
-	
-	for(; i < 9; i++)
-	{
-		bitten_num = strparam(s:"BITTEN_", d:i);
-		SetHudSize(320,200,0);SetFont(bitten_num);HudMessage(s:"A"; HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);	
-		Delay(PROTOZOID_BITE);
-	}
-	
-	ActivatorSound("slimer/attack",127);
-	
-	
-	bitten_num = strparam(s:"BITTEN_", d:i);
-	SetHudSize(320,200,0);SetFont(bitten_num);HudMessage(s:"A"; HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);	
-	
-	Delay(10);
-	ACS_NamedExecuteAlways("DukeSlimer2",0,0,0,0);
-}
-
-script "DukeSlimer2" (void) //2314
-{	
-	if(CheckInventory("Health") > 0 && CheckInventory("ProtozoidAttackOMG") != 1)
-	{
-		ActivatorSound("slimer/attack",127);
-		DamageThing(6);
-		SetHudSize(320,200,0);SetFont("BITTEN10");HudMessage(s:"A";HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);
-		Delay(7);	
-		SetHudSize(320,200,0);SetFont("BITTEN_8");HudMessage(s:"A";HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);
-		Delay(7);	
-		SetHudSize(320,200,0);SetFont("BITTEN_9");HudMessage(s:"A";HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.7);
-		Delay(15);
-		restart;		
-	}
-	else if (CheckInventory("ProtozoidAttackOMG") == 1)
-	{
-		SetHudSize(320,200,0);SetFont("TNT1A0");HudMessage(s:""; HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);
-		ActivatorSound("slimer/death",127);
-		GiveInventory("KillCount",1);
-		TakeInventory("GettingSlimed",1);
-		SpawnProjectile(0,"SlimerExploded",0,0,0,0,0);
-		Delay(2);
-		Terminate;
-	}
-	else if (CheckInventory("Health") < 1)
-	{
-		TakeInventory("GettingSlimed",1);
-		Delay(15);
-		SpawnProjectile(0,"Duke3D_Protozoid",0,0,0,0,0);
-		Delay(2);
-		Terminate;		
-	}
-}
-
 Script "DukeEnforcerSpit" (void) CLIENTSIDE //4110
 {
 	int i;
@@ -87,4 +17,82 @@ Script "DukeEnforcerSpit" (void) CLIENTSIDE //4110
 	
 	SetHudSize(214,200,0);HudMessage(s:"";HUDMSG_PLAIN,100+PlayerNumber(),0,107.0,100.0,0.1);	
 	Delay(2);	
+}
+
+Script "DukeProtozoidDamage" (void)
+{
+	int animationDelayCounter, deadPlayer, deadProtozoid;
+	int protozoidTid = UniqueTid();
+	Thing_ChangeTid(0,protozoidTid);
+	SetActivatorToTarget(0);
+
+	ActivatorSound("slimer/attack",127);
+	DamageThing(6);
+	
+	for(int i = 0; i < 9; i++)
+	{
+		SetHudSize(320,200,0);SetFont(strparam(s:"BITTEN_", d:i));HudMessage(s:strparam(s:"A", d:i); HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);	
+		Delay(4);
+	}
+	ActivatorSound("slimer/attack",127);
+	Delay(10);
+	while(GetActorProperty(0,APROP_Health) > 0)
+	{
+		ActivatorSound("slimer/attack",127);
+		DamageThing(6);
+		while(animationDelayCounter < 7 && !deadPlayer && !deadProtozoid)
+		{
+			if(GetActorProperty(protozoidTid,APROP_Health) < 1)
+				deadProtozoid = 1;
+			else if(GetActorProperty(0,APROP_Health) < 1)
+				deadProtozoid = 1;
+			SetHudSize(320,200,0);SetFont("BITTEN10");HudMessage(s:"A";HUDMSG_PLAIN,200,0,0.5,0.5,0.5);
+			Delay(1);
+			animationDelayCounter++;
+		}
+		animationDelayCounter = 0;
+		while(animationDelayCounter < 7 && !deadPlayer && !deadProtozoid)
+		{
+			if(GetActorProperty(protozoidTid,APROP_Health) < 1)
+				deadProtozoid = 1;
+			else if(GetActorProperty(0,APROP_Health) < 1)
+				deadProtozoid = 1;
+			SetHudSize(320,200,0);SetFont("BITTEN_8");HudMessage(s:"A";HUDMSG_PLAIN,200,0,0.5,0.5,0.5);
+			Delay(1);
+			animationDelayCounter++;
+		}
+		animationDelayCounter = 0;
+		while(animationDelayCounter < 15 && !deadPlayer && !deadProtozoid)
+		{
+			if(GetActorProperty(protozoidTid,APROP_Health) < 1)
+				deadProtozoid = 1;
+			else if(GetActorProperty(0,APROP_Health) < 1)
+				deadProtozoid = 1;
+			SetHudSize(320,200,0);SetFont("BITTEN_9");HudMessage(s:"A";HUDMSG_PLAIN,200,0,0.5,0.5,0.5);
+			Delay(1);
+			animationDelayCounter++;
+		}
+		animationDelayCounter = 0;
+		if(deadPlayer || deadProtozoid)
+			break;
+	}
+	if(deadProtozoid == 1)
+	{
+		SetHudSize(320,200,0);SetFont("TNT1A0");HudMessage(s:""; HUDMSG_PLAIN,200+PlayerNumber(),0,0.5,0.5,0.5);
+		ActivatorSound("slimer/death",127);
+		GiveInventory("KillCount",1);
+		TakeInventory("GettingSlimed",1);
+		SpawnProjectile(0,"SlimerExploded",0,0,0,0,0);
+	}
+	else if(deadPlayer == 1)
+	{
+		TakeInventory("GettingSlimed",1);
+		SpawnProjectile(0,"Duke3D_Protozoid",0,0,0,0,0);
+	}
+}
+
+Script "DukeProtozoidPitch" (void)
+{
+	SetActivatorToTarget(0);
+	SetResultValue(GetActorPitch(0)/182);
 }

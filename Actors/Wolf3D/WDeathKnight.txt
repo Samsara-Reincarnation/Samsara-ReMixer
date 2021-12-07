@@ -46,6 +46,7 @@ ACTOR WDeathKnight
 			WDKN A 0
 			WDKN A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			WDKN A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			WDKN A 0 A_GiveInventory("NoHeadShots")
 			WDKN A 0 A_GiveInventory("AlreadySpawned",1)
 		Spawn2:
 			TNT1 A 0 A_SetTranslucent(0,0)

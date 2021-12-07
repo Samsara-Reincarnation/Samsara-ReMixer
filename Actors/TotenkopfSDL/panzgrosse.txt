@@ -24,6 +24,7 @@ ACTOR TotenkopfPanzGrosse : TotenkopfEnemy
 			TK43 A 0
 			TK43 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			TK43 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			TK43 A 0 A_GiveInventory("NoHeadShots")
 			TK43 A 0 A_GiveInventory("AlreadySpawned",1)
 		Spawn2:
 			TK43 A 1 A_Look

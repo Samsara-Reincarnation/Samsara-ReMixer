@@ -61,25 +61,20 @@ actor Leonard2 : Leonard replaces Leonard {
 			Stop			
 		Pain:
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			Goto Super::Pain
 		Missile:
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
 			LEO_ A 0 A_TakeInventory("LeonardWaiting", 15)
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_JumpIf(waterlevel > 2, 7)
 			LEO_ TVVVTT 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		Melee:
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
 			LEO_ A 0 A_TakeInventory("LeonardWaiting", 15)
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_JumpIf(waterlevel > 2, 3)
 			LEO_ V 6 BRIGHT
 			LEO_ V 6
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn		
 		Death.RottExplosive:
@@ -163,14 +158,9 @@ actor RRMotorcyclePlayer2 : RRMotorcyclePlayer replaces RRMotorcyclePlayer {
 			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDecorate", 0, 37)
 			ACLO E -1 
 			Stop
-		Pain:
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
-			Goto Super::Pain
 		Melee:
 		Missile:
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)		
 			LE_M A 5 BRIGHT
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)			
 			Goto Spawn	
 		Death.RottExplosive:
 			TNT1 A 0 A_TakeInventory("AmAlreadyChoked",1)

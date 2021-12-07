@@ -27,12 +27,10 @@ actor Bitterman2 : Bitterman replaces Bitterman {
 			TNT1 A -1
 			stop	
 		Pain:
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Super::Pain
 		Missile:
 			"----" A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
-			"----" A 0 A_GiveInventory("ProtozoidAttackOMG",1)		
 			"----" A 0 A_JumpIfInventory(PowerDoubleFiringSpeed,1,2)
 			"----" A 0 A_Jump(256,2)
 			"----" A 0 A_PlaySound("Q2Misc/DoubleFire/Attack",CHAN_7,0.75)
@@ -58,100 +56,82 @@ actor Bitterman2 : Bitterman replaces Bitterman {
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,7)
 			PA02 GHG 4
 			PA01 T 8
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PA07 ABA 4
 			PA05 A 8
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileShotgun:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,11)
 			PB02 GHIJKLMN 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PB07 ABCDEFGHI 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileSuperShotgun:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,11)
 			PC02 GHIJKLMN 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PC07 ABCDEFGHI 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileMachinegun:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,7)
 			PD02 GHGH 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PD07 AIAI 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileChaingun:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,15)
 			PE02 GHGHGHGHGHGH 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PE07 AIAIAIAIAIAI 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileGrenadeLauncher:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,12)
 			PF02 GHIJKLMN 3
 			PF01 T 5
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PF07 ABCDEFGHI 3
 			PF05 A 5
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileRocketLauncher:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,9)
 			PG02 GHIHG 3
 			PG01 T 5
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PG07 ABCBA 3
 			PG05 A 5
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileHyperBlaster:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,5) 
 			PH02 G 5
 			PH01 T 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PH05 A 5
 			PH07 A 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileRailgun:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,11)
 			PI02 GH 3
 			PI02 IJKLMN 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PI07 AB 3
 			PI07 CDEFGHI 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileBFG:
@@ -159,42 +139,35 @@ actor Bitterman2 : Bitterman replaces Bitterman {
 			PJ02 GHI 4
 			PJ02 GG 10
 			PJ02 HIJKLMN 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PJ07 A 20
 			PJ07 ABC 4
 			PJ07 AA 10
 			PJ07 CDEFGHI 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileIonRipper:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,9)
 			PT02 GHIHG 3
 			PT01 T 5
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PT07 ABCBA 3
 			PT05 A 5
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileETFRifle:
 			TNT1 A 0 A_JumpIfInventory(IsCrouching,1,5) 
 			PS02 G 5
 			PS01 T 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 			PS05 A 5
 			PS07 A 4
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		Melee:
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)				
 			Goto Missile
 		Death:
 			"----" A 0 A_TakeInventory("AmAlreadyChoked",1)

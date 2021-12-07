@@ -38,69 +38,56 @@ Actor POGreedPlayer2 : POGreedPlayer replaces POGreedPlayer {
 			Goto DeathAnim	
 		Pain:
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			Goto Super::Pain
 		Melee:
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",4,"MeleeDominatrix")
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",3,"MeleeSpecimen")
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",2,"MeleeLizard")
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",1,"MeleeCyborg")
 			GPL0 D 3
 			GPL0 E 3 Bright
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MeleeCyborg:
 			GPL2 D 6 Bright
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MeleeLizard:
 			GPL3 D 6 Bright
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MeleeSpecimen:
 			GPL4 D 6 Bright
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MeleeDominatrix:
 			GPL5 D 6 Bright
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		Missile:
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",4,"MissileDominatrix")
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",3,"MissileSpecimen")
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",2,"MissileLizard")
 			TNT1 A 0 A_JumpIfInventory("IPoGMode",1,"MissileCyborg")
 			GPL0 F 6
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileCyborg:
 			GPL2 E 6
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileLizard:
 			GPL3 E 6
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileSpecimen:
 			GPL4 E 6
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		MissileDominatrix:
 			GPL5 E 6
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		Death.RottExplosive:

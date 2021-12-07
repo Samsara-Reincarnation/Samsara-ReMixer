@@ -7,6 +7,7 @@ Actor RTCW_SuperSoldierBrain
 	PainChance 8
 	Monster
 	Tag "Super Soldat"
+	BloodType "RTCW_SuperSoldierBlood"
 	+BOSS
 	+NODROPOFF
 	States
@@ -465,5 +466,23 @@ Actor RTCW_SuperSoldier : RTCW_SuperSoldierBrain
 			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",16)
 			RW0E A 2
 			Goto AlertIdle
+	}
+}
+
+Actor RTCW_SuperSoldierBlood
+{
+	Height 2
+	Radius 2
+	+NOINTERACTION
+	+NOGRAVITY
+	States
+	{
+		Pickup:
+			TNT1 A 0
+			TNT1 A 0 A_PlaySound("RTCW/BulletHitMetal",CHAN_6,0.5,0,ATTN_NORM)
+			TNT1 A 0 A_CheckFlag("NOBLOOD",6)
+			TNT1 AAAAA 0 A_SpawnItemEx("RTCW_BloodTrail",0,0,0,frandom(0.25,0.5),frandom(-0.5,0.5),frandom(0.05,0.25),0,SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0
+			stop
 	}
 }

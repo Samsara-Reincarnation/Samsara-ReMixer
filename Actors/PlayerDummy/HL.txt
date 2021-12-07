@@ -28,13 +28,11 @@ actor HalfLifePlayer2 : HalfLifePlayer replaces HalfLifePlayer {
 			stop	
 		Pain:
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			Goto Super::Pain	
 		Missile:
 		Melee:
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
 			TNT1 A 0 A_JumpIf(waterlevel > 2, "swimunderwater")
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_JumpIfInventory("freeman_unique2selected",1,"Crossbow_Attack")
 			TNT1 A 0 A_JumpIfInventory("freeman_uniqueselected",1,"Squeak_Attack")
 			TNT1 A 0 A_JumpIfInventory("freeman_slot7selected",1,"Egon_Attack")
@@ -48,252 +46,208 @@ actor HalfLifePlayer2 : HalfLifePlayer replaces HalfLifePlayer {
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Normal_CrouchAttack")					
 			VL11 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn		
 		Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Normal_CrouchAttack_Opp")
 			OP11 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn	
 		CrowBar_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"CrowBar_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"CrowBar_CrouchAttack")
 			VL01 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		CrowBar_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"CrowBar_CrouchAttack_Opp")
 			OP01 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Python_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"Python_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Python_CrouchAttack")
 			VL21 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Python_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Python_CrouchAttack_Opp")
 			OP21 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		HornetGun_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"HornetGun_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"HornetGun_CrouchAttack")
 			VL81 OPQRS 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		HornetGun_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"HornetGun_CrouchAttack_Opp")
 			OP81 OPQRS 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Shotgun_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"ShotGun_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"ShotGun_CrouchAttack")
 			VL31 OPQRS 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Shotgun_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"ShotGun_CrouchAttack_Opp")
 			OP31 OPQRS 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		MP5_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"MP5_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"MP5_CrouchAttack")
 			VL41 OPQR 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		MP5_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"MP5_CrouchAttack_Opp")
 			OP41 OPQR 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		RPG_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"RPG_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"RPG_CrouchAttack")
 			VL51 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		RPG_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"RPG_CrouchAttack_Opp")
 			OP51 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)		
 			goto Spawn
 		Gauss_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"Gauss_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Gauss_CrouchAttack")
 			VL61 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Gauss_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Gauss_CrouchAttack_Opp")
 			OP61 OPQR 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Egon_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"Egon_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Egon_CrouchAttack")
 			VL71 OPQRS 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Egon_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Egon_CrouchAttack_Opp")
 			OP71 OPQR 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Squeak_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"Squeak_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Squeak_CrouchAttack")
 			VLS1 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Squeak_Attack_Opp:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Squeak_CrouchAttack_Opp")
 			OPS1 OPQRST 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Crossbow_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"Crossbow_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Crossbow_CrouchAttack")
 			VL91 OPQRS 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Crossbow_Attack:
 			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Crossbow_CrouchAttack_Opp")
 			OP91 OPQRS 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Normal_CrouchAttack:
 			VL11 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Normal_CrouchAttack_Opp:
 			OP11 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		CrowBar_CrouchAttack:
 			VL01 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		CrowBar_CrouchAttack_Opp:
 			OP01 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Python_CrouchAttack:
 			VL21 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Python_CrouchAttack_Opp:
 			OP21 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		HornetGun_CrouchAttack:
 			VL81 TUVWX 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		HornetGun_CrouchAttack_Opp:
 			OP81 TUVWX 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		ShotGun_CrouchAttack:
 			VL31 TUVWX 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		ShotGun_CrouchAttack_Opp:
 			OP31 TUVWX 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		MP5_CrouchAttack:
 			VL41 STUV 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		MP5_CrouchAttack_Opp:
 			OP41 STUV 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		RPG_CrouchAttack:
 			VL51 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		RPG_CrouchAttack_Opp:
 			OP51 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Gauss_CrouchAttack:
 			VL61 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Gauss_CrouchAttack_Opp:
 			OP61 STUV 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Egon_CrouchAttack:
 			VL71 TUVWX 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Egon_CrouchAttack_Opp:
 			OP71 STUV 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Squeak_CrouchAttack:
 			VLS1 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Squeak_CrouchAttack_Opp:
 			OPS1 UVWXYZ 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Crossbow_CrouchAttack:
 			VL91 TUVWX 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Crossbow_CrouchAttack_Opp:
 			OP91 TUVWX 3
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)	
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Death:

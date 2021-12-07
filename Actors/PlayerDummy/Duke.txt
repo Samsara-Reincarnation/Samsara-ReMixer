@@ -29,12 +29,10 @@ actor DukePlayer2 : DukePlayer replaces DukePlayer {
 			stop	
 		Pain:
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			Goto Super::Pain
 		Melee:
 		Missile:
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_JumpIfInventory("DukeKicking",1,"Kicking")
 			TNT1 A 0 A_TakeInventory("DukeWaiting",999)
 			DUKE A 0 A_JumpIf(waterlevel > 2, "Swimming")
@@ -88,22 +86,18 @@ actor DukePlayer2 : DukePlayer replaces DukePlayer {
 			TNT1 A 0 A_JumpIfInventory("DukeKicking",1,"Kicking")
 			DUKE N 1
 			TNT1 A 0 A_JumpIfInventory("DukeKicking",1,"Kicking")
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		Kicking:
-			TNT1 A 0 A_GiveInventory("ProtozoidAttackOMG",1)
 			DUKE A 0 A_TakeInventory("DukeKicking",9)
 			TNT1 A 0 A_JumpIfInventory("DukeLABToken", 1, 5)
 			DUKE G 4
 			DUKE H 4
 			DUKE G 2
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			Goto Spawn
 			DUKE O 4
 			DUKE P 4   
 			DUKE O 2
-			TNT1 A 0 A_TakeInventory("ProtozoidAttackOMG",1)
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
 		Death:
