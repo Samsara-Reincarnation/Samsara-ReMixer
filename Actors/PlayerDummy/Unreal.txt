@@ -40,33 +40,79 @@ actor UnrealPlayer2 : UnrealPlayer replaces UnrealPlayer {
 			UN02 F 2 A_JumpIf((momx > 0.1 || momx < -0.1) || (momy > 0.1 || momy < -0.1),"RunFire")
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)			
 			Goto Spawn
+		Melee:
+		Missile:
+			UF04 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+			UF04 A 0 A_JumpIfInventory("Unreal_DPistolSelected",1,"Shooting")
+			U104 A 0 A_JumpIfInventory("Unreal_RazorJackSelected",1,"Shooting")
+			U205 A 0 A_JumpIfInventory("Unreal_ASMDSelected",1,"ShootingL")
+			U305 A 0 A_JumpIfInventory("Unreal_FlakSelected",1,"ShootingL")
+			U405 A 0 A_JumpIfInventory("Unreal_StingerSelected",1,"ShootingL")
+			U505 A 0 A_JumpIfInventory("Unreal_EightBallSelected",1,"ShootingL")
+			U605 A 0 A_JumpIfInventory("Unreal_MinigunSelected",1,"ShootingL")
+			U705 A 0 A_JumpIfInventory("Unreal_RedeemerSelected",1,"ShootingL")
+			UA05 A 0 A_JumpIfInventory("Unreal_BioRifleSelected",1,"ShootingL")
+			UB05 A 0 A_JumpIfInventory("Unreal_RifleSelected",1,"ShootingL")
+			UC05 A 0 A_JumpIfInventory("Unreal_CARSelected",1,"ShootingL")
+			U004 A 0
+		Shooting:
+			"####" A 0 A_JumpIf(waterlevel > 1, "Tread")
+			"####" A 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" B 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" C 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" D 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" E 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" F 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" G 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" H 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
+			Goto Spawn
+		ShootingL:
+			"####" A 0 A_JumpIf(waterlevel > 1, "Tread")
+			"####" A 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" B 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" C 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" D 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" E 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" F 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" G 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" H 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" I 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" J 2 A_JumpIf(abs(momx) > 0.1 || abs(momy) > 0.1,"RunFire")
+			"####" A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
+			Goto Spawn
+		RunFire:
+			UF13 A 0 A_JumpIfInventory("Unreal_DPistolSelected",1,"RunShooting")
+			U113 A 0 A_JumpIfInventory("Unreal_RazorJackSelected",1,"RunShooting")
+			U214 A 0 A_JumpIfInventory("Unreal_ASMDSelected",1,"RunShooting")
+			U314 A 0 A_JumpIfInventory("Unreal_FlakSelected",1,"RunShooting")
+			U414 A 0 A_JumpIfInventory("Unreal_StingerSelected",1,"RunShooting")
+			U514 A 0 A_JumpIfInventory("Unreal_EightBallSelected",1,"RunShooting")
+			U614 A 0 A_JumpIfInventory("Unreal_MinigunSelected",1,"RunShooting")
+			U714 A 0 A_JumpIfInventory("Unreal_RedeemerSelected",1,"RunShooting")
+			UA14 A 0 A_JumpIfInventory("Unreal_BioRifleSelected",1,"RunShooting")
+			UB14 A 0 A_JumpIfInventory("Unreal_RifleSelected",1,"RunShooting")
+			UC14 A 0 A_JumpIfInventory("Unreal_CARSelected",1,"RunShooting")
+			U013 A 0
+		RunShooting:
+			"####" A 0 A_JumpIf(waterlevel > 1, "Swim")
+			"####" A 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" B 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" C 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" D 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" E 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" F 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" G 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" H 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" I 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" J 2 A_JumpIf(abs(momx) < 0.1 && abs(momy) < 0.1,"Missile")
+			"####" A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
+			Goto Spawn
 		Death:
 			TNT1 A 0 A_TakeInventory("AmAlreadyChoked",1)
 			TNT1 A 0 A_TakeInventory("Chokeme",1)															
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")				
-			UN04 A 2 A_PlayerScream
-			UN04 B 2 A_NoBlocking
-			UN04 C 2
-			UN04 D 2
-			UN04 E 2
-			UN04 F 2
-			UN04 G 2
-			UN04 H 2
-			UN04 I 2
-			UN04 J 2
-			UN04 K 2
-			UN04 L 2
-			UN04 M 2
-			UN04 N 2
-			UN04 O 2
-			UN04 P 2
-			UN04 Q 2
-			UN04 R 2
-			UN04 S 2
-			UN04 T 2
-			UN04 U 2
-			UN04 V -1
-			Stop			
+			Goto Super::Death	
 		XDeath:
 			TNT1 A 0 A_TakeInventory("AmAlreadyChoked",1)
 			TNT1 A 0 A_TakeInventory("Chokeme",1)															
