@@ -5783,3 +5783,25 @@ Model GuardHyperBlaster
 	PITCHFROMMOMENTUM
 	FrameIndex NULL A 0 0
 }
+Model Q2SGDrop
+{
+	Path "Models/Quake2/Shotgun"
+	Skin 0 "shotgun.png"
+	Model 0 "shotgun.md2"
+	Scale 1.25 1.25 1.25
+	Offset 0 0 10
+	ROTATING
+	
+	FrameIndex Q2WP A 0 0
+}
+Model Q2ChaingunDrop
+{
+	Path "Models/Quake2/Chaingun"
+	Skin 0 "g_chaingun.png"
+	Model 0 "g_chaingun.md2"
+	Scale 1.25 1.25 1.25
+	Offset 0 0 10
+	ROTATING
+
+	FrameIndex Q2WP A 0 0
+}

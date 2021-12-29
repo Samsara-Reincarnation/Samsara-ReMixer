@@ -1033,7 +1033,7 @@ ACTOR MummyLeader3 : MummyLeader2
 {
 	Tag "Nitrogolem"
 	//Dropitem "DefaultPinataPop"
-	DropItem "GoldWandAmmo2", 84
+	DropItem "HereticMummyLeaderDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -1384,6 +1384,25 @@ ACTOR MummyLeader3 : MummyLeader2
 			TNT1 A 0 A_SpawnItemEx("DukeGibPopSpawner", 0, 0, height*2, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_GiveToTarget("DukeGibTaunt",1)
 			TNT1 A 1
+			Stop
+	}
+}
+
+Actor HereticMummyLeaderDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("GoldWandAmmo2", 1, 86)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("HereticMaceDrop", 1, 176)
 			Stop
 	}
 }

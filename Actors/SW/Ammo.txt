@@ -64,3 +64,23 @@ Actor SWEnemy_SeekerCardDrop : SamsaraUniquePickup2
 			Stop
 			}
 }			
+
+Actor SWRiotGunDrop : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		SW30 Z -1
+		Stop
+		}
+}
+
+Actor SWUziDrop : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		SW40 Z -1
+		Stop
+		}
+}

@@ -8,6 +8,7 @@ ACTOR LightningGuard : RoTTHumanoid {
    DeathSound "LnGuarddie"
    MeleeRange 64
    MeleeDamage 1
+   DropItem "LightningGuardDrop"
    Species "Enemies"
    +MTHRUSPECIES
    +DONTHARMSPECIES
@@ -1152,6 +1153,25 @@ ACTOR LGuardAltDeath2 : LightningGuard {
 		LIGW N 6
 		LIGW O -1
 		Stop
+	}
+}
+
+Actor LightningGuardDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright 
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("RoTTPistolDrop", 1, 256)
+			Stop
 	}
 }
 

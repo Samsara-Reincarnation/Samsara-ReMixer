@@ -24,6 +24,7 @@ Actor ChokingHand
 	+NOTDMATCH
 	+NOINFIGHTING
 	+THRUGHOST	
+	-COUNTKILL
 	+NOBLOODDECALS
 	PainChance "ShrinkerDMG", 0
 	PainChance "MightyBoot", 255

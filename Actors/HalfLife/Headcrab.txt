@@ -9,6 +9,7 @@ Actor Headcrab
 	+FLOORCLIP
 	+NOINFIGHTING
 	+NOBLOODDECALS
+	-COUNTKILL
 	Monster
 	Tag "Headcrab"
 	Species "Enemies"	

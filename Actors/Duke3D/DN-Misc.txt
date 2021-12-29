@@ -828,6 +828,18 @@ Actor PigDrop : SamsaraSlotTwoDrop
     }
 }
 
+Actor BeachPigDrop : SamsaraSlotTwoDrop
+{
+	+DROPPED
+	Scale 0.65
+    States
+    {
+      Spawn:
+        SHTP B -1
+        stop
+    }
+}
+
 ACTOR AEnforcerDrop : SamsaraSlotFourDrop
 {
 	Scale 0.65
@@ -837,9 +849,18 @@ ACTOR AEnforcerDrop : SamsaraSlotFourDrop
       Spawn:
         DCCP A -1
         stop
-	  Pickup:
-		TNT1 A 0 A_GiveInventory("Clip2",40)
-		Goto "Super::Pickup"
+    }
+}
+
+ACTOR BeachEnforcerDrop : SamsaraSlotFourDrop
+{
+	Scale 0.65
+	+DROPPED
+	States
+    {
+      Spawn:
+        CHGP B -1
+        stop
     }
 }
 
@@ -867,11 +888,25 @@ ACTOR RandomPigDrop : RandomSpawner
 	dropitem "DukeArmor" 255 6
 }
 
+ACTOR RandomBeachPigDrop : RandomSpawner
+{
+	+DROPPED
+	dropitem "BeachPigDrop" 255 34
+	dropitem "DukeArmor" 255 6
+}
+
 ACTOR RandomEnforcerDrop : RandomSpawner
 {
 	+DROPPED
 	dropitem "AEnforcerAmmoDrop" 255 8
 	dropitem "AEnforcerDrop" 255 32
+}
+
+ACTOR RandomBeachEnforcerDrop : RandomSpawner
+{
+	+DROPPED
+	dropitem "AEnforcerAmmoDrop" 255 8
+	dropitem "BeachEnforcerDrop" 255 32
 }
 
 ACTOR BattleLordMortar 

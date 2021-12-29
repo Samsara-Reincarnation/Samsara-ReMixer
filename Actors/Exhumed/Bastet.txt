@@ -14,7 +14,7 @@ Actor Bastet
     activesound "bastet/active"
     deathsound "bastet/death"
     MONSTER
-	DropItem "PowerslaveSoulPowerOrbSpawn" 34,1	
+	DropItem "PowerslaveSoulPowerOrbSpawn" 64,1	
 	Species "Enemies"	
     +FLOORCLIP
 	+NOINFIGHTING
@@ -47,14 +47,13 @@ Actor Bastet
 		BAST A 0 A_ChangeFlag(FRIGHTENED,0)  
 		BAST E 0 A_PlaySound("bastet/warpin")
 		BAST E 0 A_SpawnItem("BastetTeleportFlash",0,0,0)
-		TNT1 E 0 A_SetTranslucent(1,0)  
 		BAST E 0 A_SpawnItem("BastetTeleport",0,0,0) 	
 		BAS3 PONMLKJIHGFEDCBA 1 Bright
 		TNT1 E 0 A_SetShootable
 		TNT1 E 0 A_UnSetInvulnerable
 		TNT1 E 0 A_SetSolid
 		TNT1 E 0 A_TakeInventory("BastetInTeleport",1)
-		Goto Spawn+1
+		Goto Spawn2
     See:
 		BAST A 0 A_JumpIfInventory("BastetInTeleport",1,"RoamInvisible")
 		BAST AA 2 A_Chase("Melee",0)

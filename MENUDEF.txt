@@ -46,6 +46,7 @@ OptionMenu "OptionsMenu"
 			Option "No bats", "mm_nobats", "OnOff"
 			Option "Initialization Reset", "mm_init", "OnOff"
 			Option "Fake Hitler Fire", "mm_fakehitlerfire", "OnOff"
+			Option "Enemy Drop Mode", "mm_dropmode", "DropMode"
 			Slider "Random Sets Per Map", "mm_randomcycle", 1, 31, 1
 			Option "Spawn Mode", "mm_spawnmode", "SpawnMode"
 			
@@ -90,10 +91,11 @@ OptionMenu "OptionsMenu"
 	OptionValue DoomMode
 	{
 			0, "Class-Based"
-			1, "Doom"
-			2, "Doom 64"
-			3, "Vanilla Doom Randomizer"
-			4, "Combined All"
+			1, "Class Randomizer"
+			2, "Doom"
+			3, "Doom 64"
+			4, "Vanilla Doom Randomizer"
+			5, "Combined All"
 	}
 	OptionValue Wolfmode
 	{
@@ -124,6 +126,11 @@ OptionMenu "OptionsMenu"
 			2, "Entire Sets"
 			3, "Random Cycle"
 	}
+	OptionValue DropMode
+	{
+			0, "Default"
+			1, "Doom-Style"
+	}		
 
 	OptionMenu "SamsaraMonsterSpawnOptions"
     {

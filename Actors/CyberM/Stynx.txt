@@ -19,7 +19,7 @@ Actor CMStynx
 	PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
 	Tag "Stynx"
-    DropItem "CMStynxDrop" 24
+    DropItem "CMStynxDrop"
 	Scale 0.25
 	var int user_scalex;
 	var int user_scaley;
@@ -701,7 +701,7 @@ actor CMStynx_ShrinkEffect : CMStynx
 	}
 }
 
-Actor CMStynxDrop : Ammo1Big
+Actor CMStynxBulletDrop : Ammo1Big
 {
 	Scale 0.30
 	States
@@ -711,3 +711,32 @@ Actor CMStynxDrop : Ammo1Big
 		Stop
 	}
 }	
+
+Actor CMStynXSlotFour : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		CMMG F  -1
+		Stop
+		}
+}	
+
+Actor CMStynxDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("CMStynxBulletDrop", 1, 36)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("CMStynXSlotFour", 1, 256)
+			Stop
+	}
+}

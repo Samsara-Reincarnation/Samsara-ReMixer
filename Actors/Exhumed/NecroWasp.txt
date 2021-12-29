@@ -48,9 +48,9 @@ Actor OmenWaspNecro
 		Loop
 	See2:	
 		PSON A 0 A_PlaySound("omenwasp2/flying",5)
-		PSON AA 1 A_ExtChase(0,0)
+		PSON AA 1 A_Chase
 		PSON A 0 A_PlaySound("omenwasp2/flying",6)
-		PSON BB 1 A_ExtChase(0,0)
+		PSON BB 1 A_Chase
 		Loop
     Missile:
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)

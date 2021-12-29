@@ -12,11 +12,7 @@ Actor Hexen2KnightArcher : Hexen2HumanoidBase
 	SeeSound "Hexen2/KnightArcher/Sight"
 	PainSound "Hexen2/KnightArcher/Pain"
 	DeathSound "Hexen2/KnightArcher/Death"
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 2
+	DropItem "Hexen2KnightArcherDrop"
 	Painchance 255
 	Species "Enemies"
 	+NODROPOFF
@@ -519,11 +515,7 @@ Actor Hexen2KnightArcherDeathAnimation : Hexen2CorpseActor
 {
 	Radius 16
 	Height 56
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 2
+	DropItem "Hexen2GruntDropRandom", 24
 	States
 	{
 	Spawn:
@@ -545,11 +537,7 @@ Actor Hexen2KnightArcherCorpse : Hexen2CorpseActor
 {
 	Radius 16
 	Height 32
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 2	
+	DropItem "Hexen2GruntDropRandom", 24
 	States
 	{
 	Spawn:
@@ -686,11 +674,7 @@ Actor Hexen2ArcherBlueProjectile
 
 Actor Hexen2AKnightHead : Hexen2HeadActor
 {
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 2
+	DropItem "Hexen2GruntDropRandom", 24
 	States
 	{
 		Spawn:
@@ -724,11 +708,7 @@ Actor Hexen2ArcherLord : Hexen2KnightArcher
 {
 	Tag "Archer Lord"
 	Health 325
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 7
+	DropItem "Hexen2GruntDropRandom", 24
 	Obituary "%o was no match for an Archer Lord."
 	SeeSound "Hexen2/ArcherLord/See"
 	PainSound "Hexen2/ArcherLord/Pain"
@@ -824,11 +804,7 @@ Actor Hexen2ArcherLordDeathAnimation : Hexen2CorpseActor
 {
 	Radius 16
 	Height 56
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 7	
+	DropItem "Hexen2GruntDropRandom", 24
 	States
 	{
 	Spawn:
@@ -851,11 +827,7 @@ Actor Hexen2ArcherLordCorpse : Hexen2CorpseActor
 {
 	Radius 16
 	Height 32
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 7	
+	DropItem "Hexen2GruntDropRandom", 24
 	States
 	{
 	Spawn:
@@ -876,17 +848,13 @@ Actor Hexen2ArcherLordCorpse : Hexen2CorpseActor
 
 Actor Hexen2ALordHead : Hexen2AKnightHead 
 { 
-	DropItem "Hexen2Bluemana", 12
-	DropItem "Hexen2Greenmana", 12
-	DropItem "Hexen2Combinedmana", 12
-	DropItem "Hexen2CrystalVial", 12
-	DropItem "Hexen2TomeDrop", 7
+	DropItem "Hexen2GruntDropRandom", 24
 }
 
 Actor Hexen2IceArcher : Hexen2KnightArcher
 {
 	Tag "Knight Archer (Winter)"
-	DropItem ""
+	DropItem "Hexen2IceArcherDrop"
 	States
 	{
 		See:

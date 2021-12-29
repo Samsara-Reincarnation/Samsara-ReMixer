@@ -145,6 +145,28 @@ Model QuakePlayer2
    FrameIndex PLY9 I 0 102
 }
 
+Model Q1SGDrop
+{
+   Path "models"   
+   Model 0 "QSGpickup.md3"   
+   Skin 0 "QSGpickup.pcx"    
+   ROTATING
+   Scale 0.8 0.8 0.8          
+
+   FrameIndex QDBS Z 0 0
+}
+
+Model Q1NGDrop
+{
+   Path "models"   
+   Model 0 "Nailgunpickup.md3"   
+   Skin 0 "Nailgunpickup.pcx"    
+   ROTATING
+   Scale 0.9 0.9 0.9          
+
+   FrameIndex QNLG Z 0 0
+}
+
 Model Vore
 {
    Path "models"   

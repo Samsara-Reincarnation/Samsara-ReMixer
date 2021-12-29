@@ -15,6 +15,7 @@ Actor Skeeving
 	ActiveSound "skev/see"
 	PainSound "skev/ow"
 	DeathSound "skev/die"
+	DropItem "SkeevingDrop", 256, 1
 	Obituary "%o was pierced by a Skeeving."
 	PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
@@ -511,6 +512,25 @@ Actor SkeevingDart : SkeArcherDart
 		XDeath:
 		Crash:
 			BLOS KLMN 4
+			Stop
+	}
+}
+
+Actor SkeevingDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright 
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("EradSlotFourDrop", 1, 256)
 			Stop
 	}
 }

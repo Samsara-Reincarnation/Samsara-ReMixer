@@ -21,6 +21,7 @@ actor PerScanDrone {
 	DamageFactor "PoisonBolt", 0
     +NOPAIN
 	+NOBLOOD
+	-COUNTKILL
 	+NOGRAVITY
 	+FLOAT
     States {

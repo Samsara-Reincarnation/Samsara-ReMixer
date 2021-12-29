@@ -214,3 +214,23 @@ Actor ArtiSuperHealthEnemy : HealPack2
 			Loop
 		}
 }		
+
+Actor HereticMaceDrop : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		WMCE A -1
+		Stop
+		}
+}
+
+Actor HereticClawDrop : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		WBLS A -1
+		Stop
+		}
+}

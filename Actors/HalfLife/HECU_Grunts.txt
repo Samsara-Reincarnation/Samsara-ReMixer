@@ -17,7 +17,7 @@ Actor HECU_Grunt1
 	PainSound "HECU/Pain"
 	DeathSound "HECU/Death"	
 	BloodType "HalfLifeBlood"
-	DropItem "HL_HECU_MP5Drop", 96, 1
+	DropItem "HL_HECU_MP5Drop", 256, 1
 	Tag "Hazard Environmental Combat Unit Soldier"
     DamageFactor "Mace", 1.1
     DamageFactor "DragonClaw", 1.5
@@ -1062,7 +1062,7 @@ actor HECU_Grunt2_ShrinkEffect : HECU_Grunt1_ShrinkEffect {}
 
 Actor HECU_Shotgun1 : HECU_Grunt1
 {
-	DropItem "HL_HECU_ShotgunDrop", 96, 1
+	DropItem "HL_HECU_ShotgunDrop", 256, 1
 	States
 	{
 		Missile:
@@ -1676,7 +1676,7 @@ Actor HECU_Sarge : HECU_Commander1
 	Seesound "Sarge/Alert"
 	Speed 2
 	Mass 180
-	DropItem "HL_HECU_SawDrop", 32, 1
+	DropItem "HL_HECU_SawDrop", 96, 1
 	Scale 0.85
 	States
 	{
@@ -2664,7 +2664,7 @@ ACTOR HL_MP5clip : Ammo1Big
     }
 }
 
-ACTOR Saw_Clipbox : Ammo1Big
+ACTOR Saw_Clipbox : Q2CellPickup
 {
 	Scale 0.6
 	+DROPPED
@@ -2673,23 +2673,6 @@ ACTOR Saw_Clipbox : Ammo1Big
       Spawn:
         HL00 A -1
         stop
-	  Pickup:
-        TNT1 A 0 A_JumpIfInventory("MarathonClass", 0, "PickupMarathon")
-	    TNT1 A 0 A_JumpIfInventory("RottClass", 0, "PickupRott")	  
-		TNT1 A 0 A_JumpIfInventory("RRClass", 0, "PickupLeonard")
-		TNT1 A 0 A_JumpIfInventory("WitchavenClass", 0, "PickupWitchaven")	
-		TNT1 A 0 A_JumpIfInventory("BittermanClass", 0, "PickupBitterman")	
-		TNT1 A 0 A_JumpIfInventory("CatacombClass", 0, "PickupCatacomb")	
-		TNT1 A 0 A_JumpIfInventory("HalfLifeOpposingForce",1,"PickupAdrian")
-        TNT1 A 0 A_GiveInventory("Clip", 50)
-		TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
-        TNT1 A 0 A_JumpIfInventory("QuakeClass", 0, "PickupQuake")
-		TNT1 A 0
-        stop
-	  PickupAdrian:
-		TNT1 A 0 A_JumpIfInventory("Cell", 0, "PickupFail")
-		TNT1 A 0 A_GiveInventory("Cell",50)
-		stop
     }
 }
 
@@ -2736,7 +2719,7 @@ ACTOR MP5Drop : SamsaraSlotFourDrop {
     }
 }
 
-ACTOR AssaultShotgunDrop : SamsaraSlotThreeDrop {
+ACTOR AssaultShotgunDrop : SamsaraSlotTwoDrop {
 	+DROPPED
 	States
     {

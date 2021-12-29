@@ -15,6 +15,7 @@ Actor ExHawk
 	+MISSILEEVENMORE
 	+DONTFALL
 	+SPAWNFLOAT
+	-COUNTKILL
 	+NOINFIGHTING
 	Tag "Hawk"
 	SeeSound "hawk/active"
@@ -46,7 +47,7 @@ Actor ExHawk
 	Melee:
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		HAWK G 1 A_FaceTarget
-		HAWK G 3 A_MeleeAttack
+		HAWK G 3 A_CustomMeleeAttack(Random(6,10))
 		HAWK AABB 1 A_Wander
 		TNT1 A 0 A_PlaySound("hawk/flap",5,0.5)
 		HAWK CCDDEEFFBBAABB 1 A_Wander

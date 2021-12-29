@@ -1,6 +1,7 @@
 ACTOR Ettin3 : Ettin2
 {
 	Tag "Ettin"
+	DropItem "HexenEttinDrop"
 	-TELESTOMP
 	States
 	{

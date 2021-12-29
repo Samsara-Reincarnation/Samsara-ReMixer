@@ -9,7 +9,7 @@ Actor DisruptorMutantSoldier : DisruptorHumanoid
 	+MISSILEEVENMORE
 	Tag "Mutant Soldier"	
     Obituary "%o was killed by a Mutant Soldier"
-	DropItem "Disruptor18MMDrop", 76
+	DropItem "Disruptor18MMDrop", 128
 	DropItem "DisruptorClip"
 	Bloodcolor Tan
     States {

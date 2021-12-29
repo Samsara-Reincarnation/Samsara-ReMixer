@@ -47,13 +47,13 @@ Actor OmenWasp
     Melee:
 		OWDE E 0 A_PlaySound("omenwasp/attack",CHAN_WEAPON)
 		OWDE E 1 A_FaceTarget
-		OWDE E 3 A_MeleeAttack
+		OWDE E 3 A_CustomMeleeAttack(Random(2,5))
 		OWDE D 1 A_FaceTarget
-		OWDE D 3 A_MeleeAttack
+		OWDE D 3 A_CustomMeleeAttack(Random(2,5))
 		OWDE C 1 A_FaceTarget
-		OWDE C 3 A_MeleeAttack
+		OWDE C 3 A_CustomMeleeAttack(Random(2,5))
 		OWDE D 1 A_FaceTarget
-		OWDE D 3 A_MeleeAttack
+		OWDE D 3 A_CustomMeleeAttack(Random(2,5))
 		goto See
     Death:
 	XDeath:

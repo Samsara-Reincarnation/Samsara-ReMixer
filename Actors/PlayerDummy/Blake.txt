@@ -104,31 +104,31 @@ Actor Blake_AI
 	FireSlot4:
 		BSTN F 2 A_FaceTarget
 		BSTN SS 0 A_PlayWeaponSound("BRifle/Fire")  
-		BSTN G 2 Bright A_CustomMissile("BlakeBullet4",38,random(-2,2))
+		BSTN G 2 Bright A_CustomBulletAttack(2,2,0,3,"BlankPuffBlake")
 		BSTN T 0 A_Jump(8,"See")
 		BSTN F 2 A_FaceTarget
 		BSTN SS 0 A_PlayWeaponSound("BRifle/Fire")  
-		BSTN G 2 Bright A_CustomMissile("BlakeBullet4",38,random(-2,2))
+		BSTN G 2 Bright A_CustomBulletAttack(2,2,0,3,"BlankPuffBlake")
 		BSTN T 0 A_Jump(8,"See")
 		BSTN F 2 A_FaceTarget
 		BSTN SS 0 A_PlayWeaponSound("BRifle/Fire")  
-		BSTN G 2 Bright A_CustomMissile("BlakeBullet4",38,random(-2,2))
+		BSTN G 2 Bright A_CustomBulletAttack(2,2,0,3,"BlankPuffBlake")
 		BSTN T 0 A_Jump(8,"See")
 		BSTN F 2 A_FaceTarget
 		BSTN SS 0 A_PlayWeaponSound("BRifle/Fire")  
-		BSTN G 2 Bright A_CustomMissile("BlakeBullet4",38,random(-2,2))
+		BSTN G 2 Bright A_CustomBulletAttack(2,2,0,3,"BlankPuffBlake")
 		BSTN T 0 A_Jump(8,"See")
 		BSTN F 2 A_FaceTarget
 		BSTN SS 0 A_PlayWeaponSound("BRifle/Fire")  
-		BSTN G 2 Bright A_CustomMissile("BlakeBullet4",38,random(-2,2))
+		BSTN G 2 Bright A_CustomBulletAttack(2,2,0,3,"BlankPuffBlake")
 		BSTN T 0 A_Jump(8,"See")
 		BSTN F 2 A_FaceTarget
 		BSTN SS 0 A_PlayWeaponSound("BRifle/Fire")  
-		BSTN G 2 Bright A_CustomMissile("BlakeBullet4",38,random(-2,2))
+		BSTN G 2 Bright A_CustomBulletAttack(2,2,0,3,"BlankPuffBlake")
 		BSTN T 0 A_Jump(8,"See")
 		BSTN F 2 A_FaceTarget
 		BSTN SS 0 A_PlayWeaponSound("BRifle/Fire")  
-		BSTN G 2 Bright A_CustomMissile("BlakeBullet4",38,random(-2,2))
+		BSTN G 2 Bright A_CustomBulletAttack(2,2,0,3,"BlankPuffBlake")
 		BSTN T 0 A_CPOSRefire
 		goto FireSlot4	
 	Pain:

@@ -1363,6 +1363,7 @@ Actor CatacombAbyss_Mage : CatacombTrilogy_EnemyBase
 	Health 50
 	Speed 15
 	Tag "Red Mage"
+	DropItem "CatacombAbyss_MageDrop"
 	States
 	{
 		Spawn:
@@ -1857,6 +1858,25 @@ Actor CatacombAbyss_Mage : CatacombTrilogy_EnemyBase
 			Stop							
 	}
 }	
+
+Actor CatacombAbyss_MageDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright 
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("Catacomb3D_XDrop", 1, 256)
+			Stop
+	}
+}
 
 actor CatacombAbyss_Mage_Shrink : CatacombAbyss_Mage
 {

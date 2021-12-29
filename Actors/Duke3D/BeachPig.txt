@@ -1,5 +1,6 @@
 ACTOR BlueBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -78,7 +79,7 @@ ACTOR BlueBeachPig : PigCop
 			DN53 K 3 A_Scream
 			DN53 L 5
 			DN53 M 5 A_NoBlocking
-			DN53 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN53 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN53 OP 5
 			DN53 P 0 A_SpawnItemEx("BlueBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -657,6 +658,7 @@ actor BlueBeachPig_ShrinkEffect : BlueBeachPig
 
 ACTOR RedBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -735,7 +737,7 @@ ACTOR RedBeachPig : PigCop
 			DN54 K 3 A_Scream
 			DN54 L 5
 			DN54 M 5 A_NoBlocking
-			DN54 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN54 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN54 OP 5
 			DN54 P 0 A_SpawnItemEx("RedBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -1314,6 +1316,7 @@ actor RedBeachPig_ShrinkEffect : RedBeachPig
 
 ACTOR GreenBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -1392,7 +1395,7 @@ ACTOR GreenBeachPig : PigCop
 			DN55 K 3 A_Scream
 			DN55 L 5
 			DN55 M 5 A_NoBlocking
-			DN55 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN55 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN55 OP 5
 			DN55 P 0 A_SpawnItemEx("GreenBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -1971,6 +1974,7 @@ actor GreenBeachPig_ShrinkEffect : GreenBeachPig
 
 ACTOR GrayBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -2049,7 +2053,7 @@ ACTOR GrayBeachPig : PigCop
 			DN56 K 3 A_Scream
 			DN56 L 5
 			DN56 M 5 A_NoBlocking
-			DN56 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN56 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN56 OP 5
 			DN56 P 0 A_SpawnItemEx("GrayBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -2628,6 +2632,7 @@ actor GrayBeachPig_ShrinkEffect : GrayBeachPig
 
 ACTOR DarkGrayBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -2706,7 +2711,7 @@ ACTOR DarkGrayBeachPig : PigCop
 			DN57 K 3 A_Scream
 			DN57 L 5
 			DN57 M 5 A_NoBlocking
-			DN57 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN57 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN57 OP 5
 			DN57 P 0 A_SpawnItemEx("DarkGrayBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -3285,6 +3290,7 @@ actor DarkGrayBeachPig_ShrinkEffect : DarkGrayBeachPig
 
 ACTOR DarkBlueBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -3363,7 +3369,7 @@ ACTOR DarkBlueBeachPig : PigCop
 			DN58 K 3 A_Scream
 			DN58 L 5
 			DN58 M 5 A_NoBlocking
-			DN58 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN58 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN58 OP 5
 			DN58 P 0 A_SpawnItemEx("DarkBlueBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -3942,6 +3948,7 @@ actor DarkBlueBeachPig_ShrinkEffect : DarkBlueBeachPig
 
 ACTOR BrownBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -4020,7 +4027,7 @@ ACTOR BrownBeachPig : PigCop
 			DN59 K 3 A_Scream
 			DN59 L 5
 			DN59 M 5 A_NoBlocking
-			DN59 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN59 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN59 OP 5
 			DN59 P 0 A_SpawnItemEx("BrownBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -4599,6 +4606,7 @@ actor BrownBeachPig_ShrinkEffect : BrownBeachPig
 
 ACTOR YellowBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -4677,7 +4685,7 @@ ACTOR YellowBeachPig : PigCop
 			DN60 K 3 A_Scream
 			DN60 L 5
 			DN60 M 5 A_NoBlocking
-			DN60 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN60 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN60 OP 5
 			DN60 P 0 A_SpawnItemEx("YellowBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
@@ -5256,6 +5264,7 @@ actor YellowBeachPig_ShrinkEffect : YellowBeachPig
 
 ACTOR DarkGreenBeachPig : PigCop
 {
+	DropItem "RandomBeachPigDrop", 256, 1
 	States
 	{
 		Spawn:
@@ -5334,7 +5343,7 @@ ACTOR DarkGreenBeachPig : PigCop
 			DN61 K 3 A_Scream
 			DN61 L 5
 			DN61 M 5 A_NoBlocking
-			DN61 N 4 A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
+			DN61 N 4 //A_SpawnItemEx("RandomPigDrop",0,0,0,0,0,10,0,40,128)
 			DN61 OP 5
 			DN61 P 0 A_SpawnItemEx("DarkGreenBeachPigCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1

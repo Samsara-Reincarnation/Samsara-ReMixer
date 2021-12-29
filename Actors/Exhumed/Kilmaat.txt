@@ -14,7 +14,7 @@ Actor KilmaatSentry
     painsound "kilmaatsentry/pain2"
     activesound "kilmaatsentry/active"
     deathsound "kilmaatsentry/death"
-	DropItem "PowerslaveSoulPowerOrbSpawn" 48,1	
+	DropItem "PowerslaveSoulPowerOrbSpawn" 64,1	
     MONSTER
     +MISSILEMORE
     +FLOORCLIP

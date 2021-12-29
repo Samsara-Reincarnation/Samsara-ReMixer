@@ -58,3 +58,13 @@ Actor C7EnemyDropClip : Clip2 {
 			Stop
 	}
 }
+
+Actor C7EnemyDropVulcan : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		7VL2 A -1
+		Stop
+		}
+}

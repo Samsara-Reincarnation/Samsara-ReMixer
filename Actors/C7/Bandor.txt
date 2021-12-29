@@ -9,7 +9,7 @@ Actor Bandor : C7Alien {
 	Species "Enemies"
 	Obituary "%o was undone by a Bandor."
 	+MISSILEEVENMORE
-	DropItem C7EnemyDropClip, 60, 1
+	DropItem EitakDrop
 	States {
 		Spawn:
 			C700 A 0

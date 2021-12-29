@@ -314,7 +314,7 @@ Script "Hexen2_Decorate_Monster" (int mode, int arg1, int arg2)
 			Thing_ChangeTid(newtid, oldtid);
 			SetActivator(0, AAPTR_TRACER);
 			int traceralliance = CheckFlag(0,"FRIENDLY");
-			if(ClassifyActor(0) != ACTOR_WORLD && GetActorClass(0) != "Hexen2Famine" && GetActorClass(0) != "MultiHexen2Famine")
+			if(ClassifyActor(0) != ACTOR_WORLD && GetActorClass(0) != "Hexen2Famine")
 			{
 				Thing_Stop(0);
 				int targetx = GetActorX(0);

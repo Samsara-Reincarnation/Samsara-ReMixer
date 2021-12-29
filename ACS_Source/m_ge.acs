@@ -89,6 +89,7 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec)
 			glasses = "";
 		SpawnForced(StrParam(s:"Goldeneye_",s:HeadTypes[randomhead],s:glasses),0,0,0,headtid);
 		SetActivator(headtid,AAPTR_DEFAULT);
+		SetPointer(AAPTR_MASTER,newtid);	
 	}
 	else if(type == 19)
 	{
@@ -96,8 +97,8 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec)
 		glasses = "";
 		SpawnForced(StrParam(s:"Goldeneye_",s:HeadTypes[randomheadfem],s:glasses),0,0,0,headtid);
 		SetActivator(headtid,AAPTR_DEFAULT);
+		SetPointer(AAPTR_MASTER,newtid);	
 	}	
-	SetPointer(AAPTR_MASTER,newtid);		
 	switch(type)
 	{
 		case 1:	
@@ -1626,10 +1627,7 @@ Script "GoldeneyePartBroadcast2" (int State) // yeah, it needed a sequel
 			break;		
 		case 119:
 			SetActorState(0,"Walking",true);
-			break;			
-		case 120:
-			SetActorState(0,"Monologue",true);
-			break;					
+			break;				
 	}
 }	
 

@@ -14,14 +14,9 @@ ACTOR SpiderMastermindSpawnerCoop replaces SpiderMastermind
 		Spawn:
 			TNT1 A 1
 			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2)
-		BossWait:
-			TNT1 A 0 A_JumpIf(CallACS("Samsara_InvasionChecker") == 1, "BossRemove")
-		BossWaitLoop:
+		Deciding:
 			TNT1 A 1
-			Loop
-		BossRemove:
-			TNT1 A 1 A_Die
-			Goto Death	
+			Loop	
 		SetDoom:
 			TNT1 A 1 A_SpawnItemEx("SpiderMastermind3",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL,0,tid)
 			Goto BossWait
@@ -194,6 +189,7 @@ ACTOR SpiderMastermindSpawnerCoop replaces SpiderMastermind
 			TNT1 A 1 A_SpawnItemEx("MotherDemon64", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL,0,tid)
 			Goto BossWait
 		SetHL:
+		SetHLOP:
 			TNT1 A 0 A_Jump(128, "SetHL2", "SetHL3")
 			TNT1 A 1 A_SpawnItemEx("Geneworm", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL,0,tid)
 			Goto BossWait
@@ -250,6 +246,15 @@ ACTOR SpiderMastermindSpawnerCoop replaces SpiderMastermind
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("EvilOtto",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL,0,tid)
 			Goto BossWait
+		BossWait:
+			TNT1 A 0 A_JumpIf(CallACS("Samsara_InvasionChecker") == 1, "BossRemove")
+			TNT1 A 2
+		BossWaitLoop:
+			TNT1 A 1
+			Loop
+		BossRemove:
+			TNT1 A 1 A_Die
+			Goto Death
 		Death:
 			TNT1 A 1
 			TNT1 A 1 A_BossDeath

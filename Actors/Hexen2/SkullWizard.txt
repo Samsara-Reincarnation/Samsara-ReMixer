@@ -10,6 +10,7 @@ Actor Hexen2SkullWizard : Hexen2HumanoidBase
 	PainThreshold 30
 	Species "Hexen2Wizard"
 	+MISSILEMORE
+	DropItem "Hexen2IceArcherDrop"
 	DeathSound "Hexen2/SkullWizard/Death"
 	PainSound "Hexen2/ShadowWizard/Pain"
 	States

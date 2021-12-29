@@ -23,6 +23,7 @@ ACTOR AssaultEnforcer
 	ActiveSound "assaultenf/roam"
 	AttackSound "duke/chaingun"
 	Obituary "%o was shot by an Assault Enforcer."
+	DropItem "RandomEnforcerDrop", 256, 1
     DamageFactor "Mace", 1.1
     DamageFactor "DragonClaw", 1.5
 	PainChance "MightyBoot", 255
@@ -309,7 +310,7 @@ ACTOR AssaultEnforcer
 			ASEN NO 5
 			ASEN P 5 A_NoBlocking
 			ASEN Q 5
-			ASEN R 0 A_SpawnItemEx("RandomEnforcerDrop",0,0,0,0,0,10,0,0,160)
+			//ASEN R 0 A_SpawnItemEx("RandomEnforcerDrop",0,0,0,0,0,10,0,0,160)
 			ASEN R 0 A_SpawnItemEx("AssaultEnforcerCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
 			stop

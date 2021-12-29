@@ -49,8 +49,7 @@ Actor SWHenchman
 	Yscale 0.58
 	Tag "Henchman"  
 	BloodType "SWDefaultBloodSpawner"
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_ShurikenDrop", 64, 1
+	DropItem "SWNinjaDrop"
 	PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
 	var int user_scalex;
@@ -1067,8 +1066,7 @@ Actor SWHenchmanRed : SWHenchman
 {
 	AttackSound "Ninja/uzi2"
 	Health 120
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_RocketAmmoDrop", 64, 1
+	DropItem "SWRedNinjaDropRandom", 178
 	+BOSSDEATH
 	States
 	{
@@ -2090,8 +2088,7 @@ Actor SWHenchmanGreen : SWHenchmanRed
 	PainChance 64
 	Speed 12
 	Alpha 0.65	
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_SmokeBombDrop", 128,  1
+	DropItem "SWDarkNinjaDropRandom"
 	States
 	{
 	Spawn:
@@ -4063,8 +4060,7 @@ actor SWHenchmanPurple_ShrinkEffect : SWHenchmanPurple
 Actor SWHenchmanOrange :SWHenchmanRed	//Missing variant...
 {
 	Health 120
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_SeekerCardDrop", 64, 1
+	DropItem "SWOrangeNinjaDropRandom", 178
 	+MISSILEMORE
 	+MISSILEEVENMORE
 	States

@@ -320,3 +320,70 @@ Actor Hexen2TomeDrop : SamsaraUniquePickup1
 		Loop
 	}
 }	
+
+Actor Hexen2AcidRuneDrop : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		HX99 A -1 
+		Stop
+		}
+}
+
+Actor Hexen2BoneShardDrop : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		HX99 A -1
+		Stop
+		}
+}
+
+Actor Hexen2GruntDropRandom : RandomSpawner
+{
+	DropItem "Hexen2CrystalVial", 256, 10
+	DropItem "Hexen2BlueMana", 256, 9
+	DropItem "Hexen2GreenMana", 256, 6
+	DropItem "Hexen2CombinedMana", 256, 3
+	DropItem "Hexen2TomeDrop", 256, 1
+}	
+
+Actor Hexen2KnightArcherDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("Hexen2GruntDropRandom", 1, 24)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("Hexen2AcidRuneDrop", 1, 170)
+			Stop
+	}
+}
+
+Actor Hexen2IceArcherDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright 
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("Hexen2BoneShardDrop", 1, 256)
+			Stop
+	}
+}

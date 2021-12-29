@@ -1238,6 +1238,7 @@ Actor StrifeAcolyte3 : StrifeAcolyte
 {
 	Tag "Acolyte"
 	Health 70
+	DropItem StrifeAcolyte3Drop
 	States
 	{
 		Spawn:
@@ -1774,6 +1775,7 @@ Actor StrifeAcolyte4 : StrifeAcolyte
 {
 	Tag "Acolyte"
 	+MISSILEEVENMORE
+	DropItem StrifeAcolyte3Drop
 	States
 	{
 		Spawn:
@@ -2311,6 +2313,7 @@ Actor StrifeAcolyte5 : StrifeAcolyte
 	Tag "Acolyte"
 	+MISSILEMORE
 	Health 70
+	DropItem StrifeAcolyte5Drop
 	States
 	{
 		Spawn:
@@ -2848,6 +2851,7 @@ Actor StrifeAcolyte6 : StrifeAcolyte
 	Tag "Acolyte"
 	+MISSILEMORE
 	+MISSILEEVENMORE
+	DropItem StrifeAcolyte5Drop	
 	States
 	{
 		Spawn:
@@ -4484,4 +4488,62 @@ Actor AcolytePuff : BulletPuff
 		Melee:
 			Goto Spawn
 	}	
+}
+
+Actor StrifeXBowDrop : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		SXBW A -1
+		Stop
+		}
+}
+
+Actor StrifeAssaultGunDrop : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		SGRF A -1
+		Stop
+		}
+}
+
+Actor StrifeAcolyte3Drop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("StrifeAcolyteDrop", 1, 256)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("StrifeXBowDrop", 1, 256)
+			Stop
+	}
+}
+
+Actor StrifeAcolyte5Drop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("StrifeAcolyteDrop", 1, 256)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("StrifeAssaultGunDrop", 1, 256)
+			Stop
+	}
 }

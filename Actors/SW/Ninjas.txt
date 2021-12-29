@@ -23,8 +23,7 @@ Actor SWNinja
 	XScale 0.6
 	Yscale 0.58
 	BloodType "SWDefaultBloodSpawner"	
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_ShurikenDrop", 64, 1
+	DropItem "SWNinjaDrop"
 	PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
 	var int user_scalex;
@@ -596,6 +595,31 @@ Actor SWNinja
 	}
 }
 
+Actor SWNinjaDropRandom : RandomSpawner
+{
+	DropItem "SWEnemy_UziMagDrop", 256, 2
+	DropItem "SWEnemy_ShurikenDrop", 256, 6
+}	
+
+Actor SWNinjaDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("SWNinjaDropRandom", 1, 178)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("SWRiotGunDrop", 1, 178)
+			Stop
+	}
+}
+
 Actor SWNinjaCorpse_Normal
 {
 	Health 20
@@ -1156,8 +1180,7 @@ Actor NinjaRed : SWNinja
   AttackSound "Ninja/Uzi2"
   Obituary "%o was killed by a red belt ninja."
   PainChance 96
-  DropItem "SWEnemy_UziMagDrop", 64, 1
-  DropItem "SWEnemy_RocketAmmoDrop", 64, 1
+  DropItem "SWRedNinjaDropRandom", 178
   +BOSSDEATH
   +DONTRIP
   +FLOORCLIP
@@ -1753,6 +1776,12 @@ Actor NinjaRed : SWNinja
     }
 }
 
+Actor SWRedNinjaDropRandom : RandomSpawner
+{
+	DropItem "SWEnemy_UziMagDrop", 256, 5
+	DropItem "SWEnemy_RocketAmmoDrop", 256, 3
+}	
+
 Actor SWNinjaRedCorpse_Normal
 {
 	Health 30
@@ -2332,8 +2361,7 @@ Actor NinjaOrange : NinjaRed
 	AttackSound "Ninja/Uzi2"
 	Obituary "%o was killed by an orange belt ninja."
 	PainChance 96
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_SeekerCardDrop", 64, 1
+	DropItem "SWOrangeNinjaDropRandom", 178
 	Tag "Evil Ninja"  
 	States
 	{
@@ -2763,6 +2791,12 @@ Actor NinjaOrange : NinjaRed
 		Stop		
     }
 }
+
+Actor SWOrangeNinjaDropRandom : RandomSpawner
+{
+	DropItem "SWEnemy_UziMagDrop", 256, 5
+	DropItem "SWEnemy_SeekerCardDrop", 256, 1
+}	
 
 Actor SWNinjaOrangeCorpse_Normal
 {
@@ -3303,8 +3337,7 @@ Actor NinjaGray : NinjaRed
 	AttackSound "Ninja/Uzi2"
 	Obituary "%o was killed by a gray belt ninja."
 	PainChance 96
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_GrenadeDrop", 64, 1
+	DropItem "SWGrayNinjaDropRandom", 178
 	+BOSSDEATH
 	+DONTRIP
 	+FLOORCLIP
@@ -3739,6 +3772,12 @@ Actor NinjaGray : NinjaRed
 		Stop		
     }
 }
+
+Actor SWGrayNinjaDropRandom : RandomSpawner
+{
+	DropItem "SWEnemy_UziMagDrop", 256, 5
+	DropItem "SWEnemy_GrenadeDrop", 256, 3
+}	
 
 Actor SWNinjaGrayCorpse_Normal
 {
@@ -4356,8 +4395,7 @@ Actor NinjaDark : NinjaRed
 	Alpha 0.65
 	Renderstyle Stencil
 	StencilColor "Black"
-	DropItem "SWEnemy_UziMagDrop", 64, 1
-	DropItem "SWEnemy_SmokeBombDrop", 128, 1
+	DropItem "SWDarkNinjaDropRandom"
 	+BOSSDEATH
 	+DONTRIP
 	+FLOORCLIP
@@ -4852,6 +4890,12 @@ Actor NinjaDark : NinjaRed
 		Stop		
     }
 }
+
+Actor SWDarkNinjaDropRandom : RandomSpawner
+{
+	DropItem "SWEnemy_UziMagDrop", 256, 3
+	DropItem "SWEnemy_SmokeBombDrop", 256, 6
+}	
 
 Actor SWNinjaDarkCorpse_Normal
 {

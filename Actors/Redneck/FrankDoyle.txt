@@ -18,7 +18,7 @@ Actor BlueFrankDoyle
     painsound "doyle/pain"
     deathsound "doyle/pain"	
     activesound "doyle/talk"
-	dropitem "JeeterAmmoDrop", 114, 1
+	dropitem "FrankDoyleDrop"
     BloodType "LeonardBlood_RR"	
 	Tag "Frank Doyle"	
     DamageFactor "Mace", 1.1
@@ -585,6 +585,35 @@ Actor BlueFrankDoyle
 		TNT1 A 1
 		Stop
 	}
+}
+
+Actor FrankDoyleDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("JeeterAmmoDrop", 1, 114)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("RRAKDrop", 1, 256)
+			Stop		
+	}
+}
+
+Actor RRAKDrop : SamsaraSlotFourDrop {
+	+DROPPED
+	States
+    {
+      Spawn:
+        R_SR J -1
+        Stop
+    }
 }
 
 Actor BlueFrankDoyleCorpse_Normal

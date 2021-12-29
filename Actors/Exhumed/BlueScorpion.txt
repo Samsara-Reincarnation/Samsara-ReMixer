@@ -13,7 +13,7 @@ Actor BlueScorpion
 	Species "Enemies"	
     +FLOORCLIP
 	+NOINFIGHTING
-	DropItem "PowerslaveSoulPowerOrbSpawn" 22,1	
+	DropItem "PowerslaveSoulPowerOrbSpawn" 64,1	
     meleesound "bluescorpion/bite"
     painsound "bluescorpion/pain"
     deathsound "bluescorpion/death"
@@ -39,7 +39,7 @@ Actor BlueScorpion
 		loop
     Melee:
 		P_BS A 5 A_FaceTarget
-		P_BS B 5 A_MeleeAttack
+		P_BS B 5 A_CustomMeleeAttack(Random(4,8))
 		P_BS A 5 A_FaceTarget
 		goto See
     Pain:

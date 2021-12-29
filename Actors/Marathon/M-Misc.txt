@@ -1532,3 +1532,25 @@ ACTOR AttackFrequency : Counter {}
 ACTOR AttackReps : Counter {}
 ACTOR MarathonDukeGib : Inventory { Inventory.MaxAmount 1 }
 ACTOR TeleportIn : Inventory { Inventory.MaxAmount 1 }
+
+Actor MarathonSGDrop : SamsaraSlotTwoDrop
+{
+	Gravity 0.25
+	States
+	{
+	Spawn:
+		SHTY A -1
+		Stop
+		}
+}
+
+Actor MarathonARDrop : SamsaraSlotFourDrop
+{
+	Gravity 0.25
+	States
+	{
+	Spawn:
+		RIFL A -1
+		Stop
+		}
+}

@@ -28,6 +28,7 @@ ACTOR TrooperMajor
 	DamageFactor "MarathonPlasmaFire", 0.74
     PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
+	DropItem "MarathonTrooperDrop"	
 	Decal BulletChip
 	Scale 0.49
 	Bloodcolor Yellow

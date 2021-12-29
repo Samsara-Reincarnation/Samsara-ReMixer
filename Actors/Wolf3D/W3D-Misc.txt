@@ -208,6 +208,30 @@ ACTOR SSDrop2 : SSDrop //SOD M2/3 graphic
 	}
 }
 
+Actor WolfMGDropTrue : SamsaraSlotTwoDrop
+{
+	+DROPPED
+	Scale 1.1
+	States
+    {
+		Spawn:
+			WSDR A -1
+			stop
+	}
+}	
+
+Actor LostMGDropTrue : SamsaraSlotTwoDrop
+{
+	+DROPPED
+	Scale 1.1
+	States
+    {
+		Spawn:
+			SSDR A -1
+			stop
+	}
+}	
+
 ACTOR WolfGoldKey : CustomInventory
 {
 	Inventory.PickupMessage "Picked up a gold key, I wonder what it goes to."

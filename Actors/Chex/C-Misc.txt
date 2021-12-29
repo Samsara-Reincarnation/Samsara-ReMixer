@@ -278,3 +278,23 @@ ACTOR DarkCycloptisBall : CycloptisBall2
 	Speed 20
 	Damage 10
 }
+
+Actor ChexLZDrop : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		SHOC A -1
+		Stop
+		}
+}
+
+Actor ChexRFZDrop : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		MGUC A -1
+		Stop
+		}
+}

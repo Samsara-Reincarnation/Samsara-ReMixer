@@ -309,3 +309,23 @@ ACTOR RMRAmmoDropRocket : Ammo3Small
         stop
 	}
 }
+
+Actor RMRACRDrop : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		RM3Z E -1
+		Stop
+		}
+}
+
+Actor RMRCyclopseDrop : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		RM7T E -1
+		Stop
+		}
+}

@@ -19,6 +19,7 @@ ACTOR QEnforcer
   Obituary "%o was blasted by a Enforcer"
   PainChance "MightyBoot", 255
   PainChance "MarathonStun", 255
+  DropItem "QEnforcerDrop"
   BloodType "Quake_NewParticles"
   var int user_scalex;
   var int user_scaley;
@@ -521,6 +522,25 @@ ACTOR QEnforcer
 		TNT1 A 1
 		Stop
   }
+}
+
+Actor QEnforcerDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright 
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("Q1SGDrop", 1, 256)
+			Stop
+	}
 }
 
 actor QEnforcer_Shrink : QEnforcer

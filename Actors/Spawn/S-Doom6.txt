@@ -251,7 +251,6 @@ ACTOR SpectreSpawnerCoop replaces Spectre
 			TNT1 A 1 A_SpawnItemEx("Spectre64", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion
 		SetHL:
-			TNT1 A 0 A_JumpIf(CallACS("Samsara_OpposingForceSpawnCheck") > 0, "SetHLOP")
 			TNT1 A 0 A_Jump(96,"SetHL2","SetHL3")
 			TNT1 A 1 A_SpawnItemEx("Bullsquid", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion

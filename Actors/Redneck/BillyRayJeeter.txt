@@ -19,8 +19,7 @@ Actor BillyRayJeeter
     painsound "billy/pain"
     deathsound "billy/die"
     activesound "billy/talk"
-	DropItem "RRScatterGunDrop", 50, 1
-	dropitem "JeeterAmmoDrop", 70, 1
+	DropItem "BillyRayJeeterDrop"
     BloodType "LeonardBlood_RR"	
     DamageFactor "Mace", 1.1
     DamageFactor "DragonClaw", 1.5
@@ -3119,6 +3118,28 @@ Actor BillyRayBody : BillyRayHead
     }
 }
 
+Actor BillyRayJeeterDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("RRScatterGunDrop", 1, 50)
+			Goto Spawn3
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("RRScatterGunDrop2", 1, 256)
+			Stop
+		Spawn3:
+			TNT1 A 1 Bright A_DropItem("JeeterAmmoDrop", 1, 70)
+			Stop			
+	}
+}
+
 ACTOR JeeterAmmoDrop : Ammo2Small
 {
 	Scale 0.3
@@ -3165,6 +3186,16 @@ ACTOR JeeterAmmoDrop : Ammo2Small
 }
 
 Actor RRScatterGunDrop : SamsaraSlotThreeDrop {
+	+DROPPED
+	States
+    {
+      Spawn:
+        RR_S A -1
+        Stop
+    }
+}
+
+Actor RRScatterGunDrop2 : SamsaraSlotTwoDrop { //looks like a scatter gun, but it's actually a slot two!
 	+DROPPED
 	States
     {

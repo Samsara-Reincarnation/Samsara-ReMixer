@@ -42,6 +42,7 @@ server int mm_halflifemode = 0;
 server bool mm_fakehitlerfire = true;
 server bool mm_wolffastdeath = false;
 server int mm_spawnmode = 0;
+server int mm_dropmode = 0;
 server int mm_skilloverride = 5;
 
 //Misc

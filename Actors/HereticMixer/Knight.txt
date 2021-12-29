@@ -1,7 +1,7 @@
 ACTOR Knight3 : Knight2 
 {
 	Tag "Undead Warrior"
-	DropItem "CrossbowAmmo2", 84
+	DropItem "HereticKnightDrop"
 	States
 	{
 		Spawn:
@@ -271,6 +271,25 @@ ACTOR Knight3 : Knight2
 			TNT1 A 0 A_SpawnItemEx("DukeGibPopSpawner", 0, 0, height*2, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_GiveToTarget("DukeGibTaunt",1)
 			TNT1 A 1
+			Stop
+	}
+}
+
+Actor HereticKnightDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("CrossbowAmmo2", 1, 84)
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("HereticClawDrop", 1, 256)
 			Stop
 	}
 }

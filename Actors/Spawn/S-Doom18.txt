@@ -162,6 +162,7 @@ ACTOR WolfensteinSSSpawnerCoop replaces WolfensteinSS
 			TNT1 A 1 A_SpawnItemEx("WolfensteinSSJagaur", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion
 		SetHL:
+		SetHLOP:
 			TNT1 A 1 A_SpawnItemEx("Combine_Overwatch", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion
 		SetQuake2:

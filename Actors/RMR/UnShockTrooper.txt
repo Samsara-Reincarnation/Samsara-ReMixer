@@ -8,7 +8,7 @@ actor UnShockTrooper : RMRHumanoid
   Obituary "%o was disintegrated by an Unit Shock Trooper."
   Species "Enemies"
   +MISSILEEVENMORE
-  DropItem "RMRAmmoDropShell" 84,1  
+  DropItem "UnShockTrooperDrop" 
   Tag "Unit Shock Trooper"  
   States
   {
@@ -455,6 +455,29 @@ actor UnShockTrooper : RMRHumanoid
 		TNT1 A 1
 		Stop
   }
+}
+
+Actor UnShockTrooperDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright A_DropItem("RMRAmmoDropShell", 1, 86)
+			Stop
+		Spawn2:
+			TNT1 A 0 A_Jump(128, "Spawn3")
+			TNT1 A 1 Bright A_DropItem("RMRACRDrop", 1, 256) //normally i would make the drop chance lower than this, but Ettins are extremely tanky
+			Stop
+		Spawn3:	
+			TNT1 A 1 Bright A_DropItem("RMRCyclopseDrop", 1, 256)
+			Stop			
+	}
 }
 
 actor UnShockTrooper_Shrink : UnShockTrooper

@@ -19,7 +19,7 @@ Actor CMTrooper
 	PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
 	Tag "Trooper"
-    DropItem "CMTrooperDrop" 24 1
+    DropItem "CMTrooperDrop" 
 	Scale 0.25
 	var int user_scalex;
 	var int user_scaley;

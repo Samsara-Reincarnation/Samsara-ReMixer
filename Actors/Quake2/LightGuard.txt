@@ -697,7 +697,7 @@ Actor Q2ShotgunGuard : Q2SoldierBase
 	Mass 102 
 	AttackSound "Q2Soldier/Shotgun" 
 	Obituary "%o was Gunned Down by a Shotgun Guard" 
-	DropItem "Q2ShellPickup" 64 
+	DropItem "Q2ShotguyDrop"
 	Tag "Strogg Shotgun Guard"
 	DamageFactor "PoisonBolt", 0.5
 	States

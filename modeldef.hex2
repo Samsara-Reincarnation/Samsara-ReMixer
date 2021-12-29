@@ -11815,3 +11815,31 @@ Model Hexen2_PestSwarm
 	FrameIndex HX05 S 0 164 
 	FrameIndex HX05 T 0 165 
 }	
+
+Model Hexen2AcidRuneDrop
+{
+   Path "Models/Hexen2"   
+   Model 0 "w_l2_c5.md3"
+   Skin 0 "w_l2_c5.pcx"
+   Scale -1.0 1.0 1.0          
+   ZOffset 16
+   NOINTERPOLATION
+   ROTATING
+   Rotation-Vector 0 1 0
+   
+   FrameIndex HX99 A 0 0
+}
+
+Model Hexen2BoneShardDrop
+{
+   Path "Models/Hexen2"   
+   Model 0 "w_l3_c3.md3"
+   Skin 0 "w_l3_c3.pcx"
+   Scale -1.0 1.0 1.0          
+   NOINTERPOLATION
+   ZOffset 0
+   ROTATING
+   Rotation-Vector 0 1 0
+   
+   FrameIndex HX99 A 0 0
+}

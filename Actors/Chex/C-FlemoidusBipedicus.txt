@@ -7,6 +7,7 @@ actor FlemoidusBipedicus3 : FlemoidusBipedicus2
 	DeathSound "cqshotguy/death"
 	ActiveSound "cqshotguy/active"
     Bloodcolor "Green"
+	DropItem "FlemoidusBipedicusDrop", 256, 1
 	var int user_scalex;
 	var int user_scaley;
     States
@@ -464,6 +465,25 @@ actor FlemoidusBipedicus_Shrink : FlemoidusBipedicus3
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)
 			Goto Squish
+	}
+}
+
+Actor FlemoidusBipedicusDrop {
+	Height 5
+	Radius 5
+	+NOCLIP
+	+FLOORCLIP
+	States {
+		Spawn:
+			TNT1 A 0 
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
+			TNT1 A 15
+			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+			TNT1 A 1 Bright 
+			Stop
+		Spawn2:
+			TNT1 A 1 Bright A_DropItem("ChexLZDrop", 1, 256)
+			Stop
 	}
 }
 

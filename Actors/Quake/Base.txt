@@ -1300,3 +1300,23 @@ actor QuakeTinyExplosion_Mixer: QuakeExplosion_Mixer
         stop
     }
 }
+
+Actor Q1SGDrop : SamsaraSlotTwoDrop
+{
+	States
+	{
+	Spawn:
+		QDBS Z -1 
+		Stop
+		}
+}
+
+Actor Q1NGDrop : SamsaraSlotFourDrop
+{
+	States
+	{
+	Spawn:
+		QNLG Z -1
+		Stop
+		}
+}
