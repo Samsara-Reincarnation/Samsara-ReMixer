@@ -32,7 +32,7 @@ Actor Totenkopf_PistolEnemyDrop : Goldeneye_PP7EnemyDrop
 //			TNT1 A 0 A_JumpIfInventory("WitchavenClass", 0, "PickupWitchaven")	Why?
 			TNT1 A 0 A_PlaySound("Totenkopf/getweapon")
 			TNT1 A 0 A_JumpIfInventory("Clip",0,1)
-			Goto Pickup+7
+			Goto Pickup+6
 			TNT1 A 1 A_GiveInventory("Clip", 4)
 			TNT1 A 0 A_JumpIf((ACS_NamedExecuteWithResult("SamsaraGiveWeapon", 0, 1) & 1) == 1, "PickupSuccess")
 			stop	
@@ -63,7 +63,7 @@ Actor Totenkopf_PistolEnemyDrop : Goldeneye_PP7EnemyDrop
 		PickupBond:
 			TNT1 A 0 A_JumpIfInventory("Clip",0,1)
 			Goto PickupBond+1
-			TNT1 A 0 A_JumpIfInventory("Shell",0,"PickupFailure")
+			TNT1 A 0 A_JumpIfInventory("Clip",0,"PickupFailure")
 			TNT1 A 0 A_GiveInventory("Goldeneye_PP7DualToken", 1)
 			TNT1 A 0 A_PlaySound("Goldeneye/Weaponup")
 			TNT1 A 1 A_GiveInventory("Clip", 7)
