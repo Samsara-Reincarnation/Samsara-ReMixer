@@ -1181,8 +1181,8 @@ Actor HeavyGuard : LightningGuard {
    Tag "Lightning Guard"
 	Obituary "%o didn't expect a Lightning Guard to carry a bazooka."
 	DropItem "Ammo3Small", 96
-	DropItem "HeavyGuardHeatSeeker", 64
-//	DropItem "HeavyGuardBazooka", 64
+	//DropItem "HeavyGuardHeatSeeker", 64
+	DropItem "HeavyGuardBazooka", 64
 	States {
 	   Spawn:
 		   LIGW A 0
