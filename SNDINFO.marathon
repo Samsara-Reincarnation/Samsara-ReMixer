@@ -112,3 +112,9 @@ m2tick/see2				MTICKSE2
 $Random m2tick1/act		{ m2tick1/see m2tick/act1 m2tick/act2 }
 m2tick/act1				MTICKACT
 m2tick/act2				MTICKAC2
+$random Marathon/HeadlessPain 		{ Marathon/HeadlessPain1 Marathon/HeadlessPain2 }
+Marathon/HeadlessPain1 				"Sounds/Marathon/PID_HeadlessPain1.wav"
+Marathon/HeadlessPain2 				"Sounds/Marathon/PID_HeadlessPain2.wav"
+Marathon/HeadlessDeath 				"Sounds/Marathon/PID_HeadlessDeath.wav"
+Marathon/HeadlessAttack 			"Sounds/Marathon/PID_HeadlessAttack.wav"
+Marathon/HeadlessProjHit 			"Sounds/Marathon/PID_ProjectileHit.wav"
