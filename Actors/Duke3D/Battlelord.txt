@@ -59,7 +59,7 @@ ACTOR Battlelord
 	DamageFactor "C7Disintegrate", 0.5	
 	PainChance "ShrinkerDMG", 0
 	BloodType "DukeBloodBoss"
-	Decal BulletChip 
+	Decal DukeBulletchip 
 	States 
 	{
 		Spawn:

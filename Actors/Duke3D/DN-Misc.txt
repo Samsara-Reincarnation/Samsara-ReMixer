@@ -1,6 +1,7 @@
 ACTOR DukeEnemyBullet : DoomEnemyBullet
 {
 	Damage (5)
+	Decal DukeBulletchip
 	States
 	{
 		Death:

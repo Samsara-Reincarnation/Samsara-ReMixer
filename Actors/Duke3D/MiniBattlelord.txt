@@ -34,7 +34,7 @@ ACTOR MiniBattlelord
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	BloodType "DukeBloodBoss"
 	Tag "Mini Battlelord"	
-	Decal BulletChip 
+	Decal DukeBulletchip 
 	var int user_scalex;
 	var int user_scaley;
 	States 

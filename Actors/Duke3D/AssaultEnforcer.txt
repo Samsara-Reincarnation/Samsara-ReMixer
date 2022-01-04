@@ -30,7 +30,7 @@ ACTOR AssaultEnforcer
 	PainChance "MarathonStun", 255
 	BloodType "DukeBlood"
 	Tag "Assault Enforcer"	
-	Decal BulletChip
+	Decal DukeBulletchip
 	var int user_scalex;
 	var int user_scaley;
 	States 

@@ -30,7 +30,7 @@ ACTOR PigCopTank
 	PainChance "MarathonStun", 255
 	PainChance "ShrinkerDMG", 0
 	Tag "Pig Cop Tank"
-	Decal BulletChip
+	Decal DukeBulletchip
 	States 
 	{
 		Spawn:
