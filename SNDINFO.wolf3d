@@ -115,3 +115,7 @@ c3dproj/death			c3dprodt
 Hovertank3D/Die		"Sounds/Hovertank/Hovertank_Score.wav"
 Hovertank3D/Fire		"Sounds/Hovertank/Hovertank_Shoot.wav"
 Hovertank3D/Boom		"Sounds/Hovertank/Hovertank_Explode"
+
+Wolf3D/RedArmySight 	"Sounds/Wolf3D/Wolfstone_RussianSight.ogg"
+Wolf3D/RedArmyFire 		"Sounds/Wolf3D/Wolfstone_RussianFire.ogg"
+Wolf3D/RedArmyDeath 	"Sounds/Wolf3D/Wolfstone_RussianDeath.ogg"

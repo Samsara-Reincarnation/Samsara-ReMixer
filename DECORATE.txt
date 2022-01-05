@@ -171,6 +171,7 @@
 #include "actors/Wolf3D/WolfSS.txt"
 #include "actors/Wolf3D/W3D-ST.txt"
 #include "Actors/Wolf3D/SODSpectre2.txt"
+#include "actors/Wolf3D/RedArmy.txt"
 
 // Duke Nukem 3D
 
