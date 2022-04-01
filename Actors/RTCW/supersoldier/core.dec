@@ -413,10 +413,20 @@ Actor RTCW_EnemyVenomTracer : RTCW_Tracer
 	}
 }
 
-Actor RTCW_SuperSoldierTeslaProjectile : RTCW_TeslaProjectile
+Actor RTCW_SuperSoldierTeslaProjectile : FastProjectile
 {
 	Speed 288
 	Damage (1)
+	DamageType "RTCWTesla"
+	Radius 2
+	Height 4
+	+SEEKERMISSILE
+	+SCREENSEEKER
+	+SKYEXPLODE
+	+DONTSPLASH
+	+CANNOTPUSH
+	+BLOODLESSIMPACT
+	+HITTRACER
 	States
 	{
 		Spawn:

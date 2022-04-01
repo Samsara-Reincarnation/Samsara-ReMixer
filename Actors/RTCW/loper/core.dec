@@ -169,11 +169,21 @@ Actor RTCW_Loper_ZapGround : RTCWTrigger
 	}
 }
 
-Actor RTCW_LoperTeslaProjectile : RTCW_TeslaProjectile
+Actor RTCW_LoperTeslaProjectile : FastProjectile
 {
 	Speed 16
 	Damage (0)
+	DamageType "RTCWTesla"
+	Radius 2
+	Height 4
 	+THRUACTORS
+	+SEEKERMISSILE
+	+SCREENSEEKER
+	+SKYEXPLODE
+	+DONTSPLASH
+	+CANNOTPUSH
+	+BLOODLESSIMPACT
+	+HITTRACER
 	States
 	{
 		Spawn:
@@ -187,7 +197,7 @@ Actor RTCW_LoperTeslaProjectile : RTCW_TeslaProjectile
 	}
 }
 
-Actor RTCW_LoperTeslaProjectile2 : RTCW_TeslaProjectile
+Actor RTCW_LoperTeslaProjectile2 : RTCW_LoperTeslaProjectile
 {
 	Speed 50
 	Damage (10)
@@ -204,7 +214,23 @@ Actor RTCW_LoperTeslaProjectile2 : RTCW_TeslaProjectile
 	}
 }
 
-Actor RTCW_LoperTeslaSegment : RTCW_TeslaSegment {}
+Actor RTCW_LoperTeslaSegment
+{
+	+NOINTERACTION
+	+NOBLOCKMAP
+	+CLIENTSIDEONLY
+	Radius 1
+	Height 1
+	Renderstyle Add
+	Alpha 1.0
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			RW00 ABCDEFGH 1 Bright A_Fadeout(0.05)
+			stop
+	}
+}
 
 Actor RTCW_Loper_Gib_Skull : RTCW_Gib {}
 Actor RTCW_Loper_Gib_Abdomen : RTCW_Gib {}

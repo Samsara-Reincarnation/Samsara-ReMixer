@@ -76,10 +76,20 @@ Actor RTCW_Venom_Flamethrower : RTCW_VenomBrain
 	}
 }
 
-Actor RTCW_DeathsheadTeslaProjectile : RTCW_TeslaProjectile
+Actor RTCW_DeathsheadTeslaProjectile : FastProjectile
 {
 	Speed 192
 	Damage (1)
+	DamageType "RTCWTesla"
+	Radius 2
+	Height 4
+	+SEEKERMISSILE
+	+SCREENSEEKER
+	+SKYEXPLODE
+	+DONTSPLASH
+	+CANNOTPUSH
+	+BLOODLESSIMPACT
+	+HITTRACER
 	States
 	{
 		Spawn:
