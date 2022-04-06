@@ -20,14 +20,14 @@ ACTOR CopterPatrol {
    DeathSound "Robot/die"
    Tag "Copter Patrol"   
    Obituary "%o was shot dead by a Copter Patrol."
-   DamageFactor "normal", 0.25
+   DamageFactor "normal", 0.5
    DamageFactor "ROBTtMissile", 0.0
    DamageFactor "MarathonFusion", 2.0
    DamageFactor "Tesla", 2.0
    DamageFactor "ElectricBolt", 2.0
    DamageFactor "PoisonBolt", 0.0   
-   	DamageFactor "HLBullet", 0.2
-	DamageFactor "GEBullet", 0.2
+   	DamageFactor "HLBullet", 0.5
+	DamageFactor "GEBullet", 0.5
    RadiusDamageFactor 12.0
    MinMissileChance 256
    States {

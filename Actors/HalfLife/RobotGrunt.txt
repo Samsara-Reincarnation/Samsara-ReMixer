@@ -4,7 +4,7 @@ Actor HECU_Robot1
 	Radius 20
 	Monster
 	Scale 1.0
-	Health 750
+	Health 350
 	speed 12
 	+MISSILEMORE
 	+MISSILEEVENMORE

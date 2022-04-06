@@ -17,9 +17,9 @@ ACTOR RobotGuard {
    SeeSound "Robot/see"
    DeathSound "Robot/die"
    Obituary "%o was blown up by a Patrol Robot."
-   DamageFactor "normal", 0.25
-   	DamageFactor "HLBullet", 0.2
-	DamageFactor "GEBullet", 0.2
+   DamageFactor "normal", 0.5
+   	DamageFactor "HLBullet", 0.5
+	DamageFactor "GEBullet", 0.5
    DamageFactor "ROBTtMissile", 0.0
    Tag "Patrol Robot"   
    RadiusDamageFactor 12.0

@@ -18,9 +18,9 @@ ACTOR Ballistikraft {
    SeeSound "robot/see"
    DeathSound "robot/die"
    Obituary "%o was blown off by a Ballistikraft."
-   DamageFactor "normal", 0.25
-   	DamageFactor "HLBullet", 0.25
-	DamageFactor "GEBullet", 0.25
+   DamageFactor "normal", 0.5
+   	DamageFactor "HLBullet", 0.5
+	DamageFactor "GEBullet", 0.5
    DamageFactor "MarathonFusion", 2.0
    DamageFactor "Tesla", 2.0
    DamageFactor "ElectricBolt", 2.0

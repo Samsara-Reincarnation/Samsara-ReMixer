@@ -168,7 +168,7 @@ ACTOR Beast3 : Beast2
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
 		Death.Ice:
-			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			BEAS "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_KillMaster
 			"####" "#" 0 A_GenericFreezeDeath
 			"####" "#" 70 A_UnsetSolid
