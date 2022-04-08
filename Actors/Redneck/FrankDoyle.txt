@@ -640,6 +640,7 @@ Actor BlueFrankDoyleCorpse_Normal
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -754,6 +755,7 @@ Actor BlueFrankDoyleCorpse_Gibbed
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -1520,6 +1522,7 @@ Actor BlackFrankDoyleCorpse_Normal
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -1634,6 +1637,7 @@ Actor BlackFrankDoyleCorpse_Gibbed
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -2399,6 +2403,7 @@ Actor GreenFrankDoyleCorpse_Normal
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -2513,6 +2518,7 @@ Actor GreenFrankDoyleCorpse_Gibbed
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -3279,6 +3285,7 @@ Actor RedFrankDoyleCorpse_Normal
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -3393,6 +3400,7 @@ Actor RedFrankDoyleCorpse_Gibbed
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -4169,6 +4177,7 @@ Actor BrownFrankDoyleCorpse_Normal
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -4283,6 +4292,7 @@ Actor BrownFrankDoyleCorpse_Gibbed
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -5049,6 +5059,7 @@ Actor DarkGreenFrankDoyleCorpse_Normal
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -5163,6 +5174,7 @@ Actor DarkGreenFrankDoyleCorpse_Gibbed
 		Death:
 			TNT1 A 0 A_RemoveMaster
 			JKLP A 0 A_PlaySound("Leonard/XDeath",CHAN_BODY,1.0,0,ATTN_NORM)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			JKLP A 0 A_CustomMissile("DoyleHead_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleArm_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 			JKLP AA 0 A_CustomMissile("DoyleLeg_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
