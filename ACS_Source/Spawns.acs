@@ -94,7 +94,27 @@ int monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] =
 			{{ "Nazi3" }},
 		},
 	},
-	{},
+	{
+		{ 	//Chex
+			{{ "FlemoidusCommonus3" }},
+			{{ "FlemoidusBipedicus3" }},
+			{{ "NewArmoredFlemoidusBipedicus" }},
+			{{ "NewArmoredFlemoidusBipedicus" }},
+			{{ "NewFlemoidusStridicus" }},
+			{{ "NewFlemoidusCycloptisCommonus" }, { "NewLarva" }},
+			{{ "NewQuadrumpus" }},
+			{{ "OldFlemoidusMaximusDoom" }},
+			{{ "NewQuadrumpus" }},
+			{{ "FlemMine2" }, { "NewFlemoidusGyro" }},
+			{{ "SuperCycloptis2" }},
+			{{ "SuperCycloptis2" }},
+			{{ "NewQuadrumpus" }},
+			{{ "NewSnotfolus" }},
+			{{ "FlembominationNew" }},
+			{{ "YellowArmoredFlemoid" }},
+		}
+		
+	},
 	{},
 };
 

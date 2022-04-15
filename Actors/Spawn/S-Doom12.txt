@@ -24,7 +24,7 @@ ACTOR PainElementalSpawner replaces PainElemental
 		Deciding:
 			TNT1 A 1
 			Loop		
-		SetDoom:
+		/*SetDoom:
 			TNT1 A 1 A_SpawnItemEx("PainElemental3",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion
 		SetDoomRandom:
@@ -186,7 +186,8 @@ ACTOR PainElementalSpawner replaces PainElemental
 			Goto DeathForInvasion		
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("EvilOttoWeak",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
-			Goto DeathForInvasion
+			Goto DeathForInvasion*/
+		Continue:
 		Death:
 		DeathForInvasion:
 			TNT1 A 1 Thing_Remove(0)
