@@ -49,6 +49,7 @@ OptionMenu "OptionsMenu"
 			Option "Enemy Drop Mode", "mm_dropmode", "DropMode"
 			Slider "Random Sets Per Map", "mm_randomcycle", 1, 26, 1
 			Option "Spawn Mode", "mm_spawnmode", "SpawnMode"
+			Option "Skill Override", "mm_overrideskill", "SkillOverride"
 			
 			StaticText ""
 			StaticText "Enemy Modes"
@@ -131,7 +132,17 @@ OptionMenu "OptionsMenu"
 	{
 			0, "Default"
 			1, "Doom-Style"
-	}		
+	}	
+	
+	OptionValue SkillOverride
+	{
+			0, "Off"
+			1, "I'm too young to die!"
+			2, "Hey, not too rough!"
+			3, "Hurt me plenty"
+			4, "Ultra-violence"
+			5, "Nightmare"
+	}
 
 	OptionMenu "SamsaraMonsterSpawnOptions"
     {

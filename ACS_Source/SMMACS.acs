@@ -3,6 +3,10 @@
 #include "commonFuncs.acs"
 
 #define MAX_GAME_TYPES 28
+#define MAX_ALTS 5
+#define MONSTER_SLOT 18
+#define MAXPERSLOT 20
+#define MAX_ITEMS 15
 
 int SMMCVARINFO = 
 "Stuff";
@@ -35,6 +39,8 @@ str doomModes[3] = { "SetDoom", "SetDoom64", "SetDoomRandom" };
 str wolfModes[3] = { "SetWolf3D", "SetSpear", "SetTotenkopf" };
 str dukeModes[2] = { "SetDuke3D", "SetDukeLAB" };
 str hlModes[2] =   { "SetHL", "SetHLOP" };
+
+#include "Spawns.acs"
 
 int activeSets = 0;
 int pickFromSets[MAX_GAME_TYPES];
@@ -89,7 +95,7 @@ Script "ReMixerInit" OPEN //667
 		SetCVar("mm_fakehitlerfire", true);
 		SetCVar("mm_wolffastdeath", false);
 		SetCVar("mm_spawnmode", 0);
-		SetCVar("mm_skilloverride", 5);	
+		SetCVar("mm_overrideskill", 5);	
 		SetCVar("mm_multiply", 1);
 		SetCVar("mm_newchex", true);
 		SetCVar("mm_pinataparty", false);
@@ -124,7 +130,7 @@ Script "ReMixerInit" OPEN //667
 	SpawnForced("SamsaraMixerCompendiumToken",0,0,0,0,0);
 }
 
-Script "ReMixerSpawnScript" (int spawncode, int override) //668
+Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 {
 	int map;
 	int setselect;
@@ -142,9 +148,9 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 				SetActorFlag(0,"INTERPOLATEANGLES",1);
 			//if(SpawnForced("StrongHoldLoaded",0,0,0,0))
 				//ACS_NamedExecuteWithResult("Samsara_MonsterSpawn",0,0,0,0); //uncomment this for stronghold support, will deal with later
-			if(GetCVar("mm_skilloverride") < 5)
+			if(GetCVar("mm_overrideskill") < 5)
 			{
-				multitoken = GetCVar("mm_skilloverride");
+				multitoken = GetCVar("mm_overrideskill");
 				GiveInventory("DifficultyToken", multitoken);
 			}
 			else
@@ -197,16 +203,21 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 			}
 				
 			setselect = random(1, maxSetsEnabled) - 1;
+			
+			
 						
 			switch(pickFromSets[setselect])
 			{
 				//All other sets
 				default:
-					SetActorState(0,gameSetsStr[pickFromSets[setselect]],true);
+					//SetActorState(0,gameSetsStr[pickFromSets[setselect]],true);
 					break;
 				case 0: // Doom
 					switch(GetCvar("mm_doommode"))
 					{
+						default:
+							altSetSelect = GetCvar("mm_doommode");
+							break;
 						case 0:
 							while(amountOfGameTypes[pickFromSets[setselect]] != 0)
 							{
@@ -214,7 +225,6 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 								if(amountOfGameTypes[pickFromSets[setselect]] & 1<<altSetSelect)
 									break;
 							}
-							SetActorState(0,doomModes[altSetSelect],true);
 							break;					
 						case 1:
 							while(amountOfGameTypes[pickFromSets[setselect]] != 0)
@@ -223,25 +233,15 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 								if(amountOfGameTypes[pickFromSets[setselect]] & 1<<altSetSelect)
 									break;
 							}
-							SetActorState(0,doomModes[altSetSelect + (2 * random(0,altSetSelect==0))],true);
-							break;
-						case 2:
-							SetActorState(0,gameSetsStr[pickFromSets[setselect]],true);
-							break;
-						case 3:
-							SetActorState(0,"SetDoom64",true);
-							break;
-						case 4:
-							SetActorState(0,"SetDoomRandom",true);
-							break;
-						case 5:
-							SetActorState(0,doomModes[random(0,2)],true);
 							break;
 					}
 					break;
 				case 3: // Wolf3d
 					switch(GetCvar("mm_wolfmode"))
 					{
+						default:
+							altSetSelect = GetCvar("mm_wolfmode");
+							break;
 						case 0: //doing this one the crude way
 							while(amountOfGameTypes[pickFromSets[setselect]] != 0)
 							{
@@ -249,28 +249,15 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 								if(amountOfGameTypes[pickFromSets[setselect]] & 1<<altSetSelect)
 									break;
 							}
-							SetActorState(0,wolfModes[altSetSelect],true);
-							break;				
-						case 1:
-							SetActorState(0,"SetWolf3D",true);
-							break;
-						case 2:
-							SetActorState(0,"SetSpear",true);
-							break;
-						case 3:
-							SetActorState(0,"SetTotenkopf",true);	
-							break;
-						case 4: 
-							SetActorState(0,wolfModes[random(0,1)],true);
-							break;			
-						case 5:
-							SetActorState(0,wolfModes[random(0,2)],true);
-							break;							
+							break;										
 					}
 					break;
 				case 5:
 					switch(GetCvar("mm_dukemode"))
 					{
+						default:
+							altSetSelect = GetCvar("mm_dukemode");
+							break;
 						case 0:
 							while(amountOfGameTypes[pickFromSets[setselect]] != 0)
 							{
@@ -278,22 +265,15 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 								if(amountOfGameTypes[pickFromSets[setselect]] & 1<<altSetSelect)
 									break;
 							}
-							SetActorState(0,dukeModes[altSetSelect],true);
-							break;
-						case 1:
-							SetActorState(0,gameSetsStr[pickFromSets[setselect]],true);
-							break;
-						case 2:
-							SetActorState(0,"SetDukeLAB",true);
-							break;
-						case 3:
-							SetActorState(0,dukeModes[random(0,1)],true);
-							break;						
+							break;					
 					}
 					break;
 				case 19:
 					switch(GetCvar("mm_halflifemode"))
 					{
+						default:
+							altSetSelect = GetCvar("mm_halflifemode");
+							break;
 						case 0:
 							while(amountOfGameTypes[pickFromSets[setselect]] != 0)
 							{
@@ -301,17 +281,14 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 								if(amountOfGameTypes[pickFromSets[setselect]] & 1<<altSetSelect)
 									break;
 							}
-							SetActorState(0,hlModes[altSetSelect],true);
-							break;
-						case 1:
-							SetActorState(0,gameSetsStr[pickFromSets[setselect]],true);
-							break;
-						case 2:
-							SetActorState(0,"SetHLOP",true);
 							break;
 					}
 					break;
 			}
+			
+			ACS_NamedExecuteWithResult("ReMixer_PickActor",pickFromSets[setselect],altSetSelect,monsterSlot);
+			SetActorState(0,"Continue",1);
+			
 			break;
 			
 		case 3:
@@ -329,6 +306,94 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 			}
 		else { break; }	
 	}
+}
+
+Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
+{
+	int thisMonOld = ActivatorTid();
+	int thisMonNew = UniqueTid();
+	int newMonTid = UniqueTid();
+	int pick, maxPick, skillMod, choose;
+	int totalChance, currentChance;
+	int useSkill = GetCvar("mm_overrideskill");
+	int currentSkill = GameSkill();
+	skillMod = ((currentSkill * !useSkill) + ((useSkill > 0) * (useSkill - 1))) * 3;
+	
+	Thing_ChangeTid(0,thisMonNew);
+		
+	for(int a = 0; a < MAXPERSLOT; a++)
+	{
+		if(monsterSelectStat[monGame][monAlt][monSlot][a][skillMod+2] == 0)
+			totalChance += 1;
+		else if(monsterSelectStat[monGame][monAlt][monSlot][a][skillMod+2] > 0)
+			totalChance += monsterSelectStat[monGame][monAlt][monSlot][a][skillMod+2];
+			
+		if(strlen(monsterSelectStr[monGame][monAlt][monSlot][a+1][0])==0)
+		{
+			maxPick = a;
+			break;
+		}
+	}
+	
+	if(maxPick > 0)
+	{
+		choose = random(1,totalChance);
+		for(a = 0; a <= maxPick; a++)
+		{
+			int newChance = monsterSelectStat[monGame][monAlt][monSlot][a][skillMod+2];
+			if(newChance == 0) newChance = 1;
+			else if(newChance < 0) continue;
+			if(a > 0)
+			{
+				int oldChance = monsterSelectStat[monGame][monAlt][monSlot][a-1][skillMod+2];
+				if(choose <= (currentChance + newChance) && choose > currentChance) 
+				{ 
+					pick = a; 
+					break; 
+				}
+				else
+					currentChance += newChance;
+			}
+			else
+			{
+				if(choose <= newChance)
+					pick = a;
+			}
+		}
+	}
+
+	int speed = monsterSelectStat[monGame][monAlt][monSlot][pick][skillMod];
+	int health = monsterSelectStat[monGame][monAlt][monSlot][pick][skillMod+1];
+	str token = monsterSelectStr[monGame][monAlt][monSlot][pick][1+skillMod];
+	
+	SpawnForced(monsterSelectStr[monGame][monAlt][monSlot][pick][0],GetActorX(0),GetActorY(0),GetActorZ(0),newMonTid);
+	SetActorAngle(newMonTid, GetActorAngle(0));
+		
+	if(monSlot == 6|7|8|9|14|15|16)
+		SetPointerExt(AAPTR_Master,0,newMonTid);
+	else
+	{
+		SetActivator(thisMonNew,AAPTR_Master);
+		SetPointerExt(AAPTR_Master,0,newMonTid);
+	}
+	
+	SetActivator(thisMonNew,AAPTR_Target);
+	SetPointerExt(AAPTR_Target,0,newMonTid);
+		
+	SetActivator(thisMonNew,AAPTR_Tracer);
+	SetPointerExt(AAPTR_Tracer,0,newMonTid);
+	
+	SetActivator(thisMonNew,AAPTR_Default);
+	Thing_ChangeTid(thisMonNew,thisMonOld);
+	
+	SetActorProperty(newMonTid,APROP_Ambush,GetActorProperty(0,APROP_Ambush));
+	SetThingSpecial(newMonTid,CheckInventory("ReMixerMonsterSpecial"),CheckInventory("ReMixerMonsterArg0"),CheckInventory("ReMixerMonsterArg1"),CheckInventory("ReMixerMonsterArg2"),CheckInventory("ReMixerMonsterArg3"));
+
+	if(speed != 0) { SetActorProperty(newMonTid,APROP_Speed,FixedMul(GetActorProperty(newMonTid,APROP_Speed),speed)); }
+	if(health != 0) { SetActorProperty(newMonTid,APROP_Health,FixedMul(GetActorProperty(newMonTid,APROP_Health),health)); }
+	if(strlen(token) != 0) { GiveActorInventory(newMonTid, token,1); }
+	
+	Thing_ChangeTid(newMonTid,thisMonOld);
 }
 
 Script "ReMixerInvasion" OPEN //670
@@ -386,9 +451,9 @@ Script "ReMixerCVarCheck" (int pick) //680
 		break;
 		
 		case 3:
-		if(GetCVar("mm_skilloverride") < 5)
+		if(GetCVar("mm_overrideskill") < 5)
 		{
-			response = GetCVar("mm_skilloverride");
+			response = GetCVar("mm_overrideskill");
 		}
 		else
 		{
