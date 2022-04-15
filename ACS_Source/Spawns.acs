@@ -73,26 +73,6 @@ int monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] =
 			{{ "SpiderMastermind64" }},
 			{{ "WolfensteinSSJagaur" }},
 		},
-		{	//VDR	
-			{{ "ZombieManRandomizer" }},
-			{{ "ShotgunguyRandomizer" }},
-			{{ "DoomImpRandomizer" }},
-			{{ "ChaingunguyRandomizer" }},
-			{{ "DoomDemonRandomizer" }},
-			{{ "SpectreRandomizer" }},
-			{{ "HellKnightRandomizer" }},
-			{{ "BaronofHell3", "MMRandomizer_HellsFury", "MMRandomizer_CyberBaron", "MMRandomizer_BruiserDemon", "MMRandomizer_Belphegor" }},
-			{{ "Arachnotron3", "MMRandomizer_ChaingunArachnotron", "MMRandomizer_RailgunArachnotron" }},
-			{{ "Fatso3", "MMRandomizer_Cryocubus", "MMRandomizer_Hectebus" }},
-			{{ "LostSoulRandomizer" }},
-			{{ "PainElementalRandomizer" }},
-			{{ "CacodemonRandomizer" }},
-			{{ "RevenantRandomizer" }},
-			{{ "ArchvileRandomizer" }},
-			{{ "Cyberdemon3", "MMRandomizer_ArchonOfHell", "MMRandomizer_Annihilator" }},
-			{{ "SpiderMastermind3", "MMRandomizer_ArachnorbQueen", "MMRandomizer_Demolisher" }},
-			{{ "Nazi3" }},
-		},
 	},
 	{},
 	{},
@@ -109,22 +89,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{
 				{0, 0, 4, 0, 0, 3, 0, 0, 2, 0, 0, 1, 0, 0, -1 }, { 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4}
 			}
-		},
-		{
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{},
-			{	
-				{ 0, 0, 8, 0, 0, 8, 0, 0, 8, 0, 0, 8, 0, 0, 8 },	{ 0, 0, 5, 0, 0, 5, 0, 0, 5, 0, 0, 5, 0, 0, 5 },	{ 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4 },	{ 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, 0, 3 },	{ 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2 },
-			},
-			{},
-			{
-				{ 0, 0, 6, 0, 0, 6, 0, 0, 6, 0, 0, 6, 0, 0, 6 },	{ 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4 }, 	{ 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2 },
-			},
 		}
 	},	
 	{},

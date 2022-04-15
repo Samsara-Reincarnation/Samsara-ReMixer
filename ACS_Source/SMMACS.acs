@@ -216,7 +216,7 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 					switch(GetCvar("mm_doommode"))
 					{
 						default:
-							altSetSelect = GetCvar("mm_doommode")-2;
+							altSetSelect = GetCvar("mm_doommode");
 							break;
 						case 0:
 							while(amountOfGameTypes[pickFromSets[setselect]] != 0)
@@ -233,10 +233,6 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 								if(amountOfGameTypes[pickFromSets[setselect]] & 1<<altSetSelect)
 									break;
 							}
-							altSetSelect += (2 * random(0,altSetSelect==0));
-							break;
-						case 5:
-							altSetSelect = random(0,2);
 							break;
 					}
 					break;
