@@ -40,7 +40,7 @@ server bool mm_fakehitlerfire = true;
 server bool mm_wolffastdeath = false;
 server int mm_spawnmode = 0;
 server int mm_dropmode = 0;
-server int mm_overrideskill = 0;
+server int mm_skilloverride = 5;
 
 //Misc
 server int mm_multiply = 1;

@@ -15,16 +15,11 @@ ACTOR WolfensteinSSSpawner replaces WolfensteinSS
 	{
 		Spawn:
 			TNT1 A 1
-			TNT1 A 0 A_GiveInventory("ReMixerMonsterSpecial",special)
-			TNT1 A 0 A_GiveInventory("ReMixerMonsterArg0",args[0])
-			TNT1 A 0 A_GiveInventory("ReMixerMonsterArg1",args[1])
-			TNT1 A 0 A_GiveInventory("ReMixerMonsterArg2",args[2])
-			TNT1 A 0 A_GiveInventory("ReMixerMonsterArg3",args[3])
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,17)			
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2)			
 		Deciding:
 			TNT1 A 1
-			Loop	
-		/*SetDoom:
+			Loop			
+		SetDoom:
 		SetDoomRandom:
 			TNT1 A 1 A_SpawnItemEx("Nazi3",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
 			Goto DeathForInvasion		
@@ -178,8 +173,7 @@ ACTOR WolfensteinSSSpawner replaces WolfensteinSS
 			Goto DeathForInvasion
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("BerzerkRobotBlue",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS,0,tid)
-			Goto DeathForInvasion*/
-		Continue:
+			Goto DeathForInvasion
 		Death:
 		DeathForInvasion:
 			TNT1 A 1 Thing_Remove(0)
