@@ -29,250 +29,96 @@ o MAXPERSLOT
 		that means the monster will not spawn at all on that difficulty.
 
 ======================================================================================================================*/
-//Monster name, 										token0, 									token1, 									token2, 								token3, 								token4						token5
+//Monster name, token0, token1, token2, token3, token4, token5
 int monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] = 
 {	
 	{	//Doom
 		{	//Classic	
-			{
-				{ "Zombieman3" }
-			},
-			{
-				{ "Shotgunguy3" }
-			},
-			{
-				{ "DoomImp3" }
-			},
-			{
-				{ "Chaingunguy3" }
-			},
-			{
-				{ "DoomDemon3" }
-			},
-			{
-				{ "Spectre3" }
-			},
-			{
-				{ "HellKnight3" }
-			},
-			{
-				{ "BaronofHell3" }
-			},
-			{
-				{ "Arachnotron3" }
-			},
-			{
-				{ "Fatso3" }
-			},
-			{
-				{ "LostSoul3" }
-			},
-			{
-				{ "PainElemental3" }
-			},
-			{
-				{ "Cacodemon3" }
-			},
-			{
-				{ "Revenant3" }
-			},
-			{
-				{ "Archvile3" }
-			},
-			{
-				{ "Cyberdemon3" }
-			},
-			{
-				{ "SpiderMastermind3" }
-			},
-			{
-				{ "Nazi3" }
-			},
+			{{ "Zombieman3" }},
+			{{ "Shotgunguy3" }},
+			{{ "DoomImp3" }},
+			{{ "Chaingunguy3" }},
+			{{ "DoomDemon3" }},
+			{{ "Spectre3" }},
+			{{ "HellKnight3" }},
+			{{ "BaronofHell3" }},
+			{{ "Arachnotron3" }},
+			{{ "Fatso3" }},
+			{{ "LostSoul3" }},
+			{{ "PainElemental3" }},
+			{{ "Cacodemon3" }},
+			{{ "Revenant3" }},
+			{{ "Archvile3" }},
+			{{ "Cyberdemon3" }},
+			{{ "SpiderMastermind3" }},
+			{{ "Nazi3" }},
 		},
 		{	//64	
-			{
-				{ "Zombieman64" }
-			},
-			{
-				{ "Shotgunguy64" }
-			},
-			{
-				{ "DoomImp64" },
-				{ "NightmareImp64" }
-			},
-			{
-				{ "Chaingunguy64" }
-			},
-			{
-				{ "Demon64" }
-			},
-			{
-				{ "Spectre64" }
-			},
-			{
-				{ "HellKnight64" }
-			},
-			{
-				{ "BaronofHell64" }
-			},
-			{
-				{ "Arachnotron64" }
-			},
-			{
-				{ "Fatso64" }
-			},
-			{
-				{ "LostSoul64" }
-			},
-			{
-				{ "PainElemental64" }
-			},
-			{
-				{ "Cacodemon64" }
-			},
-			{
-				{ "Revenant64" }
-			},
-			{
-				{ "Archvile64" }
-			},
-			{
-				{ "Cyberdemon64" }
-			},
-			{
-				{ "SpiderMastermind64" }
-			},
-			{
-				{ "WolfensteinSSJagaur" }
-			},
+			{{ "Zombieman64" }},
+			{{ "Shotgunguy64" }},
+			{{ "DoomImp64" },{ "NightmareImp64" }},
+			{{ "Chaingunguy64" }},
+			{{ "Demon64" }},
+			{{ "Spectre64" }},
+			{{ "HellKnight64" }},
+			{{ "BaronofHell64" }},
+			{{ "Arachnotron64" }},
+			{{ "Fatso64" }},
+			{{ "LostSoul64" }},
+			{{ "PainElemental64" }},
+			{{ "Cacodemon64" }},
+			{{ "Revenant64" }},
+			{{ "Archvile64" }},
+			{{ "Cyberdemon64" }},
+			{{ "SpiderMastermind64" }},
+			{{ "WolfensteinSSJagaur" }},
 		},
 		{	//VDR	
-			{
-				{ "ZombieManRandomizer" }
-			},
-			{
-				{ "ShotgunguyRandomizer" }
-			},
-			{
-				{ "DoomImpRandomizer" }
-			},
-			{
-				{ "ChaingunguyRandomizer" }
-			},
-			{
-				{ "DoomDemonRandomizer" }
-			},
-			{
-				{ "SpectreRandomizer" }
-			},
-			{
-				{ "HellKnightRandomizer" }
-			},
-			{
-				{ "BaronofHell3" },
-				{ "MMRandomizer_HellsFury" }, 
-				{ "MMRandomizer_CyberBaron" },
-				{ "MMRandomizer_BruiserDemon" },
-				{ "MMRandomizer_Belphegor" },
-			},
-			{
-				{ "Arachnotron3" }, 
-				{ "MMRandomizer_ChaingunArachnotron" }, 
-				{ "MMRandomizer_RailgunArachnotron" },
-			},
-			{
-				{ "Fatso3" }, 
-				{ "MMRandomizer_Cryocubus" }, 
-				{ "MMRandomizer_Hectebus" },
-			},
-			{
-				{ "LostSoulRandomizer" }
-			},
-			{
-				{ "PainElementalRandomizer" }
-			},
-			{
-				{ "CacodemonRandomizer" }
-			},
-			{
-				{ "RevenantRandomizer" }
-			},
-			{
-				{ "ArchvileRandomizer" }
-			},
-			{
-				{ "Cyberdemon3" }, 
-				{ "MMRandomizer_ArchonOfHell" }, 
-				{ "MMRandomizer_Annihilator" },
-			},
-			{
-				{ "SpiderMastermind3" }, 
-				{ "MMRandomizer_ArachnorbQueen" }, 
-				{ "MMRandomizer_Demolisher" },
-			},
-			{
-				{ "Nazi3" }
-			},
+			{{ "ZombieManRandomizer" }},
+			{{ "ShotgunguyRandomizer" }},
+			{{ "DoomImpRandomizer" }},
+			{{ "ChaingunguyRandomizer" }},
+			{{ "DoomDemonRandomizer" }},
+			{{ "SpectreRandomizer" }},
+			{{ "HellKnightRandomizer" }},
+			{{ "BaronofHell3", "MMRandomizer_HellsFury", "MMRandomizer_CyberBaron", "MMRandomizer_BruiserDemon", "MMRandomizer_Belphegor" }},
+			{{ "Arachnotron3", "MMRandomizer_ChaingunArachnotron", "MMRandomizer_RailgunArachnotron" }},
+			{{ "Fatso3", "MMRandomizer_Cryocubus", "MMRandomizer_Hectebus" }},
+			{{ "LostSoulRandomizer" }},
+			{{ "PainElementalRandomizer" }},
+			{{ "CacodemonRandomizer" }},
+			{{ "RevenantRandomizer" }},
+			{{ "ArchvileRandomizer" }},
+			{{ "Cyberdemon3", "MMRandomizer_ArchonOfHell", "MMRandomizer_Annihilator" }},
+			{{ "SpiderMastermind3", "MMRandomizer_ArachnorbQueen", "MMRandomizer_Demolisher" }},
+			{{ "Nazi3" }},
 		},
 	},
 	{
 		{ 	//Chex
-			{
-				{ "FlemoidusCommonus3" }
-			},
-			{
-				{ "FlemoidusBipedicus3" }
-			},
-			{
-				{ "NewArmoredFlemoidusBipedicus" }
-			},
-			{
-				{ "NewArmoredFlemoidusBipedicus" }
-			},
-			{
-				{ "NewFlemoidusStridicus" }
-			},
-			{
-				{ "NewFlemoidusCycloptisCommonus" }, 
-				{ "NewLarva" },
-			},
-			{
-				{ "NewQuadrumpus" }
-			},
-			{
-				{ "OldFlemoidusMaximusDoom" }
-			},
-			{
-				{ "NewQuadrumpus" }
-			},
-			{
-				{ "FlemMine2" }, 
-				{ "NewFlemoidusGyro" },
-			},
-			{
-				{ "SuperCycloptis2" }
-			},
-			{
-				{ "SuperCycloptis2" }
-			},
-			{
-				{ "NewQuadrumpus" }
-			},
-			{
-				{ "NewSnotfolus" }
-			},
-			{
-				{ "FlembominationNew" }
-			},
-			{
-				{ "YellowArmoredFlemoid" }
-			},
+			{{ "FlemoidusCommonus3" }},
+			{{ "FlemoidusBipedicus3" }},
+			{{ "NewArmoredFlemoidusBipedicus" }},
+			{{ "NewArmoredFlemoidusBipedicus" }},
+			{{ "NewFlemoidusStridicus" }},
+			{{ "NewFlemoidusCycloptisCommonus" }, { "NewLarva" }},
+			{{ "NewQuadrumpus" }},
+			{{ "OldFlemoidusMaximusDoom" }},
+			{{ "NewQuadrumpus" }},
+			{{ "FlemMine2" }, { "NewFlemoidusGyro" }},
+			{{ "SuperCycloptis2" }},
+			{{ "SuperCycloptis2" }},
+			{{ "NewQuadrumpus" }},
+			{{ "NewSnotfolus" }},
+			{{ "FlembominationNew" }},
+			{{ "YellowArmoredFlemoid" }},
 		}
 		
 	},
 	{},
 };
-//				speed0		health0		weight0		speed1		health1		weight1		speed2		health2		weight2		speed3		health3		weight3		speed4		health4		weight4
+
+//Item - speed0, health0, weight0, speed1, health1, weight1, speed2, health2, weight2, speed3, health3, weight3, speed4, health4, weight4
 int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_ITEMS] = 
 {	
 	{ //Doom
@@ -281,8 +127,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{},
 			{},
 			{
-				{0, 		0, 			4, 			0, 			0, 			3, 			0, 			0, 			2, 			0, 			0, 			1, 			0, 			0, 			-1 }, 
-				{0, 		0, 			1, 			0, 			0, 			2, 			0, 			0, 			3, 			0, 			0, 			4}
+				{0, 0, 4, 0, 0, 3, 0, 0, 2, 0, 0, 1, 0, 0, -1 }, { 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4}
 			}
 		},
 		{
@@ -294,17 +139,11 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{},
 			{},
 			{	
-				{0, 		0, 			8, 			0, 			0, 			8, 			0, 			0, 			8, 			0, 			0, 			8, 			0, 			0, 			8 },	
-				{0, 		0, 			5, 			0, 			0, 			5, 			0, 			0, 			5, 			0, 			0, 			5, 			0, 			0, 			5 },	
-				{0, 		0, 			4, 			0, 			0, 			4, 			0, 			0, 			4, 			0, 			0, 			4, 			0, 			0, 			4 },	
-				{0, 		0, 			3, 			0, 			0, 			3, 			0, 			0, 			3, 			0, 			0, 			3, 			0, 			0, 			3 },	
-				{0, 		0, 			2, 			0, 			0, 			2, 			0, 			0, 			2, 			0, 			0, 			2, 			0, 			0, 			2 },	
+				{ 0, 0, 8, 0, 0, 8, 0, 0, 8, 0, 0, 8, 0, 0, 8 },	{ 0, 0, 5, 0, 0, 5, 0, 0, 5, 0, 0, 5, 0, 0, 5 },	{ 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4 },	{ 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, 0, 3, 0, 0, 3 },	{ 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2 },
 			},
 			{},
 			{
-				{0, 		0, 			6, 			0, 			0, 			6, 			0, 			0, 			6, 			0, 			0, 			6, 			0, 			0, 			6 },	
-				{0, 		0, 			4, 			0, 			0, 			4, 			0, 			0, 			4, 			0, 			0, 			4, 			0, 			0, 			4 },	
-				{0, 		0, 			2, 			0, 			0, 			2, 			0, 			0, 			2, 			0, 			0, 			2, 			0, 			0, 			2 },	
+				{ 0, 0, 6, 0, 0, 6, 0, 0, 6, 0, 0, 6, 0, 0, 6 },	{ 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4, 0, 0, 4 }, 	{ 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2 },
 			},
 		}
 	},	
