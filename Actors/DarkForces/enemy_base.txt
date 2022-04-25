@@ -253,6 +253,15 @@ Actor StormTrooper_MonsterDrop : SamsaraSlotTwoDrop {
     }
 }
 
+Actor ImperialCommander_MonsterDrop : SamsaraSlotFourDrop {
+	States
+    {
+      Spawn:
+		IREP A -1
+		Stop
+    }
+}
+
 Actor DarkForces_GranDrop : SamsaraSlotOneDrop {
 	States
     {
