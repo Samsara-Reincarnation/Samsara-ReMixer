@@ -416,7 +416,7 @@ ACTOR M2TickBomb : M2Tick
 	{
 		Melee:
 			M_HW D 1 A_FaceTarget
-			M_HW D 1 A_Die("Suicide")
+			M_HW D 1 A_Die("NotSuicide")
 			Wait
 		Death.DukeDamage:
 		Death.MightyBoot:
@@ -436,7 +436,7 @@ ACTOR M2TickBomb : M2Tick
 			M_HW W 4 Bright		
 			TNT1 A 1 A_FadeOut
 			Stop
-		Death.Suicide:
+		Death.NotSuicide:
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_Recoil(5)		
 			TNT1 A 0 A_PlaySound("looker/death",5,1.0,0,ATTN_NORM)
