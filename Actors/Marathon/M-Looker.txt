@@ -109,31 +109,31 @@ ACTOR MLooker
 			TNT1 A 0 A_GiveInventory("AttackFrequency",52)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO A 3 A_FaceTarget
-			M_LO A 1 A_Die("Suicide")
+			M_LO A 1 A_Die("NotSuicide")
 			Wait
 		MeleeHNTR:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",35)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO A 3 A_FaceTarget
-			M_LO A 1 A_Die("Suicide")
+			M_LO A 1 A_Die("NotSuicide")
 			Wait
 		MeleeHMP:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",17)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO A 3 A_FaceTarget
-			M_LO A 1 A_Die("Suicide")
+			M_LO A 1 A_Die("NotSuicide")
 			Wait
 		MeleeUV:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",9)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO A 3 A_FaceTarget
-			M_LO A 1 A_Die("Suicide")
+			M_LO A 1 A_Die("NotSuicide")
 			Wait
 		MeleeNightmare:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",4)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO A 3 A_FaceTarget
-			M_LO A 1 A_Die("Suicide")
+			M_LO A 1 A_Die("NotSuicide")
 			Wait
 		Pain:
 			M_LO C 5
@@ -281,7 +281,7 @@ ACTOR MLooker
 			M_LO F 5 bright
 			TNT1 A 1 A_FadeOut
 			Stop
-		Death.Suicide:
+		Death.NotSuicide:
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_Recoil(5)
 			TNT1 A 0 A_Scream
@@ -762,31 +762,31 @@ ACTOR MLooker2
 			TNT1 A 0 A_GiveInventory("AttackFrequency",52)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO G 3 A_FaceTarget
-			M_LO G 1 A_Die("Suicide")
+			M_LO G 1 A_Die("NotSuicide")
 			Wait
 		MeleeHNTR:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",35)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO G 3 A_FaceTarget
-			M_LO G 1 A_Die("Suicide")
+			M_LO G 1 A_Die("NotSuicide")
 			Wait
 		MeleeHMP:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",17)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO G 3 A_FaceTarget
-			M_LO G 1 A_Die("Suicide")
+			M_LO G 1 A_Die("NotSuicide")
 			Wait
 		MeleeUV:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",9)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO G 3 A_FaceTarget
-			M_LO G 1 A_Die("Suicide")
+			M_LO G 1 A_Die("NotSuicide")
 			Wait
 		MeleeNightmare:
 			TNT1 A 0 A_GiveInventory("AttackFrequency",4)
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			M_LO G 3 A_FaceTarget
-			M_LO G 1 A_Die("Suicide")
+			M_LO G 1 A_Die("NotSuicide")
 			Wait
 		Pain:
 			M_LO I 5
@@ -823,7 +823,7 @@ ACTOR MLooker2
 			M_LO L 5 bright
 			TNT1 A 1 A_FadeOut
 			Stop
-		Death.Suicide:
+		Death.NotSuicide:
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_Recoil(5)
 			TNT1 A 0 A_Scream
