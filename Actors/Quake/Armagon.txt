@@ -4,7 +4,7 @@ ACTOR QArmagon
 	Health 4500
 	Radius 40
 	Height 110
-	Mass 99999999999999999999999999999999999
+	Mass 4000
 	PainChance 5
 	Speed 20
 	MeleeRange 60
