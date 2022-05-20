@@ -299,11 +299,11 @@ Actor SecurityOfficer_AI
     Ice:
     Death.HexenIce:
     Death.Ice:
-        SOPL Z 70 A_NoBlocking
-        SOPL Z 0 A_SetTranslucent(0,0)
+        SOFR Z 70 A_NoBlocking
+        SOFR Z 0 A_SetTranslucent(0,0)
         TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("IceChunk2",random(-1,1),random(-1,1),random(8,48),random(-2,2),random(-2,2),random(1,6))
-        SOPL Z 1 A_PlayWeaponSound("misc/icebreak")
-        SOPL Z -1
+        SOFR Z 1 A_PlayWeaponSound("misc/icebreak")
+        SOFR Z -1
         stop
 	Death.Dynamite:
 	Death.LifeLeech:
