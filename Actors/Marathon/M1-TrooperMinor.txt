@@ -595,7 +595,7 @@ ACTOR M1TrooperMinor
 			SOPL V 5 Bright A_Stop
 			SOPL W 4 Bright A_NoBlocking
 			SOPL X 5 Bright
-			SOPL X -1
+			SOPL Y -1
 			Stop
 		Death.ZorchPistol:
 		Death.Zorch:

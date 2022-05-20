@@ -360,7 +360,7 @@ Actor Doom64_AI
 		64DG A 5 A_Look
 		loop
 	See:
-		64DG AAAABBBBCCCCDDDD 1 A_FastChase
+		64DG AAAAABBBBBCCCCCDDDDD 1 A_FastChase
 		Loop
     Missile:
 		TNT1 A 0 A_Jump(48, "FireSlot4")
