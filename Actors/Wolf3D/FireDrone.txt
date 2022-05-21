@@ -201,7 +201,6 @@ ACTOR FireDrone
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			LE02 F 4 A_Scream
 			LE02 G 5 
 			LE02 H 6 A_NoBlocking
