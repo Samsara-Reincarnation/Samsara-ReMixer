@@ -539,7 +539,7 @@ ACTOR M1FighterMajor
 			SOPL V 5 Bright A_Stop
 			SOPL W 4 Bright A_NoBlocking
 			SOPL X 5 Bright
-			SOPL X -1
+			SOPL Y -1
 			Stop
 		Death.Crush:
 			TNT1 A 0 A_Stop
