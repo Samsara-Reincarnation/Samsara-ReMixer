@@ -55,6 +55,9 @@ ACTOR boba_fett : enemy_base
 			BOBA EF 4 
 			BOBA G -1 A_KillMaster
 			Stop
+		Crush:
+			TNT1 A -1
+			Stop
 		Pain.Shock:
 		Pain.Tesla:
 			CBGS E 4 A_Pain

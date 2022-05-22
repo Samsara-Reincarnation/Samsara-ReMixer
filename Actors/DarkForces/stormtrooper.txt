@@ -62,6 +62,9 @@ ACTOR storm_trooper : enemy_base
 			STRM QRS 5
 			STRM N -1
 			Stop		
+		Crush:
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_PlaySound("duke/enemyfreeze")
 			"####" "#" 0 A_GiveInventory("FreezethrowerWeakness")
