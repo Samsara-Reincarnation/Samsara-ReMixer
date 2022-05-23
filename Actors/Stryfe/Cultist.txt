@@ -9,6 +9,7 @@ Actor StrifeCultist
   Monster
   +FloorClip
   +DontHurtSpecies
+  +NoInfighting
   Species "Enemies"
   DamageFactor "CorvusCrossbow", 1.1
   DamageFactor "DragonClaw", 1.5
