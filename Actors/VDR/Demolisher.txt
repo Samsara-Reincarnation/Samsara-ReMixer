@@ -17,6 +17,7 @@ Actor MMRandomizer_Demolisher : SpiderMastermind3
 	PainSound "spider/pain" 
 	DeathSound "vdr/demdth" 
 	ActiveSound "spider/active" 
+	Tag "Spider-Demolisher"
 	States 
 	{
 		Spawn: 

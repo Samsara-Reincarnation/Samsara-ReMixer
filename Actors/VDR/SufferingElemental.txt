@@ -13,6 +13,7 @@ ACTOR MMRandomizer_SufferingElemental : PainElemental3
 	PainSound "Pain/Pain"
 	DeathSound "Pain/Death"
 	ActiveSound "Pain/Active"
+	Tag "Suffering Elemental"
 	States 
 	{
 		Spawn:

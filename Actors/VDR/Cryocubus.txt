@@ -48,6 +48,7 @@ ACTOR MMRandomizer_Cryocubus : Fatso3
 	DamageFactor "CalebNapalm", 1.5
 	DamageFactor "LifeLeech", 1.5	
 	Obituary "%o was frozen by the Cryocubus."
+	Tag "Cyrocubus"
 	BloodColor "cc 39 39"
 	States
 	{

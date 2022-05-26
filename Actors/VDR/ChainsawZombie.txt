@@ -16,7 +16,8 @@ ACTOR MMRandomizer_ChainsawZombie : Zombieman3
     ActiveSound "grunt/active" 
 	AttackSound ""
     DropItem MMRandomizer_ChainsawDrop
-    States 
+    Tag "Chaingun Zombie"
+	States 
     { 
 		Spawn: 
 			VD34 A 4 A_Look 

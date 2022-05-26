@@ -10,6 +10,7 @@ ACTOR MMRandomizer_PlasmaZombie : Shotgunguy3
     DropItem MMRandomizer_CellDrop
     MissileType PlasmaZombieBall
 	AttackSound ""
+	Tag "Plasma Zombie"
     States
     {
 		Spawn:

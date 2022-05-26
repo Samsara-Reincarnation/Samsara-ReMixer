@@ -13,6 +13,7 @@ Actor MMRandomizer_RailGunArachnotron : Arachnotron3
 	DeathSound "baby/death"
 	ActiveSound "baby/active"
 	Obituary "%o was railed by an arachnotron."
+	Tag "Railgun Arachnotron"
 	Decal RedRailScorch
 	States
 	{

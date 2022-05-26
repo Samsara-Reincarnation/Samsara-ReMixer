@@ -18,6 +18,7 @@ actor MMRandomizer_Satyr
     MeleeDamage 8
 	var int user_scalex;
 	var int user_scaley;		
+	Tag "Satyr"
     States
     {
 		Spawn:

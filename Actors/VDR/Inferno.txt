@@ -20,6 +20,7 @@ ACTOR MMRandomizer_Inferno : Cacodemon3
 	ActiveSound "caco/active"
 	MeleeSound "vdr/melee"
 	BloodColor "fd 38 01"
+	Tag "Inferno"
 	States 
 	{ 
 		Spawn: 

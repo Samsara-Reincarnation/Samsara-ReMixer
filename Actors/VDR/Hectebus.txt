@@ -3,6 +3,7 @@ ACTOR MMRandomizer_Hectebus : Fatso3
 	Health 1200
 	PainChance 20
 	Obituary "%o was cremated by a hectebus."
+	Tag "Hectebus"
 	States
 	{
 		Spawn:

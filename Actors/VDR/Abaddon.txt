@@ -12,6 +12,7 @@ Actor MMRandomizer_Abaddon : Cacodemon3
 	Obituary "%o was smitten by an Abaddon."
 	HitObituary "%o became food for an Abaddon."
 	BloodColor "Red"
+	Tag "Abaddon"
 	+FLOAT
 	+NOGRAVITY
 	States

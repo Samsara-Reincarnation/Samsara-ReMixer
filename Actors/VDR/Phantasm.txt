@@ -14,6 +14,7 @@ actor MMRandomizer_Phantasm : LostSoul3
 	RenderStyle Add
 	BloodColor "green"
 	Obituary "%o was smoked by a Phantasm."
+	Tag "Phantasm"
 	States
 	{
 		Spawn:

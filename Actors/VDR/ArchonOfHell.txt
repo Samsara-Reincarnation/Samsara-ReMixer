@@ -22,6 +22,7 @@ Actor MMRandomizer_ArchonOfHell : BaronOfHell3
 	DeathSound "vdr/ar2dth"
 	ActiveSound "VDR/superbaron/act"
 	MeleeSound "baron/melee"
+	Tag "Archon Of Hell"
 	States
 	{
 		Spawn:

@@ -16,6 +16,7 @@ ACTOR MMRandomizer_ZombieRailGunner : Shotgunguy3
 	AttackSound ""
     Decal RedRailScorch
 	DropItem MMRandomizer_CellDrop
+	Tag "Zombie Railgunner"
     States 
     { 
 		Spawn: 

@@ -15,7 +15,8 @@ Actor MMRandomizer_BloodDemon : DoomDemon3
 	DeathSound "demon/death" 
 	ActiveSound "demon/active" 
 	Obituary "%o was gored by a Blood Demon."
-	HitObituary "%o was mauled by a Blood Demon"
+	HitObituary "%o was mauled by a Blood Demon."
+	Tag "Blood Demon"
 	States 
 	{ 
 		Spawn: 

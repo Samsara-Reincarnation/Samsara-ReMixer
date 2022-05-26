@@ -22,7 +22,7 @@ ACTOR MMRandomizer_CyberWarrior
 	PainSound "VDR/Paladin/Pain" 
 	DeathSound "VDR/Paladin/Death" 
 	ActiveSound "VDR/Paladin/Active" 
-	Tag "Cyber Warrior"
+	Tag "Hell Paladin"
 	var int user_scalex;
 	var int user_scaley;	
 	States 

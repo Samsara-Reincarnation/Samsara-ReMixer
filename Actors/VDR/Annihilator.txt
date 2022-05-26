@@ -13,6 +13,7 @@ ACTOR MMRandomizer_Annihilator : CyberDemon3
 	+NORADIUSDMG 
 	+BOSS 
 	+MISSILEEVENMORE 
+	Tag "Annihilator"
 	States 
 	{    
 		Spawn: 

@@ -8,6 +8,7 @@ ACTOR MMRandomizer_RapidFireTrooper : Zombieman3
     +FLOORCLIP
     Obituary "%o was surprised by the zombie's weaponry."
     Decal BulletChip
+	Tag "Rapidfire Trooper"
     States
     {
 	    Spawn:

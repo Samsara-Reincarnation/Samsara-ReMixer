@@ -15,6 +15,7 @@ actor MMRandomizer_Nightshade
 	+FLOORCLIP
 	var int user_scalex;
 	var int user_scaley;
+	Tag "Nightshade"
 	States
 	{
 		Spawn:

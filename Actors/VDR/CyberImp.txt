@@ -16,6 +16,7 @@ ACTOR MMRandomizer_CyberImp : DoomImp3
 	DamageFactor "PoisonBolt", 0.5		
 	HitObituary "%o was torn apart by a cyber imp."
 	Obituary "%o was fried by a cyber imp."
+	Tag "Cyber Imp"
 	States
 	{
 		Spawn:

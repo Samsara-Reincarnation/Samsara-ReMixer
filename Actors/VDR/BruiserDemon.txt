@@ -22,6 +22,7 @@ Actor MMRandomizer_BruiserDemon : BaronOfHell3
 	HitObituary "%o was cremated by a Bruiser demon."
 	MeleeDamage 20
 	Scale 1.25
+	Tag "Bruiser Demon"
 	States
 	{
 		Spawn:

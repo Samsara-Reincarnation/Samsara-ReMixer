@@ -24,6 +24,7 @@ Actor MMRandomizer_CyberKnight : HellKnight3
 	DeathSound "VDR/brudth"
 	MeleeSound "baron/melee"
 	BloodColor "Red"
+	Tag "Cyber Knight"
 	States 
 	{ 
 		Spawn: 

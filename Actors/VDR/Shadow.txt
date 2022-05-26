@@ -17,6 +17,7 @@ ACTOR MMRandomizer_Shadow
 	MissileType MMRandomizer_ShadowBall
 	var int user_scalex;
 	var int user_scaley;	
+	Tag "Shadow"
 	States
 	{
 		Spawn:

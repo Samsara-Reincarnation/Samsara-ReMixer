@@ -18,6 +18,7 @@ ACTOR MMRandomizer_Belphegor : BaronofHell3
 	Missiletype MMRandomizer_BelphegorBall 
 	Obituary "%o was incinerated by a Belphegor." 
 	HitObituary "The last thing %o saw was the Belphegor's abs." 
+	Tag "Belphegor"
 	States 
 	{ 
 		Spawn:

@@ -17,6 +17,7 @@ Actor MMRandomizer_SoulHarvester
     MeleeDamage 3
 	var int user_scalex;
 	var int user_scaley;	
+	Tag "Soul Harvester"
     States
     {
 		Spawn:

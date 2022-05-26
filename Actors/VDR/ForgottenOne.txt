@@ -20,6 +20,7 @@ Actor MMRandomizer_ForgottenOne
 	+DONTFALL
 	+FLOATBOB
 	+NOBLOOD
+	Tag "Forgotten One"
 	States
 	{
 		Spawn:

@@ -24,6 +24,7 @@ Actor MMRandomizer_Hierophant
     var int user_i; // Iterator variable for Missile3 attack.
 	var int user_scalex;
 	var int user_scaley;
+	Tag "Hierophant"
     States
     {
 		Spawn:

@@ -10,6 +10,7 @@ actor MMRandomizer_STDarkImp : DoomImp3
     Obituary "%o was burned by a dark imp."
     HitObituary "%o was slashed by a dark imp."
     MissileType MMRandomizer_DarkFast
+	Tag "Dark Imp"
     MeleeDamage 3
     States
     {

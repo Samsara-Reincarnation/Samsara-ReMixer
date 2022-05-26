@@ -25,6 +25,7 @@ ACTOR MMRandomizer_Ghoul : Revenant3
 	DamageFactor "GhoulCloud",0
 	PoisonDamage 128 //Poison Damage Duration from Melee About 4-5 Seconds
 	Decal BaronScorch	
+	Tag "Ghoul"
 	States
 	{
 		Spawn:

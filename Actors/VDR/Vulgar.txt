@@ -16,6 +16,7 @@ actor MMRandomizer_Vulgar : DoomImp3
 	MeleeSound "VDR/vulhit"
 	+DONTHURTSPECIES
 	+FLOORCLIP
+	Tag "Vulgar"
 	states
 	{
 		Spawn:

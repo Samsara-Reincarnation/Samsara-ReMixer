@@ -19,6 +19,7 @@ Actor MMRandomizer_HellWarrior : HellKnight3
 	Obituary "%o was tagged by the hell warrior's fireball."
 	HitObituary "%o was torn apart by a hell warrior."
 	BloodColor "Red"
+	Tag "Hell Warrior"
 	States
 	{
 		Spawn:

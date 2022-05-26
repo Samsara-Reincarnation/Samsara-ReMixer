@@ -22,6 +22,7 @@ Actor MMRandomizer_Diabolist
 	ActiveSound "vdr/diabolus/diaact"
 	var int user_scalex;
 	var int user_scaley;
+	Tag "Diabloist"
 	States
 	{
 		Spawn:

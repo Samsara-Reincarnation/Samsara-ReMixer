@@ -15,6 +15,7 @@ Actor MMRandomizer_Hellion
 	+FLOORCLIP
 	var int user_scalex;
 	var int user_scaley;
+	Tag "Hellion"
 	States
 	{
 		Spawn:

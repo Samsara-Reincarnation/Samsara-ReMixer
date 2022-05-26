@@ -16,7 +16,8 @@ Actor MMRandomizer_Wraith
 	Monster
 	+FLOORCLIP
 	var int user_scalex;
-	var int user_scaley;		
+	var int user_scaley;	
+	Tag "Wraith"
 	States
 	{
 		Spawn:

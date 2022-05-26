@@ -19,6 +19,7 @@ ACTOR MMRandomizer_MeleeRevenant
 	HitObituary "$OB_UNDEADHIT" // "%o was punched by a revenant."
 	var int user_scalex;
 	var int user_scaley;	
+	Tag "Naked Revenant"
 	States
 	{
 		Spawn:

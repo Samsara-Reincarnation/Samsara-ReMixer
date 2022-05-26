@@ -10,6 +10,7 @@ ACTOR MMRandomizer_ZombieScientist : Zombieman3
 	PainChance 200
 	MONSTER
 	+FLOORCLIP
+	Tag "Zombie Scientist"
 	States
 	{
 		Spawn:

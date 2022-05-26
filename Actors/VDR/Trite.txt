@@ -59,6 +59,7 @@ Actor MMRandomizer_Trite
 	+FLOORCLIP
 	+DONTHURTSPECIES
 	+NOTARGET
+	Tag "Trite"
 	States
 	{
 		Spawn:

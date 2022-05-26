@@ -23,6 +23,7 @@ actor MMRandomizer_Arachnorb
 	Scale 0.85
 	var int user_scalex;
 	var int user_scaley;
+	Tag "Arachnorb"
 	States
 	{
 		Spawn:

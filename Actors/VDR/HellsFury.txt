@@ -12,11 +12,12 @@ Actor MMRandomizer_HellsFury : BaronOfHell3
 	ActiveSound "baron/active"
 	PainSound "baron/pain"
 	DeathSound "baron/death"
-	Obituary "%o felt the wrath of Hell's Fury"
-	HitObituary "%o got ripped apart by Hell's Fury"
+	Obituary "%o felt the wrath of Hell's Fury."
+	HitObituary "%o got ripped apart by Hell's Fury."
 	MissileType MMRandomizer_HellsFuryBall
 	MeleeDamage 11
 	BloodColor "Red"
+	Tag "Hell's Fury"
 	States
 	{
 		Spawn:

@@ -22,6 +22,7 @@ ACTOR MMRandomizer_MechBloodDemon : MMRandomizer_MechDemon
     //MeleeSound "VDR/mechdemon/melee"
 	Obituary "%o was gored by a Mechanical Blood Demon."
 	HitObituary "%o was mauled and chewed up by a Mechanical Blood Demon."
+	Tag "Mechanical Blood Demon"
     States 
     { 
 		Spawn: 

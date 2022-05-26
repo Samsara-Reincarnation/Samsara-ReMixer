@@ -14,6 +14,7 @@ actor MMRandomizer_ChaingunArachnotron : Arachnotron3
 	AttackSound "grunt/attack"
 	Dropitem "MMRandomizer_CGunArachnoAmmoDrop" 64
 	Decal "BulletChip"
+	Tag "Chaingun Arachnotron"
 	Monster
 	+FLOORCLIP
 	states

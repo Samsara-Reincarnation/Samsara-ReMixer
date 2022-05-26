@@ -18,6 +18,7 @@ ACTOR MMRandomizer_Nightmare
     MeleeSound "VDR/nightmare/melee"
     HitObituary "%o was tormented by a nightmare."
     MeleeDamage 4
+	Tag "Nightmare"
     States
     {
 		Spawn:

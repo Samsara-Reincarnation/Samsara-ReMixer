@@ -1,5 +1,6 @@
 Actor MMRandomizer_ChaingunMajor1 : ChaingunGuy3
 {
+	Tag "Chaingun Major"
 	Health 80
 	+MISSILEMORE
 	States

@@ -20,6 +20,7 @@ Actor MMRandomizer_Afrit
 	Damagefactor "HellFire", 0.0
 	var int user_scalex;
 	var int user_scaley;	
+	Tag "Afrit"
 	States
 	{
 		Spawn:

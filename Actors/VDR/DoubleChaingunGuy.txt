@@ -13,6 +13,7 @@ Actor MMRandomizer_DoubleChaingunGuy : Chaingunguy3
 	DeathSound "chainguy/death"
 	ActiveSound "chainguy/active"
 	DropItem "ChingunDrop", 256, 2
+	Tag "Double Chaingun Guy"
 	Monster
 	States
 	{

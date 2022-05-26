@@ -17,6 +17,7 @@ Actor MMRandomizer_Roach
 	Obituary "%o was scalded by a Roach."
 	var int user_scalex;
 	var int user_scaley;
+	Tag "Roach"
 	States
 	{
 		Spawn:

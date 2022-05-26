@@ -19,6 +19,7 @@ ACTOR MMRandomizer_Incarnate : Revenant3
 	DeathSound "vdr/incarnate/death"
 	ActiveSound "vdr/incarnate/active"
 	BloodColor "48 49 5c"
+	Tag "Incarnate"
 	States
 	{
 		Spawn:

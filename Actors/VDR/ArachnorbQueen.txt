@@ -20,6 +20,7 @@ actor MMRandomizer_ArachnorbQueen
 	MissileHeight 36
 	Obituary "%o suffered psychic trauma from an arachnorb queen's brainwaves."
 	HitObituary "%o had %p skull chewed by an arachnorb queen."
+	Tag "Arachnorb Queen"
 	States
 	{
 		Spawn:

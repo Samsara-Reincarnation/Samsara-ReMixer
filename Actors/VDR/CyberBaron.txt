@@ -19,6 +19,7 @@ ACTOR MMRandomizer_Cyberbaron : BaronOfhell3
 	Monster
 	+NORADIUSDMG
 	+DONTHURTSPECIES
+	Tag "Cyber Baron"
 	states
 	{
 		Spawn:

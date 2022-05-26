@@ -18,6 +18,7 @@ Actor MMRandomizer_Watcher
 	+FLOAT
 	var int user_scalex;
 	var int user_scaley;	
+	Tag "Watcher"
 	States 
 	{ 
 		Spawn: 

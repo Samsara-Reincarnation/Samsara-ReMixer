@@ -20,6 +20,7 @@ ACTOR MMRandomizer_MechDemon : DoomDemon3
     ActiveSound "VDR/mechdemon/active"
     //MeleeSound "VDR/mechdemon/melee"
     HitObituary "%o was chewed up and spat out by a Mech-demon." 
+	Tag "Mech Demon"
     States 
     { 
 		Spawn: 
