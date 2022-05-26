@@ -6205,7 +6205,7 @@ Actor CultistDrop : SamsaraSlotThreeDrop {
 	States
     {
       Spawn:
-		SOSP A -1
+		BSOP A -1
         Stop
     }
 }

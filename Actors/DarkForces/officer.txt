@@ -53,6 +53,9 @@ ACTOR DF_officer : enemy_base
 			OFFC LM 4
 			OFFC N -1 A_Fall
 			Stop
+		Crush:
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_PlaySound("duke/enemyfreeze")
 			"####" "#" 0 A_GiveInventory("FreezethrowerWeakness")
