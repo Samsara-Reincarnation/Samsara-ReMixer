@@ -73,7 +73,7 @@ Actor BabyEstronBeast
 	Death:
 	XDeath:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 		RM87 F 5
 		RM87 G 5 A_Scream
 		RM87 H 3 A_NoBlocking
