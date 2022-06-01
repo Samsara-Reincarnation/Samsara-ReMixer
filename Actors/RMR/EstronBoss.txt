@@ -194,7 +194,7 @@ Actor BigEstronBeast
 	Death.DukeDamage:
 	Death.DukePistol:
 		TNT1 A 0 A_Jump(218,"Death")
-		TNT1 A 0 A_GiveToTarget("DukeRobotKill",1)
+		TNT1 A 0 A_GiveToTarget("DukeKillTaunt",1)
 		Goto Death
 	Death.MightyBoot:
 		TNT1 A 0 A_PlaySoundEx("duke/kickhit","body",0,0)
