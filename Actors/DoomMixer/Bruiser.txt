@@ -134,7 +134,7 @@ ACTOR HellKnight3 : HellKnight2
 		XDeath.QuakeExplosive:
 		XDeathForRanger:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")				
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)		
 			TNT1 A 0 A_SpawnItemEx("QuakeMediumGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_Fall
@@ -145,7 +145,7 @@ ACTOR HellKnight3 : HellKnight2
 			goto Death
 		XdeathForBitterman:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")				
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_SpawnItemEx("Q2MediumColorGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_Fall
@@ -610,6 +610,7 @@ ACTOR BaronOfHell3 : BaronOfHell2
 		XDeath.QuakeExplosive:
 		XDeathForRanger:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_SpawnItemEx("QuakeMediumGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_Fall
@@ -634,6 +635,7 @@ ACTOR BaronOfHell3 : BaronOfHell2
 			goto Death
 		XdeathForBitterman:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_SpawnItemEx("Q2MediumColorGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_Fall
