@@ -95,6 +95,7 @@ Actor Nightmare_Demon : DisruptorAlien
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_NoGravity		
 			DISP A 2 bright
 			DISP A 2 bright A_Scream

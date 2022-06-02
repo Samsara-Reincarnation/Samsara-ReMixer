@@ -58,6 +58,7 @@ Actor DisruptorDragonFly : DisruptorAlien
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			DIS6 O 4
 			DIS6 P 4 A_Scream
 			DIS6 Q 4 A_NoBlocking

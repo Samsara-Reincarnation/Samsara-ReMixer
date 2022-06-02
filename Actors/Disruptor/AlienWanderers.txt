@@ -61,6 +61,7 @@ Actor AlienWanderer_T1 : DisruptorAlien {
 		Death:
 		XDeath:		
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			DISE S 2 bright A_Scream
 			DISE S 2 bright A_NoBlocking 
 			DISE TT 2 bright
@@ -393,6 +394,7 @@ Actor AlienWanderer_T2 : AlienWanderer_T1 {
 		Death:
 		XDeath:	
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			DISF S 2 A_Scream
 			DISF S 2 A_NoBlocking 
 			DISF TT 2 

@@ -68,6 +68,7 @@ Actor DisruptorNightmareSpider : DisruptorAlien
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			DISL A 4 bright
 			DISL B 4 bright A_Scream
 			DISL C 4 bright A_NoBlocking

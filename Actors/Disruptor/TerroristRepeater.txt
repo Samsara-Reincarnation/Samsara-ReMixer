@@ -64,6 +64,7 @@ Actor DisruptorTerroristRepeater : DisruptorHumanoid
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			DISU R 2 bright
 			DISU R 2 bright A_Scream
 			DISU S 2 bright A_NoBlocking
