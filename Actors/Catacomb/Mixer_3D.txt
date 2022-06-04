@@ -717,6 +717,7 @@ Actor Catacomb3D_Mage : Catacomb3D_EnemyBase //replaces DoomImp
 	Health 50
 	Speed 10
 	Tag "Blue Mage"
+	Obituary "Our savior %o has fallen to a Mage."
 	States
 	{
 		Spawn:

@@ -1362,6 +1362,7 @@ Actor CatacombAbyss_Mage : CatacombTrilogy_EnemyBase
 	Speed 15
 	Tag "Red Mage"
 	DropItem "CatacombAbyss_MageDrop"
+	Obituary "Our savior %o has fallen to a Mage."
 	States
 	{
 		Spawn:
@@ -3135,7 +3136,7 @@ Actor CatacombAbyss_BlueDemon : CatacombTrilogy_EnemyBase //replaces HellKnight
 	Speed 15
 	Radius 30
 	Height 64
-	Obituary "Our savior %o has fallen to an Demon."
+	Obituary "Our savior %o has fallen to a Demon."
 	Tag "Blue Demon"	
 	BloodColor "54 fc fc"
 	States

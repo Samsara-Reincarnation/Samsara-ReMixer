@@ -1370,7 +1370,7 @@ Actor CatacombApocalypse_CyberDemon : CatacombTrilogy_EnemyBase
 	DamageFactor "ElectricBolt", 2.0
 	DamageFactor "PoisonBolt", 0	
 	Tag "Cyber Demon"
-	Obituary "Our savior %o has fallen to a Cyborg Demon."
+	Obituary "Our savior %o has fallen to a Cyber Demon."
 	States
 	{
 		Spawn:
