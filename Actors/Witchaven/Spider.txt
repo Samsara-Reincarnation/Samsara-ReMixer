@@ -34,7 +34,8 @@ Actor WitchavenSpider : WitchavenEnemyBaseMelee
 		Goto See
 	Death:
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)			
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 		WH_Y I 3
 		WH_Y J 3 A_Scream
 		WH_Y K 3 A_NoBlocking

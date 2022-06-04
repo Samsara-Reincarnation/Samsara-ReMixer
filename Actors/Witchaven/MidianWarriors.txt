@@ -72,6 +72,7 @@ Actor WTRedMidianWarriorHalberd : WitchavenEnemyBaseMelee {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HR L 4
 			W_HR M 4 A_Scream
 			W_HR X 4 A_NoBlocking
@@ -775,6 +776,7 @@ Actor WTRedMidianWarriorSword : WTRedMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HR V 4
 			W_HR W 4 A_Scream
 			W_HR X 4 A_NoBlocking
@@ -1343,6 +1345,7 @@ Actor WTRedMidianWarriorSpell : WTRedMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HS O 4
 			W_HS P 4 A_Scream
 			W_HR X 4 A_NoBlocking
@@ -1769,6 +1772,7 @@ Actor WTBrownMidianWarriorHalberd : WTRedMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)						
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HQ L 4
 			W_HQ M 4 A_Scream
 			W_HQ X 4 A_NoBlocking
@@ -2327,6 +2331,7 @@ Actor WTBrownMidianWarriorSword : WTBrownMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HQ V 4
 			W_HQ W 4 A_Scream
 			W_HQ X 4 A_NoBlocking
@@ -2746,6 +2751,7 @@ Actor WTBrownMidianWarriorSpell : WTBrownMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HD O 4
 			W_HD P 4 A_Scream
 			W_HQ X 4 A_NoBlocking
@@ -3170,6 +3176,7 @@ Actor WTBlueMidianWarriorHalberd : WTRedMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HK L 4
 			W_HK M 4 A_Scream
 			W_HK X 4 A_NoBlocking
@@ -3728,6 +3735,7 @@ Actor WTBlueMidianWarriorSword : WTBlueMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HK V 4
 			W_HK W 4 A_Scream
 			W_HK X 4 A_NoBlocking
@@ -4147,6 +4155,7 @@ Actor WTBlueMidianWarriorSpell : WTBlueMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HL O 4
 			W_HL P 4 A_Scream
 			W_HK X 4 A_NoBlocking
@@ -4573,6 +4582,7 @@ Actor WTPurpleMidianWarriorHalberd : WTRedMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HG L 4
 			W_HG M 4 A_Scream
 			W_HG X 4 A_NoBlocking
@@ -5117,6 +5127,7 @@ Actor WTPurpleMidianWarriorSword : WTPurpleMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HG V 4
 			W_HG W 4 A_Scream
 			W_HG X 4 A_NoBlocking
@@ -5659,6 +5670,7 @@ Actor WTPurpleMidianWarriorSpell : WTPurpleMidianWarriorHalberd {
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			W_HH O 4
 			W_HH P 4 A_Scream
 			W_HG X 4 A_NoBlocking

@@ -54,6 +54,7 @@ Actor BrownOgre : WitchavenEnemyBaseMelee
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WH_N I 4
 			WH_N J 4 A_Scream
 			WH_N K 4 A_NoBlocking
@@ -709,6 +710,7 @@ Actor GreenOgre : BrownOgre
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WH_C I 4
 			WH_C J 4 A_Scream
 			WH_C K 4 A_NoBlocking
@@ -1214,6 +1216,7 @@ Actor RedOgre : BrownOgre
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WH_B I 4
 			WH_B J 4 A_Scream
 			WH_B K 4 A_NoBlocking

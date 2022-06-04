@@ -57,6 +57,7 @@ Actor WitchavenBrute : WitchavenEnemyBaseMelee
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WH_K X 4
 			WH_K Y 4 A_Scream
 			WH_K Z 4 A_NoBlocking

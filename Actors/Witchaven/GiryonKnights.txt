@@ -57,6 +57,7 @@ Actor WTGiryonKnight2HSword : WitchavenEnemyBaseMelee
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WH_5 M 4
 			WH_5 N 4 A_Scream
 			WH_5 O 4 A_NoBlocking
@@ -755,6 +756,7 @@ Actor WTGiryonKnight1HSword : WitchavenEnemyBaseMelee
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)							
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WH_4 N 4
 			WH_4 O 4 A_Scream
 			WH_4 P 4 A_NoBlocking
@@ -1481,6 +1483,7 @@ Actor WTGiryonKnightMace : WitchavenEnemyBaseMelee
 		Death:
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WH_6 M 4
 			WH_6 N 4 A_Scream
 			WH_6 O 4 A_NoBlocking

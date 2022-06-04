@@ -55,6 +55,7 @@ Actor WitchavenIMP : WitchavenEnemyBaseMelee
 	Death:
 	XDeath:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 		WH_I M 3
 		WH_I N 3 A_Scream
 		WH_I O 3 A_NoBlocking
