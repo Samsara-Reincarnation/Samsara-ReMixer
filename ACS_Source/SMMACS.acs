@@ -109,7 +109,7 @@ Script "ReMixerInit" OPEN //667
 		if (GameType() == GAME_TITLE_MAP) { }
 		if (Singleplayer() == 1)
 		{
-			if(GetCvar("sams_cvarinfo") == 0)
+			if(GetCvar("samsara_cvarinfo") == 0)
 			{
 				Delay(2);
 				Hudmessage(s:SMMCVARINFO; HUDMSG_PLAIN|HUDMSG_LOG, 93000, CR_GRAY, 1.5, 0.25, 2.5);
@@ -138,7 +138,7 @@ Script "ReMixerSpawnScript" (int spawncode, int override) //668
 	Switch(spawncode)
 	{
 		case 1:
-			if(GetCvar("sams_runninginzdoom"))
+			if(GetCvar("samsara_runninginzdoom"))
 				SetActorFlag(0,"INTERPOLATEANGLES",1);
 			//if(SpawnForced("StrongHoldLoaded",0,0,0,0))
 				//ACS_NamedExecuteWithResult("Samsara_MonsterSpawn",0,0,0,0); //uncomment this for stronghold support, will deal with later
@@ -478,20 +478,20 @@ Script "ReMixer_PickSets" (void)
 							{
 								default: break;
 								case 0: 
-									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_doom64")))
-										amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_doom64");
+									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_doom64")))
+										amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_doom64");
 									break;
 								case 3: 
-									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_wolfmode")))
-										amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_wolfmode");
+									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_wolfmode")))
+										amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_wolfmode");
 									break;
 								case 5: 
-									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_dkclab")))
-										amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_dkclab");
+									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_dkclab")))
+										amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_dkclab");
 									break;
 								case 19: 
-									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_shephardmode")))
-										amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_shephardmode");
+									if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_shephardmode")))
+										amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_shephardmode");
 									break;
 							}						
 						}
@@ -523,20 +523,20 @@ Script "ReMixer_PickSets" (void)
 						{
 							default: break;
 							case 0: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_doom64")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_doom64");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_doom64")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_doom64");
 								break;
 							case 3: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_wolfmode")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_wolfmode");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_wolfmode")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_wolfmode");
 								break;
 							case 5: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_dkclab")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_dkclab");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_dkclab")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_dkclab");
 								break;
 							case 19: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_shephardmode")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_shephardmode");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_shephardmode")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_shephardmode");
 								break;
 						}
 					}
@@ -561,20 +561,20 @@ Script "ReMixer_PickSets" (void)
 						{
 							default: break;
 							case 0: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_doom64")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_doom64");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_doom64")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_doom64");
 								break;
 							case 3: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_wolfmode")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_wolfmode");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_wolfmode")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_wolfmode");
 								break;
 							case 5: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_dkclab")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_dkclab");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_dkclab")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_dkclab");
 								break;
 							case 19: 
-								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"sams_cl_shephardmode")))
-									amountOfGameTypes[b] += 1<<GetUserCvar(p,"sams_cl_shephardmode");
+								if(!(amountOfGameTypes[b] & 1<<GetUserCvar(p,"samsara_cl_shephardmode")))
+									amountOfGameTypes[b] += 1<<GetUserCvar(p,"samsara_cl_shephardmode");
 								break;
 						}
 					}
@@ -611,20 +611,20 @@ Script "ReMixer_PickSets" (void)
 						{
 							default: break;
 							case 0: 
-								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"sams_cl_doom64")))
-									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"sams_cl_doom64");
+								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"samsara_cl_doom64")))
+									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"samsara_cl_doom64");
 								break;
 							case 3: 
-								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"sams_cl_wolfmode")))
-									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"sams_cl_wolfmode");
+								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"samsara_cl_wolfmode")))
+									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"samsara_cl_wolfmode");
 								break;
 							case 5: 
-								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"sams_cl_dkclab")))
-									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"sams_cl_dkclab");
+								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"samsara_cl_dkclab")))
+									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"samsara_cl_dkclab");
 								break;
 							case 19: 
-								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"sams_cl_shephardmode")))
-									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"sams_cl_shephardmode");
+								if(!(amountOfGameTypes[randnum] & 1<<GetUserCvar(p,"samsara_cl_shephardmode")))
+									amountOfGameTypes[randnum] += 1<<GetUserCvar(p,"samsara_cl_shephardmode");
 								break;
 						}
 					}
