@@ -3,7 +3,7 @@ Actor ExHawk
 	Health 25
 	Radius 12
 	Height 16
-	Mass 80
+	Mass 35
 	scale 0.75
 	Speed 10
 	Meleedamage 4

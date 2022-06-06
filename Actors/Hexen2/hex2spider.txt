@@ -722,6 +722,7 @@ actor Hexen2BlackSpiderLarge_ShrinkEffect : Hexen2BlackSpiderLarge
 Actor Hexen2BlackSpiderSmall : Hexen2BlackSpiderLarge	
 {
 	Tag "Small Black Spider"
+	Mass 40
 	Health 30
 	Radius 13
 	Height 26
@@ -980,6 +981,7 @@ Actor Hexen2RedSpiderSmall : Hexen2BlackSpiderLarge
 	Health 50
 	Radius 15
 	Height 30
+	Mass 40
 	PainChance 64
 	Scale 0.9
 	States

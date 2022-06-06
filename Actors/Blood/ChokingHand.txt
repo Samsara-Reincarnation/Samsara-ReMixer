@@ -4,6 +4,7 @@ Actor ChokingHand
 	Monster
 	Height 10
 	Radius 11
+	Mass 30
 	Speed 12
 	Health 4
 	MeleeRange 32

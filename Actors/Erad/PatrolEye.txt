@@ -4,6 +4,7 @@ Actor PatrolEyeOrange
 	Health 30
 	Radius 10
 	Height 25
+	Mass 45
 	Scale 0.60
 	Speed 8
 	+FLOORCLIP

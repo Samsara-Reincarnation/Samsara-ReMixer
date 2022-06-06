@@ -826,7 +826,7 @@ Actor Shockroach
 	Health 63
 	Radius 8
 	Height 8
-	Mass 500	
+	Mass 50
 	Speed 5.5
 	+FLOORCLIP
 	+LOOKALLAROUND

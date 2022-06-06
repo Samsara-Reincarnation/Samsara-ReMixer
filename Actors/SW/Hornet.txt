@@ -13,7 +13,7 @@ actor SWHornetWasp {
 	Radius 10
     Tag "Hornet"	
 	Scale 0.75
-	Mass 128
+	Mass 16
 	FloatSpeed 10
 	Obituary "%o discovered an allergy to wasps."
 	BloodColor yellow

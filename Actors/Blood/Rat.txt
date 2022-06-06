@@ -2,6 +2,7 @@ Actor BloodRat
 {
     Tag "Rat"
 	Monster
+	Mass 20
 	Height 8
 	Radius 10
 	Speed 12

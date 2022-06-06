@@ -12,6 +12,7 @@ Actor ExplosiveDiskJr  {
     Height 14
     Scale 0.74
 	Health 2
+	Mass 30
 	Species "Enemies"
     Tag "Explosive Disk Jr."	
 	ActiveSound ""
@@ -201,6 +202,7 @@ Actor ExplosiveDiskSr  {
     Height 15
 	Scale 0.92
 	Health 2
+	Mass 50
     Tag "Explosive Disk"	
 	ActiveSound ""
 	DeathSound "NME/Hit"

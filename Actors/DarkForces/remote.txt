@@ -3,7 +3,7 @@ ACTOR DFRemote : enemy_base
 	Health			45
 	Radius			10
 	Height			24
-	Mass			400
+	Mass			40
 	Painchance		85
 	Speed			8
 	Scale			0.18

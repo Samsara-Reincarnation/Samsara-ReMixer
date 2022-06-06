@@ -3,6 +3,7 @@ Actor DsrptSilverSpikeBall : DisruptorDroid {
 	Height 35
 	Health 20
 	Damage (5)
+	Mass 50
 	+DROPOFF
 	+FLOAT
 	+NOGRAVITY

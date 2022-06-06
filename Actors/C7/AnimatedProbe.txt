@@ -2,6 +2,7 @@ Actor AnimatedProbe : C7Alien {
 	Health 100
 	Height 44  
 	Speed 7  
+	Mass 45
 	+FLOAT
 	+NOGRAVITY
 	SeeSound "aprobe/see"

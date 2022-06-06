@@ -11,6 +11,7 @@ Actor RMRLaserDrone : RMRDroids {
 	PainChance "ShrinkerDMG", 0
 	Radius 16
 	Height 44	
+	Mass 45
 	Tag "Laser Drone"
 	Speed 13
 	Scale 0.65

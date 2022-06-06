@@ -5,7 +5,7 @@ Actor Hexen2FireImp : Hexen2BestialBase
 	Radius 15
 	Height 48
 	Speed 10
-	Mass 300
+	Mass 50
 	PainChance 128
 	+FLOAT
 	+NOGRAVITY
@@ -1889,7 +1889,7 @@ Actor Hexen2FireImpDeath : Hexen2CorpseActor
 	Radius 19
 	Height 56
 	Health 30
-	Mass 300
+	Mass 50
 	States
 	{
 	Spawn:

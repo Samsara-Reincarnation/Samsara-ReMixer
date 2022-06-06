@@ -4,7 +4,7 @@ Actor HLHoundeye
 	Tag "Houndeye"
 	Mass 250
 	Radius 20
-	Height 34
+	Height 36
 	+NOINFIGHTING
 	+NOBLOODDECALS
 	Activesound "Houndeye/idle"

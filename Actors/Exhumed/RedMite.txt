@@ -5,6 +5,7 @@ Actor RedMite
     radius 18
     height 24
     health 40
+	Mass 15
     painchance 255
     meleedamage 1
     meleerange 17

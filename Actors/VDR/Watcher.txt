@@ -3,7 +3,7 @@ Actor MMRandomizer_Watcher
 	Health 100
 	Radius 24 
 	Height 40 
-	Mass 150 
+	Mass 50 
 	Speed 10 
 	PainChance 160
 	MeleeRange 40

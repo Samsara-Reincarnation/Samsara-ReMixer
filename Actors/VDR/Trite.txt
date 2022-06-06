@@ -1,6 +1,7 @@
 Actor MMRandomizer_TriteHole
 {
 	Height 32
+	Mass 25
 	Radius 16
 	Species "Trite"
 	Scale 0.55

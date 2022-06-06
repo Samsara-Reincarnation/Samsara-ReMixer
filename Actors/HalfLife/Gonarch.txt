@@ -562,6 +562,7 @@ Actor BabyHeadcrab
 	Radius 3
 	Height 5	
 	Speed 8
+	Mass 25
 	+FLOORCLIP
 	+NOINFIGHTING
 	+THRUSPECIES

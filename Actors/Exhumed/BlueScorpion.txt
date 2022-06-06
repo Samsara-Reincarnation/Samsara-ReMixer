@@ -5,6 +5,7 @@ Actor BlueScorpion
     radius 20
     height 28
     health 40
+	Mass 20
     painchance 255
     meleedamage 3
     meleerange 32

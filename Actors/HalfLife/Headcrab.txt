@@ -6,6 +6,7 @@ Actor Headcrab
 	Radius 15
 	Height 15	
 	Speed 3
+	Mass 50
 	+FLOORCLIP
 	+NOINFIGHTING
 	+NOBLOODDECALS

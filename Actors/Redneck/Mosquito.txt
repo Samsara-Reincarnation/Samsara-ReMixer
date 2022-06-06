@@ -13,7 +13,7 @@ Actor Mosquito
 	Species "Enemies"		
 	Radius 20
 	Obituary "%o was stung by a mosquito."
-	Mass 60
+	Mass 10
     +NOPAIN
 	+NOBLOOD
 	+NOGRAVITY

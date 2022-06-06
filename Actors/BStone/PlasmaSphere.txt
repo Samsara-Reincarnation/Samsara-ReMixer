@@ -13,7 +13,7 @@ actor PlasmaSphere {
 	DamageFactor "PlasmaSphere", 0.0
 	Height 24
 	Radius 12
-	Mass 128
+	Mass 32
 	Obituary "%o didn't see the Plasma Sphere nearby."
 	Tag "Plasma Sphere"
 	RenderStyle Add
