@@ -29,14 +29,174 @@ actor MarathonPlayer2 : MarathonPlayer replaces MarathonPlayer {
 		Pain:
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Super::Pain
+
 		Missile:
+            TNT1 A 0 A_JumpIfInventory("UsingFists",1,"MissileFists")
+            TNT1 A 0 A_JumpIfInventory("UsingDualPistols",1,"MissileDualPistols")
+            TNT1 A 0 A_JumpIfInventory("UsingPistols",1,"MissilePistol")
+            TNT1 A 0 A_JumpIfInventory("UsingSMG",1,"MissileSMG")
+            TNT1 A 0 A_JumpIfInventory("UsingPacifier",1,"MissilePacifier")
+            TNT1 A 0 A_JumpIfInventory("UsingDualShotguns",1,"MissileDualShotguns")
+            TNT1 A 0 A_JumpIfInventory("UsingShotguns",1,"MissileShotgun")
+            TNT1 A 0 A_JumpIfInventory("UsingFusionPistol",1,"MissileFusionPistol")
+            TNT1 A 0 A_JumpIfInventory("UsingSpanker",1,"MissileSpanker")
+            TNT1 A 0 A_JumpIfInventory("UsingToasty",1,"MissileToasty")
+            TNT1 A 0 A_JumpIfInventory("UsingWMC",1,"MissileWMC")
+            TNT1 A 0 A_JumpIfInventory("UsingAlienWeapon",1,"MissileAlienWeapon")
+            TNT1 A 0 A_JumpIfInventory("UsingAlienWeapon2",1,"MissileAlienWeapon2")
+            //TNT1 A 0 A_JumpIfInventory("UsingMarathonInstagib",1,"MissileInstagib")
+        MissileAssaultRifle: // default
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
-			SOPL F 12 
+            SOPL F 12
+        MissileFinish:
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			Goto Spawn
-		Melee:
-			SOPL G 6 BRIGHT
-			Goto Missile
+
+        MissileFists:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOFS F 12
+            goto MissileFinish
+
+        MissilePistol:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOPS F 12
+            goto MissileFinish
+
+        MissileDualPistols:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SODP FG 6
+            goto MissileFinish
+
+        MissileSMG:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOMG F 12
+            goto MissileFinish
+
+        MissilePacifier:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOFP F 12 // placeholder until pacifier sprites exist
+            goto MissileFinish
+
+        MissileShotgun:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOSG F 12
+            goto MissileFinish
+
+        MissileDualShotguns:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SDSG FG 6
+            goto MissileFinish
+
+        MissileFusionPistol:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOFP F 12
+            goto MissileFinish
+
+        MissileSpanker:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOSP F 12
+            goto MissileFinish
+
+        MissileToasty:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOFL F 12
+            goto MissileFinish
+
+        MissileWMC:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOSP F 12 // placeholder until wmc sprites exist
+            goto MissileFinish
+
+        MissileAlienWeapon:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOAW F 12
+            goto MissileFinish
+
+        MissileAlienWeapon2:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOA2 F 12
+            goto MissileFinish
+
+        MissileInstagib:
+			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
+            SOAC F 12
+            goto MissileFinish
+
+        Melee:
+            TNT1 A 0 A_JumpIfInventory("UsingFists",1,"MeleeFists")
+            TNT1 A 0 A_JumpIfInventory("UsingDualPistols",1,"MeleeDualPistols")
+            TNT1 A 0 A_JumpIfInventory("UsingPistols",1,"MeleePistol")
+            TNT1 A 0 A_JumpIfInventory("UsingSMG",1,"MeleeSMG")
+            TNT1 A 0 A_JumpIfInventory("UsingPacifier",1,"MeleePacifier")
+            TNT1 A 0 A_JumpIfInventory("UsingDualShotguns",1,"MeleeDualShotguns")
+            TNT1 A 0 A_JumpIfInventory("UsingShotguns",1,"MeleeShotgun")
+            TNT1 A 0 A_JumpIfInventory("UsingFusionPistol",1,"MeleeFusionPistol")
+            TNT1 A 0 A_JumpIfInventory("UsingSpanker",1,"MeleeSpanker")
+            TNT1 A 0 A_JumpIfInventory("UsingToasty",1,"MeleeToasty")
+            TNT1 A 0 A_JumpIfInventory("UsingWMC",1,"MeleeWMC")
+            TNT1 A 0 A_JumpIfInventory("UsingAlienWeapon",1,"MeleeAlienWeapon")
+            TNT1 A 0 A_JumpIfInventory("UsingAlienWeapon2",1,"MeleeAlienWeapon2")
+            //TNT1 A 0 A_JumpIfInventory("UsingMarathonInstagib",1,"MeleeInstagib")
+        MeleeAssaultRifle: // default
+            SOPL G 6 Bright
+            goto MissileAssaultRifle
+
+        MeleeFists:
+            SOFS G 6 Bright
+            goto MissileFists
+
+        MeleePistol:
+            SOPS G 6 Bright
+            goto MissilePistol
+
+        MeleeDualPistols:
+            SODP FG 6 Bright
+            goto MissileDualPistols
+
+        MeleeSMG:
+            SOMG G 6 Bright
+            goto MissileSMG
+
+        MeleePacifier:
+            SOFP G 6 Bright // placeholder until pacifier sprites exist
+            goto MissilePacifier
+
+        MeleeShotgun:
+            SOSG G 6 Bright
+            goto MissileShotgun
+
+        MeleeDualShotguns:
+            SDSG FG 6 Bright
+            goto MissileDualShotguns
+
+        MeleeFusionPistol:
+            SOFP G 6 Bright
+            goto MissileFusionPistol
+
+        MeleeSpanker:
+            SOSP G 6 Bright
+            goto MissileSpanker
+
+        MeleeToasty:
+            SOFL G 6 Bright
+            goto MissileToasty
+
+        MeleeWMC:
+            SOSP G 6 Bright // placeholder until wmc sprites exist
+            goto MissileWMC
+
+        MeleeAlienWeapon:
+            SOAW G 6 Bright
+            goto MissileAlienWeapon
+
+        MeleeAlienWeapon2:
+            SOA2 G 6 Bright
+            goto MissileAlienWeapon2
+
+        MeleeInstagib:
+            SOAC G 6 Bright
+            goto MissileInstagib
+
 		Death:
 			TNT1 A 0 A_TakeInventory("AmAlreadyChoked",1)
 			TNT1 A 0 A_TakeInventory("Chokeme",1)					

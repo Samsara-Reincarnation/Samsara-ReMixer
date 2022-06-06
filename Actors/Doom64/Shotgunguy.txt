@@ -533,7 +533,7 @@ Actor Shotgun64 : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        64DB Z -1
+        64SG Z -1
         stop
     }
 }
