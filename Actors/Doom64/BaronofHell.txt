@@ -51,7 +51,7 @@ ACTOR BaronOfHell64
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			64BS EF 8 A_FaceTarget
-			64BS G 8 A_CustomComboAttack("BaronBall642", 52, 10 * random(1, 8), "friendlyimp64/melee")
+			64BS G 8 A_CustomComboAttack("BaronBall642", 52, 11 * random(1, 8), "friendlyimp64/melee")
 			Goto See
 		Pain:
 			64BS H 2

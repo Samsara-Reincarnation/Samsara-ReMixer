@@ -1,6 +1,6 @@
 ACTOR LostSoul64
 {
-	Health 45
+	Health 60
 	Radius 16
 	Height 56
 	Mass 50

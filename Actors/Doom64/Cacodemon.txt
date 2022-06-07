@@ -75,7 +75,7 @@ ACTOR Cacodemon64
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			64HD EF 5 A_FaceTarget
-			64HD G 5 BRIGHT A_CustomComboAttack("CacodemonBall64", 48, 10 * random(1, 6), "friendlyimp64/melee")
+			64HD G 5 BRIGHT A_CustomComboAttack("CacodemonBall64", 48, 8 * random(1,8), "friendlyimp64/melee")
 			Goto See
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		

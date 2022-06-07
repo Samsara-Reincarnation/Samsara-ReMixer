@@ -47,7 +47,7 @@ ACTOR ZombieMan64
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			64PO E 10 A_FaceTarget
 			TNT1 A 0 A_PlaySound ("doom64guy/pistol")
-			64PO F 8 A_CustomBulletAttack (22.5, 0, 1, random(1,5) * 3, "Doom64BulletPuff", 0, CBAF_NORANDOM)
+			64PO F 8 A_CustomBulletAttack (22.5, 0, 1, random(1,8) * 3, "Doom64BulletPuff", 0, CBAF_NORANDOM)
 			64PO E 8
 			Goto See
 		Pain:
