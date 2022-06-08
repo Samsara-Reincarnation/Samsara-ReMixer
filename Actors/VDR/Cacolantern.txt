@@ -16,7 +16,7 @@ ACTOR MMRandomizer_Cacolantern : Cacodemon3
 	Missiletype MMRandomizer_CacolanternBall 
 	MissileHeight 30
 	HitObituary "%o admired the Cacolantern's teeth." 
-	Obituary "%o couldn't take %h eyes off the eye." 
+	Obituary "%o couldn't take %p eyes off the eye." 
 	Tag "Cacolantern"
 	States 
 	{ 

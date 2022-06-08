@@ -13,8 +13,6 @@ Actor MMRandomizer_Diabolist
 	+FLOORCLIP
 	+NOTARGET
 	+NORADIUSDMG
-	+MISSILEMORE
-	+BOSS
 	+DONTHURTSPECIES
 	SeeSound "vdr/diabolus/diasit"
 	PainSound "vdr/diabolus/diapai"
@@ -725,45 +723,45 @@ Actor MMRandomizer_DFire
 			VE31 C 2 Bright A_FireCrackle
 			TNT1 A 0 Bright A_Explode(4, 32)
 			VE31 B 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
+			TNT1 A 0 Bright A_Explode(4, 32)
 			VE31 C 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
+			TNT1 A 0 Bright A_Explode(4, 32)
 			VE31 B 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
+			TNT1 A 0 Bright A_Explode(4, 32)
 			VE31 C 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 D 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 C 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 D 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 C 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 D 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 E 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 D 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
-			VE31 E 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(5, 32)
+			TNT1 A 0 Bright A_Explode(4, 32)
 			VE31 D 2 Bright A_Fire
 			TNT1 A 0 Bright A_Explode(4, 32)
+			VE31 C 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(4, 32)
+			VE31 D 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(3, 32)
+			VE31 C 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(3, 32)
+			VE31 D 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(3, 32)
+			VE31 E 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(3, 32)
+			VE31 D 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(3, 32)
+			VE31 E 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(3, 32)
+			VE31 D 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(3, 32)
 			VE31 E 2 Bright A_FireCrackle
-			TNT1 A 0 Bright A_Explode(4, 32)
+			TNT1 A 0 Bright A_Explode(2, 32)
 			VE31 F 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(3, 32)
-			VE31 E 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(3, 32)
-			VE31 F 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(3, 32)
+			TNT1 A 0 Bright A_Explode(2, 32)
 			VE31 E 2 Bright A_Fire
 			TNT1 A 0 Bright A_Explode(2, 32)
 			VE31 F 2 Bright A_Fire
 			TNT1 A 0 Bright A_Explode(2, 32)
+			VE31 E 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(1, 32)
+			VE31 F 2 Bright A_Fire
+			TNT1 A 0 Bright A_Explode(1, 32)
 			VE31 G 2 Bright A_Fire
-			TNT1 A 0 Bright A_Explode(2, 32)
+			TNT1 A 0 Bright A_Explode(1, 32)
 			VE31 H 2 Bright A_Fire
 			TNT1 A 0 Bright A_Explode(1, 32)
 			VE31 G 2 Bright A_Fire
@@ -814,7 +812,7 @@ Actor MMRandomizer_DTracer
 	Height 5
 	Speed 15
 	ReactionTime 175
-	Damage 10
+	Damage 8
 	DamageType Fire
 	RenderStyle Add
 	Alpha 0.67
