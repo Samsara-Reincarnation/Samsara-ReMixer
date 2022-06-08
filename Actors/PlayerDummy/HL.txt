@@ -33,6 +33,7 @@ actor HalfLifePlayer2 : HalfLifePlayer replaces HalfLifePlayer {
 		Melee:
 			TNT1 A 0 A_GiveInventory("Hexen2EnemyFireDetector",1)
 			TNT1 A 0 A_JumpIf(waterlevel > 2, "swimunderwater")
+			TNT1 A 0 A_JumpIfInventory("freeman_unique3selected",1,"Barnacle_Attack_Opp")
 			TNT1 A 0 A_JumpIfInventory("freeman_unique2selected",1,"Crossbow_Attack")
 			TNT1 A 0 A_JumpIfInventory("freeman_uniqueselected",1,"Squeak_Attack")
 			TNT1 A 0 A_JumpIfInventory("freeman_slot7selected",1,"Egon_Attack")
@@ -162,6 +163,11 @@ actor HalfLifePlayer2 : HalfLifePlayer replaces HalfLifePlayer {
 			OP91 OPQRS 3
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
+		Barnacle_Attack_Opp:
+			TNT1 A 0 A_JumpIfInventory("HalfLifeCrouching",1,"Barnacle_CrouchAttack_Opp")
+			OPB1 OPQRS 3
+			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
+			goto Spawn
 		Normal_CrouchAttack:
 			VL11 UVWXYZ 3
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
@@ -248,6 +254,10 @@ actor HalfLifePlayer2 : HalfLifePlayer replaces HalfLifePlayer {
 			goto Spawn
 		Crossbow_CrouchAttack_Opp:
 			OP91 TUVWX 3
+			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
+			goto Spawn
+		Barnacle_CrouchAttack_Opp:
+			OPB1 TUVWX 3
 			TNT1 A 0 A_TakeInventory("Hexen2EnemyFireDetector",1)
 			goto Spawn
 		Death:

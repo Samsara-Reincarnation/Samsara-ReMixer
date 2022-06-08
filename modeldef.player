@@ -4935,6 +4935,240 @@ Model HalfLifePlayer2 // Sniper, Opposing Force
    FrameIndex OPC9 Z 0 36
 }
 
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_idle.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 139
+   
+   FrameIndex OPB1 A 0 0
+   FrameIndex OPB1 B 0 3 
+   FrameIndex OPB1 C 0 6
+   FrameIndex OPB1 D 0 9
+   FrameIndex OPB1 E 0 12
+   FrameIndex OPB1 F 0 15
+   FrameIndex OPB1 G 0 18
+   FrameIndex OPB1 H 0 21
+   FrameIndex OPB1 I 0 24
+   FrameIndex OPB1 J 0 27
+   FrameIndex OPB1 K 0 30
+   FrameIndex OPB1 L 0 33
+   FrameIndex OPB1 M 0 36
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_shoot.md3"        
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 139
+   
+   FrameIndex OPB1 O 0 0
+   FrameIndex OPB1 P 0 2
+   FrameIndex OPB1 Q 0 3
+   FrameIndex OPB1 R 0 4
+   FrameIndex OPB1 S 0 5
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_crouch_shoot.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 69
+   
+   FrameIndex OPB1 T 0 0
+   FrameIndex OPB1 U 0 2
+   FrameIndex OPB1 V 0 3
+   FrameIndex OPB1 W 0 4
+   FrameIndex OPB1 X 0 5
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_jump.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 139
+   FrameIndex OPB2 A 0 0
+   Zoffset 121
+   FrameIndex OPB2 B 0 3
+   Zoffset 112
+   FrameIndex OPB2 C 0 6
+   Zoffset 90
+   FrameIndex OPB2 D 0 9
+   FrameIndex OPB2 E 0 12
+   Zoffset 118
+   FrameIndex OPB2 F 0 15
+   Zoffset 127
+   FrameIndex OPB2 G 0 18
+   Zoffset 139
+   FrameIndex OPB2 H 0 21
+   FrameIndex OPB2 I 0 24
+   FrameIndex OPB2 J 0 27
+   FrameIndex OPB2 K 0 30
+   FrameIndex OPB2 L 0 33
+   FrameIndex OPB2 M 0 36
+   FrameIndex OPB2 N 0 39
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_walk.md3"      
+   Scale 3.85 3.85 3.85
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 139
+   
+   FrameIndex OPB3 A 0 0
+   FrameIndex OPB3 B 0 2
+   FrameIndex OPB3 C 0 4
+   FrameIndex OPB3 D 0 6
+   FrameIndex OPB3 E 0 8
+   FrameIndex OPB3 F 0 10
+   FrameIndex OPB3 G 0 12
+   FrameIndex OPB3 H 0 14
+   FrameIndex OPB3 I 0 16
+   FrameIndex OPB3 J 0 18
+   FrameIndex OPB3 K 0 20
+   FrameIndex OPB3 L 0 22
+   FrameIndex OPB3 M 0 24
+   FrameIndex OPB3 N 0 26
+   FrameIndex OPB3 O 0 28
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_run.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 139
+   
+   FrameIndex OPB4 A 0 0
+   FrameIndex OPB4 B 0 2
+   FrameIndex OPB4 C 0 4
+   FrameIndex OPB4 D 0 6
+   FrameIndex OPB4 E 0 8
+   FrameIndex OPB4 F 0 10
+   FrameIndex OPB4 G 0 12
+   FrameIndex OPB4 H 0 14
+   FrameIndex OPB4 I 0 16
+   FrameIndex OPB4 J 0 18
+   FrameIndex OPB4 K 0 20
+   FrameIndex OPB4 L 0 22
+   FrameIndex OPB4 M 0 24
+   FrameIndex OPB4 N 0 26
+   FrameIndex OPB4 O 0 28
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_tread.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 139
+   
+   FrameIndex OPB5 A 0 0
+   FrameIndex OPB5 B 0 3
+   FrameIndex OPB5 C 0 6
+   FrameIndex OPB5 D 0 9
+   FrameIndex OPB5 E 0 12
+   FrameIndex OPB5 F 0 15
+   FrameIndex OPB5 G 0 18
+   FrameIndex OPB5 H 0 21
+   FrameIndex OPB5 I 0 24
+   FrameIndex OPB5 J 0 27
+   FrameIndex OPB5 K 0 30
+   FrameIndex OPB5 L 0 33
+   FrameIndex OPB5 M 0 36
+   FrameIndex OPB5 N 0 38
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_swim.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 69
+   
+   FrameIndex OPB6 A 0 0
+   FrameIndex OPB6 B 0 3
+   FrameIndex OPB6 C 0 6
+   FrameIndex OPB6 D 0 9
+   FrameIndex OPB6 E 0 12
+   FrameIndex OPB6 F 0 15
+   FrameIndex OPB6 G 0 18
+   FrameIndex OPB6 H 0 21
+   FrameIndex OPB6 I 0 24
+   FrameIndex OPB6 J 0 27
+   FrameIndex OPB6 K 0 30
+   FrameIndex OPB6 L 0 32
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_crouch_idle.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 69
+   
+   FrameIndex OPCB A 0 0
+   FrameIndex OPCB B 0 3 
+   FrameIndex OPCB C 0 6
+   FrameIndex OPCB D 0 9
+   FrameIndex OPCB E 0 12
+   FrameIndex OPCB F 0 15
+   FrameIndex OPCB G 0 18
+   FrameIndex OPCB H 0 21
+   FrameIndex OPCB I 0 24
+   FrameIndex OPCB J 0 27
+   FrameIndex OPCB K 0 30
+   FrameIndex OPCB L 0 33
+   FrameIndex OPCB M 0 36
+}
+
+Model HalfLifePlayer2 // Barnacle
+{
+   Path "Models/Freeman/Player/Opp" 
+   Model 0 "barnacle_crouch_move.md3"      
+   Scale 3.85 3.85 3.85 
+   RollOffset 90
+   AngleOffset 90
+   Zoffset 69
+   
+   FrameIndex OPCB N 0 0
+   FrameIndex OPCB O 0 3 
+   FrameIndex OPCB P 0 6
+   FrameIndex OPCB Q 0 9
+   FrameIndex OPCB R 0 12
+   FrameIndex OPCB S 0 15
+   FrameIndex OPCB T 0 18
+   FrameIndex OPCB U 0 21
+   FrameIndex OPCB V 0 24
+   FrameIndex OPCB W 0 27
+   FrameIndex OPCB X 0 30
+   FrameIndex OPCB Y 0 33
+   FrameIndex OPCB Z 0 36
+}
+
 Model HalfLifePlayer2 // Death 1
 {
    Path "Models/Freeman/Player/Opp" 
