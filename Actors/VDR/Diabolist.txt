@@ -1,7 +1,7 @@
 Actor MMRandomizer_Diabolist
 {
 	Obituary "%o was set ablaze by a Diabloist."
-	Health 750
+	Health 700
 	Radius 20
 	Height 56
 	Mass 500
@@ -9,10 +9,8 @@ Actor MMRandomizer_Diabolist
 	PainChance 10
 	BloodColor "08 08 08"
 	Monster
-	+FIRERESIST
 	+FLOORCLIP
-	+NOTARGET
-	+NORADIUSDMG
+	-NOTARGET
 	+DONTHURTSPECIES
 	SeeSound "vdr/diabolus/diasit"
 	PainSound "vdr/diabolus/diapai"
