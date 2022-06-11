@@ -1,6 +1,7 @@
 ACTOR Knight3 : Knight2 
 {
 	Tag "Undead Warrior"
+	Health 100
 	DropItem "HereticKnightDrop"
 	States
 	{
@@ -473,6 +474,7 @@ actor Knight_ShrinkEffect : Knight3
 ACTOR KnightGhost3 : KnightGhost2 
 {
 	Tag "Undead Warrior"
+	Health 100
 	-GHOST
 	//Dropitem "DefaultPinataPop"
 	DropItem "CrossbowAmmo2", 84

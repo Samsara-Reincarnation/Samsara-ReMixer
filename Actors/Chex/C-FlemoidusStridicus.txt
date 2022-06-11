@@ -1,5 +1,6 @@
 actor NewFlemoidusStridicus : FlemoidusStridicus
 {
+	Health 200
 	Tag "Flemoidus Stridicus"
 	SeeSound "cqdemon/sight"
 	AttackSound "cqdemon/melee"

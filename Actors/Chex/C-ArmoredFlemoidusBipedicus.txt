@@ -1,5 +1,6 @@
 actor NewArmoredFlemoidusBipedicus : ArmoredFlemoidusBipedicusV3
 {
+	Health 90
 	Tag "Armored Flemoidus Bipedicus"
 	SeeSound "cqimp/sight"
 	PainSound "cqimp/pain"

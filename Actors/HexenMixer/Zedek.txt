@@ -2,6 +2,38 @@ ACTOR FighterBoss3 : FighterBoss2
 {
 	Tag "Zedek"
 	Health 650
+    DamageFactor "QuakePistol", 1.0
+    DamageFactor "MarathonPistol", 1.0
+    DamageFactor "DukePistol", 1.0
+    DamageFactor "Pistol", 1.0
+    DamageFactor "DoomFist", 1.0
+    DamageFactor "ZorchPistol", 1.0
+    DamageFactor "Wraithverge", 1.0
+    DamageFactor "Normal", 1.0
+    DamageFactor "DragonClaw", 1.0
+    DamageFactor "Mace", 1.0
+    DamageFactor "Zorch", 1.0
+    DamageFactor "PhasingZorch", 1.0
+    DamageFactor "BFG", 1.0
+    DamageFactor "BFGSpray", 1.0
+    DamageFactor "Fire", 1.0
+    DamageFactor "Ice", 1.0
+    DamageFactor "Disintegrate", 1.0
+    DamageFactor "DukeDamage", 1.0
+    DamageFactor "DukeExplosive", 1.0
+    DamageFactor "DukeIce", 1.0
+	DamageFactor "ElectricBolt", 1.0
+	DamageFactor "PoisonBolt", 1.0		
+    DamageFactor "Explosive", 1.0
+    DamageFactor "MarathonFusion", 1.0
+    DamageFactor "DoomPlasma", 1.0
+    DamageFactor "CorvusCrossbow", 1.1
+    DamageFactor "CorvusHellstaff", 1.0
+    DamageFactor "CorvusHellstaffTomed", 1.0
+    DamageFactor "MarathonPlasma", 1.0
+    DamageFactor "BJSpear", 1.0
+    DamageFactor "WMCBeam", 1.0
+    DamageFactor "WMCNade", 1.0
 	PainSound "BossFighterPain"
 	DeathSound "FighterBossDeath"
 	ActiveSound "BossFighterActive"	
