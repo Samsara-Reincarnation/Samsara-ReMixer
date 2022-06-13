@@ -46,10 +46,10 @@ Actor StrifeSentinel : Sentinel2
 		SEWR B 4 A_FaceTarget
 		SEWR C 8 Bright A_SentinelAttack
 		SEWR C 4 Bright A_SentinelRefire
-		Goto Missile+1
+		Goto Missile+2
 	Pain:
 		SEWR D 5 A_Pain
-		Goto Missile+2
+		Goto Missile+3
 	Death:
 	XDeath:
 	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
