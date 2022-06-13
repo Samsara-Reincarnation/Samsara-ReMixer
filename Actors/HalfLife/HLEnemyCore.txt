@@ -70,15 +70,15 @@ Actor HLVortigauntGibSpawner : HLGenericGibSpawner
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItemEx("HLGoreISlaveGib",0,0,32,random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib2",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib2",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib3",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib3",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib4",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreAGib4",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
+		TNT1 A 0 A_SpawnItemEx("HLGoreISlaveGib",0,0,32,random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib2",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib2",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib3",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib3",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib4",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreAGib4",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
 		TNT1 A 0 A_SpawnItemEx("HLBloodSpotYellow",0,0,0,0,0,0,0,SXF_CLIENTSIDE)
 		TNT1 A 0 A_PlaySound("halflife/gib_explode",CHAN_BODY)
 		stop
@@ -135,15 +135,15 @@ Actor HLShockTrooperGibSpawner : HLGenericGibSpawner
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGibRib",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 AAAA 0 A_SpawnItemEx("HLGoreSGibSpike",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGibArm",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGib1",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGib2",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGib3",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGib4",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGibLeg",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreSGibOrgan",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGibRib",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("HLGoreSGibSpike",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGibArm",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGib1",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGib2",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGib3",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGib4",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGibLeg",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreSGibOrgan",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
 		TNT1 A 0 A_SpawnItemEx("HLBloodSpotYellow",0,0,0,0,0,0,0,SXF_CLIENTSIDE)
 		TNT1 A 0 A_PlaySound("halflife/gib_explode",CHAN_BODY)
 		stop
@@ -156,15 +156,15 @@ Actor HLVoltigoreGibSpawner : HLGenericGibSpawner
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 AAAA 0 A_SpawnItemEx("HLGoreVGib2",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib3",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib4",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib5",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib6",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib7",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib8",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGoreVGib9",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("HLGoreVGib2",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib3",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib4",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib5",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib6",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib7",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib8",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGoreVGib9",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
 		TNT1 A 0 A_SpawnItemEx("HLBloodSpotYellow",0,0,0,0,0,0,0,SXF_CLIENTSIDE)
 		TNT1 A 0 A_PlaySound("halflife/gib_explode",CHAN_BODY)
 		stop
@@ -177,13 +177,13 @@ Actor HLPitDroneGibSpawner : HLGenericGibSpawner
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 AAAA 0 A_SpawnItemEx("HLGorePitDroneGib2",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib3",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib4",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib5",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib6",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
-		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib7",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE)
+		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib1",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 AAAA 0 A_SpawnItemEx("HLGorePitDroneGib2",random(-1,1),random(-1,1),random(28,35),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib3",random(-1,1),random(-1,1),random(5,22),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib4",random(-1,1),random(-1,1),random(30,38),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib5",random(-1,1),random(-1,1),random(25,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib6",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
+		TNT1 A 0 A_SpawnItemEx("HLGorePitDroneGib7",random(-1,1),random(-1,1),random(8,40),random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION)
 		TNT1 A 0 A_SpawnItemEx("HLBloodSpotYellow",0,0,0,0,0,0,0,SXF_CLIENTSIDE)
 		TNT1 A 0 A_PlaySound("halflife/gib_explode",CHAN_BODY)
 		stop
