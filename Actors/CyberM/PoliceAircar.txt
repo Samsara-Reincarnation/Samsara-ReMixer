@@ -1,10 +1,10 @@
 Actor CMAircar
 {
-	Health 500
+	Health 250
 	Radius 31
 	Height 56
 	Mass 2000
-    Speed 16
+    Speed 8
 	Scale 0.45
 	Species "Enemies"	
 	MinMissileChance 255
@@ -48,8 +48,9 @@ Actor CMAircar
     Missile:	
         C_PA A 2 bright A_FaceTarget
 		TNT1 A 0 A_PlaySound ("cmaircar/fire", CHAN_WEAPON)
-        C_PA B 2 bright A_CustomBulletAttack (11, 6, 4, 1, "CMBRPuff_Enemy")
-		C_PA A 2 bright
+        C_PA B 2 bright A_CustomBulletAttack (15, 9.7, 4, 1, "CMBRPuff_Enemy", 360, CBAF_NORANDOM)
+		C_PA AAAAAA 2 bright
+		C_PA A 18
 		Goto SeeLoop
 	Missile2:
     	Goto SeeLoop
