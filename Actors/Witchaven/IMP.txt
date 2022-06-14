@@ -6,9 +6,9 @@ Actor WitchavenIMP : WitchavenEnemyBaseMelee
 	ActiveSound "wtimp/see"
 	DeathSound "wtimp/die"
 	PainSound ""
-	Obituary "%o was slashed by the poisonous claws of an IMP."	
-	HitObituary "%o was slashed by the poisonous claws of an IMP."
-	Tag "IMP"		
+	Obituary "%o was slashed by the poisonous claws of an Imp."	
+	HitObituary "%o was slashed by the poisonous claws of an Imp."
+	Tag "Imp"
 	MeleeRange 69
 	States
 	{

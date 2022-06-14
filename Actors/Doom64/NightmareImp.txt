@@ -10,7 +10,7 @@ ACTOR NightmareImp64
 	Mass 100
 	MeleeDamage 3
 	Species "Enemies"
-	Tag "Nightmare IMP"
+	Tag "Nightmare Imp"
 	BloodColor "7B 5A 84"
 	SeeSound "64imp/sight"
 	PainSound "64grunt/pain"

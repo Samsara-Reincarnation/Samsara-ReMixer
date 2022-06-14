@@ -1,6 +1,6 @@
 ACTOR DoomImp3 : DoomImp2
 {
-	Tag "IMP"
+	Tag "Imp"
 	States
 	{
 		Spawn:

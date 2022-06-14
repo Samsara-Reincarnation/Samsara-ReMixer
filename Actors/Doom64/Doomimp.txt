@@ -13,7 +13,7 @@ ACTOR DoomImp64
 	+FLOORCLIP
 	+MISSILEMORE
 	+NOINFIGHTING
-	Tag "IMP"	
+	Tag "Imp"
 	SeeSound "64imp/sight"
 	PainSound "64grunt/pain"
 	DeathSound "64imp/death"
