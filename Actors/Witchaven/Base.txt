@@ -59,13 +59,13 @@ Actor WitchavenEnemyBaseRanged {
 	var int user_scaley;
 }
 
+//Dream on
 Actor Witchaven_PikeAxeMonsterDrop : SamsaraSlotTwoDrop {
 	Scale 0.23
 	States
     {
       Spawn:
-        WH77 UUVVWWXXYYZZ 2
-		WH78 AABB 2
+        PWHH ABCD 5
         Loop
     }
 }
