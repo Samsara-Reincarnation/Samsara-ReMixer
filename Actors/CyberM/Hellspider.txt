@@ -3,7 +3,7 @@ Actor CMHellspider
     obituary "%o was overwhelmed by a Hellspider."
     hitobituary "%o was sliced up by a Hellspider."
     scale 0.45
-    Health 750
+    Health 300
     Radius 28
     Height 64
 	Mass 900
