@@ -517,7 +517,7 @@ Actor IPOGShotgunDrop : SamsaraSlotTwoDrop
 	States
     {
 		Spawn:
-			GW20 Z -1
+			GW30 Z -1
 			stop
 	}
 }	
