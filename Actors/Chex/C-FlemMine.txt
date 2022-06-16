@@ -25,8 +25,8 @@ actor FlemMine2 : FlemMine
         TNT1 A 0 A_ChangeFlag("NOPAIN",0)
         SKUC C 10 A_FaceTarget
         SKUC D 4 A_SkullAttack
-        SKUC CD 4 
-        Goto Missile+2
+        SKUC CD 4
+        Goto Missile+3
       Pain:
         SKUC A 3 A_SpawnDebris("FlemoidGib") 
         SKUC A 3 A_Pain
