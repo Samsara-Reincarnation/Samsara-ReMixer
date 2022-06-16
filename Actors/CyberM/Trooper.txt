@@ -1,6 +1,6 @@
 Actor CMTrooper
 { 
-    Health 50
+    Health 40
     Radius 20
     Height 56
 	Mass 100

@@ -1,6 +1,6 @@
 Actor CMTank
 {
-	Health 1200
+	Health 800
 	Radius 64
 	Height 64
 	Mass 2000

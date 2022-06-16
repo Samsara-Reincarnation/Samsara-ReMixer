@@ -1,6 +1,6 @@
 Actor Metacop
 { 
-    Health 65
+    Health 50
     Radius 20
     Height 56
 	Mass 100

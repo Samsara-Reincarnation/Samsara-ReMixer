@@ -1,6 +1,6 @@
 Actor CMStynx
 { 
-    Health 100
+    Health 70
     Radius 20
     Height 56
 	Mass 100
