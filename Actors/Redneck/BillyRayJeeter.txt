@@ -3137,7 +3137,7 @@ ACTOR JeeterAmmoDrop : Ammo2Small
 {
 	Scale 0.3
 	+DROPPED
-	inventory.pickupmessage "Yer Scattergun Shells!"
+	inventory.pickupmessage "Yer Scattergun Shells! (4 rounds of Ammo 2)"
 	States
     {
       Spawn:

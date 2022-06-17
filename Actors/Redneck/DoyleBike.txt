@@ -824,7 +824,7 @@ ACTOR BikerAmmoDrop : Ammo1Big
 {
 	Scale 0.33
 	+DROPPED
-	inventory.pickupmessage "Motogun Ammo!"
+	inventory.pickupmessage "Motogun Ammo! (50 rounds of Ammo 1)"
 	States
     {
       Spawn:
@@ -837,10 +837,8 @@ ACTOR BikerAmmoDrop : Ammo1Big
 		TNT1 A 0 A_JumpIfInventory("WitchavenClass", 0, "PickupWitchaven")	
 		TNT1 A 0 A_JumpIfInventory("BittermanClass", 0, "PickupBitterman")	
 		TNT1 A 0 A_JumpIfInventory("CatacombClass", 0, "PickupCatacomb")	
-        TNT1 A 0 A_GiveInventory("Clip", 50)
-		TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
         TNT1 A 0 A_JumpIfInventory("QuakeClass", 0, "PickupQuake")
-		TNT1 A 0
+        TNT1 A 0 A_GiveInventory("Clip", 50)
         stop
 	  PickupRott:
 		TNT1 A 0 A_JumpIfInventory("HSMissiles", 0, "PickupFail")
@@ -851,7 +849,7 @@ ACTOR BikerAmmoDrop : Ammo1Big
         TNT1 A 0 A_GiveInventory("Clip", 60)
         stop
 	  PickupLeonard:
-		TNT1 A 0 A_JumpIfInventory("Clip", 0, "PickupFail")
+		TNT1 A 0 A_JumpIfInventory("MotoGunAmmo", 0, "PickupFail")
 		TNT1 A 0 A_GiveInventory("MotoGunAmmo", 50)
 		Stop
 	  PickupBitterman:

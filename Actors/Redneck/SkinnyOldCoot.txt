@@ -7003,7 +7003,7 @@ ACTOR CootAmmoDrop : Ammo1Small
 {
 	Scale 0.25
 	+DROPPED
-	inventory.pickupmessage "Speedloader!"
+	inventory.pickupmessage "Speedloader! (6 rounds of Ammo 1)"
 	States
     {
       Spawn:
@@ -7013,10 +7013,8 @@ ACTOR CootAmmoDrop : Ammo1Small
         TNT1 A 0 A_JumpIfInventory("MarathonClass", 0, "PickupMarathon")
 		TNT1 A 0 A_JumpIfInventory("WitchavenClass", 0, "PickupWitchaven")	
   		TNT1 A 0 A_JumpIfInventory("RottClass", 0, "PickupRott")				
-        TNT1 A 0 A_GiveInventory("Clip", 6)
-		TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
         TNT1 A 0 A_JumpIfInventory("QuakeClass", 0, "PickupQuake")
-		TNT1 A 0
+        TNT1 A 0 A_GiveInventory("Clip", 6)
         stop
 	  PickupRott:
 	    TNT1 A 0 A_JumpIfInventory("SMissiles", 0, "PickupFail")	  
@@ -7025,6 +7023,11 @@ ACTOR CootAmmoDrop : Ammo1Small
 	  PickupWitchaven:
         TNT1 A 0 A_JumpIfInventory("Clip", 0, "PickupFail")
         TNT1 A 0 A_GiveInventory("Clip", 6)
-        stop	
+        stop
+      PickupMarathon:
+        TNT1 A 0 A_JumpIfInventory("Clip", 0, "PickupFail")
+        TNT1 A 0 A_GiveInventory("Clip", 6)
+        TNT1 A 0 A_SetBlend("Green", 0.3, 3)
+        stop
     }
 }

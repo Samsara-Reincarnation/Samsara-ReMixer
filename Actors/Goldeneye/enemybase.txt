@@ -8849,7 +8849,7 @@ Actor Goldeneye_PP7EnemyDrop : AmmoBackpack //fake backpack. Gives the rewards a
 Actor Goldeneye_DD44EnemyDrop : Clip2
 { 
 	Gravity 0.33 
-	Inventory.PickupMessage "Unloaded a DD44 (5 Rounds of Ammo 1)."
+	Inventory.PickupMessage "Unloaded a DD44. (5 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -8876,7 +8876,7 @@ Actor Goldeneye_DD44EnemyDrop : Clip2
 Actor Goldeneye_KlobbEnemyDrop : Clip2 
 { 
 	Gravity 0.33 
-	Inventory.PickupMessage "Unloaded a Klobb (5 Rounds of Ammo 1)."
+	Inventory.PickupMessage "Unloaded a Klobb. (5 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -8903,7 +8903,7 @@ Actor Goldeneye_KlobbEnemyDrop : Clip2
 Actor Goldeneye_PhantomEnemyDrop : Ammo1Small 
 { 
 	Gravity 0.33 
-	Inventory.PickupMessage "Unloaded a Phantom (10 Rounds of Ammo 1)."
+	Inventory.PickupMessage "Unloaded a Phantom. (10 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -8930,7 +8930,7 @@ Actor Goldeneye_PhantomEnemyDrop : Ammo1Small
 Actor Goldeneye_GrenadeLEnemyDrop : Ammo3Big 
 { 
 	Gravity 0.33 
-	Inventory.PickupMessage "Unloaded a Grenade Launcher (6 Rounds of Ammo 3)."
+	Inventory.PickupMessage "Unloaded a Grenade Launcher. (6 rounds of Ammo 3)"
 	States
 	{
 		Spawn:
@@ -8957,7 +8957,7 @@ Actor Goldeneye_GrenadeLEnemyDrop : Ammo3Big
 Actor Goldeneye_ZMGEnemyDrop : Ammo1Small 
 { 
 	Gravity 0.33 
-	Inventory.PickupMessage "Unloaded a ZMG (10 Rounds of Ammo 1)."
+	Inventory.PickupMessage "Unloaded a ZMG. (10 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -8984,7 +8984,7 @@ Actor Goldeneye_ZMGEnemyDrop : Ammo1Small
 Actor Goldeneye_CougarEnemyDrop : Ammo2Small 
 { 
 	Gravity 0.33 
-	Inventory.PickupMessage "Unloaded a Cougar Magnum (4 Rounds of Ammo 2)."
+	Inventory.PickupMessage "Unloaded a Cougar Magnum. (4 rounds of Ammo 2)"
 	States
 	{
 		Spawn:
@@ -9037,7 +9037,7 @@ Actor Goldeneye_D5KEnemyDrop : SamsaraUniquePickup2
 Actor Goldeneye_AR33MagEnemyDrop : Ammo1Big
 { 
 	Gravity 0.33 
-	Inventory.PickupMessage "Found an AR33 Mag (30 Rounds of Ammo 1)."
+	Inventory.PickupMessage "Found an AR33 mag. (30 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -9120,12 +9120,12 @@ Actor Goldeneye_AR33MagEnemyDrop : Ammo1Big
     }
 }			
 
-Actor Goldeneye_D5KMagEnemyDrop : Goldeneye_AR33MagEnemyDrop { Inventory.PickupMessage "Found a D5K Mag (30 Rounds of Ammo 1)." }
-Actor Goldeneye_KF7MagEnemyDrop : Goldeneye_AR33MagEnemyDrop { Inventory.PickupMessage "Found a KF7 Mag (30 Rounds of Ammo 1)." }
+Actor Goldeneye_D5KMagEnemyDrop : Goldeneye_AR33MagEnemyDrop { Inventory.PickupMessage "Found a D5K mag. (30 rounds of Ammo 1)" }
+Actor Goldeneye_KF7MagEnemyDrop : Goldeneye_AR33MagEnemyDrop { Inventory.PickupMessage "Found a KF7 mag. (30 rounds of Ammo 1)" }
 Actor Goldeneye_PhantomMagEnemyDrop	: Ammo1Big 
 {
 	Gravity 0.33 
-	Inventory.PickupMessage "Found a Phantom Mag (50 Rounds of Ammo 1)."
+	Inventory.PickupMessage "Found a Phantom mag. (50 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -9152,7 +9152,7 @@ Actor Goldeneye_PhantomMagEnemyDrop	: Ammo1Big
 Actor Goldeneye_ZMGMagEnemyDrop : Ammo1Big 
 {
 	Gravity 0.33
-	Inventory.PickupMessage "Found a ZMG Mag (32 Rounds of Ammo 1)."	
+	Inventory.PickupMessage "Found a ZMG mag. (32 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -9238,7 +9238,7 @@ Actor Goldeneye_ZMGMagEnemyDrop : Ammo1Big
 Actor Goldeneye_KlobbMagEnemyDrop : Ammo1Small
 {
 	Gravity 0.33 
-	Inventory.PickupMessage "Found a Klobb Mag (20 Rounds of Ammo 1)."	
+	Inventory.PickupMessage "Found a Klobb mag. (20 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -9314,7 +9314,7 @@ Actor Goldeneye_KlobbMagEnemyDrop : Ammo1Small
 Actor Goldeneye_DD44MagEnemyDrop : Ammo1Small
 {
 	Gravity 0.33 
-	Inventory.PickupMessage "Found a DD44 Mag (8 Rounds of Ammo 1)."	
+	Inventory.PickupMessage "Found a DD44 mag. (8 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -9390,7 +9390,7 @@ Actor Goldeneye_DD44MagEnemyDrop : Ammo1Small
 Actor Goldeneye_PP7MagEnemyDrop : Ammo1Small
 {
 	Gravity 0.33 
-	Inventory.PickupMessage "Found a PP7 Mag (7 Rounds of Ammo 1)."	
+	Inventory.PickupMessage "Found a PP7 mag. (7 rounds of Ammo 1)"
 	States
 	{
 		Spawn:
@@ -9466,7 +9466,7 @@ Actor Goldeneye_PP7MagEnemyDrop : Ammo1Small
 Actor Goldeneye_RCP90MagEnemyDrop : Ammo4Big
 {
 	Gravity 0.33
-	Inventory.PickupMessage "Found an RCP90 Mag (80 Rounds of Ammo 4)."	
+	Inventory.PickupMessage "Found an RC-P90 mag. (80 rounds of Ammo 4)"
 	States
 	{
 		Spawn:
@@ -9569,7 +9569,7 @@ Actor Goldeneye_RCP90MagEnemyDrop : Ammo4Big
 Actor Goldeneye_AutoShotgunMagEnemyDrop : Ammo2Small
 {
 	Gravity 0.33 
-	Inventory.PickupMessage "Found a box of Shotgun Shells (5 Rounds of Ammo 2)."	
+	Inventory.PickupMessage "Found a box of shotgun shells. (5 rounds of Ammo 2)"
 	States
 	{
 		Spawn:

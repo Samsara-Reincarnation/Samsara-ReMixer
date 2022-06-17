@@ -1547,7 +1547,7 @@ Actor BloodHeartPower : Health {
 	radius 16
 	Scale 0.60
 	Inventory.Amount 5
-	Inventory.PickupMessage "Life Essence"
+	Inventory.PickupMessage "Life Essence (5 Health)"
 	Inventory.PickupSound "Blood/HeartPU"
 	+FLOORCLIP
 	+FANCYPICKUPSOUND

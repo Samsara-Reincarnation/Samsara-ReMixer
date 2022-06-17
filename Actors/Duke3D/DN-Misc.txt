@@ -795,7 +795,7 @@ ACTOR BeachEnforcerDrop : SamsaraSlotFourDrop
 
 ACTOR DukeArmor : BasicArmorPickup
 {
-  inventory.pickupmessage "GOT USED ARMOR"
+  inventory.pickupmessage "GOT USED ARMOR (50 Armor)"
   inventory.icon "DARPA0"
   Inventory.PickupSound "duke/kickhit"
   armor.saveamount 50

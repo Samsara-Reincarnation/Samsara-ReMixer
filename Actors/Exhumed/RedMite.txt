@@ -502,7 +502,7 @@ Actor PowerSlaveSoulAmmoClip : Ammo1Small {
 	+DROPPED
 	+DONTGIB
 	RenderStyle Add
-    Inventory.PickupMessage "Soul Ammo"
+    Inventory.PickupMessage "Soul Ammo (10 rounds of Ammo 1)"
 	Inventory.PickupSound "ps/soul/ammo"
 	States
     {
@@ -519,7 +519,7 @@ Actor PowerSlaveSoulAmmoShell : Ammo2Small {
 	+DROPPED
 	+DONTGIB
 	RenderStyle Add
-    Inventory.PickupMessage "Soul Ammo"
+    Inventory.PickupMessage "Soul Ammo (4 rounds of Ammo 2)"
 	Inventory.PickupSound "ps/soul/ammo"
 	States
     {
@@ -536,7 +536,7 @@ Actor PowerSlaveSoulPower : Health {
 	Alpha 1
 	Scale 0.45
 	Inventory.Amount 5
-	Inventory.PickupMessage "Soul Health"
+	Inventory.PickupMessage "Soul Health (5 Health)"
 	Inventory.PickupSound "ps/soul/mana"
 	+FLOORCLIP
 	+FLOATBOB
