@@ -29,6 +29,7 @@ ACTOR Octabrain
 	PainChance "MarathonStun", 255
 	BloodType "DukeBlood"
 	BloodColor "ff 40 00"
+    Tag "Octabrain"
 	var int user_scalex;
 	var int user_scaley;
 	States 

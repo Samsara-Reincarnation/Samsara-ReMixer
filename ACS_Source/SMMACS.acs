@@ -10,7 +10,7 @@ int SMMCVARINFO =
 int SMMCHANGES =
 "Stuff";
 
-str SAMSARA_CHANGELIST = "1.0";
+str SAMSARA_CHANGELIST = "1.0b";
 
 str gameTypesStr[MAX_GAME_TYPES] =
 		{	"mm_doom", "mm_chex", "mm_heretic", "mm_wolf3d", "mm_hexen1", "mm_duke3d", "mm_marathon", "mm_quake1", 

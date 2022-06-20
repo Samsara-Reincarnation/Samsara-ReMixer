@@ -30,7 +30,7 @@ Actor Seagull
 	PainChance "ShrinkerDMG", 0
 	BloodType "DukeBlood"
 	BloodColor "ff 40 00"
-	Tag "Sea Monster"	
+	Tag "Seagull"
 	var int user_scalex;
 	var int user_scaley;
 	States

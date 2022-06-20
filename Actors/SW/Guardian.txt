@@ -102,7 +102,7 @@ Actor SWGuardian
 	TNT1 A 0 A_NoBlocking
 	TNT1 A 0 A_KillMaster
     TNT1 A 0 A_Jump(242,"J")	
-	TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   J:
 	TNT1 A 5 A_SpawnItemEx("SWEnemy_DemonGibSpawner")
 	TNT1 A -1
@@ -127,7 +127,7 @@ Actor SWGuardian
 	"####" "#" 70 A_UnsetSolid
 	"####" "#" 0 A_IceGuyDie
     "####" "#" 0 A_Jump(242,"I")	
-	"####" "#" 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	"####" "#" 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   I:	
 	"####" "#" 1 A_IceGuyDie
 	TNT1 A -1
@@ -334,7 +334,7 @@ Actor SWGuardian
 	TNT1 A 0 A_Fall
 	TNT1 A 0 A_KillMaster
     TNT1 A 0 A_Jump(242,"R")	
-	TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   R:	
 	TNT1 A 5 A_FadeOut	
 	Stop
@@ -351,7 +351,7 @@ Actor SWGuardian
 	TNT1 A 0 A_KillMaster
 	TNT1 A 0 A_Fall
     TNT1 A 0 A_Jump(242,"F")	
-	TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   F:	
 	TNT1 A 5 A_FadeOut
 	stop	
@@ -364,7 +364,7 @@ Actor SWGuardian
 	TNT1 A 0 A_Fall
 	TNT1 A 0 A_KillMaster
     TNT1 A 0 A_Jump(242,"B")	
-	TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   B:	
 	TNT1 A 5 A_FadeOut	
 	Stop
@@ -386,7 +386,7 @@ Actor SWGuardian
 	TNT1 A 0 A_KillMaster
 	TNT1 A 0 A_NoBlocking
     TNT1 A 0 A_Jump(242,"H")	
-	TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   H:	
 	TNT1 A 5 A_FadeOut
 	stop	
@@ -471,7 +471,7 @@ Actor SWGuardian
 	TNT1 A 0 A_SpawnItemEx("DukeGibPopSpawner", 0, 0, height*2, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 	TNT1 A 0 A_GiveToTarget("DukeGibTaunt",1)
     TNT1 A 0 A_Jump(242,"E")	
-	TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   E:	
 	TNT1 A 1
 	Stop
@@ -505,7 +505,7 @@ Actor SWGuardian
 	TNT1 A 0 A_SpawnItemEx("DukeGibPopSpawner", 0, 0, height*2, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 	TNT1 A 0 A_GiveToTarget("DukeGibTaunt",1)
     TNT1 A 0 A_Jump(242,"EC")	
-	TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
   EC:	
 	TNT1 A 1
 	Stop		
@@ -543,7 +543,7 @@ Actor SWGuardianCorpse
 			TNT1 A 0 A_UnsetSolid
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_Jump(242,"J")	
-			TNT1 A 0 A_SpawnItemEx("SWGuardianHead", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
+			TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
 		  J:
 			TNT1 A 5 A_SpawnItemEx("SWEnemy_DemonGibSpawner")
 			TNT1 A -1
@@ -849,14 +849,13 @@ Actor SWGuardianHeadDrop : SamsaraSlotSevenDrop
 	Spawn:
 		WW70 Z -1
 		Stop
-	Pickup: 
+	Pickup:
+		TNT1 A 0 A_JumpIfInventory("DoomguyClass", 1, "CheckDoom")
 		TNT1 A 0 A_JumpIfInventory("CalebClass", 1, "CheckCaleb")
-  	    TNT1 A 0 A_JumpIfInventory("StrifeClass", 1, "CheckStrife")	  
-		TNT1 A 0 A_JumpIfInventory("SWClass", 1, "PickupAlt")
-		TNT1 A 0 A_JumpIfInventory("HalfLifeClass", 1, "CheckHL")
+  	    TNT1 A 0 A_JumpIfInventory("StrifeClass", 1, "CheckStrife")
+		TNT1 A 0 A_JumpIfInventory("DisruptorClass", 1, "CheckJack")
 		TNT1 A 0 A_JumpIfInventory("BittermanClass", 1, "CheckBitterman")
-		TNT1 A 0 A_JumpIfInventory("MarathonClass", 1, "CheckMarathon")
-		TNT1 A 0 A_JumpIfInventory("BondClass", 1, "CheckBond")
+		TNT1 A 0 A_JumpIfInventory("SWClass", 1, "PickupAlt")
 		TNT1 A 0 A_JumpIf((ACS_NamedExecuteWithResult("SamsaraGiveWeapon", 7) & 3) == 1, "PickupSuccess")
         goto PickupFailure		
 	PickupAlt:

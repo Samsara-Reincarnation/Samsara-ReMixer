@@ -109,7 +109,7 @@ int ClassWeapons[CLASSCOUNT][9] =
         "Chaingun Cannon",
         "RPG",
         "Freezethrower",
-        "Devastator",
+        "Devastator Weapon",
     },
 
     {   // Security Officer

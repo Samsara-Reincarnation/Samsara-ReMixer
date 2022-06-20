@@ -48,8 +48,8 @@ Actor StrifeCultist
 			CULT F 5 A_FaceTarget
 			CULT G 0 Bright A_PlaySound("strifecultist/attack")
 			CULT G 6 Bright A_FaceTarget 
-			CULT F 0 Bright A_CustomMissile("ThrallShot1",42,-6,0,1,0)
-			CULT F 0 Bright A_CustomMissile("ThrallShot1",42,6,0,1,0)
+			CULT F 0 Bright A_CustomMissile("StrifeCultistShot1",42,-6,0,1,0)
+			CULT F 0 Bright A_CustomMissile("StrifeCultistShot1",42,6,0,1,0)
 			CULT G 3 Bright A_FaceTarget
 			CULT F 2 A_FaceTarget
 			Goto See
@@ -494,7 +494,7 @@ Actor StrifeCultist
   } 
 }
 
-Actor ThrallShot1
+Actor StrifeCultistShot1
 {
   Radius 4
   Height 6
