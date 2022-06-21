@@ -410,26 +410,26 @@ actor CKeefRocket
 		Goto SpeedUp
 	SpeedUp:
 	    CKEF O 1 bright A_ScaleVelocity(2.00)
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright 
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright 
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright 
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright 
 		CKEF O 1 bright A_ScaleVelocity(1.75)
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright 
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright 
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright 
-		CKEF A 0 A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+		CKEF A 0 A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		CKEF O 1 bright
 		Goto SpawnLoop
     SpawnLoop:
-	    CKEF O 1 bright A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+	    CKEF O 1 bright A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 		Loop
 	Death:
 		TNT1 A 0 A_Explode(32, 111)

@@ -270,7 +270,7 @@ ACTOR DukeTeleportFlash
 
 ACTOR QueenAttackToken : CustomInventory { Inventory.MaxAmount 5 }
 
-ACTOR OverlordRocketPuff : DukeRocketPuff
+ACTOR SamsaraMixerOverlordRocketPuff : SamsaraDukeRocketPuff
 {
 	RenderStyle Translucent
 	Alpha 0.5
@@ -296,7 +296,7 @@ ACTOR ACommanderRocket
 	States
 	{
 		Spawn:
-			RPGX A 1 bright A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+			RPGX A 1 bright A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 			loop
 		Death:
 			TNT1 A 0 A_Explode(35, 111)
@@ -313,12 +313,12 @@ ACTOR ACommanderRocketBeach : ACommanderRocket
 	States
 	{
 		Spawn:
-			RPGX W 1 bright A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+			RPGX W 1 bright A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 			loop
 	}
 }
 
-ACTOR OverlordRocket : ACommanderRocket
+ACTOR SamsaraMixerOverlordRocket : ACommanderRocket
 {
 	Radius 16
 	Height 12

@@ -1,4 +1,4 @@
-ACTOR Overlord 
+ACTOR SamsaraMixerOverlord 
 {
 	Health 4500
 	Radius 50
@@ -60,6 +60,7 @@ ACTOR Overlord
 	PainChance "ShrinkerDMG", 0
 	BloodType "DukeBloodBoss"
 	BloodColor "ff 40 00"
+    Tag "Overlord"
 	States 
 	{
 		Spawn:
@@ -97,10 +98,10 @@ ACTOR Overlord
 			Goto Spam
 		Spam:
 			OVRL GGG 2 A_FaceTarget
-			OVRL H 4 Bright A_CustomMissile("OverlordRocket",100,15,0,8)
+			OVRL H 4 Bright A_CustomMissile("SamsaraMixerOverlordRocket",100,15,0,8)
 			OVRL H 2 A_FaceTarget
 			OVRL GGG 2 A_FaceTarget
-			OVRL H 4 Bright A_CustomMissile("OverlordRocket",100,-15,0,8)
+			OVRL H 4 Bright A_CustomMissile("SamsaraMixerOverlordRocket",100,-15,0,8)
 			OVRL H 1 A_Jump (60, "See2")
 			Goto Spam
 		/*Stomp:
@@ -289,14 +290,13 @@ ACTOR Overlord
 	}
 }
 
-ACTOR OverlordDoom : Overlord
+ACTOR SamsaraMixerOverlordDoom : SamsaraMixerOverlord
 {
-	Tag "Overlord"
 	Radius 40
 	Scale 1.0
 }
 
-ACTOR MultiOverlordDoom : OverlordDoom
+ACTOR SamsaraMixerMultiOverlordDoom : SamsaraMixerOverlordDoom
 {
 	Species "Overlord"
 	+THRUSPECIES

@@ -4432,12 +4432,12 @@ flickerlight BOSS2_ATK
    chance 0.2
 }
 
-object OverlordDoom
+object SamsaraMixerOverlordDoom
 {
    frame CYEMH { light BOSS2_ATK }
 }
 
-object OverlordRocket	
+object SamsaraMixerOverlordRocket	
 {
    frame RPGXA { light DN3DNormalFlash__ }  
 }

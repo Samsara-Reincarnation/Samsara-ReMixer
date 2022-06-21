@@ -4894,7 +4894,7 @@ ACTOR ASeaMonsterRocketBeach : ACommanderRocket
 	States
 	{
 		Spawn:
-			RPGX W 1 bright A_SpawnItemEx("DukeRocketPuff",0,0,0,0,0,0,0,160)
+			RPGX W 1 bright A_SpawnItemEx("SamsaraDukeRocketPuff",0,0,0,0,0,0,0,160)
 			loop
 	}
 }
