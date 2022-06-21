@@ -28,7 +28,7 @@ ACTOR SuperOtto
 	DamageFactor "WolfEnemyBullet", 0.0
     PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
-	Dropitem "WolfGoldKey"
+	//Dropitem "WolfGoldKey"
 	Decal Scorch
 	States 
 	{
