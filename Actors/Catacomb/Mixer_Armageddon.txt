@@ -5581,9 +5581,10 @@ Actor CatacombArmageddon_Bunny : CatacombTrilogy_EnemyBase
 			CT19 D 0 A_JumpIfCloser(256, "SeeEvil")
 			Loop
 		SeeEvil:
-			CT19 E 10 A_Changeflag(NOPAIN, 0)
-			CT19 E 0 A_ChangeFlag(NORADIUSDMG, 0)
-			CT19 F 10 A_UnSetInvulnerable
+            TNT1 A 0 A_UnSetInvulnerable
+			TNT1 A 0 A_ChangeFlag("NORADIUSDMG",false)
+			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
+            CT19 EF 10
 			Goto EvilChase
 		EvilChase:
 			CT19 GG 8 A_Chase CT19 H 0 A_Recoil(-1.0)

@@ -462,7 +462,7 @@ ACTOR KoraxSpikeSpawner
 	Damage 0
 	Speed 20
 	Species "Enemies"	
-	Obituary "o% was impaled by Korax"
+	Obituary "%o was impaled by Korax"
 	+FLOORHUGGER
 	+STEPMISSILE
 	+THRUACTORS
