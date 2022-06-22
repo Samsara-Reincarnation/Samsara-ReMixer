@@ -5569,15 +5569,15 @@ Actor CatacombArmageddon_Bunny : CatacombTrilogy_EnemyBase
 			CT19 AB 10 A_Look
 			Loop
 		See:
-			CT19 A 4 A_Chase 
-			CT19 A 4 A_Chase
-			CT19 B 4 A_Chase
-			CT19 B 4 A_Chase
+			CT19 A 4 A_Chase("","")
+			CT19 A 4 A_Chase("","")
+			CT19 B 4 A_Chase("","")
+			CT19 B 4 A_Chase("","")
 			CT19 B 0 A_JumpIfCloser(256, "SeeEvil")
-			CT19 C 4 A_Chase
-			CT19 C 4 A_Chase
-			CT19 D 4 A_Chase
-			CT19 D 4 A_Chase
+			CT19 C 4 A_Chase("","")
+			CT19 C 4 A_Chase("","")
+			CT19 D 4 A_Chase("","")
+			CT19 D 4 A_Chase("","")
 			CT19 D 0 A_JumpIfCloser(256, "SeeEvil")
 			Loop
 		SeeEvil:
