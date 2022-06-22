@@ -22,7 +22,7 @@ Actor POGreedPlayer2 : POGreedPlayer replaces POGreedPlayer {
 			Goto Super::Death		
 		Death.DarkSide:
 			TNT1 A 0 ACS_NamedExecuteAlways("DFSummonClone")
-			TNT1 A 0 A_PlayerScream
+			TNT1 A 0 A_GiveInventory("IPOGPlayerDeathSoundTrigger")
 			TNT1 A 5 A_NoBlocking
 			TNT1 A -1
 			stop	

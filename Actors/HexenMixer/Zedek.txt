@@ -44,11 +44,16 @@ ACTOR FighterBoss3 : FighterBoss2
     {
 	Spawn:
 		PLAF A 0
-		PLAF A 1 A_JumpIfInventory("AlreadySpawned",1,"Super::Spawn")
+		PLAF A 1 A_JumpIfInventory("AlreadySpawned",1,"SpawnLoop")
 		PLAF A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		PLAF A 0 A_GiveInventory("AlreadySpawned",1)
 		PLAF A 0
-		Goto "Super::Spawn"
+    SpawnLoop:
+        PLAF A 2
+        PLAF A 3 //A_ClassBossHealth
+        PLAF A 5 A_Look
+        wait
+
 	Death.DukeDamage:
 	Death.MightyBoot:
 	Death.DukeExplosive:
@@ -58,12 +63,6 @@ ACTOR FighterBoss3 : FighterBoss2
 	Death.DukeIce:
 		TNT1 A 0 A_GiveToTarget("DukeKillTaunt",1)
 		goto Ice		
-	Spawn:
-		PLAF A 2
-		PLAF A 3 //A_ClassBossHealth
-	SpawnLoop:	
-		PLAF A 5 A_Look
-		Loop
 	See:
 		goto See2
 	See2:
@@ -98,7 +97,7 @@ ACTOR FighterBoss3 : FighterBoss2
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 		PLAF O 5 A_PlaySound("BossFighterGibDeath")
-		PLAF P 5 A_SpawnItemex("BloodyFighterSkull",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+		PLAF P 5 A_SpawnItemex("SamsaraMixerBloodyFighterSkull",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
 		PLAF R 5 A_NoBlocking
 		PLAF STUV 5
 		PLAF W 30 A_KillMaster
@@ -294,22 +293,22 @@ ACTOR FighterBoss3 : FighterBoss2
 	Burn:
 		HFDH A 5 Bright A_PlaySound("PlayerFighterBurnDeath")
 		HFDH B 4 Bright
-		HFDH G 5 Bright
-		HFDH H 4 Bright A_Scream
-		HFDH I 5 Bright
-		HFDH J 4 Bright
-		HFDH K 5 Bright
-		HFDH L 4 Bright
-		HFDH M 5 Bright
-		HFDH N 4 Bright
-		HFDH O 5 Bright
-		HFDH P 4 Bright
-		HFDH Q 5 Bright
-		HFDH R 4 Bright
-		HFDH S 5 Bright A_NoBlocking
-		HFDH T 4 Bright
-		HFDH U 5 Bright
-		HFDH V 4 Bright
+		CBRN G 5 Bright
+		CBRN H 4 Bright A_Scream
+		CBRN I 5 Bright
+		CBRN J 4 Bright
+		CBRN K 5 Bright
+		CBRN L 4 Bright
+		CBRN M 5 Bright
+		CBRN N 4 Bright
+		CBRN O 5 Bright
+		CBRN P 4 Bright
+		CBRN Q 5 Bright
+		CBRN R 4 Bright
+		CBRN S 5 Bright A_NoBlocking
+		CBRN T 4 Bright
+		CBRN U 5 Bright
+		CBRN V 4 Bright
 		TNT1 A 30 A_KillMaster
 		TNT1 A -1 
 		Stop
@@ -723,4 +722,19 @@ ACTOR FSwordMissile_Mix : FSwordMissile
 		FSFX KLM 3 Bright
 		Stop
 	}
+}
+
+actor SamsaraMixerBloodyFighterSkull : BloodyFighterSkull
+{
+    States
+    {
+      Spawn:
+        BSKL A 0
+        BSKL ABCDFGH 5 A_CheckFloor("Hit")
+        goto Spawn+1
+
+      Hit:
+        BSKL I 16 A_CheckPlayerDone
+        wait
+    }
 }

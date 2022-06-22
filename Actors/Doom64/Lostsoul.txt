@@ -4,7 +4,7 @@ ACTOR LostSoul64
 	Radius 16
 	Height 56
 	Mass 50
-	RenderStyle SoulTrans
+	RenderStyle "Normal" // gzdoom
 	+MISSILEMORE
 	+MISSILEEVENMORE
 	+NOBLOOD

@@ -44,17 +44,15 @@ ACTOR ClericBoss3 : ClericBoss2
 	{
 	 Spawn:
 		CLBS A 0
-		CLBS A 1 A_JumpIfInventory("AlreadySpawned",1,"Super::Spawn")
+		CLBS A 1 A_JumpIfInventory("AlreadySpawned",1,"SpawnLoop")
 		CLBS A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		CLBS A 0 A_GiveInventory("AlreadySpawned",1)
 		CLBS A 0
-		Goto "Super::Spawn"
-	Spawn:
-		CLER A 2
-		CLER A 3 //A_ClassBossHealth
 	SpawnLoop:
-		CLER A 5 A_Look
-		Loop
+		CLBS A 2
+		CLBS A 3 //A_ClassBossHealth
+		CLBS A 5 A_Look
+		wait
 	Death.DukeDamage:
 	Death.MightyBoot:
 	Death.DukeExplosive:
@@ -70,13 +68,13 @@ ACTOR ClericBoss3 : ClericBoss2
 		CLBS ABCD 4 A_FastChase
 		Loop	
 	Missile:
-		CLER EF 8 A_FaceTarget
+		CLBS EF 8 A_FaceTarget
 		TNT1 A 0 A_PlaySound("HolySymbolFire")
 		TNT1 A 0 A_CustomMissile("HolySpiritTraductus_Mix")
 		TNT1 A 0 A_CustomMissile("HolySpiritTraductus2_Mix")
 		TNT1 A 0 A_CustomMissile("HolySpiritTraductus3_Mix")
 		TNT1 A 0 A_CustomMissile("HolySpiritTraductus4_Mix")
-		CLER G 10
+		CLBS G 10
 		goto See2
 	Death:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -283,24 +281,24 @@ ACTOR ClericBoss3 : ClericBoss2
 	Death.FireExplosive:
 	Death.MarathonPlasmaFire:
 	Burn:
-		CLBS C 5 Bright A_PlaySound("PlayerCLBSicBurnDeath")
+		HFDH C 5 Bright A_PlaySound("PlayerClericBurnDeath")
 		HFDH D 4 Bright 
-		HFDH G 5 Bright 
-		HFDH H 4 Bright A_Scream
-		HFDH I 5 Bright 
-		HFDH J 4 Bright 
-		HFDH K 5 Bright 
-		HFDH L 4 Bright 
-		HFDH M 5 Bright 
-		HFDH N 4 Bright 
-		HFDH O 5 Bright 
-		HFDH P 4 Bright 
-		HFDH Q 5 Bright 
-		HFDH R 4 Bright 
-		HFDH S 5 Bright A_NoBlocking
-		HFDH T 4 Bright 
-		HFDH U 5 Bright 
-		HFDH V 4 Bright
+		CBRN G 5 Bright 
+		CBRN H 4 Bright A_Scream
+		CBRN I 5 Bright 
+		CBRN J 4 Bright 
+		CBRN K 5 Bright 
+		CBRN L 4 Bright 
+		CBRN M 5 Bright 
+		CBRN N 4 Bright 
+		CBRN O 5 Bright 
+		CBRN P 4 Bright 
+		CBRN Q 5 Bright 
+		CBRN R 4 Bright 
+		CBRN S 5 Bright A_NoBlocking
+		CBRN T 4 Bright 
+		CBRN U 5 Bright 
+		CBRN V 4 Bright
 		TNT1 A -1 A_KillMaster
 		Stop	
 	Melee:

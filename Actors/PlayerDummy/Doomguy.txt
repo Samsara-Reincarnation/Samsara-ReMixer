@@ -62,9 +62,9 @@ actor DoomguyPlayer2 : DoomguyPlayer replaces DoomguyPlayer {
 			Stop
 		Death64:
 			64DG A 0 A_SetScale(0.75, 0.75)
-			64DG H 11 A_PlaySound("Doom64Guy/die", CHAN_VOICE)
-			64DG I 11 A_NoBlocking
-			64DG J 11
+			64DG H 11
+			64DG I 11 A_PlaySound("Doom64Guy/die", CHAN_VOICE)
+			64DG J 11 A_NoBlocking
 			64DG KL 11
 			64DG M -1
 			Stop
@@ -81,9 +81,9 @@ actor DoomguyPlayer2 : DoomguyPlayer replaces DoomguyPlayer {
 			Stop
 		  XDeath64:
 			64DG A 0 A_SetScale(0.75, 0.75)
-			64DG N 6 A_PlaySound("Doom64Guy/crush", CHAN_BODY)
-			64DG O 6 A_NoBlocking
-			64DG P 6
+			64DG N 6 A_PlaySound("Doom64Guy/crush", CHAN_VOICE)
+			64DG O 6
+			64DG P 6 A_NoBlocking
 			64DG QRSTU 6
 			64DG V -1
 			Stop					

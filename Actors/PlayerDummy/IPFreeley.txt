@@ -22,7 +22,7 @@ Actor IPFreeley2 : IPFreeley replaces IPFreeley {
 			Goto Super::Death	
 		Death.DarkSide:
 			TNT1 A 0 ACS_NamedExecuteAlways("DFSummonClone")
-			TNT1 A 0 A_PlayerScream
+			TNT1 A 0 A_GiveInventory("ROTTPlayerDeathSoundTrigger")
 			TNT1 A 5 A_NoBlocking
 			TNT1 A -1
 			stop	
@@ -92,10 +92,9 @@ Actor IPFreeley2 : IPFreeley replaces IPFreeley {
 			TNT1 A 0 A_JumpIfInventory("RottMode", 3, "DeathLorelei")
 			TNT1 A 0 A_JumpIfInventory("RottMode", 2, "DeathThi")
 			TNT1 A 0 A_JumpIfInventory("RottMode", 1, "DeathTaradino")
-			IPFD B 4
-			IPFD C 4 A_PlayerScream
-			IPFD D 4 A_NoBlocking
-			IPFD EFG 4
+			IPFD B 4 A_GiveInventory("ROTTPlayerDeathSoundTrigger")
+			IPFD C 4 A_NoBlocking
+			IPFD DEFG 4
 			IPFD A -1
 			Stop		
 		XDeath:			

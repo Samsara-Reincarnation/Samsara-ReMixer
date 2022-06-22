@@ -22,7 +22,7 @@ actor HexenPlayer2 : HexenPlayer replaces HexenPlayer {
 			Goto Super::Death		
 		Death.DarkSide:
 			TNT1 A 0 ACS_NamedExecuteAlways("DFSummonClone")
-			TNT1 A 0 A_PlayerScream
+			TNT1 A 0 A_GiveInventory("HexenPlayerDeathSoundTrigger")
 			TNT1 A 5 A_NoBlocking
 			TNT1 A -1
 			stop	
@@ -52,7 +52,7 @@ actor HexenPlayer2 : HexenPlayer replaces HexenPlayer {
 			TNT1 A 0 A_JumpIfInventory("HexenClassMode", 2, "DeathFighter")
 			TNT1 A 0 A_JumpIfInventory("HexenClassMode", 1, "DeathMage")
 			CLER I 6
-			CLER J 6 A_PlayerScream
+			CLER J 6 A_GiveInventory("HexenPlayerDeathSoundTrigger")
 			CLER KL 6
 			CLER M 6 A_NoBlocking
 			CLER NOP 6
@@ -64,7 +64,7 @@ actor HexenPlayer2 : HexenPlayer replaces HexenPlayer {
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")	
 			TNT1 A 0 A_JumpIfInventory("HexenClassMode", 2, "XDeathFighter")
 			TNT1 A 0 A_JumpIfInventory("HexenClassMode", 1, "XDeathMage")
-			CLER R 5 A_PlayerScream
+			CLER R 5 A_GiveInventory("HexenPlayerXDeathSoundTrigger")
 			CLER S 5
 			CLER T 5 A_NoBlocking
 			CLER UVWXYZ 5
@@ -452,7 +452,7 @@ Actor Daedolon_AI
 		MFDH E 5 BRIGHT A_PlaySound("*burndeath")
 		MFDH F 4 BRIGHT
 		CBRN G 5 BRIGHT
-		CBRN H 4 BRIGHT A_PlaySound("Mage/Fall", CHAN_BODY)
+		CBRN H 4 BRIGHT A_Scream
 		CBRN I 5 BRIGHT
 		CBRN J 4 BRIGHT
 		CBRN K 5 BRIGHT
@@ -667,7 +667,7 @@ Actor Baratus_AI
 	XDeath:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")		
 		FGT2 O 5 A_Scream
-		FGT2 P 5
+		FGT2 P 5 A_SpawnItemEx("SamsaraBaratusBloodySkull",0,0,46,random(-1,1),random(-1,1),5)
 		FGT2 Q 5 A_NoBlocking
 		FGT2 RSTUV 5
 		FGT2 W -1
@@ -689,7 +689,7 @@ Actor Baratus_AI
 		HFDH E 5 BRIGHT A_PlaySound("*burndeath")
 		HFDH F 4 BRIGHT
 		CBRN G 5 BRIGHT
-		CBRN H 4 BRIGHT A_PlaySound("Mage/Fall", CHAN_BODY)
+		CBRN H 4 BRIGHT A_Scream
 		CBRN I 5 BRIGHT
 		CBRN J 4 BRIGHT
 		CBRN K 5 BRIGHT

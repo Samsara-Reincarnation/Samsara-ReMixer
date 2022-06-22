@@ -160,24 +160,24 @@ Actor Corvus_AI
     Death.QuakeFire:
 	Death.FireExplosive:
     Burn:
-        FDTH A 5 BRIGHT A_PlaySound("*burndeath")
-        FDTH B 4 BRIGHT
-        FDTH C 5 BRIGHT
-        FDTH D 4 BRIGHT
-        FDTH E 5 BRIGHT
-        FDTH F 4 BRIGHT
-        FDTH G 5 BRIGHT
-        FDTH H 4 BRIGHT
-        FDTH I 5 BRIGHT
-        FDTH J 4 BRIGHT
-        FDTH K 5 BRIGHT
-        FDTH L 4 BRIGHT
-        FDTH M 5 BRIGHT
-        FDTH N 4 BRIGHT
-        FDTH O 5 BRIGHT A_NoBlocking
-        FDTH P 4 BRIGHT
-        FDTH Q 5 BRIGHT
-        FDTH R 4 BRIGHT
+        CRVB A 5 BRIGHT A_PlaySound("*burndeath")
+        CRVB B 4 BRIGHT
+        CRVB C 5 BRIGHT
+        CRVB D 4 BRIGHT
+        CRVB E 5 BRIGHT
+        CRVB F 4 BRIGHT
+        CRVB G 5 BRIGHT
+        CRVB H 4 BRIGHT
+        CRVB I 5 BRIGHT
+        CRVB J 4 BRIGHT
+        CRVB K 5 BRIGHT
+        CRVB L 4 BRIGHT
+        CRVB M 5 BRIGHT
+        CRVB N 4 BRIGHT
+        CRVB O 5 BRIGHT A_NoBlocking
+        CRVB P 4 BRIGHT
+        CRVB Q 5 BRIGHT
+        CRVB R 4 BRIGHT
         ACLO E -1
         stop
     Death.ZorchPistol:
