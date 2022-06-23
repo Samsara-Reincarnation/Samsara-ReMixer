@@ -52,8 +52,8 @@ ACTOR Revenant64
 		Loop
 	Melee:
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
-		SKE2 G 2 A_FaceTarget
-		SKE2 G 6 A_PlaySound("skeleton64/melee",5)
+		TNT1 A 0 A_FaceTarget
+		SKE2 G 8 A_PlaySound("skeleton64/melee",5)
 		SKE2 H 8 A_FaceTarget
 		SKE2 I 8 A_CustomMeleeAttack(6*random(1,10),"skeleton64/hit","")
 		Goto See
