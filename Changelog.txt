@@ -1,3 +1,136 @@
+----------------------------------------------------------------------------------------
+-----------------------------Reincarnation 1.0b Mixer----------------------------
+----------------------------------------------------------------------------------------
+
+General:
+
+- Several enemies had their masses reduced so that they could be pulled by Adrian's new grappling barnacle
+- The big armor drops in Pinata Party mode now respect the armor setting
+- Removed Night Vision Visors and Environmental Protection Suits from being dropped in Pinata Party mode
+- Removed the Skulltag rune drops in Pinata Party mode in order to maintain GZDoom compatibility
+- Several enemy pickups now tell you how much health/ammo they gave you
+
+Doom 64:
+
+- Doom 64 shotgun guy slot 2 drop now uses the proper sprite
+- Some Doom 64 enemies had their damage values tweaked
+
+Vanilla Doom Randomizer:
+
+- Added the Bloody Hell XDeath Effects to the Female Plasma Zombie
+- The Afrit no longer makes a Bloody Hell death effect when dying
+- Nerfed the Diabolist
+- Serpents can now spawn in nukage, slime, sludge, etc
+- Fixed a couple of obituaries
+
+Chex Quest:
+
+- Reduced health values for a couple of Chex enemies
+- Fixed incorrect attack timing on Chex Flem Mine
+
+Heretic:
+
+- Reduced the Undead Knight's health value
+- Fixed the Weredragon being invisible when frozen
+- The Death Wyvern no longer has grey blood and has regular blood like the Reincarnation counterpart
+- The Death Wyvern no longer has a huge zorch effect
+
+Hexen:
+
+- Changed health values and reset damage factors for Remixer Hexen enemies to not be so spongy
+
+Wolfenstein 3D:
+
+- Fixed the Fake Hitler Ghost and the Fire Drone bleeding when dying using the extra blood modes
+- Fixed Super Otto dropping a Wolf3D key when he isn't supposed to
+
+Totenkopf:
+
+- Fixed the Totenkopf mutants calling for the wrong blood type, as well as disappearing when kicked by Duke
+
+Duke Nukem 3D:
+
+- Duke Overlord should no longer overwrite DTINV's Overlord
+
+Marathon:
+
+- Fixed the Marathon 2 Ticks hurting invulnerable players with their suicide bombs
+- Fixed the Marathon Looker hurting invulnerable players with thier suicide attacks
+- Burnable Marathon enemies updated to use extra burn sprite.
+- Security Officer VWEP system added to ReMixer version.
+
+Quake:
+
+- Fixed the Spike Mine hurting invulnerable players
+- Fixed Armagon having an extremely high mass
+
+Blake Stone:
+
+- Plasma Sphere had it's mass reduced
+
+Rise of the Triad:
+
+- Most of the robotic enemies now take more damage from normal attacks
+
+Blood:
+
+- Blood Choking Hand should no longer appear in player inventory with "Give all"
+- Fixed certain Blood enemies not running away from the player when burnt
+
+Strife:
+
+- Cultists of the Order no longer infight with other enemies
+- Fixed incorrect attack timing on Sentinels
+- Fixed sprite conflicts with Acolytes and Hexen's clock hear puzzle items
+
+Rebel Moon Rising:
+
+- Estrons now have correctly colored blood effects when dying
+- The Jump Commando no longer has scaling issues when dying
+- Duke now uses the correct taunts for killing Estrons
+
+Dark Forces:
+
+- The Imperial Commander now drops the Slot IV if the enemy drop mode is set to "Doom-Style"
+- Made the enemies for the Dark Forces set disappear when crushed, much like in the base game
+
+In Pursuit of Greed:
+
+- Fixed the Veek Warrior crashing Zandronum if burnt by Caleb
+- Fixed the IPOG Shotgun drop using the wrong sprite
+
+Disruptor:
+
+- Most Disruptor enemies now produce Bloody Hell death effects
+
+Witchaven:
+
+- Gave most of the Witchaven enemies Bloody Hell death effects
+
+Half-Life:
+
+- The HECU robot's health was lowered to 350 to compensate for some situations where the player won't have any explosions to use
+- Half-Life alien blood should no longer have any red
+
+Shadow Warrior:
+
+- Fixed the Guardian Head dropping itself upon death
+
+Cybermage:
+
+- Nerfed the aircar into the ground
+- Fixed the Exceptional Wild Mung turning into its' regular form when growing back after shrinking
+- Reduced the health of a few enemies
+
+Powerslave:
+
+- A few actors related to the Anubis Warrior were removed
+
+Catacomb 3D:
+
+- Fixed a couple of Catacomb monster obituaries not showing properly and some grammatical errors in them
+- Fixed Bunnies not having their invulnerability flag removed properly
+
 
 ----------------------------------------------------------------------------------------
 -----------------------------Reincarnation Mixer---------------------------------
