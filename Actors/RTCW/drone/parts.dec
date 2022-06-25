@@ -6,7 +6,7 @@ Actor RTCW_Drone_Body : RTCWPart
 			RW00 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
 			RW00 A 0 A_SetScale(0.001)
 			RW00 A 1
-			RW00 A 0 ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW00 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
 			RW00 A 0 A_SetScale(1.0)
 		SpawnLoop:
 			RW00 A 1
@@ -39,7 +39,7 @@ Actor RTCW_Drone_Flash : RTCW_Drone_Body
 			RW00 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
 			RW00 A 0 A_SetScale(0.001)
 			RW00 A 1
-			RW00 A 0 ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW00 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
 		HoverIdle:
 			"####" "#" 4
 		HoverIdleLoop:

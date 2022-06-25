@@ -6,7 +6,7 @@ Actor RTCW_SuperSoldier_Body : RTCWPart
 			RW0E A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
 			RW0E A 0 A_SetScale(0.001)
 			RW0E A 1
-			RW0E A 0 ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW0E A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
 			RW0E A 0 A_SetScale(1.0)
 		SpawnLoop:
 			RW0E A 1

@@ -98,7 +98,7 @@ ACTOR RTCW_FG42Drop : SamsaraSlotFourDrop
     }
 }
 
-ACTOR RTCW_FlamethrowerDrop : SamsaraUniquePickup2
+ACTOR RTCW_FlamethrowerDrop : SamsaraUniquePickup1
 {
 	+DROPPED
 	States
