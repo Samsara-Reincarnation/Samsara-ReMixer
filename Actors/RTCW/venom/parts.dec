@@ -1,0 +1,97 @@
+Actor RTCW_Humanoid_Venom_BodyDefault : RTCW_InfantrySSBody 
+{
+	States
+	{
+		FireVenom:
+			"####" "#" 4
+		FireVenomLoop:
+			RW47 ABCDEFGHIJKLMNOPQRST 2
+			Loop
+	}
+}
+Actor RTCW_Humanoid_Venom_BodyFactory : RTCW_Humanoid_Venom_BodyDefault {}
+Actor RTCW_Humanoid_Venom_BodySnow : RTCW_Humanoid_Venom_BodyDefault {}
+
+Actor RTCW_Humanoid_Venom_Glass : RTCW_Humanoid_Venom_BodyDefault { Renderstyle Translucent }
+Actor RTCW_Humanoid_Venom_GlassSnow : RTCW_Humanoid_Venom_BodyDefault { Renderstyle Translucent }
+
+Actor RTCW_Humanoid_Venom_Flamethrower : RTCW_MaleMainArm 
+{
+	States
+	{
+		FireVenom:
+			"####" "#" 4
+		FireVenomLoop:
+			RW47 ABCDEFGHIJKLMNOPQRST 2
+			Loop
+	}
+}
+Actor RTCW_Humanoid_Venom_Venom : RTCW_Humanoid_Venom_Flamethrower {}
+
+Actor RTCW_Humanoid_Venom_FlamethrowerNozzle : RTCW_Humanoid_Venom_Flamethrower { Renderstyle Translucent }
+Actor RTCW_Humanoid_Venom_VenomFlash : RTCW_GunFlash 
+{
+	States
+	{
+		FireVenom:
+			"####" "#" 4
+		FireVenomLoop:
+			RW47 A 1
+			TNT1 A 1
+			RW47 B 1
+			TNT1 A 1
+			RW47 C 1
+			TNT1 A 1
+			RW47 D 1
+			TNT1 A 1
+			RW47 E 1
+			TNT1 A 1
+			RW47 F 1
+			TNT1 A 1
+			RW47 G 1
+			TNT1 A 1
+			RW47 H 1
+			TNT1 A 1
+			RW47 I 1
+			TNT1 A 1
+			RW47 J 1
+			TNT1 A 1
+			RW47 K 1
+			TNT1 A 1
+			RW47 L 1
+			TNT1 A 1
+			RW47 M 1
+			TNT1 A 1
+			RW47 N 1
+			TNT1 A 1
+			RW47 O 1
+			TNT1 A 1
+			RW47 P 1
+			TNT1 A 1
+			RW47 Q 1
+			TNT1 A 1
+			RW47 R 1
+			TNT1 A 1
+			RW47 S 1
+			TNT1 A 1
+			RW47 T 1
+			TNT1 A 1
+			Loop
+	}
+}
+
+Actor RTCW_Humanoid_Deathshead_Body : RTCW_Humanoid_Venom_BodyDefault {}
+Actor RTCW_Humanoid_Deathshead_Head : RTCW_Humanoid_Venom_BodyDefault {}
+Actor RTCW_Humanoid_Deathshead_Blink : RTCW_Humanoid_Blink
+{
+	States
+	{
+		FireVenom:
+			"####" "#" 4
+		FireVenomLoop:
+			RW47 ABCDEFGHIJKLMNOPQRST 2
+			Loop
+	}
+}
+Actor RTCW_Humanoid_Deathshead_Monacle : RTCW_Humanoid_Venom_BodyDefault { Renderstyle Translucent }
+Actor RTCW_Humanoid_Deathshead_Tesla : RTCW_Humanoid_Venom_Flamethrower {}

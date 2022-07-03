@@ -1,0 +1,98 @@
+//Zombie Soldier
+$random Painkiller/ZombieSoldier/Death { Painkiller/ZombieSoldier/Death1 Painkiller/ZombieSoldier/Death2 Painkiller/ZombieSoldier/Death3 Painkiller/ZombieSoldier/Death4 }
+Painkiller/ZombieSoldier/Death1 "Sounds/Painkiller/Zombie_Soldier/zombs_death1.wav"
+Painkiller/ZombieSoldier/Death2 "Sounds/Painkiller/Zombie_Soldier/zombs_death2.wav"
+Painkiller/ZombieSoldier/Death3 "Sounds/Painkiller/Zombie_Soldier/zombs_death3.wav"
+Painkiller/ZombieSoldier/Death4 "Sounds/Painkiller/Zombie_Soldier/zombs_death4.wav"
+
+$random Painkiller/ZombieSoldier/Hit { Painkiller/ZombieSoldier/Hit1 Painkiller/ZombieSoldier/Hit2 Painkiller/ZombieSoldier/Hit3 }
+Painkiller/ZombieSoldier/Hit1 "Sounds/Painkiller/Zombie_Soldier/zombs_hit1.wav"
+Painkiller/ZombieSoldier/Hit2 "Sounds/Painkiller/Zombie_Soldier/zombs_hit2.wav"
+Painkiller/ZombieSoldier/Hit3 "Sounds/Painkiller/Zombie_Soldier/zombs_hit3.wav"
+
+$random Painkiller/ZombieSoldier/FootStep { Painkiller/ZombieSoldier/FootStep1 Painkiller/ZombieSoldier/FootStep2 }
+Painkiller/ZombieSoldier/FootStep1 "Sounds/Painkiller/Zombie_Soldier/zombs_krok1.wav"
+Painkiller/ZombieSoldier/FootStep2 "Sounds/Painkiller/Zombie_Soldier/zombs_krok2.wav"
+
+$random Painkiller/ZombieSoldier/OnAttackOnce { Painkiller/ZombieSoldier/OnAttackOnce1 Painkiller/ZombieSoldier/OnAttackOnce2 Painkiller/ZombieSoldier/OnAttackOnce3 }
+Painkiller/ZombieSoldier/OnAttackOnce1 "Sounds/Painkiller/Zombie_Soldier/zombs_halt1.wav"
+Painkiller/ZombieSoldier/OnAttackOnce2 "Sounds/Painkiller/Zombie_Soldier/zombs_halt2.wav"
+Painkiller/ZombieSoldier/OnAttackOnce3 "Sounds/Painkiller/Zombie_Soldier/zombs_halt3.wav"
+
+Painkiller/ZombieSoldier/SwishPrepare "Sounds/Painkiller/Zombie_Soldier/zombs_swish-prepare.wav"
+Painkiller/ZombieSoldier/Swish "Sounds/Painkiller/Zombie_Soldier/zombs_swish.wav"
+
+$random Painkiller/ZombieSoldier/Attack { Painkiller/ZombieSoldier/Attack1 Painkiller/ZombieSoldier/Attack2 }
+Painkiller/ZombieSoldier/Attack1 "Sounds/Painkiller/Zombie_Soldier/zombs_attack1.wav"
+Painkiller/ZombieSoldier/Attack2 "Sounds/Painkiller/Zombie_Soldier/zombs_attack2.wav"
+
+$random Painkiller/ZombieSoldier/AttackScream { Painkiller/ZombieSoldier/AttackScream1 Painkiller/ZombieSoldier/AttackScream2 Painkiller/ZombieSoldier/AttackScream3 }
+Painkiller/ZombieSoldier/AttackScream1 "Sounds/Painkiller/Zombie_Soldier/zombs_attackscream1.wav"
+Painkiller/ZombieSoldier/AttackScream2 "Sounds/Painkiller/Zombie_Soldier/zombs_attackscream2.wav"
+Painkiller/ZombieSoldier/AttackScream3 "Sounds/Painkiller/Zombie_Soldier/zombs_attackscream3.wav"
+
+$random Painkiller/ZombieSoldier/HitGround { Painkiller/ZombieSoldier/HitGround1 Painkiller/ZombieSoldier/HitGround2 }
+Painkiller/ZombieSoldier/HitGround1	"Sounds/Painkiller/Zombie_Soldier/zombs_sword-missed1.wav"
+Painkiller/ZombieSoldier/HitGround2	"Sounds/Painkiller/Zombie_Soldier/zombs_sword-missed2.wav"
+
+Painkiller/ZombieSoldier/HitPlayer	"Sounds/Painkiller/Zombie_Soldier/zombs_sword_hits_hero.wav"
+
+$random Painkiller/ZombieSoldier/WeaponLost { Painkiller/ZombieSoldier/WeaponLost1 Painkiller/ZombieSoldier/WeaponLost2 Painkiller/ZombieSoldier/WeaponLost3 }
+Painkiller/ZombieSoldier/WeaponLost1	"Sounds/Painkiller/Zombie_Soldier/zombs-weapon-lost1.wav"
+Painkiller/ZombieSoldier/WeaponLost2	"Sounds/Painkiller/Zombie_Soldier/zombs-weapon-lost2.wav"
+Painkiller/ZombieSoldier/WeaponLost3	"Sounds/Painkiller/Zombie_Soldier/zombs-weapon-lost3.wav"
+
+$random Painkiller/ZombieSoldier/BodyFall {Painkiller/ZombieSoldier/BodyFall1 Painkiller/ZombieSoldier/BodyFall2 }
+Painkiller/ZombieSoldier/BodyFall1	"Sounds/Painkiller/Zombie_Soldier/zombs_bodyfalls1.wav"
+Painkiller/ZombieSoldier/BodyFall2	"Sounds/Painkiller/Zombie_Soldier/zombs_bodyfalls2.wav"
+
+//Banshee
+
+$random Painkiller/Banshee/Death { Painkiller/Banshee/Death1 Painkiller/Banshee/Death2 }
+Painkiller/Banshee/Death1 "Sounds/Banshee/banshee_death1.wav"
+Painkiller/Banshee/Death2 "Sounds/Banshee/banshee_death2.wav"
+
+$random Painkiller/Banshee/Hit { Painkiller/Banshee/Hit1 Painkiller/Banshee/Hit2 Painkiller/Banshee/Hit3 }
+Painkiller/Banshee/Hit1 "Sounds/Banshee/banshee_hit1.wav"
+Painkiller/Banshee/Hit2 "Sounds/Banshee/banshee_hit2.wav"
+
+//Black Demon
+
+$random Painkiller/BlackDemon/Angry { Painkiller/BlackDemon/Angry1 Painkiller/BlackDemon/Angry2 }
+Painkiller/BlackDemon/Angry1 "Sounds/Painkiller/BlackDemon/bdemon-angry1.wav"
+Painkiller/BlackDemon/Angry2 "Sounds/Painkiller/BlackDemon/bdemon-angry1.wav"
+
+$random Painkiller/BlackDemon/OnAttackOnce { Painkiller/BlackDemon/OnAttackOnce1 Painkiller/BlackDemon/OnAttackOnce2 }
+Painkiller/BlackDemon/OnAttackOnce1 "Sounds/Painkiller/BlackDemon/bdemon_halt1.wav"
+Painkiller/BlackDemon/OnAttackOnce2 "Sounds/Painkiller/BlackDemon/bdemon_halt1.wav"
+
+$random Painkiller/BlackDemon/AttackScream { Painkiller/BlackDemon/AttackScream1 Painkiller/BlackDemon/AttackScream2 Painkiller/BlackDemon/AttackScream3 }
+Painkiller/BlackDemon/AttackScream1 "Sounds/Painkiller/BlackDemon/bdemon_attackscream1.wav"
+Painkiller/BlackDemon/AttackScream2 "Sounds/Painkiller/BlackDemon/bdemon_attackscream2.wav"
+Painkiller/BlackDemon/AttackScream3 "Sounds/Painkiller/BlackDemon/bdemon_attackscream3.wav"
+
+$random Painkiller/BlackDemon/Attack { Painkiller/BlackDemon/Attack1 Painkiller/BlackDemon/Attack2 Painkiller/BlackDemon/Attack3 }
+Painkiller/BlackDemon/Attack1 "Sounds/Painkiller/BlackDemon/bdemon_atak1.wav"
+Painkiller/BlackDemon/Attack2 "Sounds/Painkiller/BlackDemon/bdemon_atak2.wav"
+Painkiller/BlackDemon/Attack3 "Sounds/Painkiller/BlackDemon/bdemon_atak3.wav"
+
+$random Painkiller/BlackDemon/Step { Painkiller/BlackDemon/Step1 Painkiller/BlackDemon/Step2 }
+Painkiller/BlackDemon/Step1 "Sounds/Painkiller/BlackDemon/bdemon_krokl.wav"
+Painkiller/BlackDemon/Step2 "Sounds/Painkiller/BlackDemon/bdemon_krokp.wav"
+
+Painkiller/BlackDemon/MeleeHit	"Sounds/Painkiller/BlackDemon/bdemon-hand-hit.wav"
+
+$random Painkiller/BlackDemon/Swish { Painkiller/Leper/Swish1 Painkiller/Psycho/Swish2 }
+
+$random Painkiller/BlackDemon/Death { Painkiller/BlackDemon/Death1 Painkiller/BlackDemon/Death2 Painkiller/BlackDemon/Death3 }
+Painkiller/BlackDemon/Death1 "Sounds/Painkiller/BlackDemon/bdemon_death1.wav"
+Painkiller/BlackDemon/Death2 "Sounds/Painkiller/BlackDemon/bdemon_death1.wav"
+Painkiller/BlackDemon/Death3 "Sounds/Painkiller/BlackDemon/bdemon_death1.wav"
+
+//Samurai
+
+Painkiller/Samurai/Fireball "Sounds/Painkiller/Samurai/samurai-fireball.wav"
+Painkiller/Samurai/FireballHit "Sounds/Painkiller/Samurai/samurai-fireball-hit.wav"
+
+Painkiller/Psycho/Swish2 "Sounds/Painkiller/Psycho/psycho_swish2.wav"
+Painkiller/Leper/Swish1 "Sounds/Painkiller/Leper/leper_swish1.wav"

@@ -1,0 +1,74 @@
+Actor RTCW_Humanoid_Scientist_BodyDefault : RTCW_InfantrySSBody 
+{
+	States
+	{
+		AlertRun_1H:
+			"####" "#" 4
+		AlertRun_1HLoop:
+			RW11 ABCDEFGHIJKLMNABCDEFGHIJKLMN 3
+			Loop
+	}
+}
+Actor RTCW_Humanoid_Scientist_BodyRocket : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_BodySWF : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_BodyXLabs : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_BodyMystic : RTCW_Humanoid_Scientist_BodyDefault {}
+
+Actor RTCW_Humanoid_Scientist_Head1 : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_Head2 : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_Head3 : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_Head4 : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_Head5 : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_Head6 : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_Head7 : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_HeadMystic : RTCW_Humanoid_Scientist_BodyDefault {}
+
+Actor RTCW_Humanoid_Scientist_Blink1 : RTCW_Humanoid_Blink
+{
+	States
+	{
+		AlertRun_1H:
+			"####" "#" 4
+		AlertRun_1HLoop:
+			RW11 ABCDEFGHIJKLMNABCDEFGHIJKLMN 3
+			Loop
+	}
+}
+
+Actor RTCW_Humanoid_Scientist_Blink2 : RTCW_Humanoid_Scientist_Blink1 {}
+Actor RTCW_Humanoid_Scientist_Blink3 : RTCW_Humanoid_Scientist_Blink1 {}
+
+Actor RTCW_Humanoid_Scientist_Glasses : RTCW_InfantrySSHat 
+{ 
+	Renderstyle Translucent
+	States
+	{
+		AlertRun_1H:
+			"####" "#" 4
+		AlertRun_1HLoop:
+			RW11 ABCDEFGHIJKLMNABCDEFGHIJKLMN 3
+			Loop
+	}
+}
+Actor RTCW_Humanoid_Scientist_Goggles : RTCW_Humanoid_Scientist_BodyDefault { Renderstyle Translucent }
+Actor RTCW_Humanoid_Scientist_Headset : RTCW_Humanoid_Scientist_Glasses { Renderstyle Normal }
+
+Actor RTCW_Humanoid_Scientist_Badge : RTCW_Humanoid_Scientist_BodyDefault {}
+Actor RTCW_Humanoid_Scientist_Belt : RTCW_Humanoid_Scientist_BodyDefault {}
+
+Actor RTCW_Humanoid_Scientist_Luger : RTCW_MaleSideArm 
+{
+	States
+	{
+		AlertRun_1H:
+			"####" "#" 4
+		AlertRun_1HLoop:
+			RW11 ABCDEFGHIJKLMNABCDEFGHIJKLMN 3
+			Loop
+	}
+}
+
+Actor RTCW_Humanoid_Scientist_LugerFlash : RTCW_GunFlash {}
+
+Actor RTCW_Humanoid_Scientist_Glasses_Drop : RTCW_EnemyScrap { Renderstyle Translucent }
+Actor RTCW_Humanoid_Scientist_Headset_Drop : RTCW_EnemyScrap {}

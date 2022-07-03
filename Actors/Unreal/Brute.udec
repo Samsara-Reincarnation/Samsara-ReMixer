@@ -1,0 +1,684 @@
+Actor Unreal_LesserBrute
+{
+	MONSTER
+	Radius 24
+	Height 58
+	Speed 6
+	Health 90 // was 180
+	+MISSILEMORE
+	+MISSILEEVENMORE
+	+NOINFIGHTING
+	Mass 250
+	SeeSound "Unreal/Brute/Yell1"
+	DeathSound "Unreal/Brute/Death1"
+	ActiveSound "Unreal/Brute/Active2"
+	Scale 0.8
+	States
+	{
+		Spawn:
+			UN00 B 0 A_Jump(95,"IdleLookAround")
+			UN00 B 0 A_Jump(140,"IdleCockGun")		
+			UN00 B 0 A_Jump(13,"IdleSleep")				
+			UN00 BCDEFGHI 6 A_Look
+			Loop
+		IdleLookAround:	
+			UN04 "Z[\]" 2 A_Look
+			UN05 ABCDEFGHIJKL 2 A_Look
+			UN05 MNOPQRS 2 A_Look
+			Goto Spawn
+		IdleCockGun:
+			UN00 "TUVWXYZ[\}" 2 A_Look
+			UN01 ABCDEFGH 2 A_Look
+			Goto Spawn
+		IdleSleep:
+			UN07 U 0 A_Jump(18,"Spawn")		
+			UN07 UVWXYZ 2 A_LookEx(LOF_NOSIGHTCHECK, 0, 0, 2048, 90)
+			Loop
+		See:
+			UN08 K 3 A_Chase
+			UN08 L 3 A_Chase
+			UN08 M 3 A_Chase
+			UN08 N 3 A_Chase
+			UN08 O 3 A_Chase
+			UN08 P 3 A_Chase
+			UN08 Q 3 A_Chase
+			UN08 R 3 A_Chase
+			UN08 S 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)
+			UN08 S 3 A_Chase
+			UN08 T 3 A_Chase
+			UN08 U 3 A_Chase
+			UN08 V 3 A_Chase
+			UN08 W 3 A_Chase
+			UN08 X 3 A_Chase
+			UN08 Y 3 A_Chase
+			UN08 Z 3 A_Chase
+			UN08 "[" 3 A_Chase
+			UN08 "\" 3 A_Chase
+			UN08 "]" 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)
+			UN08 "]" 3 A_Chase
+			UN09 A 3 A_Chase
+			UN09 B 3 A_Chase
+			UN03 C 3 A_Chase
+			UN08 D 3 A_Chase "####" "#" 0 A_Jump(128, "Chase") "####" "#" 0 A_JumpIfTargetInLOS("WalkFire", 180, JLOSF_DEADNOJUMP, 2048)
+			Loop
+		Melee:
+			TNT1 A 0 A_Jump(153, "Punch")
+			Goto PistolWhip
+		PistolWhip:
+			UN06 F 0 A_PlaySound("Unreal/Brute/PistolWhip", CHAN_VOICE)
+			UN06 FGHIJ 2 A_FaceTarget
+			UN06 K 2 A_CustomMeleeAttack(14, "Unreal/Brute/Hit", none, "UnrealDamage", True)
+			UN06 LMNO 2 A_FaceTarget
+			Goto See
+		Punch:
+			UN06 P 0 A_PlaySound("Unreal/Brute/PistolWhip", CHAN_VOICE)
+			UN06 PQRSTUVW 2 A_FaceTarget
+			UN06 X 2 A_CustomMeleeAttack(14, "Unreal/Brute/Hit", none, "UnrealDamage", True)
+			UN06 "YZ[\" 2 A_FaceTarget
+			Goto See
+		Missile:
+			TNT1 A 0 A_PlaySound("Unreal/Brute/Yell2", CHAN_VOICE)	
+			UN03 M 1 A_JumpIfCloser(270, "GutShot")
+			UN03 M 0 A_Jump(77, "WalkFire")
+		T8:	
+			UN07 "[\}" 2 A_FaceTarget
+			UN08 ABCDEFGH 2 A_FaceTarget
+			Goto StillFire
+		StillFire:
+			UN06 "[" 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 A 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 B 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 C 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 D 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 E 2 A_CustomMissile("Unreal_LesserBruteMissile", 34, 10, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 F 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 G 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 H 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 I 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 J 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 K 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 L 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 M 2 A_CustomMissile("Unreal_LesserBruteMissile", 34, -10, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN07 N 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 O 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 P 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 Q 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 R 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 S 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN06 "]" 0 A_Jump(128, "StillFire")
+			Goto See
+		GutShot:
+			UN03 N 1 A_FaceTarget  "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 O 1 A_FaceTarget  "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 P 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Q 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 R 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 S 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 T 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 U 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 V 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 W 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 X 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Y 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Z 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "[" 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "\" 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "]" 1 A_CustomMissile("Unreal_LesserBruteMissile", 32, 12, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 A 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 B 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 C 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 D 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 E 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 F 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 G 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 H 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 I 1 A_CustomMissile("Unreal_LesserBruteMissile", 32, 12, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 J 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 K 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 L 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 M 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 N 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 O 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 P 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 Q 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 R 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 S 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 N 0 A_JumpIfCloser(270, 2)
+			UN03 N 0 A_Jump(128, "StillFire")
+			Goto See
+			UN04 N 0 A_Jump(203, "See")
+			Goto GutShot+18
+		WalkFire:
+			UN09 E 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 F 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 G 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 H 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 I 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 J 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 K 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 L 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 M 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 N 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 O 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_CustomMissile("Unreal_LesserBruteMissile", 34, 10, Random(-3,3))  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 P 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Q 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 R 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 S 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 T 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 U 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 V 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 W 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 X 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Y 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Z 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "[" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "\" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "]" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 A 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 B 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 C 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 D 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 E 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 F 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 G 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 H 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_CustomMissile("Unreal_LesserBruteMissile", 34, -10, Random(-3,3))  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 I 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 J 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 K 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 L 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 M 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 N 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 O 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 P 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 Q 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 R 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 S 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			"####" "#" 0 A_Jump(128, 1)
+			Goto See
+			"####" "#" 0 A_JumpIfCloser(350, "WalkFire")
+			Goto Missile
+		Death:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3", "Death4")
+			Goto Death1
+		Death1:
+			UN01 I 3 A_Scream
+			UN01 J 3 A_NoBlocking
+			UN01 KLMNOP 3
+			UN01 Q 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN01 RSTU 3
+			UN01 U -1
+			Stop			
+		Death2:
+			UN01 V 0 A_JumpIfHealthLower(-20, "Death2FknPwned")
+			UN01 V 3 A_Scream
+			UN01 W 3 A_NoBlocking
+			UN01 "XYZ[\]" 3
+			UN02 A 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN02 BCDEFG 3
+			UN02 G -1
+			Stop
+		Death2FknPwned:
+			UN01 V 3 A_PlaySound("Unreal/Brute/Death2", CHAN_VOICE, 2.0)
+			UN01 W 3 A_NoBlocking
+			UN01 "XYZ[\]" 3
+			UN02 A 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN02 BCDEFG 3
+			UN02 G -1
+			Stop		
+		Death3:
+			UN02 H 3 A_Scream
+			UN02 I 3 A_NoBlocking
+			UN02 JKLM 3
+			UN02 N 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN02 OPQR 3
+			UN02 R -1
+			Stop
+		Death4:
+			UN02 S 3 A_Scream
+			UN02 T 3 A_NoBlocking
+			UN02 "UVWXYZ[\]" 3
+			UN03 ABCDEF 3
+			UN03 G 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN03 HIJKL 3
+			UN03 L -1
+			Stop
+		Death.UnrealDamage:
+		Death.UnrealPlasma:
+		Death.UnrealSludge:
+		Death.ASMDShockTrace:
+		Death.UnrealExplosive:
+		Death.UnrealRazor:
+			TNT1 A 0 A_JumpIfHealthLower(-20, "XDeath")
+			Goto Death			
+		Death.UnrealExtreme:
+		Death.UnrealRedeemer:
+		Death.UnrealShredded:			
+		XDeath:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibBruteHead",0,0,43,random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibBruteHand",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibBruteFoot",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AAAA 0 A_SpawnItemEx("Unreal_GibBrutePiece",random(-1,1),random(-1,1),random(5,22),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibFlesh2",random(-1,1),random(-1,1),random(30,38),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibFlesh1",random(-1,1),random(-1,1),random(8,40),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_BloodSpot",0,0,0,0,0,0,0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_PlaySound("Unreal/EnemyGibbed",CHAN_BODY)
+			TNT1 A 5 A_Fall
+			stop		
+	}
+}
+
+Actor Unreal_GibBruteHead : UnrealGore {}
+Actor Unreal_GibBruteFoot : UnrealGore {}
+Actor Unreal_GibBruteHand : UnrealGore {}
+
+Actor Unreal_BruteBerserk : Boolean { }
+
+Actor Unreal_LesserBruteMissile
+{
+	Projectile
+	Radius 3
+	Height 4
+	Speed 14
+	Damage (7)
+	DeathSound "Unreal/Flak/Explode2"
+	ActiveSound "Unreal/Rocket/Fly"
+	SeeSound "Unreal/Eightball/fire"
+	States
+	{
+		Spawn:
+			UN00 ABCDE 1
+			Goto SpawnLoop
+		SpawnLoop:
+			UN00 FGHIJKLMNOP 3 A_SpawnItemEx("UnrealSmoke", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
+			Loop
+		Death:	
+			TNT1 A 0 A_Explode(7, 50)
+			TNT1 A 0 A_SpawnItemEX("Unreal_SmallExplosion", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
+			TNT1 A 5
+			Stop
+	}
+}	
+
+Actor Unreal_BruteMissile : Unreal_LesserBruteMissile
+{
+	Damage (10)
+	States
+	{
+		Death:	
+			TNT1 A 0 A_Explode(10, 95)
+			TNT1 A 0 A_SpawnItemEX("Unreal_SmallExplosion", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
+			TNT1 A 5
+			Stop
+	}
+}		
+
+Actor Unreal_Brute : Unreal_LesserBrute
+{
+	Health 340
+	Scale 1.0
+	Radius 30
+	Height 64
+	Speed 7	
+	Mass 400
+	DamageFactor "UnrealExplosive", 0.7
+	RadiusDamageFactor 0.7
+	States
+	{
+		PistolWhip:
+			UN06 F 0 A_PlaySound("Unreal/Brute/PistolWhip", CHAN_VOICE)
+			UN06 FGHIJ 2 A_FaceTarget
+			UN06 K 2 A_CustomMeleeAttack(20, "Unreal/Brute/Hit", none, "UnrealDamage", True)
+			UN06 LMNO 2 A_FaceTarget
+			Goto See
+		Punch:
+			UN06 P 0 A_PlaySound("Unreal/Brute/PistolWhip", CHAN_VOICE)
+			UN06 PQRSTUVW 2 A_FaceTarget
+			UN06 X 2 A_CustomMeleeAttack(20, "Unreal/Brute/Hit", none, "UnrealDamage", True)
+			UN06 "YZ[\" 2 A_FaceTarget
+			Goto See	
+		StillFire:
+			UN06 "[" 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 A 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 B 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 C 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 D 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 E 2 A_CustomMissile("Unreal_BruteMissile", 36, 12, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 F 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 G 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 H 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 I 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 J 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 K 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 L 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 M 2 A_CustomMissile("Unreal_BruteMissile", 36, -12, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN07 N 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 O 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 P 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 Q 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 R 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 S 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN06 "]" 0 A_Jump(128, "StillFire")
+			Goto See
+		GutShot:
+			UN03 N 1 A_FaceTarget  "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 O 1 A_FaceTarget  "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 P 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Q 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 R 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 S 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 T 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 U 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 V 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 W 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 X 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Y 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Z 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "[" 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "\" 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "]" 1 A_CustomMissile("Unreal_BruteMissile", 34, 14, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 A 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 B 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 C 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 D 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 E 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 F 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 G 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 H 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 I 1 A_CustomMissile("Unreal_BruteMissile", 34, 14, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 J 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 K 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 L 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 M 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 N 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 O 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 P 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 Q 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 R 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 S 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 N 0 A_JumpIfCloser(270, 2)
+			UN03 N 0 A_Jump(128, "StillFire")
+			Goto See
+			UN04 N 0 A_Jump(128, "GutShot")
+			Goto See
+		WalkFire:
+			UN09 E 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 F 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 G 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 H 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 I 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 J 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 K 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 L 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 M 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 N 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 O 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_CustomMissile("Unreal_BruteMissile", 36, 12, Random(-3,3))  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 P 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Q 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 R 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 S 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 T 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 U 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 V 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 W 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 X 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Y 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Z 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "[" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "\" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "]" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 A 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 B 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 C 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 D 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 E 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 F 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 G 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 H 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_CustomMissile("Unreal_BruteMissile", 36, -12, Random(-3,3))  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 I 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 J 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 K 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 L 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 M 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 N 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 O 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 P 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 Q 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 R 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 S 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			"####" "#" 0 A_Jump(128, 1)
+			Goto See
+			"####" "#" 0 A_JumpIfCloser(350, "WalkFire")
+			Goto Missile			
+		Death.UnrealDamage:
+		Death.UnrealPlasma:
+		Death.UnrealSludge:
+		Death.ASMDShockTrace:
+		Death.UnrealExplosive:
+		Death.UnrealRazor:
+			TNT1 A 0 A_JumpIfHealthLower(-20, "XDeath")
+			Goto Death			
+		Death.UnrealExtreme:
+		Death.UnrealRedeemer:
+		Death.UnrealShredded:			
+		XDeath:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibBruteHead",0,0,43,random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibBruteHand",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibBruteFoot",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AAAA 0 A_SpawnItemEx("Unreal_GibBrutePiece",random(-1,1),random(-1,1),random(5,22),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibFlesh2",random(-1,1),random(-1,1),random(30,38),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibFlesh1",random(-1,1),random(-1,1),random(8,40),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_BloodSpot",0,0,0,0,0,0,0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_PlaySound("Unreal/EnemyGibbed",CHAN_BODY)
+			TNT1 A 5 A_Fall
+			stop				
+	}
+}	
+
+Actor Unreal_Behemoth : Unreal_LesserBrute
+{
+	Health 500
+	Scale 1.3
+	Radius 64
+	Height 68
+	Speed 7	
+	Mass 500
+	DamageFactor "UnrealExplosive", 0.7
+	RadiusDamageFactor 0.7
+	States
+	{
+		PistolWhip:
+			UN06 F 0 A_PlaySound("Unreal/Brute/PistolWhip", CHAN_VOICE)
+			UN06 FGHIJ 2 A_FaceTarget
+			UN06 K 2 A_CustomMeleeAttack(30, "Unreal/Brute/Hit", none, "UnrealDamage", True)
+			UN06 LMNO 2 A_FaceTarget
+			Goto See
+		Punch:
+			UN06 P 0 A_PlaySound("Unreal/Brute/PistolWhip", CHAN_VOICE)
+			UN06 PQRSTUVW 2 A_FaceTarget
+			UN06 X 2 A_CustomMeleeAttack(30, "Unreal/Brute/Hit", none, "UnrealDamage", True)
+			UN06 "YZ[\" 2 A_FaceTarget
+			Goto See		
+		StillFire:
+			UN06 "[" 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 A 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 B 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 C 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 D 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 E 2 A_CustomMissile("Unreal_BruteMissile", 42, 13, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 F 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 G 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 H 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 I 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 J 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 K 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 L 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 M 2 A_CustomMissile("Unreal_BruteMissile", 42, -13, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN07 N 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 O 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 P 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 Q 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 R 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN07 S 2 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee") "####" "#" 0 A_JumpIfCloser(270, "GutShot")
+			UN06 "]" 0 A_Jump(128, "StillFire")
+			Goto See
+		GutShot:
+			UN03 N 1 A_FaceTarget  "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 O 1 A_FaceTarget  "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 P 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Q 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 R 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 S 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 T 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 U 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 V 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 W 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 X 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Y 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 Z 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "[" 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "\" 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 "]" 1 A_CustomMissile("Unreal_BruteMissile", 40, 16, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 A 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 B 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 C 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 D 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 E 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 F 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 G 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 H 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 I 1 A_CustomMissile("Unreal_BruteMissile", 40, 16, Random(-7,7)) "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 J 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 K 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 L 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 M 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 N 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 O 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 P 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 Q 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 R 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN04 S 1 A_FaceTarget "####" "#" 0 A_JumpIfTargetInsideMeleeRange("Melee")
+			UN03 N 0 A_JumpIfCloser(270, 2)
+			UN03 N 0 A_Jump(128, "StillFire")
+			Goto See
+			UN04 N 0 A_Jump(128, "GutShot")
+			Goto See
+		WalkFire:
+			UN09 E 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 F 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 G 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 H 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 I 2 A_Recoil(-1.0) TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 J 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 K 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 L 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 M 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 N 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 O 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_CustomMissile("Unreal_BruteMissile", 42, 13, Random(-3,3))  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 P 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Q 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 R 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 S 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 T 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 U 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 V 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 W 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 X 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Y 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 Z 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "[" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "\" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN09 "]" 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 A 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 B 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 C 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 D 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 E 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 F 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 G 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 H 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_CustomMissile("Unreal_BruteMissile", 42, -13, Random(-3,3))  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 I 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 J 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 K 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 L 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 M 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 N 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget TNT1 A 0 A_PlaySound("Unreal/Brute/Step", CHAN_BODY)  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 O 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 P 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 Q 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 R 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			UN10 S 2 A_Recoil(-1.0)  TNT1 A 0 A_FaceTarget  TNT1 A 0 A_JumpIfTargetInsideMeleeRange("Melee") TNT1 A 0 A_JumpIfCloser(270, "GutShot")
+			"####" "#" 0 A_Jump(128, 1)
+			Goto See
+			"####" "#" 0 A_JumpIfCloser(350, "WalkFire")
+			Goto Missile			
+		Death1:
+			UN01 I 3 A_Scream
+			UN01 J 3 A_NoBlocking
+			UN01 KLMNOP 3
+			UN01 Q 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN01 RSTU 3
+			UN01 U -1 A_KillMaster
+			Stop			
+		Death2:
+			UN01 V 0 A_JumpIfHealthLower(-20, "Death2FknPwned")
+			UN01 V 3 A_Scream
+			UN01 W 3 A_NoBlocking
+			UN01 "XYZ[\]" 3
+			UN02 A 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN02 BCDEFG 3
+			UN02 G -1 A_KillMaster
+			Stop
+		Death2FknPwned:
+			UN01 V 3 A_PlaySound("Unreal/Brute/Death2", CHAN_VOICE, 2.0)
+			UN01 W 3 A_NoBlocking
+			UN01 "XYZ[\]" 3
+			UN02 A 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN02 BCDEF 3
+			UN02 G -1 A_KillMaster
+			Stop		
+		Death3:
+			UN02 H 3 A_Scream
+			UN02 I 3 A_NoBlocking
+			UN02 JKLM 3
+			UN02 N 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN02 OPQR 3
+			UN02 R -1 A_KillMaster
+			Stop
+		Death4:
+			UN02 S 3 A_Scream
+			UN02 T 3 A_NoBlocking
+			UN02 "UVWXYZ[\]" 3
+			UN03 ABCDEF 3
+			UN03 G 3 A_PlaySound("Unreal/Player/Land", CHAN_BODY)
+			UN03 HIJKL 3
+			UN03 L -1 A_KillMaster
+			Stop			
+		Death.UnrealDamage:
+		Death.UnrealPlasma:
+		Death.UnrealSludge:
+		Death.ASMDShockTrace:
+		Death.UnrealExplosive:
+		Death.UnrealRazor:
+			TNT1 A 0 A_JumpIfHealthLower(-20, "XDeath")
+			Goto Death			
+		Death.UnrealExtreme:
+		Death.UnrealRedeemer:
+		Death.UnrealShredded:			
+		XDeath:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibBruteHead",0,0,43,random(-2,4),random(-2,4),random(2,4),0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibBruteHand",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_GibBruteFoot",random(-1,1),random(-1,1),random(28,35),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AAAA 0 A_SpawnItemEx("Unreal_GibBrutePiece",random(-1,1),random(-1,1),random(5,22),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibFlesh2",random(-1,1),random(-1,1),random(30,38),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 AA 0 A_SpawnItemEx("Unreal_GibFlesh1",random(-1,1),random(-1,1),random(8,40),random(-3,3),random(-3,3),random(0,7),Random(1,360),SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_SpawnItemEx("Unreal_BloodSpot",0,0,0,0,0,0,0,SXF_CLIENTSIDE|SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+			TNT1 A 0 A_PlaySound("Unreal/EnemyGibbed",CHAN_BODY)
+			TNT1 A 0 A_KillMaster
+			TNT1 A 5 A_Fall
+			stop				
+	}
+}	

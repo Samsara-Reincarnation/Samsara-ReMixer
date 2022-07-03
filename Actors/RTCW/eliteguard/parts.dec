@@ -1,0 +1,877 @@
+Actor RTCW_Humanoid_EliteGuard_Body1 : RTCWPart
+{
+	Height 56
+	Radius 20
+	+NOINTERACTION
+	+THRUACTORS
+	States
+	{
+		Spawn:
+			RW5C A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW5C A 0 A_SetScale(0.001)
+			RW5C A 1
+			RW5C A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW5C A 0 A_SetScale(1.0)
+		SpawnLoop:
+			RW5C A 1
+			Loop
+		Relax_1H:
+			"####" "#" 4
+		Relax_1HLoop:
+			RW5C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW5D "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW5E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW5F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW60 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW61 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW62 ABCDEFGHIJKLMNOPQRST 3
+			Loop
+		Relax_2H:
+			"####" "#" 4
+		Relax_2HLoop:
+			RW57 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW58 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW59 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW5A "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW5B ABCDE 3
+			Loop
+		Query_1H:
+			"####" "#" 4
+		Query_1HLoop:
+			RW47 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW48 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW49 ABCDEFGHI 3
+			Loop
+		Query_2H:
+			"####" "#" 4
+		Query_2HLoop:
+			RW4A "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW4B ABCDEFGHIJKLMNOPQRSTU 3
+			Loop
+		Query_Rifle:
+			"####" "#" 4
+		Query_RifleLoop:
+			RW4C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW4D ABCDEFGHIJKLMNOPQRSTUVW 3
+			Loop
+		RelaxToAlert_1H:
+			"####" "#" 4
+		RelaxToAlert_1HLoop:
+			RW52 ABCDEFGHIJKLMNO 3
+			Loop
+		RelaxToAlert_2H:
+			"####" "#" 4
+		RelaxToAlert_2HLoop:
+			RW53 ABCDEFGHIJK 3
+			Loop
+		AlertIdle_1H:
+			"####" "#" 4
+		AlertIdle_1HLoop:
+			RW06 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW07 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW08 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW09 ABCD 3
+			Loop
+		AlertIdle_1H_TurnL:
+			"####" "#" 4
+		AlertIdle_1H_TurnLLoop:
+			RW0A ABCDEFG 3
+			Loop
+		AlertIdle_1H_TurnR:
+			"####" "#" 4
+		AlertIdle_1H_TurnRLoop:
+			RW0B ABCDE 3
+			Loop
+		AlertIdle_2H:
+			"####" "#" 4
+		AlertIdle_2HLoop:
+			RW0C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW0D "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW0E ABC 3
+			Loop
+		AlertWalk_1H:
+			"####" "#" 4
+		AlertWalk_1HLoop:
+			RW17 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW18 ABCDEFG 3
+			Loop
+		AlertWalk_2H:
+			"####" "#" 4
+		AlertWalk_2HLoop:
+			RW19 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW1A ABCDEFGHIJ 3
+			Loop
+		AlertRun_1H:
+			"####" "#" 4
+		AlertRun_1HLoop:
+			RW0F ABCDEFABCDEF 3
+			Loop
+		AlertRun_2H:
+			"####" "#" 4
+		AlertRun_2HLoop:
+			RW10 ABCDEFABCDEF 3
+			Loop
+		StandPistol:
+			"####" "#" 4
+		StandPistolLoop:
+			RW6B ABCDEFGHIJKLMNOPQRS 3
+			Loop
+		StandMachineGun:
+			"####" "#" 4
+		StandMachineGunLoop:
+			RW6A ABCDEFGHIJKLMNOPQRSTUV 3
+			Loop
+		StandRifle:
+			"####" "#" 4
+		StandRifleLoop:
+			RW6C ABCDEFGH 3
+			Loop
+		StandBazooka:
+			"####" "#" 4
+		StandBazookaLoop:
+			RW69 ABCDEFGHIJKLMN 3
+			Loop
+		AlertCrouch_1H:
+			"####" "#" 4
+		AlertCrouch_1HLoop:
+			RW03 ABCDEFGHIJK 3
+			Loop
+		AlertCrouch_2H:
+			"####" "#" 4
+		AlertCrouch_2HLoop:
+			RW04 ABCDEFGHIJK 3
+			Loop
+		AlertCrouchBack_1H:
+			"####" "#" 4
+		AlertCrouchBack_1HLoop:
+			RW01 ABCDEFGHIJ 3
+			Loop
+		AlertCrouchBack_2H:
+			"####" "#" 4
+		AlertCrouchBack_2HLoop:
+			RW02 ABCDEFGHIJK 3
+			Loop
+		AlertBack_1H:
+			"####" "#" 4
+		AlertBack_1HLoop:
+			RW00 ABCDEF 3
+			Loop
+		AlertStrafeLeft_1H:
+			"####" "#" 4
+		AlertStrafeLeft_1HLoop:
+			RW11 ABCD 3
+			Loop
+		AlertStrafeRight_1H:
+			"####" "#" 4
+		AlertStrafeRight_1HLoop:
+			RW12 ABCD 3
+			Loop
+		AlertStrafeLeft_2H:
+			"####" "#" 4
+		AlertStrafeLeft_2HLoop:
+			RW13 ABCD 3
+			Loop
+		AlertStrafeRight_2H:
+			"####" "#" 4
+		AlertStrafeRight_2HLoop:
+			RW14 ABCD 3
+			Loop
+		FirePistol1:
+			"####" "#" 4
+		FirePistol1Loop:
+			RW34 ABCDEFGH 2
+			Loop
+		FireMachineGun:
+			"####" "#" 4
+		FireMachineGunLoop:
+			RW33 ABCDEFGHIJKLMNOPQRSTUV 2
+			Loop
+		FireRifle:
+			"####" "#" 4
+		FireRifleLoop:
+			RW35 ABCDEFGHIJKLMNO 3
+			Loop
+		FireBazooka:
+			"####" "#" 4
+		FireBazookaLoop:
+			RW31 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW32 ABCDEFGHIJK 2
+			RW32 K 2
+			Loop
+		FireRun_1H:
+			"####" "#" 4
+		FireRun_1HLoop:
+			RW0F ABCDEF 3
+			Loop
+		FireRun_2H:
+			"####" "#" 4
+		FireRun_2HLoop:
+			RW10 ABCDEFGHI 2
+			Loop
+		FireCrouch_1H:
+			"####" "#" 4
+		FireCrouch_1HLoop:
+			RW03 ABCDEFGHIJK 2
+			Loop
+		FireCrouch_2H:
+			"####" "#" 4
+		FireCrouch_2HLoop:
+			RW04 ABCDEFGHIJK 2
+			Loop
+		FireCrouchBack_1H:
+			"####" "#" 4
+		FireCrouchBack_1HLoop:
+			RW01 ABCDEFGHIJ 2
+			Loop
+		FireCrouchBack_2H:
+			"####" "#" 4
+		FireCrouchBack_2HLoop:
+			RW02 ABCDEFGHIJK 2
+			Loop
+		FireBack_1H:
+			"####" "#" 4
+		FireBack_1HLoop:
+			RW00 ABCDEF 2
+			Loop
+		FireStrafeL_1H:
+			"####" "#" 4
+		FireStrafeL_1HLoop:
+			RW11 ABCD 2
+			Loop
+		FireStrafeL_2H:
+			"####" "#" 4
+		FireStrafeL_2HLoop:
+			RW13 ABCD 2
+			Loop
+		FireStrafeR_1H:
+			"####" "#" 4
+		FireStrafeR_1HLoop:
+			RW12 ABCD 2
+			Loop
+		FireStrafeR_2H:
+			"####" "#" 4
+		FireStrafeR_2HLoop:
+			RW14 ABCD 2
+			Loop
+		ReloadPistol:
+			"####" "#" 4
+		ReloadPistolLoop:
+			RW65 ABCDEFGHIJKLMNOPQRS 3
+			Loop
+		ReloadMachineGun:
+			"####" "#" 4
+		ReloadMachineGunLoop:
+			RW64 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			Loop
+		ReloadRifle:
+			"####" "#" 4
+		ReloadRifleLoop:
+			RW67 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\" 3
+			Loop
+		ReloadPistolCrouch:
+			"####" "#" 4
+		ReloadPistolCrouchLoop:
+			RW65 ABCDEFGHIJKLMNOPQRSTUVWX 3
+			Loop
+		ReloadMachineGunCrouch:
+			"####" "#" 4
+		ReloadMachineGunCrouchLoop:
+			RW63 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\" 3
+			Loop
+		PainChest:
+			"####" "#" 4
+		PainChestLoop:
+			RW37 ABCDEFGHIJKLMN 2
+			Loop
+		PainDaze:
+			"####" "#" 4
+		PainDazeLoop:
+			RW3B "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW3C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW3D ABC 2
+			Loop
+		RaisePistol:
+			"####" "#" 4
+		RaisePistolLoop:
+			RW6B ABCDEFGH 3
+			Loop
+		RaiseMachineGun:
+			"####" "#" 4
+		RaiseMachineGunLoop:
+			RW6A ABCDEFGHI 3
+			Loop
+		RaiseBazooka:
+			"####" "#" 4
+		RaiseBazookaLoop:
+			RW69 ABCDEFGHIJKLMNOPQRSTUVWX 3
+			Loop
+		Roll:
+			RW68 ABCDEFGHIJKLMNOPQR 3
+			Loop
+		CartWheelL:
+			RW1C ABCDEFGHIJKLMNO 3
+			Loop
+		CartWheelR:
+			RW1D ABCDEFGHIJKLMNO 3
+			Loop
+		PainFire:
+			"####" "#" 4
+		PainFireLoop:
+			RW3E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW3F A 2
+			Loop
+		PainGroin:
+			"####" "#" 4
+		PainGroinLoop:
+			RW40 ABCDEFGHIJKLMNOP 2
+			Loop
+		PainGut:
+			"####" "#" 4
+		PainGutLoop:
+			RW41 ABCDEFGHIJKLMN 2
+			Loop
+		PainHead:
+			"####" "#" 4
+		PainHeadLoop:
+			RW42 ABCDEFGHIJKLMNOPQR 2
+			Loop
+		PainKneeL:
+			"####" "#" 4
+		PainKneeLLoop:
+			RW43 ABCDEFGHIJKLM 2
+			Loop
+		PainKneeR:
+			"####" "#" 4
+		PainKneeRLoop:
+			RW44 ABCDEFGHIJKLMN 2
+			Loop
+		PainShoulderL:
+			"####" "#" 4
+		PainShoulderLLoop:
+			RW45 ABCDEFGHIJKLMNOPQRSTU 2
+			Loop
+		PainShoulderR:
+			"####" "#" 4
+		PainShoulderRLoop:
+			RW46 ABCDEFGHIJKLMNOPQRSTU 2
+			Loop
+		Death_Flame:
+			"####" "#" 4
+		Death_FlameLoop:
+			RW1E "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW1F "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 3
+			RW1F "[" -1
+			Stop
+		Death_Forward:
+			"####" "#" 4
+		Death_ForwardLoop:
+			RW29 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW2A ABCDEFGHIJK 3
+			RW2A L -1
+			Stop
+		Death_Gut:
+			"####" "#" 4
+		Death_GutLoop:
+			RW20 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW21 A 3
+			RW21 B -1
+			Stop
+		Death_Knife1:
+			"####" "#" 4
+		Death_Knife1Loop:
+			RW22 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW23 ABCDEFGHIJKLMNOP 3
+			RW23 Q -1
+			Stop
+		Death_Knife2:
+			"####" "#" 4
+		Death_Knife2Loop:
+			RW24 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW25 ABCDEF 3
+			RW25 G -1
+			Stop
+		Death_Machinegun1:
+			"####" "#" 4
+		Death_Machinegun1Loop:
+			RW26 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW27 A -1
+			Stop
+		Death_Machinegun2:
+			"####" "#" 4
+		Death_Machinegun2Loop:
+			RW28 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[" 3
+			RW28 "\" -1
+			Stop
+		Death_RifleHead1:
+			"####" "#" 4
+		Death_RifleHead1Loop:
+			RW29 ABCDEFGHIJKLM 3
+			RW29 N -1
+			Stop
+		Death_RifleHead2:
+			"####" "#" 4
+		Death_RifleHead2Loop:
+			RW2A "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW2B ABCDE 3
+			RW2B F -1
+			Stop
+		Death_RifleTorso2:
+			"####" "#" 4
+		Death_RifleTorso2Loop:
+			RW2C "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW2D ABCDEFGHIJKLMNOPQRS 3
+			RW2D T -1
+			Stop
+		Death_Tesla2:
+			"####" "#" 4
+		Death_Tesla2Loop:
+			RW2F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			RW30 ABCDEFGHIJ 3
+			RW30 K -1
+			Stop
+	}
+}
+
+Actor RTCW_Humanoid_EliteGuard_Body2 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_Body3 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_BodyCastle1 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_BodyCastle2 : RTCW_Humanoid_EliteGuard_Body1 {}
+
+Actor RTCW_Humanoid_EliteGuard_Head1 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_Head2 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_Head3 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_Head4 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_Head5 : RTCW_Humanoid_EliteGuard_Body1 {}
+
+Actor RTCW_Humanoid_EliteGuard_HeadCastle1 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_HeadCastle3 : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_EliteGuard_HeadCastle4 : RTCW_Humanoid_EliteGuard_Body1 {}
+
+Actor RTCW_Humanoid_EliteGuard_Blink1 : RTCW_Humanoid_EliteGuard_Body1 
+{
+	Renderstyle Translucent
+	States
+	{
+		Spawn:
+			RW5C A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",33)
+			Goto Super::Spawn
+	}
+}
+
+Actor RTCW_Humanoid_EliteGuard_Blink2 : RTCW_Humanoid_EliteGuard_Blink1 {}
+Actor RTCW_Humanoid_EliteGuard_Blink3 : RTCW_Humanoid_EliteGuard_Blink1 {}
+Actor RTCW_Humanoid_EliteGuard_Blink4 : RTCW_Humanoid_EliteGuard_Blink1 {}
+Actor RTCW_Humanoid_EliteGuard_Blink5 : RTCW_Humanoid_EliteGuard_Blink1 {}
+
+Actor RTCW_Humanoid_EliteGuard_Hair1 : RTCW_Humanoid_EliteGuard_Body1 { Renderstyle Translucent }
+Actor RTCW_Humanoid_EliteGuard_Hair2 : RTCW_Humanoid_EliteGuard_Body1 { Renderstyle Translucent }
+
+Actor RTCW_EliteGuardSideArm : RTCW_Humanoid_EliteGuard_Body1
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			TNT1 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			TNT1 A 0 A_GiveInventory("RTCW_PartIsGun",1)
+			TNT1 A 1
+			Loop
+		Relax_1H:
+			TNT1 A 1
+			Loop
+		Death_Gut:
+			TNT1 A 1
+			Loop
+		Death_Knife1:
+			TNT1 A 1
+			Loop
+		Death_Knife2:
+			TNT1 A 1
+			Loop
+		Death_MachineGun1:
+			TNT1 A 1
+			Loop
+		Death_MachineGun2:
+			TNT1 A 1
+			Loop
+		Death_RifleHead1:
+			TNT1 A 1
+			Loop
+		Death_RifleHead2:
+			TNT1 A 1
+			Loop
+		Death_RifleTorso2:
+			TNT1 A 1
+			Loop
+		Death_Tesla2:
+			TNT1 A 1
+			Loop
+		Death_Flame:
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 3
+			TNT1 "[" -1
+			Stop
+	}
+}
+
+Actor RTCW_EliteGuardMainArm : RTCW_Humanoid_EliteGuard_Body1
+{
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			TNT1 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			TNT1 A 0 A_GiveInventory("RTCW_PartIsGun",1)
+			TNT1 A 1
+			Loop
+		Death_Gut:
+			TNT1 A 1
+			Loop
+		Death_Knife1:
+			TNT1 A 1
+			Loop
+		Death_Knife2:
+			TNT1 A 1
+			Loop
+		Death_MachineGun1:
+			TNT1 A 1
+			Loop
+		Death_MachineGun2:
+			TNT1 A 1
+			Loop
+		Death_RifleHead1:
+			TNT1 A 1
+			Loop
+		Death_RifleHead2:
+			TNT1 A 1
+			Loop
+		Death_RifleTorso2:
+			TNT1 A 1
+			Loop
+		Death_Tesla2:
+			TNT1 A 1
+			Loop
+		Death_Flame:
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 3
+			TNT1 "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 3
+			TNT1 "[" -1
+			Stop
+	}
+}
+
+Actor RTCW_EliteGuard_Hat : RTCW_Humanoid_EliteGuard_Body1
+{
+	States
+	{
+		Spawn:
+			RW5C A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW5C A 0 A_GiveInventory("RTCW_IsHat",1)
+			RW5C A 0 A_SetScale(0.001)
+			RW5C A 1
+			RW5C A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW5C A 0 A_SetScale(1.0)
+		SpawnLoop:
+			RW5C A 1
+			Loop
+	}
+}
+
+Actor RTCW_EliteGuard_GunFlash : RTCW_InfantrySSBody
+{
+	Renderstyle Translucent
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			TNT1 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			TNT1 A 0 A_GiveInventory("RTCW_PartIsGun",1)
+			TNT1 A 1
+			Loop
+		SpawnLoop:
+		Relax_1H:
+		Relax_2H:
+		Query_1H:
+		Query_2H:
+		Query_Rifle:
+		RelaxToAlert_1H:
+		RelaxToAlert_2H:
+		AlertIdle_1H:
+		AlertIdle_1H_TurnL:
+		AlertIdle_1H_TurnR:
+		AlertIdle_2H:
+		AlertIdle_2H_TurnL:
+		AlertIdle_2H_TurnR:
+		AlertWalk_1H:
+		AlertWalk_2H:
+		AlertRun_1H:
+		AlertRun_2H:
+		StandPistol:
+		StandMachineGun:
+		StandRifle:
+		AlertCrouch_1H:
+		AlertCrouch_2H:
+		AlertCrouchIdle_1H:
+		AlertCrouchIdle_2H:
+		AlertCrouchBack_1H:
+		AlertCrouchBack_2H:
+		AlertBack_1H:
+		AlertBack_2H:
+		AlertStrafeLeft_1H:
+		AlertStrafeRight_1H:
+		AlertStrafeLeft_2H:
+		AlertStrafeRight_2H:
+		Kick:
+		ReloadPistol:
+		ReloadMachineGun:
+		ReloadPistolCrouch:
+		ReloadMachineGunCrouch:
+		ReloadRifle:
+		RaisePistol:
+		RaiseMachineGun:
+		RaiseBazooka:
+		Frightened:
+		Roll:
+		CartWheelL:
+		CartWheelR:
+		PainChest:
+		PainDaze:
+		PainFire:
+		PainGroin:
+		PainGut:
+		PainHead:
+		PainKneeL:
+		PainKneeR:
+		PainShoulderL:
+		PainShoulderR:
+		PainTesla1:
+		PainTesla2:
+		Death_Forward:
+		Death_Gut:
+		Death_Knife1:
+		Death_Knife2:
+		Death_MachineGun1:
+		Death_MachineGun2:
+		Death_RifleHead1:
+		Death_RifleHead2:
+		Death_RifleTorso1:
+		Death_RifleTorso2:
+		Death_Tesla1:
+		Death_Tesla2:
+		Death_Flame:
+			TNT1 A 1
+			Loop
+		FirePistol1:
+			"####" "#" 4
+		FirePistol1Loop:
+			RW34 A 2 Bright
+			TNT1 BCDEFGH 2
+			Loop
+		FireMachineGun:
+			"####" "#" 4
+		FireMachineGunLoop:
+			RW33 A 2 Bright
+			TNT1 A 2
+			RW33 C 2 Bright
+			TNT1 A 2
+			RW33 E 2 Bright
+			TNT1 A 2
+			RW33 G 2 Bright
+			TNT1 A 2
+			RW33 I 2 Bright
+			TNT1 A 2
+			RW33 K 2 Bright
+			TNT1 A 2
+			RW33 L 2 Bright
+			TNT1 A 2
+			RW33 M 2 Bright
+			TNT1 A 2
+			RW33 N 2 Bright
+			TNT1 A 2
+			RW33 O 2 Bright
+			TNT1 A 2
+			RW33 P 2 Bright
+			TNT1 A 2
+			RW33 Q 2 Bright
+			TNT1 A 2
+			RW33 R 2 Bright
+			TNT1 A 2
+			RW33 S 2 Bright
+			TNT1 A 2
+			RW33 T 2 Bright
+			TNT1 A 2
+			RW33 U 2 Bright
+			TNT1 A 2
+			RW33 V 2 Bright
+			TNT1 A 2
+			Loop
+		FireRifle:
+			"####" "#" 4
+		FireRifleLoop:
+			RW35 A 3 Bright
+			TNT1 BCDEFGHIJKLMNO 3
+			Loop
+		FireBazooka:
+			"####" "#" 4
+		FireBazookaLoop:
+			RW31 A 2 Bright
+			TNT1 "BCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			TNT1 ABCDEFGHIJK 2
+			TNT1 K 2
+			Loop
+		FireRun_1H:
+			"####" "#" 4
+		FireRun_1HLoop:
+			RW0F A 3 Bright
+			TNT1 BCDEF 3
+			Loop
+		FireRun_2H:
+			"####" "#" 4
+		FireRun_2HLoop:
+			RW10 A 2 Bright
+			TNT1 A 2
+			RW10 C 2 Bright
+			TNT1 A 2
+			RW10 E 2 Bright
+			TNT1 A 2
+			RW10 G 2 Bright
+			TNT1 A 2
+			RW10 I 2 Bright
+			TNT1 A 2
+			Loop
+		FireCrouch_1H:
+			"####" "#" 4
+		FireCrouch_1HLoop:
+			RW03 A 2 Bright
+			TNT1 BCDEFGHIJK 2
+			Loop
+		FireCrouch_2H:
+			"####" "#" 4
+		FireCrouch_2HLoop:
+			RW04 A 2 Bright
+			TNT1 A 2
+			RW04 C 2 Bright
+			TNT1 A 2
+			RW04 E 2 Bright
+			TNT1 A 2
+			RW04 G 2 Bright
+			TNT1 A 2
+			RW04 I 2 Bright
+			TNT1 A 2
+			Loop
+		FireCrouchBack_1H:
+			"####" "#" 4
+		FireCrouchBack_1HLoop:
+			RW01 A 2 Bright
+			TNT1 BCDEFGHIJ 2
+			Loop
+		FireCrouchBack_2H:
+			"####" "#" 4
+		FireCrouchBack_2HLoop:
+			RW02 A 2 Bright
+			TNT1 A 2
+			RW02 C 2 Bright
+			TNT1 A 2
+			RW02 E 2 Bright
+			TNT1 A 2
+			RW02 G 2 Bright
+			TNT1 A 2
+			RW02 I 2 Bright
+			TNT1 A 2
+			RW02 K 2 Bright
+			TNT1 A 2
+			Loop
+		FireBack_1H:
+			"####" "#" 4
+		FireBack_1HLoop:
+			RW00 A 2 Bright
+			TNT1 BCDEF 2
+			Loop
+		FireStrafeL_1H:
+			"####" "#" 4
+		FireStrafeL_1HLoop:
+			RW11 A 2 Bright
+			TNT1 BCD 2
+			Loop
+		FireStrafeL_2H:
+			"####" "#" 4
+		FireStrafeL_2HLoop:
+			RW13 A 2 Bright
+			TNT1 A 2
+			RW13 C 2 Bright
+			TNT1 A 2
+			Loop
+		FireStrafeR_1H:
+			"####" "#" 4
+		FireStrafeR_1HLoop:
+			RW12 A 2 Bright
+			TNT1 BCD 2
+			Loop
+		FireStrafeR_2H:
+			"####" "#" 4
+		FireStrafeR_2HLoop:
+			RW14 A 2 Bright
+			TNT1 A 2
+			RW14 C 2 Bright
+			TNT1 A 2
+			Loop
+	}
+}
+
+Actor RTCW_Humanoid_EliteGuard_Sten : RTCW_EliteGuardMainArm {}
+Actor RTCW_Humanoid_EliteGuard_Mauser : RTCW_EliteGuardMainArm {}
+Actor RTCW_Humanoid_EliteGuard_MauserFlash : RTCW_EliteGuard_GunFlash {}
+Actor RTCW_Humanoid_EliteGuard_LugerSilenced : RTCW_EliteGuardSideArm {}
+Actor RTCW_Humanoid_EliteGuard_Panzerfaust : RTCW_EliteGuardMainArm 
+{
+	States
+	{
+		Spawn:
+			RW5C A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW5C A 0 A_SetScale(0.001)
+			RW5C A 1
+			RW5C A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW5C A 0 A_SetScale(1.0)
+			TNT1 A 0 A_GiveInventory("RTCW_IsPanzerfaust",1)
+			Goto SpawnLoop
+		FireBazooka:
+			"####" "#" 4
+		FireBazookaLoop:
+			RW31 A 2 Bright
+			TNT1 "BCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			TNT1 ABCDEFGHIJK 2
+			TNT1 K 2
+			Loop
+	}
+}
+Actor RTCW_Humanoid_EliteGuard_PanzerfaustFlash : RTCW_EliteGuard_GunFlash
+{
+	States
+	{
+		Spawn:
+			RW5C A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW5C A 0 A_SetScale(0.001)
+			RW5C A 1
+			RW5C A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW5C A 0 A_SetScale(1.0)
+			TNT1 A 0 A_GiveInventory("RTCW_IsPanzerfaust",1)
+			Goto SpawnLoop
+	}
+}
+
+Actor RTCW_Humanoid_EliteGuard_Beret : RTCW_EliteGuard_Hat {}
+//Was transparent on the lenses, but looks really bad if they blink cuz of z buffer
+Actor RTCW_Humanoid_EliteGuard_Glasses : RTCW_EliteGuard_Hat {}
+
+Actor RTCW_Humanoid_EliteGuard_Beret_Drop : RTCW_EnemyScrap {}
+Actor RTCW_Humanoid_EliteGuard_Glasses_Drop : RTCW_EnemyScrap { Renderstyle Translucent }
+
+Actor RTCW_Humanoid_Helga_Body : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_Helga_Head : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_Helga_Blink : RTCW_Humanoid_EliteGuard_Blink1 {}
+
+Actor RTCW_Humanoid_Priestess_Body : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_Priestess_Head : RTCW_Humanoid_EliteGuard_Body1 {}
+Actor RTCW_Humanoid_Priestess_Blink : RTCW_Humanoid_EliteGuard_Blink1 {}
+
+Actor RTCW_Humanoid_Priestess_FG42 : RTCW_EliteGuardMainArm {}
+Actor RTCW_Humanoid_Priestess_FG42Flash : RTCW_EliteGuard_GunFlash {}

@@ -1,0 +1,989 @@
+Actor RTCWBroadCast_AlertBack_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,1)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertBack_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,2)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertCrouchBack_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,3)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertCrouchBack_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,4)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertCrouch_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,5)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertCrouch_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,6)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertCrouchIdle_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,7)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertCrouchIdle_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,8)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertIdle_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,9)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertIdle_1H_TurnL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,10)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertIdle_1H_TurnR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,11)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertIdle_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,12)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertIdle_2H_TurnL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,13)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertIdle_2H_TurnR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,14)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertRun_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,15)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertRun_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,16)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertStrafeLeft_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,17)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertStrafeRight_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,18)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertToCombat_2H_1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,19)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertToCombat_2H_2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,20)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertWalk_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,21)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertWalk_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,22)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_BulletImpact_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,23)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Buttscratch_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,24)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Buttscratch_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,25)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Coughing_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,26)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Coughing_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,27)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_CrotchGrab_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,28)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Flame : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,29)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Forward : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,30)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Gut : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,31)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Knife1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,32)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Knife2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,33)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Machinegun1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,34)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Machinegun2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,35)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_RifleHead1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,36)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_RifleHead2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,37)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_RifleTorso1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,38)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_RifleTorso2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,39)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Tesla1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,40)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Death_Tesla2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,41)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Drunk : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,42)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireBazooka : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,43)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireBack_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,44)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireBack_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,45)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireCrouchBack_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,46)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireCrouchBack_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,47)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireCrouch_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,48)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireCrouch_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,49)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireMachineGun : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,50)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FirePistol1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,51)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FirePistol2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,52)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireRifle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,53)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireRun_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,54)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireRun_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,55)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireStrafeL_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,56)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireStrafeR_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,57)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireStrafeL_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,58)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireStrafeR_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,59)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Jump : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,60)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainChest : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,61)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainCrouchHead : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,62)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainCrouchShoulderL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,63)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainCrouchShoulderR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,64)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainDaze : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,65)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainFire : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,66)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainGroin : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,67)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainGut : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,68)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainHead : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,69)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainKneeL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,70)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainKneeR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,71)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainShoulderL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,72)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainShoulderR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,73)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainTesla1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,74)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_PainTesla2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,75)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Query_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,76)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Query_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,77)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Query_Rifle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,78)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_RaiseBazooka : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,79)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_RaiseMachineGun : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,80)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_RaisePistol : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,81)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_RelaxToAlert_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,82)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_RelaxToAlert_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,83)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Relax_1H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,84)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Relax_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,85)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_ReloadMachinegunCrouch : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,86)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_ReloadMachinegun : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,87)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_ReloadPistolCrouch : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,88)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_ReloadPistol : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,89)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_ReloadRifle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,90)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_ScratchChest : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,91)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Smoking : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,92)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_StandBazooka : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,93)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_StandMachinegun : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,94)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_StandPistol : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,95)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_StandRifle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,96)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_FireVenom : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,97)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Kick : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,98)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Frightened : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,99)
+			stop
+	}
+}

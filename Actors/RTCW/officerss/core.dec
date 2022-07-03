@@ -1,0 +1,35 @@
+Actor RTCW_OfficerSS : RTCW_Humanoid
+{
+	Health 80
+	Painchance 56
+	Tag "SS Officer"
+	States
+	{
+		Spawn:
+			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",2,random(0,4))
+			RW74 A 0 A_SetUserVar("user_aggression",64)
+			RW74 A 0 ACS_NamedExecuteWithResult("RTCW_Infantry")
+			RW74 A 0 A_SetUserVar("user_aggression",9)
+			RW74 A 0 A_GiveInventory("RTCW_EnemyMP40Mag",32)
+			RW74 A 0 A_GiveInventory("RTCW_EnemyLugerMag",8)
+			RW74 A 2
+			Goto Relax
+	}
+}
+
+Actor RTCW_Himmler : RTCW_Humanoid
+{
+	Health 400
+	Painchance 56
+	Tag "Heinrich Himmler"
+	States
+	{
+		Spawn:
+			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",2,5)
+			RW74 A 0 A_SetUserVar("user_aggression",48)
+			RW74 A 0 ACS_NamedExecuteWithResult("RTCW_Infantry")
+			RW74 A 0 A_GiveInventory("RTCW_EnemyMP40Mag",32)
+			RW74 A 2
+			Goto Relax
+	}
+}

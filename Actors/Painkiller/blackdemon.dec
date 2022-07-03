@@ -1,0 +1,269 @@
+ACTOR Painkiller_BlackDemon : Painkiller_AIBrain
+{
+	Health 1000
+	Radius 20
+	Height 64
+	Speed 5
+	Mass 501 //no stake
+	PainChance 32
+	MeleeRange 100
+	SeeSound "Painkiller/BlackDemon/OnAttackOnce"
+	PainSound "Painkiller/BlackDemon/Angry"
+	DeathSound "Painkiller/BlackDemon/Death"
+	Obituary "%o had their soul claimed by a black demon."
+	Painchance "PainkillerIce", 0
+	+BOSSDEATH
+	States
+	{
+		Spawn:
+			PK00 A 0 NoDelay ACS_NamedExecuteWithResult("Painkiller_FootStep",3)
+		Spawn2:
+			PK00 ABCDEFGHIJKLMNOPQRSTUVW 2 A_Look
+			Loop
+		See:
+			PK03 ABCDEFGHIJKLMNOPQRSTUVW 2 A_Chase
+			Loop
+		Missile:
+			//PK12 A 0 A_FaceTarget
+			//PK12 A 0 A_SetUserVar("user_attackangle",angle)
+			//PK12 A 0 A_SetUserVar("user_attackpitch",CallACS("Painkiller_FaceTargetPitch"))
+			PK12 A 0 A_PlaySound("Painkiller/BlackDemon/Attack",CHAN_VOICE)
+			PK12 ABCDEFGHIJKLMN 2 A_FaceTarget
+			PK12 O 0 A_CustomMissile("Painkiller_BlackDemonSpell",height/2)
+			PK12 OPQRSTUVWXYZ 2
+			PK13 ABCDE 2
+			Goto AttackTransition
+		Melee:
+		Attack1:
+			PK04 A 0 A_FaceTarget
+			PK04 A 0 A_PlaySound("Painkiller/BlackDemon/AttackScream",CHAN_5)
+			PK04 A 0 A_SetUserVar("user_attackangle",angle)
+			PK04 A 0 A_SetUserVar("user_attackpitch",CallACS("Painkiller_FaceTargetPitch"))
+			PK04 A 0 A_Jump(128,"Attack2")
+			PK04 ABCDEF 2
+			PK04 G 0 A_PlaySound("Painkiller/BlackDemon/Attack",CHAN_VOICE)
+			PK04 GH 2
+			PK04 I 0 A_PlaySound("Painkiller/BlackDemon/Swish",CHAN_BODY)
+			PK04 IJKL 2
+			PK04 M 0 A_CustomMissile("Painkiller_BlackDemonMelee",height/2,0,user_attackangle,CMF_AIMDIRECTION|CMF_ABSOLUTEPITCH|CMF_ABSOLUTEANGLE,user_attackpitch)
+			PK04 MNOPQRSTUVW 2
+			Goto AttackTransition
+		Attack2:
+			PK05 ABCDEF 2
+			PK05 G 0 A_PlaySound("Painkiller/BlackDemon/Attack",CHAN_VOICE)
+			PK05 GH 2
+			PK04 I 0 A_PlaySound("Painkiller/BlackDemon/Swish",CHAN_BODY)
+			PK05 IJKLMN 2
+			PK05 O 0 A_CustomMissile("Painkiller_BlackDemonMelee",height/2,0,user_attackangle,CMF_AIMDIRECTION|CMF_ABSOLUTEPITCH|CMF_ABSOLUTEANGLE,user_attackpitch)
+			PK05 OPQRSTUVW 2
+			Goto AttackTransition
+		AttackTransition:
+			PK00 A 0 A_ChangeFlag("NOPAIN",1)
+			PK00 A 0 A_JumpIfTargetInLOS("See",90)
+			PK00 A 0 A_SetUserVar("user_attackangle",CallACS("Target_Angle"))
+			PK00 A 0 A_JumpIf(user_attackangle < 180 && user_attackangle > -180, "RotateLeft")
+			PK00 A 1
+			Goto RotateRight
+		RotateLeft:
+			PK08 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			PK09 ABCD 2
+			PK00 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto See
+		RotateRight:
+			PK10 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			PK11 ABC 2
+			PK00 A 0 A_ChangeFlag("NOPAIN",0)
+			Goto See
+		Pain:
+			PK06 A 0 A_Pain
+			PK06 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			PK07 ABCDE 2
+			Goto AttackTransition
+		Death:
+			PK14 A 0 A_Jump(256,"Death1","Death2","Death3")
+		Death1:
+			PK14 A 0 A_Scream
+			PK14 A 0 A_NoBlocking
+			PK14 A 0 A_KillMaster
+			PK14 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			PK15 ABCD 2
+			PK15 E -1
+			Stop
+		Death2:
+			PK16 A 0 A_Scream
+			PK16 A 0 A_NoBlocking
+			PK16 A 0 A_KillMaster
+			PK16 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			PK17 ABCD 2
+			PK17 E -1
+			Stop
+		Death3:
+			PK18 A 0 A_Scream
+			PK18 A 0 A_NoBlocking
+			PK18 A 0 A_KillMaster
+			PK18 ABCDEFGHIJKLMNOPQRSTUVWXYZ 2
+			PK19 ABCD 2
+			PK19 E -1
+			Stop
+		Pain.PainkillerIce:
+			"####" "#" 0 A_JumpIf(CallACS("Painkiller_FlagStorage",1,1)==1,1)
+			"####" "#" 0 A_JumpIf(CallACS("Painkiller_FlagStorage",1,2)==1,1)
+			"####" "#" 0 A_JumpIf(CallACS("Painkiller_FlagStorage",1,3)==1,1)
+			"####" "#" 0 A_ChangeFlag("NOPAIN",true)
+			"####" "#" 0 A_ChangeFlag("NOGRAVITY",false)
+			"####" "#" 0 A_ChangeFlag("NOBLOOD",true)
+			"####" "#" 0 A_StopSound(CHAN_BODY)
+			"####" "#" 0 A_PlaySound("Painkiller/Freezer/Freeze",CHAN_BODY)
+			"####" "#" 0 ACS_NamedExecuteAlways("Painkiller_Freeze",0,1)
+		PainkillerIceLoop:
+			"####" "#" 2
+			Loop
+		PainkillerIceThaw:
+			"####" "#" 0 A_PlaySound("Painkiller/Freezer/Unfreeze",CHAN_BODY)
+			"####" "#" 20
+			"####" "#" 0 A_ChangeFlag("NOPAIN",CallACS("Painkiller_FlagStorage",2,1))
+			"####" "#" 0 A_ChangeFlag("NOGRAVITY",CallACS("Painkiller_FlagStorage",2,2))
+			"####" "#" 0 A_ChangeFlag("NOBLOOD",CallACS("Painkiller_FlagStorage",2,3))
+			Goto See
+		Death.Painkiller:
+		Death.PainkillerBullet:
+		Death.PainkillerElectro:
+		Death.PainkillerExplosive:
+		Death.PainkillerShuriken:
+		Death.PainkillerFire:
+		Death.PainkillerDemon:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			Goto Death
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+			PK03 A 0 A_Jump(256,"StakeDeath1","StakeDeath2","StakeDeath3")
+		StakeDeath1:
+			PK03 B 2
+			Loop
+		StakeDeath2:
+			PK04 B 2
+			Loop
+		StakeDeath3:
+			PK05 B 2
+			Loop
+		XDeath:
+		PainkillerGib:
+			TNT1 A 0 A_PlaySound("Painkiller/Gib",CHAN_BODY)
+			TNT1 AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("Painkiller_Blood_Spray",0,0,height*2,frandom(-4,4),frandom(-4,4),velz+frandom(4,8),0,SXF_NOCHECKPOSITION)
+			TNT1 AAAAAAAA 0 A_SpawnItemEx("Painkiller_Blood",random(-8,8),random(-8,8),random(0,44),0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemon_Gib_ArmRight",2,28,44,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemon_Gib_ArmLeft",2,-28,44,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemon_Gib_Torso",0,0,40,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemon_Gib_Head",0,0,51,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemon_Gib_LegLeft",-2,-8,10,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemon_Gib_LegRight",-2,8,10,velx,vely,velz,0,SXF_NOCHECKPOSITION|SXF_ABSOLUTEVELOCITY)
+			TNT1 A 5 A_NoBlocking
+			Stop
+	}
+}
+
+Actor Painkiller_BlackDemonMelee : Painkiller_AttackMelee	{ Damage (20) Speed 32 Height 32 Radius 16 DeathSound "Painkiller/BlackDemon/MeleeHit" }
+
+Actor Painkiller_BlackDemonSpell : PainkillerProjectile
+{
+	Damage (25)
+	Height 24
+	Radius 12
+	DamageType "PainkillerFire"
+	Speed 24
+	SeeSound "Painkiller/Samurai/Fireball"
+	DeathSound "Painkiller/Samurai/FireballHit"
+	States
+	{
+		Spawn:
+			TNT1 A 0 NoDelay A_SpawnItemEx("Painkiller_BlackDemonSpell_Effect1",random(-1,1),random(-1,1),random(-1,1),random(-1,1),random(-1,1),random(-1,1))
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemonSpell_Effect1",random(-1,1)-12,random(-1,1),random(-1,1))
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemonSpell_Effect3",0,0,0,frandom(-3.3,3.3),frandom(-3.3,3.3),frandom(-3.3,3.3))
+			TNT1 A 0 A_SpawnItemEx("Painkiller_BlackDemonSpell_Effect2")
+			TNT1 A 1
+			Loop
+		Death:
+			TNT1 A 1
+			Stop
+	}
+}
+
+Actor Painkiller_BlackDemonSpell_Effect1 : Painkiller_Smoke
+{
+	Renderstyle Add
+	Alpha 1.0
+	Scale 0.33
+	States
+	{
+		Spawn:
+			PK07 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK07 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK07 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK07 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 A 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 B 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 B 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 B 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			PK09 B 2 Bright A_Fadeout(0.0875)	PK07 A 0 A_SetScale(scalex+0.075)
+			Stop
+	}
+}
+
+Actor Painkiller_BlackDemonSpell_Effect2 : Painkiller_Smoke
+{
+	Renderstyle Add
+	Alpha 1.0
+	Scale 0.33
+	States
+	{
+		Spawn:
+			PK06 O 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK06 O 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK06 O 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK06 O 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK09 C 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK09 C 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK09 C 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK09 C 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK07 I 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK09 I 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK09 I 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			PK09 I 1 Bright A_UnsetSolid	PK07 A 0 A_SetScale(scalex+0.05)
+			Stop
+	}
+}
+
+Actor Painkiller_BlackDemonSpell_Effect3
+{
+	Radius 2
+	Height 4
+	Renderstyle Translucent
+	Scale 0.33
+	Alpha 0.63
+	+NOINTERACTION
+	+NOTRIGGER
+	+THRUACTORS
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			PK00 EEEEEEEEEEEEEEEE 3 A_Fadeout(0.05)
+			Stop
+	}
+}
+
+Actor Painkiller_BlackDemon_Gib_ArmLeft : Painkiller_PotatoHeadGib {}
+Actor Painkiller_BlackDemon_Gib_ArmRight : Painkiller_PotatoHeadGib {}
+Actor Painkiller_BlackDemon_Gib_LegLeft : Painkiller_PotatoHeadGib {}
+Actor Painkiller_BlackDemon_Gib_LegRight : Painkiller_PotatoHeadGib {}
+Actor Painkiller_BlackDemon_Gib_Head : Painkiller_PotatoHeadGib {}
+Actor Painkiller_BlackDemon_Gib_Torso : Painkiller_PotatoHeadGib {}

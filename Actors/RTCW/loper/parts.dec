@@ -1,0 +1,58 @@
+Actor RTCW_Loper_Body1 : RTCWPart
+{
+	States
+	{
+		Spawn:
+			RW11 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
+			RW11 A 0 A_SetScale(0.001)
+			RW11 A 1
+			RW11 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
+			RW11 A 0 A_SetScale(1.0)
+		SpawnLoop:
+			RW11 A 1
+			Loop
+		TorsoIdle:
+			"####" "#" 4
+		TorsoIdleLoop:
+			RW11 ABCDEFGHIJKLMNOPQRSTU 2
+			Loop
+		LegsRun:
+			"####" "#" 4
+		LegsRunLoop:
+			RW08 ABCDEFGHIJKLMNOP 2
+			Loop
+		LegsTurn:
+			"####" "#" 4
+		LegsTurnLoop:
+			RW09 ABCDEFGHIJKLMNOPQRSTU 2
+			Loop
+		TorsoAttack4:
+			"####" "#" 4
+		TorsoAttack4Loop:
+			RW0E "ABCDEFGHIJKLMNOPQRSTU" 2
+			Loop
+		TorsoAttack5:
+			"####" "#" 4
+		TorsoAttack5Loop:
+			RW0F "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW10 ABA 2
+			RW0F "]\[ZYXWVUTSRQPONMLKJIHGFEDCBA" 2
+			Loop
+		Death1:
+			RW00 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW01 ABC 2
+			RW01 D -1
+			Stop
+		Death2:
+			RW02 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			RW03 A -1
+			Stop
+		Death3:
+			RW04 "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\" 2
+			RW04 "]" -1
+			Stop
+	}
+}
+
+Actor RTCW_Loper_Body2 : RTCW_Loper_Body1 {}
+Actor RTCW_Loper_Shock : RTCW_Loper_Body1 { Renderstyle Translucent +BRIGHT }

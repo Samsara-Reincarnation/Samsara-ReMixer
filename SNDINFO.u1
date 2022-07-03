@@ -1,0 +1,32 @@
+// Brute
+
+Unreal/Brute/Active1		"Sounds/Unreal/Brute/amb1br.wafv"
+Unreal/Brute/Active2		"Sounds/Unreal/Brute/nearby2br.wav"
+Unreal/Brute/Step1			"Sounds/Unreal/Brute/walk1br.wav"
+Unreal/Brute/Step2			"Sounds/Unreal/Brute/walk2br.wav"
+$Random Unreal/Brute/Step			{  Unreal/Brute/Step1  Unreal/Brute/Step2	 }
+Unreal/Brute/Melee			"Sounds/Unreal/Brute/pwhip1br.wav"
+Unreal/Brute/Hit				"Sounds/Unreal/Brute/pstlhit1br.wav"
+Unreal/Brute/Pain1			"Sounds/Unreal/Brute/injur1br.wav"
+Unreal/Brute/Pain2			"Sounds/Unreal/Brute/injur2br.wav"
+Unreal/Brute/Yell1			"Sounds/Unreal/Brute/yell1br.wav"
+Unreal/Brute/Yell2			"Sounds/Unreal/Brute/yell2br.wav"
+Unreal/Brute/Death1		"Sounds/Unreal/Brute/death1br.wav"
+Unreal/Brute/Death2		"Sounds/Unreal/Brute/death2br.wav"
+
+// Slith
+Unreal/Slith/Ambient		"Sounds/Unreal/Slith/amb1sl.wav"
+Unreal/Slith/Dive				"Sounds/Unreal/Slith/dive2sl.wav"
+Unreal/Slith/Yell1			"Sounds/Unreal/Slith/yell1sl.wav"
+Unreal/Slith/Yell2			"Sounds/Unreal/Slith/yell2sl.wav"
+Unreal/Slith/Yell3			"Sounds/Unreal/Slith/yell3sl.wav"
+Unreal/Slith/Yell4			"Sounds/Unreal/Slith/yell4sl.wav"
+Unreal/Slith/Swim			"Sounds/Unreal/Slith/swim1sl.wav"
+Unreal/Slith/Surface		"Sounds/Unreal/Slith/surf1sl.wav"
+Unreal/Slith/Scrath			"Sounds/Unreal/Slith/scratch1sl.wav"
+Unreal/Slith/Active			"Sounds/Unreal/Slith/roam1sl.wav"
+Unreal/Slith/Slither			"Sounds/Unreal/Slith/slithr1sl.wav"
+Unreal/Slith/DeathL			"Sounds/Unreal/Slith/deathLsl.wav"
+Unreal/Slith/DeathW		"Sounds/Unreal/Slith/deathWsl.wav"
+Unreal/Slith/Spit				"Sounds/Unreal/Slith/SliSpawn.wav"
+Unreal/Slith/Impact			"Sounds/Unreal/Slith/SliImpact.wav"

@@ -1,0 +1,63 @@
+Actor RTCW_Mechanic : RTCW_Humanoid
+{
+	Health 30
+	Painchance 96
+	Tag "Mechanic"
+	States
+	{
+		Spawn:
+			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_EnemyPartsPicker",4)
+			RW74 A 0 A_SetUserVar("user_aggression",128)
+			RW74 A 0 ACS_NamedExecuteWithResult("RTCW_Infantry")
+			RW74 A 0 A_GiveInventory("RTCW_EnemyLugerMag",8)
+			TNT1 A 2
+			Goto Relax
+		AlertIdleTurnLeft:
+		AlertIdleTurnLeft_1H:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnL",1)
+			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
+			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
+			"####" ABCDEFGH 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
+		AlertIdleTurnRight:
+		AlertIdleTurnRight_1H:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
+			"####" A 0 A_TakeInventory("RTCW_AlertWalking",1)
+			"####" A 0 A_TakeInventory("RTCW_AlertRunning",1)
+			"####" ABCDEFGH 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"AlertRun")
+			Loop
+		Frightened:
+			"####" "#" 0 A_JumpIfInventory("RTCW_SeenPlayer",1,6)
+			"####" "#" 0 A_GiveToChildren("RTCW_RemoveGun",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("RTCW_Decorate",16)
+			"####" "#" 0 A_GiveInventory("RTCW_SeenPlayer",1)
+			"####" "#" 0 A_ChangeFlag("COUNTKILL",0)
+			"####" "#" 0 A_PlaySound("RTCW/Mechanic/Plead",CHAN_VOICE)
+			"####" "#" 0 A_GiveInventory("RTCW_ScientistFrightened",1)
+			"####" "#" 0 A_GiveToChildren("RTCWBroadCast_Frightened",1)
+			Goto FrightenedLoop
+		FrightenedLoop:
+			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			"####" "ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]" 2
+			Loop
+		CombatTurn:
+			"####" A 0 A_Jump(256,"CombatTurnLeft","CombatTurnRight")
+		CombatTurnLeft:
+			"####" A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+		CombatTurnLeft_1H:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnL",1)
+			"####" ABCDEFGH 3 A_GiveInventory("RTCW_TurnLeftFast")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
+		CombatTurnRight:
+			"####" A 0 A_TakeInventory("RTCW_Enemy_MoveOrder",8)
+		CombatTurnRight_1H:
+			"####" A 0 A_GiveToChildren("RTCWBroadCast_AlertIdle_1H_TurnR",1)
+			"####" ABCDEFGH 3 A_GiveInventory("RTCW_TurnRightFast")
+			"####" A 0 A_Warp(AAPTR_Default,2,0,0,0,WARPF_TESTONLY,"CombatRun")
+			Loop
+	}
+}

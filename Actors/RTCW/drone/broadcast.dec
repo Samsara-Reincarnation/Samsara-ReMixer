@@ -1,0 +1,29 @@
+Actor RTCWBroadCast_Drone_HoverIdle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",13,1)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Drone_HoverBackward : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",13,2)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Drone_HoverForward : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",13,3)
+			stop
+	}
+}

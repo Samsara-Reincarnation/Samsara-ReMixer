@@ -1,0 +1,189 @@
+Actor RTCWBroadCast_SuperSoldier_Death1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,1)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_PainChest : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,2)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_PainShoulderR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,3)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_PainShoulderL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,4)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_PainDaze : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,5)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_AlertIdle : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,6)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_AlertWalk : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,7)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_AlertBack : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,8)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_CombatWalk1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,9)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_CombatWalk2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,10)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_CombatWalk3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,11)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_StrafeL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,12)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_StrafeR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,13)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_CombatIdle1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,14)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_CombatIdle2 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,15)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_CombatIdle3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,16)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_TurnL1 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,17)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_TurnL3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,18)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_SuperSoldier_TurnR3 : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",16,19)
+			stop
+	}
+}

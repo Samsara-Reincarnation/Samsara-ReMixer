@@ -64,6 +64,9 @@
 #include "Actors/PlayerDummy/Demoness.txt"
 #include "Actors/PlayerDummy/Bond.txt"
 #include "Actors/PlayerDummy/Catacomb.txt"
+#include "Actors/PlayerDummy/Painkiller.txt"
+#include "Actors/PlayerDummy/Unreal.txt"
+#include "Actors/PlayerDummy/RTCW.txt"
 
 
 //////// Enemies ////////
@@ -852,6 +855,51 @@
 #include "Actors/Catacomb/Mixer_Armageddon.txt"
 #include "Actors/Catacomb/Mixer_Apocalypse.txt"
 #include "Actors/Catacomb/Mixer_Hovertank3D.txt"
+
+// Painkiller
+#include "actors/Painkiller/core.dec"
+#include "actors/Painkiller/zombiesoldier.dec"
+#include "actors/Painkiller/banshee.dec"
+#include "actors/Painkiller/zombiewarlord.dec"
+#include "actors/Painkiller/blackdemon.dec"
+
+// Unreal
+#include "actors/Unreal/Brute.udec"
+#include "actors/Unreal/Slith.udec"
+
+// RTCW
+#include "actors/RTCW/core.dec"
+#include "actors/RTCW/infantryss/core.dec"
+#include "actors/RTCW/infantryss/broadcast.dec"
+#include "actors/RTCW/infantryss/parts.dec"
+#include "actors/RTCW/officerss/core.dec"
+#include "actors/RTCW/officerss/parts.dec"
+#include "actors/RTCW/drz/core.dec"
+#include "actors/RTCW/drz/parts.dec"
+#include "actors/RTCW/mechanic/core.dec"
+#include "actors/RTCW/mechanic/parts.dec"
+#include "actors/RTCW/supersoldier/core.dec"
+#include "actors/RTCW/supersoldier/broadcast.dec"
+#include "actors/RTCW/supersoldier/parts.dec"
+#include "actors/RTCW/protosoldier/core.dec"
+#include "actors/RTCW/protosoldier/parts.dec"
+#include "actors/RTCW/loper/core.dec"
+#include "actors/RTCW/loper/broadcast.dec"
+#include "actors/RTCW/loper/parts.dec"
+#include "actors/RTCW/blackguard/core.dec"
+#include "actors/RTCW/blackguard/parts.dec"
+#include "actors/RTCW/venom/core.dec"
+#include "actors/RTCW/venom/parts.dec"
+#include "actors/RTCW/eliteguard/core.dec"
+#include "actors/RTCW/eliteguard/broadcast.dec"
+#include "actors/RTCW/eliteguard/parts.dec"
+#include "actors/RTCW/drone/core.dec"
+#include "actors/RTCW/drone/broadcast.dec"
+#include "actors/RTCW/drone/parts.dec"
+#include "actors/RTCW/zombie/core.dec"
+#include "actors/RTCW/zombie/broadcast.dec"
+#include "actors/RTCW/zombie/parts.dec"
+#include "actors/RTCW/beast/core.dec"
 
 // Fixes
 

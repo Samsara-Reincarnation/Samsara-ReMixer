@@ -1,0 +1,49 @@
+Actor RTCWBroadCast_CartwheelL : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,100)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_CartwheelR : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,101)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_Roll : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,102)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertStrafeLeft_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,103)
+			stop
+	}
+}
+
+Actor RTCWBroadCast_AlertStrafeRight_2H : RTCWBroadcast
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteWithResult("RTCW_PartBroadcast",1,104)
+			stop
+	}
+}

@@ -1,0 +1,100 @@
+Script "Painkiller_FootStep" (int steptype)
+{
+	if((ClassifyActor(0) & ACTOR_WORLD))
+		terminate;
+	
+	str stepsound;
+	int stepfrequency;
+	int quakes;
+	int intensity;
+	
+	switch(steptype)
+	{
+		case 0:
+			stepsound = "Painkiller/ZombieSoldier/FootStep";
+			stepfrequency = 6;
+			break;
+		case 3:
+			stepfrequency = 5;
+			stepsound = "Painkiller/BlackDemon/Step";
+			quakes = 1;
+			intensity = 3;
+			break;
+	}
+	
+	if((ClassifyActor(0) & ACTOR_MONSTER))
+	{
+		int speedx, speedy, currentx, currenty, lastx, lasty, lasttimer, velocity, movement;
+		
+		while((ClassifyActor(0) & ACTOR_ALIVE))
+		{
+			lastx = GetActorX(0);
+			lasty = GetActorY(0);
+			Delay(1);
+			currentx = GetActorX(0);
+			currenty = GetActorY(0);
+			
+			speedx = abs(currentx - lastx)>>16;
+			speedy = abs(currenty - lasty)>>16;
+			
+			velocity = magnitudeTwo(speedx, speedy);
+			
+			if(velocity != 0)
+				movement = 500/(velocity*stepfrequency);
+			else
+				movement = 0;
+			
+			if((Timer()-lasttimer) > movement && movement != 0)
+			{
+				if(GetActorZ(0) == GetActorFloorZ(0))
+					PlaySound(0,stepsound,CHAN_BODY,0.5,0,ATTN_NORM);
+					
+				if(quakes)
+					Radius_Quake2(0,intensity,17,0,intensity*64,"") ;
+					
+				lasttimer = Timer();
+			}
+		}
+		terminate;
+	}
+}
+
+Script "Painkiller_FaceTargetPitch" (void)
+{
+	int x = GetActorX(0);
+	int y = GetActorY(0);
+	int z = GetActorZ(0)+(GetActorProperty(0,APROP_Height)/2);
+	SetActivatorToTarget(0);
+	int targX = GetActorX(0);
+	int targY = GetActorY(0);
+	int targZ = GetActorZ(0)-32.0;
+	int distance = magnitudeThree_f(x - targX, y - targY, z - targZ);
+	int pitch = VectorAngle(distance, z - targZ);
+	//PrintBold(d:pitch/182);
+	SetResultValue(-pitch/182);
+}
+
+Script "Painkiller_MonsterLoop" (int type)
+{
+	switch(type)
+	{
+		case 3:
+			if(!GetCVar("samsara_runninginzandro"))
+				while(ClassifyActor(0) != ACTOR_World)
+				{
+					if(random(0,100) == 1)
+						CheckProximity(0,"Painkiller_ZombieSoldier",128.0,1,CPXF_CHECKSIGHT|CPXF_SETTARGET|CPXF_EXACT|CPXF_CLOSEST);
+					
+					Delay(5);
+				}
+				break;
+	}
+}
+
+Script "Painkiller_TempChangeSpecies" (void)
+{
+	str oldspecies = GetActorProperty(0,APROP_Species);
+	SetActorProperty(0,APROP_Species,"Null");
+	Delay(3);
+	SetActorProperty(0,APROP_Species,oldspecies);
+}
