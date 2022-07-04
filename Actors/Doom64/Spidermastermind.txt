@@ -51,12 +51,12 @@ ACTOR SpiderMastermind64
 	States
 	{
 	Spawn:
-		SPI2 A 0
-		SPI2 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
-		SPI2 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
-		SPI2 A 0 A_GiveInventory("AlreadySpawned",1)
+		64SM A 0
+		64SM A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+		64SM A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+		64SM A 0 A_GiveInventory("AlreadySpawned",1)
 	Spawn2:
-		SPI2 AB 10 A_Look
+		64SM AB 10 A_Look
 		Loop
 	See:
         TNT1 A 0 A_JumpIfInventory("SawPlayer", 1, "See2")
@@ -69,33 +69,33 @@ ACTOR SpiderMastermind64
 		TNT1 A 0 A_GiveToTarget("HLBossSightMusicQueue")
 	See2:	
 		TNT1 A 0 A_PlaySound("64spider/metal2",5)
-		SPI2 A 3 A_Chase
-		SPI2 ABB 3 A_Chase
+		64SM A 3 A_Chase
+		64SM ABB 3 A_Chase
 		TNT1 A 0 A_PlaySound("64spider/metal2",5)	
-		SPI2 C 3 A_Chase
-		SPI2 CDD 3 A_Chase
+		64SM C 3 A_Chase
+		64SM CDD 3 A_Chase
 		TNT1 A 0 A_PlaySound("64spider/metal2",5)	
-		SPI2 E 3 A_Chase
-		SPI2 EFF 3 A_Chase
+		64SM E 3 A_Chase
+		64SM EFF 3 A_Chase
 		Loop
 	Missile:
-		SPI2 A 20 Bright A_FaceTarget
+		64SM A 20 Bright A_FaceTarget
 		TNT1 A 0 A_PlaySound("doom64guy/pistol",5)
-		SPI2 G 4 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5)*3, "Doom64BulletPuff", 0, CBAF_NORANDOM)
+		64SM G 4 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5)*3, "Doom64BulletPuff", 0, CBAF_NORANDOM)
 		TNT1 A 0 A_PlaySound("doom64guy/pistol",6)	
-		SPI2 H 4 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5)*3, "Doom64BulletPuff", 0, CBAF_NORANDOM)
-		SPI2 H 1 Bright A_SpidRefire
+		64SM H 4 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5)*3, "Doom64BulletPuff", 0, CBAF_NORANDOM)
+		64SM H 1 Bright A_SpidRefire
 		Goto Missile+1
 	Pain:
-		SPI2 I 3
-		SPI2 I 3 A_Pain
+		64SM I 3
+		64SM I 3 A_Pain
 		Goto See
 	Death:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
-		SPI2 J 20 A_Scream
-		SPI2 K 10 A_NoBlocking
-		SPI2 LMNO 10
-		SPI2 O -1 A_KillMaster
+		64SM J 20 A_Scream
+		64SM K 10 A_NoBlocking
+		64SM LMNO 10
+		64SM O -1 A_KillMaster
 		Stop
 	Death.DukeIce:
 		"####" "#" 0 A_PlaySound("duke/enemyfreeze")
@@ -315,16 +315,16 @@ Actor SpiderMastermind64Disintegrate : ZombiemanDisintegrate
    {
       Spawn:
         TNT1 A 0
-        SPI2 I 6 A_SpawnItem("DisintEffectRoundHuge",0,45)
-        SPI2 I 6 A_SetTranslucent(0.9,0)
-        SPI2 I 6 A_SetTranslucent(0.8,0)
-        SPI2 I 6 A_SetTranslucent(0.7,0)
-        SPI2 I 6 A_SetTranslucent(0.6,0)
-        SPI2 I 6 A_SetTranslucent(0.5,0)
-        SPI2 I 4 A_SetTranslucent(0.4,0)
-        SPI2 I 4 A_SetTranslucent(0.3,0)
-        SPI2 I 4 A_SetTranslucent(0.2,0)
-        SPI2 I 4 A_SetTranslucent(0.1,0)
+        64SM I 6 A_SpawnItem("DisintEffectRoundHuge",0,45)
+        64SM I 6 A_SetTranslucent(0.9,0)
+        64SM I 6 A_SetTranslucent(0.8,0)
+        64SM I 6 A_SetTranslucent(0.7,0)
+        64SM I 6 A_SetTranslucent(0.6,0)
+        64SM I 6 A_SetTranslucent(0.5,0)
+        64SM I 4 A_SetTranslucent(0.4,0)
+        64SM I 4 A_SetTranslucent(0.3,0)
+        64SM I 4 A_SetTranslucent(0.2,0)
+        64SM I 4 A_SetTranslucent(0.1,0)
         Stop
    }
 }
