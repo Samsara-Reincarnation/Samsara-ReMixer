@@ -58,6 +58,6 @@ server bool mm_maratele = true;
 server bool mm_advancedspawning = false;
 server bool mm_resetmixer = false;
 server int mm_randomcycle = 1;
-noarchive server int mm_cachemodels = 0;
+server noarchive bool mm_cachemodels = false;
 //server bool mm_dropdefault = false;
 //server bool mm_assholemode = false;
