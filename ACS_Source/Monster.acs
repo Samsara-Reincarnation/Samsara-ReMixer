@@ -537,3 +537,4 @@ Script "ReMixer_Korax" (void)
 #include "m_vdr.acs"
 #include "m_witch.acs"
 #include "m_painkiller.acs"
+#include "m_rtcw.acs"
