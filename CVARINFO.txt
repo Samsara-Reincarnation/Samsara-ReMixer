@@ -30,6 +30,8 @@ server bool mm_hexen2 = true;
 server bool mm_goldeneye = true;
 server bool mm_catacomb = true;
 server bool mm_painkiller = true;
+server bool mm_unreal = true;
+server bool mm_rtcw = true;
 
 //Mode toggles
 server int mm_doommode = 0;
@@ -56,5 +58,6 @@ server bool mm_maratele = true;
 server bool mm_advancedspawning = false;
 server bool mm_resetmixer = false;
 server int mm_randomcycle = 1;
+noarchive server int mm_cachemodels = 0;
 //server bool mm_dropdefault = false;
 //server bool mm_assholemode = false;

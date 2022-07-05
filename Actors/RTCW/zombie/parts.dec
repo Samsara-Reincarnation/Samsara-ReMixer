@@ -4,10 +4,7 @@ Actor RTCW_Zombie_Body1 : RTCWPart
 	{
 		Spawn:
 			RW03 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
-			RW03 A 0 A_SetScale(0.001)
 			RW03 A 1
-			RW03 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
-			RW03 A 0 A_SetScale(1.0)
 		SpawnLoop:
 			RW03 A 1
 			Loop
@@ -134,10 +131,7 @@ Actor RTCW_Zombie_Helmet : RTCW_Zombie_Body1
 		Spawn:
 			RW03 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
 			RW03 A 0 A_GiveInventory("RTCW_IsHat",1)
-			RW03 A 0 A_SetScale(0.001)
 			RW03 A 1
-			RW03 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
-			RW03 A 0 A_SetScale(1.0)
 		SpawnLoop:
 			RW03 A 1
 			Loop

@@ -62,10 +62,7 @@ Actor RTCW_Humanoid_Mechanic_Cap : RTCW_Humanoid_Mechanic_BodyDefault
 		Spawn:
 			RW74 A 0 NoDelay ACS_NamedExecuteWithResult("RTCW_Decorate",24)
 			RW74 A 0 A_GiveInventory("RTCW_IsHat",1)
-			RW74 A 0 A_SetScale(0.001)
 			RW74 A 1
-			RW74 A 0 //ACS_NamedExecuteWithResult("RTCW_UpdateChild",1)
-			RW74 A 0 A_SetScale(1.0)
 		SpawnLoop:
 			RW74 A 1
 			Loop
