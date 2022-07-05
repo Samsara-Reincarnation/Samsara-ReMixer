@@ -11,15 +11,25 @@ ACTOR SpiderMastermindSpawner replaces SpiderMastermind
 	+SHOOTABLE
 	+BOSSDEATH
 	+SOLID
+	var int user_special;
+	var int user_arg0;
+	var int user_arg1;
+	var int user_arg2;
+	var int user_arg3;
 	States
 	{
 		Spawn:
 			TNT1 A 1
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2)
+			TNT1 A 0 A_SetUserVar("user_special",special)
+			TNT1 A 0 A_SetUserVar("user_arg0",args[0])
+			TNT1 A 0 A_SetUserVar("user_arg1",args[1])
+			TNT1 A 0 A_SetUserVar("user_arg2",args[2])
+			TNT1 A 0 A_SetUserVar("user_arg3",args[3])
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,16)			
 		Deciding:
 			TNT1 A 1
 			Loop
-		SetDoom:
+		/*SetDoom:
 			TNT1 A 1 A_SpawnItemEx("SpiderMastermind3",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL,0,tid)
 			TNT1 A 0 A_Jump(256,"BossWait")
 			Wait
@@ -290,7 +300,8 @@ ACTOR SpiderMastermindSpawner replaces SpiderMastermind
 		SetNull:
 			TNT1 A 1 A_SpawnItemEx("EvilOtto",0,0,0,0,0,0,0,SXF_TRANSFERPOINTERS|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL,0,tid)
 			TNT1 A 0 A_Jump(256,"BossWait")
-			Wait
+			Wait*/
+		Continue:
 		BossWait:
 			TNT1 A 0 A_JumpIf(CallACS("RemixerInvasionChecker") == 1, "BossRemove")
 			TNT1 A 2
