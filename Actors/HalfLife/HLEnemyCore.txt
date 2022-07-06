@@ -233,8 +233,3 @@ Actor HLMegaExplosionBoomDamage
 		stop
 	}
 }
-
-Actor HLEasy : CustomInventory { inventory.maxamount 1 }
-Actor HLNormal : CustomInventory { inventory.maxamount 1 }
-Actor HLHard : CustomInventory { inventory.maxamount 1 }
-Actor HLNightmare : CustomInventory { inventory.maxamount 1 }

@@ -35,6 +35,7 @@ Actor Q2Widow : Q2HeavyBase
 		WID4 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		WID4 A 0 A_GiveInventory("NoHeadShots")
 		WID4 A 0 A_GiveInventory("AlreadySpawned",1)
+		WID4 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")
 	Spawn2:
 		TNT1 A 0 A_Jump(96,19)
 		WID4 ABCDEFGHIJKLMNOPQR 5 A_Look
@@ -603,6 +604,7 @@ Actor Q2Widow2 : Q2SoldierBase {
 			WID1 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			WID1 A 0 A_GiveInventory("NoHeadShots")
 			WID1 A 0 A_GiveInventory("AlreadySpawned",1)
+			WID1 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")
 		Spawn2:
 			WID1 ABCDEFGHIJKLMNOPQR 5 A_Look
 			Loop

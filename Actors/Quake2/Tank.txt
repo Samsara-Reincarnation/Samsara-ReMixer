@@ -27,6 +27,7 @@ Actor Q2Tank : Q2HeavyBase
 		TNK0 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 		TNK0 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		TNK0 A 0 A_GiveInventory("AlreadySpawned",1)
+		TNK0 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")
 	Spawn2:
 		TNK0 ABCDEFGHIJIHGFEDCB 6 A_Look
 		Goto Spawn+1

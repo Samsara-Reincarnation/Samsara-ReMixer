@@ -24,6 +24,7 @@ Actor Q2Gladiator : Q2HeavyBase
 		GLD0 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 		GLD0 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		GLD0 A 0 A_GiveInventory("AlreadySpawned",1)
+		GLD0 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")
 	Spawn2:
 		GLD0 ABCDEFG 6 A_Look
 		Loop
@@ -751,6 +752,7 @@ Actor Q2GladiatorBetaClass : Q2Gladiator
 			GLD0 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			GLD0 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			GLD0 A 0 A_GiveInventory("AlreadySpawned",1)
+			GLD0 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")
 		Spawn2:
 			GLD0 A 0 A_SpawnItem(Q2GladiatorShieldSpawner)
 			GLD0 ABCDEFG 6 A_Look

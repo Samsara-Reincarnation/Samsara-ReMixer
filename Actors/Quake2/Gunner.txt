@@ -22,6 +22,7 @@ Actor Q2Gunner : Q2SoldierBase
 		GNR0 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 		GNR0 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		GNR0 A 0 A_GiveInventory("AlreadySpawned",1)
+		GNR0 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")
 	Spawn2:
 		GNR0 ABCDEFGHIJKLMNONMLKJIHGFEDCB 6 A_Look
 		GNR0 A 0 A_Jump(128,1)

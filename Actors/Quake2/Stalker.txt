@@ -23,6 +23,7 @@ Actor Q2Stalker : Q2SoldierBase
 		STK1 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 		STK1 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		STK1 A 0 A_GiveInventory("AlreadySpawned",1)
+		STK1 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")
 	Spawn2:
 		STK1 ABCDEFGHIJKLM 6 A_Look
 		STK1 A 0 A_Jump(96,1)

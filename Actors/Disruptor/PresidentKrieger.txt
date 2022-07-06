@@ -1,5 +1,3 @@
-Actor DSKriegerHard : CustomInventory { inventory.maxamount 1 }
-
 Actor DS_PresidentK : DisruptorHumanoid
 {
     Health 3000

@@ -6700,5 +6700,3 @@ actor BloodBurningCorpse_Fanatic : BloodBurningCorpse
 }
 
 Actor CultistIsCrawling : Inventory { Inventory.Amount 1 Inventory.MaxAmount 1 }
-Actor CultistWellDone : Inventory { Inventory.Amount 1 Inventory.MaxAmount 1 }
-Actor CultistExtraCrispy : Inventory { Inventory.Amount 1 Inventory.MaxAmount 1 }

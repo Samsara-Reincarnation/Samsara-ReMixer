@@ -18,3 +18,105 @@ Script "Quake2_StroggBurn" (void)
 {
 	SetActorProperty(0,APROP_DeathSound,"Strogg/Lava");
 }
+
+#DEFINE Q2MaxEnemies 36
+
+str Q2EnemyArray[Q2MaxEnemies] = 
+{ 
+	"Q2LightGuard", 
+	"Q2ShotgunGuard", 
+	"Q2MachineGunGuard",
+	"Q2EnhancedLightGuard", 
+	"Q2RipperGuard", 
+	"Q2HyperBlasterGuard", 
+	"Q2LaserGuard",
+	"Q2Infantry",
+	"Q2Berserker",
+	"Q2Brain",
+	"Q2BrainBetaClass",
+	"Q2Carrier",
+	"Q2Flyer",
+	"Q2Gekk",
+	"Q2Gladiator",
+	"Q2GladiatorBetaClass",
+	"Q2Gunner",
+	"Q2Hornet",
+	"Q2Icarus",
+	"Q2Daedalus",
+	"Q2IronMaiden",
+	"Q2IronMaidenBetaClass",
+	"Q2Makron",
+	"Q2Jorg",
+	"Q2Medic",
+	"Q2MedicCommander",
+	"Q2Mutant",
+	"Q2Parasite",
+	"Q2Stalker",
+	"Q2SuperTank",
+	"Q2Tank",
+	"Q2TankCommander",
+	"Q2TankBoss",
+	"Q2Technician",
+	"Q2Widow",
+	"Q2Widow2"
+};
+str Q2ItemsArray[Q2MaxEnemies] = 
+{ 
+	"Q2_LightGuard_DamageSkin", 
+	"Q2_ShotgunGuard_DamageSkin", 
+	"Q2_MachineGunGuard_DamageSkin", 
+	"Q2_EnhancedLightGuard_DamageSkin", 
+	"Q2_RipperGuard_DamageSkin", 
+	"Q2_HyperBlasterGuard_DamageSkin", 
+	"Q2_LaserGuard_DamageSkin",
+	"Q2_Infantry_DamageSkin",
+	"Q2_Berserker_DamageSkin",
+	"Q2_Brain_DamageSkin",
+	"Q2_Brain_DamageSkin",
+	"Q2_Carrier_DamageSkin",
+	"Q2_Flyer_DamageSkin",
+	"Q2_Gekk_DamageSkin",
+	"Q2_Gladiator_DamageSkin",
+	"Q2_GladiatorBetaClass_DamageSkin",
+	"Q2_Gunner_DamageSkin",
+	"Q2_Hornet_DamageSkin",
+	"Q2_Icarus_DamageSkin",
+	"Q2_Daedalus_DamageSkin",
+	"Q2_IronMaiden_DamageSkin",
+	"Q2_IronMaidenBetaClass_DamageSkin",
+	"Q2_Makron_DamageSkin",
+	"Q2_Jorg_DamageSkin",
+	"Q2_Medic_DamageSkin",
+	"Q2_MedicCommander_DamageSkin",
+	"Q2_Mutant_DamageSkin",
+	"Q2_Parasite_DamageSkin",
+	"Q2_Stalker_DamageSkin",
+	"Q2_SuperTank_DamageSkin",
+	"Q2_Tank_DamageSkin",
+	"Q2_TankCommander_DamageSkin",
+	"Q2_TankBoss_DamageSkin",
+	"Q2_Technician_DamageSkin",
+	"Q2_Widow_DamageSkin",
+	"Q2_Widow2_DamageSkin"
+};
+
+Script "Quake2_Enemy" (void)
+{
+	if(!GetCvar("samsara_zscriptready"))
+		terminate;
+	while(ClassifyActor(0) & ACTOR_Alive)
+	{
+		if(GetActorProperty(0,APROP_Health) <= GetActorProperty(0,APROP_SpawnHealth)/2)
+		{
+			for(int i = 0; i < Q2MaxEnemies; i++)
+			{
+				if(GetActorClass(0) == Q2EnemyArray[i])
+				{
+					GiveInventory(Q2ItemsArray[i],1);
+					terminate;
+				}
+			}
+		}
+		Delay(5);
+	}
+}

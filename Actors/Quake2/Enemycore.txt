@@ -28,6 +28,7 @@ Actor Q2SoldierBase : Zombieman
 		GRD1 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 		GRD1 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		GRD1 A 0 A_GiveInventory("AlreadySpawned",1)
+		TNT1 A 0 ACS_NamedExecuteAlways("Quake2_Enemy")		
 	Spawn2:
 		GRD1 A 1 A_Jump(256,"Idle1","Idle2")
 		Loop
