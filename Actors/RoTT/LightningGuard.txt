@@ -1276,6 +1276,7 @@ actor MissileLow {
 }
 
 Actor StoleWeapon : Inventory {	inventory.maxamount 9 }
+Actor LightningGuardCrezzyMan : Inventory {	inventory.maxamount 1 }
 
 Actor HSMissile_2 : HSMissile
 { 
