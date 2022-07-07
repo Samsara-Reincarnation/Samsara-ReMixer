@@ -8,8 +8,6 @@ actor FlemoidusBipedicus3 : FlemoidusBipedicus2
 	ActiveSound "cqshotguy/active"
     Bloodcolor "6f ef 67"
 	DropItem "FlemoidusBipedicusDrop", 256, 1
-	var int user_scalex;
-	var int user_scaley;
     States
     {
   	  Spawn:

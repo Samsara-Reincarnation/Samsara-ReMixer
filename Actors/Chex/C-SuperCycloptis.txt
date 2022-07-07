@@ -6,8 +6,6 @@ actor SuperCycloptis2 : SuperCycloptis_2
 	DeathSound "cqcaco/death"
 	ActiveSound "cqcaco/active"
     Bloodcolor "6f ef 67"
-	var int user_scalex;
-	var int user_scaley;
     States
     {
 	  Spawn:

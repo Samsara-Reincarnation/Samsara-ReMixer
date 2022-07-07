@@ -1,4 +1,4 @@
-ACTOR NewFlembrane : FlembraneV4//NewFlemoidusMaximus
+ACTOR NewFlembrane : FlembraneV3_2//NewFlemoidusMaximus
 {
 	Tag "Flembrane"
 	Health 2500

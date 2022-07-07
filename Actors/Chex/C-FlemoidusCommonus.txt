@@ -7,8 +7,6 @@ actor FlemoidusCommonus3 : FlemoidusCommonus2
 	DeathSound "cqgrunt/death"
 	ActiveSound "cqgrunt/active"
     Bloodcolor "6f ef 67"
-	var int user_scalex;
-	var int user_scaley;
     States
     {
 	  Spawn:

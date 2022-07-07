@@ -7,8 +7,6 @@ actor NewLarva : Larva_2
 	DeathSound "cqspectre/death"
 	ActiveSound "cqspectre/active"
     Bloodcolor "6f ef 67"
-	var int user_scalex;
-	var int user_scaley;
     States
     {
 	  Spawn:

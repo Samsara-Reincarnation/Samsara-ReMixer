@@ -1,4 +1,4 @@
-actor NewFlemoidusStridicus : FlemoidusStridicus
+actor NewFlemoidusStridicus : FlemoidusStridicus2
 {
 	Health 200
 	Tag "Flemoidus Stridicus"
@@ -8,8 +8,6 @@ actor NewFlemoidusStridicus : FlemoidusStridicus
 	DeathSound "cqdemon/death"
 	ActiveSound "cqdemon/active"
     Bloodcolor "6f ef 67"
-	var int user_scalex;
-	var int user_scaley;
     States
     {
 	  Spawn:

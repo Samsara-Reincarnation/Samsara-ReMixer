@@ -1,4 +1,4 @@
-actor NewArmoredFlemoidusBipedicus : ArmoredFlemoidusBipedicusV3
+actor NewArmoredFlemoidusBipedicus : ArmoredFlemoidusBipedicusV3_2
 {
 	Health 90
 	Tag "Armored Flemoidus Bipedicus"
@@ -8,8 +8,6 @@ actor NewArmoredFlemoidusBipedicus : ArmoredFlemoidusBipedicusV3
 	ActiveSound "cqimp/active"
     Bloodcolor "6f ef 67"
 	DropItem "ArmoredFlemoidDrop"
-	var int user_scalex;
-	var int user_scaley;
     States
     {
 	  Spawn:
