@@ -1,4 +1,4 @@
-actor FlemMine2 : FlemMine
+actor FlemMine2 : FlemMine_2
 {
 	Tag "Flem Mine"
 	SeeSound "cqskull/sight"
