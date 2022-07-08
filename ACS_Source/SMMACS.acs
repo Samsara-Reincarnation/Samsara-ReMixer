@@ -516,9 +516,7 @@ Script "ReMixer_PickSets" (void)
 {	
 	if(monsterProcessing == 1)
 		terminate;
-		
-	SetCvar("mm_cachemodels",0);
-			
+	
 	int clients = PlayerCount();
 	int bitindex, a, b, p;
 
@@ -708,8 +706,9 @@ Script "ReMixer_PickSets" (void)
 			}
 			break;
 	}
+	//Call this manually. I prefer this to be done right away instead of after 1 tic.
 	if(activesets & (1 << 30))
-		SetCvar("mm_cachemodels",1);
+		ACS_NamedExecuteWithResult("RTCWPartsCacher");
 	pickClear = 1;
 	monsterProcessing = 0;
 }
