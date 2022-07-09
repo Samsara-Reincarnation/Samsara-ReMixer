@@ -1,5 +1,25 @@
 // Doom former humans: zombieman, shotgunguy, chaingunguy
 
+actor ShotgunDrop2: SamsaraSlotTwoDrop
+{
+    States
+    {
+      Spawn:
+        WSHT A -1
+        stop
+    }
+}
+
+actor ChingunDrop2: SamsaraSlotFourDrop
+{
+    States
+    {
+      Spawn:
+        WCGN A -1
+        stop
+    }
+}
+
 ACTOR ZombieMan3 : Zombieman2
 {
 	Tag "Zombieman"
@@ -193,7 +213,7 @@ actor Zombieman2_Shrink : Zombieman3
 ACTOR ShotGunGuy3 : ShotGunGuy2
 {
 	Tag "Sergeant"
-	Dropitem "ShotgunDrop"
+	Dropitem "ShotgunDrop2"
 	States
 	{
 		Spawn:
@@ -384,7 +404,7 @@ ACTOR ChaingunGuy3 : ChaingunGuy2
 {
 	Tag "Chaingunner"
 	//Dropitem "DefaultPinataPop"
-	Dropitem "ChingunDrop"
+	Dropitem "ChingunDrop2"
 	States
 	{
 		Spawn:
