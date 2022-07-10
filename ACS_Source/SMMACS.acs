@@ -125,8 +125,6 @@ Script "ReMixerInit" OPEN //667
 		
 		alreadyshowedbs = 1;
 	}
-	
-	SpawnForced("SamsaraMixerCompendiumToken",0,0,0,0,0);
 }
 
 Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668

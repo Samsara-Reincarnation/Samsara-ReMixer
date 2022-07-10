@@ -1,6 +1,6 @@
 Actor SamsaraMixerMonsterDeathScriptToken : Inventory { Inventory.MaxAmount 1024 }
 
-ACTOR SamsaraMixerCompendiumToken
+ACTOR SamsaraMixerLoadedToken
 {
 	Height 2
 	Radius 1
@@ -10,7 +10,7 @@ ACTOR SamsaraMixerCompendiumToken
 	{
 		Spawn:
 			TNT1 A 35
-			Loop
+			Stop
 	}
 }
 Actor SamsaraCorpseActorSmall
