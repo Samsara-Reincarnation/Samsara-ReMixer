@@ -1,7 +1,7 @@
 Actor RTCW_LugerDrop : Ammo1Small
 {
 	+DROPPED
-	Inventory.Pickupmessage "Luger P08"
+	Inventory.Pickupmessage "Luger P08 (8 rounds of Ammo 1)"
 	Inventory.PickupSound "RTCW/WeaponPickup"
 	States
     {
@@ -11,11 +11,9 @@ Actor RTCW_LugerDrop : Ammo1Small
 		Pickup:
 			TNT1 A 0 A_JumpIfInventory("MarathonClass", 0, "PickupMarathon")
 			TNT1 A 0 A_JumpIfInventory("WitchavenClass", 0, "PickupWitchaven")	
-			TNT1 A 0 A_JumpIfInventory("RottClass", 0, "PickupRott")				
-			TNT1 A 0 A_GiveInventory("Clip", 8)
-			TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
+			TNT1 A 0 A_JumpIfInventory("RottClass", 0, "PickupRott")
 			TNT1 A 0 A_JumpIfInventory("QuakeClass", 0, "PickupQuake")
-			TNT1 A 0
+			TNT1 A 0 A_GiveInventory("Clip", 8)
 			stop
 		PickupRott:
 			TNT1 A 0 A_JumpIfInventory("SMissiles", 0, "PickupFail")	  
@@ -24,7 +22,12 @@ Actor RTCW_LugerDrop : Ammo1Small
 		PickupWitchaven:
 			TNT1 A 0 A_JumpIfInventory("Clip", 0, "PickupFail")
 			TNT1 A 0 A_GiveInventory("Clip", 8)
-			stop	
+			stop
+      PickupMarathon:
+        TNT1 A 0 A_JumpIfInventory("Clip", 0, "PickupFail")
+        TNT1 A 0 A_GiveInventory("Clip", 8)
+        TNT1 A 0 A_SetBlend("Green", 0.3, 3)
+        stop
     }
 }
 

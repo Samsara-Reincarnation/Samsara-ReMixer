@@ -133,7 +133,7 @@ Actor Witchaven_QuiverArrowDrop : Ammo1Small {
 
 Actor WHAdamantineRing : BasicArmorBonus
 {
-  inventory.pickupmessage "Adamantine Ring"
+  inventory.pickupmessage "Adamantine Ring (15 Armor)"
   inventory.icon "TNT1A0"
   Inventory.PickupSound "gpickup/gen"
   armor.savepercent 33.215
