@@ -1,0 +1,18 @@
+actor Beastling_SamsaraRemixer : DemonSpawner replaces ZombieMan {}
+actor FallingFollower_SamsaraRemixer : ShotgunGuySpawner replaces Archvile {}
+actor Follower_SamsaraRemixer : ShotgunGuySpawner replaces ShotgunGuy {}
+actor WalkingCentaur_SamsaraRemixer : RevenantSpawner replaces Revenant {}
+actor Soldier_SamsaraRemixer : ChaingunGuySpawner replaces ChaingunGuy {}
+actor Critter_SamsaraRemixer : ZombiemanSpawner replaces BaronOfHell {}
+actor WalkingPhage_SamsaraRemixer : ArachnotronSpawner replaces Arachnotron {}
+actor WalkingPredator_SamsaraRemixer : CyberDemonSpawner replaces Cyberdemon {}
+
+actor Echida_SamsaraRemixer : SpiderMastermindSpawner replaces SpiderMastermind
+{
+	States
+	{
+		Death:
+			TNT1 A 6 A_KeenDie
+			Stop
+	}
+}

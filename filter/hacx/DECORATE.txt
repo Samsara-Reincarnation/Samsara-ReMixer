@@ -1,0 +1,16 @@
+actor HacxThug_SamsaraRemixer : ZombiemanSpawner replaces ZombieMan {}
+actor HacxAndroid_SamsaraRemixer : ShotgunGuySpawner replaces Shotgunguy {}
+actor HacxPhage_SamsaraRemixer : DemonSpawner replaces Fatso {}
+actor HacxBuzzer_SamsaraRemixer : CacodemonSpawner replaces Demon {}
+actor HacxStealth_SamsaraRemixer : CacodemonSpawner replaces Spectre {}
+actor HacxICE_SamsaraRemixer : SpectreSpawner replaces DoomImp {}
+actor HacxDMan_SamsaraRemixer : RevenantSpawner replaces LostSoul {}
+actor HacxMajong7_SamsaraRemixer : PainElementalSpawner replaces PainElemental {}
+actor HacxMonstruct_SamsaraRemixer : FatsoSpawner replaces Chaingunguy {}
+actor HacxTerminatrix_SamsaraRemixer : BaronOfHellSpawner replaces BaronOfHell {}
+actor HacxMechaManiac_SamsaraRemixer : HellKnightSpawner replaces HellKnight {}
+actor HacxThornThing_SamsaraRemixer : ArachnotronSpawner replaces Arachnotron {}
+actor HacxMummy_SamsaraRemixer : DemonSpawner replaces BrainStem {}
+actor HacxSkeleton_SamsaraRemixer : DemonSpawner replaces SmallBloodPool {}
+actor HacxRoamingMine_SamsaraRemixer : LostSoulSpawner replaces WolfensteinSS {}
+actor HacxGlass_SamsaraRemixer : HacxGlass_Samsara replaces Cacodemon {}
