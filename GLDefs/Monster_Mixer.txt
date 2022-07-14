@@ -1321,7 +1321,7 @@ object FlemMine2
    frame SCYCK { light ZORCHED3 }
 }
 
-object FlemMine
+object FlemMine_2
 {
    frame SCYCE { light ZORCHED1 }
    frame SCYCF { light ZORCHED1 }

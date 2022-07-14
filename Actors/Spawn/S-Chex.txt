@@ -251,7 +251,7 @@ ACTOR QuadrumpusSpawner : RevenantSpawner replaces Quadrumpus_2
 	Stop
 	} */
 }
-ACTOR FlemoidusCycloptisCommonusSpawner : CacodemonSpawner replaces FlemoidusCycloptisCommonusV4
+ACTOR FlemoidusCycloptisCommonusSpawner : CacodemonSpawner replaces FlemoidusCycloptisCommonusV3_2
 {
 /*states
 	{
@@ -299,7 +299,7 @@ ACTOR LarvaSpawner : SpectreSpawner replaces Larva_2
 	Stop
 	} */
 }
-ACTOR FlembraneSpawner : BaronOfHellSpawner replaces FlembraneV4
+ACTOR FlembraneSpawner : BaronOfHellSpawner replaces FlembraneV3_2
 {
 /*states
 	{
