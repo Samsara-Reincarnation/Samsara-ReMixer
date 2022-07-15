@@ -405,7 +405,7 @@ ACTOR FatShot_Samsara
   States
   {
   Spawn:
-    MANF AB 4 Bright
+    DMP2 FG 4 Bright
     Loop
   Death:
     MIS2 B 8 Bright

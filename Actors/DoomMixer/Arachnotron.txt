@@ -423,10 +423,10 @@ ACTOR ArachnotronPlasma_Samsara
   States
   {
   Spawn:
-    APLS AB 5 Bright
+    DMP1 AB 5 Bright
     Loop
   Death:
-    APBX ABCDE 5 Bright
+    DMP1 CDEFG 5 Bright
     Stop
   }
 }

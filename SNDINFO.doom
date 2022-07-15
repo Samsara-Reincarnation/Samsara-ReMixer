@@ -71,15 +71,15 @@ doom/fatso/shotx			"Sounds/Doom/doom_dsfirxpl.ogg"
 
 $random doom/chainguy/sight	{ doom/chainguy/sight1  doom/chainguy/sight2  doom/chainguy/sight3 }
 $random doom/chainguy/death	{ doom/chainguy/death1  doom/chainguy/death2  doom/chainguy/death3 }
-doom/chainguy/sight1			"Sounds/Doom/doom_dsposit1.ogg"
-doom/chainguy/sight2			"Sounds/Doom/doom_dsposit2.ogg"
-doom/chainguy/sight3			"Sounds/Doom/doom_dsposit3.ogg"
-doom/chainguy/active			"Sounds/Doom/doom_dsposact.ogg"
-doom/chainguy/pain				"Sounds/Doom/doom_dspopain.ogg"
-doom/chainguy/death1			"Sounds/Doom/doom_dspodth1.ogg"
-doom/chainguy/death2			"Sounds/Doom/doom_dspodth2.ogg"
-doom/chainguy/death3			"Sounds/Doom/doom_dspodth3.ogg"
-doom/chainguy/attack			"Sounds/Doom/doom_dsshotgn.ogg" //dspistol - vanilla stays vanilla >:(
+doom/chainguy/sight1		"Sounds/Doom/doom_dsposit1.ogg"
+doom/chainguy/sight2		"Sounds/Doom/doom_dsposit2.ogg"
+doom/chainguy/sight3		"Sounds/Doom/doom_dsposit3.ogg"
+doom/chainguy/active		"Sounds/Doom/doom_dsposact.ogg"
+doom/chainguy/pain			"Sounds/Doom/doom_dspopain.ogg"
+doom/chainguy/death1		"Sounds/Doom/doom_dspodth1.ogg"
+doom/chainguy/death2		"Sounds/Doom/doom_dspodth2.ogg"
+doom/chainguy/death3		"Sounds/Doom/doom_dspodth3.ogg"
+doom/chainguy/attack		"Sounds/Doom/doom_dsshotgn.ogg" //dspistol - vanilla stays vanilla >:(
 $limit doom/chainguy/attack 0
 
 // Imp
@@ -99,11 +99,11 @@ $limit doom/imp/active 6
 
 // Demon
 
-doom/demon/sight				"Sounds/Doom/doom_dssgtsit.ogg"
-doom/demon/active				"Sounds/Doom/doom_dsdmact.ogg"
-doom/demon/pain					"Sounds/Doom/doom_dsdmpain.ogg"
-doom/demon/melee				"Sounds/Doom/doom_dssgtatk.ogg"
-doom/demon/death				"Sounds/Doom/doom_dssgtdth.ogg"
+doom/demon/sight			"Sounds/Doom/doom_dssgtsit.ogg"
+doom/demon/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/demon/pain				"Sounds/Doom/doom_dsdmpain.ogg"
+doom/demon/melee			"Sounds/Doom/doom_dssgtatk.ogg"
+doom/demon/death			"Sounds/Doom/doom_dssgtdth.ogg"
 $limit doom/demon/melee 4
 
 // Spectre
@@ -116,29 +116,29 @@ doom/spectre/death			"Sounds/Doom/doom_dssgtdth.ogg"
 
 // Cacodemon
 
-caco/sight				dscacsit
+doom/caco/sight				"Sounds/Doom/doom_dscacsit.ogg"
 doom/caco/active			"Sounds/Doom/doom_dsdmact.ogg"
 doom/caco/pain				"Sounds/Doom/doom_dsdmpain.ogg"
-caco/death				dscacdth
+doom/caco/death				"Sounds/Doom/doom_dscacdth.ogg"
 doom/caco/attack			"Sounds/Doom/doom_dsfirsht.ogg"
 doom/caco/shotx				"Sounds/Doom/doom_dsfirxpl.ogg"
 
 // Baron of Hell
 
-baron/sight				dsbrssit
+doom/baron/sight			"Sounds/Doom/doom_dsbrssit.ogg"
 doom/baron/active			"Sounds/Doom/doom_dsdmact.ogg"
 doom/baron/pain				"Sounds/Doom/doom_dsdmpain.ogg"
 doom/baron/melee			"Sounds/Doom/doom_dsclaw.ogg"
-baron/death				dsbrsdth
+doom/baron/death			"Sounds/Doom/doom_dsbrsdth.ogg"
 doom/baron/attack			"Sounds/Doom/doom_dsfirsht.ogg"
 doom/baron/shotx			"Sounds/Doom/doom_dsfirxpl.ogg"
 
 // Hell Knight
 
-knight/sight			dskntsit
+doom/knight/sight			"Sounds/Doom/doom_dskntsit.ogg"
 doom/knight/active			"Sounds/Doom/doom_dsdmact.ogg"
 doom/knight/pain			"Sounds/Doom/doom_dsdmpain.ogg"
-knight/death			dskntdth
+doom/knight/death			"Sounds/Doom/doom_dskntdth.ogg"
 
 // Lost Soul
 

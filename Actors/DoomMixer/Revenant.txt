@@ -401,8 +401,13 @@ actor RevenantTracerDumbfire_Samsara : RevenantTracer
     States
     {
     Spawn:
-        FATB AB 2 bright
+        DMP2 AB 2 bright
         loop
+	Death:
+		DMP2 C 8 Bright
+		DMP2 D 6 Bright
+		DMP2 E 4 Bright
+		Stop
     }
 }
 
@@ -416,10 +421,15 @@ actor RevenantTracerHoming_Samsara : RevenantTracer
     States
     {
     Spawn:
-        FATB A 1 bright A_Tracer
-        FATB A 1 bright A_Tracer
-        FATB B 1 bright A_Tracer
-        FATB B 1 bright A_Tracer
+        DMP2 A 1 bright A_Tracer
+        DMP2 A 1 bright A_Tracer
+        DMP2 B 1 bright A_Tracer
+        DMP2 B 1 bright A_Tracer
         loop
+	Death:
+		DMP2 C 8 Bright
+		DMP2 D 6 Bright
+		DMP2 E 4 Bright
+		Stop
     }
 }

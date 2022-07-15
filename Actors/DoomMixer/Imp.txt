@@ -390,10 +390,10 @@ ACTOR DoomImpBall_Samsara
   States
   {
   Spawn:
-    BAL1 AB 4 Bright
+    DMP1 HI 4 Bright
     Loop
   Death:
-    BAL1 CDE 6 Bright
+    DMP1 JKL 6 Bright
     Stop
   }
 }

@@ -384,12 +384,12 @@ ACTOR ArchvileFire_Samsara
   States
   {
   Spawn:
-    FIRE A 2 Bright A_PlaySound("doom/vile/firestrt", CHAN_BODY)
-    FIRE BAB 2 Bright A_Fire
-    FIRE C 2 Bright A_PlaySound("doom/vile/firecrkl", CHAN_BODY)
-    FIRE BCBCDCDCDEDED 2 Bright A_Fire
-    FIRE E 2 Bright A_PlaySound("doom/vile/firecrkl", CHAN_BODY)
-    FIRE FEFEFGHGHGH 2 Bright A_Fire
+    DMP2 H 2 Bright A_PlaySound("doom/vile/firestrt", CHAN_BODY)
+    DMP2 IHI 2 Bright A_Fire
+    DMP2 J 2 Bright A_PlaySound("doom/vile/firecrkl", CHAN_BODY)
+    DMP2 IJIJKJKJKLKLK 2 Bright A_Fire
+    DMP2 L 2 Bright A_PlaySound("doom/vile/firecrkl", CHAN_BODY)
+    DMP2 MLMLMNONONO 2 Bright A_Fire
     Stop
   }
 }
