@@ -16,3 +16,7 @@ actor Echida_SamsaraRemixer : SpiderMastermindSpawner replaces SpiderMastermind
 			Stop
 	}
 }
+
+actor Obstacle1_SamsaraRemixer : Obstacle1_Samsara replaces Fatso {}
+actor Unknown2_SamsaraRemixer : Unknown2_Samsara replaces Demon {}
+actor Mine_SamsaraRemixer : Mine_Samsara replaces LostSoul {}

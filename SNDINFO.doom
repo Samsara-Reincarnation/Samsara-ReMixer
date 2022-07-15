@@ -48,14 +48,14 @@ doom/vile/firecrkl			"Sounds/Doom/doom_dsflame.ogg"
 
 // Revenant
 
-skeleton/sight			dsskesit
-skeleton/active			dsskeact
-skeleton/pain			dspopain
-skeleton/melee			dsskepch
-skeleton/swing			dsskeswg
-skeleton/death			dsskedth
-skeleton/attack			dsskeatk
-skeleton/tracex			dsbarexp
+doom/skeleton/sight			"Sounds/Doom/doom_dsskesit.ogg"
+doom/skeleton/active			"Sounds/Doom/doom_dsskeact.ogg"
+doom/skeleton/pain			"Sounds/Doom/doom_dspopain.ogg"
+doom/skeleton/melee			"Sounds/Doom/doom_dsskepch.ogg"
+doom/skeleton/swing			"Sounds/Doom/doom_dsskeswg.ogg"
+doom/skeleton/death			"Sounds/Doom/doom_dsskedth.ogg"
+doom/skeleton/attack			"Sounds/Doom/doom_dsskeatk.ogg"
+doom/skeleton/tracex	"Sounds/Doom/doom_dsbarexp.ogg"
 
 // Fatso
 
@@ -64,8 +64,8 @@ fatso/active			dsposact
 fatso/pain				dsmnpain
 fatso/raiseguns			dsmanatk
 fatso/death				dsmandth
-fatso/attack			dsfirsht
-fatso/shotx				dsfirxpl
+doom/fatso/attack		"Sounds/Doom/doom_dsfirsht.ogg"
+doom/fatso/shotx		"Sounds/Doom/doom_dsfirxpl.ogg"
 
 // Chainguy
 
@@ -117,27 +117,27 @@ doom/spectre/death			"Sounds/Doom/doom_dssgtdth.ogg"
 // Cacodemon
 
 caco/sight				dscacsit
-caco/active				dsdmact
-caco/pain				dsdmpain
+doom/caco/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/caco/pain				"Sounds/Doom/doom_dsdmpain.ogg"
 caco/death				dscacdth
-caco/attack				dsfirsht
-caco/shotx				dsfirxpl
+doom/caco/attack			"Sounds/Doom/doom_dsfirsht.ogg"
+doom/caco/shotx				"Sounds/Doom/doom_dsfirxpl.ogg"
 
 // Baron of Hell
 
 baron/sight				dsbrssit
-baron/active			dsdmact
-baron/pain				dsdmpain
-baron/melee				dsclaw
+doom/baron/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/baron/pain				"Sounds/Doom/doom_dsdmpain.ogg"
+doom/baron/melee			"Sounds/Doom/doom_dsclaw.ogg"
 baron/death				dsbrsdth
-baron/attack			dsfirsht
-baron/shotx				dsfirxpl
+doom/baron/attack			"Sounds/Doom/doom_dsfirsht.ogg"
+doom/baron/shotx			"Sounds/Doom/doom_dsfirxpl.ogg"
 
 // Hell Knight
 
 knight/sight			dskntsit
-knight/active			dsdmact
-knight/pain				dsdmpain
+doom/knight/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/knight/pain			"Sounds/Doom/doom_dsdmpain.ogg"
 knight/death			dskntdth
 
 // Lost Soul
@@ -158,13 +158,13 @@ doom/spider/walk			"Sounds/Doom/doom_dsmetal.ogg"
 
 // Arachnotron
 
-baby/sight				dsbspsit
-baby/active				dsbspact
-baby/pain				dsdmpain
-baby/death				dsbspdth
-baby/walk				dsbspwlk
-baby/attack				dsplasma
-baby/shotx				dsfirxpl
+doom/baby/sight				"Sounds/Doom/doom_dsbspsit.ogg"
+doom/baby/active			"Sounds/Doom/doom_dsbspact.ogg"
+doom/baby/pain				"Sounds/Doom/doom_dsdmpain.ogg"
+doom/baby/death				"Sounds/Doom/doom_dsbspdth.ogg"
+doom/baby/walk				"Sounds/Doom/doom_dsbspwlk.ogg"
+doom/baby/attack			"Sounds/Doom/doom_dsplasma.ogg"
+doom/baby/shotx				"Sounds/Doom/doom_dsfirxpl.ogg"
 $limit baby/attack 0
 
 // Cyber Demon
