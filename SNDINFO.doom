@@ -4,45 +4,47 @@
 /*
 /************************************************************************* */
 
+doom/misc/gibbed			"Sounds/Doom/doom_dsslop.ogg"
+
 // Zombie man
 
-$random grunt/sight 	{ grunt/sight1  grunt/sight2  grunt/sight3 }
-$random grunt/death		{ grunt/death1  grunt/death2  grunt/death3 }
-grunt/sight1			dsposit1
-grunt/sight2			dsposit2
-grunt/sight3			dsposit3
-grunt/active			dsposact
-grunt/pain				dspopain
-grunt/death1			dspodth1
-grunt/death2			dspodth2
-grunt/death3			dspodth3
-grunt/attack			dspistol
+$random doom/grunt/sight 	{ doom/grunt/sight1  doom/grunt/sight2  doom/grunt/sight3 }
+$random doom/grunt/death		{ doom/grunt/death1  doom/grunt/death2  doom/grunt/death3 }
+doom/grunt/sight1			"Sounds/Doom/doom_dsposit1.ogg"
+doom/grunt/sight2			"Sounds/Doom/doom_dsposit2.ogg"
+doom/grunt/sight3			"Sounds/Doom/doom_dsposit3.ogg"
+doom/grunt/active			"Sounds/Doom/doom_dsposact.ogg"
+doom/grunt/pain				"Sounds/Doom/doom_dspopain.ogg"
+doom/grunt/death1			"Sounds/Doom/doom_dspodth1.ogg"
+doom/grunt/death2			"Sounds/Doom/doom_dspodth2.ogg"
+doom/grunt/death3			"Sounds/Doom/doom_dspodth3.ogg"
+doom/grunt/attack			"Sounds/Doom/doom_dspistol.ogg"
 
 // Shotgun guy
 
-$random shotguy/sight	{ shotguy/sight1  shotguy/sight2  shotguy/sight3 }
-$random shotguy/death	{ shotguy/death1  shotguy/death2  shotguy/death3 }
-shotguy/sight1			dsposit1
-shotguy/sight2			dsposit2
-shotguy/sight3			dsposit3
-shotguy/active			dsposact
-shotguy/pain			dspopain
-shotguy/death1			dspodth1
-shotguy/death2			dspodth2
-shotguy/death3			dspodth3
-shotguy/attack			dsshotgn
+$random doom/shotguy/sight	{ doom/shotguy/sight1  doom/shotguy/sight2  doom/shotguy/sight3 }
+$random doom/shotguy/death	{ doom/shotguy/death1  doom/shotguy/death2  doom/shotguy/death3 }
+doom/shotguy/sight1			"Sounds/Doom/doom_dsposit1.ogg"
+doom/shotguy/sight2			"Sounds/Doom/doom_dsposit2.ogg"
+doom/shotguy/sight3			"Sounds/Doom/doom_dsposit3.ogg"
+doom/shotguy/active			"Sounds/Doom/doom_dsposact.ogg"
+doom/shotguy/pain			"Sounds/Doom/doom_dspopain.ogg"
+doom/shotguy/death1			"Sounds/Doom/doom_dspodth1.ogg"
+doom/shotguy/death2			"Sounds/Doom/doom_dspodth2.ogg"
+doom/shotguy/death3			"Sounds/Doom/doom_dspodth3.ogg"
+doom/shotguy/attack			"Sounds/Doom/doom_dsshotgn.ogg"
 
 // Archvile
 
-vile/sight				dsvilsit
-vile/active				dsvilact
-vile/pain				dsvipain
-vile/death				dsvildth
-vile/raise				dsslop
-vile/start				dsvilatk
-vile/stop				dsbarexp
-vile/firestrt			dsflamst
-vile/firecrkl			dsflame
+doom/vile/sight				"Sounds/Doom/doom_dsvilsit.ogg"
+doom/vile/active			"Sounds/Doom/doom_dsvilact.ogg"
+doom/vile/pain				"Sounds/Doom/doom_dsvipain.ogg"
+doom/vile/death				"Sounds/Doom/doom_dsvildth.ogg"
+doom/vile/raise				"Sounds/Doom/doom_dsslop.ogg"
+doom/vile/start				"Sounds/Doom/doom_dsvilatk.ogg"
+doom/vile/stop				"Sounds/Doom/doom_dsbarexp.ogg"
+doom/vile/firestrt			"Sounds/Doom/doom_dsflamst.ogg"
+doom/vile/firecrkl			"Sounds/Doom/doom_dsflame.ogg"
 
 // Revenant
 
@@ -67,50 +69,50 @@ fatso/shotx				dsfirxpl
 
 // Chainguy
 
-$random chainguy/sight	{ chainguy/sight1  chainguy/sight2  chainguy/sight3 }
-$random chainguy/death	{ chainguy/death1  chainguy/death2  chainguy/death3 }
-chainguy/sight1			dsposit1
-chainguy/sight2			dsposit2
-chainguy/sight3			dsposit3
-chainguy/active			dsposact
-chainguy/pain			dspopain
-chainguy/death1			dspodth1
-chainguy/death2			dspodth2
-chainguy/death3			dspodth3
-chainguy/attack			dsshotgn //dspistol - vanilla stays vanilla >:(
-$limit chainguy/attack 0
+$random doom/chainguy/sight	{ doom/chainguy/sight1  doom/chainguy/sight2  doom/chainguy/sight3 }
+$random doom/chainguy/death	{ doom/chainguy/death1  doom/chainguy/death2  doom/chainguy/death3 }
+doom/chainguy/sight1			"Sounds/Doom/doom_dsposit1.ogg"
+doom/chainguy/sight2			"Sounds/Doom/doom_dsposit2.ogg"
+doom/chainguy/sight3			"Sounds/Doom/doom_dsposit3.ogg"
+doom/chainguy/active			"Sounds/Doom/doom_dsposact.ogg"
+doom/chainguy/pain				"Sounds/Doom/doom_dspopain.ogg"
+doom/chainguy/death1			"Sounds/Doom/doom_dspodth1.ogg"
+doom/chainguy/death2			"Sounds/Doom/doom_dspodth2.ogg"
+doom/chainguy/death3			"Sounds/Doom/doom_dspodth3.ogg"
+doom/chainguy/attack			"Sounds/Doom/doom_dsshotgn.ogg" //dspistol - vanilla stays vanilla >:(
+$limit doom/chainguy/attack 0
 
 // Imp
 
-$random imp/sight		{ imp/sight1  imp/sight2 }
-$random imp/death		{ imp/death1  imp/death2 }
-imp/sight1				dsbgsit1
-imp/sight2				dsbgsit2
-imp/active				dsbgact
-imp/pain				dspopain
-imp/melee				dsclaw
-imp/death1				dsbgdth1
-imp/death2				dsbgdth2
-imp/attack				dsfirsht
-imp/shotx				dsfirxpl
-$limit imp/active 6
+$random doom/imp/sight		{ doom/imp/sight1  doom/imp/sight2 }
+$random doom/imp/death		{ doom/imp/death1  doom/imp/death2 }
+doom/imp/sight1				"Sounds/Doom/doom_dsbgsit1.ogg"
+doom/imp/sight2				"Sounds/Doom/doom_dsbgsit2.ogg"
+doom/imp/active				"Sounds/Doom/doom_dsbgact.ogg"
+doom/imp/pain				"Sounds/Doom/doom_dspopain.ogg"
+doom/imp/melee				"Sounds/Doom/doom_dsclaw.ogg"
+doom/imp/death1				"Sounds/Doom/doom_dsbgdth1.ogg"
+doom/imp/death2				"Sounds/Doom/doom_dsbgdth2.ogg"
+doom/imp/attack				"Sounds/Doom/doom_dsfirsht.ogg"
+doom/imp/shotx				"Sounds/Doom/doom_dsfirxpl.ogg"
+$limit doom/imp/active 6
 
 // Demon
 
-demon/sight				dssgtsit
-demon/active			dsdmact
-demon/pain				dsdmpain
-demon/melee				dssgtatk
-demon/death				dssgtdth
-$limit demon/melee 4
+doom/demon/sight				"Sounds/Doom/doom_dssgtsit.ogg"
+doom/demon/active				"Sounds/Doom/doom_dsdmact.ogg"
+doom/demon/pain					"Sounds/Doom/doom_dsdmpain.ogg"
+doom/demon/melee				"Sounds/Doom/doom_dssgtatk.ogg"
+doom/demon/death				"Sounds/Doom/doom_dssgtdth.ogg"
+$limit doom/demon/melee 4
 
 // Spectre
 
-spectre/sight			dssgtsit
-spectre/active			dsdmact
-spectre/pain			dsdmpain
-spectre/melee			dssgtatk
-spectre/death			dssgtdth
+doom/spectre/sight			"Sounds/Doom/doom_dssgtsit.ogg"
+doom/spectre/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/spectre/pain			"Sounds/Doom/doom_dsdmpain.ogg"
+doom/spectre/melee			"Sounds/Doom/doom_dssgtatk.ogg"
+doom/spectre/death			"Sounds/Doom/doom_dssgtdth.ogg"
 
 // Cacodemon
 
@@ -140,19 +142,19 @@ knight/death			dskntdth
 
 // Lost Soul
 
-skull/active			dsdmact
-skull/pain				dsdmpain
-skull/melee				dssklatk
-skull/death				dsfirxpl
+doom/skull/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/skull/pain				"Sounds/Doom/doom_dsdmpain.ogg"
+doom/skull/melee			"Sounds/Doom/doom_dssklatk.ogg"
+doom/skull/death			"Sounds/Doom/doom_dsfirxpl.ogg"
 
 // Spider Mastermind
 
-spider/sight			dsspisit
-spider/active			dsdmact
-spider/pain				dsdmpain
-spider/attack			dsshotgn
-spider/death			dsspidth
-spider/walk				dsmetal
+doom/spider/sight			"Sounds/Doom/doom_dsspisit.ogg"
+doom/spider/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/spider/pain			"Sounds/Doom/doom_dsdmpain.ogg"
+doom/spider/attack			"Sounds/Doom/doom_dsshotgn.ogg"
+doom/spider/death			"Sounds/Doom/doom_dsspidth.ogg"
+doom/spider/walk			"Sounds/Doom/doom_dsmetal.ogg"
 
 // Arachnotron
 
@@ -167,25 +169,25 @@ $limit baby/attack 0
 
 // Cyber Demon
 
-cyber/sight				dscybsit
-cyber/active			dsdmact
-cyber/pain				dsdmpain
-cyber/death				dscybdth
-cyber/hoof				dshoof
-weapons/rocklx			dsbarexp
-weapons/rocklf			dsrlaunc
+doom/cyber/sight			"Sounds/Doom/doom_dscybsit.ogg"
+doom/cyber/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/cyber/pain				"Sounds/Doom/doom_dsdmpain.ogg"
+doom/cyber/death			"Sounds/Doom/doom_dscybdth.ogg"
+doom/cyber/hoof				"Sounds/Doom/doom_dshoof.ogg"
+doom/weapons/rocklx			"Sounds/Doom/doom_dsbarexp.ogg"
+doom/weapons/rocklf			"Sounds/Doom/doom_dsrlaunc.ogg"
 
 // Pain Elemental
 
-pain/sight				dspesit
-pain/active				dsdmact
-pain/pain				dspepain
-pain/death				dspedth
+doom/pain/sight				"Sounds/Doom/doom_dspesit.ogg"
+doom/pain/active			"Sounds/Doom/doom_dsdmact.ogg"
+doom/pain/pain				"Sounds/Doom/doom_dspepain.ogg"
+doom/pain/death				"Sounds/Doom/doom_dspedth.ogg"
 
 // Wolfenstein SS
 
-wolfss/sight			dssssit
-wolfss/active			dsposact
-wolfss/pain				dspopain
-wolfss/death			dsssdth
-wolfss/attack			dsshotgn
+doom/wolfss/sight			"Sounds/Doom/doom_dssssit.ogg"
+doom/wolfss/active			"Sounds/Doom/doom_dsposact.ogg"
+doom/wolfss/pain			"Sounds/Doom/doom_dspopain.ogg"
+doom/wolfss/death			"Sounds/Doom/doom_dsssdth.ogg"
+doom/wolfss/attack			"Sounds/Doom/doom_dsshotgn.ogg"
