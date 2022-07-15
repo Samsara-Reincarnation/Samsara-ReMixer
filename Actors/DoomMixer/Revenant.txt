@@ -1,4 +1,4 @@
-// TODO: Recreate RevenantTracerSmoke using Decorate functions
+// TODO: Recreate RevenantTracerSmoke using Decorate functions; fix melee swing sound
 
 ACTOR Revenant3 : Revenant2
 {

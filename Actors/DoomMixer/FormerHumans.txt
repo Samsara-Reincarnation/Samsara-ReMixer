@@ -46,7 +46,7 @@ ACTOR ZombieMan3 : Zombieman2
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
         PSS2 E 10 A_FaceTarget
         TNT1 A 0 A_PlaySound("doom/grunt/attack")
-        PSS2 F 8 A_CustomMissile("DoomEnemyBullet",32,0,random(-22,22),8)
+        PSS2 F 8 A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
         PSS2 E 8
 		Goto See
 	Pain:
@@ -424,7 +424,7 @@ ACTOR ShotGunGuy3 : ShotGunGuy2
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
         SPS2 E 10 A_FaceTarget
         TNT1 A 0 A_PlaySound("doom/shotguy/attack")
-        TNT1 AAA 0 bright A_CustomMissile("DoomEnemyBullet",32,0,random(-22,22),8)
+        TNT1 A 0 bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
         SPS2 F 10 bright
         SPS2 E 10
 		Goto See
@@ -802,9 +802,9 @@ ACTOR ChaingunGuy3 : ChaingunGuy2
         TNT1 A 0 A_ChangeFlag("NOPAIN",0)
         CPS2 E 10 A_FaceTarget
         TNT1 A 0 A_PlaySound("doom/chainguy/attack")
-        CPS2 F 4 bright A_CustomMissile("DoomEnemyBullet",32,0,random(-22,22),8)
+        CPS2 F 4 bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
         TNT1 A 0 A_PlaySound("doom/chainguy/attack")
-        CPS2 E 4 bright A_CustomMissile("DoomEnemyBullet",32,0,random(-22,22),8)
+        CPS2 E 4 bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
         CPS2 F 1 A_CPosRefire
         goto Missile+2
 	Pain:
@@ -1183,10 +1183,10 @@ ACTOR Nazi3 : Nazi2
         TNT1 A 0 A_ChangeFlag("NOPAIN",0)
         SSW2 EF 10 A_FaceTarget
         TNT1 A 0 A_PlaySound("doom/wolfss/attack")
-        SSW2 G 4 bright A_CustomMissile("DoomEnemyBullet",32,0,random(-22,22),8)
+        SSW2 G 4 bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
         SSW2 F 6 A_FaceTarget
         TNT1 A 0 A_PlaySound("doom/wolfss/attack")
-        SSW2 G 4 bright A_CustomMissile("DoomEnemyBullet",32,0,random(-22,22),8)
+        SSW2 G 4 bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
         SSW2 F 1 A_CPosRefire
 		Goto Missile+2
 	Pain:

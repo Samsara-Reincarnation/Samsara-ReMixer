@@ -1,3 +1,25 @@
+ACTOR DoomBulletPuff_Samsara
+{
+  +NOBLOCKMAP
+  +NOGRAVITY
+  +ALLOWPARTICLES
+  +RANDOMIZE
+  RenderStyle Translucent
+  Alpha 0.5
+  VSpeed 1
+  Mass 5
+  States
+  {
+  Spawn:
+    PFF2 A 4 Bright
+    PFF2 B 4
+    // Intentional fall-through
+  Melee:
+    PFF2 CD 4
+    Stop
+  }
+}
+
 // Multi
 
 ACTOR MultiZombieman3 : Zombieman3

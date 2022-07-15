@@ -49,23 +49,23 @@ doom/vile/firecrkl			"Sounds/Doom/doom_dsflame.ogg"
 // Revenant
 
 doom/skeleton/sight			"Sounds/Doom/doom_dsskesit.ogg"
-doom/skeleton/active			"Sounds/Doom/doom_dsskeact.ogg"
+doom/skeleton/active		"Sounds/Doom/doom_dsskeact.ogg"
 doom/skeleton/pain			"Sounds/Doom/doom_dspopain.ogg"
 doom/skeleton/melee			"Sounds/Doom/doom_dsskepch.ogg"
 doom/skeleton/swing			"Sounds/Doom/doom_dsskeswg.ogg"
 doom/skeleton/death			"Sounds/Doom/doom_dsskedth.ogg"
-doom/skeleton/attack			"Sounds/Doom/doom_dsskeatk.ogg"
-doom/skeleton/tracex	"Sounds/Doom/doom_dsbarexp.ogg"
+doom/skeleton/attack		"Sounds/Doom/doom_dsskeatk.ogg"
+doom/skeleton/tracex		"Sounds/Doom/doom_dsbarexp.ogg"
 
 // Fatso
 
-fatso/sight				dsmansit
-fatso/active			dsposact
-fatso/pain				dsmnpain
-fatso/raiseguns			dsmanatk
-fatso/death				dsmandth
-doom/fatso/attack		"Sounds/Doom/doom_dsfirsht.ogg"
-doom/fatso/shotx		"Sounds/Doom/doom_dsfirxpl.ogg"
+doom/fatso/sight			"Sounds/Doom/doom_dsmansit.ogg"
+doom/fatso/active			"Sounds/Doom/doom_dsposact.ogg"
+doom/fatso/pain				"Sounds/Doom/doom_dsmnpain.ogg"
+doom/fatso/raiseguns		"Sounds/Doom/doom_dsmanatk.ogg"
+doom/fatso/death			"Sounds/Doom/doom_dsmandth.ogg"
+doom/fatso/attack			"Sounds/Doom/doom_dsfirsht.ogg"
+doom/fatso/shotx			"Sounds/Doom/doom_dsfirxpl.ogg"
 
 // Chainguy
 
