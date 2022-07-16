@@ -1,4 +1,4 @@
-// TODO: Recreate RevenantTracerSmoke using Decorate functions; fix melee swing sound
+// TODO: Recreate RevenantTracerSmoke using Decorate functions
 
 ACTOR Revenant3 : Revenant2
 {
@@ -11,7 +11,7 @@ ACTOR Revenant3 : Revenant2
 	{
 	Spawn:
 		SKE2 A 0
-		SKE2 A 1 A_JumpIfInventory("AlreadySpawned",1,"Super::Spawn")
+		SKE2 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 		SKE2 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		SKE2 A 0 A_GiveInventory("AlreadySpawned",1)
 		SKE2 A 0
@@ -25,8 +25,7 @@ ACTOR Revenant3 : Revenant2
 		SKE2 G 1 A_FaceTarget
 		SKE2 G 6 A_PlaySound("doom/skeleton/swing", CHAN_BODY)
 		SKE2 H 6 A_FaceTarget
-		TNT1 A 0 A_PlaySound("doom/skeleton/melee", CHAN_BODY)
-		SKE2 I 6 A_CustomMeleeAttack(random(1,10)*6)
+		SKE2 I 6 A_CustomMeleeAttack(random(1,10)*6, "doom/skeleton/melee")
 		Goto See
     Missile:
         TNT1 A 0 A_ChangeFlag("NOPAIN",0)

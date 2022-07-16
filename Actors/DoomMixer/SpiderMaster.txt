@@ -9,7 +9,7 @@ ACTOR SpiderMastermind3 : SpiderMastermind2
 	{
 	Spawn:
 		SPD2 A 0
-		SPD2 A 1 A_JumpIfInventory("AlreadySpawned",1,"Super::Spawn")
+		SPD2 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 		SPD2 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 		SPD2 A 0 A_GiveInventory("AlreadySpawned",1)
 		SPD2 A 0
