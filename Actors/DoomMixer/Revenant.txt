@@ -435,9 +435,9 @@ actor RevenantTracerHoming_Samsara
     {
     Spawn:
         DMP2 A 0 bright A_SpawnItemEx("RevenantTracerSmoke_Samsara",0,0,0,0,0,1,0,0)	
-        DMP2 A 2 bright A_SeekerMissile(0, 4, SMF_LOOK, 256)
+        DMP2 A 2 bright A_SeekerMissile(0, 6, SMF_LOOK, 256)
         DMP2 B 0 bright A_SpawnItemEx("RevenantTracerSmoke_Samsara",0,0,0,0,0,1,0,0)	
-        DMP2 B 2 bright A_SeekerMissile(0, 4, SMF_LOOK, 256)
+        DMP2 B 2 bright A_SeekerMissile(0, 6, SMF_LOOK, 256)
         loop
 	Death:
 		DMP2 C 8 Bright
