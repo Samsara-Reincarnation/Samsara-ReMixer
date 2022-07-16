@@ -325,9 +325,7 @@ ACTOR CacodemonBall_Samsara
   Damage 5
   Projectile
   +RANDOMIZE
-  +ZDOOMTRANS
-  RenderStyle Add
-  Alpha 1
+  RenderStyle Normal
   SeeSound "doom/caco/attack"
   DeathSound "doom/caco/shotx"
   States

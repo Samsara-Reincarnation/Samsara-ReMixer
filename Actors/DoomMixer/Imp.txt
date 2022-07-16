@@ -383,9 +383,7 @@ ACTOR DoomImpBall_Samsara
   Damage 3
   Projectile
   +RANDOMIZE
-  +ZDOOMTRANS
-  RenderStyle Add
-  Alpha 1
+  RenderStyle Normal
   SeeSound "doom/imp/attack"
   DeathSound "doom/imp/shotx"
   States

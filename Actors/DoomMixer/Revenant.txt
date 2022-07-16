@@ -397,10 +397,9 @@ actor RevenantTracerDumbfire_Samsara
 	Projectile
 	+RANDOMIZE
 	+THRUGHOST
-	+ZDOOMTRANS
 	SeeSound "doom/skeleton/attack"
 	DeathSound "doom/skeleton/tracex"
-	RenderStyle Add
+	RenderStyle Normal
 	Decal RevenantScorch
     DamageType "DoomTheseGuysAreTheBest"
     States
@@ -425,10 +424,9 @@ actor RevenantTracerHoming_Samsara
 	Projectile
 	+SEEKERMISSILE
 	+RANDOMIZE
-	+ZDOOMTRANS
 	SeeSound "doom/skeleton/attack"
 	DeathSound "doom/skeleton/tracex"
-	RenderStyle Add
+	RenderStyle Normal
     Decal RevenantScorch
     DamageType "DoomTheseGuysAreTheBest"
     States
@@ -452,8 +450,7 @@ ACTOR RevenantTracerSmoke_Samsara
   +NOBLOCKMAP
   +NOGRAVITY
   +NOTELEPORT
-  RenderStyle Translucent 
-  Alpha 0.5
+  RenderStyle Normal
   States
   {	
   Spawn:

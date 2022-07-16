@@ -729,9 +729,7 @@ ACTOR BaronBall_Samsara
   Damage 8
   Projectile
   +RANDOMIZE
-  +ZDOOMTRANS
-  RenderStyle Add
-  Alpha 1
+  RenderStyle Normal
   SeeSound "doom/baron/attack"
   DeathSound "doom/baron/shotx"
   Decal "BaronScorch"

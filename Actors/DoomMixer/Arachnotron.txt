@@ -416,9 +416,7 @@ ACTOR ArachnotronPlasma_Samsara
   Damage 5
   Projectile
   +RANDOMIZE
-  +ZDOOMTRANS
-  RenderStyle Add 
-  Alpha 0.75
+  RenderStyle Normal
   SeeSound "doom/baby/attack"
   DeathSound "doom/baby/shotx"
   States
