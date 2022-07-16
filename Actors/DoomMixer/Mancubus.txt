@@ -398,6 +398,7 @@ ACTOR FatShot_Samsara
   +RANDOMIZE
   +THRUGHOST
   +FIREDAMAGE
+  +ZDOOMTRANS
   RenderStyle Add
   Alpha 1
   SeeSound "doom/fatso/attack"

@@ -379,6 +379,7 @@ ACTOR ArchvileFire_Samsara
 {
   +NOBLOCKMAP
   +NOGRAVITY
+  +ZDOOMTRANS
   RenderStyle Add
   Alpha 1
   States

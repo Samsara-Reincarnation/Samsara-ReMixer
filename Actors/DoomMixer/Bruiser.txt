@@ -729,6 +729,7 @@ ACTOR BaronBall_Samsara
   Damage 8
   Projectile
   +RANDOMIZE
+  +ZDOOMTRANS
   RenderStyle Add
   Alpha 1
   SeeSound "doom/baron/attack"

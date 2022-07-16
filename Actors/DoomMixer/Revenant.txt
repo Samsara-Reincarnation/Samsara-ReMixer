@@ -1,5 +1,3 @@
-// TODO: Recreate RevenantTracerSmoke using Decorate functions
-
 ACTOR Revenant3 : Revenant2
 {
 	SeeSound "doom/skeleton/sight"
@@ -390,12 +388,20 @@ actor Revenant2_ShrinkEffect : Revenant2
 	}
 }
 
-actor RevenantTracerDumbfire_Samsara : RevenantTracer
+actor RevenantTracerDumbfire_Samsara
 {
+	Radius 11
+	Height 8
+	Speed 10
+	Damage 10
+	Projectile
+	+RANDOMIZE
+	+THRUGHOST
+	+ZDOOMTRANS
 	SeeSound "doom/skeleton/attack"
 	DeathSound "doom/skeleton/tracex"
+	RenderStyle Add
 	Decal RevenantScorch
-    +THRUGHOST
     DamageType "DoomTheseGuysAreTheBest"
     States
     {
@@ -410,20 +416,28 @@ actor RevenantTracerDumbfire_Samsara : RevenantTracer
     }
 }
 
-actor RevenantTracerHoming_Samsara : RevenantTracer
+actor RevenantTracerHoming_Samsara
 {
+	Radius 11
+	Height 8
+	Speed 10
+	Damage 10
+	Projectile
+	+SEEKERMISSILE
+	+RANDOMIZE
+	+ZDOOMTRANS
 	SeeSound "doom/skeleton/attack"
 	DeathSound "doom/skeleton/tracex"
+	RenderStyle Add
     Decal RevenantScorch
-    -THRUGHOST
     DamageType "DoomTheseGuysAreTheBest"
     States
     {
     Spawn:
-        DMP2 A 1 bright A_Tracer
-        DMP2 A 1 bright A_Tracer
-        DMP2 B 1 bright A_Tracer
-        DMP2 B 1 bright A_Tracer
+        DMP2 A 0 bright A_SpawnItemEx("RevenantTracerSmoke_Samsara",0,0,0,0,0,1,0,0)	
+        DMP2 A 2 bright A_SeekerMissile(0, 4, SMF_LOOK, 256)
+        DMP2 B 0 bright A_SpawnItemEx("RevenantTracerSmoke_Samsara",0,0,0,0,0,1,0,0)	
+        DMP2 B 2 bright A_SeekerMissile(0, 4, SMF_LOOK, 256)
         loop
 	Death:
 		DMP2 C 8 Bright
@@ -431,4 +445,19 @@ actor RevenantTracerHoming_Samsara : RevenantTracer
 		DMP2 E 4 Bright
 		Stop
     }
+}
+
+ACTOR RevenantTracerSmoke_Samsara
+{
+  +NOBLOCKMAP
+  +NOGRAVITY
+  +NOTELEPORT
+  RenderStyle Translucent 
+  Alpha 0.5
+  States
+  {	
+  Spawn:
+    PFF2 ABABC 4
+    Stop
+  }
 }
