@@ -1,6 +1,7 @@
 // Monsters
 
 #include "gldefs/Monster_Mixer.txt"
+#include "gldefs/Monster_Mixer_Doom.txt"
 #include "gldefs/Monster_Mixer_VDR.txt"
 #include "gldefs/Monster_Mixer_GE.txt"
 #include "gldefs/Monster_Mixer_Catacomb.txt"

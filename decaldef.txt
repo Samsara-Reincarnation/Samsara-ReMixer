@@ -1,3 +1,11 @@
+// Doom Remixer decals
+generator DoomImpBall_Samsara			DoomImpScorch
+generator ArachnotronPlasma_Samsara		ArachnotronScorch
+generator Rocket_Samsara				Scorch
+generator CacodemonBall_Samsara			CacoScorch
+generator FatShot_Samsara				Scorch
+generator SpiderMastermind3				BulletChip
+
 // Protector Drone Blood
 
 Slider PDroneBloodSlide

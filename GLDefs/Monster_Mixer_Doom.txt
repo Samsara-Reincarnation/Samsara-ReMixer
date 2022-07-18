@@ -1,0 +1,147 @@
+object DoomBulletPuff_Samsara
+{
+    frame PFF2A { light BPUFF1 }
+    frame PFF2B { light BPUFF2 }
+}
+
+// Zombies
+object ZombieMan3
+{
+	frame PSS2F { light ZOMBIEATK }
+	frame 12DGB { light ZOMBIEATK }
+	frame 12DGD { light ZOMBIEATK }
+}
+
+object ShotgunGuy3
+{
+	frame SPS2F { light ZOMBIEATK }
+}
+
+object ChaingunGuy3
+{
+	frame CPS2E { light ZOMBIEATK }
+	frame CPS2F { light ZOMBIEATK }
+}
+
+// Doom Imp Fireball
+object DoomImpBall_Samsara
+{
+	frame DMP1H { light IMPBALL    }
+	frame DMP1I { light IMPBALL    }
+
+	frame DMP1J { light IMPBALL_X1 }
+	frame DMP1K { light IMPBALL_X2 }
+	frame DMP1L { light IMPBALL_X3 }
+}
+
+// Cacodemon fireball
+object CacodemonBall_Samsara
+{
+	frame DMP1M { light CACOBALL }
+	frame DMP1N { light CACOBALL }
+
+	frame DMP1O { light CACOBALL_X1 }
+	frame DMP1P { light CACOBALL_X2 }
+	frame DMP1Q { light CACOBALL_X3 }
+}
+
+// Baron / Hell Knight fireball
+object BaronBall_Samsara
+{
+	frame DMP1R { light BARONBALL    }
+	frame DMP1S { light BARONBALL    }
+
+	frame DMP1T { light BARONBALL_X1 }
+	frame DMP1U { light BARONBALL_X2 }
+	frame DMP1V { light BARONBALL_X3 }
+}
+
+// Lost Soul
+object LostSoul3
+{
+	frame SKL2A { light LOSTSOUL    }
+	frame SKL2B { light LOSTSOUL    }
+	frame SKL2C { light LOSTSOUL    }
+	frame SKL2D { light LOSTSOUL    }
+	frame SKL2E { light LOSTSOUL    }
+	frame SKL2F { light LOSTSOUL    }
+	frame SKL2G { light LOSTSOUL    }
+	
+	frame SKL2H { light LOSTSOUL_X1 }
+	frame SKL2I { light LOSTSOUL_X2 }
+	frame SKL2J { light LOSTSOUL_X3 }
+	frame SKL2K { light LOSTSOUL_X4 }
+}
+
+// Mancubus Fireball
+object FatShot_Samsara
+{
+	frame DMP2F { light IMPBALL   }
+	frame DMP2G { light IMPBALL   }
+
+	frame MIS2B { light ROCKET_X1 }
+	frame MIS2C { light ROCKET_X2 }
+	frame MIS2D { light ROCKET_X3 }
+}
+
+// Arachnotron Fireball
+object ArachnotronPlasma_Samsara
+{
+	frame DMP1A { light ARACHPLAS }
+	frame DMP1B { light ARACHPLAS }
+
+	frame DMP1C { light ARACHPLAS_X1 }
+	frame DMP1D { light ARACHPLAS_X2 }
+	frame DMP1E { light ARACHPLAS_X2 }
+	frame DMP1F { light ARACHPLAS_X3 }
+	frame DMP1G { light ARACHPLAS_X4 }
+}
+
+// Revenant tracer
+object RevenantTracerDumbfire_Samsara
+{
+	frame DMP2A { light TRACER    }
+	frame DMP2B { light TRACER    }
+
+	frame DMP2C { light TRACER_X1 }
+	frame DMP2D { light TRACER_X2 }
+	frame DMP2E { light TRACER_X3 }
+}
+
+object RevenantTracerHoming_Samsara
+{
+	frame DMP2A { light TRACER    }
+	frame DMP2B { light TRACER    }
+
+	frame DMP2C { light TRACER_X1 }
+	frame DMP2D { light TRACER_X2 }
+	frame DMP2E { light TRACER_X3 }
+}
+
+// Arch-vile
+object Archvile3
+{
+	frame VIL2H { light ARCHATK1 }
+	frame VIL2I { light ARCHATK2 }
+	frame VIL2J { light ARCHATK3 }
+	frame VIL2K { light ARCHATK4 }
+	frame VIL2L { light ARCHATK4 }
+	frame VIL2M { light ARCHATK4 }
+	frame VIL2N { light ARCHATK5 }
+	frame VIL2O { light ARCHATK6 }
+	frame VIL2P { light ARCHATK7 }
+
+	frame VIL2[ { light ARCHRES }
+	frame VIL2\ { light ARCHRES }
+	frame VIL2] { light ARCHRES }
+}
+
+// Cyber Rocket
+object Rocket_Samsara
+{
+	frame MIS2A { light ROCKET    }
+
+	frame MIS2B { light ROCKET_X1 }
+	frame MIS2C { light ROCKET_X2 }
+	frame MIS2D { light ROCKET_X3 }
+}
