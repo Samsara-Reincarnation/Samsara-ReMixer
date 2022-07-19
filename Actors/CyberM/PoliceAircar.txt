@@ -105,6 +105,7 @@ Actor CMAircar
 	Death.ZorchKamikaze:
 	Death.PhasingZorch:
 	Death.ZorchSpectral:
+        "####" "#" 0 A_StopSound(CHAN_BODY)
 		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		"####" "#" 0 A_Stop
 		"####" "#" 0 A_NoGravity		
@@ -136,6 +137,7 @@ Actor CMAircar
 	Death.WTMeleeIce:
 	Death.WTRangedIce:
 	Death.Ice:
+        "####" "#" 0 A_StopSound(CHAN_BODY)
 		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		"####" "#" 0 A_GenericFreezeDeath
 		"####" "#" 70 A_UnsetSolid
@@ -234,6 +236,7 @@ Actor CMAircar
         TNT1 A 0 A_GiveToTarget("LoWangDMTaunt2",1)
 		goto XDeath		
 	Death.RottDisintegrate:
+        "####" "#" 0 A_StopSound(CHAN_BODY)
 		"####" "#" 0 A_ChangeFlag("SOLID", 0)
 		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		"####" "#" 0 A_Scream
@@ -263,6 +266,7 @@ Actor CMAircar
 		"####" "#" 2 A_SetTranslucent(0.1,0)
 		stop
 	Disintegrate:
+        "####" "#" 0 A_StopSound(CHAN_BODY)
 		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		"####" "#" 0 A_NoBlocking
 		"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -293,6 +297,7 @@ Actor CMAircar
 		"####" "#" 2 A_SetTranslucent(0.1,0)
         stop
 	Death.Nuke:
+        "####" "#" 0 A_StopSound(CHAN_BODY)
 		"####" "#" 0 A_ChangeFlag("SOLID", 0)
 		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		"####" "#" 0 A_Scream
