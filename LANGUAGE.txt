@@ -1,5 +1,21 @@
 [enu default]
 
+// Skulltag
+
+OB_DARKIMP_MELEE = "%o was slashed by a dark imp.";
+OB_DARKIMP = "%o was burned by a dark imp.";
+OB_BLOODDEMON_MELEE = "%o was chomped on by a blood demon.";
+OB_SSGGUY = "%o was jacked by a super shotgun guy.";
+OB_BELPHEGOR_MELEE = "%o was slain by a Belphegor.";
+OB_BELPHEGOR = "%o was slain by a Belphegor.";
+OB_CACOLANTERN_MELEE = "%o got too close to a cacolantern.";
+OB_CACOLANTERN = "%o was smitten by a cacolantern.";
+OB_ABADDON_MELEE = "%o became food for an abaddon.";
+OB_ABADDON = "%o was smitten by an abaddon.";
+OB_HECTEBUS = "%o was cremated by a hectebus.";
+
+// Chex Quest
+
 OB_STRIDICUS = "%o was boogered by a stridicus.";
 OB_FLEMMINE = "%o was gooed by a flem mine.";
 OB_SUPERCYCLOPTIS = "%o was slimed by a super cycloptis.";
@@ -8,6 +24,8 @@ OB_LARVA = "%o was gooed by a larva.";
 OB_QUADRUMPUS = "%o was slimed by a Quadrumpus.";
 OB_FLEMBOMINATION = "%o was defeated by the Flembomination.";
 OB_SNOTFOLUS = "%o was defeated by Lord Snotfolus.";
+
+// Compendium threat levels
 
 COMP_THREAT_0 = "Threat Level: Varies";
 COMP_THREAT_1 = "Threat Level: Very Low";

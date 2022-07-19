@@ -10,6 +10,16 @@ actor ShotgunDrop2: SamsaraSlotTwoDrop
     }
 }
 
+actor SuperShotgunPickup2: SamsaraSlotThreeDrop
+{
+    States
+    {
+      Spawn:
+        WSSG A -1
+        stop
+    }
+}
+
 actor ChingunDrop2: SamsaraSlotFourDrop
 {
     States
