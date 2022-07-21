@@ -262,6 +262,7 @@ actor ChaingunguyRandomizer : RandomSpawner
 	DropItem "Chaingunguy3", 255, 4
 	DropItem "MMRandomizer_ChaingunGuyVariant1", 255, 4
 	DropItem "MMRandomizer_DoubleChaingunGuy", 255, 2
+	DropItem "SuperShotgunGuy2", 255, 4
 	DropItem "MMRandomizer_ChaingunMajor1", 255, 1
 	DropItem "MMRandomizer_ChaingunMajor2", 255, 1
 	DropItem "MMRandomizer_ChaingunMajor3", 255, 1

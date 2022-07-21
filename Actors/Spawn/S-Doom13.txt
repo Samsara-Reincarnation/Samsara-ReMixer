@@ -217,7 +217,9 @@ Actor CacodemonRandomizer : RandomSpawner
 {
 	DropItem "Cacodemon3", 255, 8
 	DropItem "MMRandomizer_Inferno", 255, 6
+	DropItem "Cacolantern2", 255, 4
 	DropItem "MMRandomizer_Cacolantern", 255, 4
+	DropItem "Abaddon2", 255, 2
 	DropItem "MMRandomizer_Abaddon", 255, 2
 }
 

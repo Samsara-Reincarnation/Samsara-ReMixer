@@ -352,6 +352,7 @@ actor DoomDemonRandomizer : RandomSpawner
 	DropItem "DoomDemon3", 255, 6
 	DropItem "MMRandomizer_TriteHole", 255, 4
 	DropItem "MMRandomizer_BloodDemon", 255, 3
+	DropItem "BloodDemon2", 255, 3
 	DropItem "MMRandomizer_MechDemon", 255, 3
 	DropItem "MMRandomizer_Satyr", 255, 2
 	DropItem "MMRandomizer_MechBloodDemon", 255, 2

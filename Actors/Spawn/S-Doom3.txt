@@ -256,6 +256,7 @@ actor DoomImpRandomizer : RandomSpawner
 	DropItem "MMRandomizer_VoidImp", 255, 5
     DropItem "MMRandomizer_STImp", 255, 5
 	DropItem "MMRandomizer_ImpAbomination", 255, 5
+	DropItem "DarkImp2", 255, 3
 	DropItem "MMRandomizer_Shadow", 255, 3
 	DropItem "MMRandomizer_Roach", 255, 3
 	DropItem "MMRandomizer_SoulHarvester", 255, 3

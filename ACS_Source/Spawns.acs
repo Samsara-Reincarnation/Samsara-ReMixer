@@ -237,6 +237,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] =
 			},
 			{//Baron of Hell
 				{"BaronofHell3"},
+				{"Belphegor2"},
 				{"MMRandomizer_HellsFury"},
 				{"MMRandomizer_CyberBaron"},
 				{"MMRandomizer_BruiserDemon"},
@@ -249,6 +250,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] =
 			},
 			{//Mancubus
 				{"{Fatso3"},
+				{"{Hectebus2"},
 				{"MMRandomizer_Cryocubus"},
 				{"MMRandomizer_Hectebus"}
 			},
