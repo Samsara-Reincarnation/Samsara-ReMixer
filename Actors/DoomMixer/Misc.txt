@@ -151,8 +151,6 @@ ACTOR Abaddon2 : Abaddon
     HitObituary "$OB_ABADDON_MELEE"
     Tag "Abaddon"
 	Species "Monster"
-	var int user_scalex;
-	var int user_scaley;
 	States
 	{
 	Spawn:
