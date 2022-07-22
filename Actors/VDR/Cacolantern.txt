@@ -25,7 +25,13 @@ ACTOR MMRandomizer_Cacolantern : SamsaraMonsterDemonicLargeTotalGib
 	var int user_scaley;
 	States 
 	{ 
-		Spawn: 
+		Spawn:
+			VD67 A 0
+			VD67 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD67 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD67 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD67 A 0
+		Spawn2: 
 			VD67 A 10 bright A_Look 
 			Loop 
 		See: 
@@ -58,13 +64,43 @@ ACTOR MMRandomizer_Cacolantern : SamsaraMonsterDemonicLargeTotalGib
 			VD67 K 8 A_NoBlocking 
 			VD67 L -1 A_SetFloorClip
 			Stop 
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD67 E 2
+			Loop
 		Raise: 
+			VD67 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD67 L 8 A_UnsetFloorClip
 			VD67 KJ 8
 			VD67 IHG 8 bright 
 			Goto See 
+		ZorchRaise:
+			"####" "#" 0 A_UnsetFloorClip
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
+			Goto See
 		Pain.ShrinkerDMG:
-			VD68 D 0
+			VD67 E 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
 			"####" "#" 0 A_SetUserVar("user_scaley", scaley*65536.0)
 			"####" "#" 0 A_ChangeFlag("NOPAIN", 1)
@@ -100,7 +136,7 @@ ACTOR MMRandomizer_Cacolantern : SamsaraMonsterDemonicLargeTotalGib
 			stop
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
-			VD68 A 0
+			VD67 A 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
 			"####" "#" 0 A_SetUserVar("user_scaley", scaley*65536.0)
 			"####" "#" 0 A_PlaySound("duke/expand")
@@ -130,7 +166,7 @@ ACTOR MMRandomizer_Cacolantern : SamsaraMonsterDemonicLargeTotalGib
 			Stop
 		Death.ExpanderDMGCoop:
 		XDeath.ExpanderDMGCoop:
-			VD68 A 0
+			VD67 A 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
 			"####" "#" 0 A_SetUserVar("user_scaley", scaley*65536.0)
 			"####" "#" 0 A_PlaySound("duke/expand")
@@ -347,8 +383,8 @@ actor MMRandomizer_CacolanternBall
     Projectile
     Renderstyle Add
     Alpha 0.67
-    SeeSound "imp/attack"
-    DeathSound "imp/shotx"
+    SeeSound "doom/imp/attack"
+    DeathSound "doom/imp/shotx"
     Decal CacoScorch
     States
     {

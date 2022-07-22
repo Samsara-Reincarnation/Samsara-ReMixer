@@ -10,7 +10,7 @@ ACTOR MMRandomizer_ShotgunGuyVariant1 : ShotgunGuy3
 			Loop
 		Missile:
 			VD03 E 10 A_FaceTarget
-			VD03 F 10 Bright A_SPosAttackUseAtkSound
+			VD03 F 10 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD03 E 10
 			Goto See
 		Pain.MightyBoot:
@@ -332,7 +332,7 @@ ACTOR MMRandomizer_ShotgunGuyVariant2 : ShotgunGuy3
 			Loop
 		Missile:
 			VD04 E 10 A_FaceTarget
-			VD04 F 10 Bright A_SPosAttackUseAtkSound
+			VD04 F 10 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD04 E 10
 			Goto See
 		Pain:
@@ -594,7 +594,7 @@ ACTOR MMRandomizer_ShotgunGuyVariant3 : ShotgunGuy3
 			Loop
 		Missile:
 			VD05 E 10 A_FaceTarget
-			VD05 F 10 Bright A_SPosAttackUseAtkSound
+			VD05 F 10 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD05 E 10
 			Goto See
 		Pain:

@@ -46,12 +46,6 @@ ACTOR Cacodemon3 : Cacodemon2
 		HED2 K 8
 		HED2 L -1 A_SetFloorClip
 		Stop
-	Death.CalebFire:
-	Death.LifeLeech:
-		TNT1 A 0 A_Jump(218, "Death")
-		TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
-		TNT1 A -1 A_Jump(256,"Death")
-		wait
 	Death.PainkillerStake:
 		TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
 		TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")

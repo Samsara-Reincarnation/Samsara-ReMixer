@@ -11,8 +11,8 @@ actor MMRandomizer_Arachnorb : SamsaraMonsterDemonicMediumTotalGib
 	Speed 12
 	PainChance 150
 	SeeSound "VDR/aracnorb/sight"
-	ActiveSound "baby/active"
-	PainSound "baby/pain"
+	ActiveSound "doom/baby/active"
+	PainSound "doom/baby/pain"
 	DeathSound "VDR/aracnorb/death"
 	MeleeSound "VDR/aracnorb/melee"
 	MeleeDamage 6
@@ -27,6 +27,12 @@ actor MMRandomizer_Arachnorb : SamsaraMonsterDemonicMediumTotalGib
 	States
 	{
 		Spawn:
+			VD66 A 0
+			VD66 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD66 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD66 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD66 A 0
+		Spawn2:
 			VD66 A 1 A_Look
 			Loop
 		See:
@@ -59,9 +65,38 @@ actor MMRandomizer_Arachnorb : SamsaraMonsterDemonicMediumTotalGib
 			VD66 EFG 6
 			VD66 H -1
 			Stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD66 I 2
+			Loop
 		Raise:
+			VD66 A 0
 			VD66 HGFEDA 8
 			VD66 A 0 A_ChangeFlag("FLOATBOB",1)
+			Goto See
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 0 A_ChangeFlag("FLOATBOB",1)
+			"####" "#" 1 A_SetShootable
 			Goto See
 		Pain.ShrinkerDMG:
 			VD66 D 0
@@ -345,8 +380,8 @@ actor MMRandomizer_AracnorbBall
 	Damage 3
 	RenderStyle Add
 	Alpha 0.75
-	SeeSound "baby/attack"
-	DeathSound "baby/shotx"
+	SeeSound "doom/baby/attack"
+	DeathSound "doom/baby/shotx"
 	PROJECTILE
 	+STRIFEDAMAGE
 	+SEEKERMISSILE

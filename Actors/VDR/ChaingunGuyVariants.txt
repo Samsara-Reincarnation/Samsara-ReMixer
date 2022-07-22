@@ -4,6 +4,12 @@ ACTOR MMRandomizer_ChaingunGuyVariant1 : Chaingunguy3
 	States
 	{
 		Spawn:
+			VD06 A 0
+			VD06 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD06 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD06 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD06 A 0
+		Spawn2:
 			VD06 AB 10 A_Look
 			Loop
 		See:
@@ -11,7 +17,7 @@ ACTOR MMRandomizer_ChaingunGuyVariant1 : Chaingunguy3
 			Loop
 		Missile:
 			VD06 E 10 A_FaceTarget
-			VD06 FE 4 Bright A_CPosAttack
+			VD06 FE 4 Bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD06 F 1 A_CPosRefire
 			Goto Missile+1
 		Pain:
@@ -25,6 +31,12 @@ ACTOR MMRandomizer_ChaingunGuyVariant1 : Chaingunguy3
 			TNT1 A 0 A_Recoil(14)
 			VD06 G 16 A_Pain
 			Goto See	
+		Pain.Shock:
+		Pain.Tesla:
+			CBGS A 4 A_Pain
+			CBGS A 4
+			TNT1 A -1 A_Jump(256,"See")
+			wait
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -32,21 +44,58 @@ ACTOR MMRandomizer_ChaingunGuyVariant1 : Chaingunguy3
 			VD06 I 5 A_Scream
 			VD06 J 5 A_NoBlocking
 			VD06 KL 5
-			CPOS M 5
-			CPOS N -1
+			CPS2 M 5
+			CPS2 N -1
 			Stop
+		Death.CalebFire:
+		Death.LifeLeech:
+			TNT1 A 0 A_Jump(218, 2)
+			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
+			TNT1 A 0 A_SpawnItemEx("BloodBurningCorpse_Generic", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 5 A_NoBlocking
+			stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD06 G 2
+			Loop
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			CPOS O 5 
-			CPOS P 5 A_XScream
-			CPOS Q 5 A_NoBlocking
-			CPOS RS 5
-			CPOS T -1
+			CPS2 O 5 
+			CPS2 P 5 A_XScream
+			CPS2 Q 5 A_NoBlocking
+			CPS2 RS 5
+			CPS2 T -1
 			Stop
 		Raise:
-			CPOS NM 5
+			VD06 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
+			CPS2 NM 5
 			VD06 LKJIH 5
+			Goto See
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
 			Goto See
 		Pain.ShrinkerDMG:
 			VD06 G 0

@@ -11,7 +11,7 @@ ACTOR MMRandomizer_ZombiemanVariant1 : ZombieMan3
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD00 E 10 A_FaceTarget
-			VD00 F 8 A_PosAttack
+			VD00 F 8 A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD00 E 8
 			Goto See
 		Pain:
@@ -334,7 +334,7 @@ ACTOR MMRandomizer_ZombiemanVariant2 : ZombieMan3
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD01 E 10 A_FaceTarget
-			VD01 F 8 A_PosAttack
+			VD01 F 8 A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD01 E 8
 			Goto See
 		Pain:
@@ -657,7 +657,7 @@ ACTOR MMRandomizer_ZombiemanVariant3 : ZombieMan3
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD02 E 10 A_FaceTarget
-			VD02 F 8 A_PosAttack
+			VD02 F 8 A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD02 E 8
 			Goto See
 		Pain.MightyBoot:
