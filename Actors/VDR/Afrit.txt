@@ -1,4 +1,4 @@
-Actor MMRandomizer_Afrit
+Actor MMRandomizer_Afrit : SamsaraMonsterSkeletonLarge
 {
 	Health 800
 	Speed 6
@@ -6,10 +6,10 @@ Actor MMRandomizer_Afrit
 	Height 72
 	PainChance 50
 	Mass 500
-	SeeSound "Baron/Sight"
-	PainSound "Baron/Pain"
-	DeathSound "Baron/Death"
-	ActiveSound "Baron/Active"
+	SeeSound "doom/Baron/Sight"
+	PainSound "doom/Baron/Pain"
+	DeathSound "doom/Baron/Death"
+	ActiveSound "doom/Baron/Active"
 	Monster
 	+NOGRAVITY
 	+NOBLOOD
@@ -70,16 +70,7 @@ Actor MMRandomizer_Afrit
 			VD72 H 2 A_FaceTarget
 			TNT1 A 0 A_Recoil(14)
 			VD72 H 16 A_Pain
-			Goto See
-		Pain.MarathonStun:
-			TNT1 A 0 A_Stop
-			TNT1 A 0 A_GiveInventory("NothingSpeed")
-			TNT1 A 0 A_PlaySoundEx("marathon/tech50/stun","body",0,0)
-			VD72 H 5 A_FaceTarget
-			TNT1 A 0 A_Gravity
-			VD72 H 30 A_Pain
-			VD72 H 70
-			Goto See			
+			Goto See		
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_NoGravity
@@ -87,190 +78,6 @@ Actor MMRandomizer_Afrit
 			VD72 J 5 Bright A_NoBlocking
 			VD72 KLMNOPQR 4 Bright
 			Stop
-		Death.SWFist:
-		Death.SWKatana:
-		Death.SWShuriken:
-		Death.SWSticky:
-		Death.SWStickyCoop:	
-		Death.SWGrenade:
-		Death.SWNuke:
-		Death.SWRocket:
-		Death.SWRailgun:
-		Death.SWRailgunCoop:
-		Death.SWNukeCoop:
-		Death.SWFlame:
-		Death.SWFlame2:
-		Death.SWFlame2Coop:
-		Death.SWBullet:	  	
-		Death.SWFlame3:
-			TNT1 A 0 A_Jump(218, "Death")
-			TNT1 A 0 A_GiveToTarget("LoWangDMTaunt2", 1)
-			goto Death
-		Death.Vodoo:
-		Death.VoodooPuff:
-		Death.DynamiteCoop:
-		Death.Dynamite:
-		Death.LifeLeech:
-		Death.CalebBullet:
-		Death.CalebNapalm:
-		Death.Tesla:
-		Death.CalebFire:
-			TNT1 A 0 A_Jump(218, "Death")
-			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
-			Goto Death
-		Pain.LifeLeech:
-			TNT1 A 0 A_GiveToTarget("SerpentHealth", 1)
-			Goto Pain		
-		Pain.Vodoo:
-			TNT1 A 0 A_GiveToTarget("Voodoo", 1)
-			Goto Pain  								
-		Death.EradDisc:
-		Death.EradShock:
-		Death.EradPiercingDart:
-		Death.EradExplosive:
-		Death.EradNova:
-		Death.EradExplosive2:	  
-			TNT1 A 0 A_Jump(218, "Death")
-			TNT1 A 0 A_GiveToTarget("EleenaDMTaunt2", 1)
-			Goto Death
-		Death.PSRAPower:
-		Death.PSRAPowerCoop:
-		Death.PSBullet:
-		Death.PSFire:	
-		Death.PSExplosive:
-		Death.PSExplosiveCoop:
-			TNT1 A 0 A_Jump(218, "Death")
-			TNT1 A 0 A_GiveToTarget("JonDMTaunt1", 1)
-			Goto Death
-		Death.LeonardDamage0:
-		Death.LeonardDamage1:
-		Death.LeonardDamage2:
-		Death.LeonardDamage3:
-			TNT1 A 0 A_Jump(218, "Death")
-			TNT1 A 0 A_GiveToTarget("LeonardGibTaunt", 1)
-			Goto Death		
-		Death.ZorchPistol:
-		Death.Zorch:
-		Death.ZorchKamikaze:
-		Death.PhasingZorch:
-		Death.ZorchSpectral:
-			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			"####" "#" 0 A_Stop
-			"####" "#" 0 A_NoGravity		
-			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
-			"####" "#" 0 A_PlaySoundEx("chex/zorchsmall","soundslot5",0,0)
-			"####" "#" 3 A_SpawnItem("ZorchEffectTiny")
-			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
-			"####" "#" 3 A_SetTranslucent(0.9,0)
-			"####" "#" 0 A_Scream
-			"####" "#" 3 A_SetTranslucent(0.8,0)
-			"####" "#" 0 A_NoBlocking
-			"####" "#" 3 A_SetTranslucent(0.7,0)
-			"####" "#" 3 A_SetTranslucent(0.6,0)
-			"####" "#" 3 A_SetTranslucent(0.5,0)
-			"####" "#" 3 A_SetTranslucent(0.4,0)
-			"####" "#" 3 A_SetTranslucent(0.3,0)
-			"####" "#" 3 A_SetTranslucent(0.2,0)
-			"####" "#" 3 A_SetTranslucent(0.1,0) 
-			TNT1 A 1 A_SetTranslucent(1,0)
-			TNT1 A -1
-			stop		
-		Death.DukeIce:
-			"####" "#" 0 A_PlaySound("duke/enemyfreeze")
-			"####" "#" 0 A_GiveInventory("FreezethrowerWeakness")
-			"####" "#" 0 A_Jump(218,"Ice")
-			"####" "#" 0 A_GiveToTarget("DukeKillTaunt",1)
-		Ice:
-		Death.HexenIce:
-		Death.WTMeleeIce:
-		Death.WTRangedIce:				
-		Death.Ice:
-			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
-			"####" "#" 0 A_GenericFreezeDeath
-			"####" "#" 70 A_UnsetSolid
-			"####" "#" 0 A_IceGuyDie
-			"####" "#" 1 A_IceGuyDie
-			stop		
-		Death.DukeExplosive:			
-		Death.DukeDamage:
-		Death.DukePistol:
-			TNT1 A 0 A_Jump(218,"Death")
-			TNT1 A 0 A_GiveToTarget("DukeKillTaunt",1)
-			goto Death
-		Death.MightyBoot:
-			TNT1 A 0 A_PlaySoundEx("duke/kickhit","body",0,0)
-			TNT1 A 0 A_Jump(64,"Death")
-			TNT1 A 0 A_GiveToTarget("DukeBootTaunt",1)
-			goto Death			
-		Death.RottDisintegrate:
-			"####" "#" 0 A_ChangeFlag("SOLID", 0)
-			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			"####" "#" 0 A_Scream
-			"####" "#" 0 A_NoBlocking	
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 0 A_Stop
-			"####" "#" 0 A_ChangeFlag("SHOOTABLE",FALSE)
-			"####" "#" 0 A_ChangeFlag("NOGRAVITY",TRUE)
-			"####" "#" 0 A_ChangeFlag("FLOORCLIP",TRUE)
-			"####" "#" 0 A_SpawnItem("RGodModeDeathTiny")
-			"####" "#" 3 A_SetTranslucent(0.9,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.8,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.7,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.6,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.5,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.4,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.3,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.2,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.1,0)
-			stop
-		Disintegrate:
-			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			"####" "#" 0 A_NoBlocking
-			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 0 A_Scream
-			"####" "#" 0 A_ChangeFlag("SOLID",FALSE)
-			"####" "#" 0 A_ChangeFlag("SHOOTABLE",FALSE)
-			"####" "#" 0 A_ChangeFlag("NOGRAVITY",TRUE)
-			"####" "#" 0 A_ChangeFlag("FLOORCLIP",TRUE)
-			"####" "#" 0 A_Stop
-			"####" "#" 3 A_SpawnItem("DisintEffectRoundTiny",0,10)
-			"####" "#" 3 A_SetTranslucent(0.9,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.8,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.7,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.6,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 3 A_SetTranslucent(0.5,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.4,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.3,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.2,0)
-			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
-			"####" "#" 2 A_SetTranslucent(0.1,0)
-			stop
-		Death.Nuke:
-			"####" "#" 0 A_ChangeFlag("SOLID", 0)
-			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			"####" "#" 0 A_Scream
-			"####" "#" 0 A_NoGravity		
-			"####" "#" 0 A_NoBlocking
-			"####" "#" 0 A_SpawnItem("WTNukeDeathTiny")
-			"####" "#################" 3 A_Fadeout(0.05)
-			stop				
 	}
 }
 
@@ -283,8 +90,8 @@ Actor MMRandomizer_AfritBall
 	Projectile
 	RenderStyle Add
 	Alpha 0.8
-	SeeSound "Imp/Attack"
-	DeathSound "Imp/ShotX"
+	SeeSound "doom/Imp/Attack"
+	DeathSound "doom/Imp/ShotX"
 	Decal BaronScorch
 	States
 	{
