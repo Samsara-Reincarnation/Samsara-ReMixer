@@ -20,7 +20,13 @@ Actor MMRandomizer_Demolisher : SpiderMastermind3
 	Tag "Spider-Demolisher"
 	States 
 	{
-		Spawn: 
+		Spawn:
+			VD82 A 0
+			VD82 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD82 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD82 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD82 A 0
+		Spawn2: 
 			VD82 AB 10 A_Look 
 			Loop 
 		See: 
@@ -43,40 +49,44 @@ Actor MMRandomizer_Demolisher : SpiderMastermind3
 			TNT1 A 0 A_GiveToTarget("LeonardBossSightTaunt")		
 			TNT1 A 0 A_GiveToTarget("HLBossSightMusicQueue")
 		See2:			
-			VD82 A 3 A_Metal 
+			VD82 A 3 A_PlaySound("doom/spider/walk", CHAN_BODY) 
 			VD82 ABB 3 A_Chase 
-			VD82 C 3 A_Metal 
+			VD82 C 3 A_PlaySound("doom/spider/walk", CHAN_BODY) 
 			VD82 CDD 3 A_Chase 
-			VD82 E 3 A_Metal 
+			VD82 E 3 A_PlaySound("doom/spider/walk", CHAN_BODY) 
 			VD82 EFF 3 A_Chase 
 			Loop 
 		Missile:
 			VD82 A 0 Bright A_Jump(128,20)
 			VD82 A 20 A_FaceTarget
-			VD82 T 1 Bright A_Playsound("weapons/bfgf")
+			VD82 T 1 Bright A_Playsound("doomguy/bfgf")
 			VD82 T 4 Bright A_FaceTarget
 			VD82 T 4 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget
-			VD82 U 10 Bright A_CustomMissile("BFGBall",32,0,0)
+			VD82 U 10 Bright A_CustomMissile("MMRandomizer_DemolisherBFGBall",32,0,0)
 			VD82 T 0 Bright A_Jump(128,10)
-			VD82 T 1 Bright A_Playsound ("weapons/bfgf")
+			VD82 T 1 Bright A_Playsound ("doomguy/bfgf")
 			VD82 T 4 Bright A_FaceTarget
 			VD82 T 4 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget
 			VD82 T 5 Bright A_FaceTarget 
-			VD82 U 10 Bright A_CustomMissile("BFGBall",32,0,0)
+			VD82 U 10 Bright A_CustomMissile("MMRandomizer_DemolisherBFGBall",32,0,0)
 			VD82 T 0 Bright A_Jump(192,1)
 			Goto See2
 			VD82 A 20 A_FaceTarget
-			VD82 G 0 Bright A_SPosAttackUseAtkSound
-			VD82 G 4 Bright A_SPosAttackUseAtkSound
-			VD82 H 0 Bright A_SPosAttackUseAtkSound
-			VD82 H 4 Bright A_SPosAttackUseAtkSound
+			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
+			VD82 G 0 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
+			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
+			VD82 G 4 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
+			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
+			VD82 H 0 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
+			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
+			VD82 H 4 Bright A_CustomBulletAttack(22.5, 0, 3, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD82 H 1 Bright A_SpidRefire 
 			Goto Missile+21 
 		Pain: 
@@ -85,12 +95,31 @@ Actor MMRandomizer_Demolisher : SpiderMastermind3
 			Goto See2
 		Death: 
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			VD82 J 20 Bright A_Scream 
 			VD82 K 10 Bright A_NoBlocking 
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			VD82 LMNOPQR 10 Bright
 			VD82 S 30 
 			VD82 S -1 A_KillMaster
 			Stop 
 	} 
+}
+
+actor MMRandomizer_DemolisherBFGBall : BFGBall
+{
+    Decal BFGLightning
+    +BRIGHT
+	DeathSound "doomguy/bfgx"
+	States
+    {
+      Spawn:
+        DBFS AB 4 bright
+        loop
+        
+      Death:
+        DBFE AB 8 bright
+        DBFE C 8 bright A_BFGSpray("DoomBFGSplash")
+        DBFE DEF 8 bright
+        stop
+    }
 }

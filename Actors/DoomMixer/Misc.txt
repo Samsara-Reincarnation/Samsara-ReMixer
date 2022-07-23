@@ -839,7 +839,7 @@ actor Belphegor2_ShrinkEffect : Belphegor2
 	}
 }
 
-ACTOR BelphegorBall3 : BaronBall
+ACTOR BelphegorBall3 : BaronBall_Samsara
 {
 	SeeSound "doom/baron/attack"
 	DeathSound "doom/baron/shotx"
@@ -1930,7 +1930,7 @@ actor DarkImp2_ShrinkEffect : DarkImp2
 	}
 }
 
-actor DarkImp2Ball : DoomImpBall
+actor DarkImp2Ball : DoomImpBall_Samsara
 {
 	game Doom
 	Speed 20
@@ -2353,7 +2353,7 @@ actor Hectebus2_ShrinkEffect : Hectebus2
 	}
 }
 
-actor HectShot2 : FatShot
+actor HectShot2 : FatShot_Samsara
 {
 	+THRUGHOST
 	SeeSound "doom/fatso/attack"

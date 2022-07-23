@@ -23,6 +23,12 @@ ACTOR MMRandomizer_Cyberbaron : BaronOfhell3
 	states
 	{
 		Spawn:
+			BOS3 A 0
+			BOS3 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			BOS3 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			BOS3 A 0 A_GiveInventory("AlreadySpawned",1)
+			BOS3 A 0
+		Spawn2:
 			VD55 AB 10 A_Look
 			Loop
 		See:
@@ -32,11 +38,11 @@ ACTOR MMRandomizer_Cyberbaron : BaronOfhell3
 			VD55 BB 3 A_Chase
 			VD55 CC 3 A_Chase    
 			VD55 D 3 A_Chase
-			VD55 D 3 A_Hoof
+			VD55 D 3 A_PlaySound("doom/cyber/hoof", CHAN_BODY)
 			Loop
 		Melee:
 			VD55 PQ 8 A_FaceTarget
-			VD55 R 8 A_BruisAttack
+			VD55 R 8 A_CustomComboAttack("BaronBall_Samsara", 32, 10 * random(1, 8), "doom/baron/melee")
 			Goto See
 		Missile:
 			VD55 E 0 A_Jump(80,5)
@@ -46,7 +52,7 @@ ACTOR MMRandomizer_Cyberbaron : BaronOfhell3
 			VD55 E 10 A_FaceTarget
 			Goto See
 			VD55 PQ 8 A_FaceTarget
-			VD55 R 8 A_BruisAttack
+			VD55 R 8 A_CustomComboAttack("BaronBall_Samsara", 32, 10 * random(1, 8), "doom/baron/melee")
 			Goto See      
 		Pain:
 			VD55 H 2
