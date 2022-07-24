@@ -28,6 +28,12 @@ Actor MMRandomizer_Hierophant : SamsaraMonsterDemonicLargeTotalGib
     States
     {
 		Spawn:
+			VD78 A 0
+			VD78 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD78 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD78 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD78 A 0
+		Spawn2:
 			VD78 AC 10 A_Look
 			Loop
 		See:
@@ -40,6 +46,7 @@ Actor MMRandomizer_Hierophant : SamsaraMonsterDemonicLargeTotalGib
 			Goto See
 		Missile:
         MissileDecide:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
             VD78 A 0 A_Jump(256, "Missile1", "Missile2", "Missile3")
         Missile1:
             VD78 EF 7 Bright A_FaceTarget
@@ -72,19 +79,26 @@ Actor MMRandomizer_Hierophant : SamsaraMonsterDemonicLargeTotalGib
 		Melee:
         LeftSlash:
             VD78 EF 8 A_FaceTarget
-            VD78 G 3 A_CustomMeleeAttack(10 * Random(1, 8), "baron/melee")
+            VD78 G 3 A_CustomMeleeAttack(10 * Random(1, 8), "doom/baron/melee")
             VD78 A 3
             VD78 A 0 A_Jump(128, "RightSlash")
             Goto See
         RightSlash:
             VD78 HI 8 A_FaceTarget
-            VD78 J 3 A_CustomMeleeAttack(10 * Random(1, 8), "baron/melee")
+            VD78 J 3 A_CustomMeleeAttack(10 * Random(1, 8), "doom/baron/melee")
             VD78 A 3
             Goto See
 		Pain:
 			VD78 P 2
 			VD78 P 2 A_Pain
 			Goto See
+		Pain.MightyBoot:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
+			TNT1 A 0 A_PlaySoundEx("duke/kickhit","body",0,0)
+			VD78 P 2 A_FaceTarget
+			TNT1 A 0 A_Recoil(14)
+			VD78 P 16 A_Pain
+			Goto See		
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -442,7 +456,7 @@ Actor MMRandomizer_Hiero_BlurChase : CustomInventory
 //
 // -------------------------------------------------------------------------------------------
 
-Actor MMRandomizer_HieroBall1 : BaronBall
+Actor MMRandomizer_HieroBall1 : BaronBall_Samsara
 {
     Speed 20
     Damage 10
@@ -487,7 +501,7 @@ Actor MMRandomizer_HieroBall2 : BishopFX
     }
 }
 
-Actor MMRandomizer_CurseBall : BaronBall
+Actor MMRandomizer_CurseBall : BaronBall_Samsara
 {
     Speed 20
     Damage (20)

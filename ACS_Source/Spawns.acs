@@ -244,13 +244,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] =
 				{"MMRandomizer_Belphegor"}
 			},
 			{//Arachnotron
-				{"{Arachnotron3"},
+				{"Arachnotron3"},
 				{"MMRandomizer_ChaingunArachnotron"},
 				{"MMRandomizer_RailgunArachnotron"}
 			},
 			{//Mancubus
-				{"{Fatso3"},
-				{"{Hectebus2"},
+				{"Fatso3"},
+				{"Hectebus2"},
 				{"MMRandomizer_Cryocubus"},
 				{"MMRandomizer_Hectebus"}
 			},
@@ -270,12 +270,12 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] =
 				{"ArchvileRandomizer"}
 			},
 			{//Cyberdemon
-				{"{Cyberdemon3"},
+				{"Cyberdemon3"},
 				{"MMRandomizer_ArchonOfHell"},
 				{"MMRandomizer_Annihilator"}
 			},
 			{//Spider Mastermind
-				{"{SpiderMastermind3"},
+				{"SpiderMastermind3"},
 				{"MMRandomizer_ArachnorbQueen"},
 				{"MMRandomizer_Demolisher"}
 			},

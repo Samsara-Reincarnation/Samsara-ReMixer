@@ -441,7 +441,7 @@ Actor MMRandomizer_BruiserTrail
 	{
 		Spawn:
 			TNT1 A 3 Bright
-			PUFF ABCD 4 BRIGHT
+			PFF2 ABCD 4 BRIGHT
 			Stop 
 	}
 }

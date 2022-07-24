@@ -23,6 +23,12 @@ ACTOR MMRandomizer_Incarnate : Revenant3
 	States
 	{
 		Spawn:
+			VD75 A 0
+			VD75 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD75 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD75 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD75 A 0
+		Spawn2:
 			VD75 AB 10 A_Look
 			Loop
 		See:
@@ -31,22 +37,23 @@ ACTOR MMRandomizer_Incarnate : Revenant3
 		Melee:
 			VD75 G 0 A_Jump(128,5)
 			VD75 G 0 A_FaceTarget
-			VD75 G 6 A_SkelWhoosh
+			VD75 G 6 A_PlaySound("doom/skeleton/swing", CHAN_BODY)
 			VD75 H 6 A_FaceTarget
 			VD75 I 6 A_MeleeAttack
 			Goto See
 			VD75 R 0 A_FaceTarget
-			VD75 R 5 A_SkelWhoosh
+			VD75 R 5 A_PlaySound("doom/skeleton/swing", CHAN_BODY)
 			VD75 S 5 A_FaceTarget
 			VD75 T 5 A_MeleeAttack
 			VD75 G 0 A_FaceTarget
-			VD75 G 5 A_SkelWhoosh
+			VD75 G 5 A_PlaySound("doom/skeleton/swing", CHAN_BODY)
 			VD75 H 5 A_FaceTarget
 			VD75 I 5 A_MeleeAttack
 			Goto See
 		Missile:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD75 J 5 A_FaceTarget
-			VD75 J 0 A_PlaySound("imp/attack")
+			VD75 J 0 A_PlaySound("doom/imp/attack")
 			VD75 J 5
 			VD75 U 10 Bright A_CustomBulletAttack(30,0,5,3,"MMRandomizer_DIpuff",1024)
 			VD75 K 10
@@ -89,23 +96,29 @@ ACTOR MMRandomizer_Incarnate : Revenant3
 			VD64 PQRSTU 5 Bright
 			VD64 V -1
 		Raise:
+			VD75 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD75 Q 0 A_KillChildren
 			VD75 QPONML 5
-			Goto See  					
-		Pain.Shock:
-		Pain.Tesla:
-			CBGS G 4 A_Pain
-			CBGS G 4
 			Goto See
-		Death.CalebFire:
-		Death.LifeLeech:
-			TNT1 A 0 A_Jump(218, 2)
-			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
-			TNT1 A 0 A_SpawnItemEx("BloodBurningCorpse_Generic", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER)
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_NoBlocking
-			TNT1 A 5
-			stop
+		ZorchRaise:
+			"####" "#" 0 A_KillChildren
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
+			Goto See
 		Pain.ShrinkerDMG:
 			VD75 M 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)

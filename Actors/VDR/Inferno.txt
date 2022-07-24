@@ -25,7 +25,13 @@ ACTOR MMRandomizer_Inferno : SamsaraMonsterDemonicLargeTotalGib
 	var int user_scaley;
 	States 
 	{ 
-		Spawn: 
+		Spawn:
+			VD69 A 0
+			VD69 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD69 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD69 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD69 A 0
+		Spawn2: 
 			VD69 A 10 Bright A_Look 
 			Loop 
 		See: 
@@ -44,6 +50,13 @@ ACTOR MMRandomizer_Inferno : SamsaraMonsterDemonicLargeTotalGib
 			VD69 K 6 Bright A_Pain 
 			VD69 K 6 Bright
 			Goto See 
+		Pain.MightyBoot:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
+			TNT1 A 0 A_PlaySoundEx("duke/kickhit","body",0,0)
+			VD69 K 2 A_FaceTarget
+			TNT1 A 0 A_Recoil(14)
+			VD69 K 16 A_Pain
+			goto See
 		Death: 
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -58,6 +71,16 @@ ACTOR MMRandomizer_Inferno : SamsaraMonsterDemonicLargeTotalGib
 			VD69 P 6 Bright A_NoBlocking 
 			VD69 Q 6 Bright
 			Stop 
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD69 K 2
+			Loop
 		Pain.ShrinkerDMG:
 			VD69 D 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -68,28 +91,28 @@ ACTOR MMRandomizer_Inferno : SamsaraMonsterDemonicLargeTotalGib
 			"####" "#" 0 A_PlaySound("duke/shrink")
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			"####" "#" 1 A_SetScale(0.85*(user_scalex/65536.0),0.85*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.8*(user_scalex/65536.0),0.8*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			"####" "#" 1 A_SetScale(0.75*(user_scalex/65536.0),0.75*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.7*(user_scalex/65536.0),0.7*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			"####" "#" 1 A_SetScale(0.65*(user_scalex/65536.0),0.65*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.6*(user_scalex/65536.0),0.6*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			"####" "#" 1 A_SetScale(0.55*(user_scalex/65536.0),0.55*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.5*(user_scalex/65536.0),0.5*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			"####" "#" 1 A_SetScale(0.45*(user_scalex/65536.0),0.45*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.4*(user_scalex/65536.0),0.4*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			"####" "#" 1 A_SetScale(0.35*(user_scalex/65536.0),0.35*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.3*(user_scalex/65536.0),0.3*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_ShrinkEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			"####" "#" 1 A_SetScale(0.25*(user_scalex/65536.0),0.25*(user_scaley/65536.0))
 			"####" "#" 4 A_SetScale(0.2*(user_scalex/65536.0),0.2*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Abaddon_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("MMRandomizer_Inferno_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 2
 			TNT1 A 0 Thing_Remove(0)
 			stop
@@ -345,8 +368,8 @@ ACTOR MMRandomizer_Lavaball
 	Alpha 0.95
 	+THRUGHOST
 	+FORCEXYBILLBOARD
-	SeeSound "imp/attack"
-	DeathSound "imp/shotx"
+	SeeSound "doom/imp/attack"
+	DeathSound "doom/imp/shotx"
 	States
 	{
 		Spawn: 

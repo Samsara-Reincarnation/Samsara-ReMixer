@@ -1,4 +1,4 @@
-Actor MMRandomizer_HellsFury : BaronOfHell3
+Actor MMRandomizer_HellsFury : SamsaraMonsterDemonicLargeTotalGib
 {
 	Health 1200
 	Radius 24
@@ -12,24 +12,33 @@ Actor MMRandomizer_HellsFury : BaronOfHell3
 	ActiveSound "doom/baron/active"
 	PainSound "doom/baron/pain"
 	DeathSound "doom/baron/death"
+	MeleeSound "doom/baron/melee"
 	Obituary "%o felt the wrath of Hell's Fury."
 	HitObituary "%o got ripped apart by Hell's Fury."
 	MissileType MMRandomizer_HellsFuryBall
 	MeleeDamage 11
-	BloodColor "Red"
 	Tag "Hell's Fury"
+	var int user_scalex;
+	var int user_scaley;
 	States
 	{
 		Spawn:
+			VD54 A 0
+			VD54 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD54 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD54 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD54 A 0
+		Spawn2:
 			VD54 AB 10 A_Look
 			Loop
 		See:
 			VD54 AABBCCDD 4 A_Chase
 			Loop
 		Missile:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD54 E 0 A_Jump(96,4)
 			VD54 EF 8 A_FaceTarget
-			VD54 G 8 A_ComboAttack
+			VD54 G 8 A_CustomComboAttack("MMRandomizer_HellsFuryBall", 32, 11 * random(1, 8), "doom/baron/melee")
 			Goto See
 			VD54 P 8 A_FaceTarget
 			VD54 Q 0 A_CustomMissile("MMRandomizer_SoulHarvesterBall", 60, 0, -45)
@@ -38,7 +47,7 @@ Actor MMRandomizer_HellsFury : BaronOfHell3
 			Goto See
 		Melee:
 			VD54 EF 8 A_FaceTarget
-			VD54 G 8 A_ComboAttack
+			VD54 G 8 A_CustomComboAttack("MMRandomizer_HellsFuryBall", 32, 11 * random(1, 8), "doom/baron/melee")
 			Goto See
 		Pain:
 			VD54 H 2
@@ -78,8 +87,27 @@ Actor MMRandomizer_HellsFury : BaronOfHell3
 			VD54 O -1
 			Stop
 		Raise:
+			VD54 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD54 NMLKJI 8
 			Goto See	
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
+			Goto See
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
 			VD54 A 0
@@ -381,8 +409,8 @@ Actor MMRandomizer_HellsFuryBall
 	Projectile
 	RenderStyle Add
 	Alpha 0.7
-	SeeSound "imp/attack"
-	DeathSound "imp/shotx"
+	SeeSound "doom/imp/attack"
+	DeathSound "doom/imp/shotx"
 	Decal BaronScorch
 	States
 	{

@@ -29,6 +29,12 @@ ACTOR MMRandomizer_Ghoul : Revenant3
 	States
 	{
 		Spawn:
+			VD74 A 0
+			VD74 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD74 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD74 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD74 A 0
+		Spawn2:
 			VD74 AB 10 A_Look
 			Loop
 		See:
@@ -41,6 +47,7 @@ ACTOR MMRandomizer_Ghoul : Revenant3
 			VD74 I 6 A_CustomMeleeAttack(random(1,8)*6,"vdr/ghoul/melee","")
 			Goto See
 		Missile:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD74 J 1 Bright A_FaceTarget
 			VD74 J 9 Bright A_FaceTarget
 			VD74 K 10 A_CustomMissile("MMRandomizer_GhoulMissile",62,11)
@@ -67,9 +74,38 @@ ACTOR MMRandomizer_Ghoul : Revenant3
 			VD74 P 7
 			VD74 Q -1
 			Stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD33 G 2
+			Loop
 		Raise:
+			VD74 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD74 Q 5
 			VD74 PONML 5
+			Goto See
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
 			Goto See
 		Pain.ShrinkerDMG:
 			VD74 T 0
@@ -430,11 +466,10 @@ ACTOR MMRandomizer_GasTrail
 }
 Actor MMRandomizer_GhoulDrip : Blood
 {
-	Translation "176:223=112:127"
 	States
 	{
 		Spawn:
-			BLUD ABCD 4
+			VD74 TSR 4
 			Stop
 	}
 }
