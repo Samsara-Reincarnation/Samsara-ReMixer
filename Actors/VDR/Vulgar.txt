@@ -20,19 +20,25 @@ actor MMRandomizer_Vulgar : DoomImp3
 	states
 	{
 		Spawn:
+			VD41 A 0
+			VD41 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD41 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD41 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD41 A 0
+		Spawn2:
 			VD41 AB 10 A_Look
 			Loop
 		See:
 			VD41 AABBCCDD 3 A_Chase
 			Loop
 		Melee:
-		Missile:
 			VD41 E 8 A_FaceTarget
 			VD41 F 1 A_PlaySound("VDR/vulswg")
 			VD41 F 7 A_FaceTarget
 			VD41 G 6 A_MeleeAttack
 			Goto See
 		Missile:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD41 EF 8 A_FaceTarget
 			VD41 G 6 A_CustomMissile("MMRandomizer_VulgarShot",37,0,0,0,0)
 			Goto See
@@ -46,7 +52,12 @@ actor MMRandomizer_Vulgar : DoomImp3
 			VD41 H 2 A_FaceTarget
 			TNT1 A 0 A_Recoil(14)
 			VD41 H 16 A_Pain
-			Goto See		
+			Goto See	
+		Pain.Shock:
+		Pain.Tesla:
+			CBGS A 4 A_Pain
+			CBGS A 4
+			Goto See				
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -56,6 +67,24 @@ actor MMRandomizer_Vulgar : DoomImp3
 			VD41 M 6 A_NoBlocking
 			VD41 N -1
 			Stop
+		Death.CalebFire:
+		Death.LifeLeech:
+			TNT1 A 0 A_Jump(218, 2)
+			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
+			TNT1 A 0 A_SpawnItemEx("BloodBurningCorpse_Generic", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 5 A_NoBlocking
+			stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD40 H 2
+			Loop
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -67,23 +96,28 @@ actor MMRandomizer_Vulgar : DoomImp3
 			VD41 V -1
 			Stop
 		Raise:
+			VD41 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD41 ML 8
 			VD41 KJI 6
 			Goto See
-		Pain.Shock:
-		Pain.Tesla:
-			CBGS G 4 A_Pain
-			CBGS G 4
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
 			Goto See
-		Death.CalebFire:
-		Death.LifeLeech:
-			TNT1 A 0 A_Jump(218, 2)
-			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
-			TNT1 A 0 A_SpawnItemEx("BloodBurningCorpse_Generic", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER)
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_NoBlocking
-			TNT1 A 5
-			stop
 		Pain.ShrinkerDMG:
 			VD41 H 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)

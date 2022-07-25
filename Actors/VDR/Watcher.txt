@@ -1,4 +1,4 @@
-Actor MMRandomizer_Watcher : SamsaraMonsterDemonicMedium
+Actor MMRandomizer_Watcher : SamsaraMonsterDemonicSmallTotalGib
 { 
 	Health 100
 	Radius 24 
@@ -21,13 +21,20 @@ Actor MMRandomizer_Watcher : SamsaraMonsterDemonicMedium
 	Tag "Watcher"
 	States 
 	{ 
-		Spawn: 
+		Spawn:
+			VD70 A 0
+			VD70 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD70 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD70 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD70 A 0
+		Spawn2: 
 			VD70 A 10 A_Look 
 			Loop 
 		See: 
 			VD70 A 3 A_Chase
 			Loop 
 		Missile: 
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD70 E 5 A_FaceTarget 
 			VD70 F 5 A_FaceTarget 
 			VD70 G 5 BRIGHT A_CustomMissile("MMRandomizer_WatcherShot",12,0,0) 
@@ -56,9 +63,38 @@ Actor MMRandomizer_Watcher : SamsaraMonsterDemonicMedium
 			VD70 N 0 A_SetFloorClip
 			VD70 O -1 
 			Stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD70 H 2
+			Loop
 		Raise: 
+			VD70 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD70 ONMLKJI 8 
 			Goto See 
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
+			Goto See
 		Pain.ShrinkerDMG:
 			VD70 D 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)

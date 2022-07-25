@@ -90,6 +90,7 @@ Actor MMRandomizer_Trite : SamsaraMonsterDemonicTiny
 			Goto See
 		Missile:
 			VD39 A 0 A_Jump(128, "See")
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD39 AAA 3 A_FaceTarget
 			VD39 F 0 A_PlaySound("VDR/Trite/Attack")
 			VD39 F 0 A_SkullAttack
@@ -114,7 +115,6 @@ Actor MMRandomizer_Trite : SamsaraMonsterDemonicTiny
 			VD39 E 3 A_Pain
 			Goto See
 		Death:
-		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			VD39 G 5 A_Scream
