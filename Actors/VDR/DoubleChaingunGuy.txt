@@ -32,13 +32,9 @@ Actor MMRandomizer_DoubleChaingunGuy : Chaingunguy3
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD33 E 10 A_FaceTarget
-			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
 			VD33 F 0 Bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
-			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
 			VD33 F 4 Bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
-			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
 			VD33 E 0 Bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
-			TNT1 A 0 A_PlaySound("doom/chainguy/attack")
 			VD33 E 4 Bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 			VD33 F 1 A_CPosRefire
 			Goto Missile+1

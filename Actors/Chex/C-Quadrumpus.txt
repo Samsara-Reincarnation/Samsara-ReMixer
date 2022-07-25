@@ -1,6 +1,6 @@
 actor NewQuadrumpus : Quadrumpus_2
 {
-	Tag "Quadrumpus"
+	Tag "Flemoidus Quadrumpus"
 	SeeSound "cqimp/sight"
 	PainSound "cqimp/pain"
 	DeathSound "cqimp/death"

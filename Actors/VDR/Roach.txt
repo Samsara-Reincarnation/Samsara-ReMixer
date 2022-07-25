@@ -22,16 +22,22 @@ Actor MMRandomizer_Roach : SamsaraMonsterHumanoidMedium
 	{
 		Spawn:
 			VD38 A 0
-			VD38 A 0 A_JumpIf(Args[0] == 1, "Spawn2")
-			VD38 A 0 A_JumpIf(Args[0] > 1, "Spawn3")
+			VD38 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD38 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD38 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD38 A 0
+		Spawn2:
+			VD38 A 0
+			VD38 A 0 A_JumpIf(Args[0] == 1, "Spawn3")
+			VD38 A 0 A_JumpIf(Args[0] > 1, "Spawn4")
 			VD38 AAAAAA 1 A_Look
 			VD38 A 0 HealThing(2)
 			Loop
-		Spawn2:
+		Spawn3:
 			VD38 AAAAAA 1 A_LookEx(8, 0, 0, 0, 0, "See")
 			VD38 A 0 HealThing(2)
 			Loop
-		Spawn3:
+		Spawn4:
 			VD38 AAAAAA 1 A_LookEx(0, 0, 0, 0, 0, "SeeAlert")
 			VD38 A 0 HealThing(2)
 			Loop
@@ -115,6 +121,7 @@ Actor MMRandomizer_Roach : SamsaraMonsterHumanoidMedium
 			Goto See+4
 		Melee:
 		Missile:
+			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD38 AA 3 A_FaceTarget
 			VD38 A 0 HealThing(2)
 			VD38 AA 3 A_FaceTarget
@@ -136,6 +143,11 @@ Actor MMRandomizer_Roach : SamsaraMonsterHumanoidMedium
 			VD38 H 2 A_FaceTarget
 			TNT1 A 0 A_Recoil(14)
 			VD38 H 16 A_Pain
+			Goto See		
+		Pain.Shock:
+		Pain.Tesla:
+			CBGS A 4 A_Pain
+			CBGS A 4
 			Goto See				
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
@@ -150,6 +162,24 @@ Actor MMRandomizer_Roach : SamsaraMonsterHumanoidMedium
 			VD38 MMMMM 70
 			VD38 M -1 Thing_Raise(0)
 			Wait
+		Death.CalebFire:
+		Death.LifeLeech:
+			TNT1 A 0 A_Jump(218, 2)
+			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
+			TNT1 A 0 A_SpawnItemEx("BloodBurningCorpse_Generic", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 5 A_NoBlocking
+			stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD38 G 2
+			Loop
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -160,7 +190,26 @@ Actor MMRandomizer_Roach : SamsaraMonsterHumanoidMedium
 			VD38 T -1
 			Stop
 		Raise:
+			VD38 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD38 MLKJI 5
+			Goto See
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
 			Goto See
 		Pain.ShrinkerDMG:
 			VD38 H 0

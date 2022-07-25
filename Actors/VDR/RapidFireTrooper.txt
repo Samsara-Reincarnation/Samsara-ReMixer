@@ -11,7 +11,13 @@ ACTOR MMRandomizer_RapidFireTrooper : Zombieman3
 	Tag "Rapidfire Trooper"
     States
     {
-	    Spawn:
+		Spawn:
+			VD23 A 0
+			VD23 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD23 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD23 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD23 A 0
+		Spawn2:
 		    VD23 AB 10 A_Look
 		    Loop
 	    See:
@@ -20,7 +26,7 @@ ACTOR MMRandomizer_RapidFireTrooper : Zombieman3
 	    Missile:
 		    TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			VD23 E 10 A_FaceTarget
-		    VD23 F 5 Bright A_PosAttack
+		    VD23 F 5 Bright A_CustomBulletAttack(22.5, 0, 1, random(1,5) * 3, "DoomBulletPuff_Samsara", 0, CBAF_NORANDOM)
 		    VD23 E 5 A_CPosRefire
 		    Goto Missile+1
 	    Pain:
@@ -34,6 +40,11 @@ ACTOR MMRandomizer_RapidFireTrooper : Zombieman3
 			TNT1 A 0 A_Recoil(14)
 			VD23 G 16 A_Pain
 			Goto See 		
+		Pain.Shock:
+		Pain.Tesla:
+			CBGS A 4 A_Pain
+			CBGS A 4
+			Goto See	
 	    Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -43,6 +54,24 @@ ACTOR MMRandomizer_RapidFireTrooper : Zombieman3
 		    VD23 K 5
 		    VD23 L -1
 		    Stop
+		Death.CalebFire:
+		Death.LifeLeech:
+			TNT1 A 0 A_Jump(218, 2)
+			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
+			TNT1 A 0 A_SpawnItemEx("BloodBurningCorpse_Generic", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 5 A_NoBlocking
+			stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD23 G 2
+			Loop
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -54,9 +83,28 @@ ACTOR MMRandomizer_RapidFireTrooper : Zombieman3
 		    VD23 U -1
 		    Stop
 	    Raise:
-		    VD23 KJ 5
+		    VD23 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
+			VD23 KJ 5
 		    VD23 IH 5
 		    Goto See
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
+			Goto See
 		Pain.ShrinkerDMG:
 			VD23 G 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)

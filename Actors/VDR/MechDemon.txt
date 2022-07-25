@@ -23,7 +23,13 @@ ACTOR MMRandomizer_MechDemon : DoomDemon3
 	Tag "Mech Demon"
     States 
     { 
-		Spawn: 
+		Spawn:
+			VD47 A 0
+			VD47 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD47 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD47 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD47 A 0
+		Spawn2: 
 		   VD45 AB 10 A_Look
 		   Loop 
 		See: 
@@ -61,8 +67,27 @@ ACTOR MMRandomizer_MechDemon : DoomDemon3
 		   VD45 N -1 
 		   Stop 
 		Raise: 
+		   VD45 A 0
+		   "####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		   VD45 NMLKJI 5 
 		   Goto See 
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
+			Goto See	
 		Pain.ShrinkerDMG:
 			VD45 H 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)

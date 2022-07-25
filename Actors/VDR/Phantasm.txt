@@ -19,6 +19,12 @@ actor MMRandomizer_Phantasm : LostSoul3
 	States
 	{
 		Spawn:
+			VD64 A 0
+			VD64 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			VD64 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			VD64 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD64 A 0
+		Spawn2:
 			VD64 AB 5 BRIGHT A_Look
 			Loop
 		See:
@@ -47,6 +53,7 @@ actor MMRandomizer_Phantasm : LostSoul3
 			VD64 FFFFFFFFFFFF 3 BRIGHT A_SpawnItemEx("MMRandomizer_PhantasmPuff", random(-15,15), random(-15,15), random(12, 24), 0, 0, 1)
 			VD64 G 6 BRIGHT
 			TNT1 A 0 A_Explode(64, 128, XF_HURTSOURCE | XF_NOTMISSILE, false, 32)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			VD64 H 6 BRIGHT A_PlaySound("phantasm/explode")
 			VD64 I 6 BRIGHT A_NoBlocking
 			VD64 J 6
@@ -55,7 +62,16 @@ actor MMRandomizer_Phantasm : LostSoul3
 	}
 }
 
-Actor MMRandomizer_PhantasmPuff : BulletPuff
+Actor MMRandomizer_PhantasmPuff : DoomBulletPuff_Samsara
 {
-	Translation "160:167=112:127", "48:79=112:127"
+	States
+	{
+	Spawn:
+		VD64 L 4 Bright
+		PFF2 M 4
+    // Intentional fall-through
+	Melee:
+		VD64 NO 4
+		Stop
+	}
 }
