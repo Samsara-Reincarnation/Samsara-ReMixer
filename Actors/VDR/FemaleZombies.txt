@@ -382,7 +382,7 @@ ACTOR MMRandomizer_FemaleSergeant : MMRandomizer_FemaleZombie
 	Painsound "vdr/fem/pain"
 	Activesound "vdr/fem/act"
 	Deathsound "vdr/fem/death"
-	DropItem "ShotgunDrop"
+	DropItem "ShotgunDrop2"
 	Tag "Shotgun Gal"
 	States
 	{
@@ -761,7 +761,7 @@ ACTOR MMRandomizer_FemalePlasma : MMRandomizer_FemaleZombie
 	Deathsound "vdr/fem/death"
 	AttackSound ""
 	DropItem MMRandomizer_CellDrop
-    MissileType PlasmaBall
+    MissileType PlasmaZombieBall
 	Tag "Plasma Zombie"
 	States
 	{
@@ -817,7 +817,26 @@ ACTOR MMRandomizer_FemalePlasma : MMRandomizer_FemaleZombie
 			VD13 W -1
 			Stop
 		Raise:
+			VD13 A 0
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD13 NMLKJIH 5
+			Goto See
+		ZorchRaise:
+			"####" "#" 1 A_UnsetShootable
+			"####" "#" 1 A_SpawnItem("SpawnFire2")
+			"####" "#" 0 A_PlaySound("archvile/resummon")
+			"####" "#" 1 A_TakeInventory("EnemyZorched",1)
+			"####" "#" 0 A_SetTranslucent(0.1,0)
+			"####" "#" 3 A_SetTranslucent(0.2,0)
+			"####" "#" 3 A_SetTranslucent(0.3,0)
+			"####" "#" 3 A_SetTranslucent(0.4,0)
+			"####" "#" 3 A_SetTranslucent(0.5,0)
+			"####" "#" 3 A_SetTranslucent(0.6,0)
+			"####" "#" 3 A_SetTranslucent(0.7,0)
+			"####" "#" 3 A_SetTranslucent(0.8,0)
+			"####" "#" 3 A_SetTranslucent(0.9,0)
+			"####" "#" 3 A_SetTranslucent(1,0)
+			"####" "#" 1 A_SetShootable
 			Goto See
 		Pain.ShrinkerDMG:
 			VD13 G 0

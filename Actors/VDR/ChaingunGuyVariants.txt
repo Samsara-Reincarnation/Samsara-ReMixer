@@ -1,6 +1,6 @@
 ACTOR MMRandomizer_ChaingunGuyVariant1 : Chaingunguy3
 {
-	Dropitem "ChingunDrop"
+	Dropitem "ChingunDrop2"
 	States
 	{
 		Spawn:
