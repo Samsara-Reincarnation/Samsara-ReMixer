@@ -88,9 +88,9 @@ ACTOR PainElemental64 : SamsaraMonsterDemonicLargeTotalGib
 		StakeDeath:
 			64PN D 2
 			Loop			
-		Raise:
-			64PN LKJIHGFE 8
-			Goto See
+		//Raise:
+			//64PN LKJIHGFE 8
+			//Goto See
 		Crush:
 			TNT1 A 0
 			TNT1 A 1
@@ -445,7 +445,6 @@ ACTOR PainElemental64 : SamsaraMonsterDemonicLargeTotalGib
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
 		Death.Ice:
-			"####" "#" 0 A_Gravity
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_PainDie("LostSoul64")
 			"####" "#" 0 A_GenericFreezeDeath

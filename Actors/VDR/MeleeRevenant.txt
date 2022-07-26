@@ -66,6 +66,16 @@ ACTOR MMRandomizer_MeleeRevenant : SamsaraMonsterDemonicMedium
 			VD73 P 7
 			VD73 Q -1
 			Stop
+		Death.PainkillerStake:
+			TNT1 A 0 ACS_NamedExecuteAlways("Painkiller_MonsterKill")
+			TNT1 A 0 A_JumpIf(CallACS("Painkiller_IsItGibbed")==1,"PainkillerGib")
+			TNT1 A 0 A_GiveInventory("Painkiller_RunStake",1)
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_FaceTarget
+		StakeDeath:
+			VD73 L 2
+			Loop
 		Raise:
 			VD73 A 0
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")

@@ -14,6 +14,7 @@ ACTOR MMRandomizer_Inferno : SamsaraMonsterDemonicLargeTotalGib
 	+FLOAT
 	+DONTFALL
 	+DONTHURTSPECIES
+	Monster
 	SeeSound "vdr/infsit" 
 	PainSound "vdr/infpai" 
 	DeathSound "vdr/infdth" 
