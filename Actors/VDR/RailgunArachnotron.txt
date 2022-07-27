@@ -12,6 +12,7 @@ Actor MMRandomizer_RailGunArachnotron : Arachnotron3
 	PainSound "doom/baby/pain"
 	DeathSound "doom/baby/death"
 	ActiveSound "doom/baby/active"
+	AttackSound "Samsara/GenericRailgun"
 	Obituary "%o was railed by an arachnotron."
 	Tag "Railgun Arachnotron"
 	Decal RedRailScorch
@@ -28,9 +29,9 @@ Actor MMRandomizer_RailGunArachnotron : Arachnotron3
 			Loop
 		See:
 			VD60 A 20
-			VD60 A 3 A_BabyMetal
+			VD60 A 3 A_PlaySound("doom/baby/walk", CHAN_BODY)
 			VD60 ABBCC 3 A_Chase
-			VD60 D 3 A_BabyMetal
+			VD60 D 3 A_PlaySound("doom/baby/walk", CHAN_BODY)
 			VD60 DEEFF 3 A_Chase
 			Goto See+1
 		Missile:

@@ -88,9 +88,9 @@ ACTOR PainElemental64 : SamsaraMonsterDemonicLargeTotalGib
 		StakeDeath:
 			64PN D 2
 			Loop			
-		//Raise:
-			//64PN LKJIHGFE 8
-			//Goto See
+		Raise:
+			64PN LKJIHGFE 8
+			Goto See
 		Crush:
 			TNT1 A 0
 			TNT1 A 1
