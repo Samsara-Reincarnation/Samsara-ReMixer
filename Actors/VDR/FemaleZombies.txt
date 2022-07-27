@@ -1059,7 +1059,7 @@ ACTOR MMRandomizer_FemaleRail : MMRandomizer_FemaleZombie
 	Painsound "vdr/fem/pain"
 	Activesound "vdr/fem/act"
 	Deathsound "vdr/fem/death"
-	AttackSound ""
+	AttackSound "doom/grunt/attack"
 	DropItem MMRandomizer_CellDrop
     Decal RedRailScorch
 	Tag "Zombie Railgunner"

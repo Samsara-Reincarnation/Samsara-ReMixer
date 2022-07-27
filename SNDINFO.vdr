@@ -7,6 +7,7 @@ VDR/fem/active 	"Sounds/VDR/VDR_FEMZACT"
 VDR/KnifeHit 	"Sounds/VDR/VDR_DSKNIFE"
 VDR/Steam/Loop	"Sounds/VDR/VDR_STEMLOOP"
 VDR/Steam/Fire	"Sounds/VDR/VDR_STEMFIRE"
+VDR/CrowbarHit  "Sounds/VDR/VDR_DSCBAR"
 
 $random	VDR/fem/death { VDR/fem/death1 VDR/fem/death2 }
 $random	VDR/fem/sight { VDR/fem/sight1 VDR/fem/sight2 }

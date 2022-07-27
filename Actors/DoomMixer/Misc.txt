@@ -174,9 +174,9 @@ ACTOR Abaddon2 : Abaddon
 	Missile:
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		VD9V BC 5 A_FaceTarget
-		VD9V D 5 BRIGHT A_BasicAttack (8, "None", "AbaddonBall2", 32)
+		VD9V D 5 BRIGHT A_BasicAttack (8, "None", "AbaddonBall3", 32)
 		VD9V BC 5 A_FaceTarget
-		VD9V D 5 BRIGHT A_BasicAttack (8, "None", "AbaddonBall2", 32)
+		VD9V D 5 BRIGHT A_BasicAttack (8, "None", "AbaddonBall3", 32)
 		Goto See
 	Death:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -2385,7 +2385,7 @@ ACTOR SuperShotgunGuy2 : SuperShotgunGuy
    PainSound "doom/grunt/pain"
    DeathSound "doom/grunt/death"
    ActiveSound "doom/grunt/active"
-   DropItem "SuperShotgunPickup"
+   DropItem "SuperShotgunPickup2"
    Obituary "$OB_SSGGUY"
    Tag "Super Shotgun Guy"
    States

@@ -60,9 +60,9 @@ ACTOR MMRandomizer_Annihilator : CyberDemon3
 			Goto See2
 		Death: 
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			VD80 H 10 Bright
 			VD80 I 10 Bright A_Scream 
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			VD80 JKL 10 Bright
 			VD80 M 10 Bright A_NoBlocking 
 			VD80 NO 10 Bright

@@ -15,7 +15,7 @@ ACTOR MMRandomizer_SuperShotgunGuy : SamsaraMonsterHumanoidMedium
 	MONSTER
 	+FLOORCLIP
 	Obituary "%o was jacked by a super shotgun guy."
-	DropItem "SuperShotgunPickup"
+	DropItem "SuperShotgunPickup2"
 	Tag "Super Shotgun Guy"
 	var int user_scalex;
 	var int user_scaley;

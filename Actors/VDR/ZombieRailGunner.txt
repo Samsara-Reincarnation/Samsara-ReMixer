@@ -13,7 +13,7 @@ ACTOR MMRandomizer_ZombieRailGunner : Shotgunguy3
     PainSound "doom/grunt/pain" 
     DeathSound "doom/grunt/death" 
     ActiveSound "doom/grunt/active" 
-	AttackSound ""
+	AttackSound "doom/grunt/attack"
     Decal RedRailScorch
 	DropItem MMRandomizer_CellDrop
 	Tag "Zombie Railgunner"

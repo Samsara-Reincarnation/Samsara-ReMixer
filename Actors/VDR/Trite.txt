@@ -34,7 +34,7 @@ Actor MMRandomizer_TriteHole
 	}
 }
 
-Actor MMRandomizer_Trite : SamsaraMonsterDemonicTiny
+Actor MMRandomizer_Trite : SamsaraMonsterDemonicTinyTotalGib
 {
 	HitObituary "%o was nipped by a Trite"
 	Health 30
