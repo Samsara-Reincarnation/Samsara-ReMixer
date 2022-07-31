@@ -1,4 +1,4 @@
-Actor MMRandomizer_ArchonOfHell : BaronOfHell3
+Actor MMRandomizer_ArchonOfHell : SamsaraMonsterDemonicHuge
 {
 	Health 2500
 	Radius 24
@@ -34,8 +34,10 @@ Actor MMRandomizer_ArchonOfHell : BaronOfHell3
 	PainChance "CalebFire", 0
 	PainChance "WTMelee", 96
 	PainChance "WTMeleeIce", 96
-	PainChance "ShrinkerDMG", 0	
+	PainChance "ShrinkerDMG", 255	// heh
 	PainChance "PainkillerIce", 0
+	var int user_scalex;
+	var int user_scaley;
 	Tag "Archon Of Hell"
 	States
 	{
@@ -73,15 +75,15 @@ Actor MMRandomizer_ArchonOfHell : BaronOfHell3
 		Missile:
 			VD79 B 0 A_Jump(128,15)
 			VD79 EF 8 Bright A_FaceTarget
-			VD79 G 0 Bright A_CustomMissile("BaronBall2",28,0,0,0)
-			VD79 G 0 Bright A_CustomMissile("BaronBall2",28,0,-4,0)
-			VD79 G 3 Bright A_CustomMissile("BaronBall2",28,0,4,0)
+			VD79 G 0 Bright A_CustomMissile("BaronBall_Samsara",28,0,0,0)
+			VD79 G 0 Bright A_CustomMissile("BaronBall_Samsara",28,0,-4,0)
+			VD79 G 3 Bright A_CustomMissile("BaronBall_Samsara",28,0,4,0)
 			VD79 H 3 Bright
 			VD79 H 0 A_Jump(64,8)
 			VD79 IJ 8 Bright A_FaceTarget
-			VD79 K 0 Bright A_CustomMissile("BaronBall2",28,0,0,0)
-			VD79 K 0 Bright A_CustomMissile("BaronBall2",28,0,-4,0)
-			VD79 K 3 Bright A_CustomMissile("BaronBall2",28,0,4,0)
+			VD79 K 0 Bright A_CustomMissile("BaronBall_Samsara",28,0,0,0)
+			VD79 K 0 Bright A_CustomMissile("BaronBall_Samsara",28,0,-4,0)
+			VD79 K 3 Bright A_CustomMissile("BaronBall_Samsara",28,0,4,0)
 			VD79 L 3 Bright
 			VD79 L 0 A_Jump(64,1)
 			Goto See
@@ -90,12 +92,12 @@ Actor MMRandomizer_ArchonOfHell : BaronOfHell3
 			VD79 O 4 Bright A_CustomMissile("MMRandomizer_ArchonComet",28,0,0,0)
 			VD79 P 4 Bright
 			Goto See
-			VD79 O 0 A_CustomMissile("BaronBall2",28,0,-6,0)
-			VD79 O 0 A_CustomMissile("BaronBall2",28,0,-4,0)
-			VD79 O 0 A_CustomMissile("BaronBall2",28,0,-2,0)
-			VD79 O 0 A_CustomMissile("BaronBall2",28,0,2,0)
-			VD79 O 0 A_CustomMissile("BaronBall2",28,0,4,0)
-			VD79 O 3 Bright A_CustomMissile("BaronBall2",28,0,6,0)
+			VD79 O 0 A_CustomMissile("BaronBall_Samsara",28,0,-6,0)
+			VD79 O 0 A_CustomMissile("BaronBall_Samsara",28,0,-4,0)
+			VD79 O 0 A_CustomMissile("BaronBall_Samsara",28,0,-2,0)
+			VD79 O 0 A_CustomMissile("BaronBall_Samsara",28,0,2,0)
+			VD79 O 0 A_CustomMissile("BaronBall_Samsara",28,0,4,0)
+			VD79 O 3 Bright A_CustomMissile("BaronBall_Samsara",28,0,6,0)
 			VD79 P 3 Bright
 			Goto See
 		Melee:

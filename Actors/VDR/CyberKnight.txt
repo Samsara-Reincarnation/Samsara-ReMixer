@@ -1,4 +1,4 @@
-Actor MMRandomizer_CyberKnight : SamsaraMonsterMechanicalLarge
+Actor MMRandomizer_CyberKnight : SamsaraMonsterMechanicalLargeTotalGib
 { 
 	Health 750
 	Radius 24 

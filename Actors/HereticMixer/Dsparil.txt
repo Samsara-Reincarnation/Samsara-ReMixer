@@ -378,6 +378,8 @@ ACTOR Sorcerer5 : Sorcerer3 replaces Sorcerer3
 		Death.Shock:	  	  
 		Death.Tesla:
 		Death.CalebBullet:
+		Death.CalebFire:
+		Death.LifeLeech:
 			TNT1 A 0 A_GiveToTarget("CalebDMTaunt3", 1)
 			TNT1 A -1 A_Jump(256,"Death")
 			wait		
@@ -452,6 +454,18 @@ ACTOR Sorcerer5 : Sorcerer3 replaces Sorcerer3
 			TNT1 A 0 A_Jump(218, "Death")
 			TNT1 A 0 A_GiveToTarget("LoWangDMTaunt2", 1)
 			TNT1 A -1 A_Jump(256,"Death")
+			wait
+		Death.DukeIce:
+			"####" "#" 0 A_PlaySound("duke/enemyfreeze")
+			//"####" "#" 0 A_GiveInventory("FreezethrowerWeakness")
+			"####" "#" 0 A_Jump(218,"Ice")
+			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
+		Ice:
+		Death.HexenIce:
+		Death.WTMeleeIce:
+		Death.WTRangedIce:
+		Death.Ice:
+			TNT1 A -1 A_Jump(256, "Death")
 			wait
 		Pain.Hexen2RavenDamage:
 			TNT1 A 0 A_Jump(192,"Pain")
@@ -683,6 +697,8 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 		Death.Shock:	  	  
 		Death.Tesla:
 		Death.CalebBullet:
+		Death.CalebFire:
+		Death.LifeLeech:
 			TNT1 A 0 A_GiveToTarget("CalebDMTaunt3", 1)
 			TNT1 A -1 A_Jump(256,"Death")
 			wait		
@@ -779,6 +795,11 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 			"####" "#" 1 A_IceGuyDie
 			TNT1 A 2 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			stop
+		Pain.Hexen2RavenDamage:
+			TNT1 A 0 A_Jump(192,"Pain")
+			TNT1 A 0 A_SpawnItemEx("Hexen2GibSpawnerColor",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION|SXF_SETMASTER)
+			TNT1 A -1 A_Jump(256,"Pain")
+			wait
 	}
 }
 
