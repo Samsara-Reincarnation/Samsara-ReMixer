@@ -28,8 +28,11 @@ Actor MMRandomizer_ForgottenOne : SamsaraMonsterSkeletonSmall
 			VD63 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			VD63 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			VD63 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD63 A 0 A_GiveInventory("IsAFlyingActor")
 			VD63 A 0
 		Spawn2:
+			TNT1 A 0 A_GiveInventory("IsAFlyingActor")
+		Spawn3:
 			VD63 A 0 Bright
 			VD63 A 0 Bright A_ChangeFlag("FloatBob", 1)
 			VD63 AAAAAABBBBBB 1 Bright A_Look

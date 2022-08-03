@@ -24,6 +24,8 @@ actor MMRandomizer_ArachnorbQueen : SamsaraMonsterDemonicHuge
 	States
 	{
 		Spawn:
+			TNT1 A 0 NoDelay A_GiveInventory("IsAFlyingActor")
+		Spawn2:
 			VD81 A 1 A_Look
 			Loop
 		See:

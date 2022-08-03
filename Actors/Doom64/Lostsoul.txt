@@ -45,7 +45,11 @@ ACTOR LostSoul64 : SamsaraMonsterSkeletonSmall
 			64LS A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			64LS A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			64LS A 0 A_GiveInventory("AlreadySpawned",1)
+			64LS A 0 A_GiveInventory("IsAFlyingActor")
+			64LS A 0
 		Spawn2:
+			TNT1 A 0 A_GiveInventory("IsAFlyingActor")
+		Spawn3:
 			64LS ABC 5 BRIGHT A_Look
 			Loop
 		See:

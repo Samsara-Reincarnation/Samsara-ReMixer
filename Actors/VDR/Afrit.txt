@@ -28,8 +28,11 @@ Actor MMRandomizer_Afrit : SamsaraMonsterSkeletonLarge
 			VD72 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			VD72 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			VD72 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD72 A 0 A_GiveInventory("IsAFlyingActor")
 			VD72 A 0
-		Spawn:
+		Spawn2:
+			TNT1 A 0 A_GiveInventory("IsAFlyingActor")
+		Spawn3:
 			VD72 A 0
 			VD72 A 0 A_CustomMissile("MMRandomizer_OrbitComet", 44, 0, 0, 2, 0)
 			VD72 A 0 A_CustomMissile("MMRandomizer_OrbitComet2", 44, 0, 180, 2, 0)

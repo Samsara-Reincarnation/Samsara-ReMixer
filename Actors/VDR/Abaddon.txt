@@ -27,8 +27,11 @@ Actor MMRandomizer_Abaddon : SamsaraMonsterDemonicLargeTotalGib
 			VD68 A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			VD68 A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			VD68 A 0 A_GiveInventory("AlreadySpawned",1)
+			VD68 A 0 A_GiveInventory("IsAFlyingActor")
 			VD68 A 0
 		Spawn2:
+			TNT1 A 0 A_GiveInventory("IsAFlyingActor")
+		Spawn3:
 			VD68 A 10 A_Look
 			Loop
 		See:
