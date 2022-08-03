@@ -1,4 +1,4 @@
-ACTOR MMRandomizer_MeleeRevenant : SamsaraMonsterDemonicMedium
+ACTOR MMRandomizer_MeleeRevenant : SamsaraMonsterDemonicMediumTotalGib
 {
 	Health 150
 	Radius 20

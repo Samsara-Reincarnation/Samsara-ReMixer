@@ -423,7 +423,12 @@ ACTOR MMRandomizer_GhoulMissile : RevenantTracer
 	States
 	{
 		Spawn:
-			VE29 ABC 3 BRIGHT A_Tracer
+			VE29 A 0 bright A_SpawnItemEx("RevenantTracerSmoke_Samsara",0,0,0,0,0,1,0,0)	
+			VE29 A 3 bright A_SeekerMissile(0, 6, SMF_LOOK, 256)
+			VE29 B 0 bright A_SpawnItemEx("RevenantTracerSmoke_Samsara",0,0,0,0,0,1,0,0)	
+			VE29 B 3 bright A_SeekerMissile(0, 6, SMF_LOOK, 256)
+			VE29 C 0 bright A_SpawnItemEx("RevenantTracerSmoke_Samsara",0,0,0,0,0,1,0,0)	
+			VE29 C 3 bright A_SeekerMissile(0, 6, SMF_LOOK, 256)
 			TNT1 A 0 A_SpawnItemEx("MMRandomizer_GasTrail",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("MMRandomizer_GhoulCloud",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,128)
 			TNT1 A 0 A_SpawnItemEx("MMRandomizer_GhoulDrip",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,64)
