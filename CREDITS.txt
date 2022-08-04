@@ -32,6 +32,7 @@ Cyantusk - For making Zandronum Monster Randomizer (ZMR)
 ssv_170379 - For making Smooth HD Doom 3
 Dynamo & Nash - For making the Strife Cultist
 DrPyspy - For making the sprites for the Doom 64 Revenant (https://forum.zdoom.org/viewtopic.php?f=37&t=68009)
+Footman - For making recolors of Doom 64 monsters for Skulltag
 
 Original monsters and sprites/sounds belong to their respective owners, including:
 
