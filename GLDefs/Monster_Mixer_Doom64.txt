@@ -1,0 +1,922 @@
+// Most of these lights are pulled from Nevander's Doom 64 Retribution mod
+// Zombies
+flickerlight2 ZOMBIEATK_64
+{
+	color 1.0 0.8658 0.6747
+	size 88
+	secondarySize 104
+	interval 0.005
+	offset 0 48 0
+}
+
+object ZombieMan64
+{
+	frame 64POF { light ZOMBIEATK_64 }
+}
+
+object MultiZombieMan64
+{
+	frame 64POF { light ZOMBIEATK_64 }
+}
+
+object ShotgunGuy64
+{
+	frame 64SPF { light ZOMBIEATK_64 }
+}
+
+object MultiShotgunGuy64
+{
+	frame 64SPF { light ZOMBIEATK_64 }
+}
+
+object ChaingunGuy64
+{
+	frame 64CPE { light ZOMBIEATK_64 }
+	frame 64CPF { light ZOMBIEATK_64 }
+}
+
+object MultiChaingunGuy64
+{
+	frame 64CPE { light ZOMBIEATK_64 }
+	frame 64CPF { light ZOMBIEATK_64 }
+}
+
+object SuperShotgunGuy64
+{
+	frame 64GPF { light ZOMBIEATK_64 }
+}
+
+object MultiSuperShotgunGuy64
+{
+	frame 64GPF { light ZOMBIEATK_64 }
+}
+
+// Imp
+pointlight IMPBALL_64
+{
+	color 1.0 0.6 0.0
+	size 64
+}
+
+flickerlight IMPBALL_64_X1
+{
+	color 0.7 0.4 0.0
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight IMPBALL_64_X2
+{
+	color 0.5 0.3 0.0
+	size 96
+	secondarySize 104
+	chance 0.25
+}
+
+flickerlight IMPBALL_64_X3
+{
+	color 0.4 0.2 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight IMPBALL_64_X4
+{
+	color 0.3 0.2 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight IMPBALL_64_X5
+{
+	color 0.2 0.1 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight IMPBALL_64_X6
+{
+	color 0.1 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object DoomImpBall64
+{
+	frame 64TPA { light IMPBALL_64 }
+	frame 64TPB { light IMPBALL_64 }
+	frame 64TPC { light IMPBALL_64 }
+	frame 64TPD { light IMPBALL_64_X1 }
+	frame 64TPE { light IMPBALL_64_X2 }
+	frame 64TPF { light IMPBALL_64_X3 }
+	frame 64TPG { light IMPBALL_64_X4 }
+	frame 64TPH { light IMPBALL_64_X5 }
+	frame 64TPI { light IMPBALL_64_X6 }
+}
+
+// Nightmare Imp
+pointlight NIGHTMAREIMPBALL_64
+{
+	color 0.3 0.0 1.0
+	size 64
+}
+
+flickerlight NIGHTMAREIMPBALL_64_X1
+{
+	color 0.2 0.0 0.7
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight NIGHTMAREIMPBALL_64_X2
+{
+	color 0.1 0.0 0.5
+	size 96
+	secondarySize 104
+	chance 0.25
+}
+
+flickerlight NIGHTMAREIMPBALL_64_X3
+{
+	color 0.1 0.0 0.4
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight NIGHTMAREIMPBALL_64_X4
+{
+	color 0.0 0.0 0.3
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight NIGHTMAREIMPBALL_64_X5
+{
+	color 0.0 0.0 0.2
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight NIGHTMAREIMPBALL_64_X6
+{
+	color 0.0 0.0 0.1
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object NightmareImpBall64
+{
+	frame 64NPA { light NIGHTMAREIMPBALL_64 }
+	frame 64NPB { light NIGHTMAREIMPBALL_64 }
+	frame 64NPC { light NIGHTMAREIMPBALL_64 }
+	frame 64NPD { light NIGHTMAREIMPBALL_64_X1 }
+	frame 64NPE { light NIGHTMAREIMPBALL_64_X2 }
+	frame 64NPF { light NIGHTMAREIMPBALL_64_X3 }
+	frame 64NPG { light NIGHTMAREIMPBALL_64_X4 }
+	frame 64NPH { light NIGHTMAREIMPBALL_64_X5 }
+	frame 64NPI { light NIGHTMAREIMPBALL_64_X6 }
+}
+
+// Dark Imp
+pointlight DARKIMPBALL_64
+{
+	color 0.0 0.0 1.0
+	size 64
+}
+
+flickerlight DARKIMPBALL_64_X1
+{
+	color 0.0 0.0 0.7
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight DARKIMPBALL_64_X2
+{
+	color 0.0 0.0 0.5
+	size 96
+	secondarySize 104
+	chance 0.25
+}
+
+flickerlight DARKIMPBALL_64_X3
+{
+	color 0.0 0.0 0.4
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object DarkImpBall64
+{
+	frame 64DPA { light DARKIMPBALL_64 }
+	frame 64DPB { light DARKIMPBALL_64 }
+	frame 64DPC { light DARKIMPBALL_64 }
+	frame 64DPD { light DARKIMPBALL_64_X1 }
+	frame 64DPE { light DARKIMPBALL_64_X2 }
+	frame 64DPF { light DARKIMPBALL_64_X3 }
+	frame 64DPG { light NIGHTMAREIMPBALL_64_X4 }
+	frame 64DPH { light NIGHTMAREIMPBALL_64_X5 }
+	frame 64DPI { light NIGHTMAREIMPBALL_64_X6 }
+}
+
+// Lost Soul
+flickerlight LOSTSOUL_64
+{
+	color 1.0 0.5 0.0
+	size 48
+	secondarySize 56
+	chance 0.1
+}
+
+flickerlight LOSTSOUL_64_X1
+{
+	color 0.8 0.4 0.0
+	size 72
+	secondarySize 80
+	chance 0.25
+}
+
+flickerlight LOSTSOUL_64_X2
+{
+	color 0.7 0.3 0.0
+	size 88
+	secondarySize 96
+	chance 0.25
+}
+
+flickerlight LOSTSOUL_64_X3
+{
+	color 0.6 0.2 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+flickerlight LOSTSOUL_64_X4
+{
+	color 0.5 0.1 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight LOSTSOUL_64_X5
+{
+	color 0.4 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight LOSTSOUL_64_X6
+{
+	color 0.3 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight LOSTSOUL_64_X7
+{
+	color 0.2 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight LOSTSOUL_64_X8
+{
+	color 0.1 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object LostSoul64
+{
+	frame 64LSA { light LOSTSOUL_64 }
+	frame 64LSB { light LOSTSOUL_64 }
+	frame 64LSC { light LOSTSOUL_64 }
+	frame 64LSD { light LOSTSOUL_64 }
+	frame 64LSE { light LOSTSOUL_64 }
+	frame 64LSF { light LOSTSOUL_64 }
+	frame 64LSG { light LOSTSOUL_64 }
+	frame 64LSH { light LOSTSOUL_64_X1 }
+	frame 64LSI { light LOSTSOUL_64_X2 }
+	frame 64LSJ { light LOSTSOUL_64_X3 }
+	frame 64LSK { light LOSTSOUL_64_X4 }
+	frame 64LSL { light LOSTSOUL_64_X5 }
+	frame 64LSM { light LOSTSOUL_64_X6 }
+	frame 64LSN { light LOSTSOUL_64_X7 }
+	frame 64LSO { light LOSTSOUL_64_X8 }
+}
+
+// Cacodemon
+flickerlight CACOBALL_64
+{
+	color 1.0 0.0 0.0
+	size 56
+	secondarySize 64
+	chance 0.5
+}
+
+flickerlight CACOBALL_64_X1
+{
+	color 0.9 0.0 0.0
+	size 72
+	secondarySize 80
+	chance 0.25
+}
+
+flickerlight CACOBALL_64_X2
+{
+	color 0.6 0.0 0.0
+	size 88
+	secondarySize 96
+	chance 0.25
+}
+
+flickerlight CACOBALL_64_X3
+{
+	color 0.3 0.0 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+flickerlight CACOBALL_64_X4
+{
+	color 0.2 0.0 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+flickerlight CACOBALL_64_X5
+{
+	color 0.1 0.0 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+object CacodemonBall64
+{
+	frame 64CBA { light CACOBALL_64 }
+	frame 64CBB { light CACOBALL_64 }
+	frame 64CBC { light CACOBALL_64 }
+	frame 64CBD { light CACOBALL_64_X1 }
+	frame 64CBE { light CACOBALL_64_X2 }
+	frame 64CBF { light CACOBALL_64_X3 }
+	frame 64CBG { light CACOBALL_64_X4 }
+	frame 64CBH { light CACOBALL_64_X5 }
+}
+
+// Cacolantern
+flickerlight CACOLANTERNBALL_64
+{
+	color 1.0 1.0 0.0
+	size 56
+	secondarySize 64
+	chance 0.5
+}
+
+flickerlight CACOLANTERNBALL_64_X1
+{
+	color 0.9 0.9 0.0
+	size 72
+	secondarySize 80
+	chance 0.25
+}
+
+flickerlight CACOLANTERNBALL_64_X2
+{
+	color 0.6 0.6 0.0
+	size 88
+	secondarySize 96
+	chance 0.25
+}
+
+flickerlight CACOLANTERNBALL_64_X3
+{
+	color 0.3 0.3 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+flickerlight CACOLANTERNBALL_64_X4
+{
+	color 0.2 0.2 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+flickerlight CACOLANTERNBALL_64_X5
+{
+	color 0.1 0.1 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+object CacolanternBall64
+{
+	frame 64LPA { light CACOLANTERNBALL_64 }
+	frame 64LPB { light CACOLANTERNBALL_64 }
+	frame 64LPC { light CACOLANTERNBALL_64 }
+	frame 64LPD { light CACOLANTERNBALL_64_X1 }
+	frame 64LPE { light CACOLANTERNBALL_64_X2 }
+	frame 64LPF { light CACOLANTERNBALL_64_X3 }
+	frame 64LPG { light CACOLANTERNBALL_64_X4 }
+	frame 64LPH { light CACOLANTERNBALL_64_X5 }
+}
+
+// Abaddon
+flickerlight ABADBALL_64
+{
+	color 1.0 0.0 0.0
+	size 56
+	secondarySize 64
+	chance 0.5
+}
+
+flickerlight ABADBALL_64_X1
+{
+	color 0.9 0.0 0.0
+	size 72
+	secondarySize 80
+	chance 0.25
+}
+
+flickerlight ABADBALL_64_X2
+{
+	color 0.6 0.0 0.0
+	size 88
+	secondarySize 96
+	chance 0.25
+}
+
+flickerlight ABADBALL_64_X3
+{
+	color 0.3 0.0 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+flickerlight ABADBALL_64_X4
+{
+	color 0.2 0.0 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+flickerlight ABADBALL_64_X5
+{
+	color 0.1 0.0 0.0
+	size 104
+	secondarySize 112
+	chance 0.25
+}
+
+object AbaddonBall64
+{
+	frame 64APA { light ABADBALL_64 }
+	frame 64APB { light ABADBALL_64 }
+	frame 64APC { light ABADBALL_64 }
+	frame 64APD { light ABADBALL_64_X1 }
+	frame 64APE { light ABADBALL_64_X2 }
+	frame 64APF { light ABADBALL_64_X3 }
+	frame 64APG { light ABADBALL_64_X4 }
+	frame 64APH { light ABADBALL_64_X5 }
+}
+
+// Hell Knight
+pointlight GREENBARONBALL_64
+{
+	color 0.0 1.0 0.0
+	size 64
+}
+
+flickerlight GREENBARONBALL_64_X1
+{
+	color 0.0 0.7 0.0
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight GREENBARONBALL_64_X2
+{
+	color 0.0 0.5 0.0
+	size 96
+	secondarySize 104
+	chance 0.25
+}
+
+flickerlight GREENBARONBALL_64_X3
+{
+	color 0.0 0.4 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight GREENBARONBALL_64_X4
+{
+	color 0.0 0.3 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight GREENBARONBALL_64_X5
+{
+	color 0.0 0.2 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight GREENBARONBALL_64_X6
+{
+	color 0.0 0.1 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object BaronBall64
+{
+	frame 64B7A { light GREENBARONBALL_64 }
+	frame 64B7B { light GREENBARONBALL_64 }
+	frame 64B7C { light GREENBARONBALL_64_X1 }
+	frame 64B7D { light GREENBARONBALL_64_X2 }
+	frame 64B7E { light GREENBARONBALL_64_X3 }
+	frame 64B7F { light GREENBARONBALL_64_X4 }
+	frame 64B7G { light GREENBARONBALL_64_X5 }
+	frame 64B7H { light GREENBARONBALL_64_X6 }
+}
+
+// Baron Of Hell
+pointlight REDBARONBALL_64
+{
+	color 1.0 0.0 0.0
+	size 64
+}
+
+flickerlight REDBARONBALL_64_X1
+{
+	color 0.7 0.0 0.0
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight REDBARONBALL_64_X2
+{
+	color 0.5 0.0 0.0
+	size 96
+	secondarySize 104
+	chance 0.25
+}
+
+flickerlight REDBARONBALL_64_X3
+{
+	color 0.4 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight REDBARONBALL_64_X4
+{
+	color 0.3 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight REDBARONBALL_64_X5
+{
+	color 0.2 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+flickerlight REDBARONBALL_64_X6
+{
+	color 0.1 0.0 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object BaronBall642
+{
+	frame 64B8A { light REDBARONBALL_64 }
+	frame 64B8B { light REDBARONBALL_64 }
+	frame 64B8C { light REDBARONBALL_64_X1 }
+	frame 64B8D { light REDBARONBALL_64_X2 }
+	frame 64B8E { light REDBARONBALL_64_X3 }
+	frame 64B8F { light REDBARONBALL_64_X4 }
+	frame 64B8G { light REDBARONBALL_64_X5 }
+	frame 64B8H { light REDBARONBALL_64_X6 }
+}
+
+// Belphegor
+object BelphegorBall64
+{
+	frame 64B7A { light GREENBARONBALL_64 }
+	frame 64B7B { light GREENBARONBALL_64 }
+	frame 64B7C { light GREENBARONBALL_64_X1 }
+	frame 64B7D { light GREENBARONBALL_64_X2 }
+	frame 64B7E { light GREENBARONBALL_64_X3 }
+	frame 64B7F { light GREENBARONBALL_64_X4 }
+	frame 64B7G { light GREENBARONBALL_64_X5 }
+	frame 64B7H { light GREENBARONBALL_64_X6 }
+}
+
+// Revenant
+pointlight REDTRACER_64
+{
+	color 1.0 0.0 0.0
+	size 48
+}
+
+flickerlight REDTRACER_64_X1
+{
+	color 0.8 0.0 0.0
+	size 72
+	secondarySize 80
+	chance 0.3
+}
+
+flickerlight REDTRACER_64_X2
+{
+	color 0.6 0.0 0.0
+	size 88
+	secondarySize 96
+	chance 0.3
+}
+
+flickerlight REDTRACER_64_X3
+{
+	color 0.4 0.0 0.0
+	size 48
+	secondarySize 32
+	chance 0.3
+}
+
+flickerlight REDTRACER_64_X4
+{
+	color 0.2 0.0 0.0
+	size 32
+	secondarySize 16
+	chance 0.3
+}
+
+object RevenantTracer64
+{
+	frame 64RBA { light REDTRACER_64 }
+	frame 64RBB { light REDTRACER_64 }
+	frame 64RBC { light REDTRACER_64_X1 }
+	frame 64RBD { light REDTRACER_64_X2 }
+	frame 64RBE { light REDTRACER_64_X2 }
+	frame 64RBF { light REDTRACER_64_X3 }
+	frame 64RBG { light REDTRACER_64_X3 }
+	frame 64RBH { light REDTRACER_64_X4 }
+}
+
+// Arachnotron
+pointlight ARACHPLAS_64
+{
+	color 0.0 0.1 1.0
+	size 48
+}
+
+flickerlight ARACHPLAS_64_X1
+{
+	color 0.2 0.2 1.0
+	size 72
+	secondarySize 80
+	chance 0.5
+}
+
+flickerlight ARACHPLAS_64_X2
+{
+	color 0.2 0.2 0.8
+	size 80
+	secondarySize 88
+	chance 0.5
+}
+
+flickerlight ARACHPLAS_64_X3
+{
+	color 0.1 0.1 0.5
+	size 32
+	secondarySize 48
+	chance 0.5
+}
+
+flickerlight ARACHPLAS_64_X4
+{
+	color 0.1 0.1 0.5
+	size 16
+	secondarySize 24
+	chance 0.5
+}
+
+flickerlight ARACHPLAS_64_X5
+{
+	color 0.0 0.0 0.2
+	size 8
+	secondarySize 16
+	chance 0.5
+}
+
+object ArachnotronPlasma64
+{
+	frame 64PPA { light ARACHPLAS_64 }
+	frame 64PPB { light ARACHPLAS_64 }
+	frame 64PPC { light ARACHPLAS_64_X1 }
+	frame 64PPD { light ARACHPLAS_64_X2 }
+	frame 64PPE { light ARACHPLAS_64_X2 }
+	frame 64PPF { light ARACHPLAS_64_X3 }
+	frame 64PPG { light ARACHPLAS_64_X4 }
+	frame 64PPH { light ARACHPLAS_64_X5 }
+}
+
+// Mancubus
+pointlight MANCSHOT_64
+{
+	color 1.0 0.7 0.0
+	size 56
+}
+
+flickerlight MANCSHOT_64_X1
+{
+	color 1.0 0.7 0.0
+	size 64
+	secondarySize 72
+	chance 0.4
+}
+
+flickerlight MANCSHOT_64_X2
+{
+	color 0.8 0.6 0.0
+	size 80
+	secondarySize 88
+	chance 0.4
+}
+
+flickerlight MANCSHOT_64_X3
+{
+	color 0.6 0.4 0.0
+	size 96
+	secondarySize 104
+	chance 0.4
+}
+
+flickerlight MANCSHOT_64_X4
+{
+	color 0.5 0.3 0.0
+	size 96
+	secondarySize 104
+	chance 0.4
+}
+
+flickerlight MANCSHOT_64_X5
+{
+	color 0.3 0.2 0.0
+	size 96
+	secondarySize 104
+	chance 0.4
+}
+
+object FatShot64
+{
+	frame 64MFA { light MANCSHOT_64 }
+	frame 64MFB { light MANCSHOT_64 }
+	frame 64MFC { light MANCSHOT_64 }
+	frame 64MFD { light MANCSHOT_64_X1 }
+	frame 64MFE { light MANCSHOT_64_X2 }
+	frame 64MFF { light MANCSHOT_64_X3 }
+	frame 64MFG { light MANCSHOT_64_X4 }
+	frame 64MFH { light MANCSHOT_64_X5 }
+	frame 64MFI { light MANCSHOT_64_X5 }
+}
+
+// Hectebus
+pointlight HECTSHOT_64
+{
+	color 0.0 1.0 0.0
+	size 48
+}
+
+flickerlight HECTSHOT_64_X1
+{
+	color 0.0 1.0 0.0
+	size 56
+	secondarySize 64
+	chance 0.4
+}
+
+flickerlight HECTSHOT_64_X2
+{
+	color 0.0 0.8 0.0
+	size 72
+	secondarySize 80
+	chance 0.4
+}
+
+flickerlight HECTSHOT_64_X3
+{
+	color 0.0 0.6 0.0
+	size 88
+	secondarySize 96
+	chance 0.4
+}
+
+flickerlight HECTSHOT_64_X4
+{
+	color 0.0 0.5 0.0
+	size 88
+	secondarySize 96
+	chance 0.4
+}
+
+flickerlight HECTSHOT_64_X5
+{
+	color 0.0 0.3 0.0
+	size 88
+	secondarySize 96
+	chance 0.4
+}
+
+object HectShot64
+{
+	frame 64HPA { light HECTSHOT_64 }
+	frame 64HPB { light HECTSHOT_64 }
+	frame 64HPC { light HECTSHOT_64 }
+	frame 64HPD { light HECTSHOT_64_X1 }
+	frame 64HPE { light HECTSHOT_64_X2 }
+	frame 64HPF { light HECTSHOT_64_X3 }
+	frame 64HPG { light HECTSHOT_64_X4 }
+	frame 64HPH { light HECTSHOT_64_X5 }
+	frame 64HPI { light HECTSHOT_64_X5 }
+}
+
+// Cyberdemon
+object CyberRocket64
+{
+	frame 64MIA { light ROCKET64  }
+	frame 64MIB { light ROCKET64_X1 }
+	frame 64MIC { light ROCKET64_X2 }
+	frame 64MID { light ROCKET64_X3 }
+	frame 64MIE { light ROCKET64_X4 }
+	frame 64MIF { light ROCKET64_X5 }
+}
+
+// Motherdemon
+flickerlight MOTHERDEMON_FIRE_64
+{
+	color 1.0 0.9 0.0
+	size 32
+	secondarySize 38
+	chance 0.5
+	offset 0 32 0
+}
+
+object MotherBall64
+{
+	frame 64RBA { light REDTRACER_64 }
+	frame 64RBB { light REDTRACER_64 }
+	frame 64RBC { light REDTRACER_64_X1 }
+	frame 64RBD { light REDTRACER_64_X2 }
+	frame 64RBE { light REDTRACER_64_X2 }
+	frame 64RBF { light REDTRACER_64_X3 }
+	frame 64RBG { light REDTRACER_64_X3 }
+	frame 64RBH { light REDTRACER_64_X4 }
+}
+
+object MotherFire64
+{
+	frame 64FR { light MOTHERDEMON_FIRE_64 }
+}
