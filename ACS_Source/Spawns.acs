@@ -192,25 +192,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][6] =
 				{"WolfensteinSSJagaur"}
 			},
 			{//Super Shotgunguy
-				{"SuperShotgunguy2"}
+				{"SuperShotgunguy64"}
 			},
 			{//Dark Imp
-				{"DarkImp2"}
+				{"DarkImp64"}
 			},
 			{//Blood Demon
-				{"BloodDemon2"}
+				{"BloodDemon64"}
 			},
 			{//Cacolantern
-				{"Cacolantern2"}
+				{"Cacolantern64"}
 			},
 			{//Abaddon
-				{"Abaddon2"}
+				{"Abaddon64"}
 			},
 			{//Hectebus
-				{"Hectebus2"}
+				{"Hectebus64"}
 			},
 			{//Belphegor
-				{"Belphegor2"}
+				{"Belphegor64"}
 			}
 		},
 		{//VDR

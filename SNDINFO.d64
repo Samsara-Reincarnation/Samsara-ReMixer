@@ -9,6 +9,8 @@ $random 64grunt/death		{ 64grunt/death1  64grunt/death2  64grunt/death3 }
 64grunt/death2			64podth2
 64grunt/death3			64podth3
 
+64ssgguy/attack			64SSGATK
+
 $Random 64imp/sight		{ 64impsee1 64impsee2 }
 64impsee1				64BGSIT1
 64impsee2				64BGSIT2
