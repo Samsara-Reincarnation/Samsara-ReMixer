@@ -323,6 +323,25 @@ object LostSoul64
 	frame 64LSO { light LOSTSOUL_64_X8 }
 }
 
+object MultiLostSoul64
+{
+	frame 64LSA { light LOSTSOUL_64 }
+	frame 64LSB { light LOSTSOUL_64 }
+	frame 64LSC { light LOSTSOUL_64 }
+	frame 64LSD { light LOSTSOUL_64 }
+	frame 64LSE { light LOSTSOUL_64 }
+	frame 64LSF { light LOSTSOUL_64 }
+	frame 64LSG { light LOSTSOUL_64 }
+	frame 64LSH { light LOSTSOUL_64_X1 }
+	frame 64LSI { light LOSTSOUL_64_X2 }
+	frame 64LSJ { light LOSTSOUL_64_X3 }
+	frame 64LSK { light LOSTSOUL_64_X4 }
+	frame 64LSL { light LOSTSOUL_64_X5 }
+	frame 64LSM { light LOSTSOUL_64_X6 }
+	frame 64LSN { light LOSTSOUL_64_X7 }
+	frame 64LSO { light LOSTSOUL_64_X8 }
+}
+
 // Cacodemon
 flickerlight CACOBALL_64
 {
