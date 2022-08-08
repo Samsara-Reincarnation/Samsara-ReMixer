@@ -6,7 +6,6 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoidMedium
 	Mass 100
 	Speed 8
 	PainChance 200
-	MeleeDamage 3
 	Monster
 	Scale 0.7
 	Species "Enemies"
@@ -18,19 +17,18 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoidMedium
 	PainSound "64grunt/pain"
 	DeathSound "64imp/death"
 	ActiveSound "64imp/active"
-	MeleeSound "friendlyimp64/melee"
+	Obituary "$OB_IMP"
 	HitObituary "$OB_IMPHIT"
 	DamageFactor "Mace", 1.1
     DamageFactor "DragonClaw", 1.5
 	DamageFactor "BlakeEnemyBullet", 0.0
     PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
-	DamageFactor "WitchMelee", 1.1	
+	DamageFactor "WitchMelee", 1.1
 	PainChance "CalebFire", 0
 	PainChance "WTMelee", 255
-	PainChance "WTMeleeIce", 255		
-	Obituary "$OB_IMP"
-    BloodType "Doom64Blood" 
+	PainChance "WTMeleeIce", 255
+    BloodType "Doom64Blood"
 	var int user_scalex;
 	var int user_scaley;
 	States
@@ -47,12 +45,12 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoidMedium
 			64TR AABBCCDD 3 A_Chase
 			Loop
 		Melee:
-			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			64TR E 0 A_ChangeFlag("NOPAIN",0)
 			64TR EF 8 A_FaceTarget
-			64TR G 6 A_MeleeAttack
+			64TR G 6 A_CustomMeleeAttack(3, "friendlyimp64/melee")
 			Goto See
 		Missile:
-			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			64TR I 0 A_ChangeFlag("NOPAIN",0)
 			64TR IJ 8 A_FaceTarget
 			64TR K 6 A_CustomMissile("DoomImpBall64", 32)
 			Goto See
@@ -61,15 +59,13 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoidMedium
 			64TR H 2 A_Pain
 			Goto See
 		Pain.Vertigo:
-			64TR H 0 ThrustThingZ(0, 55, 0, 0)
-			64TR H 2
-			64TR H 2 A_Pain
-			Goto See
+			64TR H 2 ThrustThingZ(0, 55, 0, 0)
+			Goto Pain+1
 		Pain.MightyBoot:
-			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
-			TNT1 A 0 A_PlaySoundEx("duke/kickhit","body",0,0)
+			64TR H 0 A_ChangeFlag("NOPAIN",1)
+			64TR H 0 A_PlaySoundEx("duke/kickhit","body",0,0)
 			64TR H 2 A_FaceTarget
-			TNT1 A 0 A_Recoil(14)
+			64TR H 0 A_Recoil(14)
 			64TR H 16 A_Pain
 			Goto See
 		Pain.Shock:
@@ -79,9 +75,8 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoidMedium
 			TNT1 A -1 A_Jump(256,"See")
 			wait
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")			
-			64TR L 8
+			64TR L 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			64TR L 8 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 			64TR M 8 A_Scream
 			64TR N 6
 			64TR O 6 A_NoBlocking
@@ -106,23 +101,20 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoidMedium
 			64TR H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")			
-			64TR Q 5
+			64TR Q 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			64TR Q 5 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			64TR R 5 A_PlaySound("friendlyimp64/gibbed", CHAN_VOICE)
 			64TR S 5
 			64TR T 5 A_NoBlocking
 			64TR UVW 5
 			64TR X -1
-			Stop						
+			Stop
 		Raise:
 			64TR PO 8
 			64TR NML 6
 			Goto See
 		Crush:
-			A027 A 0
-			A027 A 0 A_PlaySound("friendlyimp64/crush")
-			A027 A -1
+			A027 A -1 A_PlaySound("friendlyimp64/crush")
 			Stop
 		Pain.ShrinkerDMG:
 			64TR H 0
@@ -204,7 +196,7 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoidMedium
 			"####" "#" 0 A_GiveInventory("ExpanderDoubleX", 1)
 			"####" "#" 0 A_JumpIfInventory("ExpanderGrowthX", 40, "ExpanderPopCoop")
 			loop
-		ExpanderPopCoop:	
+		ExpanderPopCoop:
 			"####" "#" 10
 			TNT1 A 0 A_SpawnItemEx("ExpanderExplosion_Coop",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_PlaySound("duke/explosion", 6, 1.0)
@@ -396,7 +388,7 @@ actor DoomImp64_ShrinkEffect : DoomImp64
 	-SOLID
 	+NOINTERACTION
 	-NOGRAVITY
-	+CLIENTSIDEONLY	
+	+CLIENTSIDEONLY
 	Renderstyle Translucent
 	Alpha 0.4
 	States

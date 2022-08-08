@@ -8,7 +8,6 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 	Radius 20
 	Height 56
 	Mass 100
-	MeleeDamage 3
 	Species "Enemies"
 	Tag "Nightmare Imp"
 	BloodColor "7B 5A 84"
@@ -16,7 +15,6 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 	PainSound "64grunt/pain"
 	DeathSound "64imp/death"
 	ActiveSound "64imp/active"
-	MeleeSound "friendlyimp64/melee"
 	Obituary "%o was burned by a Nightmare Imp."
 	HitObituary "%o was slashed by a Nightmare Imp."
 	DamageFactor "Mace", 1.1
@@ -26,9 +24,9 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 	PainChance "MarathonStun", 255
 	PainChance "CalebFire", 0
 	PainChance "WTMelee", 255
-	PainChance "WTMeleeIce", 255	
-	DamageFactor "WitchMelee", 1.1		
-    BloodType "Doom64Blood"	
+	PainChance "WTMeleeIce", 255
+	DamageFactor "WitchMelee", 1.1
+    BloodType "Doom64Blood"
 	MONSTER
 	Scale 0.7
 	+FLOORCLIP
@@ -51,12 +49,12 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 			64I2 AABBCCDD 3 A_Chase
 			Loop
 		Melee:
-			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			64I2 E 0 A_ChangeFlag("NOPAIN",0)
 			64I2 EF 8 A_FaceTarget
-			64I2 G 6 A_MeleeAttack
+			64I2 G 6 A_CustomMeleeAttack(3, "friendlyimp64/melee")
 			Goto See
 		Missile:
-			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			64I2 I 0 A_ChangeFlag("NOPAIN",0)
 			64I2 IJ 8 A_FaceTarget
 			64I2 K 6 A_CustomMissile("NightmareImpBall64", 32)
 			Goto See
@@ -65,15 +63,13 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 			64I2 H 2 A_Pain
 			Goto See
 		Pain.Vertigo:
-			64I2 H 0 ThrustThingZ(0, 55, 0, 0)
-			64I2 H 2
-			64I2 H 2 A_Pain
-			Goto See
+			64I2 H 2 ThrustThingZ(0, 55, 0, 0)
+			Goto Pain+1
 		Pain.MightyBoot:
-			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
-			TNT1 A 0 A_PlaySoundEx("duke/kickhit","body",0,0)
+			64I2 H 0 A_ChangeFlag("NOPAIN",1)
+			64I2 H 0 A_PlaySoundEx("duke/kickhit","body",0,0)
 			64I2 H 2 A_FaceTarget
-			TNT1 A 0 A_Recoil(14)
+			64I2 H 0 A_Recoil(14)
 			64I2 H 16 A_Pain
 			Goto See
 		Pain.Shock:
@@ -83,9 +79,8 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 			TNT1 A -1 A_Jump(256,"See")
 			wait
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)			
-			64I2 L 8
+			64I2 L 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			64I2 L 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			64I2 M 8 A_Scream
 			64I2 N 6
 			64I2 O 6 A_NoBlocking
@@ -110,23 +105,20 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 			64I2 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)			
-			64I2 Q 5
+			64I2 Q 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			64I2 Q 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			64I2 R 5 A_XScream
 			64I2 S 5
 			64I2 T 5 A_NoBlocking
 			64I2 UVW 5
 			64I2 X -1
-			Stop			
+			Stop
 		Raise:
 			64I2 PO 8
 			64I2 NML 6
 			Goto See
 		Crush:
-			A055 A 0
-			A055 A 0 A_PlaySound("friendlyimp64/gibbed")
-			A055 A -1
+			A055 A -1 A_PlaySound("friendlyimp64/gibbed")
 			Stop
 		Pain.ShrinkerDMG:
 			64I2 H 0
@@ -178,7 +170,7 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 			"####" "#" 0 A_GiveInventory("ExpanderDoubleX", 1)
 			"####" "#" 0 A_JumpIfInventory("ExpanderGrowthX", 40, "ExpanderPop")
 			loop
-		ExpanderPop:	
+		ExpanderPop:
 			"####" "#" 10
 			TNT1 A 0 A_SpawnItemEx("ExpanderExplosion_Basic",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_PlaySound("duke/explosion", 6, 1.0)
@@ -208,7 +200,7 @@ ACTOR NightmareImp64 : SamsaraMonsterHumanoidMedium
 			"####" "#" 0 A_GiveInventory("ExpanderDoubleX", 1)
 			"####" "#" 0 A_JumpIfInventory("ExpanderGrowthX", 40, "ExpanderPopCoop")
 			loop
-		ExpanderPopCoop:	
+		ExpanderPopCoop:
 			"####" "#" 10
 			TNT1 A 0 A_SpawnItemEx("ExpanderExplosion_Coop",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_PlaySound("duke/explosion", 6, 1.0)
@@ -232,7 +224,6 @@ ACTOR NightmareImpBall64 : DoomImpBall64
 	FastSpeed 25
 	Renderstyle Translucent
 	Alpha 0.50
-	
 	States
 	{
 		Spawn:
@@ -393,7 +384,7 @@ actor NightmareImp64_ShrinkEffect : NightmareImp64
 	-SOLID
 	+NOINTERACTION
 	-NOGRAVITY
-	+CLIENTSIDEONLY	
+	+CLIENTSIDEONLY
 	Renderstyle Translucent
 	Alpha 0.4
 	States

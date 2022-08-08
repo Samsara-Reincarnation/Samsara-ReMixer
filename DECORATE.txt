@@ -663,6 +663,13 @@
 #include "actors/Doom64/Revenant.txt"
 #include "actors/Doom64/Archvile.txt"
 #include "actors/Doom64/Spidermastermind.txt"
+#include "actors/Doom64/Abaddon.txt"
+#include "actors/Doom64/Belphegor.txt"
+#include "actors/Doom64/BloodDemon.txt"
+#include "actors/Doom64/Cacolantern.txt"
+#include "actors/Doom64/DarkImp.txt"
+#include "actors/Doom64/Hectebus.txt"
+#include "actors/Doom64/SuperShotgunGuy.txt"
 
 // Half Life
 
