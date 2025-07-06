@@ -482,7 +482,7 @@ Actor SWRipperBig : SWRipper
   Speed 5
   PainChance 64
   Mass 384
-  Obituary "%o torn apart by a ripper leader."
+  Obituary "%o was torn apart by a ripper leader."
   MeleeRange 72
   MaxTargetRange 72
   Scale 1.24

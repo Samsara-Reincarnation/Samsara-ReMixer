@@ -439,7 +439,7 @@ Actor SWRipperBabyBig : SWRipperBaby
   Speed 8
   PainChance 64
   Mass 384
-  Obituary "%o torn apart by an overgrown baby ripper."
+  Obituary "%o was torn apart by an overgrown baby ripper."
   MeleeRange 64
   MaxTargetRange 256
   +BOSSDEATH
@@ -821,7 +821,7 @@ Actor BabyRipperExplosion
 	Speed 6
 	Damage (0)
 	Damagetype ""
-	Obituary "%o torn apart by an overgrown baby ripper."
+	Obituary "%o was torn apart by an overgrown baby ripper."
 	PROJECTILE
 	BounceCount 2
 	Scale 0.75
