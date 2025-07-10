@@ -188,7 +188,7 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 				int activatorZ = GetActorZ(0);
 				int activatorAngle = GetActorAngle(0);
 
-				GiveInventory("ThruSpeciesToken", 1);
+				GiveInventory("SamsaraThruSpeciesEnabler", 1);
 
 				for(int g = 1; g < GetCVar("mm_multiply"); g++)
 				{
@@ -196,7 +196,7 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 					SetActivator(newTid);
 					SetActorAngle(0,activatorAngle);
 					GiveInventory("MultiplyOverflowToken", 1);
-					GiveInventory("ThruSpeciesToken", 1);
+					GiveInventory("SamsaraThruSpeciesEnabler", 1);
 					applyModifierToMonster(APROP_Health,"mm_healthoverride");
 					applyModifierToMonster(APROP_Speed,"mm_speedoverride");
 					ThrustThing(random(0,256), 2, 0, 0);
