@@ -11,7 +11,6 @@
 //Spawners
 
 #include "actors/Spawn/S-Core.txt"
-#include "actors/Spawn/S-Ammo.txt"
 #include "actors/Spawn/S-Doom.txt"
 #include "actors/Spawn/S-Chex.txt"
 #include "actors/Spawn/S-Heretic.txt"
