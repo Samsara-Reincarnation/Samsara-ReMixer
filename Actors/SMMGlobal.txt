@@ -14,9 +14,7 @@ ACTOR SamsaraMixerLoadedToken
 	}
 }
 
-ACTOR MultiplyOverflowToken : Inventory { Inventory.MaxAmount 1 }
 ACTOR SetSeedToken : Inventory { Inventory.MaxAmount 28 }
-ACTOR MultiplyToken : Inventory { Inventory.MaxAmount 20 }
 ACTOR AssholeToken : Inventory { Inventory.MaxAmount 1 }
 ACTOR DifficultyToken : Inventory { Inventory.MaxAmount 4 }
 ACTOR InvasionToken : Inventory { Inventory.MaxAmount 1 }
