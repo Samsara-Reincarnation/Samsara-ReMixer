@@ -16,6 +16,10 @@ Shadow Warrior:
 
 * There were more ripper obituaries that were missed that have now been fixed.
 
+GoldenEye 007:
+
+- If an enemy has no hat, they will take 3x damage from headshots.
+
 ---------------------------------------------------------------------------
 --------------------Reincarnation Mixer 1.2 Open Beta 1--------------------
 ---------------------------------------------------------------------------
