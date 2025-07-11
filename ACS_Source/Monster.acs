@@ -639,7 +639,7 @@ Script "ReMixer_Korax" (void)
 #include "m_painkiller.acs"
 
 //I have no idea why we need this. A major lag spikes occurs without this array being defined anymore, for mysterious reasons
-Str FuckYou[12][128] = 
+/*Str FuckYou[12][128] = 
 {
 	{
 		"RTCW_Humanoid_InfantrySS_BodyEscape",
@@ -1002,4 +1002,4 @@ Str FuckYou[12][128] =
 		"RTCW_SuperSoldier_Scrap_UpperArmRight2", 
 		"RTCW_SuperSoldier_Scrap_Waist2"
 	}
-};
+};*/
