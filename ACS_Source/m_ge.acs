@@ -27,7 +27,6 @@ Script "Goldeneye_HatShot" (void)
 	{
 		PlaySound(0,"Goldeneye/SlapperMetal",CHAN_7,1.0,0,ATTN_NORM);
 		SetResultValue(0);
-		//Add a chance for the hat to not be removed
 		if(random(0,1) == 1)
 		{
 			terminate;
@@ -35,7 +34,7 @@ Script "Goldeneye_HatShot" (void)
 	}
 	else 
 	{ 
-		SetResultValue(2); 
+		SetResultValue(3); 
 	}
 	if(CheckInventory("SamsaraZScriptReady") == 1) GiveInventory("Goldeneye_Hat_Clear",1);
 	SpawnForced(StrParam(s:"Goldeneye_",s:thrownhat,s:"_Drop"),GetActorX(0),GetActorY(0),GetActorZ(0) + 48.0,0,0);
