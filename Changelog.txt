@@ -1,4 +1,25 @@
 ---------------------------------------------------------------------------
+--------------------Reincarnation Mixer 1.2 Open Beta 3--------------------
+---------------------------------------------------------------------------
+
+-Legend-
+
++: Buff/Addition
+-: Nerf/Removal
+!: Change
+*: Bugfix
+?: ???
+
+-Monsters-
+
+Doom:
+
+-Vanilla Doom Randomizer-
+
++ The laser arachnotron's fire rate has been buffed to 7 tics (decreased from 9).
++ The laser arachnotron projectiles now have a speed of 28 (increased from 25).
+
+---------------------------------------------------------------------------
 --------------------Reincarnation Mixer 1.2 Open Beta 2--------------------
 ---------------------------------------------------------------------------
 

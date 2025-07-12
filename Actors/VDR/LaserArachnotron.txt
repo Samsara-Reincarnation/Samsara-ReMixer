@@ -28,12 +28,12 @@ Actor MMRandomizer_LaserArachnotron : Arachnotron3
 			VD60 A 20 Bright A_FaceTarget
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_CustomMissile("MMRandomizer_LaserArachnotronShot",25,1,1)
-			VD60 H 4 Bright A_CustomMissile("MMRandomizer_LaserArachnotronShot",25,-1,-1)
-			VD60 G 4 Bright A_FaceTarget
+			VD60 H 3 Bright A_CustomMissile("MMRandomizer_LaserArachnotronShot",25,-1,-1)
+			VD60 G 3 Bright A_FaceTarget
 			VD60 G 1 Bright A_SpidRefire
 			TNT1 A 0 A_FaceTarget
-			VD60 H 4 Bright A_CustomMissile("MMRandomizer_LaserArachnotronShotStrong",26,0,0,CMF_OFFSETPITCH,1)
-			VD60 G 4 Bright A_FaceTarget
+			VD60 H 3 Bright A_CustomMissile("MMRandomizer_LaserArachnotronShotStrong",26,0,0,CMF_OFFSETPITCH,1)
+			VD60 G 3 Bright A_FaceTarget
 			VD60 G 1 Bright A_SpidRefire
 			Goto Missile+2
 		Pain:
@@ -289,7 +289,7 @@ Actor MMRandomizer_LaserArachnotronShot
 {
 	Radius 3
 	Height 2
-	Speed 25
+	Speed 28
 	Damage (1 + random(3,5) * 2)
 	Projectile
 	Scale 0.6
@@ -297,17 +297,18 @@ Actor MMRandomizer_LaserArachnotronShot
 	BounceCount 3
 	SeeSound "VDR/LaserSpider/Attack"
 	BounceSound "VDR/LaserSpider/Ricochet"
+	+BRIGHT
 	+BLOODSPLATTER
 	+NOEXTREMEDEATH
 	+SKYEXPLODE
 	States
 	{
 		Spawn:
-			VE16 A 1 Bright
+			VE16 A 1
 			Loop
 		Death:
 		Crash:
-			VE16 A 1 Bright A_PlaySound("VDR/LaserSpider/ShotX")
+			VE16 A 1 A_PlaySound("VDR/LaserSpider/ShotX")
 			TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("MMRandomizer_LaserArachnotronParticle",random(-7,7),random(-7,7),random(-3,1),0,0,random(-10,1)/10,0,SXF_NOCHECKPOSITION|SXF_CLIENTSIDE)
 			Goto XDeath
 		XDeath:
@@ -328,6 +329,7 @@ Actor MMRandomizer_LaserArachnotronParticle
 	Renderstyle Translucent
 	VSpeed 0
 	Speed 0
+	+BRIGHT
 	+MISSILE
 	-SOLID
 	+FORCEXYBILLBOARD
