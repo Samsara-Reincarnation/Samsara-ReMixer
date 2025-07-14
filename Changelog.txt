@@ -16,6 +16,7 @@ Doom:
 
 -Vanilla Doom Randomizer-
 
+* Fixed a sprite name conflict with the rocket ammo drop.
 + The laser arachnotron's fire rate has been buffed to 7 tics (decreased from 9).
 + The laser arachnotron projectiles now have a speed of 28 (increased from 25).
 

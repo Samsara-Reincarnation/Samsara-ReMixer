@@ -6,12 +6,12 @@ actor MMRandomizer_RocketAmmoDrop : Ammo3Small
     States
     {
       Spawn:
-        ROCK B 0
+        DROC A 0
         goto SpawnGameModeCheck
 
       SpawnActual:
         TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
-        ROCK B -1 A_ChangeFlag("NOTIMEFREEZE",false)
+        DROC A -1 A_ChangeFlag("NOTIMEFREEZE",false)
         stop
 
       PickupSuccessPainkiller:
