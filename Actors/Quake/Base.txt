@@ -1332,7 +1332,7 @@ actor Q1SGDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        QDBS Z 0
+        QDBS Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

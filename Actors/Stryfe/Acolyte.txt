@@ -2220,7 +2220,7 @@ actor StrifeXBowDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        SXBW A 0
+        SXBW A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

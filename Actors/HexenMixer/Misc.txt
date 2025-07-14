@@ -969,7 +969,7 @@ actor HexenFrostDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        WFRS A 0 Bright
+        WFRS A 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

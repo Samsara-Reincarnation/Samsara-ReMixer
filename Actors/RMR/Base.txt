@@ -346,7 +346,7 @@ actor RMRACRDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        RM3Z E 0
+        RM3Z E 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

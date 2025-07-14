@@ -349,7 +349,7 @@ actor RoTTPistolDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        PPST A 0
+        PPST A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

@@ -116,7 +116,7 @@ actor Disruptor18MMDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        SQ72 Q 0
+        SQ72 Q 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -141,7 +141,7 @@ actor DisruptorPhaseRifleDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        SQ72 R 0
+        SQ72 R 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

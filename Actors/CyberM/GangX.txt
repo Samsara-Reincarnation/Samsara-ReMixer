@@ -401,7 +401,7 @@ actor CMGangXSlotTwo : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        CMFG J 0
+        CMFG J 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

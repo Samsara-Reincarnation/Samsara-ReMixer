@@ -32,7 +32,7 @@ actor Catacomb3D_XDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        CT01 A 0 Bright
+        CT01 A 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

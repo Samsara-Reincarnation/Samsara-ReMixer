@@ -127,7 +127,7 @@ actor IPOGShotgunDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        GW30 Z 0
+        GW30 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

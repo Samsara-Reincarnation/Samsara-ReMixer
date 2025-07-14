@@ -144,7 +144,7 @@ actor Shotgun64 : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        64SG Z 0
+        64SG Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

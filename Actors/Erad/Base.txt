@@ -122,7 +122,7 @@ actor EradSlotTwoDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        SSPU A 0
+        SSPU A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

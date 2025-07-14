@@ -6,7 +6,7 @@ actor Goldeneye_KF7EnemyDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

@@ -213,7 +213,7 @@ actor WolfMGDropTrue : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        WSDR A 0
+        WSDR A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -228,7 +228,7 @@ actor LostMGDropTrue : WolfMGDropTrue
     States
     {
       Spawn:
-        SSDR A 0
+        SSDR A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

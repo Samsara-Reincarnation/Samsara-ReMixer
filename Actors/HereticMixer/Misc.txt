@@ -88,7 +88,7 @@ actor HereticMaceDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        WMCE A 0
+        WMCE A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:

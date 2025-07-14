@@ -486,7 +486,7 @@ actor PigDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        DSGP A 0
+        DSGP A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -504,7 +504,7 @@ actor BeachPigDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        SHTP B 0
+        SHTP B 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:
