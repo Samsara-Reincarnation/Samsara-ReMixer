@@ -28,7 +28,8 @@ ACTOR Archvile64 : SamsaraMonsterDemonicTotalGib
 	PainChance "WTMelee", 255
 	PainChance "WTMeleeIce", 255
 	DamageFactor "WitchMelee", 1.1
-	Scale 0.67
+	XScale 0.81
+	YScale 0.68
 	BloodType "Doom64Blood"
 	States
 	{
@@ -134,16 +135,36 @@ ACTOR Archvile64 : SamsaraMonsterDemonicTotalGib
 actor ArchvileFire64 : ArchvileFire_Samsara
 {
 	Renderstyle Translucent
-	Alpha 0.7
+	Alpha 0.3
+	XScale 0.81
+	YScale 0.68
 	States
 	{
 	Spawn:
-		64FA A 2 A_PlaySound("64vile/fire", CHAN_BODY)
-		64FA BAB 2 A_Fire
+		64FA A 1 A_FadeIn(0.1) //938: This doesn't work in GZDoom for some reason, works in zandro though
+		64FA A 1 A_Fire
 		TNT1 A 0 A_PlaySound("64vile/fire", CHAN_BODY)
-		64FA CBCBCDCDCDEDED 2 A_Fire
+		64FA B 1 A_FadeIn(0.1)
+		64FA B 1 A_Fire
+		64FA C 1 A_FadeIn(0.1)
+		64FA C 1 A_Fire
+		64FA D 1 A_FadeIn(0.1)
+		64FA D 1 A_Fire
+		64FA E 1 A_FadeIn(0.1)
+		64FA E 1 A_Fire
+		64FA F 1 A_FadeIn(0.1)
+		64FA F 1 A_Fire
+		64FA G 1 A_FadeIn(0.1)
+		64FA G 1 A_Fire
+		64FA H 1 A_FadeIn(0.1)
+		64FA H 1 A_Fire
 		TNT1 A 0 A_PlaySound("64vile/fire", CHAN_BODY)
-		64FA EFEFEFGHGHGHI 2 A_Fire
+		64FA ABCDEFGH 2 A_Fire
+		TNT1 A 0 A_PlaySound("64vile/fire", CHAN_BODY)
+		64FA ABCDEFGH 2 A_Fire
+		TNT1 A 0 A_PlaySound("64vile/fire", CHAN_BODY)
+		64FA ABCDE 2 A_Fire
+		64FA FGHA 2 A_FadeOut(0.12)
 		Stop
 	}
 }

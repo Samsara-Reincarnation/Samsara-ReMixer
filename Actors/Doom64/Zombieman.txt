@@ -6,7 +6,8 @@ ACTOR ZombieMan64 : SamsaraMonsterHumanoid
 	Speed 8
 	PainChance 200
 	Monster
-	Scale 0.65
+	XScale 0.81
+	YScale 0.68
 	+FLOORCLIP
 	Tag "Zombieman"
 	Species "SamsaraZombieman64"

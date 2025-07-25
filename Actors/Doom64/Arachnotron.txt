@@ -7,7 +7,8 @@ ACTOR Arachnotron64 : SamsaraMonsterCyberneticTotalGib
 	Mass 600
 	Speed 12
 	Monster
-	Scale 0.75
+	XScale 0.81
+	YScale 0.68
 	+FLOORCLIP
 	+BOSSDEATH
 	Tag "Arachnotron"

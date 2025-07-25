@@ -13,7 +13,8 @@ ACTOR BaronOfHell64 : SamsaraMonsterDemonicTotalGib
 	PainChance 50
 	Monster
 	Tag "Baron of Hell"
-	Scale 0.75
+	XScale 0.81
+	YScale 0.68
 	Species "SamsaraBaronOfHell64"
 	SeeSound "64baron/sight"
 	PainSound "64demon/pain"
@@ -133,6 +134,8 @@ ACTOR BaronOfHell64 : SamsaraMonsterDemonicTotalGib
 
 ACTOR BaronBall642 : BaronBall64
 {
+	XScale 0.81
+	YScale 0.68
     -THRUGHOST
 	States
 	{

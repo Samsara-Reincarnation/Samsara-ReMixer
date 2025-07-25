@@ -7,7 +7,8 @@ ACTOR Demon64 : SamsaraMonsterDemonicTotalGib
 	Height 56
 	Mass 400
 	Monster
-	Scale 0.8
+	XScale 0.81
+	YScale 0.68
 	+FLOORCLIP
 	Tag "Demon"
 	Species "SamsaraDemon64"

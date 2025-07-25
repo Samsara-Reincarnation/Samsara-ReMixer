@@ -8,7 +8,8 @@ ACTOR SpiderMastermind64 : SamsaraMonsterCyberneticBoss
 	PainChance 40
 	Monster
 	MinMissileChance 160
-	Scale 0.67
+	XScale 0.81
+	YScale 0.68
 	+BOSS
 	+MISSILEMORE
 	+FLOORCLIP

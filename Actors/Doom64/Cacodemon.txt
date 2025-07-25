@@ -7,7 +7,8 @@ ACTOR Cacodemon64 : SamsaraMonsterDemonicTotalGib
 	Speed 8
 	PainChance 128
 	Monster
-	Scale 0.8
+	XScale 0.81
+	YScale 0.68
 	+FLOAT
 	+NOGRAVITY
 	+MISSILEMORE
@@ -61,7 +62,7 @@ ACTOR Cacodemon64 : SamsaraMonsterDemonicTotalGib
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			64HD EF 5 A_FaceTarget
-			64HD G 5 bright A_CustomComboAttack("CacodemonBall64", 48, random(1,8)*8)
+			64HD G 5 bright A_CustomComboAttack("CacodemonBall64", 32, random(1,8)*8)
 			Goto See
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -126,6 +127,8 @@ ACTOR Cacodemon64 : SamsaraMonsterDemonicTotalGib
 
 ACTOR CacodemonBall64
 {
+	XScale 0.81
+	YScale 0.68
 	Speed 17
 	FastSpeed 26
 	Renderstyle Normal

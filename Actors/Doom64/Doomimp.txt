@@ -7,7 +7,8 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoid
 	Speed 8
 	PainChance 200
 	Monster
-	Scale 0.7
+	XScale 0.81
+	YScale 0.68
 	Species "SamsaraDoomImp64"
 	+FLOORCLIP
 	+MISSILEMORE
@@ -145,6 +146,8 @@ ACTOR DoomImp64 : SamsaraMonsterHumanoid
 
 ACTOR DoomImpBall64
 {
+	XScale 0.81
+	YScale 0.68
 	Radius 6
 	Height 8
 	Speed 9

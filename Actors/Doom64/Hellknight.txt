@@ -9,7 +9,8 @@ ACTOR HellKnight64 : SamsaraMonsterDemonicTotalGib
 	Speed 8
 	PainChance 50
 	Monster
-	Scale 0.75
+	XScale 0.81
+	YScale 0.68
 	+FLOORCLIP
 	+MISSILEMORE
 	Species "SamsaraHellKnight64"

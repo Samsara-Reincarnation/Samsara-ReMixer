@@ -16,7 +16,8 @@ ACTOR MotherDemon64 : SamsaraMonsterDemonicBoss
 	ActiveSound "64mother/active"
 	Obituary "%o was obliterated by the mother of all demons."
 	MONSTER
-	Scale 0.80
+	XScale 0.81
+	YScale 0.68
 	+FLOORCLIP
 	+DONTMORPH
 	+NORADIUSDMG
@@ -141,6 +142,8 @@ ACTOR MotherDemon64 : SamsaraMonsterDemonicBoss
 
 ACTOR MotherBall64
 {
+	XScale 0.81
+	YScale 0.68
 	RenderStyle Normal
 	Speed 15
 	Damage 10
@@ -170,6 +173,8 @@ ACTOR MotherBall64
 
 ACTOR MotherBallTrail64 : Doom64RocketSmokeTrail
 {
+	XScale 0.81
+	YScale 0.68
 	RenderStyle Translucent
 	Alpha 0.5
 	VSpeed 1
@@ -186,6 +191,8 @@ ACTOR MotherBallTrail64 : Doom64RocketSmokeTrail
 
 ACTOR MotherFire64
 {
+	XScale 0.81
+	YScale 0.68
 	Height 12
 	Radius 12
 	Damage 5
@@ -212,6 +219,8 @@ ACTOR MotherFire64
 
 ACTOR MotherFireTrail64
 {
+	XScale 0.81
+	YScale 0.68
 	RenderStyle Translucent
 	Alpha 0.6
 	+BRIGHT

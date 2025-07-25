@@ -7,7 +7,8 @@ ACTOR Fatso64 : SamsaraMonsterCyberneticTotalGib
 	Health 600
 	Mass 1000
 	Monster
-	Scale 0.75
+	XScale 0.81
+	YScale 0.68
 	+FLOORCLIP
 	+BOSSDEATH
 	Species "SamsaraMancubus64"
@@ -49,16 +50,16 @@ ACTOR Fatso64 : SamsaraMonsterCyberneticTotalGib
 			TNT1 A 0 A_PlaySound("64fatso/raiseguns")
 			64FT HHHH 5 A_FaceTarget
 			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_CustomMissile("FatShot64", 56, -35, 0)
-			64FT G 10 bright A_CustomMissile("FatShot64", 56, 35, -6)
+			TNT1 A 0 A_CustomMissile("FatShot64", 50, -32, 0)
+			64FT G 10 bright A_CustomMissile("FatShot64", 50, 32, -6)
 			64FT HH 5 A_FaceTarget
 			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_CustomMissile("FatShot64", 56, -35, 6)
-			64FT G 10 bright A_CustomMissile("FatShot64", 56, 35, 0)
+			TNT1 A 0 A_CustomMissile("FatShot64", 50, -32, 6)
+			64FT G 10 bright A_CustomMissile("FatShot64", 50, 32, 0)
 			64FT HH 5 A_FaceTarget
 			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_CustomMissile("FatShot64", 56, -35, 6)
-			64FT G 10 bright A_CustomMissile("FatShot64", 56, 35, -6)
+			TNT1 A 0 A_CustomMissile("FatShot64", 50, -32, 6)
+			64FT G 10 bright A_CustomMissile("FatShot64", 50, 32, -6)
 			64FT HH 5 A_FaceTarget
 			Goto See
 		Pain:
@@ -251,6 +252,8 @@ ACTOR Fatso64 : SamsaraMonsterCyberneticTotalGib
 
 ACTOR FatShot64
 {
+	XScale 0.81
+	YScale 0.68
 	Radius 6
 	Height 8
 	Speed 17

@@ -7,7 +7,8 @@ ACTOR Cyberdemon64 : SamsaraMonsterCyberneticBoss
 	Health 4000
 	Mass 1000
 	Monster
-	Scale 0.75
+	XScale 0.81
+	YScale 0.68
 	MinMissileChance 160
 	Species "SamsaraCyberdemon64"
 	Tag "Cyberdemon"
@@ -82,13 +83,13 @@ ACTOR Cyberdemon64 : SamsaraMonsterCyberneticBoss
 		Missile:
 			64CY F 6 A_FaceTarget
 			TNT1 A 0 A_FaceTarget
-			64CY E 12 A_CustomMissile("CyberRocket64", 73, -25, 0)
+			64CY E 12 A_CustomMissile("CyberRocket64", 62, -26, 0)
 			64CY F 12 A_FaceTarget
 			TNT1 A 0 A_FaceTarget
-			64CY E 12 A_CustomMissile("CyberRocket64", 73, -25, 0)
+			64CY E 12 A_CustomMissile("CyberRocket64", 62, -26, 0)
 			64CY F 12 A_FaceTarget
 			TNT1 A 0 A_FaceTarget
-			64CY E 12 A_CustomMissile("CyberRocket64", 73, -25, 0)
+			64CY E 12 A_CustomMissile("CyberRocket64", 62, -26, 0)
 			Goto See
 		Death:
 			64CY G 10 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -264,12 +265,16 @@ ACTOR Cyberdemon64 : SamsaraMonsterCyberneticBoss
 
 ACTOR CyberRocket64 : Doom64Rocket
 {
+	XScale 0.81
+	YScale 0.68
     Speed 26
     DamageType "Explosive"
 }
 
 ACTOR BossExplosion64
 {
+	XScale 0.81
+	YScale 0.68
 	RenderStyle Translucent
 	Alpha 0.6
 	Damage 0

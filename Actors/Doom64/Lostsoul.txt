@@ -20,7 +20,8 @@ ACTOR LostSoul64 : SamsaraMonsterGhost
 	Damage 3
 	PainChance 256
 	Monster
-	Scale 0.8
+	XScale 0.81
+	YScale 0.68
 	AttackSound "64skull/melee"
 	PainSound "64demon/pain"
 	DeathSound "doom64guy/plasmax"

@@ -7,7 +7,8 @@ ACTOR SuperShotgunGuy64 : SamsaraMonsterHumanoid
 	Mass 100
 	PainChance 170
 	Monster
-	Scale 0.7
+	XScale 0.81
+	YScale 0.68
 	+FLOORCLIP
 	Tag "Super Shotgun Guy"
 	Species "SamsaraSuperShotgunGuy64"

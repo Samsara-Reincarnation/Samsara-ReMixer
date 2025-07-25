@@ -25,7 +25,8 @@ ACTOR WolfensteinSS64 : SamsaraMonsterHumanoid
 	PainChance "WTMelee", 255
 	PainChance "WTMeleeIce", 255
 	DamageFactor "WitchMelee", 1.1
-	Scale 0.75
+	XScale 0.81
+	YScale 0.68
 	BloodType "Doom64Blood"
 	States
 	{

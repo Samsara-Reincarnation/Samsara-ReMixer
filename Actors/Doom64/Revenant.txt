@@ -33,7 +33,8 @@ ACTOR Revenant64 : SamsaraMonsterDemonicTotalGib
 	DamageFactor "MarathonFusion", 2.0
 	DamageFactor "ElectricBolt", 2.0
 	DamageFactor "PoisonBolt", 0.5
-	Scale 0.67
+	XScale 0.81
+	YScale 0.68
 	States
 	{
 	Spawn:
@@ -249,7 +250,8 @@ Actor RevenantTracer64
 	+BRIGHT
 	+SEEKERMISSILE
 	+RANDOMIZE
-	Scale 0.8
+	XScale 0.81
+	YScale 0.68
 	SeeSound "skeleton64/attack"
 	DeathSound "doom64guy/explode"
 	Decal "RevenantScorch"
@@ -270,6 +272,8 @@ Actor RevenantTracer64
 
 actor Doom64RevenantSmokePuff : Doom64BulletPuff
 {
+	XScale 0.81
+	YScale 0.68
 	+NOINTERACTION
 	+CLIENTSIDEONLY
 	States
