@@ -1,6 +1,5 @@
 Actor Goldfinger_OddJob : Goldeneye_EnemyBase
 {
-	YScale 1.05
 	XScale 1.25
 	Health 3000
 	Tag "Oddjob"

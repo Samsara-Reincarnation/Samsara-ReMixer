@@ -751,6 +751,17 @@
 #include "actors/Goldfinger/CartelGuard.txt"
 #include "actors/Goldfinger/Mechanic.txt"
 #include "actors/Goldfinger/ShipyardGuard.txt"
+#include "actors/Goldfinger/Golfer.txt"
+#include "actors/Goldfinger/GraySuit.txt"
+#include "actors/Goldfinger/GoldSuit.txt"
+#include "actors/Goldfinger/WhiteSuit.txt"
+#include "actors/Goldfinger/AlpsGuard.txt"
+#include "actors/Goldfinger/CrabKeyGuard.txt"
+#include "actors/Goldfinger/Hazmat.txt"
+#include "actors/Goldfinger/SpectreGuard.txt"
+#include "actors/Goldfinger/AirCrew.txt"
+#include "actors/Goldfinger/Servant.txt"
+#include "actors/Goldfinger/AuricGoldfinger.txt"
 #include "actors/Goldfinger/Oddjob.txt"
 
 // Totenkopf SDL

@@ -1,0 +1,19 @@
+Actor Goldfinger_SpectreGuard: Goldeneye_EnemyBase
+{
+	Tag "Spectre Guard"
+    Obituary "%o was killed by a Spectre Agent."
+	Health 400
+	States
+	{
+		Spawn:
+			TNT1 AA 0 A_UnsetShootable
+			TNT1 A 0 A_GiveInventory("Goldfinger_IsGoldFinger64")
+			TNT1 A 0 A_ChangeFlag("DECOUPLEDANIMATIONS",true)
+			TNT1 A 0 ACS_NamedExecuteWithResult("GoldeneyeEnemyPartsPicker",13,0,1)
+			TNT1 A 0 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			TNT1 A 0 A_GiveInventory("AlreadySpawned",1)
+			TNT1 A 0 A_SetShootable
+			Goto Spawn2
+	}
+}

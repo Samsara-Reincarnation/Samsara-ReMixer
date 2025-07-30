@@ -79,20 +79,6 @@ Class Goldfinger_Flash_Garand : CustomInventory
 	}
 }
 
-Class Goldfinger_Flash_DualGoldRevolver : CustomInventory
-{
-	States
-	{
-		Pickup:
-			TNT1 A 0
-			{
-				A_ChangeModel("",6,"Models/Goldfinger/Guns","goldrevolver_flash_right.iqm");
-				A_ChangeModel("",7,"Models/Goldfinger/Guns","goldrevolver_flash_left.iqm");
-			}
-			Stop;
-	}
-}
-
 Class Goldfinger_Flash_GoldRevolver : CustomInventory
 {
 	States

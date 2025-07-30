@@ -70,6 +70,138 @@ Model "Goldfinger_ShipyardGuard"
    MODELSAREATTACHMENTS
 }
 
+Model "Goldfinger_Golfer"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_GraySuit"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_GoldSuit"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_WhiteSuit"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_AlpsGuard"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_CrabKeyGuard"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_Hazmat"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_SpectreGuard"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_AirCrew"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_Servant"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
+Model "Goldfinger_AuricGoldFinger"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
 Model "Goldfinger_Oddjob"
 {
    Path "Models/Goldeneye"
@@ -112,4 +244,16 @@ model Goldfinger_OddJob_HatPickup
 	PITCHFROMMOMENTUM
 
 	FrameIndex GE00 Z 0 0
+}
+
+model Goldfinger_GoldRevolverTracer
+{
+	path "models/Goldeneye/effects"
+	model 0 "bullettracer.md3"
+	skin 0 "bullettracer.png"
+	scale 2.0 0.5 0.5
+	//Offset -48 0 0
+	PITCHFROMMOMENTUM
+	
+	FrameIndex GE00 A 0 0
 }

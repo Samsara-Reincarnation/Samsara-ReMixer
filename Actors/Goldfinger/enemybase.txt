@@ -64,6 +64,10 @@ actor GoldfingerEnemyWeaponChooser : Trigger
 			TNT1 A 0 A_Playsound("Goldfinger/AK47Shot", CHAN_WEAPON)
 			TNT1 A 0 A_CustomMissile("Goldeneye_AR33TracerEnemy", args[0], args[1], frandom(-1,1))
 			Goto Resolve
+		FireAR7:
+			TNT1 A 0 A_Playsound("Goldfinger/AR7Shot", CHAN_WEAPON)
+			TNT1 A 0 A_CustomMissile("Goldeneye_SniperTracerEnemy", args[0], args[1], frandom(-1,1))
+			Goto Resolve
 		FirePPK:
 			TNT1 A 0 A_Playsound("Goldeneye/PP7Shot", CHAN_WEAPON)
 			TNT1 A 0 A_CustomMissile("Goldeneye_KF7TracerEnemy", args[0], args[1], frandom(-1,1))	
@@ -84,6 +88,10 @@ actor GoldfingerEnemyWeaponChooser : Trigger
 		FireSW36:
 			TNT1 A 0 A_Playsound("Goldfinger/MagnumShot", CHAN_WEAPON)
 			TNT1 A 0 A_CustomMissile("Goldeneye_CougarTracerEnemy", args[0], args[1], frandom(-1,1))	
+			Goto Resolve
+		FireGoldRevolver:
+			TNT1 A 0 A_Playsound("Goldfinger/MagnumShot", CHAN_WEAPON)
+			TNT1 A 0 A_CustomMissile("Goldfinger_GoldRevolverTracer", args[0], args[1], frandom(-1,1))	
 			Goto Resolve
 		FireColt:
 			TNT1 A 0 A_Playsound("Goldfinger/ColtShot", CHAN_WEAPON)
@@ -118,7 +126,23 @@ actor GoldfingerEnemyWeaponChooser : Trigger
 			TNT1 A 0 A_Playsound("Goldfinger/PurdeyShot", CHAN_WEAPON)
 			TNT1 AAAAA 0 A_CustomMissile("Goldeneye_AutoShotgunTracerEnemy", args[0], args[1], frandom(-11,11))
 			Goto Resolve
-		
+		FireM79:
+			TNT1 A 0 A_Playsound("Goldeneye/M79Shot", CHAN_WEAPON)
+			TNT1 A 0 A_CustomMissile("Goldeneye_GrenadeLauncherProjectileEnemy", args[0], args[1], frandom(-4,4))
+			Goto Resolve
+		FireUZI:
+			TNT1 A 0 A_Playsound("Goldeneye/ZMGShot", CHAN_WEAPON)
+			TNT1 A 0 A_CustomMissile("Goldeneye_D5KTracerEnemy", args[0], args[1], frandom(-3,3))
+			Goto Resolve
+		FireKar98K:
+			TNT1 A 0 A_Playsound("Goldfinger/AK47Shot", CHAN_WEAPON)
+			TNT1 A 0 A_CustomMissile("Goldeneye_SniperTracerEnemy", args[0], args[1])	
+			Goto Resolve	
+		FireBazooka:
+			TNT1 A 0 A_Playsound("Goldeneye/RocketLauncher", CHAN_WEAPON)
+			TNT1 A 0 A_CustomMissile("Goldeneye_EnemyRocket", args[0], args[1], frandom(-4,4))
+			Goto Resolve	
+			
 		FireKlobb:
 			TNT1 A 0 A_Playsound("Goldeneye/KlobbShot", CHAN_WEAPON)
 			TNT1 A 0 A_CustomMissile("Goldeneye_KlobbTracerEnemy", args[0], args[1], frandom(-9,9))
@@ -139,8 +163,6 @@ actor GoldfingerEnemyWeaponChooser : Trigger
 			TNT1 A 0 A_Playsound("Goldeneye/PhantomShot", CHAN_WEAPON)
 			TNT1 A 0 A_CustomMissile("Goldeneye_AR33TracerEnemy", args[0], args[1], frandom(-5,5))
 			Goto Resolve
-		
-		
 		FireRCP90:
 			TNT1 A 0 A_Playsound("Goldeneye/RCPShot", CHAN_WEAPON)
 			TNT1 A 0 A_CustomMissile("Goldeneye_RCP90TracerEnemy", args[0], args[1], frandom(-2,2))

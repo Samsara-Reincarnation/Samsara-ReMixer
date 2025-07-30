@@ -133,20 +133,6 @@ Class Goldfinger_Gun_Garand : CustomInventory
 	}
 }
 
-Class Goldfinger_Gun_DualGoldRevolver : CustomInventory
-{
-	States
-	{
-		Pickup:
-			TNT1 A 0
-			{ 
-				A_ChangeModel("",4,"Models/Goldfinger/Guns","goldrevolver_right.iqm");
-				A_ChangeModel("",5,"Models/Goldfinger/Guns","goldrevolver_left.iqm");
-			}
-			Stop;
-	}
-}
-
 Class Goldfinger_Gun_GoldRevolver : CustomInventory
 {
 	States

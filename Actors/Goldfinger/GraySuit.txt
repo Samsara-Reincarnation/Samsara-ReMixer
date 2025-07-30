@@ -1,0 +1,20 @@
+Actor Goldfinger_GraySuit : Goldeneye_EnemyBase
+{
+	Tag "Goldfinger Henchman (Gray)"
+    Obituary "%o was killed by one of Goldfinger's loyal henchmen."
+	Health 300
+	Scale 1.05
+	States
+	{
+		Spawn:
+			TNT1 AA 0 A_UnsetShootable
+			TNT1 A 0 A_GiveInventory("Goldfinger_IsGoldFinger64")
+			TNT1 A 0 A_ChangeFlag("DECOUPLEDANIMATIONS",true)
+			TNT1 A 0 ACS_NamedExecuteWithResult("GoldeneyeEnemyPartsPicker",8,50,1)
+			TNT1 A 0 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			TNT1 A 0 A_GiveInventory("AlreadySpawned",1)
+			TNT1 A 0 A_SetShootable
+			Goto Spawn2
+	}
+}
