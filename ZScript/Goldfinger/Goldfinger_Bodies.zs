@@ -201,6 +201,15 @@ Class Goldfinger_Body_Hazmat : CustomInventory
 			TNT1 A 0
 			{ 
 				A_ChangeModel("",1,"Models/Goldfinger/Bodies","hazmat.iqm");
+				
+				if(CheckInventory("Goldfinger_IsDrNo",1))
+				{
+					A_ChangeModel("",1,"","",7,"Models/Goldfinger/Bodies","tempImgEd0339.png",CMDL_USESURFACESKIN);
+					A_ChangeModel("",1,"","",8,"Models/Goldfinger/Bodies","tempImgEd033A.png",CMDL_USESURFACESKIN);
+					A_ChangeModel("",1,"","",9,"Models/Goldfinger/Bodies","tempImgEd033C.png",CMDL_USESURFACESKIN);
+					A_ChangeModel("",1,"","",10,"Models/Goldfinger/Bodies","tempImgEd033D.png",CMDL_USESURFACESKIN);
+					A_ChangeModel("",1,"","",11,"Models/Goldfinger/Bodies","tempImgEd033B.png",CMDL_USESURFACESKIN);
+				}
 			}
 			Stop;
 	}

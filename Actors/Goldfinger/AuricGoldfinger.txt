@@ -3,7 +3,6 @@ Actor Goldfinger_AuricGoldfinger : Goldeneye_EnemyBase
 	Tag "Servant"
     Obituary "%o was killed by Auric Goldfinger. Such a cold finger..."
 	Health 2500
-	Scale 1.05
 	States
 	{
 		Spawn:

@@ -5,7 +5,7 @@ str GunTypes[28] = { "PP7", "DD44", "DualDD44", "Klobb", "DualKlobb", "KF7", "ZM
 
 str GFGuardTypes[33] = { "AlpsGuard", "AuricGolf", "AuricOfficer", "AuricPool", "AuricRanch", "AuricSuit", "AuricTux", "CamoGuard", "ChinaGuard", "CrabKeyGuard", "DrNo", "GateKeeper", "GoldGuard", "Golfer", "GrayGuard", "Hazmat", "HazmatPink", "Kapungo", "KischArmy", "Korean", "Ling", "MeiLin", "MexGuard", "OddJob", "PlaneCrew", "Servant", "RedGrant", "RosaKlebb", "SpectreGuard", "MexCiv1", "MexCiv2", "MechBlue", "WhiteGuard" };
 str GFHeadTypes[15] = { "Cho", "Kim", "Kor1", "Kor2", "Kor3", "Mok", "Cyberen", "Jack", "Kyle", "MF", "Sean", "Sogun", "Subdrag", "Trevor", "DrNo" };
-str GFHatTypes[7] = { "", "CapMex", "CrabKey", "HatKorean", "NavyPeak", "OddjobHat", "Spectre" };
+str GFHatTypes[8] = { "", "CapMex", "CrabKey", "HatKorean", "NavyPeak", "OddjobHat", "Spectre", "ArmyCap" };
 str GFGunTypes[23] = { "AK47", "AR7", "Bazooka", "Colt", "Garand", "GoldRevolver", "Kar98K", "Laser", "Luger", "M14", "M1Carbine", "M79", "MP40", "P38", "PPKS", "PPK", "Purdy", "Remington", "SW22", "SW36", "ThompsonDrum", "Thompson", "Uzi" };
 
 /*function int SetPointerExt(int assign_slot, int tid, int assign_to_tid) 
@@ -588,7 +588,7 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 		else
 			randomHead = random(6,13);	
 			
-		if(type != 17 && type != 18)
+		if(type < 17 || type == 27)
 		{
 			GiveInventory("Goldeneye_HeadPart",randomHead+1);	
 		
@@ -605,6 +605,7 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 		{
 			//Korean
 			case 1:
+			case 27:
 				//Select Body
 				SetInventory("Goldeneye_BodyPart",20);
 				
@@ -615,7 +616,7 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 
 				//Select Gun
 				randnum = random(0,100);
-				if(!CheckInventory("Goldeneye_GlassesPart"))
+				if(!CheckInventory("Goldeneye_GlassesPart") || type == 27)
 				{
 					if(randnum < 33)
 						guntype = 8;
@@ -626,18 +627,37 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 					}
 					else
 						guntype = 13;
+						
+					//Check if this is a jet pack Korean
+					if(type == 27)
+						GiveInventory("Goldeneye_HasJetPack",1);
 				}
 				else
 				{
-					if(randnum < 33)
+					if(randnum < 16)
 					{
 						SetInventory("Goldeneye_EnemyTwoHanded",1);
 						guntype = 0;
 					}
-					else if(randnum < 66)
+					else if(randnum < 32)
 					{
 						SetInventory("Goldeneye_EnemyTwoHanded",1);
 						guntype = 9;
+					}
+					else if(randnum < 48)
+					{
+						SetInventory("Goldeneye_EnemyTwoHanded",1);
+						guntype = 20;
+					}
+					else if(randnum < 64)
+					{
+						SetInventory("Goldeneye_EnemyTwoHanded",1);
+						guntype = 17;
+					}
+					else if(randnum < 80)
+					{
+						SetInventory("Goldeneye_DualWield",1);
+						guntype = 12;
 					}
 					else
 						guntype = 19;
@@ -813,22 +833,12 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 			
 				//Select Gun
 				randnum = random(0,100);
-				if(randnum < 33)
-				{
-					guntype = 16;
-					SetInventory("Goldeneye_EnemyTwoHanded",1);
-				}
-				else if(randnum < 67)
-				{
-					guntype = 20;
-					SetInventory("Goldeneye_EnemyTwoHanded",1);
-				}
-				else
-				{
-					guntype = 11;
-					SetInventory("Goldeneye_EnemyTwoHanded",1);
-				}
-					
+				if(randnum < 25) guntype = 16;
+				else if(randnum < 50) guntype = 20;
+				else if(randnum < 75) guntype = 11;
+				else guntype = 17;
+				
+				SetInventory("Goldeneye_EnemyTwoHanded",1);	
 				SetInventory("Goldeneye_GrenadeThrower",1);
 				break;
 				
@@ -992,6 +1002,100 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 				SetInventory("Goldeneye_EnemyTwoHanded",1);
 				SetInventory("Goldeneye_GrenadeThrower",1);
 				break;
+				
+			//Red Grant
+			case 19:
+				//Select Body
+				SetInventory("Goldeneye_BodyPart",27);
+				
+				//Select Gun
+				guntype = 12;
+				
+				SetInventory("Goldeneye_DualWield",1);
+				SetInventory("Goldeneye_GrenadeThrower",1);
+				break;
+				
+			//Rosa Klebb
+			case 20:
+				//Select Body
+				SetInventory("Goldeneye_BodyPart",28);
+				
+				//Select Gun
+				guntype = 0;		
+				SetInventory("Goldeneye_EnemyTwoHanded",1);
+				break;
+				
+			//Dr No
+			case 21:
+				//Select Body
+				if(random(0,1))
+				{
+					GiveInventory("Goldeneye_HeadPart",15);
+					SetInventory("Goldeneye_BodyPart",16);
+				}
+				else SetInventory("Goldeneye_BodyPart",11);
+				
+				//Select Gun
+				guntype = 21;		
+				SetInventory("Goldeneye_DualWield",1);
+				
+				//This token is used for Hazmat guards to give them black hands!
+				SetInventory("Goldfinger_IsDrNo",11);
+				break;
+				
+			//Gatekeeper
+			case 22:
+				//Select Body
+				SetInventory("Goldeneye_BodyPart",12);
+				
+				//Select Gun
+				guntype = 12;		
+				SetInventory("Goldeneye_EnemyTwoHanded",1);
+				break;
+				
+			//Kapungo
+			case 23:
+				//Select Body
+				SetInventory("Goldeneye_BodyPart",18);
+				
+				//Select Gun
+				guntype = 0;	
+				SetInventory("Goldeneye_EnemyTwoHanded",1);
+				break;
+				
+			//Mei Lin
+			case 24:
+				//Select Body
+				SetInventory("Goldeneye_BodyPart",22);
+				
+				//Select Gun
+				guntype = 22;	
+				SetInventory("Goldeneye_DualWield",1);
+				break;	
+			
+			//Kisch
+			case 25:
+				//Select Body
+				SetInventory("Goldeneye_BodyPart",19);
+				
+				//Select Hat
+				SetInventory("Goldeneye_HatPart",7);
+				
+				//Select Gun
+				guntype = 9;	
+				SetInventory("Goldeneye_EnemyTwoHanded",1);
+				break;
+				
+			//Ling
+			case 26:
+				//Select Body
+				SetInventory("Goldeneye_BodyPart",21);
+				
+				//Select Gun
+				guntype = 7;	
+				SetInventory("Goldeneye_EnemyTwoHanded",1);
+				break;	
+				
 		}
 		SetActorProperty(0,APROP_Mass,200+(1+guntype));
 		SetInventory("Goldeneye_GunPart",1+guntype);
@@ -1145,16 +1249,8 @@ Script "Goldeneye_RestoreGuns" (void)
 	}
 	else
 	{
-		if(CheckInventory("Goldeneye_BodyPart") == 21)
-		{
-			GiveInventory(strparam(s:"Goldfinger_Gun_",s:GFGunTypes[1]),1);
-			if(CheckInventory("Goldeneye_DualWield")) GiveInventory(strparam(s:"Goldfinger_Gun_Dual",s:GFGunTypes[1]),1); 
-		}
-		else
-		{
-			GiveInventory(strparam(s:"Goldfinger_Gun_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1]),1);
-			if(CheckInventory("Goldeneye_DualWield")) GiveInventory(strparam(s:"Goldfinger_Gun_Dual",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1]),1);
-		}
+		GiveInventory(strparam(s:"Goldfinger_Gun_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1]),1);
+		if(CheckInventory("Goldeneye_DualWield")) GiveInventory(strparam(s:"Goldfinger_Gun_Dual",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1]),1);
 	}
 }
 
@@ -1273,6 +1369,7 @@ Script "Goldeneye_EnemyAttacker" (int dual, int initTimer)
 					delayTimerL = 24;
 					delayTimerR = delayTimerL;
 					break;
+				case 8:
 				case 11:
 					delayTimerL = 12;
 					delayTimerR = delayTimerL;

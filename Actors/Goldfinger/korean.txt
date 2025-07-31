@@ -17,3 +17,50 @@ Actor Goldfinger_Korean : Goldeneye_EnemyBase
 			Goto Spawn2
 	}
 }
+
+Actor Goldfinger_JetPackGuard : Goldeneye_JetPackGuard
+{
+	Tag "Korean (Jetpack)"
+    Obituary "%o was killed by one of Goldfinger's jetpack minions."
+	States
+	{
+		Spawn:
+			TNT1 AA 0 A_UnsetShootable
+			TNT1 A 0 A_GiveInventory("Goldfinger_IsGoldFinger64")
+			TNT1 A 0 A_ChangeFlag("DECOUPLEDANIMATIONS",true)
+			TNT1 A 0 ACS_NamedExecuteWithResult("GoldeneyeEnemyPartsPicker",27,0,1)
+			TNT1 A 0 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+			TNT1 A 0 A_GiveInventory("AlreadySpawned",1)
+			TNT1 A 0 A_ChangeFlag("NoPain",true)
+			TNT1 A 0 A_SetShootable
+			Goto Spawn2
+		See:
+			TNT1 A 0 A_JumpIfInventory("Goldeneye_JetPackIgnition",1,"SeeContinue")
+			TNT1 A 0 A_GiveInventory("Goldeneye_JetPackIgnition",1)
+			TNT1 A 0 A_JumpIfInventory("Goldeneye_EnemyTwoHanded",1,"IgnitionTwoHand")
+			Goto IgnitionDual
+		IgnitionTwoHand:
+			GE00 A 0 A_GiveInventory("Goldeneye_DecAnimation_Spawn2")
+			GE00 A 0 ACS_NamedExecuteWithResult("Goldeneye_JetPackLoop")
+			GE00 ABCD 6
+			GE00 EFGHIJ 6
+			GE00 A 0 A_ChangeFlag("NoPain",false)
+			GE00 A 0 A_ChangeFlag("NoGravity",true)
+			GE00 A 0 A_ChangeFlag("Float",true)
+			GE00 A 0 A_ChangeFlag("NoDropOff",false)
+			GE00 A 0 A_ChangeFlag("DropOff",true)
+			Goto SeeContinue
+		IgnitionDual:
+			GE84 A 0 A_GiveInventory("Goldeneye_DecAnimation_SpawnDual")
+			GE84 A 0 ACS_NamedExecuteWithResult("Goldeneye_JetPackLoop")
+			GE84 ABCD 6
+			GE84 EFGHIJKLM 6
+			GE84 A 0 A_ChangeFlag("NoPain",false)
+			GE84 A 0 A_ChangeFlag("NoGravity",true)
+			GE84 A 0 A_ChangeFlag("Float",true)
+			GE84 A 0 A_ChangeFlag("NoDropOff",false)
+			GE84 A 0 A_ChangeFlag("DropOff",true)
+			Goto SeeContinue
+	}
+}

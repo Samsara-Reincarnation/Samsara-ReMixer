@@ -76,3 +76,15 @@ Class Goldfinger_Hat_Spectre : CustomInventory
 	}
 }
 
+Class Goldfinger_Hat_ArmyCap : CustomInventory
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0
+			{ 
+				A_ChangeModel("",3,"Models/Goldfinger/Hats","armycap.iqm");
+			}
+			Stop;
+	}
+}

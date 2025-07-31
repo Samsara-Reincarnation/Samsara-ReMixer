@@ -336,25 +336,7 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 
 				case 8:
 					int rottMode = GetCVar("mm_rottmode");
-
-					switch(rottMode)
-					{
-						default:
-							altSetSelect = rottMode-1;
-							break;
-
-						case 0:
-							altSetSelect = 0;
-							break;
-
-						case 1:
-							altSetSelect = 1;
-							break;
-
-						case 2:
-							altSetSelect = random(0,1);
-							break;
-					}
+					altSetSelect = pickRottSet();
 					break;
 
 				case 19:
@@ -386,7 +368,8 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 
 					if(GetCVar("samsara_zscriptready") != 1)
 					{
-						altSetSelect = 2;
+						pickedSet = 8;
+						altSetSelect = pickRottSet();
 						break;
 					}
 
