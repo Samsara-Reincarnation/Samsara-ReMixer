@@ -1,6 +1,6 @@
 Actor Goldfinger_ChinaGuard : Goldeneye_EnemyBase
 {
-	Tag "China Guard"
+	Tag "Chinese Nuclear Factory Guard"
     Obituary "%o was killed by a Chinese nuclear factory guard."
 	Health 100
 	States

@@ -15,6 +15,12 @@ Actor Goldfinger_AuricGoldfinger : Goldeneye_EnemyBase
 			TNT1 A 0 A_GiveInventory("AlreadySpawned",1)
 			TNT1 A 0 A_SetShootable
 			Goto Spawn2
+
+	  Death.ExpanderDMG:
+	  XDeath.ExpanderDMG:
+	  Death.ExpanderDMGCoop:
+	  XDeath.ExpanderDMGCoop:
+		Goto Death
 	}
 }
 

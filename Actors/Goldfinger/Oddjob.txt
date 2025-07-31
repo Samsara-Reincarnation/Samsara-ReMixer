@@ -46,6 +46,12 @@ Actor Goldfinger_OddJob : Goldeneye_EnemyBase
 			GE15 A 0 A_GiveInventory("Goldeneye_OddJob_RestoreHat")
 			GE15 A 0 ACS_NamedExecuteWithResult("Goldeneye_RestoreGuns")
 			Goto See	
+
+	  Death.ExpanderDMG:
+	  XDeath.ExpanderDMG:
+	  Death.ExpanderDMGCoop:
+	  XDeath.ExpanderDMGCoop:
+		Goto Death
 	}
 }
 

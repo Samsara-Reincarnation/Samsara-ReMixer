@@ -1,6 +1,6 @@
 Actor Goldfinger_ShipyardGuard : Goldeneye_EnemyBase
 {
-	Tag "Mechanic"
+	Tag "Shipyard Guard"
     Obituary "%o was killed by a shipyard guard."
 	Health 160
 	States

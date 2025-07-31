@@ -1,7 +1,7 @@
 Actor Goldfinger_Korean : Goldeneye_EnemyBase
 {
-	Tag "Korean"
-    Obituary "%o was killed by one of Goldfinger's Koreans."
+	Tag "Korean Henchman"
+    Obituary "%o was killed by one of Goldfinger's minions."
 	Health 80
 	States
 	{
@@ -20,7 +20,7 @@ Actor Goldfinger_Korean : Goldeneye_EnemyBase
 
 Actor Goldfinger_JetPackGuard : Goldeneye_JetPackGuard
 {
-	Tag "Korean (Jetpack)"
+	Tag "Korean Henchman (Jetpack)"
     Obituary "%o was killed by one of Goldfinger's jetpack minions."
 	States
 	{

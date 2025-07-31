@@ -1,6 +1,6 @@
 Actor Goldfinger_CartelGuard : Goldeneye_EnemyBase
 {
-	Tag "Cartel Guard"
+	Tag "Ramirez Cartel Guard"
     Obituary "%o was killed by a Ramirez Cartel Guard."
 	Health 60
 	States
