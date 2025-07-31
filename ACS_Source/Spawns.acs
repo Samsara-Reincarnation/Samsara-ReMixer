@@ -10422,7 +10422,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Goldfinger_Korean"}
 			},
 			{//Demon
-				{"Godlfinger_ShipyardGuard"},
+				{"Goldfinger_ShipyardGuard"},
 				{"Goldfinger_AirCrew"}
 			},
 			{//Dark Imp
@@ -10500,166 +10500,181 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Goldfinger_Servant"}
 			},
 			{//Flemoidus Commonus
-				{"Goldeneye_GreatGuard2"}
+				{"Goldfinger_Mechanic"},
+				{"Goldfinger_CartelThug"}
 			},
 			{//Flemoidus Bipedicus
-				{"Goldeneye_OliveGuard"}
+				{"Goldfinger_ChinaGuard"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"Goldeneye_GreatGuard"},
-				{"Goldeneye_CommGuard"}
+				{"Goldfinger_CartelGuard"},
+				{"Goldfinger_WhiteSuit"}
 			},
 			{//Flemoidus Stridicus
-				{"Goldeneye_BlueCamGuard"}
+				{"Goldfinger_ShipyardGuard"},
+				{"Goldfinger_AirCrew"}
 			},
 			{//Larva
-				{"Goldeneye_BlueCamGuard"}
+				{"Goldfinger_Golfer"},
+				{"Goldfinger_GateKeeper"}
 			},
 			{//Flem Mine
-				{"Goldeneye_JetPackGuard"}
+				{"Goldfinger_JetpackGuard"}
 			},
 			{//Flemoidus Cycloptis Commonus
-				{"Goldeneye_Drone"}
+				{"Goldfinger_Helicopter"}
 			},
 			{//Super Cycloptis
-				{"Goldeneye_Drone"}
+				{"Goldfinger_Helicopter"}
 			},
 			{//Quadrumpus
-				{"Goldeneye_CamGuard"}
+				{"Goldfinger_CrabKeyGuard"},
+				{"Goldfinger_Hazmat"},
+				{"Goldfinger_SpectreGuard"}
 			},
 			{//Flemoidus Maximus
-				{"Goldeneye_MoonGuard"},
-				{"Goldeneye_MoonFemale"},
-				{"Goldeneye_Arkady"}
+				{"Goldfinger_RedGrant"},
+				{"Goldfinger_RosaKlebb"},
+				{"Goldfinger_DrNo"}
 			},
 			{//Flembrane
-				{"Goldeneye_Oddjob"},
-				{"Goldeneye_Jaws"},
-				{"Goldeneye_Mayday"},
-				{"Goldeneye_ArmorGuard"}
+				{"Goldfinger_Kisch"},
+				{"Goldfinger_MeiLin"},
+				{"Goldfinger_Ling"}
 			},
 			{//Flembomination
-				{"Goldeneye_Trevelyan"}
+				{"Goldfinger_AuricGoldfinger"}
 			},
 			{//Snotfolus
-				{"Goldeneye_BaronSamedi"},
-				{"Goldeneye_Xenia"}
+				{"Goldfinger_Oddjob"}
 			},
 			{//Gargoyle
-				{"Goldeneye_JetPackGuard"}
+				{"Goldfinger_JetpackGuard"}
 			},
 			{//Fire Gargoyle
-				{"Goldeneye_GreatGuard"},
-				{"Goldeneye_CommGuard"}
+				{"Goldfinger_CartelGuard"},
+				{"Goldfinger_WhiteSuit"}
 			},
 			{//Golem
-				{"Goldeneye_GreatGuard2"}
+				{"Goldfinger_Mechanic"},
+				{"Goldfinger_CartelThug"}
 			},
 			{//Golem Ghost
-				{"Goldeneye_BlueCamGuard"}
+				{"Goldfinger_ShipyardGuard"},
+				{"Goldfinger_AirCrew"}
 			},
 			{//Nitrogolem
-				{"Goldeneye_OliveGuard"}
+				{"Goldfinger_ChinaGuard"}
 			},
 			{//Nitrogolem Ghost
-				{"Goldeneye_BlueCamGuard"}
+				{"Goldfinger_Golfer"},
+				{"Goldfinger_GateKeeper"}
 			},
 			{//Disciple of D'Sparil
-				{"Goldeneye_Drone"}
+				{"Goldfinger_Helicopter"}
 			},
 			{//Undead Warrior
-				{"Goldeneye_RusGuard"}
+				{"Goldfinger_Korean"}
 			},
 			{//Undead Warrior Ghost
-				{"Goldeneye_BlueCamGuard"}
+				{"Goldfinger_ShipyardGuard"},
+				{"Goldfinger_AirCrew"}
 			},
 			{//Sabreclaw
-				{"Goldeneye_BlueCamGuard"}
+				{"Goldfinger_Golfer"},
+				{"Goldfinger_GateKeeper"}
 			},
 			{//Ophidian
-				{"Goldeneye_CamGuard"}
+				{"Goldfinger_CrabKeyGuard"},
+				{"Goldfinger_Hazmat"},
+				{"Goldfinger_SpectreGuard"}
 			},
 			{//Weredragon
-				{"Goldeneye_SiberianForces"}
+				{"Goldfinger_GraySuit"},
+				{"Goldfinger_Capungo"}
 			},
 			{//Iron Lich
-				{"Goldeneye_MoonGuard"},
-				{"Goldeneye_MoonFemale"},
-				{"Goldeneye_Arkady"}
+				{"Goldfinger_RedGrant"},
+				{"Goldfinger_RosaKlebb"},
+				{"Goldfinger_DrNo"}
 			},
 			{//Maulotaur
-				{"Goldeneye_BaronSamedi"},
-				{"Goldeneye_Xenia"}
+				{"Goldfinger_Oddjob"}
 			},
 			{//D'Sparil
-				{"Goldeneye_Trevelyan"}
+				{"Goldfinger_AuricGoldfinger"}
 			},
 			{//Chicken
-				{"Goldeneye_GrayGuard"}
+				{"Goldfinger_Servant"}
 			},
 			{//Ettin
-				{"Goldeneye_GreatGuard2"}
+				{"Goldfinger_Mechanic"},
+				{"Goldfinger_CartelThug"}
 			},
 			{//Afrit
-				{"Goldeneye_JetPackGuard"}
+				{"Goldfinger_JetpackGuard"}
 			},
 			{//Dark Bishop
-				{"Goldeneye_RusGuard"}
+				{"Goldfinger_Korean"}
 			},
 			{//Centaur
-				{"Goldeneye_BlueCamGuard"}
+				{"Goldfinger_ShipyardGuard"},
+				{"Goldfinger_AirCrew"}
 			},
 			{//Slaughtaur
-				{"Goldeneye_Oddjob"},
-				{"Goldeneye_Jaws"},
-				{"Goldeneye_Mayday"},
-				{"Goldeneye_ArmorGuard"}
+				{"Goldfinger_Kisch"},
+				{"Goldfinger_MeiLin"},
+				{"Goldfinger_Ling"}
 			},
 			{//Green Chaos Serpent
-				{"Goldeneye_SiberianForces"}
+				{"Goldfinger_GraySuit"},
+				{"Goldfinger_Capungo"}
 			},
 			{//Stalker
-				{"Goldeneye_OliveGuard"}
+				{"Goldfinger_ChinaGuard"}
 			},
 			{//Stalker Boss
-				{"Goldeneye_RusGuard"}
+				{"Goldfinger_Korean"}
 			},
 			{//Wendigo
-				{"Goldeneye_CamGuard"}
+				{"Goldfinger_CrabKeyGuard"},
+				{"Goldfinger_Hazmat"},
+				{"Goldfinger_SpectreGuard"}
 			},
 			{//Reiver
-				{"Goldeneye_Drone"}
+				{"Goldfinger_Helicopter"}
 			},
 			{//Reiver (Buried)
-				{"Goldeneye_Drone"}
+				{"Goldfinger_Helicopter"}
 			},
 			{//Brown Chaos Serpent
-				{"Goldeneye_CamGuard"}
+				{"Goldfinger_CrabKeyGuard"},
+				{"Goldfinger_Hazmat"},
+				{"Goldfinger_SpectreGuard"}
 			},
 			{//Traductus
-				{"Goldeneye_MoonGuard"},
-				{"Goldeneye_MoonFemale"},
-				{"Goldeneye_Arkady"}
+				{"Goldfinger_RedGrant"},
+				{"Goldfinger_RosaKlebb"},
+				{"Goldfinger_DrNo"}
 			},
 			{//Zedek
-				{"Goldeneye_MoonGuard"},
-				{"Goldeneye_MoonFemale"},
-				{"Goldeneye_Arkady"}
+				{"Goldfinger_RedGrant"},
+				{"Goldfinger_RosaKlebb"},
+				{"Goldfinger_DrNo"}
 			},
 			{//Menelkir
-				{"Goldeneye_MoonGuard"},
-				{"Goldeneye_MoonFemale"},
-				{"Goldeneye_Arkady"}
+				{"Goldfinger_RedGrant"},
+				{"Goldfinger_RosaKlebb"},
+				{"Goldfinger_DrNo"}
 			},
 			{//Heresiarch
-				{"Goldeneye_BaronSamedi"},
-				{"Goldeneye_Xenia"}
+				{"Goldfinger_Oddjob"}
 			},
 			{//Korax
-				{"Goldeneye_Trevelyan"}
+				{"Goldfinger_AuricGoldfinger"}
 			},
 			{//Pig
-				{"Goldeneye_GrayGuard"}
+				{"Goldfinger_Servant"}
 			}
 		}
 	},
@@ -23306,6 +23321,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Commonus
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Bipedicus
@@ -23316,9 +23332,11 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Stridicus
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Larva
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flem Mine
@@ -23331,6 +23349,8 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Quadrumpus
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Maximus
@@ -23341,14 +23361,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Flembrane
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flembomination
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Snotfolus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Gargoyle
@@ -23359,15 +23377,18 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Golem
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Golem Ghost
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Nitrogolem
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Nitrogolem Ghost
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Disciple of D'Sparil
@@ -23377,15 +23398,20 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Undead Warrior Ghost
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Sabreclaw
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Ophidian
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Weredragon
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Iron Lich
@@ -23394,7 +23420,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Maulotaur
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//D'Sparil
@@ -23404,6 +23429,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Ettin
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Afrit
@@ -23413,15 +23439,16 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Centaur
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Slaughtaur
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Green Chaos Serpent
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Stalker
@@ -23431,6 +23458,8 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Wendigo
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Reiver
@@ -23440,6 +23469,8 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Brown Chaos Serpent
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Traductus
@@ -23458,7 +23489,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Heresiarch
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Korax
