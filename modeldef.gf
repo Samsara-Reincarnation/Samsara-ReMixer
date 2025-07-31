@@ -412,3 +412,147 @@ Model Goldfinger_Helicopter
 	FrameIndex GE00 P 0 15
 	FrameIndex GE00 P 1 0
 }
+
+Model Goldfinger_MP40EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "mp40.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_RemingtonEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "remington.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_PurdyEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "purdy.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_AK47EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "ak47.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_ThompsonDrumEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "thompsondrum.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_ThompsonEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "thompson.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_BazookaEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "bazooka.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_M79EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "m79.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_M1CarbineEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "m1carbine.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_GarandEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "garand.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_Kar98KEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "kar98k.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_LaserEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "laser.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_AR7EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "mp40.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_UziEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "uzi.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_SW22EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "sw22.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_SW36EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "sw36.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}

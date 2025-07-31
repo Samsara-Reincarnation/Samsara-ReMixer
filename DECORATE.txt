@@ -745,6 +745,7 @@
 
 // Goldfinger
 #include "actors/Goldfinger/enemybase.txt"
+#include "actors/Goldfinger/drops.txt"
 #include "actors/Goldfinger/Korean.txt"
 #include "actors/Goldfinger/ChinaGuard.txt"
 #include "actors/Goldfinger/CartelThug.txt"
