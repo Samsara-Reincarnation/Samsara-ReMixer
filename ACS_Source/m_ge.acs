@@ -28,7 +28,7 @@ Script "Goldeneye_HatShot" (void)
 	str thrownhat = goldfinger ? GFHatTypes[CheckInventory("Goldeneye_HatShotToken")] : HatTypes[CheckInventory("Goldeneye_HatShotToken")];
 	if(StrLen(thrownhat) == 0 || thrownhat == "OddjobHat")
 	{
-		SetResultValue(3);
+		SetResultValue(2);
 		terminate;
 	}
 
@@ -43,7 +43,7 @@ Script "Goldeneye_HatShot" (void)
 		}
 	}
 	else 
-		SetResultValue(3); 
+		SetResultValue(2); 
 		
 	if(CheckInventory("SamsaraZScriptReady") == 1) GiveInventory("Goldeneye_Hat_Clear",1);
 	SpawnForced(StrParam(s:goldfinger ? "Goldfinger_" : "Goldeneye_",s:thrownhat,s:"_Drop"),GetActorX(0),GetActorY(0),GetActorZ(0) + 48.0,0,0);
