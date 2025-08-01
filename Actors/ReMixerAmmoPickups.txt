@@ -1442,7 +1442,7 @@ actor Goldeneye_RCP90MagEnemyDrop : Ammo4Big
     }
 }
 
-actor Goldfinger_ColtEnemyDrop : Ammo1Small
+actor Goldfinger_ColtEnemyDrop : Ammo1Small // currently looks like an EnemyDrop, but behaves like a MagEnemyDrop
 {
     Gravity 0.33
     +DONTGIB
@@ -1475,7 +1475,7 @@ actor Goldfinger_ColtEnemyDrop : Ammo1Small
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 8)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 11)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -1537,7 +1537,7 @@ actor Goldfinger_ColtEnemyDrop : Ammo1Small
     }
 }
 
-Actor Goldfinger_LugerEnemyDrop : Ammo1Small
+Actor Goldfinger_LugerEnemyDrop : Ammo1Small // currently looks like an EnemyDrop, but behaves like a MagEnemyDrop
 {
     Gravity 0.33
     +DONTGIB
@@ -1570,7 +1570,7 @@ Actor Goldfinger_LugerEnemyDrop : Ammo1Small
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 9)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 12)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -1632,7 +1632,7 @@ Actor Goldfinger_LugerEnemyDrop : Ammo1Small
     }
 }
 
-Actor Goldfinger_P38EnemyDrop : Ammo1Small
+Actor Goldfinger_P38EnemyDrop : Ammo1Small // currently looks like an EnemyDrop, but behaves like a MagEnemyDrop
 {
     Gravity 0.33
     +DONTGIB
@@ -1665,7 +1665,7 @@ Actor Goldfinger_P38EnemyDrop : Ammo1Small
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 10)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 13)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -1723,6 +1723,97 @@ Actor Goldfinger_P38EnemyDrop : Ammo1Small
       PickupSuccessQuake3:
         TNT1 A 0 A_GiveInventory("Clip",8)
         TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",8)
+        stop
+    }
+}
+
+Actor Goldfinger_M14MagEnemyDrop : Ammo4Small
+{
+    Gravity 0.33
+    +DONTGIB
+    +DROPPED
+    +NEVERRESPAWN
+    States
+    {
+      Spawn:
+        GF00 Z 0
+        goto SpawnGameModeCheck
+
+      SpawnActual:
+        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
+        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
+      SpawnActualStart:
+        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
+        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
+        GF00 Z 0 A_SetAngle(random(0,360))
+        GF00 Z 0 A_SetPitch(random(0,360))
+      SpawnActualAnim:
+        GF00 Z 0 A_SetPitch(pitch-15)
+        GF00 Z 0 A_SetAngle(angle-15)
+        GF00 Z 1 A_CheckFloor("SpawnActualLand")
+        loop
+
+      SpawnActualLand:
+        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
+        GF00 Z 0 A_Stop
+        GF00 Z -1 A_SetPitch(0)
+        stop
+
+      PickupDisplayDefault:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 6, 1)
+        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
+        TNT1 A 0 A_PlaySound("ammo/plasmasmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
+        goto PickupSuccess
+
+      PickupSuccessDefault:
+        TNT1 A 0 A_GiveInventory("Cell",40)
+        stop
+
+      PickupSuccessDoom:
+        TNT1 A 0 A_JumpIfInventory("DoomClassMode",2,"PickupSuccessStronghold")
+        goto PickupSuccessDefault
+
+      PickupSuccessStronghold:
+        TNT1 A 0 A_GiveInventory("Cell",40)
+        TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
+        stop
+        TNT1 A 0 A_GiveInventory("DoomguyStrGas",24)
+        stop
+
+      PickupSuccessDuke:
+        TNT1 A 0 A_JumpIfInventory("DukeClassMode",2,"PickupSuccessDuke64")
+        TNT1 A 0 A_GiveInventory("Cell",40)
+        TNT1 A 0 A_GiveInventory("ExpanderAmmo",5)
+        stop
+
+      PickupSuccessDuke64:
+        goto PickupSuccessDefault
+
+      PickupSuccessQuake1:
+        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
+        TNT1 A 0 A_GiveInventory("LavaNails",10)
+        TNT1 A 0 A_GiveInventory("Cell",40)
+        stop
+
+      PickupSuccessBlake:
+        TNT1 A 0 A_GiveInventory("Cell",48)
+        stop
+
+      PickupSuccessCorridor7:
+        goto PickupSuccessBlake
+
+      PickupSuccessWitchaven:
+        goto PickupSuccessBlake
+
+      PickupSuccessPainkiller:
+      PickupSuccessPainkillerReplenish:
+        TNT1 A 0 A_GiveInventory("Cell",40)
+        TNT1 A 0 A_GiveInventory("Painkiller_ElectroAmmo",30)
+        stop
+
+      PickupSuccessRTCW:
+        TNT1 A 0 A_GiveInventory("Cell",40)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo4",20)
         stop
     }
 }

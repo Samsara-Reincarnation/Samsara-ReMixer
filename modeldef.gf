@@ -533,6 +533,15 @@ Model Goldfinger_LaserEnemyDrop
 	FrameIndex GF00 Z 0 0
 }
 
+Model Goldfinger_M14EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "m14.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
 Model Goldfinger_AR7EnemyDrop
 {
 	Path "Models/GoldFinger/pickups"
@@ -593,6 +602,15 @@ Model Goldfinger_P38EnemyDrop
 	Model 0 "p38.md3"
 	Scale -1.0 1.0 1.0
 
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_M14MagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "m14magazine.md3"
+    Scale 0.05 0.05 0.05
+	
 	FrameIndex GF00 Z 0 0
 }
 
