@@ -20,6 +20,10 @@ Doom:
 + The laser arachnotron's fire rate has been buffed to 7 tics (decreased from 9).
 + The laser arachnotron projectiles now have a speed of 28 (increased from 25).
 
+GoldenEye 007:
+
++ Headshots will now only deal 2x damage to enemies without hats (decreased from 3x).
+
 ---------------------------------------------------------------------------
 --------------------Reincarnation Mixer 1.2 Open Beta 2--------------------
 ---------------------------------------------------------------------------
