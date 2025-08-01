@@ -328,7 +328,7 @@ GoldenEye 007:
 ! Picking up a dropped PP7 now plays the ammo combo pickup sound.
 ! Dropped Phantoms, grenade launchers, Cougar Magnums, and ZMGs now give slot 4S equipment, slot 5S equipment, slot 6S equipment, and unique 2 equipment, respectively.
 ! Killed enemies now create Bloody Hell death effects, but only when "GoldenEye 007: Corpse Persistence" is enabled.
-* Removed an unneeded ammo check for Bond when picking up a dropped RC-P90 mag.
+* Removed an unneeded ammo check for GoldenEye Bond when picking up a dropped RC-P90 mag.
 
 -Goldfinger 64-
 
