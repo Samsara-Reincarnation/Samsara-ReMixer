@@ -10,7 +10,7 @@ Actor RedMite : SamsaraMonsterBeastTotalGib
     meleedamage 1
     meleerange 17
     bloodcolor Green
-	obituary "%o became a meal for the Terrainian's."
+	obituary "%o became a meal for the Terrainians."
 	Species "ExhumedEnemies"
     +FLOORCLIP
 	+SHOOTABLE
