@@ -169,3 +169,10 @@ Actor GoldfingerEnemyWeaponChooserDual : GoldfingerEnemyWeaponChooser
 }
 
 Actor Goldfinger_EnemyGrenade : Goldeneye_EnemyGrenade {}
+
+Actor Goldfinger_HatKorean_Drop : Goldeneye_HatDrop  {}
+Actor Goldfinger_CapMex_Drop : Goldeneye_HatDrop  {}
+Actor Goldfinger_CapCrabKey_Drop : Goldeneye_HatDrop  {}
+Actor Goldfinger_NavyPeak_Drop : Goldeneye_HatDrop  {}
+Actor Goldfinger_SpectreHat_Drop : Goldeneye_HatDrop  {}
+Actor Goldfinger_ArmyCap_Drop : Goldeneye_HatDrop  {}

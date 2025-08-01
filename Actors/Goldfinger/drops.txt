@@ -367,5 +367,5 @@ actor Goldfinger_UziEnemyDrop : SamsaraUniquePickup2
     }
 }
 
-actor Goldfinger_SW22EnemyDrop : Goldeneye_D5KEnemyDrop {}
-actor Goldfinger_SW36EnemyDrop : Goldeneye_D5KEnemyDrop {}
+actor Goldfinger_SW22EnemyDrop : Goldfinger_UziEnemyDrop {}
+actor Goldfinger_SW36EnemyDrop : Goldfinger_UziEnemyDrop {}

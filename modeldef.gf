@@ -10,6 +10,18 @@ Model "Goldfinger_Korean"
    MODELSAREATTACHMENTS
 }
 
+Model "Goldfinger_JetpackGuard"
+{
+   Path "Models/Goldeneye"
+   Animation 0 "base.iqm"
+   Model 0 "base.iqm"
+   Scale 0.03 0.03 0.03
+   RollOffset 90
+   AngleOffset 90
+   BaseFrame
+   MODELSAREATTACHMENTS
+}
+
 Model "Goldfinger_ChinaGuard"
 {
    Path "Models/Goldeneye"
@@ -555,4 +567,85 @@ Model Goldfinger_SW36EnemyDrop
 	Scale -1.0 1.0 1.0
 
 	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_ColtEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "colt.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_LugerEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "luger.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_P38EnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "p38.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_HatKorean_Drop
+{
+	Path "models/goldfinger/hats"
+	Model 0 "hatkorean.md3"
+	Scale 0.33 0.33 0.33
+	
+	FrameIndex GE00 A 0 0
+}
+
+Model Goldfinger_CapMex_Drop
+{
+	Path "models/goldfinger/hats"
+	Model 0 "capmex.md3"
+	Scale 0.33 0.33 0.33
+	
+	FrameIndex GE00 A 0 0
+}
+
+Model Goldfinger_CapCrabKey_Drop
+{
+	Path "models/goldfinger/hats"
+	Model 0 "capcrabkey.md3"
+	Scale 0.33 0.33 0.33
+	
+	FrameIndex GE00 A 0 0
+}
+
+Model Goldfinger_NavyPeak_Drop
+{
+	Path "models/goldfinger/hats"
+	Model 0 "navypeak.md3"
+	Scale 0.33 0.33 0.33
+	
+	FrameIndex GE00 A 0 0
+}
+
+Model Goldfinger_SpectreHat_Drop
+{
+	Path "models/goldfinger/hats"
+	Model 0 "spectrehat.md3"
+	Scale 0.33 0.33 0.33
+	
+	FrameIndex GE00 A 0 0
+}
+
+Model Goldfinger_Armycap_Drop
+{
+	Path "models/goldfinger/hats"
+	Model 0 "armycap.md3"
+	Scale 0.33 0.33 0.33
+	
+	FrameIndex GE00 A 0 0
 }

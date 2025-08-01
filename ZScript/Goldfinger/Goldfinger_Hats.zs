@@ -11,14 +11,14 @@ Class Goldfinger_Hat_CapMex : CustomInventory
 	}
 }
 
-Class Goldfinger_Hat_CrabKey : CustomInventory
+Class Goldfinger_Hat_CapCrabKey : CustomInventory
 {
 	States
 	{
 		Pickup:
 			TNT1 A 0
 			{ 
-				A_ChangeModel("",3,"Models/Goldfinger/Hats","crabkey.iqm");
+				A_ChangeModel("",3,"Models/Goldfinger/Hats","capcrabkey.iqm");
 			}
 			Stop;
 	}
@@ -63,14 +63,14 @@ Class Goldfinger_Hat_OddjobHat : CustomInventory
 	}
 }
 
-Class Goldfinger_Hat_Spectre : CustomInventory
+Class Goldfinger_Hat_SpectreHat : CustomInventory
 {
 	States
 	{
 		Pickup:
 			TNT1 A 0
 			{ 
-				A_ChangeModel("",3,"Models/Goldfinger/Hats","spectre.iqm");
+				A_ChangeModel("",3,"Models/Goldfinger/Hats","spectrehat.iqm");
 			}
 			Stop;
 	}

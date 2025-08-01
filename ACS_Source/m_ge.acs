@@ -5,7 +5,7 @@ str GunTypes[28] = { "PP7", "DD44", "DualDD44", "Klobb", "DualKlobb", "KF7", "ZM
 
 str GFGuardTypes[33] = { "AlpsGuard", "AuricGolf", "AuricOfficer", "AuricPool", "AuricRanch", "AuricSuit", "AuricTux", "CamoGuard", "ChinaGuard", "CrabKeyGuard", "DrNo", "GateKeeper", "GoldGuard", "Golfer", "GrayGuard", "Hazmat", "HazmatPink", "Kapungo", "KischArmy", "Korean", "Ling", "MeiLin", "MexGuard", "OddJob", "PlaneCrew", "Servant", "RedGrant", "RosaKlebb", "SpectreGuard", "MexCiv1", "MexCiv2", "MechBlue", "WhiteGuard" };
 str GFHeadTypes[15] = { "Cho", "Kim", "Kor1", "Kor2", "Kor3", "Mok", "Cyberen", "Jack", "Kyle", "MF", "Sean", "Sogun", "Subdrag", "Trevor", "DrNo" };
-str GFHatTypes[8] = { "", "CapMex", "CrabKey", "HatKorean", "NavyPeak", "OddjobHat", "Spectre", "ArmyCap" };
+str GFHatTypes[8] = { "", "CapMex", "CapCrabKey", "HatKorean", "NavyPeak", "OddjobHat", "SpectreHat", "ArmyCap" };
 str GFGunTypes[23] = { "AK47", "AR7", "Bazooka", "Colt", "Garand", "GoldRevolver", "Kar98K", "Laser", "Luger", "M14", "M1Carbine", "M79", "MP40", "P38", "PPKS", "PPK", "Purdy", "Remington", "SW22", "SW36", "ThompsonDrum", "Thompson", "Uzi" };
 
 /*function int SetPointerExt(int assign_slot, int tid, int assign_to_tid) 
@@ -24,14 +24,15 @@ str GFGunTypes[23] = { "AK47", "AR7", "Bazooka", "Colt", "Garand", "GoldRevolver
 
 Script "Goldeneye_HatShot" (void)
 {
-	str thrownhat = HatTypes[CheckInventory("Goldeneye_HatShotToken")];
-	if(StrLen(thrownhat) == 0)
+	int goldfinger = CheckInventory("Goldfinger_IsGoldFinger64");
+	str thrownhat = goldfinger ? GFHatTypes[CheckInventory("Goldeneye_HatShotToken")] : HatTypes[CheckInventory("Goldeneye_HatShotToken")];
+	if(StrLen(thrownhat) == 0 || thrownhat == "OddjobHat")
 	{
 		SetResultValue(3);
 		terminate;
 	}
 
-	if(CheckInventory("Goldeneye_HatShotToken") == 8 || CheckInventory("Goldeneye_HatShotToken") == 9)
+	if(!goldfinger && (CheckInventory("Goldeneye_HatShotToken") == 8 || CheckInventory("Goldeneye_HatShotToken") == 9))
 	{
 		PlaySound(0,"Goldeneye/SlapperMetal",CHAN_7,1.0,0,ATTN_NORM);
 		SetResultValue(0);
@@ -45,8 +46,8 @@ Script "Goldeneye_HatShot" (void)
 		SetResultValue(3); 
 		
 	if(CheckInventory("SamsaraZScriptReady") == 1) GiveInventory("Goldeneye_Hat_Clear",1);
-	SpawnForced(StrParam(s:"Goldeneye_",s:thrownhat,s:"_Drop"),GetActorX(0),GetActorY(0),GetActorZ(0) + 48.0,0,0);
-	TakeInventory("Goldeneye_HatShotToken",12);
+	SpawnForced(StrParam(s:goldfinger ? "Goldfinger_" : "Goldeneye_",s:thrownhat,s:"_Drop"),GetActorX(0),GetActorY(0),GetActorZ(0) + 48.0,0,0);
+	SetInventory("Goldeneye_HatShotToken",0);
 	//SetActivator(0,AAPTR_Tracer);
 	//Thing_Remove(0);
 }
@@ -1097,6 +1098,7 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 				break;	
 				
 		}
+		if(type != 18) GiveInventory("Goldeneye_HatShotToken",CheckInventory("Goldeneye_HatPart"));
 		SetActorProperty(0,APROP_Mass,200+(1+guntype));
 		SetInventory("Goldeneye_GunPart",1+guntype);
 	}
@@ -1104,7 +1106,8 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 
 Script "GoldeneyeEnemyDrops" (void)
 {
-	if(CheckInventory("Goldeneye_BodyPart") == 21) terminate;
+	int goldfinger = CheckInventory("Goldfinger_IsGoldFinger64");
+	if(CheckInventory("Goldeneye_BodyPart") == 21 && !goldfinger) terminate;
 	int x,y,z,guntype,randnum;
 	str mag;
 	x = GetActorVelX(0);
@@ -1112,7 +1115,7 @@ Script "GoldeneyeEnemyDrops" (void)
 	z = GetActorVelZ(0);
 	guntype = GetActorProperty(0,APROP_MASS)-201;
 	str dual = GunTypes[guntype];
-	if(guntype <= 16 || guntype == 27)
+	if(!goldfinger && (guntype <= 16 || guntype == 27))
 	{
 		randnum = random(0,100);
 		if (randnum <= 15)
@@ -1125,32 +1128,42 @@ Script "GoldeneyeEnemyDrops" (void)
 		mag = "";
 	}	
 		
-	if(StrLeft(dual,4) == "Dual")
+	if(!goldfinger)
 	{
-		SpawnForced(StrParam(s:"Goldeneye_",s:StrRight(dual, StrLen(dual)-4),s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
-		SpawnForced(StrParam(s:"Goldeneye_",s:StrRight(dual, StrLen(dual)-4),s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+-45.0),(y+0),(z+random(40.0,48.0)));
-	}	
-	else if(StrLeft(dual,6) == "Silver")
-	{
-		SpawnForced(StrParam(s:"Goldeneye_",s:StrRight(dual, StrLen(dual)-6),s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));	
-	}	
-	else if(StrRight(dual,5) == "Combo")
-	{
-		if(StrLeft(dual,1) == "X")
+		if(StrLeft(dual,4) == "Dual")
 		{
-			SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[14],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
-			SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[22],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+-45.0),(y+0),(z+random(40.0,48.0)));		
+			SpawnForced(StrParam(s:"Goldeneye_",s:StrRight(dual, StrLen(dual)-4),s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
+			SpawnForced(StrParam(s:"Goldeneye_",s:StrRight(dual, StrLen(dual)-4),s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+-45.0),(y+0),(z+random(40.0,48.0)));
+		}	
+		else if(StrLeft(dual,6) == "Silver")
+		{
+			SpawnForced(StrParam(s:"Goldeneye_",s:StrRight(dual, StrLen(dual)-6),s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));	
+		}	
+		else if(StrRight(dual,5) == "Combo")
+		{
+			if(StrLeft(dual,1) == "X")
+			{
+				SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[14],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
+				SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[22],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+-45.0),(y+0),(z+random(40.0,48.0)));		
+			}
+			else
+			{
+				SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[3],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
+				SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[17],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+-45.0),(y+0),(z+random(40.0,48.0)));	
+			}	
 		}
+			
 		else
 		{
-			SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[3],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
-			SpawnForced(StrParam(s:"Goldeneye_",s:GunTypes[17],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+-45.0),(y+0),(z+random(40.0,48.0)));	
-		}	
+			SpawnForced(StrParam(s:"Goldeneye_",s:dual,s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
+		}
 	}
-		
 	else
 	{
-		SpawnForced(StrParam(s:"Goldeneye_",s:dual,s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));
+		if(CheckInventory("Goldeneye_DualWield"))
+			SpawnForced(StrParam(s:"Goldfinger_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1],s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X-45.0),(y+0),(z+random(40.0,48.0)));
+			
+		SpawnForced(StrParam(s:"Goldfinger_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1],s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));	
 	}
 }	
 	
