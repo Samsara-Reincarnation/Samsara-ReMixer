@@ -19,7 +19,7 @@ actor WolfClip : Clip2
     }
 }
 
-// Wolfenstein 3D: Spear of Destiny
+// Wolfenstein 3D: Spear of Destiny Lost Episodes
 actor SODClip : Clip2
 {
     +FLOORCLIP
@@ -1442,6 +1442,7 @@ actor Goldeneye_RCP90MagEnemyDrop : Ammo4Big
     }
 }
 
+// Goldfinger 64
 actor Goldfinger_ColtEnemyDrop : Ammo1Small // currently looks like an EnemyDrop, but behaves like a MagEnemyDrop
 {
     Gravity 0.33
