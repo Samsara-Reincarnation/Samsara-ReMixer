@@ -1454,24 +1454,19 @@ Script "Goldeneye_TransferIceTranslation" (void)
 	Thing_ChangeTID(newtid, activator);
 }
 
-int GunChances[28] = { 10, 10, 10, 15, 15, 5, 5, 5, 10, 10, 5, 5, 10, 0, 2, 2, 3, 15, 20, 15, 20, 15, 5, 5, 15, 3, 10, 15 };
-int TracerDamage[28] = { 13, 13, 13, 6, 6, 13, 10, 10, 10, 10, 14, 14, 14, 14, 18, 18, 12, 20, 25, 25, 25, 25, 10, 10, 6, 18, 5, 25 };
-
-Script "Goldeneye_TracerDamage" (void)
+Script "Goldeneye_TracerDamage" (int gunchance, int damage)
 {
 	SetActivatorToTarget(0);
-	int hitchance, hitmul, guntype, skillchance, gunchance, randnum;
+	int hitchance, hitmul, skillchance, randnum;
 	int skill = GameSkill()+1;
 	int guardtier = CheckInventory("Goldeneye_GuardTierToken");
     int guardchance = guardtier+2;
-	guntype = CheckInventory("Goldeneye_GunPart")-1;
-	gunchance = GunChances[guntype];
 	skillchance = 6*skill;			
 	hitmul = (skillchance+gunchance) * guardchance;
 	hitchance = hitmul/2;		
 	randnum = random(0,100);	
 	if(randnum <= hitchance)
-		SetResultValue(TracerDamage[guntype]);
+		SetResultValue(damage);
 	else
 		SetResultValue(0);
 }
