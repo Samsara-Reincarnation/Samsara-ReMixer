@@ -609,7 +609,6 @@ Model Goldfinger_M14MagEnemyDrop
 {
 	Path "Models/Goldfinger/items"
 	Model 0 "m14magazine.md3"
-    Scale 0.05 0.05 0.05
 	
 	FrameIndex GF00 Z 0 0
 }
