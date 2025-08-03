@@ -310,6 +310,18 @@ model Goldeneye_KF7TracerFake
 	FrameIndex GE00 A 0 0
 }
 
+model Goldeneye_DD44TracerEnemy
+{
+	path "models/Goldeneye/effects"
+	model 0 "bullettracer.md3"
+	skin 0 "bullettracer.png"
+	scale 2.0 0.5 0.5
+	//Offset -48 0 0
+	PITCHFROMMOMENTUM
+	
+	FrameIndex GE00 A 0 0
+}
+
 model Goldeneye_KlobbTracerEnemy
 {
 	path "models/Goldeneye/effects"

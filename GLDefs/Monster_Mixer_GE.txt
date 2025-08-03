@@ -3,6 +3,11 @@ object Goldeneye_KF7TracerEnemy
 	frame GE00A { light GEBULLETTRACER }
 }
 
+object Goldeneye_DD44TracerEnemy
+{
+	frame GE00A { light GEBULLETTRACER }
+}
+
 object Goldeneye_SniperTracerEnemy
 {
 	frame GE00A { light GEBULLETTRACER }

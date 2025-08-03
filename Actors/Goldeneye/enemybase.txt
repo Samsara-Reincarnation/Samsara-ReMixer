@@ -1339,11 +1339,11 @@ actor GoldeneyeEnemyWeaponChooser : Trigger
 			Goto PickupContinue
 		FirePP7:
 			TNT1 A 0 A_Playsound("Goldeneye/PP7Shot", CHAN_WEAPON)
-			TNT1 A 0 A_CustomMissile("Goldeneye_KF7TracerEnemy", args[0], args[1], frandom(-1,1))	
+			TNT1 A 0 A_CustomMissile("Goldeneye_DD44TracerEnemy", args[0], args[1], frandom(-1,1))	
 			Goto Resolve
 		FireDD44:
 			TNT1 A 0 A_Playsound("Goldeneye/DD44Shot", CHAN_WEAPON)
-			TNT1 A 0 A_CustomMissile("Goldeneye_KF7TracerEnemy", args[0], args[1], frandom(-1,1))
+			TNT1 A 0 A_CustomMissile("Goldeneye_DD44TracerEnemy", args[0], args[1], frandom(-1,1))
 			Goto Resolve
 		FireKlobb:
 			TNT1 A 0 A_Playsound("Goldeneye/KlobbShot", CHAN_WEAPON)
@@ -1351,7 +1351,7 @@ actor GoldeneyeEnemyWeaponChooser : Trigger
 			Goto Resolve
 		FireKF7:
 			TNT1 A 0 A_Playsound("Goldeneye/KF7Shot", CHAN_WEAPON)
-			TNT1 A 0 A_CustomMissile("Goldeneye_KF7TracerEnemy", args[0], args[1], frandom(-4,4))
+			TNT1 A 0 A_CustomMissile("Goldeneye_DD44TracerEnemy", args[0], args[1], frandom(-4,4))
 			Goto Resolve
 		FireZMG:
 			TNT1 A 0 A_Playsound("Goldeneye/ZMGShot", CHAN_WEAPON)
