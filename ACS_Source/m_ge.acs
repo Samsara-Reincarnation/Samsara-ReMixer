@@ -1189,7 +1189,7 @@ Script "GoldeneyeUpdateAppearance" (void)
 				GiveInventory(strparam(s:game,s:"_Gun_Dual",s:goldfinger ? GFGunTypes[CheckInventory("Goldeneye_GunPart")-1] : GunTypes[CheckInventory("Goldeneye_GunPart")-1]),1);
 		}
 	}
-	if(CheckInventory("Goldeneye_HasJetPack")) GiveInventory("Goldeneye_Misc_JetPack",1);
+	if(CheckInventory("Goldeneye_HasJetPack")) GiveInventory(goldfinger ? "Goldfinger_Misc_JetPack" : "Goldeneye_Misc_JetPack",1);
 }
 
 Script "GoldeneyeDrawEnemyFlash" (int dual)

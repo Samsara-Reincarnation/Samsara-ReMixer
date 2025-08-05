@@ -4,7 +4,7 @@ Actor Goldfinger_OddJob : Goldeneye_EnemyBase
 	Yscale 1.05
 	Health 3000
 	Tag "Oddjob"
-    Obituary "%o was painted in gold by Oddjob."
+    Obituary "%o was assassinated by Oddjob."
 	Painchance 0
 	States
 	{
