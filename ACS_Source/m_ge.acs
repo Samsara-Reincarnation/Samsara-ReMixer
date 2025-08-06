@@ -584,7 +584,7 @@ Script "GoldeneyeEnemyPartsPicker" (int type, int ec, int goldfinger)
 	}
 	else
 	{
-		if(type == 1 || type == 2 || type == 16)
+		if(type == 1 || type == 2 || type == 16 || type == 27)
 			randomHead = random(0,5);	
 		else
 			randomHead = random(6,13);	
