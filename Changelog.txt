@@ -222,6 +222,7 @@ Rise of the Triad:
 Blake Stone:
 
 * Fixed the Water Alien obituary.
+! Water Aliens no longer count for kills in the map.
 
 Blood:
 

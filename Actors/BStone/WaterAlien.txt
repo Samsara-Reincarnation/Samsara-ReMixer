@@ -21,6 +21,7 @@ Actor WaterAlien : SamsaraMonsterGhost {
 	+LOOKALLAROUND
 	+DONTRIP	
 	-SHOOTABLE
+	-COUNTKILL
 	SeeSound ""
 	PainSound ""
 	DeathSound "wateralien/death"
