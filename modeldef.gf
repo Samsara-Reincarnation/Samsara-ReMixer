@@ -605,6 +605,15 @@ Model Goldfinger_P38EnemyDrop
 	FrameIndex GF00 Z 0 0
 }
 
+Model Goldfinger_RemingtonMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "shellbox.md3"
+	Scale 2.0 2.0 2.0
+	
+	FrameIndex GF00 Z 0 0
+}
+
 Model Goldfinger_M14MagEnemyDrop
 {
 	Path "Models/Goldfinger/items"

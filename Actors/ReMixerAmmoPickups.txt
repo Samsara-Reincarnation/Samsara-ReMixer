@@ -1728,6 +1728,92 @@ Actor Goldfinger_P38EnemyDrop : Ammo1Small // currently looks like an EnemyDrop,
     }
 }
 
+Actor Goldfinger_RemingtonMagEnemyDrop : Ammo2Small
+{
+    Gravity 0.33
+    +DONTGIB
+    +DROPPED
+    +NEVERRESPAWN
+    States
+    {
+      Spawn:
+        GF00 Z 0
+        goto SpawnGameModeCheck
+
+      SpawnActual:
+        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
+        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
+      SpawnActualStart:
+        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
+        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
+        GF00 Z 0 A_SetAngle(random(0,360))
+        GF00 Z 0 A_SetPitch(random(0,360))
+      SpawnActualAnim:
+        GF00 Z 0 A_SetPitch(pitch-15)
+        GF00 Z 0 A_SetAngle(angle-15)
+        GF00 Z 1 A_CheckFloor("SpawnActualLand")
+        loop
+
+      SpawnActualLand:
+        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
+        GF00 Z 0 A_Stop
+        GF00 Z -1 A_SetPitch(0)
+        stop
+
+      PickupDisplayDefault:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 2, 2)
+        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
+        TNT1 A 0 A_PlaySound("ammo/shellsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
+        goto PickupSuccess
+
+      PickupSuccessDefault:
+        TNT1 A 0 A_GiveInventory("Shell",5)
+        stop
+
+      PickupSuccessWolfenstein:
+        TNT1 A 0 A_JumpIfInventory("WolfenClassMode",2,"PickupSuccessTotenkopf")
+        goto Super::PickupSuccessWolfenstein
+
+      PickupSuccessTotenkopf:
+        goto PickupSuccessDefault
+
+      PickupSuccessQuake1:
+        TNT1 A 0 A_GiveInventory("Shell",5)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",1)
+        stop
+
+      PickupSuccessStrife:
+        TNT1 A 0 A_GiveInventory("Shell",5)
+        TNT1 A 0 A_GiveInventory("StrifePoisonAmmo",2)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",1)
+        stop
+
+      PickupSuccessDisruptor:
+        TNT1 A 0 A_GiveInventory("Clip",10)
+        TNT1 A 0 A_GiveInventory("Shell",5)
+        stop
+
+      PickupSuccessShadowWarrior:
+        goto PickupSuccessQuake1
+
+      PickupSuccessGoldenEye:
+        goto PickupSuccessDisruptor
+
+      PickupSuccessPainkiller:
+      PickupSuccessPainkillerReplenish:
+        TNT1 A 0 A_GiveInventory("Shell",5)
+        stop
+
+      PickupSuccessRTCW:
+        TNT1 A 0 A_GiveInventory("Shell",5)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo2",2)
+        stop
+
+      PickupSuccessDescent:
+        goto PickupSuccessDisruptor
+    }
+}
+
 Actor Goldfinger_M14MagEnemyDrop : Ammo4Small
 {
     Gravity 0.33
