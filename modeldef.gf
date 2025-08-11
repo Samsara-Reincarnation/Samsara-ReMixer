@@ -578,6 +578,15 @@ Model Goldfinger_SW36EnemyDrop
 	FrameIndex GF00 Z 0 0
 }
 
+Model Goldfinger_PPKEnemyDrop
+{
+	Path "Models/GoldFinger/pickups"
+	Model 0 "ppk.md3"
+	Scale -1.0 1.0 1.0
+
+	FrameIndex GF00 Z 0 0
+}
+
 Model Goldfinger_ColtEnemyDrop
 {
 	Path "Models/GoldFinger/pickups"
@@ -605,6 +614,14 @@ Model Goldfinger_P38EnemyDrop
 	FrameIndex GF00 Z 0 0
 }
 
+Model Goldfinger_MP40MagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "mp40mag.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
 Model Goldfinger_RemingtonMagEnemyDrop
 {
 	Path "Models/Goldfinger/items"
@@ -614,11 +631,123 @@ Model Goldfinger_RemingtonMagEnemyDrop
 	FrameIndex GF00 Z 0 0
 }
 
+Model Goldfinger_AK47MagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "ak47mag.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_ThompsonMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "thompsonmag.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_ThompsonDrumMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "drummag.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_M1CarbineMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "m1carbinemagazine.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_GarandMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "garandclip.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_Kar98KMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "kar98kclip.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
 Model Goldfinger_M14MagEnemyDrop
 {
 	Path "Models/Goldfinger/items"
 	Model 0 "m14magazine.md3"
 	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_AR7MagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "kar98kclip.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_UziMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "uzimag.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_SW22MagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "sw22cyl.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_SW36MagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "sw36cyl.md3"
+	
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_PPKMagEnemyDrop
+{
+	Path "Models/GoldFinger/items"
+	Model 0 "ppkmag.md3"
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_ColtMagEnemyDrop
+{
+	Path "Models/GoldFinger/items"
+	Model 0 "ppkmag.md3"
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_LugerMagEnemyDrop
+{
+	Path "Models/GoldFinger/items"
+	Model 0 "ppkmag.md3"
+
+	FrameIndex GF00 Z 0 0
+}
+
+Model Goldfinger_P38MagEnemyDrop
+{
+	Path "Models/GoldFinger/items"
+	Model 0 "ppkmag.md3"
+
 	FrameIndex GF00 Z 0 0
 }
 
