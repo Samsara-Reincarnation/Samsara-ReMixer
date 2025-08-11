@@ -2018,6 +2018,8 @@ Actor Goldfinger_RemingtonMagEnemyDrop : Ammo2Small
     }
 }
 
+Actor Goldfinger_PurdyMagEnemyDrop : Goldfinger_RemingtonMagEnemyDrop {}
+
 actor Goldfinger_AK47MagEnemyDrop : Ammo1Big
 {
     Gravity 0.33

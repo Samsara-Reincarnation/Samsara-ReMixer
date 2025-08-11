@@ -1108,7 +1108,7 @@ Script "GoldeneyeEnemyDrops" (void)
 {
 	int goldfinger = CheckInventory("Goldfinger_IsGoldFinger64");
 	if(CheckInventory("Goldeneye_BodyPart") == 21 && !goldfinger) terminate;
-	int x,y,z,guntype,randnum;
+	int x,y,z,guntype,randnum,rand2;
 	str mag;
 	x = GetActorVelX(0);
 	y = GetActorVelY(0);
@@ -1118,7 +1118,21 @@ Script "GoldeneyeEnemyDrops" (void)
 	if(!goldfinger && (guntype <= 16 || guntype == 27))
 	{
 		randnum = random(0,100);
-		if (randnum <= 15)
+		if (randnum <= 25)
+			mag = "mag";
+		else
+			mag = "";
+	}
+	else if(guntype != 2 && guntype != 5 && guntype != 7 && guntype != 11)
+	{
+		if(guntype == 9 && CheckInventory("Goldeneye_BodyPart") != 19)
+			randnum = 0; //Only Kisch has a chance of dropping an M14
+		else if(guntype == 4 || guntype == 6 || guntype == 10)
+			randnum = random(0,25); //Very rare chance
+		else
+			randnum = random(0,100);
+		
+		if (randnum <= 25)
 			mag = "mag";
 		else
 			mag = "";
@@ -1161,9 +1175,9 @@ Script "GoldeneyeEnemyDrops" (void)
 	else
 	{
 		if(CheckInventory("Goldeneye_DualWield"))
-			SpawnForced(StrParam(s:"Goldfinger_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1],s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X-45.0),(y+0),(z+random(40.0,48.0)));
+			SpawnForced(StrParam(s:"Goldfinger_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X-45.0),(y+0),(z+random(40.0,48.0)));
 			
-		SpawnForced(StrParam(s:"Goldfinger_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1],s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));	
+		SpawnForced(StrParam(s:"Goldfinger_",s:GFGunTypes[CheckInventory("Goldeneye_GunPart")-1],s:mag,s:"EnemyDrop"),GetActorX(0),GetActorY(0),GetActorZ(0) + (X+45.0),(y+0),(z+random(40.0,48.0)));	
 	}
 }	
 	

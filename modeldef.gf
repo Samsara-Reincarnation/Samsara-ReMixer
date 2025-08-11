@@ -631,6 +631,15 @@ Model Goldfinger_RemingtonMagEnemyDrop
 	FrameIndex GF00 Z 0 0
 }
 
+Model Goldfinger_PurdyMagEnemyDrop
+{
+	Path "Models/Goldfinger/items"
+	Model 0 "shellbox.md3"
+	Scale 2.0 2.0 2.0
+	
+	FrameIndex GF00 Z 0 0
+}
+
 Model Goldfinger_AK47MagEnemyDrop
 {
 	Path "Models/Goldfinger/items"
@@ -667,6 +676,7 @@ Model Goldfinger_GarandMagEnemyDrop
 {
 	Path "Models/Goldfinger/items"
 	Model 0 "garandclip.md3"
+	Scale 2.0 2.0 2.0
 	
 	FrameIndex GF00 Z 0 0
 }
@@ -675,6 +685,7 @@ Model Goldfinger_Kar98KMagEnemyDrop
 {
 	Path "Models/Goldfinger/items"
 	Model 0 "kar98kclip.md3"
+	Scale 2.0 2.0 2.0
 	
 	FrameIndex GF00 Z 0 0
 }
@@ -723,6 +734,7 @@ Model Goldfinger_PPKMagEnemyDrop
 {
 	Path "Models/GoldFinger/items"
 	Model 0 "ppkmag.md3"
+	Scale 2.0 2.0 2.0
 
 	FrameIndex GF00 Z 0 0
 }
@@ -731,6 +743,7 @@ Model Goldfinger_ColtMagEnemyDrop
 {
 	Path "Models/GoldFinger/items"
 	Model 0 "ppkmag.md3"
+	Scale 2.0 2.0 2.0
 
 	FrameIndex GF00 Z 0 0
 }
@@ -739,6 +752,7 @@ Model Goldfinger_LugerMagEnemyDrop
 {
 	Path "Models/GoldFinger/items"
 	Model 0 "ppkmag.md3"
+	Scale 2.0 2.0 2.0
 
 	FrameIndex GF00 Z 0 0
 }
@@ -747,6 +761,7 @@ Model Goldfinger_P38MagEnemyDrop
 {
 	Path "Models/GoldFinger/items"
 	Model 0 "ppkmag.md3"
+	Scale 2.0 2.0 2.0
 
 	FrameIndex GF00 Z 0 0
 }
