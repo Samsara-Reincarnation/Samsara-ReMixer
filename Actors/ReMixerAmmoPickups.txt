@@ -1120,7 +1120,7 @@ actor Goldeneye_KlobbMagEnemyDrop : Ammo1Small
     }
 }
 
-actor Goldeneye_DD44MagEnemyDrop : Goldeneye_KlobbMagEnemyDrop // was Goldeneye_DD44EnemyDrop, which inherited from Clip2
+actor Goldeneye_DD44MagEnemyDrop : Goldeneye_KlobbMagEnemyDrop
 {
     States
     {
@@ -1187,7 +1187,7 @@ actor Goldeneye_DD44MagEnemyDrop : Goldeneye_KlobbMagEnemyDrop // was Goldeneye_
     }
 }
 
-actor Goldeneye_PP7MagEnemyDrop : Goldeneye_KlobbMagEnemyDrop // was Goldeneye_DD44EnemyDrop, which inherited from Clip2
+actor Goldeneye_PP7MagEnemyDrop : Goldeneye_KlobbMagEnemyDrop
 {
     States
     {
@@ -1797,35 +1797,10 @@ actor Goldfinger_ColtEnemyDrop : Clip2
     }
 }
 
-Actor Goldfinger_LugerEnemyDrop : Clip2
+Actor Goldfinger_LugerEnemyDrop : Goldfinger_ColtEnemyDrop
 {
-    Gravity 0.33
     States
     {
-      Spawn:
-        GF00 Z 0
-        goto SpawnGameModeCheck
-
-      SpawnActual:
-        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
-        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
-      SpawnActualStart:
-        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
-        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
-        GF00 Z 0 A_SetAngle(random(0,360))
-        GF00 Z 0 A_SetPitch(random(0,360))
-      SpawnActualAnim:
-        GF00 Z 0 A_SetPitch(pitch-15)
-        GF00 Z 0 A_SetAngle(angle-15)
-        GF00 Z 1 A_CheckFloor("SpawnActualLand")
-        loop
-
-      SpawnActualLand:
-        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
-        GF00 Z 0 A_Stop
-        GF00 Z -1 A_SetPitch(0)
-        stop
-
       PickupDisplayDefault:
         TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 9)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
@@ -1834,35 +1809,10 @@ Actor Goldfinger_LugerEnemyDrop : Clip2
     }
 }
 
-Actor Goldfinger_P38EnemyDrop : Clip2
+Actor Goldfinger_P38EnemyDrop : Goldfinger_ColtEnemyDrop
 {
-    Gravity 0.33
     States
     {
-      Spawn:
-        GF00 Z 0
-        goto SpawnGameModeCheck
-
-      SpawnActual:
-        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
-        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
-      SpawnActualStart:
-        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
-        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
-        GF00 Z 0 A_SetAngle(random(0,360))
-        GF00 Z 0 A_SetPitch(random(0,360))
-      SpawnActualAnim:
-        GF00 Z 0 A_SetPitch(pitch-15)
-        GF00 Z 0 A_SetAngle(angle-15)
-        GF00 Z 1 A_CheckFloor("SpawnActualLand")
-        loop
-
-      SpawnActualLand:
-        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
-        GF00 Z 0 A_Stop
-        GF00 Z -1 A_SetPitch(0)
-        stop
-
       PickupDisplayDefault:
         TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 10)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
@@ -2210,7 +2160,7 @@ actor Goldfinger_ThompsonMagEnemyDrop : Ammo1Small
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 14)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 11)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -2431,7 +2381,7 @@ actor Goldfinger_M1CarbineMagEnemyDrop : Ammo4Small
         goto PickupDefault
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 6, 3)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 6, 1)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/plasmasmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -2625,7 +2575,7 @@ actor Goldfinger_Kar98KMagEnemyDrop : Ammo4Small
         goto PickupDefault
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 6, 4)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 6, 3)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/plasmasmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -2719,7 +2669,7 @@ Actor Goldfinger_M14MagEnemyDrop : Ammo4Small
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 6, 1)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 6, 4)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/plasmasmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -2896,7 +2846,7 @@ actor Goldfinger_UziMagEnemyDrop : Ammo1Small
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 15)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 12)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -3005,7 +2955,7 @@ actor Goldfinger_SW22MagEnemyDrop : Ammo1Small
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 16)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 13)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
@@ -3072,103 +3022,15 @@ actor Goldfinger_SW22MagEnemyDrop : Ammo1Small
     }
 }
 
-actor Goldfinger_SW36MagEnemyDrop : Ammo1Small
+actor Goldfinger_SW36MagEnemyDrop : Goldfinger_SW22MagEnemyDrop
 {
-    Gravity 0.33
-    +DONTGIB
-    +DROPPED
-    +NEVERRESPAWN
     States
     {
-      Spawn:
-        GF00 Z 0
-        goto SpawnGameModeCheck
-
-      SpawnActual:
-        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
-        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
-      SpawnActualStart:
-        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
-        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
-        GF00 Z 0 A_SetAngle(random(0,360))
-        GF00 Z 0 A_SetPitch(random(0,360))
-      SpawnActualAnim:
-        GF00 Z 0 A_SetPitch(pitch-15)
-        GF00 Z 0 A_SetAngle(angle-15)
-        GF00 Z 1 A_CheckFloor("SpawnActualLand")
-        loop
-
-      SpawnActualLand:
-        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
-        GF00 Z 0 A_Stop
-        GF00 Z -1 A_SetPitch(0)
-        stop
-
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 17)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 14)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",5)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",15)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",22)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",6)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",18)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",18)
-        stop
-
-      PickupSuccessCatacomb:
-        TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(2,3))
-        TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(2,3))
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",5)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",9)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",18)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",18)
-        stop
     }
 }
 
@@ -3205,349 +3067,151 @@ actor Goldfinger_PPKMagEnemyDrop : Ammo1Small
         stop
 
       PickupDisplayDefault:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 15)
+        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
+        TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
+        goto PickupSuccess
+
+      PickupSuccessDefault:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        stop
+
+      PickupSuccessQuake1:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
+        TNT1 A 0 A_GiveInventory("LavaNails",2)
+        stop
+
+      PickupSuccessROTT:
+        TNT1 A 0 A_GiveInventory("RottMissiles",1)
+        stop
+
+      PickupSuccessBlake:
+        TNT1 A 0 A_GiveInventory("Clip",9)
+        stop
+
+      PickupSuccessCorridor7:
+        goto PickupSuccessBlake
+
+      PickupSuccessDisruptor:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",3)
+        stop
+
+      PickupSuccessWitchaven:
+        goto PickupSuccessBlake
+
+      PickupSuccessRedneck:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        TNT1 A 0 A_GiveInventory("MotoGunAmmo",7)
+        stop
+
+      PickupSuccessQuake2:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        TNT1 A 0 A_GiveInventory("Q2Flechettes",3)
+        stop
+
+      PickupSuccessPainkiller:
+      PickupSuccessPainkillerReplenish:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",3)
+        stop
+
+      PickupSuccessRTCW:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",3)
+        stop
+
+      PickupSuccessQuake3:
+        TNT1 A 0 A_GiveInventory("Clip",7)
+        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",7)
+        stop
+    }
+}
+
+actor Goldfinger_ColtMagEnemyDrop : Goldfinger_PPKMagEnemyDrop
+{
+    States
+    {
+      PickupDisplayDefault:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 16)
+        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
+        TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
+        goto PickupSuccess
+    }
+}
+
+actor Goldfinger_LugerMagEnemyDrop : Goldfinger_PPKMagEnemyDrop
+{
+    States
+    {
+      PickupDisplayDefault:
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 17)
+        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
+        TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
+        goto PickupSuccess
+
+      PickupSuccessDefault:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        stop
+
+      PickupSuccessQuake1:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
+        TNT1 A 0 A_GiveInventory("LavaNails",3)
+        stop
+
+      PickupSuccessBlake:
+        TNT1 A 0 A_GiveInventory("Clip",10)
+        stop
+
+      PickupSuccessCorridor7:
+        goto PickupSuccessBlake
+
+      PickupSuccessDisruptor:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",3)
+        stop
+
+      PickupSuccessWitchaven:
+        goto PickupSuccessBlake
+
+      PickupSuccessRedneck:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        TNT1 A 0 A_GiveInventory("MotoGunAmmo",8)
+        stop
+
+      PickupSuccessQuake2:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        TNT1 A 0 A_GiveInventory("Q2Flechettes",4)
+        stop
+
+      PickupSuccessPainkiller:
+      PickupSuccessPainkillerReplenish:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",3)
+        stop
+
+      PickupSuccessRTCW:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",4)
+        stop
+
+      PickupSuccessQuake3:
+        TNT1 A 0 A_GiveInventory("Clip",8)
+        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",8)
+        stop
+    }
+}
+
+actor Goldfinger_P38MagEnemyDrop : Goldfinger_LugerMagEnemyDrop
+{
+    States
+    {
+      PickupDisplayDefault:
         TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 18)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",6)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",5)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",24)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",8)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",20)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",10)
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",8)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",10)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",20)
-        stop
-    }
-}
-
-actor Goldfinger_ColtMagEnemyDrop : Ammo1Small
-{
-    Gravity 0.33
-    +DONTGIB
-    +DROPPED
-    +NEVERRESPAWN
-    States
-    {
-      Spawn:
-        GF00 Z 0
-        goto SpawnGameModeCheck
-
-      SpawnActual:
-        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
-        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
-      SpawnActualStart:
-        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
-        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
-        GF00 Z 0 A_SetAngle(random(0,360))
-        GF00 Z 0 A_SetPitch(random(0,360))
-      SpawnActualAnim:
-        GF00 Z 0 A_SetPitch(pitch-15)
-        GF00 Z 0 A_SetAngle(angle-15)
-        GF00 Z 1 A_CheckFloor("SpawnActualLand")
-        loop
-
-      SpawnActualLand:
-        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
-        GF00 Z 0 A_Stop
-        GF00 Z -1 A_SetPitch(0)
-        stop
-
-      PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 11)
-        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
-        TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
-        goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",6)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",5)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",24)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",8)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",20)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",10)
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",8)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",10)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",20)
-        stop
-    }
-}
-
-actor Goldfinger_LugerMagEnemyDrop : Ammo1Small
-{
-    Gravity 0.33
-    +DONTGIB
-    +DROPPED
-    +NEVERRESPAWN
-    States
-    {
-      Spawn:
-        GF00 Z 0
-        goto SpawnGameModeCheck
-
-      SpawnActual:
-        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
-        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
-      SpawnActualStart:
-        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
-        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
-        GF00 Z 0 A_SetAngle(random(0,360))
-        GF00 Z 0 A_SetPitch(random(0,360))
-      SpawnActualAnim:
-        GF00 Z 0 A_SetPitch(pitch-15)
-        GF00 Z 0 A_SetAngle(angle-15)
-        GF00 Z 1 A_CheckFloor("SpawnActualLand")
-        loop
-
-      SpawnActualLand:
-        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
-        GF00 Z 0 A_Stop
-        GF00 Z -1 A_SetPitch(0)
-        stop
-
-      PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 12)
-        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
-        TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
-        goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",6)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",5)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",8)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",20)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",10)
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",8)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",10)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",20)
-        stop
-    }
-}
-
-actor Goldfinger_P38MagEnemyDrop : Ammo1Small
-{
-    Gravity 0.33
-    +DONTGIB
-    +DROPPED
-    +NEVERRESPAWN
-    States
-    {
-      Spawn:
-        GF00 Z 0
-        goto SpawnGameModeCheck
-
-      SpawnActual:
-        GF00 Z 0 A_ChangeFlag("THRUACTORS",false)
-        GF00 Z 0 A_ChangeFlag("NOTIMEFREEZE",false)
-      SpawnActualStart:
-        GF00 Z 0 ThrustThing(random(0,256)/360,random(1,2),0,0)
-        GF00 Z 0 ThrustThingZ(0,random(0,2),0,0)
-        GF00 Z 0 A_SetAngle(random(0,360))
-        GF00 Z 0 A_SetPitch(random(0,360))
-      SpawnActualAnim:
-        GF00 Z 0 A_SetPitch(pitch-15)
-        GF00 Z 0 A_SetAngle(angle-15)
-        GF00 Z 1 A_CheckFloor("SpawnActualLand")
-        loop
-
-      SpawnActualLand:
-        GF00 Z 0 A_PlaySound("Goldeneye/DropLand")
-        GF00 Z 0 A_Stop
-        GF00 Z -1 A_SetPitch(0)
-        stop
-
-      PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 13)
-        TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
-        TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
-        goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",6)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",5)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",24)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",8)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",20)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",10)
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",8)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",10)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",20)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",20)
-        stop
     }
 }

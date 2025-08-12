@@ -545,7 +545,7 @@ Model Goldfinger_M14EnemyDrop
 Model Goldfinger_AR7EnemyDrop
 {
 	Path "Models/GoldFinger/pickups"
-	Model 0 "mp40.md3"
+	Model 0 "ar7.md3"
 	Scale -1.0 1.0 1.0
 
 	FrameIndex GF00 Z 0 0
