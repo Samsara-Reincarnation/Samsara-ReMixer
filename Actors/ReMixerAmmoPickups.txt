@@ -1760,7 +1760,7 @@ actor Goldfinger_PPKEnemyDrop : SamsaraEnemyAmmoPickup
     }
 }
 
-actor Goldfinger_ColtEnemyDrop : : Clip2
+actor Goldfinger_ColtEnemyDrop : Clip2
 {
     Gravity 0.33
     States
