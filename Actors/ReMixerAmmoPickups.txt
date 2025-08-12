@@ -1760,12 +1760,9 @@ actor Goldfinger_PPKEnemyDrop : SamsaraEnemyAmmoPickup
     }
 }
 
-actor Goldfinger_ColtEnemyDrop : Ammo1Small // currently looks like an EnemyDrop, but behaves like a MagEnemyDrop
+actor Goldfinger_ColtEnemyDrop : : Clip2
 {
     Gravity 0.33
-    +DONTGIB
-    +DROPPED
-    +NEVERRESPAWN
     States
     {
       Spawn:
@@ -1793,74 +1790,16 @@ actor Goldfinger_ColtEnemyDrop : Ammo1Small // currently looks like an EnemyDrop
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 11)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 8)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",2)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",1)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",9)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",3)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",7)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",3)
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",3)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",3)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",7)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",7)
-        stop
     }
 }
 
-Actor Goldfinger_LugerEnemyDrop : Ammo1Small // currently looks like an EnemyDrop, but behaves like a MagEnemyDrop
+Actor Goldfinger_LugerEnemyDrop : Clip2
 {
     Gravity 0.33
-    +DONTGIB
-    +DROPPED
-    +NEVERRESPAWN
     States
     {
       Spawn:
@@ -1888,74 +1827,16 @@ Actor Goldfinger_LugerEnemyDrop : Ammo1Small // currently looks like an EnemyDro
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 12)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 9)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",3)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",1)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",10)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",3)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",8)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",4)
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",3)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",4)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",8)
-        stop
     }
 }
 
-Actor Goldfinger_P38EnemyDrop : Ammo1Small // currently looks like an EnemyDrop, but behaves like a MagEnemyDrop
+Actor Goldfinger_P38EnemyDrop : Clip2
 {
     Gravity 0.33
-    +DONTGIB
-    +DROPPED
-    +NEVERRESPAWN
     States
     {
       Spawn:
@@ -1983,65 +1864,10 @@ Actor Goldfinger_P38EnemyDrop : Ammo1Small // currently looks like an EnemyDrop,
         stop
 
       PickupDisplayDefault:
-        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 13)
+        TNT1 A 0 ACS_NamedExecuteAlways("SamsaraPickupMessages", 0, 7, 0, 10)
         TNT1 A 0 A_GiveInventory("SamsaraAmmoPickupBlend")
         TNT1 A 0 A_PlaySound("ammo/bulletsmall",CHAN_ITEM|CHAN_MAYBE_LOCAL)
         goto PickupSuccess
-
-      PickupSuccessDefault:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        stop
-
-      PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",3)
-        stop
-
-      PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",1)
-        stop
-
-      PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",10)
-        stop
-
-      PickupSuccessCorridor7:
-        goto PickupSuccessBlake
-
-      PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",3)
-        stop
-
-      PickupSuccessWitchaven:
-        goto PickupSuccessBlake
-
-      PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",8)
-        stop
-
-      PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",4)
-        stop
-
-      PickupSuccessPainkiller:
-      PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",3)
-        stop
-
-      PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",4)
-        stop
-
-      PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",8)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",8)
-        stop
     }
 }
 
@@ -2092,12 +1918,12 @@ actor Goldfinger_MP40MagEnemyDrop : Ammo1Big
         goto PickupSuccessDefault
 
       PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",32)
         TNT1 A 0 A_GiveInventory("Duke64DumDums",4)
         stop
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",32)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
         TNT1 A 0 A_GiveInventory("LavaNails",11)
         stop
@@ -2107,14 +1933,14 @@ actor Goldfinger_MP40MagEnemyDrop : Ammo1Big
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",36)
+        TNT1 A 0 A_GiveInventory("Clip",40)
         stop
 
       PickupSuccessCorridor7:
         goto PickupSuccessBlake
 
       PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",32)
         TNT1 A 0 A_GiveInventory("DisruptorHiFreq",10)
         stop
 
@@ -2122,13 +1948,13 @@ actor Goldfinger_MP40MagEnemyDrop : Ammo1Big
         goto PickupSuccessBlake
 
       PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",32)
+        TNT1 A 0 A_GiveInventory("MotoGunAmmo",32)
         stop
 
       PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",15)
+        TNT1 A 0 A_GiveInventory("Clip",32)
+        TNT1 A 0 A_GiveInventory("Q2Flechettes",16)
         stop
 
       PickupSuccessCatacomb:
@@ -2138,18 +1964,18 @@ actor Goldfinger_MP40MagEnemyDrop : Ammo1Big
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",32)
         TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",9)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",15)
+        TNT1 A 0 A_GiveInventory("Clip",32)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",16)
         stop
 
       PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",32)
+        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",32)
         stop
     }
 }
@@ -2398,12 +2224,12 @@ actor Goldfinger_ThompsonMagEnemyDrop : Ammo1Small
         goto PickupSuccessDefault
 
       PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",20)
         TNT1 A 0 A_GiveInventory("Duke64DumDums",4)
         stop
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",20)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
         TNT1 A 0 A_GiveInventory("LavaNails",11)
         stop
@@ -2413,14 +2239,14 @@ actor Goldfinger_ThompsonMagEnemyDrop : Ammo1Small
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",36)
+        TNT1 A 0 A_GiveInventory("Clip",24)
         stop
 
       PickupSuccessCorridor7:
         goto PickupSuccessBlake
 
       PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",20)
         TNT1 A 0 A_GiveInventory("DisruptorHiFreq",10)
         stop
 
@@ -2428,13 +2254,13 @@ actor Goldfinger_ThompsonMagEnemyDrop : Ammo1Small
         goto PickupSuccessBlake
 
       PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",20)
+        TNT1 A 0 A_GiveInventory("MotoGunAmmo",20)
         stop
 
       PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",15)
+        TNT1 A 0 A_GiveInventory("Clip",20)
+        TNT1 A 0 A_GiveInventory("Q2Flechettes",10)
         stop
 
       PickupSuccessCatacomb:
@@ -2444,18 +2270,18 @@ actor Goldfinger_ThompsonMagEnemyDrop : Ammo1Small
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",20)
         TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",9)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",15)
+        TNT1 A 0 A_GiveInventory("Clip",20)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",10)
         stop
 
       PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",20)
+        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",20)
         stop
     }
 }
@@ -2507,64 +2333,64 @@ actor Goldfinger_ThompsonDrumMagEnemyDrop : Ammo1Big
         goto PickupSuccessDefault
 
       PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Duke64DumDums",4)
+        TNT1 A 0 A_GiveInventory("Clip",100)
+        TNT1 A 0 A_GiveInventory("Duke64DumDums",12)
         stop
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",100)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",11)
+        TNT1 A 0 A_GiveInventory("LavaNails",33)
         stop
 
       PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",11)
+        TNT1 A 0 A_GiveInventory("RottMissiles",33)
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",36)
+        TNT1 A 0 A_GiveInventory("Clip",120)
         stop
 
       PickupSuccessCorridor7:
         goto PickupSuccessBlake
 
       PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",10)
+        TNT1 A 0 A_GiveInventory("Clip",100)
+        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",30)
         stop
 
       PickupSuccessWitchaven:
         goto PickupSuccessBlake
 
       PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",100)
+        TNT1 A 0 A_GiveInventory("MotoGunAmmo",100)
         stop
 
       PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",15)
+        TNT1 A 0 A_GiveInventory("Clip",100)
+        TNT1 A 0 A_GiveInventory("Q2Flechettes",50)
         stop
 
       PickupSuccessCatacomb:
-        TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(2,3))
-        TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(2,3))
+        TNT1 A 0 A_GiveInventory("Catacomb_Waves",random(6,9))
+        TNT1 A 0 A_GiveInventory("Catacomb_Zappers",random(6,9))
         stop
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",9)
+        TNT1 A 0 A_GiveInventory("Clip",100)
+        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",27)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",15)
+        TNT1 A 0 A_GiveInventory("Clip",100)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",50)
         stop
 
       PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",100)
+        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",100)
         stop
     }
 }
@@ -2619,34 +2445,29 @@ actor Goldfinger_M1CarbineMagEnemyDrop : Ammo4Small
         goto PickupSuccessDefault
 
       PickupSuccessStronghold:
-        TNT1 A 0 A_GiveInventory("Cell",80)
+        TNT1 A 0 A_GiveInventory("Cell",30)
         TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
         stop
-        TNT1 A 0 A_GiveInventory("DoomguyStrGas",96)
+        TNT1 A 0 A_GiveInventory("DoomguyStrGas",36)
         stop
 
       PickupSuccessDuke:
         TNT1 A 0 A_JumpIfInventory("DukeClassMode",2,"PickupSuccessDuke64")
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("ShrinkerAmmo",3)
-        TNT1 A 0 A_GiveInventory("ExpanderAmmo",20)
+        TNT1 A 0 A_GiveInventory("Cell",30)
+        TNT1 A 0 A_GiveInventory("ExpanderAmmo",6)
         stop
 
       PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("Duke64ShrinkerAmmo",2)
-        stop
+        goto PickupSuccessDefault
 
       PickupSuccessQuake1:
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
-        TNT1 A 0 A_GiveInventory("LavaNails",50)
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("PlasmaCell",1)
+        TNT1 A 0 A_GiveInventory("LavaNails",15)
+        TNT1 A 0 A_GiveInventory("Cell",30)
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Cell",100)
+        TNT1 A 0 A_GiveInventory("Cell",36)
         stop
 
       PickupSuccessCorridor7:
@@ -2660,13 +2481,13 @@ actor Goldfinger_M1CarbineMagEnemyDrop : Ammo4Small
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("Painkiller_ElectroAmmo",60)
+        TNT1 A 0 A_GiveInventory("Cell",30)
+        TNT1 A 0 A_GiveInventory("Painkiller_ElectroAmmo",20)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo4",40)
+        TNT1 A 0 A_GiveInventory("Cell",30)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo4",15)
         stop
     }
 }
@@ -2721,34 +2542,29 @@ actor Goldfinger_GarandMagEnemyDrop : Ammo4Small
         goto PickupSuccessDefault
 
       PickupSuccessStronghold:
-        TNT1 A 0 A_GiveInventory("Cell",80)
+        TNT1 A 0 A_GiveInventory("Cell",24)
         TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
         stop
-        TNT1 A 0 A_GiveInventory("DoomguyStrGas",96)
+        TNT1 A 0 A_GiveInventory("DoomguyStrGas",30)
         stop
 
       PickupSuccessDuke:
         TNT1 A 0 A_JumpIfInventory("DukeClassMode",2,"PickupSuccessDuke64")
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("ShrinkerAmmo",3)
-        TNT1 A 0 A_GiveInventory("ExpanderAmmo",20)
+        TNT1 A 0 A_GiveInventory("Cell",24)
+        TNT1 A 0 A_GiveInventory("ShrinkerAmmo",6)
         stop
 
       PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("Duke64ShrinkerAmmo",2)
-        stop
+        goto PickupSuccessDefault
 
       PickupSuccessQuake1:
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
-        TNT1 A 0 A_GiveInventory("LavaNails",50)
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("PlasmaCell",1)
+        TNT1 A 0 A_GiveInventory("LavaNails",12)
+        TNT1 A 0 A_GiveInventory("Cell",24)
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Cell",100)
+        TNT1 A 0 A_GiveInventory("Cell",30)
         stop
 
       PickupSuccessCorridor7:
@@ -2762,13 +2578,13 @@ actor Goldfinger_GarandMagEnemyDrop : Ammo4Small
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("Painkiller_ElectroAmmo",60)
+        TNT1 A 0 A_GiveInventory("Cell",24)
+        TNT1 A 0 A_GiveInventory("Painkiller_ElectroAmmo",15)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo4",40)
+        TNT1 A 0 A_GiveInventory("Cell",24)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo4",12)
         stop
     }
 }
@@ -2823,7 +2639,7 @@ actor Goldfinger_Kar98KMagEnemyDrop : Ammo4Small
         goto PickupSuccessDefault
 
       PickupSuccessStronghold:
-        TNT1 A 0 A_GiveInventory("Cell",80)
+        TNT1 A 0 A_GiveInventory("Cell",15)
         TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
         stop
         TNT1 A 0 A_GiveInventory("DoomguyStrGas",96)
@@ -2831,26 +2647,21 @@ actor Goldfinger_Kar98KMagEnemyDrop : Ammo4Small
 
       PickupSuccessDuke:
         TNT1 A 0 A_JumpIfInventory("DukeClassMode",2,"PickupSuccessDuke64")
-        TNT1 A 0 A_GiveInventory("Cell",80)
+        TNT1 A 0 A_GiveInventory("Cell",15)
         TNT1 A 0 A_GiveInventory("ShrinkerAmmo",3)
-        TNT1 A 0 A_GiveInventory("ExpanderAmmo",20)
         stop
 
       PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("Duke64ShrinkerAmmo",2)
-        stop
+        goto PickupSuccessDefault
 
       PickupSuccessQuake1:
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
-        TNT1 A 0 A_GiveInventory("LavaNails",50)
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("PlasmaCell",1)
+        TNT1 A 0 A_GiveInventory("LavaNails",7)
+        TNT1 A 0 A_GiveInventory("Cell",15)
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Cell",100)
+        TNT1 A 0 A_GiveInventory("Cell",18)
         stop
 
       PickupSuccessCorridor7:
@@ -2864,13 +2675,13 @@ actor Goldfinger_Kar98KMagEnemyDrop : Ammo4Small
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("Painkiller_ElectroAmmo",60)
+        TNT1 A 0 A_GiveInventory("Cell",15)
+        TNT1 A 0 A_GiveInventory("Painkiller_ElectroAmmo",10)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Cell",80)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo4",40)
+        TNT1 A 0 A_GiveInventory("Cell",15)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo4",7)
         stop
     }
 }
@@ -2925,13 +2736,13 @@ Actor Goldfinger_M14MagEnemyDrop : Ammo4Small
         TNT1 A 0 A_GiveInventory("Cell",40)
         TNT1 A 0 A_JumpIfInventory("SamsaraExtraWeaponsAreEnabled",1,1)
         stop
-        TNT1 A 0 A_GiveInventory("DoomguyStrGas",24)
+        TNT1 A 0 A_GiveInventory("DoomguyStrGas",48)
         stop
 
       PickupSuccessDuke:
         TNT1 A 0 A_JumpIfInventory("DukeClassMode",2,"PickupSuccessDuke64")
         TNT1 A 0 A_GiveInventory("Cell",40)
-        TNT1 A 0 A_GiveInventory("ExpanderAmmo",5)
+        TNT1 A 0 A_GiveInventory("ExpanderAmmo",10)
         stop
 
       PickupSuccessDuke64:
@@ -2939,7 +2750,7 @@ Actor Goldfinger_M14MagEnemyDrop : Ammo4Small
 
       PickupSuccessQuake1:
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,2)
-        TNT1 A 0 A_GiveInventory("LavaNails",10)
+        TNT1 A 0 A_GiveInventory("LavaNails",20)
         TNT1 A 0 A_GiveInventory("Cell",40)
         stop
 
@@ -3016,19 +2827,19 @@ Actor Goldfinger_AR7MagEnemyDrop : Ammo2Small
         goto PickupSuccessDefault
 
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Shell",5)
-        TNT1 A 0 A_GiveInventory("RocketAmmo",1)
+        TNT1 A 0 A_GiveInventory("Shell",8)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",2)
         stop
 
       PickupSuccessStrife:
-        TNT1 A 0 A_GiveInventory("Shell",5)
-        TNT1 A 0 A_GiveInventory("StrifePoisonAmmo",2)
-        TNT1 A 0 A_GiveInventory("RocketAmmo",1)
+        TNT1 A 0 A_GiveInventory("Shell",8)
+        TNT1 A 0 A_GiveInventory("StrifePoisonAmmo",4)
+        TNT1 A 0 A_GiveInventory("RocketAmmo",2)
         stop
 
       PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",10)
-        TNT1 A 0 A_GiveInventory("Shell",5)
+        TNT1 A 0 A_GiveInventory("Clip",16)
+        TNT1 A 0 A_GiveInventory("Shell",8)
         stop
 
       PickupSuccessShadowWarrior:
@@ -3039,12 +2850,12 @@ Actor Goldfinger_AR7MagEnemyDrop : Ammo2Small
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Shell",5)
+        TNT1 A 0 A_GiveInventory("Shell",8)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Shell",5)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo2",2)
+        TNT1 A 0 A_GiveInventory("Shell",8)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo2",4)
         stop
 
       PickupSuccessDescent:
@@ -3203,48 +3014,39 @@ actor Goldfinger_SW22MagEnemyDrop : Ammo1Small
         TNT1 A 0 A_GiveInventory("Clip",18)
         stop
 
-      PickupSuccessDuke:
-        TNT1 A 0 A_JumpIfInventory("DukeClassMode",2,"PickupSuccessDuke64")
-        goto PickupSuccessDefault
-
-      PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Duke64DumDums",4)
-        stop
-
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",18)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",11)
+        TNT1 A 0 A_GiveInventory("LavaNails",5)
         stop
 
       PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",11)
+        TNT1 A 0 A_GiveInventory("RottMissiles",15)
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",36)
+        TNT1 A 0 A_GiveInventory("Clip",22)
         stop
 
       PickupSuccessCorridor7:
         goto PickupSuccessBlake
 
       PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",10)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",6)
         stop
 
       PickupSuccessWitchaven:
         goto PickupSuccessBlake
 
       PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("MotoGunAmmo",18)
         stop
 
       PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",15)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("Q2Flechettes",18)
         stop
 
       PickupSuccessCatacomb:
@@ -3254,18 +3056,18 @@ actor Goldfinger_SW22MagEnemyDrop : Ammo1Small
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",9)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",5)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",15)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",9)
         stop
 
       PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",18)
         stop
     }
 }
@@ -3312,48 +3114,39 @@ actor Goldfinger_SW36MagEnemyDrop : Ammo1Small
         TNT1 A 0 A_GiveInventory("Clip",18)
         stop
 
-      PickupSuccessDuke:
-        TNT1 A 0 A_JumpIfInventory("DukeClassMode",2,"PickupSuccessDuke64")
-        goto PickupSuccessDefault
-
-      PickupSuccessDuke64:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Duke64DumDums",4)
-        stop
-
       PickupSuccessQuake1:
-        TNT1 A 0 A_GiveInventory("Clip",30)
+        TNT1 A 0 A_GiveInventory("Clip",18)
         TNT1 A 0 A_JumpIfInventory("QuakeModeOn",1,"PickupStop")
-        TNT1 A 0 A_GiveInventory("LavaNails",11)
+        TNT1 A 0 A_GiveInventory("LavaNails",5)
         stop
 
       PickupSuccessROTT:
-        TNT1 A 0 A_GiveInventory("RottMissiles",11)
+        TNT1 A 0 A_GiveInventory("RottMissiles",15)
         stop
 
       PickupSuccessBlake:
-        TNT1 A 0 A_GiveInventory("Clip",36)
+        TNT1 A 0 A_GiveInventory("Clip",22)
         stop
 
       PickupSuccessCorridor7:
         goto PickupSuccessBlake
 
       PickupSuccessDisruptor:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",10)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("DisruptorHiFreq",6)
         stop
 
       PickupSuccessWitchaven:
         goto PickupSuccessBlake
 
       PickupSuccessRedneck:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("MotoGunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("MotoGunAmmo",18)
         stop
 
       PickupSuccessQuake2:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q2Flechettes",15)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("Q2Flechettes",18)
         stop
 
       PickupSuccessCatacomb:
@@ -3363,18 +3156,18 @@ actor Goldfinger_SW36MagEnemyDrop : Ammo1Small
 
       PickupSuccessPainkiller:
       PickupSuccessPainkillerReplenish:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",9)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("Painkiller_FlamerAmmo",5)
         stop
 
       PickupSuccessRTCW:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",15)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("RTCW_AlliedAmmo1",9)
         stop
 
       PickupSuccessQuake3:
-        TNT1 A 0 A_GiveInventory("Clip",30)
-        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",30)
+        TNT1 A 0 A_GiveInventory("Clip",18)
+        TNT1 A 0 A_GiveInventory("Q3ChaingunAmmo",18)
         stop
     }
 }
