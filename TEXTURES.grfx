@@ -363,6 +363,246 @@ Graphic "CMPMGE20", 61, 236
 	Patch "CMPMGE20", 0, 0
 }
 
+Graphic "CMPMGF01", 80, 251
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF01", 0, 0
+}
+
+Graphic "CMPMGF02", 89, 259
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF02", 0, 0
+}
+
+Graphic "CMPMGF03", 90, 265
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF03", 0, 0
+}
+
+Graphic "CMPMGF04", 133, 256
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF04", 0, 0
+}
+
+Graphic "CMPMGF05", 140, 257
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF05", 0, 0
+}
+
+Graphic "CMPMGF06", 147, 269
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF06", 0, 0
+}
+
+Graphic "CMPMGF07", 133, 262
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF07", 0, 0
+}
+
+Graphic "CMPMGF08", 127, 268
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF08", 0, 0
+}
+
+Graphic "CMPMGF09", 136, 270
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF09", 0, 0
+}
+
+Graphic "CMPMGF10", 94, 265
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF10", 0, 0
+}
+
+Graphic "CMPMGF11", 128, 250
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF11", 0, 0
+}
+
+Graphic "CMPMGF12", 149, 260
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF12", 0, 0
+}
+
+Graphic "CMPMGF13", 168, 282
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF13", 0, 0
+}
+
+Graphic "CMPMGF14", 137, 255
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF14", 0, 0
+}
+
+Graphic "CMPMGF15", 508, 341
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF15", 0, 0
+}
+
+Graphic "CMPMGF16", 89, 259
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF16", 0, 0
+}
+
+Graphic "CMPMGF17", 130, 254
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF17", 0, 0
+}
+
+Graphic "CMPMGF18", 102, 257
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF18", 0, 0
+}
+
+Graphic "CMPMGF19", 91, 261
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF19", 0, 0
+}
+
+Graphic "CMPMGF20", 89, 261
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF20", 0, 0
+}
+
+Graphic "CMPMGF21", 203, 252
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF21", 0, 0
+}
+
+Graphic "CMPMGF22", 90, 271
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF22", 0, 0
+}
+
+Graphic "CMPMGF23", 116, 267
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF23", 0, 0
+}
+
+Graphic "CMPMGF24", 147, 267
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF24", 0, 0
+}
+
+Graphic "CMPMGF25", 103, 298
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF25", 0, 0
+}
+
+Graphic "CMPMGF26", 91, 261
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF26", 0, 0
+}
+
+Graphic "CMPMGF27", 92, 272
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF27", 0, 0
+}
+
+Graphic "CMPMGF28", 134, 252
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF28", 0, 0
+}
+
+Graphic "CMPMGF29", 148, 267
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF29", 0, 0
+}
+
+Graphic "CMPMGF30", 103, 285
+{
+	XScale 4.000
+	YScale 4.000
+	Offset 43, 230
+	Patch "CMPMGF30", 0, 0
+}
+
 Graphic "CMPMH115", 125, 112
 {
 	XScale 1.100
