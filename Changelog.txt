@@ -287,6 +287,7 @@ Half-Life:
 Shadow Warrior:
 
 * Fixed the ripper obituaries.
+* Fixed the sumo gas cloud not having proper ownership.
 
 CyberMage:
 

@@ -160,7 +160,7 @@ Actor SumoFart : SWGasBombFart
 	States
 	{
 		Spawn:
-			TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 8 A_SpawnItemEx("SumoGas", 0, 0, 4, random(-2,2), random(-2,2), random(1,2), random(0,359))
+			TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 8 A_SpawnItemEx("SumoGas", 0, 0, 4, random(-2,2), random(-2,2), random(1,2), random(0,359), SXF_TRANSFERPOINTERS)
 			Stop
 	}
 }
