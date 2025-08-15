@@ -139,7 +139,7 @@ Wolfenstein 3D:
 ! Hitler now has a 50% chance of playing his death animation from the SNES version of Wolfenstein 3D!
 + Hitler now drops slot 4S equipment on death.
 
--Lost Missions-
+-Lost Episodes-
 
 ! Added sprite rotations and some sprite polishes by PSTrooper, UnTrustable, Craneo, DeeDeeOZ, and Superdave938.
 * Ghosts and radioactive mist should now be properly killable when they self-revive if "Wolfenstein 3D: Killable Spectres" is off.

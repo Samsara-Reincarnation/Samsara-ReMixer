@@ -2080,7 +2080,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Wolf3D_RussianRedArmy"}
 			}
 		},
-		{//Lost Missions
+		{//Lost Episodes
 			{//Zombieman
 				{"SODGuard"}
 			},
@@ -14901,7 +14901,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
-		{//Lost Missions
+		{//Lost Episodes
 			{//Zombieman
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
