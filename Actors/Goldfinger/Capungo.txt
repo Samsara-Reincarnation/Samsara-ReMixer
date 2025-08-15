@@ -1,7 +1,7 @@
 Actor Goldfinger_Capungo : Goldeneye_EnemyBase
 {
 	Tag "Capungo"
-    Obituary "%o failed to fry Capungo in a bath tub."
+    Obituary "%o failed to fry Capungo in a bathtub."
 	Health 500
 	States
 	{
