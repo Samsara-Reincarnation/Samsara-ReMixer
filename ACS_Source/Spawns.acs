@@ -10476,7 +10476,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Baron of Hell
 				{"Goldfinger_Kisch"},
-				{"Goldfinger_MeiLin"},
+				{"Goldfinger_MeiLei"},
 				{"Goldfinger_Ling"}
 			},
 			{//Hectebus
@@ -10485,7 +10485,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Belphegor
 				{"Goldfinger_Kisch"},
 				{"Goldfinger_Ling"},
-				{"Goldfinger_MeiLin"},
+				{"Goldfinger_MeiLei"},
 				{"Goldfinger_RedGrant"},
 				{"Goldfinger_RosaKlebb"},
 				{"Goldfinger_DrNo"}
@@ -10539,7 +10539,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Flembrane
 				{"Goldfinger_Kisch"},
-				{"Goldfinger_MeiLin"},
+				{"Goldfinger_MeiLei"},
 				{"Goldfinger_Ling"}
 			},
 			{//Flembomination
@@ -10623,7 +10623,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Slaughtaur
 				{"Goldfinger_Kisch"},
-				{"Goldfinger_MeiLin"},
+				{"Goldfinger_MeiLei"},
 				{"Goldfinger_Ling"}
 			},
 			{//Green Chaos Serpent

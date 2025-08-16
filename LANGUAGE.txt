@@ -37,4 +37,4 @@ COMP_THREAT_6 = "Threat Level: Epic";
 
 // REMIXER VERSION DISPLAY MESSAGE
 
-SAMSARA_MIXER_VERSIONDISPLAY = "\cfReMixer 1.2 Development Build\c-";
+SAMSARA_MIXER_VERSIONDISPLAY = "\cfReMixer 1.2\c-";
