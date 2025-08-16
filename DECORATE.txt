@@ -766,7 +766,7 @@
 #include "actors/Goldfinger/Hazmat.txt"
 #include "actors/Goldfinger/SpectreGuard.txt"
 #include "actors/Goldfinger/Kisch.txt"
-#include "actors/Goldfinger/MeiLin.txt"
+#include "actors/Goldfinger/MeiLei.txt"
 #include "actors/Goldfinger/Ling.txt"
 #include "actors/Goldfinger/RedGrant.txt"
 #include "actors/Goldfinger/RosaKlebb.txt"
