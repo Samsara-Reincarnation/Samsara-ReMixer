@@ -250,7 +250,7 @@ Model "Goldfinger_GateKeeper"
    MODELSAREATTACHMENTS
 }
 
-Model "Goldfinger_MeiLin"
+Model "Goldfinger_MeiLei"
 {
    Path "Models/Goldeneye"
    Animation 0 "base.iqm"

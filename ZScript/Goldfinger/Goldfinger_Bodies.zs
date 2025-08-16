@@ -280,14 +280,14 @@ Class Goldfinger_Body_Ling : CustomInventory
 	}
 }
 
-Class Goldfinger_Body_MeiLin : CustomInventory
+Class Goldfinger_Body_MeiLei : CustomInventory
 {
 	States
 	{
 		Pickup:
 			TNT1 A 0
 			{ 
-				A_ChangeModel("",1,"Models/Goldfinger/Bodies","meilin.iqm");
+				A_ChangeModel("",1,"Models/Goldfinger/Bodies","meilei.iqm");
 			}
 			Stop;
 	}
