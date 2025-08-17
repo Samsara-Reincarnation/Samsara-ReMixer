@@ -208,7 +208,7 @@ script "Samsara_HLShockRoachPickupCondition" (void)
                 else if (!CheckInventory("Totenkopf_IHaveDualMausers") && !duallimited) { result = 1; }
             } else if (CheckInventory("WitchavenClass")) {
                 if (!CheckInventory("WTShieldTrigger")) { result = 1; }
-            } else if (CheckInventory("BondClass")) {
+            } else if (CheckInventory("BondClass") && !CheckInventory("Goldeneye_PlayerAltClassToken")) {
                 duallimited = duallimiting && CheckInventory("Goldeneye_KnifeLevelLimiter");
 
                 if (!CheckInventory("Goldeneye_ThrowingKnives")) { result = 1; }
