@@ -1127,8 +1127,8 @@ Script "GoldeneyeEnemyDrops" (void)
 	{
 		if(guntype == 9 && CheckInventory("Goldeneye_BodyPart") != 19)
 			randnum = 0; //Only Kisch has a chance of dropping an M14
-		else if(guntype == 4 || guntype == 6 || guntype == 10)
-			randnum = random(0,25); //Very rare chance
+		else if(guntype == 4 || guntype == 6 || (guntype == 9 && CheckInventory("Goldeneye_BodyPart") == 19) || guntype == 10)
+			randnum = random(0,26); //Very rare chance
 		else
 			randnum = random(0,100);
 		
