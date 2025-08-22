@@ -67,6 +67,11 @@ object StarTrooper
 	frame BSE3O { light SGRD_ATK  }
 }
 
+object StarTrooper_2
+{
+	frame BSE3O { light SGRD_ATK  }
+}
+
 object SectorPatrol
 {
 	frame BS23N { light SGRD_ATK  }
@@ -78,6 +83,11 @@ object TechWarrior
 }
 
 object AlienProtector
+{
+	frame BS25N { light SGRD_ATK  }
+}
+
+object AlienProtector_2
 {
 	frame BS25N { light SGRD_ATK  }
 }
