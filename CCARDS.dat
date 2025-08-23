@@ -170,6 +170,8 @@ excludeactor StrifeTemplarReplacerGenerator
 excludeactor StrifeCrusaderReplacerGenerator
 excludeactor StrifeInquisitorReplacerGenerator
 
+excludeactor AlienProtector_2
+excludeactor StarTrooper_2
 excludeactor FrankDoyle_2
 excludeactor DaisyMae_2
 
