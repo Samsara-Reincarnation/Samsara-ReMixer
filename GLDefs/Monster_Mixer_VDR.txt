@@ -3382,13 +3382,6 @@ object MMRandomizer_ArchonSoul
 	frame VE37R { light MMRandomizer_ArchonSoul4 }
 }
 
-object MMRandomizer_PowerfulHoeExplosion
-{
-	frame MIS2B { light ROCKET_X1 }
-	frame MIS2C { light ROCKET_X2 }
-	frame MIS2D { light ROCKET_X3 }
-}
-
 object MMRandomizer_DarkCyberdemonBFG10kBall
 {
 	frame DBFSA { light BFGBALLp }

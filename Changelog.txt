@@ -97,7 +97,6 @@ Doom:
 + The dark cyberdemon has been added as a cyberdemon replacement!
 - The cyber annihilator is less aggressive and can now cause infighting.
 + The cyber annihilator has a chance to fire homing rockets which are faster (28 vs. the standard rocket's 20), but less damaging (10-80 direct damage in multiples of 10, 64 splash damage, and 96 splash radius vs. the standard rocket's 20-160 direct damage in multiples of 20, 128 splash damage, and 128 splash radius).
-? A new enemy has joined the Wheel of Samsara, and a powerful one at that...
 
 -Doom 64-
 
