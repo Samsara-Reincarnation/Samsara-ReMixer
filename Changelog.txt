@@ -123,6 +123,7 @@ Chex Quest:
 Heretic:
 
 + The undead warrior and (nitro)golem ghosts now have the GHOST flag.
+* Fixed D'Sparil's second phase being affected by the multiplier setting.
 * Fixed dynamic lights for D'Sparil's attack animation and teleport fog.
 ! D'Sparil's summon missiles only die upon collision or successful Disciple spawn.
 * Fixed D'Sparil's death animation being shorter than normal.
@@ -213,6 +214,7 @@ Rise of the Triad:
 * Fixed lightning guards firing the heat seeker (when taking slot 1 equipment) or bazooka (when taking slot 3 equipment); the criteria is now the other way around.
 * Fixed death monks playing a pistol sound when attacking.
 * Fixed the explosive disks damaging invulnerable players.
+* Fixed deathfire monks not triggering boss death specials.
 * Fixed a typo in one of Sebastian Doyle Krist's and Snake Oscuro's state jumps (SeenPlater).
 + The alternate enemies from Ludicrous Edition have been added (mm_rottmode 1)! There is also a setting that allows both the original and alternate enemies to spawn (mm_rottmode 2)!
 + Big John has been added as a cyberdemon replacement for the alternate set!
@@ -223,6 +225,7 @@ Blake Stone:
 
 * Fixed the Water Alien obituary.
 ! Water Aliens no longer count for kills in the map.
+* Fixed S.T.A.R. troopers and alien protectors being affected by the multiplier setting when getting back up.
 
 Blood:
 
@@ -296,6 +299,7 @@ CyberMage:
 PowerSlave/Exhumed:
 
 * Fixed the soul health not taking the disabled health cap and JC Denton's Medicine skill into account.
+* Fixed the Kilmaatikahn Snake and the Terrainians spawned by the Selkis being affected by the multiplier setting.
 
 Redneck Rampage:
 
