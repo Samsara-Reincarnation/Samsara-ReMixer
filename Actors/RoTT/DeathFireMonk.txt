@@ -85,7 +85,7 @@ ACTOR MonkDeathFire : RoTTHumanoid {
 			ALLD H 2
 			ALLD I 2
 			ALLD J 2
-			ALLD K -1
+			ALLD K -1 A_KillMaster
 			Stop
 		Death.CalebFire:
 		Death.LifeLeech:
@@ -426,7 +426,7 @@ ACTOR MonkDeathFireAlt : MonkDeathFire {
 			AL2D H 2
 			AL2D I 2
 			AL2D J 2
-			AL2D K -1
+			AL2D K -1 A_KillMaster
 			Stop
 		Death.CalebFire:
 		Death.LifeLeech:
