@@ -298,7 +298,7 @@ CyberMage:
 PowerSlave/Exhumed:
 
 * Fixed the soul health not taking the disabled health cap and JC Denton's Medicine skill into account.
-* Fixed the Kilmaatikahn Snake and the Terrainians spawned by the Selkis being affected by the multiplier setting.
+* Fixed the Kilmaatikahn eggs, the Kilmaatikahn Snake, and the Terrainians spawned by the Selkis being affected by the multiplier setting.
 
 Redneck Rampage:
 
