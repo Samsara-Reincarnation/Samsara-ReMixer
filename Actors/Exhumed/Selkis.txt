@@ -184,7 +184,19 @@ Actor SelkisLaserD
 }
 
 Actor Powerslaveexplosion2 : ExGrenadeExplosion { Scale 0.55  +CLIENTSIDEONLY }
-Actor RedMite0 : RedMite { +LOOKALLAROUND +THRUSPECIES }
+
+Actor RedMite0 : RedMite
+{
+	+LOOKALLAROUND
+	+THRUSPECIES
+	States
+	{
+      Spawn:
+        PSEN D 0
+        PSEN D 0 A_GiveInventory("MultiplyOverflowToken", 1)
+        goto Super::Spawn
+	}
+}
 
 Actor CobraStaffSnake_Selkis
 {
