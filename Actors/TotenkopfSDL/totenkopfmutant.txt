@@ -169,7 +169,7 @@ Actor Totenkopf_Tracer_DeathMutant : Totenkopf_Tracer_Enemy
 			TK58 BCDE 2 Bright
 			Stop
 		XDeath:
-			TNT1 A 1 ACS_NamedExecuteWithResult("Totenkopf_BloodGenerator_Offsets")
+			TNT1 A 1 ACS_NamedExecuteWithResult("SamsaraBloodGeneratorOffsets")
 			TNT1 A 1 A_GiveInventory("Totenkopf_BloodGenerator",1,AAPTR_TRACER)
 			Stop
 	}

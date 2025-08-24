@@ -1212,7 +1212,7 @@ Actor Totenkopf_Tracer_WaffenSS : Totenkopf_Tracer_Enemy
 			Stop
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteWithResult("Totenkopf_Tracer",1,24,40)
-			TNT1 A 1 ACS_NamedExecuteWithResult("Totenkopf_BloodGenerator_Offsets")
+			TNT1 A 1 ACS_NamedExecuteWithResult("SamsaraBloodGeneratorOffsets")
 			TNT1 A 1 A_GiveInventory("Totenkopf_BloodGenerator",1,AAPTR_TRACER)
 			Stop
 	}
