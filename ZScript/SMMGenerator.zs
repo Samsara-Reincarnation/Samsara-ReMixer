@@ -48,6 +48,7 @@ Class DetermineValidSpawnReMixerZS : Actor
         +CANNOTPUSH
         +NOTELEPORT
         +NOTELESTOMP
+        +DONTSPLASH
 	}
 	States
 	{

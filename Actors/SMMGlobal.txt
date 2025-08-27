@@ -68,6 +68,7 @@ Actor DetermineValidSpawnReMixer
     +CANNOTPUSH
     +NOTELEPORT
     +NOTELESTOMP
+    +DONTSPLASH
 	States
 	{
 		Spawn:
