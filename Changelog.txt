@@ -10,6 +10,12 @@
 *: Bugfix
 ?: ???
 
+-Monsters-
+
+Heretic:
+
+* Fixed an extra frame in D'Sparil's death animation being called in the death loop. Now it is called after the loop instead.
+
 -Settings-
 
 * Monster generation spawners no longer create terrain splashes.
