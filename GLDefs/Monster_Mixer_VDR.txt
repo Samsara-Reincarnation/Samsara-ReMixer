@@ -3159,6 +3159,14 @@ object MMRandomizer_DemolisherBFGBall
 	frame DBFEF { light BFGBALL_X5 }
 }
 
+object MMRandomizer_DemolisherBFGExtra
+{
+	frame DBFPA { light BFGBALL    }
+	frame DBFPB { light BFGBALL_X1 }
+	frame DBFPC { light BFGBALL_X4 }
+	frame DBFPD { light BFGBALL_X5 }
+}
+
 pointlight MMRandomizer_QueenBFG
 {
 	color 0.0 1.0 0.0

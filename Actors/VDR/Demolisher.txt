@@ -77,6 +77,7 @@ actor MMRandomizer_DemolisherBFGBall : BFGBall
 	Decal BFGLightning
 	+BRIGHT
 	DeathSound "doomguy/bfgx"
+    DamageType "BFG"
 	States
 	{
 	Spawn:
@@ -84,8 +85,10 @@ actor MMRandomizer_DemolisherBFGBall : BFGBall
 		loop
 	Death:
 		DBFE AB 8
-		DBFE C 8 A_BFGSpray("DoomBFGSplash")
+		DBFE C 8 A_BFGSpray("MMRandomizer_DemolisherBFGExtra")
 		DBFE DEF 8
 		stop
 	}
 }
+
+actor MMRandomizer_DemolisherBFGExtra : DoomBFGSplash { DamageType "BFGSplash" }

@@ -302,6 +302,7 @@ actor MMRandomizer_PlasmaZombieBall : PlasmaBall
 	Decal DoomPlasmaScorch
 	SeeSound "doom/baby/attack"
 	DeathSound "doom/baby/shotx"
+    DamageType "DoomPlasma"
 	States
 	{
 	Spawn:

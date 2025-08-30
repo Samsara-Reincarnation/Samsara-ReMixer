@@ -12,6 +12,13 @@
 
 -Monsters-
 
+Doom:
+
+-Vanilla Doom Randomizer-
+
+! Added a damage type to the plasma zombie and spider-demolisher projectiles.
+* Fixed the spider-demolisher BFG tracers ignoring base damage resistances.
+
 Heretic:
 
 * Fixed an extra frame in D'Sparil's death animation being called in the death loop. Now it is called after the loop instead.
