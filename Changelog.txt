@@ -17,6 +17,7 @@ Doom:
 -Vanilla Doom Randomizer-
 
 ! Damage types have been added to the plasma zombie and spider-demolisher projectiles.
+! The cyber knight missile is now treated as an explosive attack instead of a fire attack.
 * Fixed the spider-demolisher BFG tracers ignoring base damage resistances.
 
 Heretic:

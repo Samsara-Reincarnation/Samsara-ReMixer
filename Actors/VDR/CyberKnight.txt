@@ -331,9 +331,9 @@ Actor MMRandomizer_BruiserMissile
 	SeeSound "VDR/brufir"
 	DeathSound "VDR/weapons/hellex"
 	+THRUGHOST
-	+FIREDAMAGE
 	+BRIGHT
 	Decal Scorch
+	DamageType "Explosive"
 	States
 	{
 		Spawn:
