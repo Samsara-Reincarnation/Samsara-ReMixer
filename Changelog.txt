@@ -24,6 +24,12 @@ Heretic:
 
 * Fixed an extra frame in D'Sparil's death animation being called in the death loop. Now it is called after the loop instead.
 
+Hexen I:
+
+! The player bosses now have new active sounds.
+* Fixed some states for the player bosses not being defined, causing them to jump to inherited states.
+* Fixed Zedek's skull not using the correct sprite names when gibbed.
+
 -Settings-
 
 * Monster generation spawners no longer create terrain splashes.

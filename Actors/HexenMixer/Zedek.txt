@@ -62,7 +62,7 @@ ACTOR FighterBoss3 : SamsaraMonsterRemixFighterBoss
 		goto See2
 	See2:
 		PLAF ABCD 4 A_FastChase
-		Loop			
+		Loop
 	Pain:
 		PLAF G 4
 		PLAF G 4 A_Pain
@@ -507,12 +507,12 @@ actor SamsaraMixerBloodyFighterSkull : BloodyFighterSkull
     States
     {
       Spawn:
-        BSKL A 0
-        BSKL ABCDFGH 5 A_CheckFloor("Hit")
+        BS49 A 0
+        BS49 ABCDFGH 5 A_CheckFloor("Hit")
         goto Spawn+1
 
       Hit:
-        BSKL I 16 A_CheckPlayerDone
+        BS49 I 16 A_CheckPlayerDone
         wait
     }
 }

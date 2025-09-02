@@ -250,7 +250,7 @@ $Random BossMageGibDeath  	{ BossMageXDeath1 BossMageXDeath2 BossMageXDeath3 }
 BossMageDeath1				MGDTH
 BossMageDeath2				MGCDTH
 $Random	MageBossDeath		{ BossMageDeath1 BossMageDeath2 }
-BossMageActive	    		MGHMM
+BossMageActive	    		MGTAUNT
 
 //Zedek
 
@@ -262,7 +262,7 @@ $Random BossFighterGibDeath { BossFighterXDeath1 BossFighterXDeath2 BossFighterX
 BossFighterDeath1			FGTDDTH
 BossFighterDeath2			FGTCDTH
 $Random	FighterBossDeath	{ BossFighterDeath1 BossFighterDeath2 }
-BossFighterActive 			FGTHMM
+BossFighterActive 			FGTAUNT
 
 //Traductus
 
@@ -274,6 +274,6 @@ $Random BossClericGibDeath  { BossClericXDeath1 BossClericXDeath2 BossClericXDea
 BossClericDeath1			PLRDTH
 BossClericDeath2			PLRCDTH
 $Random	ClericBossDeath		{ BossClericDeath1 BossClericDeath2 }
-BossClericActive	    	CLHMM
+BossClericActive	    	CLTAUNT
 
 Hexen/TeleportC				HEX_TPRT

@@ -63,7 +63,11 @@ ACTOR ClericBoss3 : SamsaraMonsterRemixClericBoss
 		goto See2
 	See2:
 		CLBS ABCD 4 A_FastChase
-		Loop	
+		Loop
+	Pain:
+		CLBS H 4
+		CLBS H 4 A_Pain
+		Goto See
 	Melee:
 	Missile:
 		CLBS EF 8 A_FaceTarget

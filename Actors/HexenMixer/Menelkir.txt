@@ -62,7 +62,12 @@ ACTOR MageBoss3 : SamsaraMonsterRemixMageBoss
 		goto See2
 	See2:
 		MAGE ABCD 4 A_FastChase
-		Loop	
+		Loop
+	Pain:
+		MAGE G 4
+		MAGE G 4 A_Pain
+		Goto See
+	Melee:
 	Missile:
 		MAGE E 8 A_FaceTarget
 		MAGE F 8 Bright A_MageAttack
