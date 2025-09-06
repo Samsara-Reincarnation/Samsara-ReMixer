@@ -1,4 +1,4 @@
-Actor Firemother : SamsaraMonsterHumanoidBoss
+Actor Firemother : SamsaraMonsterHumanoidBossFemale
 {
   Tag "Firemother"
   Health 3250

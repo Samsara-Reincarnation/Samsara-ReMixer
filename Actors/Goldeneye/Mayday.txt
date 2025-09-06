@@ -1,4 +1,4 @@
-Actor Goldeneye_Mayday : Goldeneye_EnemyBase
+Actor Goldeneye_Mayday : Goldeneye_EnemyBaseFemale
 {
 	Tag "May-Day"
     Obituary "%o was killed by May-Day."

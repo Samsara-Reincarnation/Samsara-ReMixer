@@ -1,4 +1,4 @@
-Actor RedDaisyMae : SamsaraMonsterHumanoid
+Actor RedDaisyMae : SamsaraMonsterHumanoidFemale
 {
 	Obituary "Daisy Mae snatched %o bald-headed."
 	HitObituary "Daisy Mae opened up a can of whoop-ass on %o."

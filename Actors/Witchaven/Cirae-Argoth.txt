@@ -1,4 +1,4 @@
-Actor WTCiraeArgoth : SamsaraMonsterHumanoidBoss
+Actor WTCiraeArgoth : SamsaraMonsterHumanoidBossFemale
 {
 	Species "WHEnemies"
 	MONSTER

@@ -1,4 +1,4 @@
-Actor Goldfinger_MeiLei : Goldeneye_EnemyBase
+Actor Goldfinger_MeiLei : Goldeneye_EnemyBaseFemale
 {
 	Tag "Mei Lei"
     Obituary "%o was no match for Mei-Lei's watchful eye."

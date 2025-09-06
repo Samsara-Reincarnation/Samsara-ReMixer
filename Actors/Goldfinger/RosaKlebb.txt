@@ -1,4 +1,4 @@
-Actor Goldfinger_RosaKlebb : Goldeneye_EnemyBase
+Actor Goldfinger_RosaKlebb : Goldeneye_EnemyBaseFemale
 {
 	Tag "Rosa Klebb"
     Obituary "%o was punched in the gut by Rosa Klebb with brass knuckles."

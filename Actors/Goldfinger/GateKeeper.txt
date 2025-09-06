@@ -1,4 +1,4 @@
-Actor Goldfinger_Gatekeeper : Goldeneye_EnemyBase
+Actor Goldfinger_Gatekeeper : Goldeneye_EnemyBaseFemale
 {
 	Tag "Goldfinger's Gatekeeper"
     Obituary "%o was taught to not enter Goldfinger's foundry."

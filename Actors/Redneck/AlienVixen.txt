@@ -1,4 +1,4 @@
-Actor BlueVixen : SamsaraMonsterHumanoidTotalGib
+Actor BlueVixen : SamsaraMonsterHumanoidFemaleTotalGib
 {
 	Obituary "%o became a Vixen's bitch!"
 	HitObituary "%o got kicked in the nads by a Vixen!"

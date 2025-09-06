@@ -1,4 +1,4 @@
-Actor Goldeneye_MoonFemale : Goldeneye_EnemyBase
+Actor Goldeneye_MoonFemale : Goldeneye_EnemyBaseFemale
 {
 	Tag "Moonraker Elite (Female)"
     Obituary "%o was killed by a Moonraker Elite (Female)."

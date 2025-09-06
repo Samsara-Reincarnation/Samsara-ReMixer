@@ -1,4 +1,4 @@
-Actor WTIllwhyrin : SamsaraMonsterHumanoidBoss
+Actor WTIllwhyrin : SamsaraMonsterHumanoidBossFemale
 {
 	Species "WHEnemies"
 	MONSTER

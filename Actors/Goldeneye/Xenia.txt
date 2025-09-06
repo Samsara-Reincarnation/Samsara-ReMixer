@@ -1,4 +1,4 @@
-Actor Goldeneye_Xenia : Goldeneye_EnemyBase
+Actor Goldeneye_Xenia : Goldeneye_EnemyBaseFemale
 {
 	Tag "Xenia Onatopp"
     Obituary "%o was killed by Xenia Onatopp."

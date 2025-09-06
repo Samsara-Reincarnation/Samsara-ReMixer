@@ -299,7 +299,7 @@ actor GangerMale_ShrinkEffect : GangerMale
 	}
 }	
 
-Actor GangerFemale : SamsaraMonsterHumanoidTotalGib
+Actor GangerFemale : SamsaraMonsterHumanoidFemaleTotalGib
 { 
 	Tag "Ganger (F)"
     Health 95

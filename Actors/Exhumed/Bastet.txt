@@ -1,4 +1,4 @@
-Actor Bastet : SamsaraMonsterHumanoid
+Actor Bastet : SamsaraMonsterHumanoidFemale
 {
 	Tag "Bastet"
 	Obituary "%o was torn to ribbons by a Bastet."
