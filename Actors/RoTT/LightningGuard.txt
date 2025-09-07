@@ -1685,6 +1685,11 @@ ACTOR LightningGuardAlt : LightningGuard {
 		TNT1 A 2
 		TNT1 A 0 Thing_Remove(0)
 		stop
+
+		// SamsaraMonsterHumanoidFemale states
+		CheckFemale:
+			TNT1 A 0
+			Stop
    }
 }
 

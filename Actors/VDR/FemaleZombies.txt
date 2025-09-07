@@ -103,12 +103,22 @@ ACTOR MMRandomizer_FemaleZombie : ZombieMan3
 			TNT1 A 0 Thing_Remove(0)
 			stop
 
-		// SamsaraMonsterHumanoid states
+		// SamsaraMonsterHumanoidFemale states
 		Death.GETank:
 			TNT1 A 0 A_PlaySound("Goldeneye/Tank/Squish",CHAN_6)
 			TNT1 A 0 A_PlaySound("Goldeneye/DeathF",CHAN_5)
 			TNT1 A -1 A_Jump(256,"XDeath")
 			Wait
+		Death.GEDB5:
+			TNT1 A 0 A_PlaySound("Goldeneye/Tank/Squish",CHAN_6)
+			TNT1 A 0 A_PlaySound("Goldeneye/DeathF",CHAN_5)
+			TNT1 A -1 A_Jump(256,"XDeath")
+			Wait
+
+		// Other states
+		CheckFemale:
+			TNT1 A 0
+			Stop
 	}
 }
 

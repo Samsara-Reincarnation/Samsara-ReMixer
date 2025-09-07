@@ -1,4 +1,4 @@
-Actor HLAssassin : SamsaraMonsterHumanoid
+Actor HLAssassin : SamsaraMonsterHumanoidFemale
 {
 	Tag "Black Operations (F)"
     Obituary "%o was killed by a Black Operations (F)."

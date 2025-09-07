@@ -1634,6 +1634,9 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 			"####" "#" 1 A_SetShootable
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
+		CheckMale:
+			TNT1 A 0
+			Stop
 	}
 }
 
@@ -2450,6 +2453,9 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			"####" "#" 1 A_SetShootable
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
+		CheckMale:
+			TNT1 A 0
+			Stop
 	}
 }
 
@@ -3266,6 +3272,9 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			"####" "#" 1 A_SetShootable
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
+		CheckMale:
+			TNT1 A 0
+			Stop
 	}
 }
 
