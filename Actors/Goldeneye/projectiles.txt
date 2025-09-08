@@ -88,6 +88,7 @@ actor Goldeneye_EnemyRocket
     +EXTREMEDEATH
     +FORCERADIUSDMG
     -NOGRAVITY
+	+NODAMAGETHRUST
     //+THRUGHOST
     States
     {
@@ -155,6 +156,7 @@ actor Goldeneye_GrenadeLauncherProjectileEnemy
     +BOUNCEONWALLS
     +EXTREMEDEATH
     +FORCERADIUSDMG
+	+NODAMAGETHRUST
     -NOGRAVITY
     States
     {
@@ -257,6 +259,7 @@ actor Goldeneye_EnemyGrenade
     DeathSound "Goldeneye/Explosion"
     +EXTREMEDEATH
     +FORCERADIUSDMG
+	+NODAMAGETHRUST
     -NOGRAVITY
     States
     {
