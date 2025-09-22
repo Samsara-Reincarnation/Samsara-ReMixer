@@ -452,6 +452,7 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 
 	str actorClass = GetActorClass(0);
 	bool shouldNotCountKill = StrRight(actorClass,9) == "Generator";
+	bool shouldCountKill = false;
 	bool stealthMonster = StrLeft(actorClass,7) == "Stealth";
 	bool ghostMonster = CheckFlag(0,"GHOST");
 
@@ -637,6 +638,10 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 		// Check for monsters with A_BossDeath calls, non-bosses should instantly call for A_KillMaster
 		if(monSlot != 15 && monSlot != 16 && monSlot != 19 && monSlot != 22 && monSlot != 23 && monSlot != 50 && monSlot != 51 && monSlot != 52 && monSlot != 66 && monSlot != 67 && monSlot != 68 && monSlot != 69 && monSlot != 70)
 		{
+			if (GetCVar("samsara_zscriptready") == 1) { GiveInventory("SamsaraCountKillDisablerZS", 1); }
+			else { GiveInventory("SamsaraCountKillDisabler", 1); }
+			shouldCountKill = true;
+
 			Thing_Destroy(newSpawnerTid,0,0);
 		}
 	}
@@ -677,6 +682,12 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 	{
 		if (GetCVar("samsara_zscriptready") == 1) { GiveInventory("SamsaraCountKillDisablerZS", 1); }
 		else { GiveInventory("SamsaraCountKillDisabler", 1); }
+	}
+
+	if (shouldCountKill)
+	{
+		if (GetCVar("samsara_zscriptready") == 1) { GiveInventory("SamsaraCountKillEnablerZS", 1); }
+		else { GiveInventory("SamsaraCountKillEnabler", 1); }
 	}
 
 	if (stealthMonster)

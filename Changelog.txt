@@ -37,6 +37,7 @@ Hexen I:
 -Settings-
 
 * Monster generation spawners no longer create terrain splashes.
+* Fixed monster replacements affecting the level's total monster count.
 
 ----------------------------------------------------------------------------
 --------------------------Reincarnation Mixer 1.2.1-------------------------
