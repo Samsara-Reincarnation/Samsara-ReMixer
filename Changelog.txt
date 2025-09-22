@@ -30,6 +30,10 @@ Hexen I:
 * Fixed some states for the player bosses not being defined, causing them to jump to inherited states.
 * Fixed Zedek's skull not using the correct sprite names when gibbed.
 
+Hexen I:
+
+* Fixed the Knight Archer projectiles facing the wrong direction.
+
 -Settings-
 
 * Monster generation spawners no longer create terrain splashes.

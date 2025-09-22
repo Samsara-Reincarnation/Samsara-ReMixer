@@ -733,7 +733,8 @@ Model Hexen2ArcherGreenProjectile
    Path "Models/Hexen2"   
    Model 0 "akarrow.md3"  
    Skin 0 "akarrow1.pcx"
-   Scale -1.0 1.0 1.0          
+   Scale -1.0 1.0 1.0
+   AngleOffset 180
    NOINTERPOLATION
    PITCHFROMMOMENTUM
    
@@ -745,7 +746,8 @@ Model Hexen2ArcherRedProjectile
    Path "Models/Hexen2"   
    Model 0 "akarrow.md3"  
    Skin 0 "akarrow2.pcx"
-   Scale -1.0 1.0 1.0          
+   Scale -1.0 1.0 1.0
+   AngleOffset 180
    NOINTERPOLATION
    PITCHFROMMOMENTUM
    
@@ -757,7 +759,8 @@ Model Hexen2ArcherGoldProjectile
    Path "Models/Hexen2"   
    Model 0 "akarrow.md3"  
    Skin 0 "akarrow3.pcx"
-   Scale -1.0 1.0 1.0          
+   Scale -1.0 1.0 1.0
+   AngleOffset 180
    NOINTERPOLATION
    PITCHFROMMOMENTUM
    
@@ -769,7 +772,8 @@ Model Hexen2ArcherBlueProjectile
    Path "Models/Hexen2"   
    Model 0 "akarrow.md3"  
    Skin 0 "akarrow4.png"
-   Scale -1.0 1.0 1.0          
+   Scale -1.0 1.0 1.0
+   AngleOffset 180
    NOINTERPOLATION
    PITCHFROMMOMENTUM
    
