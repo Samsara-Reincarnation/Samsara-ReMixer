@@ -34,6 +34,12 @@ Hexen II:
 
 * Fixed the Knight Archer projectiles facing the wrong direction.
 
+GoldenEye 007:
+
+-All-
+
+* Fixed female enemies playing the wrong sound when killed by Caleb's fire weapons.
+
 -Settings-
 
 * Monster generation spawners no longer create terrain splashes.

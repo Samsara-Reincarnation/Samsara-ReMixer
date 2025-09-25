@@ -34,5 +34,18 @@ Actor Goldfinger_Gatekeeper : Goldeneye_EnemyBase
 			TNT1 A 0 A_PlaySound("RTCW/Enemy/BurnF",CHAN_7,1.0)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.CalebFire:
+		Death.LifeLeech:
+			TNT1 A 0 A_GiveInventory("GoldeneyeEnemyKillAttack")
+			TNT1 A 0 A_Jump(218, 2)
+			TNT1 A 0 A_GiveToTarget("CalebDMTaunt1", 1)
+			TNT1 A 0 A_Playsound("Goldeneye/DeathF", CHAN_VOICE)
+			TNT1 A 0 A_SpawnItemEx("BloodBurningCorpse_Generic", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER)
+			TNT1 A 0 ACS_NamedExecuteAlways("GoldeneyeEnemyDrops", 0, 0)			
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_Stop
+			TNT1 A 5 A_NoBlocking
+			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			Stop
 	}
 }
