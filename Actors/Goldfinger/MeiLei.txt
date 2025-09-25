@@ -30,8 +30,9 @@ Actor Goldfinger_MeiLei : Goldeneye_EnemyBase
 			TNT1 A 0 A_PlaySound("Goldeneye/DeathF",CHAN_5)
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
-		CheckFemale:
-			TNT1 A 0
-			Stop
+		Death.RTCWFire:
+			TNT1 A 0 A_PlaySound("RTCW/Enemy/BurnF",CHAN_7,1.0)
+			TNT1 A -1 A_Jump(256, "Burn")
+			Wait
 	}
 }
