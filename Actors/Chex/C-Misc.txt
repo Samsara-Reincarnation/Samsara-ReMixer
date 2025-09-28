@@ -344,7 +344,7 @@ actor ChexRFZDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        MGUC A 0
+        MGUC A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

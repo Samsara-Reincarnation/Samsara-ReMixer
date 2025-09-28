@@ -98,7 +98,7 @@ actor BlakeRAWDrop1 : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        BWP3 A 0
+        BWP3 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -115,7 +115,7 @@ actor BlakeRAWDrop2 : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        BWP4 A 0
+        BWP4 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

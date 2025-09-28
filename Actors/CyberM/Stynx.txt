@@ -347,7 +347,7 @@ actor CMStynXSlotFour : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        CMMG F 0
+        CMMG F 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

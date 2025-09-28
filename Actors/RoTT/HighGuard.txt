@@ -191,7 +191,7 @@ actor RoTTMP40Drop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        PM40 A 0
+        PM40 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

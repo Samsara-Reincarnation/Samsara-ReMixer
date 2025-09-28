@@ -228,7 +228,7 @@ actor RRAKDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        R_SR J 0
+        R_SR J 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

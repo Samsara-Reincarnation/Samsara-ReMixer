@@ -542,7 +542,7 @@ actor HeavyGuardHeatSeeker : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        PHSE A 0
+        PHSE A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:

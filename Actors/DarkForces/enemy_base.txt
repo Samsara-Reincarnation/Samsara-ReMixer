@@ -257,7 +257,7 @@ actor ImperialCommander_MonsterDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        IREP A 0
+        IREP A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -291,7 +291,7 @@ actor Trandoshan_ConcussionDrop : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        ICON A 0
+        ICON A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -308,7 +308,7 @@ actor SandTrooper_MonsterDrop : SamsaraSlotFourSkulltagDrop
     States
     {
       Spawn:
-        KD19 Z 0
+        KD19 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 38)
         goto SpawnGameModeCheck
 
       SpawnActual:

@@ -1225,7 +1225,7 @@ actor Q2ChaingunDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        Q2WP A 0
+        Q2WP A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

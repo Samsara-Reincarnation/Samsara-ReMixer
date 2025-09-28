@@ -24,7 +24,7 @@ actor SuperShotgunPickup2 : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        WSSG A 0
+        WSSG A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -41,7 +41,7 @@ actor ChingunDrop2: SamsaraSlotFourDrop
     States
     {
       Spawn:
-        WCGN A 0
+        WCGN A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

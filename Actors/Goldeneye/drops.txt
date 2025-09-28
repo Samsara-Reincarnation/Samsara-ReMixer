@@ -39,7 +39,7 @@ actor Goldeneye_AutoShotgunEnemyDrop : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -72,7 +72,7 @@ actor Goldeneye_AR33EnemyDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -105,7 +105,7 @@ actor Goldeneye_PhantomEnemyDrop : SamsaraSlotFourSkulltagDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 38)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -138,7 +138,7 @@ actor Goldeneye_RocketLEnemyDrop : SamsaraSlotFiveDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 39)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -171,7 +171,7 @@ actor Goldeneye_GrenadeLEnemyDrop : SamsaraSlotFiveSkulltagDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 40)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -204,7 +204,7 @@ actor Goldeneye_RCP90EnemyDrop : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -237,7 +237,7 @@ actor Goldeneye_CougarEnemyDrop : SamsaraSlotSixSkulltagDrop
     States
     {
       Spawn:
-        GE00 Z 0
+        GE00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 42)
         goto SpawnGameModeCheck
 
       SpawnActual:

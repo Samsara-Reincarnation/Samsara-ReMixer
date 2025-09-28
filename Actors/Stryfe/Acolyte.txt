@@ -2238,7 +2238,7 @@ actor StrifeAssaultGunDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        SGRF A 0
+        SGRF A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

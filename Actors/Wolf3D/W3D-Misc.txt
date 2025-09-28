@@ -172,7 +172,7 @@ actor SSDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        WSDR A 0
+        WSDR A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -246,7 +246,7 @@ actor WolfDualChaingunDropTrue : SamsaraSlotFourSkulltagDrop
     States
     {
       Spawn:
-        WCHP C 0
+        WCHP C 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 38)
         goto SpawnGameModeCheck
 
       SpawnActual:

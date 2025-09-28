@@ -3006,7 +3006,7 @@ actor " Alien Bra Gun Drop " : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        R_T9 D 0
+        R_T9 D 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:

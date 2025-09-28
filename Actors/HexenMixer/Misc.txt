@@ -988,7 +988,7 @@ actor HexenStaffDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        WCSS A 0
+        WCSS A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

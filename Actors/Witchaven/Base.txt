@@ -268,7 +268,7 @@ actor Witchaven_BattleAxeMonsterDrop : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        PWHB A 0
+        PWHB A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -302,7 +302,7 @@ actor Witchaven_HalberdMonsterDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        PWHD A 0
+        PWHD A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -319,7 +319,7 @@ actor Witchaven_GreatSwordMonsterDrop : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        PWHG A 0
+        PWHG A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -336,7 +336,7 @@ actor Witchaven_MorningStarMonsterDrop : SamsaraSlotFiveDrop
     States
     {
       Spawn:
-        PWHC A 0
+        PWHC A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 39)
         goto SpawnGameModeCheck
 
       SpawnActual:

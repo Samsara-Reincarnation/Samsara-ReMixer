@@ -51,7 +51,7 @@ actor Catacomb3D_ZDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        CT01 E 0 Bright
+        CT01 E 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

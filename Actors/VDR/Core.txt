@@ -64,7 +64,7 @@ actor MMRandomizer_MinigunDrop : SamsaraSlotFourSkulltagDrop
     States
     {
       Spawn:
-        WMNG A 0
+        WMNG A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 38)
         goto SpawnGameModeCheck
 
       SpawnActual:

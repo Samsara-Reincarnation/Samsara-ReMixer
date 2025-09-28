@@ -371,7 +371,7 @@ actor TymokDrop : SamsaraSlotFiveDrop
     States
     {
       Spawn:
-        7RL2 A 0
+        7RL2 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 39)
         goto SpawnGameModeCheck
 
       SpawnActual:

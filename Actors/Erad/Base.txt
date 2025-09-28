@@ -139,7 +139,7 @@ actor EradSlotFourDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        DZ8P A 0
+        DZ8P A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

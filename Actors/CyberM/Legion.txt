@@ -106,7 +106,7 @@ actor CMLegionSlot5 : SamsaraSlotFiveDrop
     States
     {
       Spawn:
-        CMRL F 0
+        CMRL F 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 39)
         goto SpawnGameModeCheck
 
       SpawnActual:

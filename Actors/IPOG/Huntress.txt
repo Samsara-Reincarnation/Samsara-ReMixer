@@ -135,7 +135,7 @@ actor IPOGChaingunDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        GW40 Z 0
+        GW40 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

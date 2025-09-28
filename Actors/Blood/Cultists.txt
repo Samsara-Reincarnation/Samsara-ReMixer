@@ -3883,7 +3883,7 @@ actor CultistDrop : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        BSOP A 0
+        BSOP A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -3900,7 +3900,7 @@ actor FanaticDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        TOMP A 0
+        TOMP A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

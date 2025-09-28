@@ -522,7 +522,7 @@ actor AEnforcerDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        DCCP A 0
+        DCCP A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -540,7 +540,7 @@ actor BeachEnforcerDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        CHGP B 0
+        CHGP B 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

@@ -452,7 +452,7 @@ actor Hexen2BoneShardDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        HX99 A 0
+        HX99 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

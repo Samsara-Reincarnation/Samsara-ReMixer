@@ -63,7 +63,7 @@ actor Totenkopf_MP40EnemyDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        TK04 K 0
+        TK04 K 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -80,7 +80,7 @@ actor Totenkopf_STG44EnemyDrop : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        TK05 F 0
+        TK05 F 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -114,7 +114,7 @@ actor Totenkopf_ChaingunEnemyDrop : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        TK08 F 0
+        TK08 F 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -131,7 +131,7 @@ actor Totenkopf_PanzerschreckEnemyDrop : SamsaraSlotFiveDrop
     States
     {
       Spawn:
-        TK07 H 0
+        TK07 H 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 39)
         goto SpawnGameModeCheck
 
       SpawnActual:

@@ -437,7 +437,7 @@ actor C7MWarriorDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        7DU2 A 0
+        7DU2 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

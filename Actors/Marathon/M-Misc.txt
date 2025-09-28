@@ -1447,7 +1447,7 @@ actor M2EnforcerDrop : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        ENP2 A 0
+        ENP2 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -1489,7 +1489,7 @@ actor M1EnforcerDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        ENP1 A 0
+        ENP1 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -1594,7 +1594,7 @@ actor MarathonARDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        RIFL A 0
+        RIFL A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

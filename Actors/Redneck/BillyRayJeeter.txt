@@ -1521,7 +1521,7 @@ actor RRScatterGunDrop : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        RR_S A 0
+        RR_S A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:

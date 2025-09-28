@@ -159,7 +159,7 @@ actor SWUziDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        SW40 Z 0
+        SW40 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

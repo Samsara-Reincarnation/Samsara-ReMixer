@@ -39,7 +39,7 @@ actor Goldfinger_RemingtonEnemyDrop : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        GF00 Z 0
+        GF00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -74,7 +74,7 @@ actor Goldfinger_AK47EnemyDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        GF00 Z 0
+        GF00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -107,7 +107,7 @@ actor Goldfinger_ThompsonDrumEnemyDrop : SamsaraSlotFourSkulltagDrop
     States
     {
       Spawn:
-        GF00 Z 0
+        GF00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 38)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -142,7 +142,7 @@ actor Goldfinger_BazookaEnemyDrop : SamsaraSlotFiveDrop
     States
     {
       Spawn:
-        GF00 Z 0
+        GF00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 39)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -175,7 +175,7 @@ actor Goldfinger_M79EnemyDrop : SamsaraSlotFiveSkulltagDrop
     States
     {
       Spawn:
-        GF00 Z 0
+        GF00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 40)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -208,7 +208,7 @@ actor Goldfinger_M1CarbineEnemyDrop : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        GF00 Z 0
+        GF00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -241,7 +241,7 @@ actor Goldfinger_GarandEnemyDrop : SamsaraSlotSixSkulltagDrop
     States
     {
       Spawn:
-        GF00 Z 0
+        GF00 Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 42)
         goto SpawnGameModeCheck
 
       SpawnActual:

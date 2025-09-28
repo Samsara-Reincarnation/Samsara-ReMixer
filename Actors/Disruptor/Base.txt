@@ -158,7 +158,7 @@ actor DisruptorBlasterDrop : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        SQ72 V 0
+        SQ72 V 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -175,7 +175,7 @@ actor DisruptorRepeaterDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        SQ72 U 0
+        SQ72 U 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -192,7 +192,7 @@ actor DisruptorLockOnDrop : SamsaraSlotFiveDrop
     States
     {
       Spawn:
-        SQ72 S 0
+        SQ72 S 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 39)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -209,7 +209,7 @@ actor DisruptorCycloneDrop : SamsaraSlotSixDrop
     States
     {
       Spawn:
-        SQ72 T 0
+        SQ72 T 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 41)
         goto SpawnGameModeCheck
 
       SpawnActual:

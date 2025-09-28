@@ -145,7 +145,7 @@ actor SuperShotgun64 : SamsaraSlotThreeDrop
     States
     {
       Spawn:
-        64DB Z 0
+        64DB Z 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 36)
         goto SpawnGameModeCheck
 
       SpawnActual:

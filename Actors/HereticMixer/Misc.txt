@@ -105,7 +105,7 @@ actor HereticClawDrop : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        WBLS A 0
+        WBLS A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:

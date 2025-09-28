@@ -366,7 +366,7 @@ actor PowerSlaveSoulWeapon4 : SamsaraSlotFourDrop
     States
     {
       Spawn:
-        PS78 M 0 Bright
+        PS78 M 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
