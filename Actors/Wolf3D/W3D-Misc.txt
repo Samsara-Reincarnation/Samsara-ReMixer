@@ -195,7 +195,7 @@ actor SSDrop2 : SSDrop //SOD M2/3 graphic
     States
     {
       Spawn:
-        SSDR A 0
+        SSDR A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -261,7 +261,7 @@ actor LostDualChaingunDropTrue : WolfDualChaingunDropTrue
     States
     {
       Spawn:
-        WCHP D 0
+        WCHP D 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 38)
         goto SpawnGameModeCheck
 
       SpawnActual:

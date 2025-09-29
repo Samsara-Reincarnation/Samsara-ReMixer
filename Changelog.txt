@@ -20,6 +20,10 @@ Doom:
 ! The cyber knight missile is now treated as an explosive attack instead of a fire attack.
 * Fixed the spider-demolisher BFG tracers ignoring base damage resistances.
 
+-Doom 64-
+
+* Fixed dropped shotguns not being affected by the slot 2 replacement setting.
+
 Heretic:
 
 * Fixed an extra frame in D'Sparil's death animation being called in the death loop. Now it is called after the loop instead.
