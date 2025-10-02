@@ -44,6 +44,7 @@ Xim - For making the Rancor sprites used in Xim's Star Wars Doom
 Wardust - For making the Sandtrooper sprites used in Xim's Star Wars Doom
 Ajay Huff & Gonzalo Savoguin - For making the Rodian sprites used in Xim's Star Wars Doom
 Sleg Infantryman - For making the Battle Droid sprites used in Xim's Star Wars Doom
+Perdition's Gate Enjoyer - for providing sprites for the Blood Cultists and Hectebus pain rotations
 
 Original monsters and sprites/sounds belong to their respective owners, including:
 
