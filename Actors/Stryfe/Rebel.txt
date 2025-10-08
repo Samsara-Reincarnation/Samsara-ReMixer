@@ -83,11 +83,17 @@ actor StrifeBetrayedRebel : SamsaraMonsterHumanoid
 	XDeath:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 		RGIB A 4 A_TossGib
 		RGIB B 4
 		TNT1 A 0 A_Playsound("Strife/GibDead")
 		RGIB C 3 A_NoBlocking
-		RGIB DEF 3 A_TossGib
+		TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		RGIB D 3 A_TossGib
+		TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		RGIB E 3 A_TossGib
+		TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
+		RGIB F 3 A_TossGib
 		RGIB G 3
 		RGIB H -1
 		Stop

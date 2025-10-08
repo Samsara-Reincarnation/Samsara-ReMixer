@@ -28,6 +28,10 @@ Heretic:
 
 * Fixed an extra frame in D'Sparil's death animation being called in the death loop. Now it is called after the loop instead.
 
+Strife:
+
+! Gibbed Acolytes now spawn the additional gibs and blood splatters from the Veteran Edition's brutal gibs setting.
+
 Hexen I:
 
 ! The player bosses now have new active sounds.
