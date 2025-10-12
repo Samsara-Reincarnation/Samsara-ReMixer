@@ -48,6 +48,12 @@ GoldenEye 007:
 
 * Fixed female enemies playing the wrong sound when killed by Caleb's fire weapons.
 
+-Games-
+
+Rise of the Wool Ball:
+
+! Removed unneeded multi ammo pickup actors.
+
 -Settings-
 
 * Monster generation spawners no longer create terrain splashes.

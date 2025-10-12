@@ -1,12 +1,3 @@
-actor SamsaraAmmo1Small_ROTWB_2 : MultiAmmo1Small replaces SamsaraAmmo1Small_ROTWB { }
-actor SamsaraAmmo1Small_ROTWB2_2 : MultiAmmo1Small replaces SamsaraAmmo1Small_ROTWB2 { }
-actor SamsaraAmmo2Small_ROTWB_2 : MultiAmmo2Small replaces SamsaraAmmo2Small_ROTWB { }
-actor SamsaraAmmo2Small_ROTWB2_2 : MultiAmmo2Small replaces SamsaraAmmo2Small_ROTWB2 { }
-actor SamsaraAmmo3Small_ROTWB_2 : MultiAmmo3Small replaces SamsaraAmmo3Small_ROTWB { }
-actor SamsaraAmmo3Small_ROTWB2_2 : MultiAmmo3Small replaces SamsaraAmmo3Small_ROTWB2 { }
-actor SamsaraAmmo3Big_ROTWB_2 : MultiAmmo3Big replaces SamsaraAmmo3Big_ROTWB { }
-actor SamsaraAmmo4Small_ROTWB_2 : MultiAmmo4Small replaces SamsaraAmmo4Small_ROTWB { }
-
 actor ShotgunCat_SamsaraRemixer : ShotgunGuySpawner replaces ShotgunCat {}
 actor DemonCat_SamsaraRemixer : DemonSpawner replaces DemonCat {}
 actor ChaingunCat_SamsaraRemixer : ChaingunGuySpawner replaces ChaingunCat {}
