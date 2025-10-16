@@ -1011,89 +1011,18 @@ object HectShot64
 }
 
 // Arch Vile Fire
-flickerlight ARCHFIRE_64_X1
+flickerlight ARCHFIRE_64
 {
-	color 1.0 0.5 0.0
-	size 32
-	secondarySize 40
+	color 0.72 0.36 0.0
+	size 60
+	secondarySize 76
 	chance 0.3
-	offset 0 12 0
-}
-
-flickerlight ARCHFIRE_64_X2
-{
-	color 1.0 0.5 0.0
-	size 48
-	secondarySize 56
-	chance 0.3
-	offset 0 26 0
-}
-
-flickerlight ARCHFIRE_64_X3
-{
-	color 1.0 0.5 0.0
-	size 64
-	secondarySize 72
-	chance 0.3
-	offset 0 32 0
-}
-
-flickerlight ARCHFIRE_64_X4
-{
-	color 0.8 0.4 0.0
-	size 56
-	secondarySize 64
-	chance 0.3
-	offset 0 44 0
-}
-
-flickerlight ARCHFIRE_64_X5
-{
-	color 0.8 0.4 0.0
-	size 48
-	secondarySize 56
-	chance 0.3
-	offset 0 64 0
-}
-
-flickerlight ARCHFIRE_64_X6
-{
-	color 0.6 0.3 0.0
-	size 40
-	secondarySize 48
-	chance 0.3
-	offset 0 82 0
-}
-
-flickerlight ARCHFIRE_64_X7
-{
-	color 0.5 0.25 0.0
-	size 32
-	secondarySize 40
-	chance 0.3
-	offset 0 94 0
-}
-
-flickerlight ARCHFIRE_64_X8
-{
-	color 0.4 0.2 0.0
-	size 24
-	secondarySize 32
-	chance 0.3
-	offset 0 98 0
+	offset 0 20 0
 }
 
 object ArchvileFire64
 {
-	frame 64FAA { light ARCHFIRE_64_X1 }
-	frame 64FAB { light ARCHFIRE_64_X2 }
-	frame 64FAC { light ARCHFIRE_64_X3 }
-	frame 64FAD { light ARCHFIRE_64_X4 }
-	frame 64FAE { light ARCHFIRE_64_X5 }
-	frame 64FAF { light ARCHFIRE_64_X6 }
-	frame 64FAG { light ARCHFIRE_64_X7 }
-	frame 64FAH { light ARCHFIRE_64_X8 }
-	frame 64FAI { light ARCHFIRE_64_X8 }
+	frame 64FA { light ARCHFIRE_64 }
 }
 
 // Arch-vile
