@@ -23,7 +23,7 @@ Doom:
 -Doom 64-
 
 * Fixed dropped shotguns not being affected by the slot 2 replacement setting.
-! Updated dynamic lights for Archvile fire.
+! Updated dynamic lights for the arch-vile fire.
 
 Heretic:
 
