@@ -13,6 +13,7 @@
 -Monsters-
 
 Blake Stone:
+
 * Fixed the High Security Genetic Guard using the wrong monster base.
 
 ----------------------------------------------------------------------------
