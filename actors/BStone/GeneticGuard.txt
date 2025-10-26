@@ -1,4 +1,4 @@
-Actor GeneticGuard : SamsaraMonsterHumanoidTotalGib {
+Actor GeneticGuard : SamsaraMonsterAlienTotalGib {
 	Health 180
 	Radius 24
 	Height 64
