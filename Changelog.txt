@@ -17,6 +17,7 @@ Doom:
 -Vanilla Doom Randomizer-
 
 * Fixed the cyber baron using the wrong sound when dying.
+* Fixed the archon of hell using the baron of hell sprites when hit by the Stronghold stunner rifle.
 
 Blake Stone:
 
