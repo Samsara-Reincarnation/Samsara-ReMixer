@@ -12,6 +12,12 @@
 
 -Monsters-
 
+Doom:
+
+-Vanilla Doom Randomizer-
+
+* Fixed the cyber baron using the wrong sound when dying.
+
 Blake Stone:
 
 * Fixed the High Security Genetic Guard using the wrong monster base.

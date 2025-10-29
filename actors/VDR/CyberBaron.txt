@@ -65,7 +65,7 @@ ACTOR MMRandomizer_Cyberbaron : BaronOfhell3
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD55 I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			VD55 J 8 A_Scream
-			VD55 K 8 bright A_PlaySound("world/barrelx")
+			VD55 K 8 bright A_PlaySound("doom/weapons/rocklx")
 			VD55 L 8 bright A_NoBlocking
 			VD55 MN 8 bright
 			VD55 O -1 A_KillMaster
