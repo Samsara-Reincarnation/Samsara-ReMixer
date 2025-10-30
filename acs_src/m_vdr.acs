@@ -56,7 +56,7 @@ Script "Hiero_IsCurseable" (void)
                    !CheckFlag(0, "INVULNERABLE") &&
                    !CheckInventory("PowerFakeInvulnerable") && !CheckInventory("PowerFakeInvulnerableCleric") && !CheckInventory("PowerFakeInvulnerableMage") &&
                    !CheckInventory("PowerFakeInvulnerableFighter") && !CheckInventory("QuakePentagram") && !CheckInventory("PowerGodProtection") &&
-                   !CheckInventory("PowerDogProtection") && !CheckInventory("Painkiller_IronWill_Protection") && !CheckInventory("PainkillerDemonMorphInvulnerability") &&
+                   !CheckInventory("PowerDoggyMorph") && !CheckInventory("Painkiller_IronWill_Protection") && !CheckInventory("PainkillerDemonMorphInvulnerability") &&
 
 	               // Victim and the curse projectile's shooter must be of different species.
 	               StrIcmp(GetActorProperty(0, APROP_Species), shootspecies));
