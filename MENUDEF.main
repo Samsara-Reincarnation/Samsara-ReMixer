@@ -239,6 +239,8 @@ OptionValue "Doom64Spawns"
 OptionMenu "SamsaraMonsterReplacementOptions"
 {
     Title "Monster Replacements"
+    Slider "Monster Replacement Chance", "mm_replace_chance", 1, 100, 5
+    StaticText ""
     StaticText "Doom", 1
     Option "Zombieman",         "mm_replace_zombieman",        "MonsterReplacer"
     Option "Shotgun Guy",       "mm_replace_shotgunguy",       "MonsterReplacer"

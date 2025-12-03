@@ -45,6 +45,7 @@ server int mm_doomspawns = 1;
 server int mm_doom64spawns = 1;
 
 // Monster Replacements
+server int mm_replace_chance = 100;
 server int mm_replace_zombieman = -1;
 server int mm_replace_shotgunguy = -1;
 server int mm_replace_imp = -1;

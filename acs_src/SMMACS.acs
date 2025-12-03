@@ -458,7 +458,7 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 
 	int monReplForSlot = GetCVar(monsterReplacementsStr[monSlot]);
 	int debugReplForSlot = GetCVar("mm_replace_all");
-	if (monReplForSlot != monSlot && monReplForSlot != -1)
+	if ((monReplForSlot != monSlot && monReplForSlot != -1) && (Random(1, 100) > GetCVar("mm_replace_chance")))
 	{
 		oldSlot = monSlot;
 		shouldNotCountKill = true;
