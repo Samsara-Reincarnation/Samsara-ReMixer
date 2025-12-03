@@ -44,37 +44,8 @@ ACTOR bryar_laser2_DFB
 	States
 	{
 	  Spawn:
-      TNT1 A 0 NoDelay A_SpawnItemEx("enemyblaster_trail_A1", 0,               0,              2)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail",     momx /-70.0,     -momy /-70.0, 2+    momz /-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (2 *momx)/-70.0, -(2 *momy)/-70.0, 2+(2 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (3 *momx)/-70.0, -(3 *momy)/-70.0, 2+(3 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (4 *momx)/-70.0, -(4 *momy)/-70.0, 2+(4 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (5 *momx)/-70.0, -(5 *momy)/-70.0, 2+(5 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (6 *momx)/-70.0, -(6 *momy)/-70.0, 2+(6 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (7 *momx)/-70.0, -(7 *momy)/-70.0, 2+(7 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-	  TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (8 *momx)/-70.0, -(8 *momy)/-70.0, 2+(8 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (9 *momx)/-70.0, -(9 *momy)/-70.0, 2+(9 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (10*momx)/-70.0, -(10*momy)/-70.0, 2+(10*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (11*momx)/-70.0, -(11*momy)/-70.0, 2+(11*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (12*momx)/-70.0, -(12*momy)/-70.0, 2+(12*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (13*momx)/-70.0, -(13*momy)/-70.0, 2+(13*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (14*momx)/-70.0, -(14*momy)/-70.0, 2+(14*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (15*momx)/-70.0, -(15*momy)/-70.0, 2+(15*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (16*momx)/-70.0, -(16*momy)/-70.0, 2+(16*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (17*momx)/-70.0, -(17*momy)/-70.0, 2+(17*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (18*momx)/-70.0, -(18*momy)/-70.0, 2+(18*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (19*momx)/-70.0, -(19*momy)/-70.0, 2+(19*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (20*momx)/-70.0, -(20*momy)/-70.0, 2+(20*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (21*momx)/-70.0, -(21*momy)/-70.0, 2+(21*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (22*momx)/-70.0, -(22*momy)/-70.0, 2+(22*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (23*momx)/-70.0, -(23*momy)/-70.0, 2+(23*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (24*momx)/-70.0, -(24*momy)/-70.0, 2+(24*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (25*momx)/-70.0, -(25*momy)/-70.0, 2+(25*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (26*momx)/-70.0, -(26*momy)/-70.0, 2+(26*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (27*momx)/-70.0, -(27*momy)/-70.0, 2+(27*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (28*momx)/-70.0, -(28*momy)/-70.0, 2+(28*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 1 A_SpawnItemEx("enemyblaster_trail", (29*momx)/-70.0, -(29*momy)/-70.0, 2+(29*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      Loop
+	  LASR A -1 BRIGHT
+	  stop
 			
 	  Death:
       TNT1 A 0 A_PlaySound("katarn/extiny",CHAN_VOICE)
@@ -97,37 +68,8 @@ ACTOR blaster_laser2_DFB
   States
   {
     Spawn:
-      TNT1 A 0 NoDelay A_SpawnItemEx("enemyblaster_trail_A1", 0,               0,              2)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail",     momx /-70.0,     -momy /-70.0, 2+    momz /-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (2 *momx)/-70.0, -(2 *momy)/-70.0, 2+(2 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (3 *momx)/-70.0, -(3 *momy)/-70.0, 2+(3 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (4 *momx)/-70.0, -(4 *momy)/-70.0, 2+(4 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (5 *momx)/-70.0, -(5 *momy)/-70.0, 2+(5 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (6 *momx)/-70.0, -(6 *momy)/-70.0, 2+(6 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (7 *momx)/-70.0, -(7 *momy)/-70.0, 2+(7 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-	  TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (8 *momx)/-70.0, -(8 *momy)/-70.0, 2+(8 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (9 *momx)/-70.0, -(9 *momy)/-70.0, 2+(9 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (10*momx)/-70.0, -(10*momy)/-70.0, 2+(10*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (11*momx)/-70.0, -(11*momy)/-70.0, 2+(11*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (12*momx)/-70.0, -(12*momy)/-70.0, 2+(12*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (13*momx)/-70.0, -(13*momy)/-70.0, 2+(13*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (14*momx)/-70.0, -(14*momy)/-70.0, 2+(14*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (15*momx)/-70.0, -(15*momy)/-70.0, 2+(15*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (16*momx)/-70.0, -(16*momy)/-70.0, 2+(16*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (17*momx)/-70.0, -(17*momy)/-70.0, 2+(17*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (18*momx)/-70.0, -(18*momy)/-70.0, 2+(18*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (19*momx)/-70.0, -(19*momy)/-70.0, 2+(19*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (20*momx)/-70.0, -(20*momy)/-70.0, 2+(20*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (21*momx)/-70.0, -(21*momy)/-70.0, 2+(21*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (22*momx)/-70.0, -(22*momy)/-70.0, 2+(22*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (23*momx)/-70.0, -(23*momy)/-70.0, 2+(23*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (24*momx)/-70.0, -(24*momy)/-70.0, 2+(24*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (25*momx)/-70.0, -(25*momy)/-70.0, 2+(25*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (26*momx)/-70.0, -(26*momy)/-70.0, 2+(26*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (27*momx)/-70.0, -(27*momy)/-70.0, 2+(27*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("enemyblaster_trail", (28*momx)/-70.0, -(28*momy)/-70.0, 2+(28*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 1 A_SpawnItemEx("enemyblaster_trail", (29*momx)/-70.0, -(29*momy)/-70.0, 2+(29*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      Loop
+	  LASR A -1 BRIGHT
+	  stop
     Death:
 	Crash:
       TNT1 A 0 A_PlaySound("katarn/extiny",CHAN_VOICE)
@@ -188,37 +130,8 @@ ACTOR blaster_laser2_REM
   States
   {
     Spawn:
-      TNT1 A 0 NoDelay A_SpawnItemEx("remoteblaster_trail_A1", 0,               0,              2)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail",     momx /-70.0,     -momy /-70.0, 2+    momz /-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (2 *momx)/-70.0, -(2 *momy)/-70.0, 2+(2 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (3 *momx)/-70.0, -(3 *momy)/-70.0, 2+(3 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (4 *momx)/-70.0, -(4 *momy)/-70.0, 2+(4 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (5 *momx)/-70.0, -(5 *momy)/-70.0, 2+(5 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (6 *momx)/-70.0, -(6 *momy)/-70.0, 2+(6 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (7 *momx)/-70.0, -(7 *momy)/-70.0, 2+(7 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-	  TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (8 *momx)/-70.0, -(8 *momy)/-70.0, 2+(8 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (9 *momx)/-70.0, -(9 *momy)/-70.0, 2+(9 *momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (10*momx)/-70.0, -(10*momy)/-70.0, 2+(10*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (11*momx)/-70.0, -(11*momy)/-70.0, 2+(11*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (12*momx)/-70.0, -(12*momy)/-70.0, 2+(12*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (13*momx)/-70.0, -(13*momy)/-70.0, 2+(13*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (14*momx)/-70.0, -(14*momy)/-70.0, 2+(14*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (15*momx)/-70.0, -(15*momy)/-70.0, 2+(15*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (16*momx)/-70.0, -(16*momy)/-70.0, 2+(16*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (17*momx)/-70.0, -(17*momy)/-70.0, 2+(17*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (18*momx)/-70.0, -(18*momy)/-70.0, 2+(18*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (19*momx)/-70.0, -(19*momy)/-70.0, 2+(19*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (20*momx)/-70.0, -(20*momy)/-70.0, 2+(20*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (21*momx)/-70.0, -(21*momy)/-70.0, 2+(21*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (22*momx)/-70.0, -(22*momy)/-70.0, 2+(22*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (23*momx)/-70.0, -(23*momy)/-70.0, 2+(23*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (24*momx)/-70.0, -(24*momy)/-70.0, 2+(24*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (25*momx)/-70.0, -(25*momy)/-70.0, 2+(25*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (26*momx)/-70.0, -(26*momy)/-70.0, 2+(26*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (27*momx)/-70.0, -(27*momy)/-70.0, 2+(27*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 0 A_SpawnItemEx("remoteblaster_trail", (28*momx)/-70.0, -(28*momy)/-70.0, 2+(28*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      TNT1 A 1 A_SpawnItemEx("remoteblaster_trail", (29*momx)/-70.0, -(29*momy)/-70.0, 2+(29*momz)/-70.0, 0,0,0, 0, SXF_ABSOLUTEANGLE)
-      Loop
+	  LASR A -1 BRIGHT
+	  stop
     Death:
 	Crash:
       TNT1 A 0 A_PlaySound("katarn/extiny",CHAN_VOICE)

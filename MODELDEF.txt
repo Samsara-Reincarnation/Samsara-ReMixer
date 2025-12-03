@@ -1159,6 +1159,42 @@ Model JerecDeathLightning
    FrameIndex JERE B 0 0
 }
 
+Model bryar_laser2_DFB
+{
+	Path "Models/DarkForces"
+	Skin 0 "red.png"
+	Model 0 "laserbolt.md3"
+	Scale 2.0 2.0 2.0
+	Offset 50 0 0
+	PITCHFROMMOMENTUM
+
+	FrameIndex LASR A 0 0
+}
+
+Model blaster_laser2_DFB
+{
+	Path "Models/DarkForces"
+	Skin 0 "red.png"
+	Model 0 "laserbolt.md3"
+	Scale 2.0 2.0 2.0
+	Offset 50 0 0
+	PITCHFROMMOMENTUM
+
+	FrameIndex LASR A 0 0
+}
+
+Model blaster_laser2_REM
+{
+	Path "Models/DarkForces"
+	Skin 0 "green.png"
+	Model 0 "laserbolt.md3"
+	Scale 2.0 2.0 2.0
+	Offset 50 0 0
+	PITCHFROMMOMENTUM
+
+	FrameIndex LASR A 0 0
+}
+
 model SpiderMastermind64Laser
 {
 	path "models"
