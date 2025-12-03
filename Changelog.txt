@@ -23,6 +23,10 @@ Blake Stone:
 
 * Fixed the High Security Genetic Guard using the wrong monster base.
 
+Star Wars: Dark Forces:
+
+! Enemy lasers now use models instead of sprites.
+
 ----------------------------------------------------------------------------
 --------------------------Reincarnation Mixer 1.2.2-------------------------
 ----------------------------------------------------------------------------
