@@ -1366,5 +1366,5 @@ Actor TurdMinionlimb_3 : TurdMinionlimb
 	}
 }
 
-actor BrutalRedOrgan_brownalt : BrutalRedOrgan { Translation "16:47=48:79", "176:191=48:79" }
-actor BrutalSkull_brownalt : BrutalSkull { Translation "16:47=48:79", "176:191=48:79" }
+actor ChunkyRedOrgan_brownalt : ChunkyRedOrgan { Translation "16:47=48:79", "176:191=48:79" }
+actor ChunkySkull_brownalt : ChunkySkull { Translation "16:47=48:79", "176:191=48:79" }
