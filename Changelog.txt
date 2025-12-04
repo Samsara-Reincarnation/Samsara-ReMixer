@@ -27,6 +27,12 @@ Star Wars: Dark Forces:
 
 ! Enemy lasers now use models instead of sprites.
 
+GoldenEye 007:
+
+-All-
+
+* Fixed enemies not performing several checks and scripts when killed with a headshot from James Bond.
+
 -Settings-
 
 + mm_replace_chance has been added, which determines the chance of a monster being replaced if a monster replacement setting is enabled. It can be found in the in the "Samsara ReMixer Options" menu, under the "Monster Replacements" submenu, with the label "Monster Replacement Chance".
