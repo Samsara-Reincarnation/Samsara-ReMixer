@@ -19,6 +19,10 @@ Doom:
 * Fixed the cyber baron using the wrong sound when dying.
 * Fixed the archon of Hell using the baron of Hell sprites when hit by the Stronghold stunner rifle.
 
+Marathon:
+
+* Fixed enemies with yellow blood using the wrong color of the Duke3D blood pool when gibbed by Duke Nukem.
+
 Blake Stone:
 
 * Fixed the High Security Genetic Guard using the wrong monster base.
