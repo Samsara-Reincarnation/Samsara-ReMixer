@@ -5,7 +5,7 @@
 
 ACTOR storm_trooper : SamsaraMonsterHumanoidTotalGib
 {
-	Health		55
+	Health		30
 	Radius		20
 	Height		56
 	Mass		100

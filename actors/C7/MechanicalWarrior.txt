@@ -1,5 +1,5 @@
 Actor C7MWarrior : SamsaraMonsterCyberneticTotalGib {
-	Health 1000
+	Health 800
 	Radius 24
 	Height 64
 	Speed 7

@@ -5,7 +5,7 @@
 
 ACTOR imperial_commander : SamsaraMonsterHumanoidTotalGib
 {
-	Health		75
+	Health		50
 	Radius		20
 	Height		56
 	Mass		100
@@ -328,7 +328,7 @@ Actor ImperialCommanderDrop {
 			TNT1 A 1 Bright 
 			Stop
 		Spawn2:
-			TNT1 A 1 Bright A_DropItem("ImperialCommander_MonsterDrop", 1, 256)
+			TNT1 A 1 Bright A_DropItem("StormTrooper_MonsterDrop", 1, 256)
 			Stop
 	}
 }

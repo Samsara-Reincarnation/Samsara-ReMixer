@@ -1,5 +1,5 @@
 Actor AnimatedProbe : SamsaraMonsterAlienTotalGib {
-	Health 100
+	Health 20
 	Height 44  
 	Speed 7  
 	Mass 45

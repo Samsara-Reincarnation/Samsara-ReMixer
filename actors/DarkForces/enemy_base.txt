@@ -163,7 +163,7 @@ actor StormTrooper_MonsterDrop : SamsaraSlotTwoDrop
     }
 }
 
-actor ImperialCommander_MonsterDrop : SamsaraSlotFourDrop
+actor HothTrooper_MonsterDrop : SamsaraSlotFourDrop
 {
     +DROPPED
     +NEVERRESPAWN

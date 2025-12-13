@@ -1,6 +1,6 @@
 Actor Ailoprobe : SamsaraMonsterAlienTotalGib {
     Tag "Ailoprobe"
-	Health 25
+	Health 250
 	Height 44
 	Speed 7
 	+FLOAT
@@ -322,5 +322,5 @@ actor Ailoprobe_ShrinkEffect : Ailoprobe
 	}
 }
 
-Actor Ailoprobe_2 : Ailoprobe { Health 6 Mass 300 }
+Actor Ailoprobe_2 : Ailoprobe { Health 60 Mass 300 }
 

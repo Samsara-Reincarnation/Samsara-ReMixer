@@ -1,6 +1,6 @@
 Actor Ttocs : SamsaraMonsterAlienTotalGib {
     Tag "Ttocs"
-	Health 150
+	Health 500
 	Radius 24
 	Height 64
 	Speed 6

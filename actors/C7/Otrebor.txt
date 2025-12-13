@@ -1,6 +1,6 @@
 Actor Otrebor : SamsaraMonsterAlienTotalGib {
     Tag "Otrebor"
-	Health 200
+	Health 400
 	Radius 24
 	Height 64
 	Speed 7

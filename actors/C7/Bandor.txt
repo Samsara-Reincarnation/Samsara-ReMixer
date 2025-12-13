@@ -9,7 +9,6 @@ Actor Bandor : SamsaraMonsterAlienTotalGib {
 	Speed 4
 	Obituary "%o was undone by a Bandor."
 	+MISSILEEVENMORE
-	DropItem EitakDrop
 	Radius 16
 	Height 48
 	PainChance 200

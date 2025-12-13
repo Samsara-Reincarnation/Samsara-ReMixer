@@ -1,6 +1,6 @@
 Actor Rodex : SamsaraMonsterAlienTotalGib {
     Tag "Rodex"
-	Health 50
+	Health 40
 	SeeSound "rodex/see"
 	DeathSound "rodex/die"	
 	AttackSound ""
