@@ -27,9 +27,26 @@ Blake Stone:
 
 * Fixed the High Security Genetic Guard using the wrong monster base.
 
+Corridor 7:
+
+- The Animated Probe's health has been decreased (from 100 to 20).
+- The Rodex's health has been decreased (from 50 to 40).
+- The Bandor no longer drops Ammo 1 or slot 4 equipment (depending on the "Enemy Drop Mode" setting) on death.
+* Fixed the Sector Probe having a bloody hell death effect.
++ The Ailoprobe's health has been increased (from 25 to 250).
++ The Otrebor's health has been increased (from 200 to 400).
++ Ttocs' health has been increased (from 150 to 500).
+- The Mechanical Warrior's health has been decreased (from 1000 to 800).
+- The Eniram Boss' health has been decreased (from 2000 to 1000).
+
 Star Wars: Dark Forces:
 
 ! Enemy lasers now use models instead of sprites.
+- The Stormtrooper's health has been decreased (from 55 to 30).
+- The Imperial Commander's health has been decreased (from 75 to 50).
+! The Imperial Commander now drops slot 2 equipment instead of slot 4 equipment if Doom-style weapon drops are enabled.
++ The Imperial Officer's health has been increased (from 50 to 55).
+! The Hoth Trooper now drops slot 4 equipment instead of slot 2 equipment if Doom-style weapon drops are enabled.
 
 GoldenEye 007:
 
