@@ -1,5 +1,5 @@
 Actor RMRLaserDrone : SamsaraMonsterRobotic {
-	Health 14
+	Health 40
 	Species "RMREnemies"
 	SeeSound "RMR/LDrone/See"
 	Painsound "RMR/LDrone/Ouw"

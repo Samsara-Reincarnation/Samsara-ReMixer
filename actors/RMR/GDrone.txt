@@ -1,5 +1,5 @@
 Actor RMRGrenadeDrone : SamsaraMonsterRobotic {
-	Health 30
+	Health 75
 	Species "RMREnemies"
 	SeeSound "RMR/GProbe/See"
 	Painsound "RMR/GProbe/Ouw"

@@ -1,6 +1,6 @@
 actor RMREstronBig : SamsaraMonsterBeastTotalGib
 {
-  Health 145
+  Health 500
   SeeSound "RMR/BigEstron/See"
   PainSound "RMR/BigEstron/Ouw"
   DeathSound "RMR/BigEstron/Die"

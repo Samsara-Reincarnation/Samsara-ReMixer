@@ -1,6 +1,6 @@
 Actor BigEstronBeast : SamsaraMonsterBeastTotalGib
 {
-	Health 1000
+	Health 600
 	Radius 48
 	Height 64
 	Speed 10

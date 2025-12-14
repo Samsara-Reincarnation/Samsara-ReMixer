@@ -1,6 +1,6 @@
 actor UNBluesuit : SamsaraMonsterHumanoidTotalGib
 {
-  Health 45
+  Health 40
   SeeSound "RMR/UNBluesuit/See"
   PainSound "RMR/UNBluesuit/Ouw"
   DeathSound "RMR/UNBluesuit/Die"

@@ -1,6 +1,6 @@
 actor UnShockTrooper : SamsaraMonsterHumanoidTotalGib
 {
-  Health 75
+  Health 50
   SeeSound "RMR/UNShock/See"
   PainSound "RMR/UNShock/Ouw"
   DeathSound "RMR/UNShock/Die"

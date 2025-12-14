@@ -1,6 +1,6 @@
 Actor BlacksuitStriker : SamsaraMonsterHumanoidTotalGib
 {
-  Health 50
+  Health 75
   SeeSound "RMR/Blacksuit/See"
   PainSound "RMR/Blacksuit/Ouw"
   DeathSound "RMR/Blacksuit/Die"

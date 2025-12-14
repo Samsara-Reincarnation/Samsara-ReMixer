@@ -1,6 +1,6 @@
 actor UNJTrooper : SamsaraMonsterHumanoidTotalGib
 {
-  Health 75
+  Health 255
   SeeSound "RMR/UNJTrooper/See"
   PainSound "RMR/UNJTrooper/Ouw"
   DeathSound "RMR/UNJTrooper/Die"

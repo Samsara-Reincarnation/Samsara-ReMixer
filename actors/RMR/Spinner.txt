@@ -1,5 +1,5 @@
 Actor RMRSpinner : SamsaraMonsterRobotic {
-	Health 175
+	Health 350
 	Species "RMREnemies"
 	SeeSound "RMR/SpinDroid/See"
 	Painsound "RMR/SpinDroid/Ouw"

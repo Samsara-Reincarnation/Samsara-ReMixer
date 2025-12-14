@@ -1,6 +1,6 @@
 actor TerranCommando : SamsaraMonsterHumanoidTotalGib
 {
-  Health 100
+  Health 200
   +DONTRIP
   SeeSound "RMR/UNBluesuit/See"
   PainSound "RMR/UNBluesuit/Ouw"

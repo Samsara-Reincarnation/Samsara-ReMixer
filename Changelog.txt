@@ -39,6 +39,21 @@ Corridor 7:
 - The Mechanical Warrior's health has been decreased (from 1000 to 800).
 - The Eniram Boss' health has been decreased (from 2000 to 1000).
 
+Rebel Moon Rising:
+
+- The Unit Bluesuit's health has been decreased (from 45 to 40).
+- The Unit Shock Trooper's health has been decreased (from 75 to 50).
+- The Estron Elder's health has been decreased (from 1000 to 600).
++ The Unit Jump Trooper's health has been increased (from 75 to 225).
++ The Black Suit Striker's health has been increased (from 50 to 75).
++ The Estron Warrior's health has been increased (from 145 to 500).
++ The Grenade Drone's health has been increased (from 30 to 75).
++ The Laser Drone's health has been increased (from 14 to 40).
++ The Heavy Black Suit's health has been increased (from 100 to 500).
++ The Shog'Gran's health has been increased (from 150 to 300).
++ The AP Droid's health has been increased (from 175 to 350).
++ The Terran Commando's health has been increased (from 100 to 200).
+
 Star Wars: Dark Forces:
 
 ! Enemy lasers now use models instead of sprites.

@@ -7,7 +7,7 @@ Actor RMRShoggran : SamsaraMonsterCybernetic
 	Obituary "%o's brain exploded."
 	PainChance "ShrinkerDMG", 0
 	Species "RMREnemies"
-	Health 150
+	Health 300
 	Mass 350
 	Speed 9
 	DropItem "RMRAmmoDropCell" 34,1	

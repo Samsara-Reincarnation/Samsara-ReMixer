@@ -1,6 +1,6 @@
 Actor HeavyBlacksuit : SamsaraMonsterHumanoid
 {
-  Health 100
+  Health 500
   SeeSound "RMR/HBlacksuit/See"
   PainSound "RMR/HBlacksuit/Ouw"
   DeathSound "RMR/HBlacksuit/Die"
