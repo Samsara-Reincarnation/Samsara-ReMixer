@@ -27,6 +27,8 @@ Actor Goldeneye_BaronSamedi : Goldeneye_EnemyBase
 		Death:
 			GE47 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",8) != 1, 2)
 			GE47 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:	
+		Death.Massacre:
 			GE47 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",4) != 1, 2)
 			GE47 A 0 A_SpawnItemEx("GoldeneyeEnemyDeathHitBox",9,9,9,vely,velx,velz,0,SXF_ABSOLUTEVELOCITY)
 			GE47 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)

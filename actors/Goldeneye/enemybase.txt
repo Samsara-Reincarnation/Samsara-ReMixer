@@ -707,7 +707,7 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 			GE45 N 11 A_ChangeFlag(NOPAIN, false)
 			Goto See
 		Death:
-			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",8) != 1, "Death.Massacre")
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",8) != 1, 2)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 		Death.Massacre:
 			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",4) != 1, 2)
@@ -913,7 +913,7 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 		XDeath:
 		Death.Explosive:
 		Death.DoomDamageTypeExplosive:
-			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",8) != 1, "XDeath.Massacre")
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",8) != 1, 2)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 		XDeath.Massacre:
 			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",4) != 1, 2)
