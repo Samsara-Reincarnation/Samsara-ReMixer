@@ -53,8 +53,9 @@ Actor MMRandomizer_LaserArachnotron : Arachnotron3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			Goto See+1
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD60 J 20 A_Scream
 			VD60 K 7 A_Fall
 			VD60 LMNO 7
@@ -233,6 +234,8 @@ actor MMRandomizer_LaserArachnotron_Shrink : MMRandomizer_LaserArachnotron
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

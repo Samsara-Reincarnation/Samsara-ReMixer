@@ -65,8 +65,9 @@ ACTOR HellKnight64 : SamsaraMonsterDemonicTotalGib
 			64HK H 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			64HK I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			64HK I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			64HK J 8 A_Scream
 			64HK K 8
 			64HK L 8 A_NoBlocking
@@ -283,6 +284,8 @@ actor HellKnight64_Shrink : HellKnight64
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

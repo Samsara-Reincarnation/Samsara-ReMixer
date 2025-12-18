@@ -104,8 +104,9 @@ Actor MMRandomizer_Wraith : SamsaraMonsterHumanoidTotalGib
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD49 H 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD49 H 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD49 I 8 A_Scream
 			VD49 J 6
 			VD49 K 6 A_NoBlocking
@@ -291,6 +292,8 @@ actor MMRandomizer_Wraith_Shrink : MMRandomizer_Wraith
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

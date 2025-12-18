@@ -55,8 +55,9 @@ ACTOR MMRandomizer_CyberImp : DoomImp3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD43 I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD43 I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD43 J 8 A_Scream
 			VD43 K 6
 			VD43 L 6 A_NoBlocking
@@ -66,8 +67,9 @@ ACTOR MMRandomizer_CyberImp : DoomImp3
 			VD43 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD43 N 5 A_CustomMissile("MMRandomizer_CyberArm",32,-10,270)
 			VD43 O 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD43 P 5
@@ -243,6 +245,8 @@ actor MMRandomizer_CyberImp_Shrink : MMRandomizer_CyberImp
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

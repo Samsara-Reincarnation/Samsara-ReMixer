@@ -73,9 +73,9 @@ ACTOR MageBoss3 : SamsaraMonsterRemixMageBoss
 		MAGE F 8 Bright A_MageAttack
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-		MAGE H 6
+	Death.Massacre:
+		MAGE H 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		MAGE I 6 A_Scream
 		MAGE JK 6
 		MAGE L 6 A_NoBlocking
@@ -84,8 +84,9 @@ ACTOR MageBoss3 : SamsaraMonsterRemixMageBoss
 		MAGE N -1 
 		Stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		MAGE O 5 A_PlaySound("BossMageGibDeath")
 		MAGE P 5
 		MAGE R 5 A_NoBlocking
@@ -418,6 +419,8 @@ actor Menelkir_Shrink : MageBoss3
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

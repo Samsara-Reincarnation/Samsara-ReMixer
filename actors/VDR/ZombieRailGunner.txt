@@ -49,8 +49,9 @@ ACTOR MMRandomizer_ZombieRailGunner : Shotgunguy3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD35 H 5 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD35 H 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD35 I 5 A_Scream
 			VD35 J 5 A_Fall
 			VD35 K 5
@@ -60,8 +61,9 @@ ACTOR MMRandomizer_ZombieRailGunner : Shotgunguy3
 			VD35 G 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD35 O 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD35 O 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD35 P 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD35 Q 5 A_Fall
 			VD35 RSTUV 5
@@ -235,6 +237,8 @@ actor MMRandomizer_ZombieRailGunner_Shrink : MMRandomizer_ZombieRailGunner
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

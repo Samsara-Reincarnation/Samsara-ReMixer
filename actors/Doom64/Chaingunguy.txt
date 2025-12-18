@@ -60,8 +60,9 @@ ACTOR ChaingunGuy64 : SamsaraMonsterHumanoid
 		64CP G 16 A_Pain
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		64CP H 5 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		64CP H 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		64CP I 5 A_Scream
 		64CP J 5 A_NoBlocking
 		64CP KL 5
@@ -81,8 +82,9 @@ ACTOR ChaingunGuy64 : SamsaraMonsterHumanoid
 		64CP G 2
 		Loop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		64CP N 5 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		64CP N 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		64CP O 5 A_PlaySound("friendlyimp64/gibbed", CHAN_VOICE)
 		64CP P 5 A_NoBlocking
 		64PO QRST 5
@@ -280,6 +282,8 @@ actor ChainGunGuy64_Shrink : ChaingunGuy64
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

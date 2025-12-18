@@ -62,8 +62,9 @@ ACTOR MMRandomizer_Cyberbaron : BaronOfhell3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD55 I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD55 I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD55 J 8 A_Scream
 			VD55 K 8 bright A_PlaySound("doom/weapons/rocklx")
 			VD55 L 8 bright A_NoBlocking
@@ -241,6 +242,8 @@ actor MMRandomizer_Cyberbaron_Shrink : MMRandomizer_Cyberbaron
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

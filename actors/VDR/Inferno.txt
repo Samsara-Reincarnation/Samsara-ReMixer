@@ -76,6 +76,17 @@ ACTOR MMRandomizer_Inferno : SamsaraMonsterDemonicTotalGib
 			VD69 P 6 Bright A_NoBlocking
 			VD69 Q 6 Bright
 			Stop
+		Death.Massacre:
+			VD69 L 6 Bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			VD69 M 6 Bright A_Scream
+			VD69 N 6 Bright
+			TNT1 A 0 A_CustomMissile("MMRandomizer_Lavaball",32,0,45,CMF_AIMDIRECTION)
+			TNT1 A 0 A_CustomMissile("MMRandomizer_Lavaball",32,0,135,CMF_AIMDIRECTION)
+			TNT1 A 0 A_CustomMissile("MMRandomizer_Lavaball",32,0,225,CMF_AIMDIRECTION)
+			VD69 O 6 Bright A_CustomMissile("MMRandomizer_Lavaball",32,0,315,CMF_AIMDIRECTION)
+			VD69 P 6 Bright A_NoBlocking
+			VD69 Q 6 Bright
+			Stop
 		StakeDeath:
 			VD69 K 2
 			Loop
@@ -242,6 +253,8 @@ actor MMRandomizer_Inferno_Shrink : MMRandomizer_Inferno
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

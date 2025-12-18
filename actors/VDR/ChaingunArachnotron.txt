@@ -52,8 +52,9 @@ actor MMRandomizer_ChaingunArachnotron : Arachnotron3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See+1
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD59 J 20 A_Scream
 			VD59 K 7 A_NoBlocking
 			VD59 LMNO 7
@@ -231,6 +232,8 @@ actor MMRandomizer_ChaingunArachnotron_Shrink : MMRandomizer_ChaingunArachnotron
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

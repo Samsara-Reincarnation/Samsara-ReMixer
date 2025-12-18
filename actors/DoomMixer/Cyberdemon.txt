@@ -48,6 +48,16 @@ ACTOR CyberDemon3 : CyberDemon2
 		CYB2 P 30
 		CYB2 P -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 		Stop
+	Death.Massacre:
+		CYB2 H 10 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		CYB2 I 10 A_Scream
+		CYB2 J 10
+		CYB2 KL 10
+		CYB2 M 10 A_NoBlocking
+		CYB2 NO 10
+		CYB2 P 30
+		CYB2 P -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+		Stop
 	}
 }
 

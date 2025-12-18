@@ -71,8 +71,9 @@ Actor StrifeAcolyte : SamsaraMonsterHumanoid
 			AGRD O 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGRD G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGRD G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGRD H 4 A_Scream
 			AGRD I 4
 			AGRD J 3
@@ -81,9 +82,10 @@ Actor StrifeAcolyte : SamsaraMonsterHumanoid
 			AGRD N -1
 			stop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_1B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_1B B 5 A_TossGib
@@ -293,6 +295,8 @@ actor StrifeAcolyte_Shrink : StrifeAcolyte
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -380,8 +384,9 @@ Actor StrifeAcolyte2 : StrifeAcolyte
 			AGD2 O 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGD2 G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGD2 G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGD2 H 4 A_Scream
 			AGD2 I 4
 			AGD2 J 3
@@ -393,9 +398,10 @@ Actor StrifeAcolyte2 : StrifeAcolyte
 			AGD2 O 2
 			Loop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_2B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_2B B 5 A_TossGib
@@ -558,6 +564,8 @@ actor StrifeAcolyte2_Shrink : StrifeAcolyte2
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -646,8 +654,9 @@ Actor StrifeAcolyte3 : StrifeAcolyte
 			AGD3 O 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGD3 G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGD3 G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGD3 H 4 A_Scream
 			AGD3 I 4
 			AGD3 J 3
@@ -659,9 +668,10 @@ Actor StrifeAcolyte3 : StrifeAcolyte
 			AGD3 O 2
 			Loop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_3B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_3B B 5 A_TossGib
@@ -831,6 +841,8 @@ actor StrifeAcolyte3_Shrink : StrifeAcolyte3
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -919,8 +931,9 @@ Actor StrifeAcolyte4 : StrifeAcolyte
 			AGD4 O 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGD4 G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGD4 G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGD4 H 4 A_Scream
 			AGD4 I 4
 			AGD4 J 3
@@ -932,9 +945,10 @@ Actor StrifeAcolyte4 : StrifeAcolyte
 			AGD4 O 2
 			Loop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_4B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_4B B 5 A_TossGib
@@ -1104,6 +1118,8 @@ actor StrifeAcolyte4_Shrink : StrifeAcolyte4
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1193,8 +1209,9 @@ Actor StrifeAcolyte5 : StrifeAcolyte
 			AGD5 O 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGR5 G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGR5 G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGR5 H 4 A_Scream
 			AGR5 I 4
 			AGR5 J 3
@@ -1206,9 +1223,10 @@ Actor StrifeAcolyte5 : StrifeAcolyte
 			AGD5 O 2
 			Loop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_5B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_5B B 5 A_TossGib
@@ -1378,6 +1396,8 @@ actor StrifeAcolyte5_Shrink : StrifeAcolyte5
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1467,8 +1487,9 @@ Actor StrifeAcolyte6 : StrifeAcolyte
 			AGD6 O 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGR6 G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGR6 G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGR6 H 4 A_Scream
 			AGR6 I 4
 			AGR6 J 3
@@ -1480,9 +1501,10 @@ Actor StrifeAcolyte6 : StrifeAcolyte
 			AGD6 O 2
 			Loop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_6B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_6B B 5 A_TossGib
@@ -1652,6 +1674,8 @@ actor StrifeAcolyte6_Shrink : StrifeAcolyte6
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1740,8 +1764,9 @@ Actor StrifeAcolyte7 : StrifeAcolyte
 			AGD7 O 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGR7 G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGR7 G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGR7 H 4 A_Scream
 			AGR7 I 4
 			AGR7 J 3
@@ -1753,9 +1778,10 @@ Actor StrifeAcolyte7 : StrifeAcolyte
 			AGD7 O 2
 			Loop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_7B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_7B B 5 A_TossGib
@@ -1925,6 +1951,8 @@ actor StrifeAcolyte7_Shrink : StrifeAcolyte7
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2007,8 +2035,9 @@ Actor StrifeAcolyte8 : StrifeAcolyte
 			AGR8 O 8 A_Pain
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			AGR8 G 4 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			AGR8 G 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AGR8 H 4 A_Scream
 			AGR8 I 4
 			AGR8 J 3
@@ -2020,9 +2049,10 @@ Actor StrifeAcolyte8 : StrifeAcolyte
 			AGD8 O 2
 			Loop
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 A_GiveInventory("IsGibbed",1)
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
 			G_8B A 5 A_ChangeFlag("SOLID",false)
 			TNT1 AAA 0 A_SpawnItemEx("StrifeBloodSplatter", 0, 0, 24, frandom(0,10), frandom(0,10), frandom(0,15), frandom(0,10), SXF_NOCHECKPOSITION|SXF_TRANSFERTRANSLATION)
 			G_8B B 5 A_TossGib
@@ -2199,6 +2229,8 @@ actor StrifeAcolyte8_Shrink : StrifeAcolyte8
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

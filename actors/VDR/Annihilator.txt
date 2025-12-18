@@ -70,6 +70,15 @@ ACTOR MMRandomizer_Annihilator : CyberDemon3
 			VD80 P 30
 			VD80 P -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
+		Death.Massacre:
+			VD80 H 10 Bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			VD80 I 10 Bright A_Scream
+			VD80 JKL 10 Bright
+			VD80 M 10 Bright A_NoBlocking
+			VD80 NO 10 Bright
+			VD80 P 30
+			VD80 P -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			Stop
 	}
 }
 

@@ -191,9 +191,10 @@ actor Knight2_Shrink : Knight3
 			"####" "#" 2 A_Die("Squish")
 			"####" "#" 0
 			loop
-		Crash:
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -420,9 +421,10 @@ actor KnightGhost2_Shrink : KnightGhost3
 			"####" "#" 2 A_Die("Squish")
 			"####" "#" 0
 			loop
-		Crash:
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

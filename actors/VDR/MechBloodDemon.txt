@@ -86,8 +86,9 @@ ACTOR MMRandomizer_MechBloodDemon : MMRandomizer_MechDemon
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD47 I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD47 I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_SpawnItemEx("MMRandomizer_MechBloodDemonArm", 10, 0, 32, 0, 8, 0, 0, SXF_CLIENTSIDE)
 			VD47 J 8 A_Scream
@@ -264,6 +265,8 @@ actor MMRandomizer_MechBloodDemon_Shrink : MMRandomizer_MechBloodDemon
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

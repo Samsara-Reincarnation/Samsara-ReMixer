@@ -59,8 +59,9 @@ ACTOR MMRandomizer_Cacolantern : SamsaraMonsterDemonicTotalGib
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD67 G 8 bright A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD67 G 8 bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD67 H 8 bright A_Scream
 			VD67 I 8 bright
 			VD67 J 8
@@ -240,6 +241,8 @@ actor MMRandomizer_Cacolantern_Shrink : MMRandomizer_Cacolantern
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

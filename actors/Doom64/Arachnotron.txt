@@ -96,8 +96,9 @@ ACTOR Arachnotron64 : SamsaraMonsterCyberneticTotalGib
 			TNT1 A 0 A_ChangeFlag("JUSTHIT",false)
 			Goto See+1
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			64PI G 20 A_Scream
 			64PI H 7 A_NoBlocking
 			64PI IJK 7
@@ -423,6 +424,8 @@ actor Arachnotron64_Shrink : Arachnotron64
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

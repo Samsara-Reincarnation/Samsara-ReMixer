@@ -97,8 +97,9 @@ Actor MMRandomizer_ArchonOfHell : BaronOfHell3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD79 R 6 Bright A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD79 R 6 Bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD79 S 6 Bright A_Scream
 			VD79 T 6 Bright
 			VD79 U 6 Bright A_NoBlocking
@@ -281,6 +282,8 @@ actor MMRandomizer_ArchonOfHell_Shrink : MMRandomizer_ArchonOfHell
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

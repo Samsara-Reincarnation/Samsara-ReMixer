@@ -95,8 +95,9 @@ ACTOR MMRandomizer_Cryocubus : Fatso3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD62 K 6 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD62 K 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD62 L 6 A_Scream
 			VD62 M 6 A_NoBlocking
 			VD62 NOP 6
@@ -306,6 +307,8 @@ actor MMRandomizer_Cryocubus_Shrink : MMRandomizer_Cryocubus
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

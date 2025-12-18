@@ -140,8 +140,9 @@ Actor MMRandomizer_Roach : SamsaraMonsterHumanoid
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD38 I 8 A_ScreamAndUnblock
 			VD38 JKL 6
 			VD38 M -1 ACS_NamedExecuteWithResult("ReMixer_SelfRevive", 1050, 18, 0)
@@ -160,8 +161,9 @@ Actor MMRandomizer_Roach : SamsaraMonsterHumanoid
 			VD38 G 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD38 I 4 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD38 NOP 6
 			VD38 Q 6 A_NoBlocking
@@ -336,6 +338,8 @@ actor MMRandomizer_Roach_Shrink : MMRandomizer_Roach
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

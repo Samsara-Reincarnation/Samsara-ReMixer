@@ -57,8 +57,9 @@ actor MMRandomizer_Vulgar : DoomImp3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD41 I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD41 I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD41 J 8 A_Scream
 			VD41 KL 6
 			VD41 M 6 A_NoBlocking
@@ -68,8 +69,9 @@ actor MMRandomizer_Vulgar : DoomImp3
 			VD40 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD41 O 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD41 O 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD41 P 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD41 Q 5
 			VD41 R 5 A_NoBlocking
@@ -245,6 +247,8 @@ actor MMRandomizer_Vulgar_Shrink : MMRandomizer_Vulgar
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

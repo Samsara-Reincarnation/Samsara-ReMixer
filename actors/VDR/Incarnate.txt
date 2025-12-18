@@ -89,8 +89,9 @@ ACTOR MMRandomizer_Incarnate : Revenant3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			VD75 L 7 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			VD75 M 7
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD75 LM 7
 			VD75 N 7 A_Scream
 			VD75 O 7 A_NoBlocking
 			VD75 P 7
@@ -100,8 +101,9 @@ ACTOR MMRandomizer_Incarnate : Revenant3
 			VD75 L 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD64 P 10 bright A_PlaySound("vdr/incarnate/explode")
 			VD64 QR 5 bright
 			VD64 S 5 bright A_NoBlocking
@@ -298,6 +300,8 @@ actor MMRandomizer_Incarnate_Shrink : MMRandomizer_Incarnate
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

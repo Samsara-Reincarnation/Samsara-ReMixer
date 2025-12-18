@@ -45,5 +45,13 @@ ACTOR SpiderMastermind3 : SpiderMastermind2
 		SPD2 S 30
 		SPD2 S -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 		Stop
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		SPD2 J 20 A_Scream
+		SPD2 K 10 A_NoBlocking
+		SPD2 LMNOPQR 10
+		SPD2 S 30
+		SPD2 S -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+		Stop
 	}
 }

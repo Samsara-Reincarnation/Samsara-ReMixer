@@ -58,8 +58,9 @@ ACTOR AcidDemon64 : Demon64
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			64AD I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			64AD I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			64AD J 8 A_Scream
 			64AD K 4
@@ -350,6 +351,8 @@ actor AcidDemon64_Shrink : AcidDemon64
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

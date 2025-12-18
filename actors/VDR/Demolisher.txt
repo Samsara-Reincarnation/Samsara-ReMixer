@@ -69,6 +69,14 @@ Actor MMRandomizer_Demolisher : SpiderMastermind3
 			VD82 S 30
 			VD82 S -1 A_KillMaster
 			Stop
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			VD82 J 20 Bright A_Scream
+			VD82 K 10 Bright A_NoBlocking
+			VD82 LMNOPQR 10 Bright
+			VD82 S 30
+			VD82 S -1 A_KillMaster
+			Stop
 	}
 }
 

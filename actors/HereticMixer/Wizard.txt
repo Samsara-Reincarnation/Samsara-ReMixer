@@ -174,9 +174,10 @@ actor Wizard2_Shrink : Wizard3
 			"####" "#" 2 A_Die("Squish")
 			"####" "#" 0
 			loop
-		Crash:
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

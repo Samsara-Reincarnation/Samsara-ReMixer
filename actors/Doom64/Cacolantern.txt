@@ -41,8 +41,9 @@ ACTOR Cacolantern64 : Cacodemon64
 			64CH G 5 bright A_CustomComboAttack("CacolanternBall64", 48, random(1,8)*8)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_ChangeFlag("THRUACTORS", TRUE)
 			TNT1 A 0 A_ChangeFlag("BLOCKEDBYSOLIDACTORS", FALSE)
 			64CH H 8 A_ScaleVelocity(0.5)
@@ -241,6 +242,8 @@ actor Cacolantern64_Shrink : Cacolantern64
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

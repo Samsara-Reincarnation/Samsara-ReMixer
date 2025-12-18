@@ -78,8 +78,9 @@ Actor MMRandomizer_HellWarrior : SamsaraMonsterDemonicTotalGib
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_FaceTarget
 			VD51 K 5 A_SpawnItemEx("MMRandomizer_HellWarriorShield", 0, 0, 25, 6, 0, 0, 60, SXF_CLIENTSIDE)
 			VD51 L 5 A_Scream
@@ -269,6 +270,8 @@ actor MMRandomizer_HellWarrior_Shrink : MMRandomizer_HellWarrior
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

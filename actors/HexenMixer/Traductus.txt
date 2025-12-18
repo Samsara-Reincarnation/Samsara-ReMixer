@@ -78,9 +78,9 @@ ACTOR ClericBoss3 : SamsaraMonsterRemixClericBoss
 		CLBS G 10 A_CustomMissile("HolySpiritTraductus4_Mix")
 		goto See2
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-		CLBS I 6
+	Death.Massacre:
+		CLBS I 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		CLBS K 6 A_Scream
 		CLBS LL 6
 		CLBS M 6 A_NoBlocking
@@ -88,8 +88,9 @@ ACTOR ClericBoss3 : SamsaraMonsterRemixClericBoss
 		CLBS Q -1 A_KillMaster
 		Stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		CLBS R 5 A_PlaySound("BossClericGibDeath")
 		CLBS S 5
 		CLBS T 5 A_NoBlocking
@@ -416,6 +417,8 @@ actor Traductus_Shrink : ClericBoss3
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

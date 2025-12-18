@@ -74,8 +74,9 @@ ACTOR MMRandomizer_Daedabus : Fatso3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD92 K 6 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD92 K 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD92 L 6 A_Scream
 			VD92 M 6 A_NoBlocking
 			VD92 NOPQRS 6
@@ -285,6 +286,8 @@ actor MMRandomizer_Daedabus_Shrink : MMRandomizer_Daedabus
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

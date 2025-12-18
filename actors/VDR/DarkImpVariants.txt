@@ -42,8 +42,9 @@ actor MMRandomizer_STDarkImp : DoomImp3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD18 I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD18 I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD18 J 8 A_Scream
 			VD18 K 6
 			VD18 L 6 A_Fall
@@ -53,8 +54,9 @@ actor MMRandomizer_STDarkImp : DoomImp3
 			VD18 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD20 N 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD20 N 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD20 O 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD20 P 5
 			VD20 Q 5 A_Fall
@@ -230,6 +232,8 @@ actor MMRandomizer_STDarkImp_Shrink : MMRandomizer_STDarkImp
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -353,8 +357,9 @@ actor MMRandomizer_DarkDevil : MMRandomizer_STDarkImp
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD19 I 8 A_Jump(130,"Death2")
 			VD19 J 8 A_Scream
 			VD19 K 6
@@ -372,8 +377,9 @@ actor MMRandomizer_DarkDevil : MMRandomizer_STDarkImp
 			VD19 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD19 S 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD19 S 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD19 T 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD19 U 5
 			VD19 V 5 A_NoBlocking
@@ -549,6 +555,8 @@ actor MMRandomizer_DarkDevil_Shrink : MMRandomizer_DarkDevil
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -659,8 +667,9 @@ actor MMRandomizer_NamiDarkImp : MMRandomizer_STDarkImp
 			VD20 H 2 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD20 I 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD20 I 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD20 J 8 A_Scream
 			VD20 K 6
 			VD20 L 6 A_Fall
@@ -670,8 +679,9 @@ actor MMRandomizer_NamiDarkImp : MMRandomizer_STDarkImp
 			TRO2 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD20 N 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD20 N 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD20 O 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD20 P 5
 			VD20 Q 5 A_Fall
@@ -847,6 +857,8 @@ actor MMRandomizer_NamiDarkImp_Shrink : MMRandomizer_NamiDarkImp
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -973,8 +985,9 @@ actor MMRandomizer_NetherDarkImp : MMRandomizer_STDarkImp
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD21 L 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD21 L 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD21 M 8 A_Scream
 			VD21 N 5
 			VD21 O 5 A_Fall
@@ -993,8 +1006,9 @@ actor MMRandomizer_NetherDarkImp : MMRandomizer_STDarkImp
 			VD21 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD21 Q 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD21 Q 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD21 R 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD21 S 5
 			VD21 T 5 A_Fall
@@ -1170,6 +1184,8 @@ actor MMRandomizer_NetherDarkImp_Shrink : MMRandomizer_NetherDarkImp
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1394,8 +1410,9 @@ actor MMRandomizer_VoidDarkImp : MMRandomizer_STDarkImp
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD22 L 8 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD22 L 8 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD22 M 8 A_Scream
 			VD22 N 5
 			VD22 O 5 A_Fall
@@ -1405,8 +1422,9 @@ actor MMRandomizer_VoidDarkImp : MMRandomizer_STDarkImp
 			VD22 H 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD20 N 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD20 N 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD20 O 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			VD20 P 5
 			VD20 Q 5 A_Fall
@@ -1582,6 +1600,8 @@ actor MMRandomizer_VoidDarkImp_Shrink : MMRandomizer_VoidDarkImp
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -71,6 +71,15 @@ Actor MMRandomizer_DarkCyberdemon : CyberDemon3
 		VD83 P 30
 		VD83 P -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 		Stop
+	Death.Massacre:
+		VD83 H 7 Bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		VD83 I 7 Bright A_Scream
+		VD83 JKL 7 Bright
+		VD83 M 7 Bright A_NoBlocking
+		VD83 NO 7 Bright
+		VD83 P 30
+		VD83 P -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+		Stop
 	}
 }
 

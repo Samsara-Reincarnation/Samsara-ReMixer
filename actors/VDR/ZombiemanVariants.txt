@@ -37,8 +37,9 @@ ACTOR MMRandomizer_ZombiemanVariant1 : ZombieMan3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD00 H 5 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD00 H 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD00 I 5 A_Scream
 			VD00 J 5 A_NoBlocking
 			PSS2 K 5
@@ -48,8 +49,9 @@ ACTOR MMRandomizer_ZombiemanVariant1 : ZombieMan3
 			VD00 G 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD00 M 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD00 M 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			PSS2 N 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			PSS2 O 5 A_NoBlocking
 			PSS2 PQRST 5
@@ -224,6 +226,8 @@ actor MMRandomizer_ZombiemanVariant1_Shrink : MMRandomizer_ZombiemanVariant1
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -314,8 +318,9 @@ ACTOR MMRandomizer_ZombiemanVariant2 : ZombieMan3
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD01 H 5 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD01 H 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD01 I 5 A_Scream
 			VD01 J 5 A_NoBlocking
 			PSS2 K 5
@@ -325,8 +330,9 @@ ACTOR MMRandomizer_ZombiemanVariant2 : ZombieMan3
 			VD01 G 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD01 M 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD01 M 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			PSS2 N 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			PSS2 O 5 A_NoBlocking
 			PSS2 PQRST 5
@@ -501,6 +507,8 @@ actor MMRandomizer_ZombiemanVariant2_Shrink : MMRandomizer_ZombiemanVariant2
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -591,8 +599,9 @@ ACTOR MMRandomizer_ZombiemanVariant3 : ZombieMan3
 			VD02 G 3 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD02 H 5 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD02 H 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD00 I 5 A_Scream
 			VD00 J 5 A_NoBlocking
 			PSS2 K 5
@@ -602,8 +611,9 @@ ACTOR MMRandomizer_ZombiemanVariant3 : ZombieMan3
 			VD02 G 2
 			Loop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD00 M 5 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			VD00 M 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			PSS2 N 5 A_PlaySound("doom/misc/gibbed", CHAN_VOICE)
 			PSS2 O 5 A_NoBlocking
 			PSS2 PQRST 5
@@ -779,6 +789,8 @@ actor MMRandomizer_ZombiemanVariant3_Shrink : MMRandomizer_ZombiemanVariant3
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

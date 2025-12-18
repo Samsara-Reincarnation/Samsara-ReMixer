@@ -133,6 +133,38 @@ ACTOR MotherDemon64 : SamsaraMonsterDemonicBoss
 			64MD NO 6
 			TNT1 A 5 A_KillMaster
 			Stop
+		Death.Massacre:
+			64MD I 10 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_Scream
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 0, 0, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 0, 0, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", -20, -20, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 20, 20, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 20, 20, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 0, 0, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 0, 0, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", -20, -20, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 20, 20, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", -20, -20, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 0, 0, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", -20, -20, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", -20, -20, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 20, 20, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 20, 20, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 0, 0, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 20, 20, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 0, 0, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD I 4 A_SpawnItemEx("BossExplosion64", 20, 20, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD J 4 A_SpawnItemEx("BossExplosion64", -20, -20, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD J 4 A_SpawnItemEx("BossExplosion64", -20, -20, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD K 4 A_SpawnItemEx("BossExplosion64", 20, 20, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD K 4 A_SpawnItemEx("BossExplosion64", -20, -20, 0, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			TNT1 A 0 A_NoBlocking
+			64MD L 4 A_SpawnItemEx("BossExplosion64", 20, 20, 55, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD L 4 A_SpawnItemEx("BossExplosion64", 0, 0, 110, 0, 0, 0, 0, SXF_ABSOLUTEPOSITION|SXF_CLIENTSIDE)
+			64MD MNO 6
+			TNT1 A 5 A_KillMaster
+			Stop
 		Crush:
 			TNT1 A 0 A_PlaySound("friendlyimp64/crush")
 			A027 A -1 A_KillMaster

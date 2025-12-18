@@ -45,8 +45,9 @@ ACTOR Minotaur3 : Minotaur2
 			MNTR ABCD 5 A_MinotaurChase
 			Loop
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffectForBosses",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			MNTR F 6 A_MinotaurDeath
 			MNTR G 5
 			MNTR H 6 A_Scream

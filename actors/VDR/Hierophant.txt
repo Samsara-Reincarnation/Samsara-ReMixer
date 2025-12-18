@@ -107,8 +107,9 @@ Actor MMRandomizer_Hierophant : SamsaraMonsterDemonicTotalGib
 			TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 			goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			VD78 Q 6 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			VD78 Q 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			VD78 R 6 A_Scream
 			VD78 S 6 A_NoBlocking
 			VD78 TUVW 6
@@ -314,6 +315,8 @@ actor MMRandomizer_Hierophant_Shrink : MMRandomizer_Hierophant
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

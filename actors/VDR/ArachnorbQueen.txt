@@ -132,8 +132,9 @@ actor MMRandomizer_ArachnorbQueen : SamsaraMonsterDemonicBoss
 			VD81 F 4 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffectForBosses",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_ChangeFlag("FLOATBOB",0)
 			VD81 G 9 A_Scream
 			VD81 G 3 A_Fall

@@ -62,6 +62,13 @@ ACTOR PainElemental3 : SamsaraMonsterReincPainElemental
 			PAN2 L 8 BRIGHT A_PainDie("LostSoul3PE")
 			PAN2 M 8 BRIGHT
 			Stop
+		Death.Massacre:
+			PAN2 H 8 BRIGHT ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			PAN2 I 8 BRIGHT A_Scream
+			PAN2 JK 8 BRIGHT
+			PAN2 L 8 BRIGHT A_PainDie("LostSoul3PE")
+			PAN2 M 8 BRIGHT
+			Stop
 		Raise:
 			PAN2 MLKJIH 8
 			Goto See
@@ -330,6 +337,8 @@ actor PainElemental2_Shrink : PainElemental3
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -48,6 +48,13 @@ ACTOR MMRandomizer_SufferingElemental : PainElemental3
 			VD71 L 8 bright A_PainDie("MMRandomizer_PhantasmPE")
 			VD71 M 8 bright
 			Stop
+		Death.Massacre:
+			VD71 H 8 bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			VD71 I 8 bright A_Scream
+			VD71 JK 8 bright
+			VD71 L 8 bright A_PainDie("MMRandomizer_PhantasmPE")
+			VD71 M 8 bright
+			Stop
 		Pain.ShrinkerDMG:
 			VD71 D 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -216,6 +223,8 @@ actor MMRandomizer_SufferingElemental_Shrink : MMRandomizer_SufferingElemental
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

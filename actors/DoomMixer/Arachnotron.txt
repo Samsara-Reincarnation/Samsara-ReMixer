@@ -48,8 +48,9 @@ ACTOR Arachnotron3 : Arachnotron2
 		TNT1 A 0 A_ChangeFlag("NOPAIN",false)
 		Goto See+1
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		BSP2 J 20 A_Scream
 		BSP2 K 7 A_NoBlocking
 		BSP2 LMNO 7
@@ -274,6 +275,8 @@ actor Arachnotron2_Shrink : Arachnotron3
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
