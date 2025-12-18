@@ -392,7 +392,7 @@ Actor Hexen2BlackSpiderSmall : Hexen2BlackSpiderLarge
 		TNT1 A 5
 		stop
 	Death.BittermanDamage:
-		TNT1 A 0 A_JumpIfHealthLower(-20, "XdeathForBitterman")
+		TNT1 A 0 A_JumpIfHealthLower(-20, "XDeathForBitterman")
 		goto Death	
 	Pain.ShrinkerDMG:
 		HX01 H 0
@@ -652,7 +652,7 @@ Actor Hexen2RedSpiderSmall : Hexen2BlackSpiderLarge
 			TNT1 A 5
 			stop	
 		Death.BittermanDamage:
-			TNT1 A 0 A_JumpIfHealthLower(-20, "XdeathForBitterman")
+			TNT1 A 0 A_JumpIfHealthLower(-20, "XDeathForBitterman")
 			goto Death	
 	Pain.ShrinkerDMG:
 		HX01 H 0
@@ -916,7 +916,7 @@ Actor Hexen2RedSpiderLarge : Hexen2BlackSpiderLarge
 			TNT1 A 5
 			stop	
 		Death.BittermanDamage:
-			TNT1 A 0 A_JumpIfHealthLower(-20, "XdeathForBitterman")
+			TNT1 A 0 A_JumpIfHealthLower(-20, "XDeathForBitterman")
 			goto Death	
 	Pain.ShrinkerDMG:
 		HX01 H 0

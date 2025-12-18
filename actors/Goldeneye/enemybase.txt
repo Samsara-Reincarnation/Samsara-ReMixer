@@ -1247,10 +1247,10 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 			"####" "#" 0 ACS_NamedExecuteAlways("GoldeneyeEnemyDrops", 0, 0)
 			Goto Super::Death.FreemanGibs
 		Death.BittermanTrap:
-		XdeathForBitterman:
+		XDeathForBitterman:
 			"####" "#" 0 A_GiveInventory("GoldeneyeEnemyKillAttack")
 			"####" "#" 0 ACS_NamedExecuteAlways("GoldeneyeEnemyDrops", 0, 0)
-			Goto Super::XdeathForBitterman
+			Goto Super::XDeathForBitterman
 		Death.Hexen2Extreme:
 		Death.Hexen2ElectricExtreme:
 		XDeathForDemoness:

@@ -353,14 +353,14 @@ ACTOR M1EnforcerMinor : SamsaraMonsterMarathonAlien
 			EDG1 A 2 A_CheckFloor("XDeathForRanger4")
 			TNT1 A -1 A_Jump(256,"XDeathForRanger3")
 			wait
-		XdeathForBitterman2:
+		XDeathForBitterman2:
 			EDG1 A 4
-			TNT1 A -1 A_Jump(256,"XdeathForBitterman3")
+			TNT1 A -1 A_Jump(256,"XDeathForBitterman3")
 			wait
-		XdeathForBitterman3:
-			EDG1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_JumpIf(momx < 0.8 && momy < 0.8 && momz == 0, "XdeathForBitterman4")
-			EDG1 A 2 A_CheckFloor("XdeathForBitterman4")
-			TNT1 A -1 A_Jump(256,"XdeathForBitterman3")
+		XDeathForBitterman3:
+			EDG1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_JumpIf(momx < 0.8 && momy < 0.8 && momz == 0, "XDeathForBitterman4")
+			EDG1 A 2 A_CheckFloor("XDeathForBitterman4")
+			TNT1 A -1 A_Jump(256,"XDeathForBitterman3")
 			wait
 		XDeathForDemoness2:
 			EDG1 A 4

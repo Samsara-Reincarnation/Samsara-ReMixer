@@ -379,7 +379,7 @@ Actor Q2SoldierBase : SamsaraMonsterCybernetic
 		GRDC NOPQRSTUV 4
 		GRDC W -1
 		Stop
-	XdeathForBitterman:
+	XDeathForBitterman:
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	XDeath:
@@ -784,7 +784,7 @@ Actor Q2HeavyBase : SamsaraMonsterCybernetic
 		GRDC NOPQRSTUV 4
 		GRDC W -1
 		Stop
-	XdeathForBitterman:
+	XDeathForBitterman:
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	XDeath:

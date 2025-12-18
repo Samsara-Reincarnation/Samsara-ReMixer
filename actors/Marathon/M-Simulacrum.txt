@@ -320,14 +320,14 @@ ACTOR MSimulacrum : SamsaraMonsterMarathonAlien
 			MSIM J 2 A_CheckFloor("XDeathForRanger4")
 			TNT1 A -1 A_Jump(256,"XDeathForRanger3")
 			wait
-		XdeathForBitterman2:
+		XDeathForBitterman2:
 			MSIM J 4
-			TNT1 A -1 A_Jump(256,"XdeathForBitterman3")
+			TNT1 A -1 A_Jump(256,"XDeathForBitterman3")
 			wait
-		XdeathForBitterman3:
-			MSIM JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ 2 A_JumpIf(momx < 0.8 && momy < 0.8 && momz == 0, "XdeathForBitterman4")
-			MSIM J 2 A_CheckFloor("XdeathForBitterman4")
-			TNT1 A -1 A_Jump(256,"XdeathForBitterman3")
+		XDeathForBitterman3:
+			MSIM JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ 2 A_JumpIf(momx < 0.8 && momy < 0.8 && momz == 0, "XDeathForBitterman4")
+			MSIM J 2 A_CheckFloor("XDeathForBitterman4")
+			TNT1 A -1 A_Jump(256,"XDeathForBitterman3")
 			wait
 		XDeathForDemoness2:
 			MSIM J 4
