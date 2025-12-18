@@ -91,8 +91,9 @@ ACTOR gran___DF : SamsaraMonsterAlienTotalGib
 			GRAN K 3 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)			
 		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			GRAN M 6 bright A_Scream
 			GRAN N 6
 			GRAN OP 5

@@ -51,8 +51,9 @@ ACTOR DF_Rodian : SamsaraMonsterHumanoidTotalGib
 			TNT1 A 0
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)			
 		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			R0DI G 5 bright A_Scream
 			R0DI H 5 bright
 			R0DI IJ 5

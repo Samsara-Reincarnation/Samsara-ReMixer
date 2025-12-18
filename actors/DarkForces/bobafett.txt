@@ -55,8 +55,9 @@ ACTOR boba_fett : SamsaraMonsterHumanoidTotalGib
 			TNT1 A 0 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)			
-		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")			
+		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BOBA C 4 A_Fall
 			BOBA D 4 A_Scream
 			BOBA EF 4 

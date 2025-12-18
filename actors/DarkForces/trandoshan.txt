@@ -67,8 +67,9 @@ ACTOR trandoshan_1 : SamsaraMonsterAlienTotalGib
 			TRAN G 4 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)			
 		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TRAN H 5 bright A_Scream
 			TNT1 A 0 A_NoBlocking
 			TRAN IJ 5

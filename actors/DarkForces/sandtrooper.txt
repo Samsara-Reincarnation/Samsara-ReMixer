@@ -63,9 +63,10 @@ ACTOR sand_trooper : SamsaraMonsterHumanoidTotalGib
 			SSTO I 3
 			SSTO I 3 A_Pain
 			Goto See
-		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)			
+		Death:	
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_Jump(128,"Death2")
 			SSTO J 5 A_Scream
 			SSTO K 5 A_Fall

@@ -45,8 +45,9 @@ Actor DF_Rancor : SamsaraMonsterBeastTotalGib
 			TNT1 A 0 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")			
+		    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			RC0R H 6 A_Scream
 			RC0R I 4 A_NoBlocking
 			RC0R JKLMNOP 4
