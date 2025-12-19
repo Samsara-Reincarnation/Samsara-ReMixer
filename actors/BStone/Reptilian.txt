@@ -99,8 +99,9 @@ Actor ReptilianWarrior : SamsaraMonsterAlienTotalGib {
 			BS20 H 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BS20 H 9 A_Scream
 			BS20 I 8 A_NoBlocking
 			BS20 J 8
@@ -297,6 +298,8 @@ actor ReptilianWarrior_Shrink : ReptilianWarrior
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -87,8 +87,9 @@ Actor SectorGuard : SamsaraMonsterHumanoidTotalGib {
 			BSE1 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")			
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BSE1 F 7 A_Scream
 			BSE1 G 8 A_NoBlocking
 			BSE1 H 6
@@ -268,6 +269,8 @@ actor SectorGuard_Shrink : SectorGuard
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

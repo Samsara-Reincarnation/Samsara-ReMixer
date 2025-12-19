@@ -145,9 +145,15 @@ Actor AlienProtector : StarTrooper
 		Death:
 			TNT1 A 0 A_JumpIfInventory("FakedOnce", 1, "Continue1")
 			TNT1 A 0 A_Jump(160, "FakeDeath")
+			Goto Continue1
+		Death.Massacre:
+			TNT1 A 0 A_JumpIfInventory("FakedOnce", 1, "Continue1.Massacre")
+			TNT1 A 0 A_Jump(160, "FakeDeath")
+			Goto Continue1.Massacre
 		Continue1:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			BS25 G 6 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Continue1.Massacre:
+			BS25 G 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BS25 H 7 A_Scream
 			BS25 I 8 A_NoBlocking
 			BS25 J 6
@@ -184,12 +190,9 @@ Actor AlienProtector : StarTrooper
 			Stop
 		Death.GoldeneyeHead:
 		XDeath:
-			BS25 G 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			BS25 H 7 A_Scream
-			BS25 I 8 A_NoBlocking
-			BS25 J 6
-			BS25 K -1
-			Stop
+			Goto Continue1
+		XDeath.Massacre:
+			Goto Continue1.Massacre
 		Pain.ShrinkerDMG:
 			BS25 F 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -365,6 +368,8 @@ actor AlienProtector_Shrink : AlienProtector
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

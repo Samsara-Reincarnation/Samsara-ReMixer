@@ -162,9 +162,15 @@ Actor StarTrooper : SamsaraMonsterHumanoid
 		Death:
 			TNT1 A 0 A_JumpIfInventory("FakedOnce", 1, "Continue1")
 			TNT1 A 0 A_Jump(128, "FakeDeath")
+			Goto Continue1
+		Death.Massacre:
+			TNT1 A 0 A_JumpIfInventory("FakedOnce", 1, "Continue1.Massacre")
+			TNT1 A 0 A_Jump(128, "FakeDeath")
+			Goto Continue1.Massacre
 		Continue1:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			BSE3 G 6 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Continue1.Massacre:
+			BSE3 G 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BSE3 H 7 A_Scream
 			BSE3 I 8 A_NoBlocking
 			BSE3 J 6
@@ -200,12 +206,9 @@ Actor StarTrooper : SamsaraMonsterHumanoid
 			Stop
 		Death.GoldeneyeHead:
 		XDeath:
-			BSE3 G 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			BSE3 H 7 A_Scream
-			BSE3 I 8 A_NoBlocking
-			BSE3 J 6
-			BSE3 K -1
-			Stop
+			Goto Continue1
+		XDeath.Massacre:
+			Goto Continue1.Massacre
 		Death.CalebFire:
 		Death.LifeLeech:
 			TNT1 A 0 A_Jump(218, 2)
@@ -391,6 +394,8 @@ actor StarTrooper_Shrink : StarTrooper
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

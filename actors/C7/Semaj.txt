@@ -52,8 +52,9 @@ Actor Semaj : SamsaraMonsterAlienTotalGib {
 		C703 H 3 A_Pain
 		Goto See 
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		C703 I 5 A_Scream
 		C703 JK 5 
 		C703 L 5 A_NoBlocking
@@ -206,6 +207,8 @@ actor Semaj_Shrink : Semaj
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

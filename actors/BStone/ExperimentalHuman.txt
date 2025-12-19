@@ -73,8 +73,9 @@ Actor ExpHumanBrown : SamsaraMonsterAlienTotalGib {
 			BS12 H 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BS12 H 6 A_Scream
 			BS12 I 7 A_NoBlocking
 			BS12 JKL 6
@@ -299,6 +300,8 @@ actor ExpHumanBrown_Shrink : ExpHumanBrown
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -397,8 +400,9 @@ Actor ExpHumanBlue : ExpHumanBrown {
 			BS30 H 16 A_Pain
 			Goto See	
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BS30 H 6 A_Scream
 			BS30 I 7 A_NoBlocking
 			BS30 JKL 6
@@ -626,6 +630,8 @@ actor ExpHumanBlue_Shrink : ExpHumanBlue
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
