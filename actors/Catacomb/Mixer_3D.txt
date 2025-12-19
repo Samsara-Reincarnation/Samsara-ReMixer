@@ -110,8 +110,9 @@ Actor Catacomb3D_Orc : SamsaraMonsterBeastTotalGib
 			CT03 F 8 A_CustomMeleeAttack(5, "Catacomb/XTerm", "Catacomb/XTerm", "CatacombDamage", true)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT03 G 5 A_Scream
 			CT03 H 5 A_NoBlocking
 			CT03 I 5
@@ -287,6 +288,8 @@ actor Catacomb3D_Orc_Shrink : Catacomb3D_Orc
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -389,8 +392,9 @@ Actor Catacomb3D_Mage : SamsaraMonsterHumanoidTotalGib //replaces DoomImp
 			CT04 C 1 A_Pain
 			Goto Missile	
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT04 E 10 A_Scream
 			CT04 F 0 A_NoBlocking
 			CT04 F -1
@@ -582,6 +586,8 @@ actor Catacomb3D_Mage_Shrink : Catacomb3D_Mage
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -681,8 +687,9 @@ Actor Catacomb3D_Troll : SamsaraMonsterBeastTotalGib // replaces Demon
 			CT05 H 4 A_FaceTarget
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT05 G 5 A_Scream
 			CT05 H 5 A_NoBlocking
 			CT05 I 5
@@ -859,6 +866,8 @@ actor Catacomb3D_Troll_Shrink : Catacomb3D_Troll
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -957,8 +966,9 @@ Actor Catacomb3D_Bat : SamsaraMonsterBeastTotalGib // replaces LostSoul
 			CT06 D 4 A_CustomMeleeAttack(4, "Catacomb/Charge", "Catacomb/Charge", "CatacombDamage", true)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT06 E 10 A_Scream
 			CT06 F 10 A_NoBlocking
 			TNT1 A -1
@@ -1022,8 +1032,9 @@ Actor Catacomb3D_RedDemon : SamsaraMonsterDemonicTotalGib// replaces BaronOfHell
 			CT02 G 8 A_CustomMeleeAttack(40, "Catacomb/XTerm", "Catacomb/XTerm", "CatacombDamage", true)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT02 H 10 A_Scream
 			CT02 I 10 A_NoBlocking
 			CT02 J 10
@@ -1213,6 +1224,8 @@ actor Catacomb3D_RedDemon_Shrink : Catacomb3D_RedDemon
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1323,8 +1336,9 @@ Actor Catacomb3D_Nemesis : SamsaraMonsterGhostBoss //replaces Cyberdemon
 			CT07 A 0 A_Jump(50,"See")
 			Goto Missile
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT07 D 5 A_Scream
 			CT07 E 5 A_NoBlocking
 			CT07 FGHI 5
@@ -1407,8 +1421,9 @@ Actor Catacomb3D_NemesisClone : SamsaraMonsterGhost
 			CT07 A 0 A_Jump(50,"See")
 			Goto Missile
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT07 D 5 A_Scream
 			CT07 E 5 A_NoBlocking
 			CT07 FGHI 5
@@ -1428,4 +1443,4 @@ Actor Catacomb_NemesisFireball : Catacomb_MagicMissileProjectile
 			CTA1 AB 2 BRIGHT
 			Loop
 	}
-}	
+}

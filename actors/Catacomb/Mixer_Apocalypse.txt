@@ -140,8 +140,9 @@ Actor CatacombApocalypse_InvisibleHorror : SamsaraMonsterDemonicTotalGib
 			CT22 D 2 A_Pain
 			Goto Melee
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT22 D 10 A_Scream
 			CT22 E 10 A_NoBlocking
 			CT22 F -1
@@ -535,8 +536,9 @@ Actor CatacombApocalypse_MantaRay : SamsaraMonsterBeastTotalGib
 			CT26 F 2 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT26 F 10 A_Scream
 			CT26 F 0 A_NoBlocking
 			CT26 G -1
@@ -717,6 +719,8 @@ actor CatacombApocalypse_MantaRay_Shrink : CatacombApocalypse_MantaRay
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -840,14 +844,15 @@ Actor CatacombApocalypse_CyberPox : SamsaraMonsterCyberneticTotalGib
 			CT27 E 2 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT27 H 5 BRIGHT A_Scream
 			CT27 I 5 BRIGHT A_NoBlocking
 			CT27 HIHI 5 BRIGHT
 			CT27 J 0 BRIGHT A_PlaySound("Catacomb/BigExplosion", CHAN_BODY)
 			CT27 J 5 A_Explode(120, 120, 1, false)
-			CT27 K -1  A_KillMaster
+			CT27 K -1 A_KillMaster
 			Stop
 		Pain.MightyBoot:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
@@ -1033,6 +1038,8 @@ actor CatacombApocalypse_CyberPox_Shrink : CatacombApocalypse_CyberPox
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1164,8 +1171,9 @@ Actor CatacombApocalypse_Spectre : SamsaraMonsterBeastTotalGib
 			CT29 F 2 A_Pain
 			Goto UpLoop
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT29 G 15 A_Scream
 			CT29 H 15 A_NoBlocking
 			CT29 I 15
@@ -1341,6 +1349,8 @@ actor CatacombApocalypse_Spectre_Shrink : CatacombApocalypse_Spectre
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1685,8 +1695,9 @@ Actor CatacombApocalypse_Wizard : SamsaraMonsterBeastTotalGib
 			CT31 F 8 A_CustomMissile("Catacomb_WizardBall", 32, -3, 0, 0)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT31 G 5 A_Scream
 			CT31 H 5 A_NoBlocking
 			CT31 IJ 5
@@ -1864,6 +1875,8 @@ actor CatacombApocalypse_Wizard_Shrink : CatacombApocalypse_Wizard
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1962,8 +1975,9 @@ Actor CatacombApocalypse_GoldTroll : SamsaraMonsterBeastTotalGib // replaces Dem
 			CT05 R 6 A_CustomMeleeAttack(15, "Catacomb/XTerm", "Catacomb/XTerm", "CatacombDamage", true)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CT05 S 10 A_Scream
 			CT05 T 10 A_NoBlocking
 			CT05 U -1
@@ -2138,6 +2152,8 @@ actor CatacombApocalypse_GoldTroll_Shrink : CatacombApocalypse_GoldTroll
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

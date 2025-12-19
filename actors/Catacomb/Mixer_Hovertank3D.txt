@@ -69,8 +69,9 @@ Actor Hovertank3D_RedDemon : SamsaraMonsterDemonicTotalGib
 			HT00 F 12 A_CustomMeleeAttack(10, "", "", "CatacombDamage", true)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			HT00 G 5 A_Scream
 			HT00 H 5 A_NoBlocking
 			HT00 IJ 5
@@ -246,6 +247,8 @@ actor Hovertank3D_RedDemon_Shrink : Hovertank3D_RedDemon
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -342,8 +345,9 @@ Actor Hovertank3D_Squid : SamsaraMonsterBeastTotalGib
 			HT01 D 4 A_CustomMeleeAttack(10, "", "", "CatacombDamage", true)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			HT01 E 5 A_Scream
 			HT01 F 5 A_NoBlocking
 			HT01 GH 5
@@ -519,6 +523,8 @@ actor Hovertank3D_Squid_Shrink : Hovertank3D_Squid
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
