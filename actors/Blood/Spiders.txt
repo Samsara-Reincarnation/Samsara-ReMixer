@@ -110,8 +110,9 @@ Actor MotherSpider : SamsaraMonsterBeast
 		SPBD O -1
 		Stop
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,1,2,3,4,5)
 		TNT1 AAAAAAAA 0 A_SpawnItemEx("NashGore_FlyingBlood_Monolith", 0, 0, 0, FRandom(0.1, 6.0) * Random(-1, 1), FRandom(0.1, 6.0) * Random(-1, 1), FRandom((Random(3.0,1.0)), (Random(8.0,6.0))) * FRandom((Random(3,2)), 1), 0, NASHGORE_MONOLITH_BLOODFLAGS1, 64)
 		SPDD A 4 A_Scream
@@ -150,8 +151,9 @@ Actor MotherSpider : SamsaraMonsterBeast
 		SPDD F -1 A_KillMaster
 		Stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,1,2,3,4,5)
 		TNT1 AAAAAAAA 0 A_SpawnItemEx("NashGore_FlyingBlood_Monolith", 0, 0, 0, FRandom(0.1, 6.0) * Random(-1, 1), FRandom(0.1, 6.0) * Random(-1, 1), FRandom((Random(3.0,1.0)), (Random(8.0,6.0))) * FRandom((Random(3,2)), 1), 0, NASHGORE_MONOLITH_BLOODFLAGS1, 64)
 		SPDD A 4 A_Scream
@@ -351,6 +353,8 @@ actor MotherSpider_Shrink : MotherSpider
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -501,8 +505,9 @@ Actor BloodSpider1 : SamsaraMonsterBeastTotalGib
 		BL74 N -1
 		Stop
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,1,2)
 		TNT1 AAA 0 A_SpawnItemEx("NashGore_FlyingBlood_Monolith", 0, 0, 0, FRandom(0.1, 6.0) * Random(-1, 1), FRandom(0.1, 6.0) * Random(-1, 1), FRandom((Random(3.0,1.0)), (Random(8.0,6.0))) * FRandom((Random(3,2)), 1), 0, NASHGORE_MONOLITH_BLOODFLAGS1, 64)
 	Death2:
@@ -512,8 +517,9 @@ Actor BloodSpider1 : SamsaraMonsterBeastTotalGib
 		BL73 N -1
 		Stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,1,2)
 		TNT1 AAA 0 A_SpawnItemEx("NashGore_FlyingBlood_Monolith", 0, 0, 0, FRandom(0.1, 6.0) * Random(-1, 1), FRandom(0.1, 6.0) * Random(-1, 1), FRandom((Random(3.0,1.0)), (Random(8.0,6.0))) * FRandom((Random(3,2)), 1), 0, NASHGORE_MONOLITH_BLOODFLAGS1, 64)
 	XDeath2:
@@ -629,8 +635,9 @@ Actor BloodSpider2 : BloodSpider1
 		BL76 T -1
 		Stop
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,1,2)
 		TNT1 AAA 0 A_SpawnItemEx("NashGore_FlyingBlood_Monolith", 0, 0, 0, FRandom(0.1, 6.0) * Random(-1, 1), FRandom(0.1, 6.0) * Random(-1, 1), FRandom((Random(3.0,1.0)), (Random(8.0,6.0))) * FRandom((Random(3,2)), 1), 0, NASHGORE_MONOLITH_BLOODFLAGS1, 64)
 	Death2:
@@ -640,8 +647,9 @@ Actor BloodSpider2 : BloodSpider1
 		BL76 M -1
 		Stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,1,2)
 		TNT1 AAA 0 A_SpawnItemEx("NashGore_FlyingBlood_Monolith", 0, 0, 0, FRandom(0.1, 6.0) * Random(-1, 1), FRandom(0.1, 6.0) * Random(-1, 1), FRandom((Random(3.0,1.0)), (Random(8.0,6.0))) * FRandom((Random(3,2)), 1), 0, NASHGORE_MONOLITH_BLOODFLAGS1, 64)
 	XDeath2:

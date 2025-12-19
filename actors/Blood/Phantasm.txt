@@ -189,8 +189,9 @@ Actor BloodPhantasm : SamsaraMonsterGhost
 		CULC M 0 A_ChangeFlag("BRIGHT",0)
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		PHAN L 4 A_Scream
 		PHAN M 4 A_Fall
 		PHAN N 4

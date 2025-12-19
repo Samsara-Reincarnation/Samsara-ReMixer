@@ -251,8 +251,9 @@ Actor Cerberus : SamsaraMonsterBeastBoss
 		CERX C 5
 		Goto See3
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		CERX H 7 A_Scream
 		CERX I 7 A_Fall
 		CERX J 7 A_KillMaster
