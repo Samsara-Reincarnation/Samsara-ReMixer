@@ -79,16 +79,17 @@ Actor AxeZombie : SamsaraMonsterHumanoid
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_JumpIfHealthLower(-5,"ARSCHKL")
 		TNT1 A 0 A_Jump(128,"FakeDeath")
-	ARSCHKL:
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
-	ARSCHKL.Massacre:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-        goto Death2
+        goto ARSCHKL
 	Death.Massacre:
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_JumpIfHealthLower(-5,"ARSCHKL.Massacre")
 		TNT1 A 0 A_Jump(128,"FakeDeath")
         goto ARSCHKL.Massacre
+	ARSCHKL:
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	ARSCHKL.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+        goto Death2
 	Death2:
 		TNT1 A 0 A_Jump(64,"PermDeath")
 	SafeTest:
