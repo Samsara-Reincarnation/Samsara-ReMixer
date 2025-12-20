@@ -71,9 +71,9 @@ Actor DisruptorMRat : SamsaraMonsterAlienTotalGib
 			DIS4 RRSSRRQQ 2
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			DIS5 A 4
+		Death.Massacre:
+			DIS5 A 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DIS5 B 4 A_Scream
 			DIS5 C 4 A_NoBlocking
 			DIS5 D 4 
@@ -292,6 +292,8 @@ actor DisruptorMRat_Shrink : DisruptorMRat
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -73,8 +73,9 @@ Actor CMSlugg : SamsaraMonsterBeastTotalGib
 		C_SL I 2
 		Goto See
     Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+    Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		C_SL I 2 A_Die
 		C_SL I 1 A_Noblocking
 		C_SL J 2 A_Scream	
@@ -252,6 +253,8 @@ actor CMSlugg_Shrink : CMSlugg
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

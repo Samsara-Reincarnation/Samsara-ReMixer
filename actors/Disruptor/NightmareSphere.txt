@@ -108,10 +108,10 @@ Actor DisruptorNightmareSphere : SamsaraMonsterDemonicTotalGib
 			DS25 JKKLLMMII 2
 			Goto SeeLoop
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			TNT1 A 0 A_NoGravity
-			DS25 N 2 bright
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			DS25 N 2 bright A_NoGravity
 			DS25 N 2 bright A_Scream
 			DS25 O 2 bright A_NoBlocking
 			DS25 O 2 bright

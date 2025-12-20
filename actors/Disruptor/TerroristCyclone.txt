@@ -86,9 +86,9 @@ Actor DisruptorTerroristCyclone : SamsaraMonsterHumanoidTotalGib
 			_DSR PPQQPPOO 2 
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			_DST A 1 bright
+		Death.Massacre:
+			_DST A 1 bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			_DST A 1 bright A_Scream
 			_DST B 1 bright A_NoBlocking
 			_DST B 1 bright
@@ -318,6 +318,8 @@ actor DisruptorTerroristCyclone_Shrink : DisruptorTerroristCyclone
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

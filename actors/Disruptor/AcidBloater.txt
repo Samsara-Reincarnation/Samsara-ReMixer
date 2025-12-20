@@ -135,10 +135,10 @@ Actor DisruptorAcidBloater : SamsaraMonsterAlienTotalGib
 			DISH HHIIJJKKLLGG 2
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			TNT1 A 0 A_NoGravity		
-			DISH M 2 bright
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			DISH M 2 bright A_NoGravity
 			DISH M 2 bright A_Scream
 			DISH N 2 bright A_NoBlocking
 			DISH N 2 bright
@@ -573,6 +573,8 @@ actor DisruptorAcidBloater_Shrink : DisruptorAcidBloater
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

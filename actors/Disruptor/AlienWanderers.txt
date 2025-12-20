@@ -73,9 +73,10 @@ Actor AlienWanderer_T1 : SamsaraMonsterAlienTotalGib {
 			DISE O 2 A_Pain
 			DISE PQRQPON 2
 			Goto See
-		Death:	
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
+		Death:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DISE S 2 bright A_Scream
 			DISE S 2 bright A_NoBlocking 
 			DISE TT 2 bright
@@ -125,8 +126,9 @@ Actor AlienWanderer_T2 : AlienWanderer_T1 {
 			DISF PQRQPON 2
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DISF S 2 A_Scream
 			DISF S 2 A_NoBlocking 
 			DISF TT 2 

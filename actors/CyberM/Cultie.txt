@@ -77,9 +77,10 @@ Actor CMCultie : SamsaraMonsterHumanoidTotalGib
         Goto See
     Death:
 	XDeath:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-        C_CU K 2
+    Death.Massacre:
+	XDeath.Massacre:
+        C_CU K 2 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
         C_CU K 10 A_Scream
         C_CU L 2 A_Fall
         C_CU L 3
@@ -265,6 +266,8 @@ actor CMCultie_Shrink : CMCultie
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -60,9 +60,9 @@ Actor CMLoD : SamsaraMonsterCyberneticTotalGib
         C_LD G 5 A_Pain
         Goto See
     Death:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-        C_LD H 2
+    Death.Massacre:
+        C_LD H 2 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
         C_LD H 10 A_Scream
         C_LD I 2 A_Fall
         C_LD I 3

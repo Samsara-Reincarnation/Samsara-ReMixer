@@ -78,9 +78,9 @@ Actor DisruptorMutantSoldier : SamsaraMonsterHumanoidTotalGib
 			DISB SSTTSSRR 2
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			DISB U 4
+		Death.Massacre:
+			DISB U 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DISB V 4 A_Scream
 			DISB W 4 A_NoBlocking
 			DISB X 4 
@@ -286,6 +286,8 @@ actor DisruptorMutantSoldier_Shrink : DisruptorMutantSoldier
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -100,10 +100,10 @@ Actor Nightmare_Demon : SamsaraMonsterDemonicTotalGib
 			DISO YYZZYYXX 2
 			Goto SeeLoop
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)				
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			TNT1 A 0 A_NoGravity		
-			DISP A 2 bright
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			DISP A 2 bright A_NoGravity
 			DISP A 2 bright A_Scream
 			DISP B 2 bright A_NoBlocking
 			DISP B 2 bright A_KillMaster
@@ -360,6 +360,8 @@ actor Nightmare_Demon_Shrink : Nightmare_Demon
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
