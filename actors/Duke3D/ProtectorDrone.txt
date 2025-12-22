@@ -153,8 +153,9 @@ ACTOR ProtectorDrone : SamsaraMonsterAlien
 			TNT1 A -1 A_Jump(256,"XDeath")
 			Wait
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			PRDR P 5 A_Scream
 			PRDR Q 5 A_NoBlocking
 			PRDR R 4
@@ -163,8 +164,9 @@ ACTOR ProtectorDrone : SamsaraMonsterAlien
 			TNT1 A -1 A_SpawnItemEx("ProtectorDroneCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_SpawnDebris("ProtectorDroneGibs2")
@@ -247,8 +249,9 @@ Actor ProtectorDroneCorpse
 			PRDR W 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_SpawnDebris("ProtectorDroneGibs2")

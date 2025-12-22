@@ -62,8 +62,9 @@ ACTOR BlueBeachPig : SamsaraMixerPigCop
 			DN53 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN53 K 3 A_Scream
 			DN53 L 5
 			DN53 M 5 A_NoBlocking
@@ -244,6 +245,8 @@ actor BlueBeachPig_Shrink : BlueBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -359,8 +362,9 @@ ACTOR RedBeachPig : SamsaraMixerPigCop
 			DN54 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN54 K 3 A_Scream
 			DN54 L 5
 			DN54 M 5 A_NoBlocking
@@ -541,6 +545,8 @@ actor RedBeachPig_Shrink : RedBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -656,8 +662,9 @@ ACTOR GreenBeachPig : SamsaraMixerPigCop
 			DN55 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN55 K 3 A_Scream
 			DN55 L 5
 			DN55 M 5 A_NoBlocking
@@ -838,6 +845,8 @@ actor GreenBeachPig_Shrink : GreenBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -953,8 +962,9 @@ ACTOR GrayBeachPig : SamsaraMixerPigCop
 			DN56 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN56 K 3 A_Scream
 			DN56 L 5
 			DN56 M 5 A_NoBlocking
@@ -1135,6 +1145,8 @@ actor GrayBeachPig_Shrink : GrayBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1250,8 +1262,9 @@ ACTOR DarkGrayBeachPig : SamsaraMixerPigCop
 			DN57 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN57 K 3 A_Scream
 			DN57 L 5
 			DN57 M 5 A_NoBlocking
@@ -1432,6 +1445,8 @@ actor DarkGrayBeachPig_Shrink : DarkGrayBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1547,8 +1562,9 @@ ACTOR DarkBlueBeachPig : SamsaraMixerPigCop
 			DN58 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN58 K 3 A_Scream
 			DN58 L 5
 			DN58 M 5 A_NoBlocking
@@ -1729,6 +1745,8 @@ actor DarkBlueBeachPig_Shrink : DarkBlueBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1844,8 +1862,9 @@ ACTOR BrownBeachPig : SamsaraMixerPigCop
 			DN59 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN59 K 3 A_Scream
 			DN59 L 5
 			DN59 M 5 A_NoBlocking
@@ -2026,6 +2045,8 @@ actor BrownBeachPig_Shrink : BrownBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2141,8 +2162,9 @@ ACTOR YellowBeachPig : SamsaraMixerPigCop
 			DN60 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN60 K 3 A_Scream
 			DN60 L 5
 			DN60 M 5 A_NoBlocking
@@ -2337,6 +2359,8 @@ actor YellowBeachPig_Shrink : YellowBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2452,8 +2476,9 @@ ACTOR DarkGreenBeachPig : SamsaraMixerPigCop
 			DN61 K 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN61 K 3 A_Scream
 			DN61 L 5
 			DN61 M 5 A_NoBlocking
@@ -2634,6 +2659,8 @@ actor DarkGreenBeachPig_Shrink : DarkGreenBeachPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

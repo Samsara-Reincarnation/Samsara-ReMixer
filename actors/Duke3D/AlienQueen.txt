@@ -257,8 +257,9 @@ ACTOR AlienQueen : SamsaraMonsterAlienBoss
 			QUEE K 2 A_Pain
 			Goto See2
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			QUEE K 10 A_Scream
 			QUEE L 10 A_NoBlocking
 			QUEE MNOPQRST 10

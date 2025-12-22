@@ -213,8 +213,9 @@ ACTOR SamsaraMixerBattlelord : SamsaraMonsterCyberneticBoss
 			BTLO I 3 A_Pain
 			Goto See2
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			BTLO I 10 A_Scream
 			BTLO JK 10
 			BTLO L 10 A_NoBlocking

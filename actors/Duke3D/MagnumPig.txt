@@ -82,8 +82,9 @@ ACTOR MagnumPig : SamsaraMixerPigCop
 			"####" "#" -1 A_Jump(256,"Ice")
 			Wait
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			MPIG K 3 A_Scream
 			MPIG L 5
 			MPIG M 5 A_NoBlocking
@@ -264,6 +265,8 @@ actor MagnumPig_Shrink : MagnumPig
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

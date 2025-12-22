@@ -162,8 +162,9 @@ ACTOR AssaultEnforcer : SamsaraMonsterAlien
 			TNT1 A -1 A_Jump(256,"XDeath")
 			Wait
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			ASEN M 5 A_Scream
 			ASEN NO 5
 			ASEN P 5 A_NoBlocking
@@ -172,8 +173,9 @@ ACTOR AssaultEnforcer : SamsaraMonsterAlien
 			TNT1 A -1 A_SpawnItemEx("AssaultEnforcerCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_SpawnDebris("DukeJibs2")
@@ -291,8 +293,9 @@ Actor AssaultEnforcerCorpse : SamsaraCorpseActor
 			ASEN R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_SpawnDebris("DukeJibs2")
@@ -556,6 +559,8 @@ actor AssaultEnforcer_Shrink : AssaultEnforcer
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

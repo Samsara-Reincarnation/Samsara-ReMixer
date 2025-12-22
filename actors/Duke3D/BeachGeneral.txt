@@ -63,6 +63,7 @@ Actor BeachGeneral : AssaultGeneral
 			TNT1 A 0 A_Jump(30, "FakeDeath")
 		Continue:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Continue.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN52 I 7 A_Scream
 			DN52 J 5 A_NoBlocking
@@ -70,6 +71,10 @@ Actor BeachGeneral : AssaultGeneral
 			DN52 L 6 A_SpawnItemEx("ATrooperAmmoDrop",0,0,0,0,0,8,0,SXF_NOCHECKPOSITION,160)
 			TNT1 A -1 A_SpawnItemEx("BeachGeneralCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_SetTranslucent(1.0, 0)
+			TNT1 A 0 A_Jump(30, "FakeDeath")
+			Goto Continue.Massacre
 		PermDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DN52 M 5 A_NoBlocking
@@ -184,8 +189,9 @@ Actor BeachGeneralChoking : BeachGeneral
 			Goto FakeDeath
 		Death:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			TNT1 A 0 A_StopSound(CHAN_BODY)
+		Death.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_StopSound(CHAN_BODY)
 			DN52 P 1 A_Fall
 			DN52 P 5 A_Scream
 			TNT1 A -1 A_SpawnItemEx("BeachGeneralCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -232,6 +238,8 @@ Actor BeachGeneralAltFake2 : BeachGeneral
 		Death:
 		Continue:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		Continue.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SetTranslucent(1.0, 0)
 			DN52 I 7 A_Scream
@@ -390,6 +398,8 @@ actor BeachGeneral_Shrink : BeachGeneral
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
