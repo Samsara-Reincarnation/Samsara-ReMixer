@@ -180,6 +180,7 @@ Actor PerGunnerDrone : PerScanDrone
 			BS32 A 5
 			Goto See		
 		Death:
+		Death.NotSuicide:
 			BS32 D 6 A_Scream
 			BS32 E 6 A_NoBlocking
 			BSE6 G 6 A_SpawnItem("PerTurretDrop")

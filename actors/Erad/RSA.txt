@@ -394,7 +394,7 @@ actor RSARocket : RepairDroidMissile
   Speed 25
   Scale 0.45 
   Damage (random(5,25)/Random(3,1))
-  Obituary "RSAoi ran over %o's face."  
+  Obituary "RSAOI ran over %o's face."  
   States
   {
   Spawn:
