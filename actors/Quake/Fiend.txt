@@ -91,8 +91,9 @@ ACTOR QFiend : SamsaraMonsterDemonic
 		FIN5 F 0
 		Goto See
 	  Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	  Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
 		FIN6 A 3
 		FIN6 B 3 A_Scream
@@ -112,8 +113,9 @@ ACTOR QFiend : SamsaraMonsterDemonic
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris("Quake_GIB12")
 		QZUM A 0 A_SpawnDebris("Quake_GIB2")
 		QZUM A 0 A_SpawnDebris("Quake_GIB3")
@@ -271,6 +273,8 @@ actor QFiend_Shrink : QFiend
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

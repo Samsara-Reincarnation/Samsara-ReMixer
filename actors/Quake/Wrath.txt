@@ -99,13 +99,27 @@ ACTOR QWrath : SamsaraMonsterDemonic
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		WIZ7 A 3 A_Gravity
 		WIZ7 B 3 A_Scream
 		WIZ7 C 3
 		WIZ7 D 3 A_NoBlocking
 		WIZ7 EFGHIJKLMNO 3
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")		
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		TNT1 A 0 A_SpawnDebris("Quake_WGIB1")
+		TNT1 A 0 A_SpawnDebris("Quake_WGIB2")
+		TNT1 A 0 A_SpawnDebris("Quake_WGIB3")
+		TNT1 A 0 A_Explode(10,10)
+		TNT1 A 5 A_SpawnItemEx("QuakeExplosion_Mixer")
+		Stop
+	  Death.Massacre:
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		WIZ7 A 3 A_Gravity
+		WIZ7 B 3 A_Scream
+		WIZ7 C 3
+		WIZ7 D 3 A_NoBlocking
+		WIZ7 EFGHIJKLMNO 3
 		TNT1 A 0 A_SpawnDebris("Quake_WGIB1")
 		TNT1 A 0 A_SpawnDebris("Quake_WGIB2")
 		TNT1 A 0 A_SpawnDebris("Quake_WGIB3")
@@ -299,6 +313,8 @@ actor QWrath_Shrink : QWrath
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

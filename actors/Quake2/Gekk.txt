@@ -119,10 +119,11 @@ Actor Q2Gekk : Q2HeavyBase
 		GEK3 DEFGH 3
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)							
 		"----" A 0 A_Jump(256,"Death1","Death2","Death3","Death4")
 	Death1:
 		GEK4 A 0 A_SpawnItemEx("Q2GekkDeath1Animation", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -141,14 +142,21 @@ Actor Q2Gekk : Q2HeavyBase
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Fall
 		TNT1 A 0 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 		Stop
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_Fall
+		TNT1 A 0 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Stop
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1	
+		Goto Death+3
 	Pain.ShrinkerDMG:
 		GEK2 X 0
 		"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -212,6 +220,12 @@ Actor Q2GekkDeath1Animation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			Stop
 	}
 }
 
@@ -236,6 +250,12 @@ Actor Q2GekkDeath1Corpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			Stop
 	}
 }
@@ -265,6 +285,12 @@ Actor Q2GekkDeath2Animation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			Stop
 	}
 }
 
@@ -289,6 +315,12 @@ Actor Q2GekkDeath2Corpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			Stop
 	}
 }
@@ -318,6 +350,12 @@ Actor Q2GekkDeath3Animation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			Stop
 	}
 }
 
@@ -342,6 +380,12 @@ Actor Q2GekkDeath3Corpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			Stop
 	}
 }
@@ -373,6 +417,12 @@ Actor Q2GekkDeath4 : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItemEx("Q2GekkGibSpawnerMassacre",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			Stop
 	}
 }
@@ -491,6 +541,8 @@ actor Q2Gekk_Shrink : Q2Gekk
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -550,6 +602,23 @@ Actor Q2GekkGibSpawner : Q2EffectBase
 	Spawn:
 		TNT1 A 0 NoDelay A_PlaySound("Bitterman/Xdeath")
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)		
+		TNT1 AA 0 A_SpawnItemEx(Q2GekkGib_Arm,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
+		TNT1 AA 0 A_SpawnItemEx(Q2GekkGib_Claw,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_SpawnItemEx(Q2GekkGib_Head,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
+		TNT1 AA 0 A_SpawnItemEx(Q2GekkGib_Leg,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_SpawnItemEx(Q2GekkGib_Pelvis,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
+		TNT1 A 0 A_SpawnItemEx(Q2GekkGib_Torso,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
+		TNT1 A 1
+		Stop
+	}
+}
+
+Actor Q2GekkGibSpawnerMassacre : Q2GekkGibSpawner
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_PlaySound("Bitterman/Xdeath")
 		TNT1 AA 0 A_SpawnItemEx(Q2GekkGib_Arm,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
 		TNT1 AA 0 A_SpawnItemEx(Q2GekkGib_Claw,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)
 		TNT1 A 0 A_SpawnItemEx(Q2GekkGib_Head,Random2(20),0,Random(0,50),Random(0,5),0,Random(0,10),Random(1,360),SXF_NOCHECKPOSITION)

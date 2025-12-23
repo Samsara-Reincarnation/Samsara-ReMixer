@@ -163,10 +163,11 @@ Actor Q2Gunner : Q2SoldierBase
 		GNR4 TUV 6
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)					
 		GNR5 A 0 A_SpawnItemEx("Q2GunnerDeathAnimation", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 		TNT1 A -1
 		stop
@@ -176,8 +177,10 @@ Actor Q2Gunner : Q2SoldierBase
 //		"----" A 6 A_TakeInventory(ResurrectedToken,1)
 		Goto See
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1
+		Goto Death+3
 	Pain.ShrinkerDMG:
 		GNR4 A 0
 		"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -259,6 +262,12 @@ Actor Q2GunnerDeathAnimation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+			Stop
 	}
 }
 
@@ -282,6 +291,12 @@ Actor Q2GunnerDeathCorpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -411,6 +426,8 @@ actor Q2Gunner_Shrink : Q2Gunner
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

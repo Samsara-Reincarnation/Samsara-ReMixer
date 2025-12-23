@@ -107,9 +107,10 @@ ACTOR QCentroid : SamsaraMonsterCybernetic
 		CEN5 E 0
 		Goto See
 	  Death:
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	  Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		CEN6 A 0 A_StopSound(6)  
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")							
 		CEN6 A 4 A_Scream
 		CEN6 B 4 A_NoBlocking
 		CEN6 CD 4
@@ -126,9 +127,10 @@ ACTOR QCentroid : SamsaraMonsterCybernetic
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_StopSound(6)	  
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0) 
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")							
 		QZUM A 0 A_SpawnDebris("Quake_GIB12")
 		QZUM A 0 A_SpawnDebris("Quake_GIB2")
 		QZUM A 0 A_SpawnDebris("Quake_GIB3")
@@ -306,6 +308,8 @@ actor QCentroid_Shrink : QCentroid
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -145,12 +145,28 @@ Actor Pterodactylus : SamsaraMonsterBeast {
 			QD84 AABBCC 2
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  		
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			QD84 D 5 A_Scream
 			QD84 E 5 A_NoBlocking
 			QD84 FGHIJKLMNOPQRSTUVW 5
 			TNT1 A 0 A_PlaySound("QuakeZom/death",6,1.0,0,ATTN_NONE)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")			
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB12")
+			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB2")
+			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB3")
+			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB12")
+			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB3")
+			TNT1 A 0 A_SpawnDebris("Quake_DragonLeg")
+			TNT1 A 0 A_SpawnDebris("Quake_DragonHead")
+			TNT1 A 0 A_SpawnDebris("Quake_DragonWing")
+			TNT1 A 5 A_KillMaster
+			Stop
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			QD84 D 5 A_Scream
+			QD84 E 5 A_NoBlocking
+			QD84 FGHIJKLMNOPQRSTUVW 5
+			TNT1 A 0 A_PlaySound("QuakeZom/death",6,1.0,0,ATTN_NONE)
 			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB12")
 			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB2")
 			TNT1 AAAA 0 A_SpawnDebris("Quake_GIB3")

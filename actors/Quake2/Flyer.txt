@@ -90,18 +90,21 @@ Actor Q2Flyer : Q2SoldierBase
 		FLR4 KL 5
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)		
 		FLR1 A 10
 		TNT1 A 0 A_Fall
 		TNT1 A 0 A_PlaySound("Q2Weapons/RocketExplosion")
 		TNT1 A 5 A_SpawnItem(Q2Explosion)
 		Stop
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1
+		Goto Death+3
 	}
 }
 

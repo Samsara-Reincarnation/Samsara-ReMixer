@@ -13,9 +13,10 @@ ACTOR QMultiOgre : QOgre
 		OGR5 EF 4
 		Goto see
 	  Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	  Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")							
 		TNT1 A 0 A_Jump(256,"Death1","Death2")	
 	  Death1:
 		OGRB A 4
@@ -49,8 +50,9 @@ ACTOR QMultiOgre : QOgre
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")							
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris("Quake_GIB12")
 		QZUM A 0 A_SpawnDebris("Quake_GIB2")
 		QZUM A 0 A_SpawnDebris("Quake_GIB3")
@@ -220,6 +222,8 @@ actor QMultiOgre_Shrink : QMultiOgre
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

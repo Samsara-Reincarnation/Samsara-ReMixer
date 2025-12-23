@@ -34,6 +34,8 @@ Actor NarakaMorph_UNBluesuit : SamsaraNarakaPawnTier1Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			TNT1 A 0 A_SetScale(1.0,1.0)
 			RM81 G 5
 			RM81 H 5 A_Scream
@@ -104,6 +106,8 @@ Actor NarakaMorph_BlacksuitStriker : SamsaraNarakaPawnTier2Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			TNT1 A 0 A_SetScale(1.0,1.0)
 			RM88 G 5
 			RM88 H 5 A_Scream
@@ -251,6 +255,8 @@ Actor NarakaMorph_BigEstronBeast : SamsaraNarakaPawnTier4Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			TNT1 A 0 A_SetScale(1.0,1.0)
 			RM74 F 5
 			RM74 G 5 A_Scream

@@ -81,7 +81,7 @@ Actor Q2Hornet : Q2BossBase
 		HNT2 BCDEFGHIJKLMNOPQRSTUV 3
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		"----" A 0 A_StopSound(CHAN_BODY)
 		"----" A 0 A_Gravity
 		"----" A 0 A_ChangeFlag(FLOATBOB,0)
@@ -96,7 +96,26 @@ Actor Q2Hornet : Q2BossBase
 		HNT4 TTTT 0 A_SpawnItemEx(MakronExplosion,Random2(Radius),Random2(Radius),Random(0,40),0,0,0,0,SXF_TRANSFERPOINTERS)
 		HNT4 A 0 A_UnsetShootable
 		TNT4 A 0 A_Fall
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)									
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 AAAAAAAAAAAAAAAA 0 A_SpawnItemEx(Q2Gib,Random2(Radius),0,Random(0,80),2,0,Random(0,10),Random(1,360))
+		TNT1 A 5 A_PlaySound("Bitterman/Xdeath",6,1.0,0,ATTN_NORM)
+		Stop
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		"----" A 0 A_StopSound(CHAN_BODY)
+		"----" A 0 A_Gravity
+		"----" A 0 A_ChangeFlag(FLOATBOB,0)
+		"----" A 3 A_Scream
+		HNT3 A 0 A_SetShootable
+		HNT3 "ABCDEFGHIJKLMNOPQRSTUVWXYZ\[]" 3
+		HNT4 ABCDEFGHIJKLMNOPQRS 3
+		HNT4 T 50
+		TNT1 A 0 A_KillMaster
+		HNT4 TTTT 8 A_SpawnItemEx(MakronExplosion,Random2(Radius),Random2(Radius),Random(0,40),0,0,0,0,SXF_TRANSFERPOINTERS)
+		HNT4 TTTT 4 A_SpawnItemEx(MakronExplosion,Random2(Radius),Random2(Radius),Random(0,40),0,0,0,0,SXF_TRANSFERPOINTERS)
+		HNT4 TTTT 0 A_SpawnItemEx(MakronExplosion,Random2(Radius),Random2(Radius),Random(0,40),0,0,0,0,SXF_TRANSFERPOINTERS)
+		HNT4 A 0 A_UnsetShootable
+		TNT4 A 0 A_Fall
 		TNT1 AAAAAAAAAAAAAAAA 0 A_SpawnItemEx(Q2Gib,Random2(Radius),0,Random(0,80),2,0,Random(0,10),Random(1,360))
 		TNT1 A 5 A_PlaySound("Bitterman/Xdeath",6,1.0,0,ATTN_NORM)
 		Stop

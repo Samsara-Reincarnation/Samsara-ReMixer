@@ -232,8 +232,9 @@ Actor Q2SoldierBase : SamsaraMonsterCybernetic
 		GRD4 ABCDEFGHIJKLMNOPQ 4
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		TNT1 A 0 //A_SpawnItemEx(DestroyableBodyThing,0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 		TNT1 A 0 A_ScreamAndUnblock
@@ -383,10 +384,16 @@ Actor Q2SoldierBase : SamsaraMonsterCybernetic
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Fall
 		TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+		TNT1 A 1 A_KillMaster
+		Stop
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_Fall
+		TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 		TNT1 A 1 A_KillMaster
 		Stop
 	Raise:
@@ -399,8 +406,10 @@ Actor Q2SoldierBase : SamsaraMonsterCybernetic
 		TNT1 A 5 A_PlaySound("Bitterman/Xdeath")
 		Stop	
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1	
+		Goto Death+3
 	}
 }
 
@@ -636,10 +645,11 @@ Actor Q2HeavyBase : SamsaraMonsterCybernetic
 		GRD4 ABCDEFGHIJKLMNOPQ 4
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		TNT1 A 0 //A_SpawnItemEx(DestroyableBodyThing,0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 		TNT1 A 0 A_Jump(256,"Death1","Death2","Death3","Death4","Death5","Death6")
@@ -788,11 +798,17 @@ Actor Q2HeavyBase : SamsaraMonsterCybernetic
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Fall
 		TNT1 A 0 A_KillMaster
 		TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+		Stop
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_Fall
+		TNT1 A 0 A_KillMaster
+		TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 		Stop
 	Raise:
 //		"----" A 0 A_GiveInventory(ResurrectedToken,1)
@@ -805,8 +821,10 @@ Actor Q2HeavyBase : SamsaraMonsterCybernetic
 		TNT1 A 5 A_PlaySound("Bitterman/Xdeath")
 		Stop	
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1	
+		Goto Death+3
 	}
 }
 
@@ -1040,10 +1058,11 @@ Actor Q2BossBase : SamsaraMonsterCyberneticBoss
 		GRD4 ABCDEFGHIJKLMNOPQ 4
 		Goto See2
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
 		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		TNT1 A 0 //A_SpawnItemEx(DestroyableBodyThing,0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 		TNT1 A 0 A_Jump(256,"Death1","Death2","Death3","Death4","Death5","Death6")

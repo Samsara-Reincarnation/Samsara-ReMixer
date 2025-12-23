@@ -143,10 +143,11 @@ Actor Q2Stalker : Q2SoldierBase
 		STK3 KLMN 3
 		Goto See
 	Death:
+		"####" "#" 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		"####" "#" 0 A_Scream
-		"####" "#" 0 A_NoBlocking
-		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		"####" "#" 3 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)							
+		"####" "#" 3 A_NoBlocking
 		STK4 A 0 A_SpawnItemEx("Q2StalkerDeathAnimation", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 		TNT1 A -1
 		stop
@@ -156,8 +157,10 @@ Actor Q2Stalker : Q2SoldierBase
 //		"----" A 6 A_TakeInventory(ResurrectedToken,1)
 		Goto See
 	Burn:
-		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1	
+		"####" "#" 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		"####" "#" 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
+		Goto Death+3
 	Pain.ShrinkerDMG:
 		STK2 W 0
 		"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -220,6 +223,12 @@ Actor Q2StalkerDeathAnimation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+			Stop
 	}
 }
 
@@ -243,6 +252,12 @@ Actor Q2StalkerDeathCorpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -348,6 +363,8 @@ actor Q2Stalker_Shrink : Q2Stalker
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

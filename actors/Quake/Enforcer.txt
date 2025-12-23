@@ -80,9 +80,10 @@ ACTOR QEnforcer : SamsaraMonsterHumanoid
 		ENF5 E 0
 		Goto See
 	  Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	  Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")				
 		ENF8 A 0 A_Jump(256,"Death1","Death2")
 	  Death1:
 		ENF8 A 4
@@ -115,8 +116,9 @@ ACTOR QEnforcer : SamsaraMonsterHumanoid
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")				
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris ("Quake_GIB12")
 		QZUM A 0 A_SpawnDebris ("Quake_GIB2")
 		QZUM A 0 A_SpawnDebris ("Quake_GIB3")
@@ -315,6 +317,8 @@ actor QEnforcer_Shrink : QEnforcer
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

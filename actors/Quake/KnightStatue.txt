@@ -113,9 +113,10 @@ ACTOR QKStatue1 : QKnight
 		STN5 A 0
 		Goto See
 	  Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	  Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")		
 		STN7 A 0 A_Jump(256,"death1","death2")
 	  Death1:
 		STN7 A 4
@@ -142,8 +143,9 @@ ACTOR QKStatue1 : QKnight
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")							
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris("Quake_STGIB1")
 		QZUM A 0 A_SpawnDebris("Quake_STGIB2")
 		QZUM A 0 A_SpawnDebris("Quake_STGIB3")

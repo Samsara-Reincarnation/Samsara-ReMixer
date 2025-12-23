@@ -55,6 +55,8 @@ Actor NarakaMorph_AnubisWarrior : SamsaraNarakaPawnTier1Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			ANUB O 2
 			ANUB P 2
 			ANUB Q 4 A_Scream
@@ -187,6 +189,17 @@ Actor NarakaMorph_KilmaatSentry : SamsaraNarakaPawnTier2Normal
 			KILM P 3
 			KILM P -1
 			Stop
+		Death.Massacre:
+		XDeath.Massacre:
+			KILM J 5
+			KILM K 5 A_Scream
+			KILM L 5
+			KILM M 4 A_SpawnItem("Kilmaatguts")
+			KILM N 4 A_NoBlocking
+			KILM O 3
+			KILM P 3
+			KILM P -1
+			Stop
 	}
 }
 
@@ -262,11 +275,23 @@ Actor NarakaMorph_OmenWasp : SamsaraNarakaPawnTier3Normal
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			OWDE A 0 A_ChangeFlag(FLOATBOB,0)
 			OWDE A 0 A_Scream
-			Landing:	
+		Landing:
 			OWDE FFFGGG 1 A_CheckFloor("LandBody")
 			Loop
 		LandBody:
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+			OWDE GH 3
+			OWDE H -1 A_NoBlocking
+			Stop
+		Death.Massacre:
+		XDeath.Massacre:
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			OWDE A 0 A_ChangeFlag(FLOATBOB,0)
+			OWDE A 0 A_Scream
+		Landing.Massacre:
+			OWDE FFFGGG 1 A_CheckFloor("LandBody.Massacre")
+			Loop
+		LandBody.Massacre:
 			OWDE GH 3
 			OWDE H -1 A_NoBlocking
 			Stop
@@ -383,6 +408,15 @@ Actor NarakaMorph_ExMummy : SamsaraNarakaPawnTier4NoBlood
 			PSMU RRRSTUV 5
 			PSMU W 4 A_PlayWeaponSound("ancientmummy/unwrap")
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			PSMU XY 4
+			TNT1 A 0 A_NoBlocking
+			PSMU Z -1
+			Stop
+		Death.Massacre:
+		XDeath.Massacre:
+			PSMU R 6 A_Scream
+			PSMU RRRSTUV 5
+			PSMU W 4 A_PlayWeaponSound("ancientmummy/unwrap")
 			PSMU XY 4
 			TNT1 A 0 A_NoBlocking
 			PSMU Z -1

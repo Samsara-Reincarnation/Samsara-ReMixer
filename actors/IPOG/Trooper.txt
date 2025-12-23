@@ -66,9 +66,9 @@ Actor IPOGTrooper : SamsaraMonsterHumanoidTotalGib
 		IPO1 F 16 A_Pain
 		Goto See
 	Death:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")		
-		IPO1 G 3
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		IPO1 G 3 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		IPO1 H 3 A_Scream
 		IPO1 I 3 A_NoBlocking
 		IPO1 J 3
@@ -251,6 +251,8 @@ actor IPOGTrooper_Shrink : IPOGTrooper
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -3,7 +3,7 @@ ACTOR MMRandomizer_ZombieRailGunner : Shotgunguy3
 	Health 45
 	Damage 100
 	PainChance 200
-	Obituary "%o was killed by A Zombie Railgunner!"
+	Obituary "%o was killed by a zombie railgunner!"
 	SeeSound "doom/grunt/sight"
 	PainSound "doom/grunt/pain"
 	DeathSound "doom/grunt/death"

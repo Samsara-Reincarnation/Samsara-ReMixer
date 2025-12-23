@@ -87,9 +87,10 @@ ACTOR QGremlin : SamsaraMonsterDemonic
 		GRM5 HIJK 3
 		Goto See
 	  Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	  Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")		
 		GRM1 A 0 A_Jump(128,"Death2")
 	  Death1:
 		GRMB A 4
@@ -119,8 +120,9 @@ ACTOR QGremlin : SamsaraMonsterDemonic
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")		
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris("Quake_GIB12")
 		QZUM A 0 A_SpawnDebris("Quake_GIB2")
 		QZUM A 0 A_SpawnDebris("Quake_GIB3")
@@ -332,6 +334,8 @@ actor QGremlin_Shrink : QGremlin
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

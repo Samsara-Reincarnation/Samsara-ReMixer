@@ -13,8 +13,9 @@ ACTOR QKStatue2 : QHKnight
   States
   {
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")		
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris("Quake_STGIB1")
 		QZUM A 0 A_SpawnDebris("Quake_STGIB2")
 		QZUM A 0 A_SpawnDebris("Quake_STGIB3")

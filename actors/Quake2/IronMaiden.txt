@@ -78,10 +78,11 @@ Actor Q2IronMaiden : Q2HeavyBase
 		BTC4 CDE 3
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)					
 		TNT1 A 0 A_KillMaster
 		TNT1 A 0 A_Jump(256,"Death1","Death2")
 	Death1:
@@ -98,8 +99,10 @@ Actor Q2IronMaiden : Q2HeavyBase
 //		"----" A 6 A_TakeInventory(ResurrectedToken,1)
 		Goto See
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1			
+		Goto Death+3
 	Pain.ShrinkerDMG:
 		BTC4 A 0
 		"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -177,6 +180,12 @@ Actor Q2IronMaidenDeath1Animation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+			Stop
 	}
 }
 
@@ -200,6 +209,12 @@ Actor Q2IronMaidenDeath1Corpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -228,6 +243,12 @@ Actor Q2IronMaidenDeath2Animation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+			Stop
 	}
 }
 
@@ -251,6 +272,12 @@ Actor Q2IronMaidenDeath2Corpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -392,6 +419,8 @@ actor Q2IronMaiden_Shrink : Q2IronMaiden
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -528,10 +557,11 @@ Actor Q2IronMaidenBetaClass : Q2IronMaiden
 			TNT1 A 1 A_KillMaster
 			stop
 		Death:
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)					
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_Jump(256,"Death1","Death2")
 		Death1:
@@ -542,6 +572,11 @@ Actor Q2IronMaidenBetaClass : Q2IronMaiden
 			BTC6 A 0 A_SpawnItemEx("Q2IronMaidenBetaClassDeath2Animation", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A -1
 			stop
+		Burn:
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
+			Goto Death+3
 		Crush:
 			TNT1 AAAAAAA 0 A_SpawnItemEx(Q2Gib,Random2(40),0,5,Random(0,1),0,2,Random(1,360))
 			TNT1 A 5 A_PlaySound("Bitterman/Xdeath")
@@ -585,6 +620,12 @@ Actor Q2IronMaidenBetaClassDeath1Animation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+			Stop
 	}
 }
 
@@ -608,6 +649,12 @@ Actor Q2IronMaidenBetaClassDeath1Corpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -636,6 +683,12 @@ Actor Q2IronMaidenBetaClassDeath2Animation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+			Stop
 	}
 }
 
@@ -659,6 +712,12 @@ Actor Q2IronMaidenBetaClassDeath2Corpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -691,6 +750,8 @@ actor Q2IronMaidenBetaClass_Shrink : Q2IronMaiden_Shrink
 			stop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

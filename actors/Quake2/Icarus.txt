@@ -63,10 +63,11 @@ Actor Q2Icarus : Q2HeavyBase
 		HVR2 OPQRSTU 3
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
 		TNT1 A 0 A_ChangeFlag(FLOATBOB,0)
 		TNT1 A 0 A_StopSound(CHAN_BODY)
 		HVR3 A 0 A_SpawnItemEx("Q2IcarusDeath", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -76,14 +77,20 @@ Actor Q2Icarus : Q2HeavyBase
 		TNT1 A 0 A_PlaySound("Q2Weapons/RocketExplosion")
 		TNT1 A 0 A_SpawnItem(Q2Explosion,0,32)
 		Goto Super::XDeath
+	XDeath.Massacre:
+		TNT1 A 0 A_PlaySound("Q2Weapons/RocketExplosion")
+		TNT1 A 0 A_SpawnItem(Q2Explosion,0,32)
+		Goto Super::XDeath.Massacre
 	Raise:
 //		"----" A 0 A_GiveInventory(ResurrectedToken,1)
 		"----" A 25 A_StopSound(CHAN_BODY)
 //		"----" A 6 A_TakeInventory(ResurrectedToken,1)
 		Goto See
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1		
+		Goto Death+3
 	Pain.ShrinkerDMG:
 		HVR2 A 0
 		"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -153,6 +160,14 @@ Actor Q2IcarusDeath : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_PlaySound("Q2Weapons/RocketExplosion")
+			TNT1 A 0 A_SpawnItem(Q2Explosion)
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -410,6 +425,8 @@ actor Q2Icarus_Shrink : Q2Icarus
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -521,10 +538,11 @@ Actor Q2Daedalus : Q2Icarus
 		HVR2 OPQRSTU 3
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
 		TNT1 A 0 A_ChangeFlag(FLOATBOB,0)
 		TNT1 A 0 A_StopSound(CHAN_BODY)
 		HVR3 A 0 A_SpawnItemEx("Q2DaedalusDeath", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -536,8 +554,10 @@ Actor Q2Daedalus : Q2Icarus
 //		"----" A 6 A_TakeInventory(ResurrectedToken,1)
 		Goto See
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1	
+		Goto Death+3
 	Pain.ShrinkerDMG:
 		HVR2 A 0
 		"####" "#" 0 A_TakeInventory("SamsaraMixerQuake2ShieldActive") //Shields down
@@ -608,6 +628,14 @@ Actor Q2DaedalusDeath : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_PlaySound("Q2Weapons/RocketExplosion")
+			TNT1 A 0 A_SpawnItem(Q2Explosion)
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -865,6 +893,8 @@ actor Q2Daedalus_Shrink : Q2Daedalus
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

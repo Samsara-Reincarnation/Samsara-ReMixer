@@ -44,7 +44,9 @@ Actor NarakaMorph_SectorGuard : SamsaraNarakaPawnTier1Normal
 			Goto Spawn
 		Death:
 		XDeath:
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")			
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+		XDeath.Massacre:
 			BSE1 F 7 A_PlayerScream
 			BSE1 G 8 A_NoBlocking
 			BSE1 H 6
@@ -151,6 +153,8 @@ Actor NarakaMorph_MutantGreen : SamsaraNarakaPawnTier2Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			BS13 H 9 A_PlayerScream
 			BS13 I 8 A_NoBlocking
 			BS13 JKL 6
@@ -346,6 +350,8 @@ Actor NarakaMorph_SpiderMutant : SamsaraNarakaPawnTier4Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			BS17 H 8 A_PlayerScream
 			BS17 I 7 A_NoBlocking
 			BS17 JKL 6
@@ -465,6 +471,8 @@ Actor NarakaMorph_Goldfire : SamsaraNarakaPawnTier5Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			BS31 H 8 A_PlayerScream
 			BS31 I 9 A_NoBlocking
 			BS31 JKLMN 9 Bright

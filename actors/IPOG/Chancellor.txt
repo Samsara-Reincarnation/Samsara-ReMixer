@@ -255,9 +255,9 @@ Actor IPOGChancellor : SamsaraMonsterHumanoidBoss
 		IPOE F 4 A_Pain
 		Goto See
 	Death:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
-		IPOE G 5
+	Death.Massacre:
+		IPOE G 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		IPOE H 5 A_Scream
 		IPOE I 5 
 		IPOE J 5

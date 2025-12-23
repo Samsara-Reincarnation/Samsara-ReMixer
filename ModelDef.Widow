@@ -505,6 +505,38 @@ Model Q2Widow_Legs
 	Frame LEGS X 0 "legs24"
 }
 
+Model Q2Widow_LegsMassacre
+{
+	Path "Models/Quake2/Widow"
+	Model 0 "widow_legs.md2"
+	Skin 0 "widow_legs.png"
+	
+	Frame LEGS A 0 "legs01"
+	Frame LEGS B 0 "legs02"
+	Frame LEGS C 0 "legs03"
+	Frame LEGS D 0 "legs04"
+	Frame LEGS E 0 "legs05"
+	Frame LEGS F 0 "legs06"
+	Frame LEGS G 0 "legs07"
+	Frame LEGS H 0 "legs08"
+	Frame LEGS I 0 "legs09"
+	Frame LEGS J 0 "legs10"
+	Frame LEGS K 0 "legs11"
+	Frame LEGS L 0 "legs12"
+	Frame LEGS M 0 "legs13"
+	Frame LEGS N 0 "legs14"
+	Frame LEGS O 0 "legs15"
+	Frame LEGS P 0 "legs16"
+	Frame LEGS Q 0 "legs17"
+	Frame LEGS R 0 "legs18"
+	Frame LEGS S 0 "legs19"
+	Frame LEGS T 0 "legs20"
+	Frame LEGS U 0 "legs21"
+	Frame LEGS V 0 "legs22"
+	Frame LEGS W 0 "legs23"
+	Frame LEGS X 0 "legs24"
+}
+
 Model Q2Widow_Gib1
 {
 	Path "Models/Quake2/Widow/Gib1"

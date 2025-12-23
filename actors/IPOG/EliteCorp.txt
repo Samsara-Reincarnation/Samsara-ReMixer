@@ -60,9 +60,9 @@ Actor IPOGEliteCorp : SamsaraMonsterHumanoidTotalGib
 		IPOA F 16 A_Pain
 		Goto See
 	Death:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
-		IPOA G 3
+	Death.Massacre:
+		IPOA G 3 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		IPOA H 3
 		IPOA I 3 A_Scream
 		IPOA J 3
@@ -281,6 +281,8 @@ actor IPOGEliteCorp_Shrink : IPOGEliteCorp
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

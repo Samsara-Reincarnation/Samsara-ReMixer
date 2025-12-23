@@ -59,6 +59,8 @@ Actor NarakaMorph_SWNinja : SamsaraNarakaPawnTier1Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			NINJ R 4 A_StopSound(CHAN_BODY)
 			NINJ S 3 A_Scream
 			NINJ T 3 A_NoBlocking
@@ -181,6 +183,8 @@ Actor NarakaMorph_SWAssassin : SamsaraNarakaPawnTier2Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			ASSA H 3 A_StopSound(CHAN_BODY)	
 			ASSA I 4 A_Scream
 			ASSA J 4 A_NoBlocking
@@ -285,6 +289,8 @@ Actor NarakaMorph_SWRipper : SamsaraNarakaPawnTier3Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			RIPD A 2 A_StopSound(CHAN_BODY)
 			RIPD B 4 A_Scream
 			RIPD C 4 A_NoBlocking
@@ -377,6 +383,8 @@ Actor NarakaMorph_SerpentGod : SamsaraNarakaPawnTier4Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			SERP M 6 A_Scream
 			SERP NOPQRSTUW 6
 			TNT1 A 0 A_NoBlocking

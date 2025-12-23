@@ -119,29 +119,38 @@ Actor Q2Tank : Q2HeavyBase
 		TNK5 CD 6
 		Goto See
 	Death:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)					
 		TNT1 A 0 A_KillMaster
 		TNK6 A 0 A_SpawnItemEx("Q2TankDeathAnimation", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)						
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Fall
 		TNT1 A 0 A_KillMaster
 		TNT1 A 5 A_SpawnItem(Q2GibSpawner)
-		Stop		
+		Stop
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_Fall
+		TNT1 A 0 A_KillMaster
+		TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+		Stop
 	Raise:
 //		"----" A 0 A_GiveInventory(ResurrectedToken,1)
 		"----" A 25 A_StopSound(CHAN_BODY)
 //		"----" A 6 A_TakeInventory(ResurrectedToken,1)
 		Goto See
 	Burn:
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Playsound("Strogg/Lava",CHAN_VOICE)
-		Goto Death+1	
+		Goto Death+3
 	Pain.ShrinkerDMG:
 		TNK5 A 0
 		"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -222,6 +231,12 @@ Actor Q2TankDeathAnimation : SamsaraCorpseActor
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
 			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
+			Stop
 	}
 }
 
@@ -245,6 +260,12 @@ Actor Q2TankDeathCorpse : SamsaraCorpseActor
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 5 A_SpawnItem(Q2GibSpawner)
+			Stop
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
+			TNT1 A 0 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 5 A_SpawnItem(Q2GibSpawnerMassacre)
 			Stop
 	}
 }
@@ -430,6 +451,8 @@ actor Q2Tank_Shrink : Q2Tank
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

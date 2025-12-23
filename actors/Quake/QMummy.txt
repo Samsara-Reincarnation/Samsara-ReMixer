@@ -83,8 +83,9 @@ ACTOR QMummy : QZombie
 		QMU6 K 0
 		Goto See
 	  Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")		
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris("Quake_GIB12")
 		QZUM A 0 A_SpawnDebris("Quake_GIB2")
 		QZUM A 0 A_SpawnDebris("Quake_GIB3")
@@ -103,8 +104,9 @@ ACTOR QMummy : QZombie
 	  XDeath.QuakeExplosive:
 	  XDeathForRanger:
 	  XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")				
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	  XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		QZUM A 0 A_SpawnDebris("Quake_GIB12")
 		QZUM A 0 A_SpawnDebris("Quake_GIB2")
 		QZUM A 0 A_SpawnDebris("Quake_GIB3")
@@ -354,6 +356,8 @@ actor QMummy_Shrink : QMummy
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

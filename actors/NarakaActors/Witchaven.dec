@@ -37,6 +37,8 @@ Actor NarakaMorph_Argothonian : SamsaraNarakaPawnTier1Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			WH_9 M 4
 			WH_9 N 4 A_Scream
 			WH_9 O 4 A_NoBlocking
@@ -128,6 +130,8 @@ Actor NarakaMorph_MuckDemoness : SamsaraNarakaPawnTier2Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			WH_M L 5 A_Scream
 			WH_M M 5  
 			WH_M N 5 A_NoBlocking
@@ -198,6 +202,8 @@ Actor NarakaMorph_MinoDrake : SamsaraNarakaPawnTier3Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			WH_S I 5
 			WH_S J 5 A_Scream
 			WH_S K 5 A_NoBlocking
@@ -284,6 +290,8 @@ Actor NarakaMorph_MidianWarrior : SamsaraNarakaPawnTier4Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			W_HG L 4
 			W_HG M 4 A_Scream
 			W_HG X 4 A_NoBlocking
@@ -386,6 +394,8 @@ Actor NarakaMorph_CiraeArgoth : SamsaraNarakaPawnTier5Normal
 		Death:
 		XDeath:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+		XDeath.Massacre:
 			WH_K F 3
 			WH_K G 3 A_Scream
 			WH_K H 3 A_NoBlocking
