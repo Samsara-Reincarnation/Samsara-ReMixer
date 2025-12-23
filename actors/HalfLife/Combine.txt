@@ -200,8 +200,9 @@ Actor Combine_Soldier_MP7 : SamsaraMonsterHumanoid
 			TNT1 A 0 A_ChangeFlag(FRIGHTENED,0)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
-			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)							
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_Jump(128,"Death2")
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_Scream
@@ -230,8 +231,9 @@ Actor Combine_Soldier_MP7 : SamsaraMonsterHumanoid
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 ThrustThingZ(0,30,0,0)
 			TNT1 A 0 ThrustThing((angle*256/360)+128,60,1,0)
 			TNT1 A 0 A_Scream
@@ -562,6 +564,8 @@ actor Combine_Soldier_MP7_Shrink : Combine_Soldier_MP7
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

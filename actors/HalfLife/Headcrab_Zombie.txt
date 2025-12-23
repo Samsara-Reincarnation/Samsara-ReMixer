@@ -104,8 +104,9 @@ Actor Headcrab_Scientist : SamsaraMonsterBeast
 			HL05 A 0
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("CorpseToken")
 			TNT1 A 0 A_Jump(128,"Death2","Death3")
 			TNT1 A 0 A_NoBlocking
@@ -139,8 +140,9 @@ Actor Headcrab_Scientist : SamsaraMonsterBeast
 		Death.HLEgon:
 		Death.FreemanGibs:
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItem("HLZombieGibSpawner")
 			TNT1 A 5 A_NoBlocking
 			Stop	
@@ -386,6 +388,8 @@ actor Headcrab_Scientist_Shrink : Headcrab_Scientist
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -453,8 +457,9 @@ Actor Headcrab_Barney : Headcrab_Scientist
 		Death.HLEgon:
 		Death.FreemanGibs:
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItem("HLGenericGibSpawner")
 			TNT1 A 5 A_NoBlocking
 			Stop	
@@ -564,8 +569,9 @@ Actor Headcrab_Soldier : Headcrab_Scientist
 			TNT1 A 0
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)		
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("CorpseToken")
 			TNT1 A 0 A_Jump(128,"Death2","Death3")
 			TNT1 A 0 A_NoBlocking
@@ -599,8 +605,9 @@ Actor Headcrab_Soldier : Headcrab_Scientist
 		Death.HLEgon:
 		Death.FreemanGibs:
 		XDeath:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItem("HLGenericGibSpawner")
 			TNT1 A 5 A_NoBlocking
 			Stop	
