@@ -121,7 +121,7 @@ Actor Bastet : SamsaraMonsterHumanoidFemale
 		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_Wander
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		BAS_ AAAAAAA 4
 		BAS_ A 2
@@ -129,7 +129,22 @@ Actor Bastet : SamsaraMonsterHumanoidFemale
 		BAS_ BC 4
 		BAS_ DE 6
 		BAS_ FG 4
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		TNT1 A 0 A_PlaySound("bastet/break")
+		BAS_ H 3 A_SpawnItemEx("BastetFakeCrash",0,0,0,0)
+		BAS_ I 3
+		BAS_ J 4
+		BAS_ K -1
+		Stop
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_Scream
+		BAS_ AAAAAAA 4
+		BAS_ A 2
+		TNT1 A 0 A_NoBlocking
+		BAS_ BC 4
+		BAS_ DE 6
+		BAS_ FG 4
 		TNT1 A 0 A_PlaySound("bastet/break")
 		BAS_ H 3 A_SpawnItemEx("BastetFakeCrash",0,0,0,0)
 		BAS_ I 3
@@ -142,9 +157,19 @@ Actor Bastet : SamsaraMonsterHumanoidFemale
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
-		BAST Q 3 A_Scream	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		BAST Q 3 A_Scream
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		BAST R 3 A_PlaySound("Jon/XGibs",CHAN_BODY,1.0,0,ATTN_NORM)
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_CustomMissile("BastetGib1",49,0+Random(1,-1),0+Random(0,370),2,0+random(5,50))  
+		TNT1 A 0 A_CustomMissile("BastetGib2",0+Random(24,45),0+Random(9,-9),0+Random(0,370),2,0+random(5,50))  
+		TNT1 A 0 A_CustomMissile("AnubisGib2",0+Random(24,45),0+Random(9,-9),0+Random(0,370),2,0+random(5,50))  
+		TNT1 A 5 A_CustomMissile("AnubisGib4",0+Random(24,45),0+Random(9,-9),0+Random(0,370),2,0+random(5,50))  
+		Stop
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		BAST Q 3 A_Scream
 		BAST R 3 A_PlaySound("Jon/XGibs",CHAN_BODY,1.0,0,ATTN_NORM)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_CustomMissile("BastetGib1",49,0+Random(1,-1),0+Random(0,370),2,0+random(5,50))  
@@ -325,6 +350,8 @@ actor Bastet_Shrink : Bastet
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

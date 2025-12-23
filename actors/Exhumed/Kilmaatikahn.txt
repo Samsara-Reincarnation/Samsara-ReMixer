@@ -821,8 +821,7 @@ Actor Kilmaatikahn : SamsaraMonsterAlienBoss
 		TNT1 A 0 A_Jump(80,"WingedRamming_TailLess")
 		Goto See_TailLess_Loop		
     Death:
-	    TNT1 A 0 A_GiveToTarget("KillCount",1)
-		TNT1 A 0
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		KBOS Q 70 A_Scream
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 0 A_PlaySound("set/spiritexplode",7,1.0,0,ATTN_NORM)		
@@ -1044,7 +1043,7 @@ Actor KilmaatBossMouthMinionSpawner
 
 Actor KilmaatMouthMinion : SamsaraMonsterAlienTotalGib
 {
-    obituary "%o was devoured by Kilmaatikahn parasites"
+    obituary "%o was devoured by Kilmaatikahn parasites."
     radius 16
     height 22
     speed 10
@@ -1089,9 +1088,10 @@ Actor KilmaatMouthMinion : SamsaraMonsterAlienTotalGib
 		KBS2 I 4 A_MeleeAttack
 		Goto See
     Death:
-		TNT1 A 0 A_GiveToTarget("KillCount",1)	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+    Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")		
 		TNT1 AAAAA 0 A_CustomMissile("kilmaatikahnminionguts1",random(0,30),0,random(-180,180),2,random(0,12))
 		TNT1 AAAAA 0 A_CustomMissile("kilmaatikahnminionguts2",random(0,30),0,random(-180,180),2,random(0,12))
 		TNT1 A 5 A_NoBlocking
@@ -1579,7 +1579,7 @@ Actor kilmaatikahn2 : SamsaraMonsterAlienBoss
 		Goto See
     Death:
 	ForcedEnd:
-		TNT1 A 0 A_GiveToTarget("KillCount",1)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		KBS3 B 1 A_CustomMissile("PowerslaveExplosion2kilmaatikahn",12,random(-23,23),random(-180,180),2,random(15,45))
 		TNT1 A 0 A_PlaySound("set/spiritexplode")

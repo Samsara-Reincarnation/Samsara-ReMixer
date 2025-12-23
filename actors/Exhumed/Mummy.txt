@@ -92,11 +92,20 @@ Actor ExMummy : SamsaraMonsterBeastTotalGib
 		TNT1 A -1 A_Jump(256,"Death")
 		wait
 	Death:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
+	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		PSMU R 6 A_Scream
 		PSMU RRRSTUV 5
 		PSMU W 4 A_PlayWeaponSound("ancientmummy/unwrap")
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		PSMU XY 4
+		TNT1 A 0 A_NoBlocking
+		PSMU Z -1 A_KillMaster
+		stop
+	Death.Massacre:
+	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		PSMU R 6 A_Scream
+		PSMU RRRSTUV 5
+		PSMU W 4 A_PlayWeaponSound("ancientmummy/unwrap")
 		PSMU XY 4
 		TNT1 A 0 A_NoBlocking
 		PSMU Z -1 A_KillMaster

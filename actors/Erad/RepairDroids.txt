@@ -92,10 +92,12 @@ Actor MiniRepairDroid : SamsaraMonsterCybernetic
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	Death:
-	XDeath:	
-        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	  	
-		TNT1 A 0 A_StopSound(CHAN_WEAPON)	
+	XDeath:
 	    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	Death.Massacre:
+	XDeath.Massacre:
+        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		TNT1 A 0 A_PlaySound("EradMissile/Boom") 	
 		TNT1 A 0 A_SpawnItemEx("EradMetalDebris_2",0,0,0,random(-30,30)/10.00,random(-30,30)/10.00,random(50,150)/10.00)					
 		TNT1 A 0 A_SpawnItemEx("EradMetalDebris_5",0,0,0,random(-30,30)/10.00,random(-30,30)/10.00,random(50,150)/10.00)		
@@ -214,10 +216,12 @@ Actor RepairDroid : MiniRepairDroid
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	Death:
-	XDeath:	
-        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	  	
-		TNT1 A 0 A_StopSound(CHAN_WEAPON)	
+	XDeath:
 	    TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	Death.Massacre:
+	XDeath.Massacre:
+        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_StopSound(CHAN_WEAPON)
 		TNT1 A 0 A_NoBlocking		
 		TNT1 A 0 A_PlaySound("EradMissile/Boom") 	
 		TNT1 A 0 A_SpawnItemEx("EradMetalDebris_2",0,0,0,random(-30,30)/10.00,random(-30,30)/10.00,random(50,150)/10.00)					

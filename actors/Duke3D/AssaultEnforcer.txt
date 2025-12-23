@@ -312,8 +312,8 @@ Actor AssaultEnforcerCorpse : SamsaraCorpseActor
 			TNT1 A 0 A_Jump(64,2)
 			TNT1 A 0 A_SpawnDebris("DukeJibs8")
 			TNT1 AA 0
-			ACLO E 1 A_PlaySound("duke/enemygib")
-			ACLO E 4
+			TNT1 A 1 A_PlaySound("duke/enemygib")
+			TNT1 A 4
 			Stop
 	}
 }

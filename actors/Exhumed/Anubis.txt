@@ -75,8 +75,9 @@ Actor AnubisWarrior : SamsaraMonsterHumanoid
 		ANUB K 16 A_Pain
 		Goto See
     Death:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+    Death.Massacre:
+	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		ANUB O 2 ThrustThingZ(0,16,0,0)
 		ANUB P 2
 		ANUB Q 4 A_Scream
@@ -90,9 +91,24 @@ Actor AnubisWarrior : SamsaraMonsterHumanoid
 		TNT1 A -1 A_Jump(256,"XDeath")
 		wait
 	XDeath:
-	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
-		ANUB VV 3 A_Scream	
+	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		ANUB VV 3 A_Scream
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		ANUB WW 3
+		TNT1 A 0 A_NoBlocking
+		ANUB X 3 A_PlaySound("anubis/xdeath", CHAN_BODY)
+		ANUB Y 0 A_CustomMissile("AnubisGib1",0+Random(24,45),0+Random(9,-9),0+Random(0,370),2,0+random(5,50))  
+		ANUB Y 0 A_CustomMissile("AnubisGib2",0+Random(24,45),0+Random(9,-9),0+Random(0,370),2,0+random(5,50))  
+		ANUB Y 0 A_CustomMissile("AnubisGib3",0+Random(24,45),0+Random(9,-9),0+Random(0,370),2,0+random(5,50))  
+		ANUB Y 0 A_CustomMissile("AnubisGib4",0+Random(24,45),0+Random(9,-9),0+Random(0,370),2,0+random(5,50))  
+		ANUB Y 3
+		ANUB Z 4
+		ANUB "[" 4
+		ANUB "[" -1
+		stop
+	XDeath.Massacre:
+	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		ANUB VV 3 A_Scream
 		ANUB WW 3
 		TNT1 A 0 A_NoBlocking
 		ANUB X 3 A_PlaySound("anubis/xdeath", CHAN_BODY)
@@ -302,6 +318,8 @@ actor AnubisWarrior_Shrink : AnubisWarrior
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

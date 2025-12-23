@@ -72,9 +72,9 @@ Actor ExHawk : SamsaraMonsterBeastTotalGib
 		TNT1 A -1 A_Jump(256,"Death")
 		wait
 	Death:
-	    TNT1 A 0 A_GiveToTarget("KillCount",1)	
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
-		HAWK H 3
+	Death.Massacre:
+		HAWK H 3 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		HAWK I 3 A_Scream
 		P_BS F 3
 		P_BS G 3 A_NoBlocking
