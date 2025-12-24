@@ -326,8 +326,9 @@ ACTOR BigJackelope : SamsaraMonsterBeastBoss
 		TNT1 A 0 A_JumpIfInventory("BJackelopeChargeLoop",5,"See_Spin")
 		Goto A
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_PlaySound("leonard/xdeath",CHAN_AUTO,1.0,0,ATTN_NONE)
 		TNT1 A 0 A_CustomMissile("BigJackelopeGib",0+Random(30,80),0+Random(55,-55),0+Random(0,360))

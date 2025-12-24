@@ -236,6 +236,20 @@ Actor AssFace : SamsaraMonsterBeastBoss
 		TNT1 AAAAAAAAAA 0 A_CustomMissile("AssFaceGib4",0+Random(30,60)*random(random(2,5),1),0+Random(35,-35)*random(random(2,5),1),0+Random(0,370)*Random(2,1))
 		TNT1 A 5 A_KillMaster
 		Stop
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		A9S_ D 5 A_Scream
+		A9S_ EFGHIJ 5
+		A9S_ KLMNO 4
+		A9S_ P 6
+		TNT1 A 0 A_NoBlocking
+		TNT1 A 0 A_PlaySound("Leonard/XDeath",CHAN_AUTO)
+		TNT1 AAAAAAAAAA 0 A_CustomMissile("AssFaceGib1",0+Random(30,60)*random(random(2,5),1),0+Random(35,-35)*random(random(2,5),1),0+Random(0,370)*Random(2,1))
+		TNT1 AAAAAAAAAA 0 A_CustomMissile("AssFaceGib2",0+Random(30,60)*random(random(2,5),1),0+Random(35,-35)*random(random(2,5),1),0+Random(0,370)*Random(2,1))
+		TNT1 AAAAAAAAAA 0 A_CustomMissile("AssFaceGib3",0+Random(30,60)*random(random(2,5),1),0+Random(35,-35)*random(random(2,5),1),0+Random(0,370)*Random(2,1))
+		TNT1 AAAAAAAAAA 0 A_CustomMissile("AssFaceGib4",0+Random(30,60)*random(random(2,5),1),0+Random(35,-35)*random(random(2,5),1),0+Random(0,370)*Random(2,1))
+		TNT1 A 5 A_KillMaster
+		Stop
 	}
 }
 

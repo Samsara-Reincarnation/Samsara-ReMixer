@@ -138,8 +138,9 @@ Actor DoyleDaisyBike : SamsaraMonsterCybernetic
 		TNT1 A 0 A_GiveToTarget("LeonardGibTaunt",1)
 		Goto XDeath
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_CustomMissile("BikeDebris1_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 		TNT1 A 0 A_CustomMissile("BikeDebris2_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -319,8 +320,9 @@ Actor DoyleDaisyBike_Red : DoyleDaisyBike
 		_DX4 E 2 A_CustomMeleeAttack(2*random(1,8))
 		Goto SeeLoop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_CustomMissile("BikeDebris1_RR_Red",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
 		TNT1 A 0 A_CustomMissile("BikeDebris2_RR_Red",0+Random(30,60),0+Random(35,-35),0+Random(0,370))

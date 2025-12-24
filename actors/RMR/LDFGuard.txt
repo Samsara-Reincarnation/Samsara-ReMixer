@@ -56,10 +56,10 @@ actor RMRLDFRegular : SamsaraMonsterHumanoidTotalGib
 		RM77 F 16 A_Pain
 		Goto See
 	Death:
-        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)	
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
-		TNT1 A 0 A_SetScale(1.0,1.0)
-		RM77 G 5
+	Death.Massacre:
+        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		RM77 G 5 A_SetScale(1.0,1.0)
 		RM77 H 5 A_Scream
 		RM77 I 3 A_NoBlocking
 		RM77 J 4
@@ -215,6 +215,8 @@ actor RMRLDFRegular_Shrink : RMRLDFRegular
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

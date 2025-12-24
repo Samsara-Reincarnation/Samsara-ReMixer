@@ -283,8 +283,9 @@ Actor BlueVixen : SamsaraMonsterHumanoidTotalGib
 		VIXX L 16 A_Pain
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		VIXD A 5 A_KillMaster
@@ -389,8 +390,9 @@ Actor BlueVixenCorpse : SamsaraCorpseActor
 			VIXD H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_SpawnItemEx("RRGibSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -523,6 +525,8 @@ actor BlueVixen_Shrink : BlueVixen
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -827,8 +831,9 @@ Actor RedVixen : BlueVixen
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		RR24 A 5 A_KillMaster
@@ -1012,6 +1017,8 @@ actor RedVixen_Shrink : RedVixen
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1316,8 +1323,9 @@ Actor GreenVixen : BlueVixen
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		RR21 A 5 A_KillMaster
@@ -1501,6 +1509,8 @@ actor GreenVixen_Shrink : GreenVixen
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1727,8 +1737,9 @@ Actor BrownVixen : BlueVixen
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		RR18 A 5 A_KillMaster
@@ -1912,6 +1923,8 @@ actor BrownVixen_Shrink : BrownVixen
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2216,8 +2229,9 @@ Actor DarkGreenVixen : BlueVixen
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		RR30 A 5 A_KillMaster
@@ -2401,6 +2415,8 @@ actor DarkGreenVixen_Shrink : DarkGreenVixen
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2705,8 +2721,9 @@ Actor SpecialVixen : BlueVixen
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_NoBlocking
 		RR27 A 5 A_KillMaster
@@ -2895,6 +2912,8 @@ actor SpecialVixen_Shrink : SpecialVixen
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

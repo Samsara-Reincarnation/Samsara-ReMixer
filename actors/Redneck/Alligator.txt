@@ -49,8 +49,9 @@ Actor Alligator : SamsaraMonsterBeastTotalGib
 		A_LJ KKKKLLLL 1 A_FaceTarget
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_PlaySound("Leonard/XDeath",CHAN_AUTO,1.0,0,ATTN_NORM)
 		TNT1 AA 0 A_CustomMissile("MiscGib1_RR",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -215,6 +216,8 @@ actor Alligator_Shrink : Alligator
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

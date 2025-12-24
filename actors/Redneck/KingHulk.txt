@@ -140,14 +140,16 @@ Actor KingHulk : SamsaraMonsterAlienBoss
 		Goto SeeLoop
 	Death:
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
 		_ULD A 0 A_Scream
 		TNT1 A 0 A_SpawnItemEx("KingHulkRevive",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL,0,tid)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_KillMaster
 		Stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_PlaySound("leonard/xdeath",CHAN_AUTO)
 		TNT1 A 0 A_CustomMissile("KingHulkhead",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
@@ -233,8 +235,10 @@ Actor KingHulkRevive
 		Goto Raise
 	Death:
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_ChangeFlag("SOLID",false)
 		TNT1 A 0 A_PlaySound("leonard/xdeath",CHAN_AUTO)
 		TNT1 A 0 A_CustomMissile("KingHulkhead",0+Random(30,60),0+Random(35,-35),0+Random(0,370))
