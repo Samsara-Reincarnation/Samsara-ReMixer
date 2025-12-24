@@ -50,6 +50,7 @@ ACTOR SpiderMastermind64 : SamsaraMonsterCyberneticBoss
 	DamageFactor "Mace", 1.1
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "BlakeEnemyBullet", 0.0
+	DamageFactor "RottFire", 0.1
 	BloodType "Doom64Blood"
 	States
 	{
