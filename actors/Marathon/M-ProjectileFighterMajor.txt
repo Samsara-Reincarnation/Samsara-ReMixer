@@ -292,7 +292,21 @@ ACTOR ProjectileFighterMajor : SamsaraMonsterMarathonAlien
 			PFMA N -1
 			Stop
 		Death.Massacre:
-			TNT1 A 0 A_SetScale (0.49)
+			TNT1 A 0 A_SetScale(0.49)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_Recoil(5)
+			TNT1 A 0 A_Scream
+			PFMA K 13
+			PFMA KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 2 A_JumpIf(momx < 0.8 && momy < 0.8 && momz == 0, "Death2.Massacre")
+			PFMA K 2 A_CheckFloor("Death2.Massacre")
+			Goto Death.Massacre+6
+		Death2.Massacre:
+			PFMA L 7 A_Stop
+			PFMA M 7 A_NoBlocking
+			PFMA N 0 A_PlaySoundEx("marathon/splash","body",0,0)
+			PFMA N -1
+			Stop
 		Death.Explosive:
 		Death.DoomDamageTypeExplosive:
 		XDeath:
@@ -304,14 +318,25 @@ ACTOR ProjectileFighterMajor : SamsaraMonsterMarathonAlien
 			PFMA KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 2 A_JumpIf(momx < 0.8 && momy < 0.8 && momz == 0, "XDeath2")
 			PFMA K 2 A_CheckFloor("XDeath2")
 			Goto XDeath+5
+		XDeath.Massacre:
+			TNT1 A 0 A_SetScale(0.49)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_Recoil(5)
+			TNT1 A 0 A_Scream
+			PFMA K 6
+			PFMA KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK 2 A_JumpIf(momx < 0.8 && momy < 0.8 && momz == 0, "XDeath2.Massacre")
+			PFMA K 2 A_CheckFloor("XDeath2.Massacre")
+			Goto XDeath.Massacre+6
 		XDeath2:
-			TNT1 A 0
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		XDeath2.Massacre:
 			PFMA O 3 A_PlaySoundEx("pfhor/xdeath","body",0,0)
 			PFMA P 3 A_Stop
 			PFMA Q 3 A_NoBlocking
 			PFMA R 3
 			PFMA S -1
+			Stop
         Death.MarathonFire:
         Death.MarathonPlasmaFire:
 		Burn:
@@ -639,6 +664,8 @@ actor ProjectileFighterMajor_Shrink : ProjectileFighterMajor
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
