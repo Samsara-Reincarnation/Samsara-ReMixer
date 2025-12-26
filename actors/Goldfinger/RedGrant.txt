@@ -2,7 +2,7 @@ Actor Goldfinger_RedGrant : Goldeneye_EnemyBase
 {
 	Tag "Donald \"Red\" Grant"
     Obituary "Red Grant proved to %o that he is the better agent."
-	Health 1500
+	Health 750
 	States
 	{
 		Spawn:

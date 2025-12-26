@@ -2,7 +2,7 @@ Actor Goldfinger_GraySuit : Goldeneye_EnemyBase
 {
 	Tag "Goldfinger Henchman (Gray)"
     Obituary "%o was killed by one of Goldfinger's loyal henchmen."
-	Health 300
+	Health 200
 	Scale 1.05
 	States
 	{

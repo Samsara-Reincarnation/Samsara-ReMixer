@@ -2,7 +2,6 @@ Actor Goldfinger_CartelThug : Goldeneye_EnemyBase
 {
 	Tag "Ramirez Cartel Thug"
     Obituary "%o was assassinated by a Ramirez Cartel Thug."
-	Health 50
 	States
 	{
 		Spawn:

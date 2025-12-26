@@ -4,7 +4,7 @@ Actor Goldfinger_DrNo : Goldeneye_EnemyBase
 {
 	Tag "Dr. Julius No"
     Obituary "Dr No misjudged %o. They are just a stupid policeman."
-	Health 1800
+	Health 800
 	Scale 1.15
 	States
 	{

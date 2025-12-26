@@ -2,7 +2,7 @@ Actor Goldfinger_SpectreGuard: Goldeneye_EnemyBase
 {
 	Tag "Spectre Guard"
     Obituary "%o was killed by a Spectre Agent."
-	Health 400
+	Health 200
 	States
 	{
 		Spawn:

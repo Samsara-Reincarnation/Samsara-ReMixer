@@ -2,7 +2,7 @@ Actor Goldfinger_Servant : Goldeneye_EnemyBase
 {
 	Tag "Servant"
     Obituary "%o was killed by one of Goldfinger's Servants."
-	Health 150
+	Health 50
 	States
 	{
 		Spawn:

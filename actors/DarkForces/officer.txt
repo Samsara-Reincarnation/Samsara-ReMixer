@@ -5,7 +5,7 @@
 
 ACTOR DF_officer : SamsaraMonsterHumanoidTotalGib
 {
-	Health		55
+	Health		50
 	Radius		20
 	Height		56
 	Mass		100

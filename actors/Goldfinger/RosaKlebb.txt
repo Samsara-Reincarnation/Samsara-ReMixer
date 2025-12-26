@@ -2,7 +2,7 @@ Actor Goldfinger_RosaKlebb : Goldeneye_EnemyBase
 {
 	Tag "Rosa Klebb"
     Obituary "%o was punched in the gut by Rosa Klebb with brass knuckles."
-	Health 1200
+	Health 700
 	PainSound "Goldeneye/PainF"
 	DeathSound "Goldeneye/DeathF"	
 	Scale 0.95

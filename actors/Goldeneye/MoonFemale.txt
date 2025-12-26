@@ -4,7 +4,7 @@ Actor Goldeneye_MoonFemale : Goldeneye_EnemyBase
     Obituary "%o was killed by a Moonraker Elite (Female)."
 	Scale 0.932400
 	Height 50
-	Health 210
+	Health 300
 	+MISSILEMORE
 	+MISSILEEVENMORE	
 	PainSound "Goldeneye/PainF"

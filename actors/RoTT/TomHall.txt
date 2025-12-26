@@ -21,7 +21,6 @@ ACTOR TomHall : RoTTBoss {
    DamageFactor "MarathonPlasmaFire", 0.5
    DamageFactor "MarathonFusion", 0.7	
    DamageFactor "WMCNade", 0.70   
-   DamageFactor "RottDisintegrate", 0.0
    DamageFactor "BJSpear", 0.4
    DamageFactor "DCannonProj", 0.70	
    DamageFactor "Tesla", 0.6

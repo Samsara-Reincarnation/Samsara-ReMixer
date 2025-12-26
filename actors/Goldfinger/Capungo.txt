@@ -2,7 +2,7 @@ Actor Goldfinger_Capungo : Goldeneye_EnemyBase
 {
 	Tag "Capungo"
     Obituary "%o failed to fry Capungo in a bathtub."
-	Health 500
+	Health 250
 	States
 	{
 		Spawn:

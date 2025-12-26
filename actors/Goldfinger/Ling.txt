@@ -2,7 +2,7 @@ Actor Goldfinger_Ling : Goldeneye_EnemyBase
 {
 	Tag "Mr. Ling"
     Obituary "Mr. Ling split %o in half with an industrial laser."
-	Health 1000
+	Health 700
 	States
 	{
 		Spawn:

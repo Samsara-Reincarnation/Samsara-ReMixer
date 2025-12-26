@@ -2,7 +2,7 @@ Actor Goldfinger_MeiLei : Goldeneye_EnemyBase
 {
 	Tag "Mei Lei"
     Obituary "%o was no match for Mei-Lei's watchful eye."
-	Health 750
+	Health 500
 	PainSound "Goldeneye/PainF"
 	DeathSound "Goldeneye/DeathF"	
 	Scale 0.95

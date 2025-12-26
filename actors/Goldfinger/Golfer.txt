@@ -2,7 +2,7 @@ Actor Goldfinger_Golfer : Goldeneye_EnemyBase
 {
 	Tag "Golfer"
     Obituary "%o was killed by one of Goldfinger's golfing mates."
-	Health 180
+	Health 120
 	States
 	{
 		Spawn:

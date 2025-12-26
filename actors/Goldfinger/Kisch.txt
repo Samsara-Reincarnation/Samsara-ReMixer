@@ -2,7 +2,7 @@ Actor Goldfinger_Kisch : Goldeneye_EnemyBase
 {
 	Tag "Kisch"
     Obituary "Kisch decided to be a hero and killed %o."
-	Health 800
+	Health 600
 	States
 	{
 		Spawn:

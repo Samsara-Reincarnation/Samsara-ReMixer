@@ -5161,6 +5161,7 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -5478,6 +5479,7 @@ Actor SamsaraMonsterRemixEntityBoss : EntityBoss
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	DamageFactor "DeusExPoisonEffect", 0
 	DamageFactor "DeusExKnockedOut", 0
 	PainChance "MightyBoot", 0
@@ -6179,6 +6181,7 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 	DamageFactor "Tesla", 2.0
 	DamageFactor "CorvusHellstaffTomed", 0.2
 	DamageFactor "RottFire", 0.5
+	DamageFactor "RottDisintegrate", 0.0
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0

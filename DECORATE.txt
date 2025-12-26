@@ -364,6 +364,7 @@
 #include "actors/DarkForces/enemy_base.txt"
 #include "actors/DarkForces/officer.txt"
 #include "actors/DarkForces/stormtrooper.txt"
+#include "actors/DarkForces/scouttrooper.txt"
 #include "actors/DarkForces/commander.txt"
 #include "actors/DarkForces/hothtrooper.txt"
 #include "actors/DarkForces/gamorrean.txt"

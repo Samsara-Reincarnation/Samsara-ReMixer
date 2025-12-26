@@ -2,7 +2,7 @@ Actor Goldfinger_AirCrew : Goldeneye_EnemyBase
 {
 	Tag "Airport Guard"
     Obituary "%o was killed by an airport guard."
-	Health 140
+	Health 100
 	States
 	{
 		Spawn:

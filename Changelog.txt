@@ -58,12 +58,39 @@ Star Wars: Dark Forces:
 
 ! Enemy lasers now use models instead of sprites.
 - The Stormtrooper's health has been decreased (from 55 to 30).
-- The Imperial Commander's health has been decreased (from 75 to 50).
-! The Imperial Commander now drops slot 2 equipment instead of slot 4 equipment if Doom-style weapon drops are enabled.
-+ The Imperial Officer's health has been increased (from 50 to 55).
++ The Scout Trooper has been added as a shotgun guy replacement!
+! The Imperial Commander no longer drops slot 4 equipment if Doom-style weapon drops are enabled.
+! The Imperial Commander is now an imp replacement along with the Imperial Officer, with a 25% chance of spawning in easier difficulties and a 50% chance of spawning in harder difficulties.
+! The Imperial Officer now has a 75% chance of spawning in easier difficulties, and a 50% chance of spawning in harder difficulties.
 ! The Hoth Trooper now drops slot 4 equipment instead of slot 2 equipment if Doom-style weapon drops are enabled.
 
 GoldenEye 007:
+
+-GoldenEye 007-
+
++ The Moonraker Elite's health has been increased (from 210 to 300).
+
+-Goldfinger 64-
+
+- The Airport Guard's health has been decreased (from 140 to 100).
+- Auric Goldfinger's health has been decreased (from 2500 to 1500).
+- Capungo's health has been decreased (from 500 to 250).
+- The Ramirez Cartel Thug's health has been decreased (from 50 to 40).
+- The Chinese Nuclear Factory Guard's health has been decreased (from 100 to 50).
+- Donald "Red" Grant's health has been decreased (from 1500 to 750).
+- Dr. Julius No's health has been decreased (from 1800 to 800).
+- The Gold Goldfinger Henchman's health has been decreased (from 600 to 300).
+- The Golfer's health has been decreased (from 180 to 120).
+- The Gray Goldfinger Henchman's health has been decreased (from 300 to 200).
+- Kisch's health has been decreased (from 800 to 600).
+- Mr. Ling's health has been decreased (from 1000 to 700).
+- Mei Lei's health has been decreased (from 750 to 500).
+- Oddjob's health has been decreased (from 3000 to 2500).
+- Rosa Klebb's health has been decreased (from 1200 to 700).
+- The Servant's health has been decreased (from 150 to 50).
+- The Shipyard Guard's health has been decreased (from 160 to 120).
+- The Spectre Guard's health has been decreased (from 400 to 200).
+- The White Goldfinger Henchman's health has been decreased (from 180 to 75).
 
 -All-
 

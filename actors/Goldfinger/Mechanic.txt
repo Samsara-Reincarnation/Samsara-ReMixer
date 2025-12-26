@@ -2,7 +2,6 @@ Actor Goldfinger_Mechanic : Goldeneye_EnemyBase
 {
 	Tag "Shipyard Mechanic"
     Obituary "%o was killed by a shipyard mechanic."
-	Health 40
 	States
 	{
 		Spawn:

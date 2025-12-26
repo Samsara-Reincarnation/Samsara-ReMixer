@@ -2,7 +2,7 @@ Actor Goldfinger_OddJob : Goldeneye_EnemyBase
 {
 	XScale 1.25
 	Yscale 1.05
-	Health 3000
+	Health 2500
 	Tag "Oddjob"
     Obituary "%o was assassinated by Oddjob."
 	Painchance 0
