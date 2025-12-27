@@ -64,6 +64,10 @@ Star Wars: Dark Forces:
 - The Imperial Commander no longer drops slot 4 equipment if Doom-style weapon drops are enabled.
 ! The Hoth Trooper now drops slot 4 equipment instead of slot 2 equipment if Doom-style weapon drops are enabled.
 
+Shadow Warrior:
+
+* Fixed shadow ninjas not counting for kills when not gibbed.
+
 GoldenEye 007:
 
 -GoldenEye 007-

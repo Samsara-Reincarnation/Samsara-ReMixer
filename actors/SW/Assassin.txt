@@ -79,9 +79,10 @@ Actor SWAssassin : SamsaraMonsterHumanoidFemale
 	TNT1 A 0 A_Recoil(14)
 	ASSA G 16 A_Pain
 	Goto See
-  Death: 
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
+  Death:
 	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+  Death.Massacre:
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
     ASSA H 3 A_StopSound(CHAN_BODY)	
     ASSA I 4 A_Scream
     ASSA J 4 A_NoBlocking
@@ -90,8 +91,9 @@ Actor SWAssassin : SamsaraMonsterHumanoidFemale
 	TNT1 A -1
 	stop
   XDeath:
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+  XDeath.Massacre:
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 	TNT1 A 0 A_NoBlocking
 	TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 	TNT1 A -1
@@ -233,8 +235,9 @@ Actor SWAssassinCorpse : SamsaraCorpseActor
 			ASSA P 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -416,6 +419,8 @@ actor SWAssassin_Shrink : SWAssassin
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

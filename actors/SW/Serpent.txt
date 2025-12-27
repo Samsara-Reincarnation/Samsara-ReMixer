@@ -137,10 +137,11 @@ Actor SerpentGodBig : SamsaraMonsterBeastBoss
     SERP A 2
     SERP A 2 A_Pain
     Goto See	
-  Death:  
+  Death:
+	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+  Death.Massacre:
 	TNT1 A 0 A_GiveInventory("SnakeDie", 1)
 	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 	SERP M 6 A_Scream
 	SERP NOPQRSTUW 6
 	TNT1 A 0 A_NoBlocking
@@ -1080,9 +1081,10 @@ Actor SerpentGod : SamsaraMonsterBeastTotalGib
     SERP A 2
     SERP A 2 A_Pain
     Goto See
-  Death:  
+  Death:
+	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+  Death.Massacre:
 	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
 	SERP M 6 A_Scream
 	SERP NOPQRSTUW 6
 	TNT1 A 0 A_NoBlocking
@@ -1212,8 +1214,9 @@ Actor SWSerpentGodCorpse : SamsaraCorpseActor
 			SERP Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1353,6 +1356,8 @@ actor SerpentGod_Shrink : SerpentGod
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

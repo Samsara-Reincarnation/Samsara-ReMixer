@@ -156,9 +156,10 @@ Actor SWHenchman : SamsaraMonsterHumanoid
 		HENZ B 65
 		HENZ B 5 A_Die("SuicideDeath")
 		Wait
-	Death: 
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		HENC R 4 A_StopSound(CHAN_BODY)
 		HENC S 3 A_Scream
 		HENC T 3 A_NoBlocking
@@ -171,21 +172,22 @@ Actor SWHenchman : SamsaraMonsterHumanoid
 		TNT1 A 0 A_GiveInventory("SWEnemy_SuicideDeath", 1)	
 		TNT1 A 0 A_PlaySound("ninja/uzi")
 		TNT1 A 0 A_PlaySound("sw/gib_start")
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		HENZ C 6 A_NoBlocking
 		HENZ DEFG 6
 		HENZ H 0 A_SpawnItemEx("SWHenchmenCorpse_Suicide", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 		TNT1 A -1
 		Stop
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_GiveInventory("SWEnemy_SwordDeath", 1)	
@@ -196,7 +198,7 @@ Actor SWHenchman : SamsaraMonsterHumanoid
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		TNT1 A 0
 		HENZ I 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		HENZ JKLMNOPQ 5
 		HENZ R 0 A_SpawnItemEx("SWHenchmenCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 		TNT1 A -1
@@ -312,8 +314,9 @@ Actor SWHenchmenCorpse_Normal : SamsaraCorpseActor
 			HENC Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -343,8 +346,9 @@ Actor SWHenchmenCorpse_Sword : SamsaraCorpseActor
 			HENZ R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -374,8 +378,9 @@ Actor SWHenchmenCorpse_Suicide : SamsaraCorpseActor
 			HENZ H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -533,6 +538,8 @@ actor SWHenchman_Shrink : SWHenchman
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -694,9 +701,10 @@ Actor SWHenchmanRed : SWHenchman
 	ChokeFinish:
 		HEND R 1 A_Die
 		Wait
-	Death: 
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		HEND R 4 A_StopSound(CHAN_BODY)
 		HEND S 3 A_Scream
 		HEND T 3 A_NoBlocking
@@ -706,14 +714,15 @@ Actor SWHenchmanRed : SWHenchman
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 		TNT1 A -1 A_KillMaster
 		Stop
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_GiveInventory("SWEnemy_SwordDeath", 1)	
@@ -723,7 +732,7 @@ Actor SWHenchmanRed : SWHenchman
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		HENY I 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		HENY JKLMNOPQ 5
 		HENY R 0 A_KillMaster
 		HENY R 0 A_SpawnItemEx("SWHenchmenRedCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -855,8 +864,9 @@ Actor SWHenchmenRedCorpse_Normal : SamsaraCorpseActor
 			HEND Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -886,8 +896,9 @@ Actor SWHenchmenRedCorpse_Sword : SamsaraCorpseActor
 			HENY R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -917,8 +928,9 @@ Actor SWHenchmenRedCorpse_Suicide : SamsaraCorpseActor
 			HENY H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1076,6 +1088,8 @@ actor SWHenchmanRed_Shrink : SWHenchmanRed
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1268,9 +1282,10 @@ Actor SWHenchmanGreen : SWHenchmanRed
 	ChokeFinish:
 		HENE R 1 A_Die
 		Wait
-	Death: 
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SetTranslucent(1.0, 0)		
 		HENE R 4 A_StopSound(CHAN_BODY)		
 		HENE S 3 A_Scream
@@ -1281,14 +1296,15 @@ Actor SWHenchmanGreen : SWHenchmanRed
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 		TNT1 A -1 A_KillMaster
 		Stop
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SetTranslucent(1.0, 0)	
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
@@ -1299,7 +1315,7 @@ Actor SWHenchmanGreen : SWHenchmanRed
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		HENX I 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		HENX JKLMNOPQ 5
 		HENX R 0 A_KillMaster
 		HENX R 0 A_SpawnItemEx("SWHenchmenGreenCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -1430,8 +1446,9 @@ Actor SWHenchmenGreenCorpse_Normal : SamsaraCorpseActor
 			HENE Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1461,8 +1478,9 @@ Actor SWHenchmenGreenCorpse_Sword : SamsaraCorpseActor
 			HENX R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1492,8 +1510,9 @@ Actor SWHenchmenGreenCorpse_Suicide : SamsaraCorpseActor
 			HENX H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1651,6 +1670,8 @@ actor SWHenchmanGreen_Shrink : SWHenchmanGreen
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1814,9 +1835,10 @@ Actor SWHenchmanPurple :SWHenchmanRed
 	ChokeFinish:
 		HENF R 1 A_Die
 		Wait
-	Death: 
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		HENF R 4 A_StopSound(CHAN_BODY)		
 		HENF S 3 A_Scream
 		HENF T 3 A_NoBlocking
@@ -1826,14 +1848,15 @@ Actor SWHenchmanPurple :SWHenchmanRed
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 		TNT1 A -1 A_KillMaster
 		Stop
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_GiveInventory("SWEnemy_SwordDeath", 1)	
@@ -1843,7 +1866,7 @@ Actor SWHenchmanPurple :SWHenchmanRed
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		HENW I 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		HENW JKLMNOPQ 5
 		HENW R 0 A_KillMaster
 		HENW R 0 A_SpawnItemEx("SWHenchmenPurpleCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -1975,8 +1998,9 @@ Actor SWHenchmenPurpleCorpse_Normal : SamsaraCorpseActor
 			HENF Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2006,8 +2030,9 @@ Actor SWHenchmenPurpleCorpse_Sword : SamsaraCorpseActor
 			HENW R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2037,8 +2062,9 @@ Actor SWHenchmenPurpleCorpse_Suicide : SamsaraCorpseActor
 			HENW H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2196,6 +2222,8 @@ actor SWHenchmanPurple_Shrink : SWHenchmanPurple
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2358,9 +2386,10 @@ Actor SWHenchmanOrange :SWHenchmanRed	//Missing variant...
 	ChokeFinish:
 		HENY A 1 A_Die
 		Wait
-	Death: 
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		HENY A 4 A_StopSound(CHAN_BODY)		
 		HENY B 3 A_Scream
 		HENY C 3 A_NoBlocking
@@ -2370,14 +2399,15 @@ Actor SWHenchmanOrange :SWHenchmanRed	//Missing variant...
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 		TNT1 A -1 A_KillMaster
 		Stop
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_GiveInventory("SWEnemy_SwordDeath", 1)	
@@ -2387,7 +2417,7 @@ Actor SWHenchmanOrange :SWHenchmanRed	//Missing variant...
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		HENW A 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		HENW BCDEFGH 5
 		HENX A 5
 		HENX B 0 A_KillMaster
@@ -2520,8 +2550,9 @@ Actor SWHenchmenOrangeCorpse_Normal : SamsaraCorpseActor
 			HENY H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2551,8 +2582,9 @@ Actor SWHenchmenOrangeCorpse_Sword : SamsaraCorpseActor
 			HENX B 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2582,8 +2614,9 @@ Actor SWHenchmenOrangeCorpse_Suicide : SamsaraCorpseActor
 			HENX H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2741,6 +2774,8 @@ actor SWHenchmanOrange_Shrink : SWHenchmanOrange
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -130,9 +130,10 @@ Actor SWNinja : SamsaraMonsterHumanoid
 		NINS B 65
 		NINS B 5 A_Die("SuicideDeath")
 		Wait
-	Death: 
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
+	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		NINJ R 4 A_StopSound(CHAN_BODY)
 		NINJ S 3 A_Scream
 		NINJ T 3 A_NoBlocking
@@ -145,21 +146,22 @@ Actor SWNinja : SamsaraMonsterHumanoid
 		TNT1 A 0 A_GiveInventory("SWEnemy_SuicideDeath", 1)	
 		TNT1 A 0 A_PlaySound("ninja/uzi")
 		TNT1 A 0 A_PlaySound("sw/gib_start")
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		NINS C 6 A_NoBlocking
 		NINS DEFG 6
 		NINS H 0 A_SpawnItemEx("SWNinjaCorpse_Suicide", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 		TNT1 A -1
 		Stop
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Stop
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
@@ -169,7 +171,7 @@ Actor SWNinja : SamsaraMonsterHumanoid
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		NINC A 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		NINC BCDEFGHI 5
 		NINJ J 0 A_SpawnItemEx("SWNinjaCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 		TNT1 A -1
@@ -310,8 +312,9 @@ Actor SWNinjaCorpse_Normal : SamsaraCorpseActor
 			NINJ Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -341,8 +344,9 @@ Actor SWNinjaCorpse_Sword : SamsaraCorpseActor
 			NINC J 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -372,8 +376,9 @@ Actor SWNinjaCorpse_Suicide : SamsaraCorpseActor
 			NINS H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -531,6 +536,8 @@ actor SWNinja_Shrink : SWNinja
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -752,8 +759,9 @@ Actor NinjaRed : SWNinja
 		NIRJ R 1 A_Die
 		Wait
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		NIRJ R 4 A_StopSound(CHAN_BODY)	
 		NIRJ S 3 A_Scream
 		NIRJ T 3 A_NoBlocking
@@ -763,15 +771,15 @@ Actor NinjaRed : SWNinja
 		TNT1 A -1
 		stop
 	XDeath:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
-		TNT1 A 0
+	XDeath.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_NoBlocking
 		TNT1 A 5 A_SpawnItemEx("SWHumanGibSpawner")
 		TNT1 A -1 A_KillMaster
 		Stop	
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_GiveInventory("SWEnemy_SwordDeath", 1)			
@@ -781,7 +789,7 @@ Actor NinjaRed : SWNinja
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		NIRC A 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		NIRC BCDEFGHI 5
 		NIRC J 0 A_KillMaster
 		NIRC J 0 A_SpawnItemEx("SWNinjaRedCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -919,8 +927,9 @@ Actor SWNinjaRedCorpse_Normal : SamsaraCorpseActor
 			NIRJ Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -950,8 +959,9 @@ Actor SWNinjaRedCorpse_Sword : SamsaraCorpseActor
 			NIRC J 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -981,8 +991,9 @@ Actor SWNinjaRedCorpse_Suicide : SamsaraCorpseActor
 			NIRS H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1140,6 +1151,8 @@ actor NinjaRed_Shrink : NinjaRed
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1373,8 +1386,9 @@ Actor NinjaOrange : NinjaRed
 		NOIJ R 1 A_Die
 		Wait
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect") 
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		NIOJ R 4 A_StopSound(CHAN_BODY)	
 		NIOJ S 3 A_Scream
 		NIOJ T 3 A_NoBlocking
@@ -1384,7 +1398,7 @@ Actor NinjaOrange : NinjaRed
 		TNT1 A -1
 		stop	
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_GiveInventory("SWEnemy_SwordDeath", 1)	
@@ -1394,7 +1408,7 @@ Actor NinjaOrange : NinjaRed
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		NIOC A 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		NIOC BCDEFGHI 5
 		NIOC J 0 A_KillMaster
 		NIOC J 0 A_SpawnItemEx("SWNinjaOrangeCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -1532,8 +1546,9 @@ Actor SWNinjaOrangeCorpse_Normal : SamsaraCorpseActor
 			NIOJ Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1563,8 +1578,9 @@ Actor SWNinjaOrangeCorpse_Sword : SamsaraCorpseActor
 			NIOC J 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1594,8 +1610,9 @@ Actor SWNinjaOrangeCorpse_Suicide : SamsaraCorpseActor
 			NIOS H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -1753,6 +1770,8 @@ actor NinjaOrange_Shrink : NinjaOrange
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1951,8 +1970,9 @@ Actor NinjaGray : NinjaRed
 		NIGJ R 1 A_Die
 		Wait
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		NIGJ R 4 A_StopSound(CHAN_BODY)		
 		NIGJ S 3 A_Scream
 		NIGJ T 3 A_NoBlocking
@@ -1962,7 +1982,7 @@ Actor NinjaGray : NinjaRed
 		TNT1 A -1
 		stop	
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_GiveInventory("SWEnemy_SwordDeath", 1)	
@@ -1972,7 +1992,7 @@ Actor NinjaGray : NinjaRed
 		TNT1 A 0 A_Jump(128, 1)
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		NIGC A 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		NIGC BCDEFGHI 5
 		NIGC J 0 A_KillMaster
 		NIGC J 0 A_SpawnItemEx("SWNinjaGrayCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -2110,8 +2130,9 @@ Actor SWNinjaGrayCorpse_Normal : SamsaraCorpseActor
 			NIGJ Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2141,8 +2162,9 @@ Actor SWNinjaGrayCorpse_Sword : SamsaraCorpseActor
 			NIGC J 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2172,8 +2194,9 @@ Actor SWNinjaGrayCorpse_Suicide : SamsaraCorpseActor
 			NIGS H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2331,6 +2354,8 @@ actor NinjaGray_Shrink : NinjaGray
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2635,6 +2660,8 @@ Actor NinjaDark : NinjaRed
 		Wait
 	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SetTranslucent(1.0, 0)
 		NIDJ R 4 A_StopSound(CHAN_BODY)		
 		NIDJ S 3 A_Scream
@@ -2645,7 +2672,7 @@ Actor NinjaDark : NinjaRed
 		TNT1 A -1
 		stop	
 	Death.SWKatana:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  	
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SetTranslucent(1.0, 0)	
 		TNT1 A 0 A_Jump(128,2)
 		TNT1 A 0 A_Scream
@@ -2657,7 +2684,7 @@ Actor NinjaDark : NinjaRed
 		TNT1 A 0 A_GiveToTarget("LoWangDMTaunt1", 1)
 		TNT1 A 0
 		NIDC A 30 A_PlaySound("ninja/Cut",6)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 		NIDC BCDEFGHI 5
 		NIDC J 0 A_KillMaster
 		NIDC J 0 A_SpawnItemEx("SWNinjaDarkCorpse_Sword", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
@@ -2794,8 +2821,9 @@ Actor SWNinjaDarkCorpse_Normal : SamsaraCorpseActor
 			NIDJ Y 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2825,8 +2853,9 @@ Actor SWNinjaDarkCorpse_Sword : SamsaraCorpseActor
 			NIDC J 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -2856,8 +2885,9 @@ Actor SWNinjaDarkCorpse_Suicide : SamsaraCorpseActor
 			NIDS H 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_PlaySound("sw/gib_land1",CHAN_BODY)
@@ -3063,6 +3093,8 @@ actor NinjaDark_Shrink : NinjaDark
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

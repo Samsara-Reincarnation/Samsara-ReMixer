@@ -314,6 +314,78 @@ ACTOR SnakeTom : RoTTBoss {
 			TNT1 A 1 A_NoBlocking
 			TNT1 A -1
 			Stop
+		Death.Massacre:
+		XDeath.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, TomSnake_ID, 2)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_KillMaster
+			TOM6 C 18 A_Scream
+			TOM6 D 18 A_ChangeFlag("SOLID",false)
+			TNT1 A 0 A_SpawnItem("RoTT_BossExplosionSpawner", 0, 12)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 C 16
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 D 16
+			TNT1 A 0 A_ChangeFlag("NOGRAVITY", 1)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 CCCC 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 A 0 A_SpawnItem("RoTT_BossExplosionSpawnerRising", 0, 12)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 DDDD 4 ThrustThingZ(0, 4, 0, 0)
+			TOM6 CCCC 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 DDDD 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 CCCC 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 A 0 A_SpawnItemEx("RoTT_Explosion", 8 * random(-6, 6), 8 * random(-6, 6), 4 * random(2, 12))
+			TOM6 DDDD 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 CCCC 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 A 0 A_SpawnItemEx("RoTT_Explosion", 8 * random(-6, 6), 8 * random(-6, 6), 4 * random(2, 12))
+			TOM6 DDDD 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 CCCC 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 A 0 A_SpawnItemEx("RoTT_Explosion", 8 * random(-6, 6), 8 * random(-6, 6), 4 * random(2, 12))
+			TOM6 DDDD 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TOM6 CCCC 4 ThrustThingZ(0, 4, 0, 0)
+			TNT1 AA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 A 0 A_SpawnItemEx("RoTT_Explosion", 8 * random(-6, 6), 8 * random(-6, 6), 4 * random(2, 12))
+			TOM6 DDDD 4 A_Stop
+			TOM6 CCCCDDDD 4
+			TNT1 AAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("RoTT_Explosion", 8 * random(-6, 6), 8 * random(-6, 6), 4 * random(2, 12))
+			TNT1 AAAAAAAAAAAAAAAAA 0 A_SpawnItemEx ("ash2", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx ("ash1", 0.0, 0.0, 16.0, random(5.0,10.0), random(5.0,10.0), random(3.0,8.0), random(0,360))
+			GUTS AAAAAAAAAAAAAAAAAAAAAAA 0 A_custommissile("wallgib",32.0, 0, random(0,360), CMF_AIMDIRECTION, random(0,45))
+			GUTS DDDDDDDDDDDDDDDDDDDDDDD 0 A_SpawnItemex ("giblets",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DDDD 0 A_SpawnItemex ("giblim",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(3.0,5.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DDDD 0 A_SpawnItemex ("gibpin",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(3.0,5.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DD 0 A_SpawnItemex ("gibarm",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DD 0 A_SpawnItemex ("gibhip",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS D 0 A_SpawnItemex ("gibhum",0, 0, 32, random(3.0,5.0),random(3.0,5.0), random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DD 0 A_SpawnItemex ("gibleg",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DDDD 0 A_SpawnItemex ("giblim",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DDDD 0 A_SpawnItemex ("gibpin",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)
+			GUTS DD 0 A_SpawnItemex ("gibribs",0, 0, 32, random(3.0,5.0),random(3.0,5.0),random(0.0,10.0),random(0.0,360.0), SXF_ABSOLUTEANGLE , 0)	 
+			TNT1 A 1 A_NoBlocking
+			TNT1 A -1
+			Stop
 
 		// SamsaraMonsterDemonicBoss states
 		Death.ZorchPistol:

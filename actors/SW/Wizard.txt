@@ -90,10 +90,11 @@ Actor SWWizard : SamsaraMonsterHumanoid
 	WIZR J 16 A_Pain
 	Goto See
   Death:
+	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+  Death.Massacre:
 	TNT1 A 0 A_TakeInventory("MagicCircleCounter", 999)
 	TNT1 A 0 A_TakeInventory("WizardMagicCircleSpawner", 999)	  
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
-	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
     WIZR J 6 A_StopSound(CHAN_BODY)	
     WIZR K 6 A_Scream
     WIZR L 6 A_NoBlocking
@@ -102,8 +103,9 @@ Actor SWWizard : SamsaraMonsterHumanoid
 	TNT1 A -1
 	stop
   XDeath:
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+  XDeath.Massacre:
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 	TNT1 A 0 A_NoBlocking
     TNT1 A 0 A_Jump(242,"J")	
 	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
@@ -229,8 +231,9 @@ Actor SWWizardCorpse : SamsaraCorpseActor
 			WIZR R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_Jump(242,"J")	
@@ -439,6 +442,8 @@ actor SWWizard_Shrink : SWWizard
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -793,8 +798,9 @@ Actor SWWizardGray : SWWizard
     WIZ2 J 3 A_Pain
     Goto See
   Death:
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+  Death.Massacre:
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
     WIZ2 J 6 A_StopSound(CHAN_BODY)
     WIZ2 K 6 A_Scream
     WIZ2 L 6 A_NoBlocking
@@ -804,8 +810,9 @@ Actor SWWizardGray : SWWizard
 	TNT1 A -1
 	stop
   XDeath:
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+  XDeath.Massacre:
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 	TNT1 A 0 A_NoBlocking
     TNT1 A 0 A_Jump(242,"J")	
 	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
@@ -946,8 +953,9 @@ Actor SWWizardGrayCorpse : SamsaraCorpseActor
 			WIZ2 R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_Jump(242,"J")	
@@ -1156,6 +1164,8 @@ actor SWWizardGray_Shrink : SWWizardGray
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1272,8 +1282,9 @@ Actor SWWizardRed : SWWizardGray
     WIZ3 J 3 A_Pain
     Goto See
   Death:
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+  Death.Massacre:
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
     WIZ3 J 6 A_StopSound(CHAN_BODY)
     WIZ3 K 6 A_Scream
     WIZ3 L 6 A_NoBlocking
@@ -1283,8 +1294,9 @@ Actor SWWizardRed : SWWizardGray
 	TNT1 A -1
 	stop
   XDeath:
-	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)    
 	TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+  XDeath.Massacre:
+	TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 	TNT1 A 0 A_NoBlocking
     TNT1 A 0 A_Jump(242,"J")	
 	TNT1 A 0 A_SpawnItemEx("SWGuardianHeadDrop", 0, 0, 0, Random(-3,3), Random(-3,3), 8)
@@ -1425,8 +1437,9 @@ Actor SWWizardRedCorpse : SamsaraCorpseActor
 			WIZ3 R 4
 			Loop
 		Death:
-			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 A_RemoveMaster
 			TNT1 A 0 A_ChangeFlag("SOLID",false)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_Jump(242,"J")	
@@ -1635,6 +1648,8 @@ actor SWWizardRed_Shrink : SWWizardRed
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

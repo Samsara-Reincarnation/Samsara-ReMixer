@@ -293,11 +293,12 @@ ACTOR LightningGuard : RoTTHumanoid {
 	   TNT1 A 20
 	   stop
 	Death:
-	   LIGW A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)   
        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+	   TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
        LIGW K 5 A_Fall
        LIGW L 6 A_Scream
-       LIGW M 7 
+       LIGW M 7
        LIGW N 6
 	   LIGW O -1
 	   Stop
@@ -324,15 +325,16 @@ ACTOR LightningGuard : RoTTHumanoid {
 	XDeath.RottExplosive:
 	XDeathForROTT:
 	XDeath:
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
 	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect") 
 		TNT1 A 0 A_SpawnItem("RottGibbedMan")
 		TNT1 A 1
 		TNT1 A 0 A_Jump(128, 2)
 		TNT1 A 0 A_GiveToTarget("LudicrousGibsItem", 1)
 		TNT1 AA 0
 		TNT1 A 2 A_NoBlocking
-	   Stop		  
+	   Stop
 	Pain.ShrinkerDMG:
 		LIGP A 0
 		"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -428,12 +430,12 @@ ACTOR LGuardAltDeath : LightningGuard {
        RISE D 0 A_Die("Remove")
 	   Stop
     Death:
+        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+    Death.Massacre:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	 
-		TNT1 A 0 A_Fall
-		LIGW X 5 
+		LIGW X 5 A_Fall
 		LIGW Y 6 A_Scream
-		LIGW Z 7 
+		LIGW Z 7
 		LIGW "[" 6
 		LIGW "}" -1
 		Stop
@@ -464,12 +466,12 @@ ACTOR LGuardAltDeath2 : LightningGuard {
 	 Plead:
 		Goto death
 	 Death:
+        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	 Death.Massacre:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	 
-		TNT1 A 0 A_Fall
-		LIGW K 5 
+		LIGW K 5 A_Fall
 		LIGW L 6 A_Scream
-		LIGW M 7 
+		LIGW M 7
 		LIGW N 6
 		LIGW O -1
 		Stop
@@ -1274,6 +1276,8 @@ actor LightningGuard_Shrink : LightningGuard
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1609,11 +1613,12 @@ ACTOR LightningGuardAlt : LightningGuard {
 	   TNT1 A 20
 	   stop
 	Death:
-	   WG2W A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)   
-       TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	   TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	Death.Massacre:
+       TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
        WG2W K 5 A_Fall
        WG2W L 6 A_Scream
-       WG2W M 5 
+       WG2W M 5
        WG2W N 4
 	   WG2W O 3
 	   WG2W P -1
@@ -1641,8 +1646,9 @@ ACTOR LightningGuardAlt : LightningGuard {
 	XDeath.RottExplosive:
 	XDeathForROTT:
 	XDeath:
+		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+	XDeath.Massacre:
 	    TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect") 
 		TNT1 A 0 A_SpawnItem("RottGibbedMan")
 		TNT1 A 1
 		TNT1 A 0 A_Jump(128, 2)
@@ -1763,11 +1769,12 @@ ACTOR LGuardAltAltDeath : LightningGuardAlt {
        RIS2 D 0 A_Die("Remove")
 	   Stop
 	 Death:
-	   WG2W A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)   
        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	 Death.Massacre:
+	   TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
        WG2W W 5 A_Fall
        WG2W X 6 A_Scream
-       WG2W Y 7 
+       WG2W Y 7
        WG2W Z 6
 	   WG2W "[" -1
 	   Stop
@@ -1798,12 +1805,12 @@ ACTOR LGuardAltAltDeath2 : LightningGuardAlt {
 	 Plead:
 		Goto death
 	 Death:
+        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+	 Death.Massacre:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-        TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")	 
-		TNT1 A 0 A_Fall
-        WG2W K 5
+        WG2W K 5 A_Fall
         WG2W L 6 A_Scream
-        WG2W M 5 
+        WG2W M 5
         WG2W N 4
 	    WG2W O 3
 	    WG2W P -1
@@ -1936,6 +1943,8 @@ actor LightningGuardAlt_Shrink : LightningGuardAlt
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

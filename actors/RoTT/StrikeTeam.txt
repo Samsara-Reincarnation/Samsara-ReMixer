@@ -121,9 +121,9 @@ ACTOR StrikeTeam : RoTTHumanoid {
 			ANKS C 3
 			goto see
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
-			ANGS H 5
+		Death.Massacre:
+			ANGS H 5 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			ANGS I 6 A_Scream
 			ANGS J 7 A_Fall
 			ANGS K 8
@@ -152,8 +152,9 @@ ACTOR StrikeTeam : RoTTHumanoid {
 		XDeath.RottExplosive:
 		XDeathForROTT:			
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect") 
 			TNT1 A 0 A_SpawnItem("RottGibbedMan")
 			TNT1 A 1
 			TNT1 A 0 A_Jump(128,2)
@@ -324,6 +325,8 @@ actor StrikeTeam_Shrink : StrikeTeam
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -494,9 +497,9 @@ ACTOR StrikeTeamAlt : StrikeTeam {
 			ST2C C 3
 			goto see
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
-			ST2W H 6
+		Death.Massacre:
+			ST2W H 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			ST2W I 5 A_Scream
 			ST2W J 5 A_Fall
 			ST2W K 5
@@ -527,8 +530,9 @@ ACTOR StrikeTeamAlt : StrikeTeam {
 		XDeath.RottExplosive:
 		XDeathForROTT:			
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect") 
 			TNT1 A 0 A_SpawnItem("RottGibbedMan")
 			TNT1 A 1
 			TNT1 A 0 A_Jump(128,2)
@@ -699,6 +703,8 @@ actor StrikeTeamAlt_Shrink : StrikeTeamAlt
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

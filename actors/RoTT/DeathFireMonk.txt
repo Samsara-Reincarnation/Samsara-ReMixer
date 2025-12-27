@@ -75,6 +75,7 @@ ACTOR MonkDeathFire : RoTTHumanoid {
 			Goto See   
 		Death:
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
 			ALLD A 2 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			ALLD B 3
 			ALLD C 3 A_Scream
@@ -110,8 +111,9 @@ ACTOR MonkDeathFire : RoTTHumanoid {
 		XDeath.RottExplosive:
 		XDeathForROTT:
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect") 
 			TNT1 A 0 A_SpawnItem("RottGibbedMan")
 			TNT1 A 1
 			TNT1 A 0 A_Jump(128,2)
@@ -306,6 +308,8 @@ actor MonkDeathFire_Shrink : MonkDeathFire
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -416,6 +420,7 @@ ACTOR MonkDeathFireAlt : MonkDeathFire {
 			Goto See   
 		Death:
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
 			AL2D A 2 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			AL2D B 3
 			AL2D C 3 A_Scream
@@ -451,8 +456,9 @@ ACTOR MonkDeathFireAlt : MonkDeathFire {
 		XDeath.RottExplosive:
 		XDeathForROTT:
 		XDeath:
+			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
+		XDeath.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect") 
 			TNT1 A 0 A_SpawnItem("RottGibbedMan")
 			TNT1 A 1
 			TNT1 A 0 A_Jump(128,2)
@@ -623,6 +629,8 @@ actor MonkDeathFireAlt_Shrink : MonkDeathFireAlt
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
