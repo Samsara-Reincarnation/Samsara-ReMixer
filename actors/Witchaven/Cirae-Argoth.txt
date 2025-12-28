@@ -280,8 +280,9 @@ Actor WTCiraeArgoth : SamsaraMonsterHumanoidBoss
 		WH_J A 1 A_SetShootable
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		WH_K F 3 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		WH_K F 3 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		WH_K G 3 A_Scream
 		WH_K H 3 A_NoBlocking
 		WH_K IJKLMN 3

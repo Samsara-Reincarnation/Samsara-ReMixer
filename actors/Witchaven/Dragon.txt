@@ -133,9 +133,9 @@ Actor WitchavenDragon : SamsaraMonsterBeastBoss
 		WH_D NNMM 2 A_FaceTarget
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-		WH_E J 3
+	Death.Massacre:
+		WH_E J 3 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		WH_E K 3 A_Scream
 		WH_E L 3 A_NoBlocking
 		WH_E M 3

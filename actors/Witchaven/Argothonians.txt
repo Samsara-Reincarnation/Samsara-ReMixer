@@ -61,8 +61,9 @@ Actor WTArgothonianFist : WitchavenEnemyBaseMelee
 			WH_9 M 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_9 M 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_9 M 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_9 N 4 A_Scream
 			WH_9 O 4 A_NoBlocking
 			WH_9 P 4 A_KillMaster
@@ -266,6 +267,8 @@ actor WTArgothonianFist_Shrink : WTArgothonianFist
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -526,6 +529,8 @@ actor WTArgothonianPikeAxe_Shrink : WTArgothonianPikeAxe
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -764,6 +769,8 @@ actor WTArgothonianSword_Shrink : WTArgothonianSword
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -987,6 +994,8 @@ actor WTArgothonianPikeAxeSword_Shrink : WTArgothonianPikeAxeSword
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1208,6 +1217,8 @@ actor WTArgothonianPikeAxeFist_Shrink : WTArgothonianPikeAxeFist
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1247,8 +1258,9 @@ Actor WTArgothonianPikeAxe_2 : WTArgothonianFist
 			WH_9 G 6 A_CustomMeleeAttack(Random(25,30)/Random(2,1),"ggen/metal_l","ggen/swing2")
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_9 M 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_9 M 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_9 N 4 A_Scream
 			WH_9 O 4 A_NoBlocking
 			WH_9 PQRSTU 4
@@ -1464,6 +1476,8 @@ actor WTArgothonianPikeAxe_2_Shrink : WTArgothonianPikeAxe_2
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1694,6 +1708,8 @@ actor WTArgothonianPikeAxe_3_Shrink : WTArgothonianPikeAxe_3
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

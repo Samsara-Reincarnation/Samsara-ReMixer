@@ -74,6 +74,18 @@ ACTOR OttoGiftmacher : SamsaraMonsterHumanoidTotalGib
 		FastDeath:
 			WOTT A 5 A_Scream
 			Goto Death+3
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			WOTT A 70 A_Scream
+			WOTT G 5
+			WOTT H 5
+			WOTT I 5 A_NoBlocking
+			WOTT J -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			WOTT A 5 A_Scream
+			Goto Death.Massacre+3
 		Pain.ShrinkerDMG:
 			WOTT D 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -322,6 +334,8 @@ actor OttoGiftmacher_Shrink : OttoGiftmacher
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -511,6 +525,8 @@ actor OttoGiftmacherDoom_Shrink : OttoGiftmacherDoom
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

@@ -74,6 +74,18 @@ ACTOR GerhardtVonSchreiber : SamsaraMonsterHumanoidTotalGib
 		FastDeath:
 			LE00 A 5 A_Scream
 			Goto Death+3
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			LE00 A 70 A_Scream
+			LE00 G 5
+			LE00 H 5
+			LE00 I 5 A_NoBlocking
+			LE00 J -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			LE00 A 5 A_Scream
+			Goto Death.Massacre+3
 		Pain.ShrinkerDMG:
 			LE00 D 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -322,6 +334,8 @@ actor GerhardtVonSchreiber_Shrink : GerhardtVonSchreiber
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -511,6 +525,8 @@ actor GerhardtVonSchreiberDoom_Shrink : GerhardtVonSchreiberDoom
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

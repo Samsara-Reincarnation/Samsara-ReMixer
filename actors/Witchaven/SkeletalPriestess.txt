@@ -48,8 +48,9 @@ Actor WTSkeletalPriestess : WitchavenEnemyBaseRangedBeastLarge
 			WH_X H 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_X I 5 A_Scream
 			WH_X J 5 A_NoBlocking
 			WH_X KLMNOPQR 5
@@ -237,6 +238,8 @@ actor WTSkeletalPriestess_Shrink : WTSkeletalPriestess
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

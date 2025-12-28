@@ -178,6 +178,18 @@ ACTOR SubmarineWilly : SamsaraMonsterHumanoidTotalGib
 		FastDeath:
 			SUBW A 7 A_Scream
 			Goto Death+3
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			SUBW A 52 A_Scream
+			SUBW HI 7
+			SUBW J 7 A_NoBlocking
+			TNT1 A 0 A_KillMaster
+			SUBW K -1
+			Stop
+		FastDeath.Massacre:
+			SUBW A 7 A_Scream
+			Goto Death.Massacre+3
 		Pain.ShrinkerDMG:
 			SUBW D 0
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
@@ -427,6 +439,8 @@ actor SubmarineWilly_Shrink : SubmarineWilly
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -616,6 +630,8 @@ actor SubmarineWillyDoom_Shrink : SubmarineWillyDoom
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

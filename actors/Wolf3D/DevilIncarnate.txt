@@ -101,7 +101,7 @@ ACTOR DevilIncarnate : SamsaraMonsterDemonicBoss
 			DEIN A 52 A_Scream
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
 			DEIN I 5 A_PlaySoundEx("devilinc/melt","soundslot5",0,0)
-			DEIN J 5 
+			DEIN J 5
 			DEIN K 5 A_NoBlocking
 			DEIN LMNO 5
 			DEIN P 30
@@ -110,5 +110,19 @@ ACTOR DevilIncarnate : SamsaraMonsterDemonicBoss
 		FastDeath:
 			DEIN A 5 A_Scream
 			Goto Death+3
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			DEIN A 52 A_Scream
+			DEIN I 5 A_PlaySoundEx("devilinc/melt","soundslot5",0,0)
+			DEIN J 5
+			DEIN K 5 A_NoBlocking
+			DEIN LMNO 5
+			DEIN P 30
+			DEIN P -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			DEIN A 5 A_Scream
+			Goto Death.Massacre+3
 	}
 }

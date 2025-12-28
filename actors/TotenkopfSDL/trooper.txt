@@ -76,6 +76,7 @@ Actor TotenkopfTrooperFlamethrower : SamsaraMonsterHumanoidTotalGib
 			Loop
 		Death:
 			TK30 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
 			TK30 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TK30 H 0 A_Scream
 			TK30 H 7 A_NoBlocking
@@ -277,6 +278,8 @@ actor TotenkopfTrooperFlamethrower_Shrink : TotenkopfTrooperFlamethrower
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -423,8 +426,9 @@ Actor TotenkopfTrooperChaingun : SamsaraMonsterHumanoidTotalGib
 			TK31 G 0 A_MonsterRefire(0,"See")
 			Loop
 		Death:
-			TK31 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TK31 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TK31 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TK31 H 0 A_Scream
 			TK31 H 0 A_NoBlocking
 			TK31 H 7
@@ -660,6 +664,8 @@ actor TotenkopfTrooperChaingun_Shrink : TotenkopfTrooperChaingun
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			"####" A 0 A_Jump(64,2)
@@ -754,8 +760,9 @@ Actor TotenkopfTrooperPanzerschreck : SamsaraMonsterHumanoidTotalGib
 			TK32 F 10
 			Goto See
 		Death:
-			TK32 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TK32 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
+			TK32 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TK32 H 0 A_Scream
 			TK32 H 0 A_NoBlocking
 			TK32 H 7
@@ -960,6 +967,8 @@ actor TotenkopfTrooperPanzerschreck_Shrink : TotenkopfTrooperPanzerschreck
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			"####" A 0 A_Jump(64,2)

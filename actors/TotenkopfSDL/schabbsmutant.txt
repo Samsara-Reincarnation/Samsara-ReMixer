@@ -67,6 +67,7 @@ ACTOR TotenkopfSchabbsMutant : SamsaraMonsterHumanoidBoss
 			Goto See
 		Death:
 			TK41 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
 			TK41 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TK41 H 60 A_Scream
 			TK41 I 7

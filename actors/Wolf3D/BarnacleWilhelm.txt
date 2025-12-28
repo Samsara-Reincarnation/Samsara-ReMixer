@@ -161,5 +161,19 @@ ACTOR BarnacleWilhelm : SamsaraMonsterHumanoidBoss
 		FastDeath:
 			WBAR A 2 A_Scream
 			Goto Death+4
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			WBAR A 2 A_Scream
+			WBAR A 33
+			WBAR I 6
+			WBAR J 4
+			WBAR K 5 A_NoBlocking
+			WBAR L 30
+			WBAR L -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			WBAR A 2 A_Scream
+			Goto Death.Massacre+4
 	}
 }

@@ -541,7 +541,35 @@ ACTOR Hitler : SamsaraMonsterHumanoidBoss
 			WADO W -1 A_KillMaster
 			Stop
 		/*FastDeath2:
-			WADO A 5 A_Scream
+			WADO A 5 A_PlaySound("wolfsnes/death",CHAN_VOICE)
 			Goto Death2+2*/
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+            TNT1 A 0 A_Jump(256,"Death1.Massacre","Death2.Massacre")
+		Death1.Massacre:
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath1.Massacre")
+			WADO A 70 A_Scream
+			WADO H 5
+			WADO I 3
+			WADO I 2 A_PlaySoundEx("hitler/melt","soundslot5",0,0)
+			WADO J 5 A_NoBlocking
+			WADO KLMN 5
+			WADO O -1 A_KillMaster
+			Stop
+		FastDeath1.Massacre:
+			WADO A 5 A_Scream
+			Goto Death1.Massacre+2
+		Death2.Massacre:
+			//TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath2.Massacre")
+			WADO A 5 A_PlaySound("wolfsnes/death",CHAN_VOICE) // 70
+			WADO QR 5
+			WADO S 5 A_PlaySoundEx("bat/death","soundslot5",0,0)
+			WADO T 5 A_NoBlocking
+			WADO UVWW 5
+			WADO W -1 A_KillMaster
+			Stop
+		/*FastDeath2.Massacre:
+			WADO A 5 A_PlaySound("wolfsnes/death",CHAN_VOICE)
+			Goto Death2.Massacre+2*/
 	}
 }

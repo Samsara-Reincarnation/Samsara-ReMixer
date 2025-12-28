@@ -85,6 +85,7 @@ ACTOR TotenkopfDeathMutant : SamsaraMonsterDemonicBoss
 			Loop
 		Death:
 			TK44 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
+		Death.Massacre:
 			TK44 A 1 A_Scream
 			TK44 A 8 A_SpawnItemEx("TotenkopfDeathMutantSpirit",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_NOCHECKPOSITION)
 			TK44 I 7

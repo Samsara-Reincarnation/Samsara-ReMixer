@@ -161,5 +161,19 @@ ACTOR ProfessorQuarkblitz : SamsaraMonsterHumanoidBoss
 		FastDeath:
 			PROQ A 2 A_Scream
 			Goto Death+4
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			PROQ A 2 A_Scream
+			PROQ A 33
+			PROQ I 6
+			PROQ J 4
+			PROQ K 5 A_NoBlocking
+			PROQ L 30
+			PROQ L -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			PROQ A 2 A_Scream
+			Goto Death.Massacre+4
 	}
 }

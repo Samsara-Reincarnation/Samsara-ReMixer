@@ -34,8 +34,9 @@ Actor WitchavenSpider : WitchavenEnemyBaseMeleeBeast
 		WH_Y E 5 A_CustomMeleeAttack(Random(3,15),"","","Poison")
 		Goto See
 	Death:
-		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		WH_Y I 3 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+	Death.Massacre:
+		WH_Y I 3 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		WH_Y J 3 A_Scream
 		WH_Y K 3 A_NoBlocking
 		WH_Y LMNOP 3
@@ -252,6 +253,8 @@ actor WitchavenSpider_Shrink : WitchavenSpider
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

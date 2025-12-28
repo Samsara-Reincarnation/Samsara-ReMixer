@@ -332,5 +332,19 @@ ACTOR WDeathKnight : SamsaraMonsterDemonicBoss
 		FastDeath:
 			WDKN A 2 A_Scream
 			Goto Death+4
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			WDKN A 2
+			WDKN A 50 A_Scream
+			WDKN I 5
+			WDKN J 5 A_NoBlocking
+			WDKN KLMN 5
+			WDKN O 30
+			WDKN O -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			WDKN A 2 A_Scream
+			Goto Death.Massacre+4
 	}
 }

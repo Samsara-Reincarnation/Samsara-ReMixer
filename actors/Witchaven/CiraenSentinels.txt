@@ -79,8 +79,9 @@ Actor WTCiraenSentinelBow : WitchavenEnemyBaseMelee
 			WH_7 Y 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_7 O 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_7 O 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_7 P 4 A_Scream
 			WH_7 Q 4 A_NoBlocking
 			WH_7 RSTUVW 4
@@ -283,6 +284,8 @@ actor WTCiraenSentinelBow_Shrink : WTCiraenSentinelBow
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -401,8 +404,9 @@ Actor WTCiraenSentinelFists : WitchavenEnemyBaseMelee
 			WH_7 Y 16 A_Pain
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_7 O 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_7 O 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_7 P 4 A_Scream
 			WH_7 Q 4 A_NoBlocking
 			WH_7 RSTUVW 4
@@ -605,6 +609,8 @@ actor WTCiraenSentinelFists_Shrink : WTCiraenSentinelFists
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -824,6 +830,8 @@ actor WTCiraenSentinelMorningStar_Shrink : WTCiraenSentinelMorningStar
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1042,6 +1050,8 @@ actor WTCiraenSentinelBowAndStar_Shrink : WTCiraenSentinelBowAndStar
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1260,6 +1270,8 @@ actor WTCiraenSentinelSpell_Shrink : WTCiraenSentinelSpell
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1478,6 +1490,8 @@ actor WTCiraenSentinelSpellAndStar_Shrink : WTCiraenSentinelSpellAndStar
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1520,8 +1534,9 @@ Actor WTCiraenSentinelSpell_2 : WTCiraenSentinelSpell
 	States
 	{
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_7 O 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_7 O 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_7 P 4 A_Scream
 			WH_7 Q 4 A_NoBlocking
 			WH_7 RSTUVW 4
@@ -1736,6 +1751,8 @@ actor WTCiraenSentinelSpell_2_Shrink : WTCiraenSentinelSpell_2
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -1773,8 +1790,9 @@ Actor WTCiraenSentinelBow_2 : WTCiraenSentinelBow
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_7 O 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_7 O 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_7 P 4 A_Scream
 			WH_7 Q 4 A_NoBlocking
 			WH_7 RSTUVW 4
@@ -1989,6 +2007,8 @@ actor WTCiraenSentinelBow_2_Shrink : WTCiraenSentinelBow_2
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2022,8 +2042,9 @@ Actor WTCiraenSentinelBowAndStar_2 : WTCiraenSentinelBow_2
 			TNT1 A 0 A_JumpIfCloser(90,"KeepMelee")
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_7 O 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_7 O 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_7 P 4 A_Scream
 			WH_7 Q 4 A_NoBlocking
 			WH_7 RSTUVW 4
@@ -2228,6 +2249,8 @@ actor WTCiraenSentinelBowAndStar_2_Shrink : WTCiraenSentinelBowAndStar_2
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)
@@ -2270,8 +2293,9 @@ Actor WTCiraenSentinelSpellAndStar_2 : WTCiraenSentinelSpellAndStar
 			TNT1 A 0 A_JumpIfCloser(90,"KeepMelee")
 			Goto See
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-			WH_7 O 4 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		Death.Massacre:
+			WH_7 O 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WH_7 P 4 A_Scream
 			WH_7 Q 4 A_NoBlocking
 			WH_7 RSTUVW 4
@@ -2486,6 +2510,8 @@ actor WTCiraenSentinelSpellAndStar_2_Shrink : WTCiraenSentinelSpellAndStar_2
 			Loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

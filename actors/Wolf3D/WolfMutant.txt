@@ -126,9 +126,9 @@ ACTOR WolfMutant : SamsaraMonsterHumanoidTotalGib
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Death:
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
-			WMUT L 2
+		Death.Massacre:
+			WMUT L 2 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			WMUT M 3 A_Scream
 			WMUT N 4 A_NoBlocking
 			WMUT O 3
@@ -309,6 +309,8 @@ actor WolfMutant_Shrink : WolfMutant
 			loop
 		Death:
 		XDeath:
+		Death.Massacre:
+		XDeath.Massacre:
 		Death.Squish:
 		XDeath.Squish:
 			TNT1 A 0 A_Jump(64,2)

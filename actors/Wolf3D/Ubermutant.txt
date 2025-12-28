@@ -159,13 +159,27 @@ ACTOR Ubermutant : SamsaraMonsterHumanoidBoss
 			WUBR A 35
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			WUBR I 7 A_NoBlocking
-			WUBR JK 7 
-			WUBR L 8 
+			WUBR JK 7
+			WUBR L 8
 			WUBR M 30
 			WUBR M -1 A_KillMaster
 			Stop
 		FastDeath:
 			WUBR A 2 A_Scream
 			Goto Death+4
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			WUBR A 2 A_Scream
+			WUBR A 35
+			WUBR I 7 A_NoBlocking
+			WUBR JK 7
+			WUBR L 8
+			WUBR M 30
+			WUBR M -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			WUBR A 2 A_Scream
+			Goto Death.Massacre+4
 	}
 }

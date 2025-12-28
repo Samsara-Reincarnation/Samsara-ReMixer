@@ -74,5 +74,18 @@ ACTOR DoctorSchabbs : SamsaraMonsterHumanoidBoss
 		FastDeath:
 			WSCB A 5 A_Scream
 			Goto Death+3
+		Death.Massacre:
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",2) == 1, "FastDeath.Massacre")
+			WSCB A 66 A_Scream
+			WSCB G 5
+			WSCB H 5
+			WSCB I 5 A_NoBlocking
+			WSCB J 30
+			WSCB J -1 A_KillMaster
+			Stop
+		FastDeath.Massacre:
+			WSCB A 5 A_Scream
+			Goto Death.Massacre+3
 	}
 }
