@@ -21,7 +21,7 @@ Doom:
 
 Hexen I:
 
-! Changed the sprite used for the Hexen I slot 2 equipment drop.
+! Hexen I slot 2 equipment drop visuals have been expanded to include Parias (Reincarnation) and Baratus' respective slot 2 weapons.
 - The Ettin no longer has a chance of dropping slot 2 or slot 4 equipment if Doom-style weapon drops are enabled.
 + The Chainmail Ettin has been added as a shotgun guy replacement!
 

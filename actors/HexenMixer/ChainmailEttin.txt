@@ -10,11 +10,13 @@ ACTOR ChainmailEttin3 : Ettin3
 	{
 		Spawn:
 			CETN A 0
-			CETN A 1 A_JumpIfInventory("AlreadySpawned",1,"Super::Spawn")
+			CETN A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
 			CETN A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
 			CETN A 0 A_GiveInventory("AlreadySpawned",1)
 			CETN A 0
-			Goto "Super::Spawn"
+		Spawn2:
+			CETN AA 10 A_Look
+			Loop
 		See:
 			CETN ABCD 5 A_Chase
 			Loop

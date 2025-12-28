@@ -977,12 +977,48 @@ actor HexenLongbowDrop : SamsaraSlotTwoDrop
     States
     {
       Spawn:
-        H114 A 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
+        H114 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:
         TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
         H114 A -1 A_ChangeFlag("NOTIMEFREEZE",false)
+        stop
+    }
+}
+
+actor HexenFrostDrop : SamsaraSlotTwoDrop
+{
+    +DROPPED
+    +NEVERRESPAWN
+    States
+    {
+      Spawn:
+        WFRS A 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
+        goto SpawnGameModeCheck
+
+      SpawnActual:
+        TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
+        TNT1 A 0 A_ChangeFlag("NOTIMEFREEZE",false)
+      SpawnActualAnim:
+        WFRS ABC 8 Bright
+        loop
+    }
+}
+
+actor HexenJavelinDrop : SamsaraSlotTwoDrop
+{
+    +DROPPED
+    +NEVERRESPAWN
+    States
+    {
+      Spawn:
+        H102 Q 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
+        goto SpawnGameModeCheck
+
+      SpawnActual:
+        TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
+        H102 Q -1 Bright A_ChangeFlag("NOTIMEFREEZE",false)
         stop
     }
 }
@@ -1004,6 +1040,40 @@ actor HexenStaffDrop : SamsaraSlotFourDrop
     }
 }
 
+actor HexenBlightShockDrop : SamsaraSlotFourDrop
+{
+    +DROPPED
+    +NEVERRESPAWN
+    States
+    {
+      Spawn:
+        TSOG A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
+        goto SpawnGameModeCheck
+
+      SpawnActual:
+        TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
+        TSOG A -1 A_ChangeFlag("NOTIMEFREEZE",false)
+        stop
+    }
+}
+
+actor HexenFlailDrop : SamsaraSlotFourDrop
+{
+    +DROPPED
+    +NEVERRESPAWN
+    States
+    {
+      Spawn:
+        H122 R 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
+        goto SpawnGameModeCheck
+
+      SpawnActual:
+        TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
+        H122 R -1 A_ChangeFlag("NOTIMEFREEZE",false)
+        stop
+    }
+}
+
 Actor HexenChainmailEttinDrop {
 	Height 5
 	Radius 5
@@ -1015,10 +1085,20 @@ Actor HexenChainmailEttinDrop {
 			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
 			TNT1 A 15
 			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
+            TNT1 A 0 A_Jump(256,1,2,3)
 			TNT1 A 1 Bright A_DropItem("HexenLongbowDrop", 1, 256)
 			Stop
+			TNT1 A 1 Bright A_DropItem("HexenFrostDrop", 1, 256)
+			Stop
+			TNT1 A 1 Bright A_DropItem("HexenJavelinDrop", 1, 256)
+			Stop
 		Spawn2:
+            TNT1 A 0 A_Jump(256,1,2,3)
 			TNT1 A 1 Bright A_DropItem("HexenLongbowDrop", 1, 256)
+			Stop
+			TNT1 A 1 Bright A_DropItem("HexenFrostDrop", 1, 256)
+			Stop
+			TNT1 A 1 Bright A_DropItem("HexenJavelinDrop", 1, 256)
 			Stop
 	}
 }
