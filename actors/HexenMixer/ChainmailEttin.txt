@@ -6,6 +6,7 @@ ACTOR ChainmailEttin3 : Ettin3
 	Radius 20
 	Height 56
 	DropItem "HexenChainmailEttinDrop"
+	-TELESTOMP
 	States
 	{
 		Spawn:
@@ -38,6 +39,7 @@ ACTOR ChainmailEttin3 : Ettin3
 			Goto See
 		Missile:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",0)
+			TNT1 A 0 A_PlaySound("FighterHammerMiss",CHAN_BODY)
 			CETN EF 6 A_FaceTarget
 			CETN G 8 A_CustomMissile("ChainmailEttinMaceProjectile", 40)
 			Goto See
@@ -318,6 +320,7 @@ ACTOR ChainmailEttinMaceProjectile
 	States
 	{
 	Spawn:
+		TNT1 A 0
 		ETTB M 5 A_PlaySound("FighterHammerContinuous")
 		ETTB NOP 5
 		Loop
