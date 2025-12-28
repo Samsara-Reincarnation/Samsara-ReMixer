@@ -46,6 +46,7 @@ Ajay Huff & Gonzalo Savoguin - For making the Rodian sprites used in Xim's Star 
 Sleg Infantryman - For making the Battle Droid sprites used in Xim's Star Wars Doom
 Perdition's Gate Enjoyer - for providing sprites for the Blood Cultists and Hectebus pain rotations
 Patrick Haslow & Matthew Hallaron - for making the Scout Trooper sprites used in Xim's Star Wars Doom
+MagicWazard & Neoworm - for making the Chainmail Ettin DECORATE and sprites respectively
 
 Original monsters and sprites/sounds belong to their respective owners, including:
 

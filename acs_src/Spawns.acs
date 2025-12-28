@@ -1715,16 +1715,12 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Mummy3Doom"}
 			},
 			{//Golem Ghost
-				{"KnightGhost3Doom"},
-				{"MummyGhost3Doom"},
-				{"MummyLeaderGhost3Doom"}
+				{"KnightGhost3Doom"}
 			},
 			{//Nitrogolem
 				{"MummyLeader3Doom"}
 			},
 			{//Nitrogolem Ghost
-				{"KnightGhost3Doom"},
-				{"MummyGhost3Doom"},
 				{"MummyLeaderGhost3Doom"}
 			},
 			{//Disciple of D'Sparil
@@ -1734,9 +1730,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Knight3Doom"}
 			},
 			{//Undead Warrior Ghost
-				{"KnightGhost3Doom"},
-				{"MummyGhost3Doom"},
-				{"MummyLeaderGhost3Doom"}
+				{"KnightGhost3Doom"}
 			},
 			{//Sabreclaw
 				{"Clink3Doom"}
@@ -1757,7 +1751,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Sorcerer5"}
 			},
 			{//Chicken
-				{"CyCloneGrunt"}
+				{"Chicken3"}
 			},
 			{//Ettin
 				{"Mummy3Doom"}
@@ -2629,11 +2623,11 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Ettin3Doom"}
 			},
 			{//Shotgun Guy
-				{"Ettin3Doom"}
+				{"ChainmailEttin3"}
 			},
 			{//Imp
 				{"FireDemon3Doom"},
-				{"Ettin3Doom"}
+				{"ChainmailEttin3"}
 			},
 			{//Chaingun Guy
 				{"FireDemon3Doom"}
@@ -2710,11 +2704,11 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Ettin3Doom"}
 			},
 			{//Flemoidus Bipedicus
-				{"Ettin3Doom"}
+				{"ChainmailEttin3"}
 			},
 			{//Armored Flemoidus Bipedicus
 				{"FireDemon3Doom"},
-				{"Ettin3Doom"}
+				{"ChainmailEttin3"}
 			},
 			{//Flemoidus Stridicus
 				{"Centaur3Doom"}
@@ -2755,7 +2749,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Fire Gargoyle
 				{"FireDemon3Doom"},
-				{"Ettin3Doom"}
+				{"ChainmailEttin3"}
 			},
 			{//Golem
 				{"Ettin3Doom"}
@@ -2764,7 +2758,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"CentaurLeader3Doom"}
 			},
 			{//Nitrogolem
-				{"Ettin3Doom"}
+				{"ChainmailEttin3"}
 			},
 			{//Nitrogolem Ghost
 				{"CentaurLeader3Doom"}
@@ -2809,7 +2803,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FireDemon3Doom"}
 			},
 			{//Dark Bishop
-				{"FireDemon3Doom"}
+				{"Bishop3Doom"}
 			},
 			{//Centaur
 				{"Centaur3Doom"}
@@ -2821,38 +2815,30 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Demon1CDoom"}
 			},
 			{//Stalker
-				{"Ettin3Doom"}
+				{"Serpent3"}
 			},
 			{//Stalker Boss
-				{"FireDemon3Doom"}
+				{"SerpentLeader3"}
 			},
 			{//Wendigo
 				{"IceGuy3Doom"}
 			},
 			{//Reiver
-				{"Wraith3Doom"},
-				{"Bishop3Doom"}
+				{"Wraith3Doom"}
 			},
 			{//Reiver (Buried)
-				{"Wraith3Doom"},
-				{"Bishop3Doom"}
+				{"WraithBuried3Doom"}
 			},
 			{//Brown Chaos Serpent
 				{"Demon2CDoom"}
 			},
 			{//Traductus
-				{"ClericBoss3Doom"},
-				{"FighterBoss3Doom"},
-				{"MageBoss3Doom"}
+				{"ClericBoss3Doom"}
 			},
 			{//Zedek
-				{"ClericBoss3Doom"},
-				{"FighterBoss3Doom"},
-				{"MageBoss3Doom"}
+				{"FighterBoss3Doom"}
 			},
 			{//Menelkir
-				{"ClericBoss3Doom"},
-				{"FighterBoss3Doom"},
 				{"MageBoss3Doom"}
 			},
 			{//Heresiarch
@@ -14535,16 +14521,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Golem Ghost
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Nitrogolem
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Nitrogolem Ghost
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Disciple of D'Sparil
@@ -14554,8 +14536,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Undead Warrior Ghost
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Sabreclaw
@@ -15650,29 +15630,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Reiver
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Reiver (Buried)
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Brown Chaos Serpent
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Traductus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Zedek
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Menelkir
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Heresiarch

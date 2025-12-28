@@ -56,6 +56,7 @@
 // Hexen
 
 #include "actors/HexenMixer/Ettin.txt"
+#include "actors/HexenMixer/ChainmailEttin.txt"
 #include "actors/HexenMixer/Afrit.txt"
 #include "actors/HexenMixer/Centaur.txt"
 #include "actors/HexenMixer/Stalker.txt"

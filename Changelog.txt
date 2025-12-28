@@ -19,6 +19,12 @@ Doom:
 * Fixed the cyber baron using the wrong sound when dying.
 * Fixed the archon of Hell using the baron of Hell sprites when hit by the Stronghold stunner rifle.
 
+Hexen I:
+
+! Changed the sprite used for the Hexen I slot 2 equipment drop.
+- The Ettin no longer no longer has a change of dropping slot 2 or slot 4 equipment if Doom-style weapon drops are enabled.
++ The Chainmail Ettin has been added as a shotgun guy replacement!
+
 Marathon:
 
 * Fixed enemies with yellow blood using the wrong color of the Duke3D blood pool when gibbed by Duke Nukem.
@@ -99,6 +105,16 @@ GoldenEye 007:
 -All-
 
 * Fixed enemies not performing several checks and scripts when killed with a headshot from James Bond.
+
+-Games-
+
+Heretic:
+
++ The Heretic ReMixer enemies now spawn accordingly to their original spawn slots.
+
+Hexen: Beyond Heretic:
+
++ The Hexen ReMixer enemies now spawn accordingly to their original spawn slots.
 
 -Settings-
 

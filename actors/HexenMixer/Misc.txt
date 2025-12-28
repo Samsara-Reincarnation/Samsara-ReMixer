@@ -970,22 +970,20 @@ ACTOR Heresiarch3Doom : Heresiarch3 { -TELESTOMP Tag "Heresiarch" }
 ACTOR Wraith3Doom : Wraith3 { -TELESTOMP Tag "Reiver" }
 ACTOR WraithBuried3Doom : WraithBuried3 { -TELESTOMP Tag "Buried Reaver" }
 
-actor HexenFrostDrop : SamsaraSlotTwoDrop
+actor HexenLongbowDrop : SamsaraSlotTwoDrop
 {
     +DROPPED
     +NEVERRESPAWN
     States
     {
       Spawn:
-        WFRS A 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
+        H114 A 0 Bright NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:
         TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
-        TNT1 A 0 A_ChangeFlag("NOTIMEFREEZE",false)
-      SpawnActualAnim:
-        WFRS ABC 8 Bright
-        loop
+        H114 A -1 A_ChangeFlag("NOTIMEFREEZE",false)
+        stop
     }
 }
 
@@ -1006,7 +1004,7 @@ actor HexenStaffDrop : SamsaraSlotFourDrop
     }
 }
 
-Actor HexenEttinDrop {
+Actor HexenChainmailEttinDrop {
 	Height 5
 	Radius 5
 	+NOCLIP
@@ -1017,14 +1015,10 @@ Actor HexenEttinDrop {
 			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,4,0)
 			TNT1 A 15
 			TNT1 A 0 A_JumpIfInventory("WeaponDropToken", 1, "Spawn2")
-			TNT1 A 1 Bright 
+			TNT1 A 1 Bright A_DropItem("HexenLongbowDrop", 1, 256)
 			Stop
 		Spawn2:
-			TNT1 A 0 A_Jump(128, "Spawn3")
-			TNT1 A 1 Bright A_DropItem("HexenFrostDrop", 1, 192)
+			TNT1 A 1 Bright A_DropItem("HexenLongbowDrop", 1, 256)
 			Stop
-		Spawn3:	
-			TNT1 A 1 Bright A_DropItem("HexenStaffDrop", 1, 192)
-			Stop			
 	}
 }

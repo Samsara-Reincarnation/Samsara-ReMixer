@@ -51,7 +51,6 @@ ACTOR Ettin3 : Ettin2
     DamageFactor "BJSpear", 1.15
     DamageFactor "WMCBeam", 1.15
     DamageFactor "WMCNade", 1.15
-	DropItem "HexenEttinDrop"
 	-TELESTOMP
 	States
 	{
