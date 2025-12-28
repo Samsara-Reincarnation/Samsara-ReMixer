@@ -22,7 +22,7 @@ Doom:
 Hexen I:
 
 ! Changed the sprite used for the Hexen I slot 2 equipment drop.
-- The Ettin no longer no longer has a change of dropping slot 2 or slot 4 equipment if Doom-style weapon drops are enabled.
+- The Ettin no longer has a chance of dropping slot 2 or slot 4 equipment if Doom-style weapon drops are enabled.
 + The Chainmail Ettin has been added as a shotgun guy replacement!
 
 Marathon:
@@ -110,11 +110,11 @@ GoldenEye 007:
 
 Heretic:
 
-+ The Heretic ReMixer enemies now spawn accordingly to their original spawn slots.
+! The Heretic ReMixer enemies now spawn accordingly to their original spawn slots.
 
 Hexen: Beyond Heretic:
 
-+ The Hexen ReMixer enemies now spawn accordingly to their original spawn slots.
+! The Hexen ReMixer enemies now spawn accordingly to their original spawn slots.
 
 -Settings-
 
