@@ -62,9 +62,9 @@ OptionValue "ReMixerPresetOptions"
 OptionValue "ShieldingMonstersOptions"
 {
     0, "On"
-    1, "On (Reduced, 25%)"
+    1, "On (Reduced, 75%)"
     2, "On (Reduced, 50%)"
-    3, "On (Reduced, 75%)"
+    3, "On (Reduced, 25%)"
     4, "Off"
 }
 

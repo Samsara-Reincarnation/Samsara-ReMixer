@@ -106,7 +106,7 @@ GoldenEye 007:
 -All-
 
 * Fixed enemies not performing several checks and scripts when killed with a headshot from James Bond.
-! Enemy tracers now go through other Goldeneye enemies like in the source game.
++ Enemy tracers now go through other GoldenEye enemies like in the source game.
 
 -Games-
 
@@ -120,7 +120,7 @@ Hexen: Beyond Heretic:
 
 -Settings-
 
-+ mm_shieldingmonsters has been added, which controls if monsters such as Centaurs can become invulnerable after entering their pain states. It can be found in the "Samsara ReMixer Options" menu, under "General Options", with the label "Shielding Monsters".
++ mm_shieldingmonsters has been added, which controls whether certain monsters such as Centaurs can receive invulnerability or damage resistance after entering their pain states. It can be found in the "Samsara ReMixer Options" menu, under "General Options", with the label "Shielding Monsters".
 + mm_replace_chance has been added, which determines the chance of a monster being replaced if a monster replacement setting is enabled. It can be found in the in the "Samsara ReMixer Options" menu, under the "Monster Replacements" submenu, with the label "Monster Replacement Chance".
 
 ----------------------------------------------------------------------------

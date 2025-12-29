@@ -288,54 +288,70 @@ ACTOR ForceInfightingToken : Trigger
 	}
 }
 
-ACTOR SamsaraMonsterShieldReductionTrigger : Trigger
+actor SamsaraMonsterShieldReductionTrigger : Trigger
 {
-	States
-	{
-		Pickup:
-			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) == 1, "Pickup25Percent")
-			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) == 2, "Pickup50Percent")
-			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) == 3, "Pickup75Percent")
-			TNT1 A 0
-			Stop
-		Pickup25Percent:
-			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction25",1)
-			Stop
-		Pickup50Percent:
-			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction50",1)
-			Stop
-		Pickup75Percent:
-			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction75",1)
-			Stop
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) <= 0, "PickupInvuln")
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) == 1, "Pickup75Percent")
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) == 2, "Pickup50Percent")
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) == 3, "Pickup25Percent")
+        stop
+
+      PickupInvuln:
+        TNT1 A 0 A_SetInvulnerable
+        stop
+
+      Pickup75Percent:
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction75")
+        stop
+
+      Pickup50Percent:
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction50")
+        stop
+
+      Pickup25Percent:
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction25")
+        stop
 	}
 }
 
-ACTOR SamsaraMonsterShieldReductionRemover : Trigger
+actor SamsaraMonsterShieldReductionReflectionTrigger : SamsaraMonsterShieldReductionTrigger
 {
-	States
-	{
-		Pickup:
-			TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction25",1)
-			TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction50",1)
-			TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction75",1)
-			Stop
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_SetReflective
+        goto Super::Pickup
 	}
 }
 
-actor SamsaraMonsterShieldReduction25 : PowerProtection
+actor SamsaraMonsterShieldReductionRemover : Trigger
 {
-	Powerup.Duration 0x7FFFFFFF
-	DamageFactor "Normal", 0.75
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_UnSetInvulnerable
+        TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction75")
+        TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction50")
+        TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction25")
+        stop
+	}
 }
 
-actor SamsaraMonsterShieldReduction50 : PowerProtection
+actor SamsaraMonsterShieldReductionReflectionRemover : SamsaraMonsterShieldReductionRemover
 {
-	Powerup.Duration 0x7FFFFFFF
-	DamageFactor "Normal", 0.50
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_UnSetReflective
+        goto Super::Pickup
+	}
 }
 
-actor SamsaraMonsterShieldReduction75 : PowerProtection
-{
-	Powerup.Duration 0x7FFFFFFF
-	DamageFactor "Normal", 0.25
-}
+actor SamsaraMonsterShieldReductionBase : PowerProtection { Powerup.Duration 0x7FFFFFFF }
+
+actor SamsaraMonsterShieldReduction75 : SamsaraMonsterShieldReductionBase { DamageFactor "Normal", 0.25 }
+actor SamsaraMonsterShieldReduction50 : SamsaraMonsterShieldReductionBase { DamageFactor "Normal", 0.5 }
+actor SamsaraMonsterShieldReduction25 : SamsaraMonsterShieldReductionBase { DamageFactor "Normal", 0.75 }
