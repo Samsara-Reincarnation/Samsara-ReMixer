@@ -320,7 +320,7 @@ ACTOR ChainmailEttinMaceProjectile
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		ETTB M 0
 		ETTB M 5 A_PlaySound("FighterHammerContinuous")
 		ETTB NOP 5
 		Loop
