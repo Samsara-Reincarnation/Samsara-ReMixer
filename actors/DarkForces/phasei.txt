@@ -82,9 +82,9 @@ ACTOR phase1_DF : SamsaraMonsterRobotic
 			Goto See
 		ReflectShieldReduction:
 			TNT1 A 0 A_ChangeFlag(NOPAIN,1) //Safe checks
-			PHA1 Q 4 A_GiveInventory("SamsaraMonsterShieldReductionToken",1)
+			PHA1 Q 4 A_GiveInventory("SamsaraMonsterShieldReductionTrigger",1)
 			PHA1 RRR 15 A_CentaurDefend
-			PHA1 Q 4 A_GiveInventory("SamsaraMonsterShieldReductionTokenRemover",1)
+			PHA1 Q 4 A_GiveInventory("SamsaraMonsterShieldReductionRemover",1)
 			TNT1 A 0 A_ChangeFlag(NOPAIN,0)		
 			Goto See
 		Death:

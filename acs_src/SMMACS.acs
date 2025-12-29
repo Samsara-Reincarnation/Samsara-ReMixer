@@ -1106,28 +1106,6 @@ script "ReMixerTargetHealthChecker" (void)
 	SetResultValue(GetActorProperty(0, APROP_Health));
 }
 
-script "ReMixerMonsterShieldingScript" (void)
-{
-	int shieldSetting = GetCVar("mm_shieldingmonsters");
-
-	Switch (shieldSetting)
-	{
-		case 1:
-			SetActorProperty(0,APROP_DamageFactor,0.75);
-			break;
-
-		case 2:
-			SetActorProperty(0,APROP_DamageFactor,0.5);
-			break;
-
-		case 3:
-			SetActorProperty(0,APROP_DamageFactor,0.25);
-			break;
-	}
-}
-
-script "ReMixerMonsterShieldingRemovalScript" (void) { SetActorProperty(0,APROP_DamageFactor,1.0); }
-
 script "ReMixerPresetSelection" (void)
 {
 	switch(GetCVar("mm_presetvalue"))

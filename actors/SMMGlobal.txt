@@ -288,22 +288,54 @@ ACTOR ForceInfightingToken : Trigger
 	}
 }
 
-ACTOR SamsaraMonsterShieldReductionToken : Trigger
+ACTOR SamsaraMonsterShieldReductionTrigger : Trigger
 {
 	States
 	{
 		Pickup:
-			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerMonsterShieldingScript",0,0,0)
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) == 1, "Pickup25Percent")
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) == 2, "Pickup50Percent")
+			TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) == 3, "Pickup75Percent")
+			TNT1 A 0
+			Stop
+		Pickup25Percent:
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction25",1)
+			Stop
+		Pickup50Percent:
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction50",1)
+			Stop
+		Pickup75Percent:
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReduction75",1)
 			Stop
 	}
 }
 
-ACTOR SamsaraMonsterShieldReductionTokenRemover : SamsaraMonsterShieldReductionToken
+ACTOR SamsaraMonsterShieldReductionRemover : Trigger
 {
 	States
 	{
 		Pickup:
-			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerMonsterShieldingRemovalScript",0,0,0)
+			TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction25",1)
+			TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction50",1)
+			TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction75",1)
 			Stop
 	}
+}
+
+actor SamsaraMonsterShieldReduction25 : PowerProtection
+{
+	Powerup.Duration 0x7FFFFFFF
+	DamageFactor "Normal", 0.75
+}
+
+actor SamsaraMonsterShieldReduction50 : PowerProtection
+{
+	Powerup.Duration 0x7FFFFFFF
+	DamageFactor "Normal", 0.50
+}
+
+actor SamsaraMonsterShieldReduction75 : PowerProtection
+{
+	Powerup.Duration 0x7FFFFFFF
+	DamageFactor "Normal", 0.25
 }
