@@ -1123,12 +1123,10 @@ script "ReMixerMonsterShieldingScript" (void)
 		case 3:
 			SetActorProperty(0,APROP_DamageFactor,0.25);
 			break;
-
-		case 4:
-			SetActorProperty(0,APROP_DamageFactor,1.0);
-			break;
 	}
 }
+
+script "ReMixerMonsterShieldingRemovalScript" (void) { SetActorProperty(0,APROP_DamageFactor,1.0); }
 
 script "ReMixerPresetSelection" (void)
 {
