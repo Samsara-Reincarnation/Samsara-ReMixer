@@ -1106,6 +1106,30 @@ script "ReMixerTargetHealthChecker" (void)
 	SetResultValue(GetActorProperty(0, APROP_Health));
 }
 
+script "ReMixerMonsterShieldingScript" (void)
+{
+	int shieldSetting = GetCVar("mm_shieldingmonsters");
+
+	Switch (shieldSetting)
+	{
+		case 1:
+			SetActorProperty(0,APROP_DamageFactor,0.75);
+			break;
+
+		case 2:
+			SetActorProperty(0,APROP_DamageFactor,0.5);
+			break;
+
+		case 3:
+			SetActorProperty(0,APROP_DamageFactor,0.25);
+			break;
+
+		case 4:
+			SetActorProperty(0,APROP_DamageFactor,1.0);
+			break;
+	}
+}
+
 script "ReMixerPresetSelection" (void)
 {
 	switch(GetCVar("mm_presetvalue"))
@@ -1113,6 +1137,7 @@ script "ReMixerPresetSelection" (void)
 		case 0: // Vanilla
 
 		// General Options
+		SetCVar("mm_shieldingmonsters", 0);
 		SetCVar("mm_invisiblemode", 0);
 		SetCVar("mm_ghostmode", 0);
 		SetCVar("mm_flightmode", 0);
@@ -1270,6 +1295,7 @@ script "ReMixerPresetSelection" (void)
 		case 1: // Samsara
 
 		// General Options
+		SetCVar("mm_shieldingmonsters", 0);
 		SetCVar("mm_invisiblemode", 0);
 		SetCVar("mm_ghostmode", 0);
 		SetCVar("mm_flightmode", 0);
@@ -1427,6 +1453,7 @@ script "ReMixerPresetSelection" (void)
 		case 2: // Samsara Reincarnation
 
 		// General Options
+		SetCVar("mm_shieldingmonsters", 0);
 		SetCVar("mm_invisiblemode", 0);
 		SetCVar("mm_ghostmode", 0);
 		SetCVar("mm_flightmode", 0);
@@ -1585,12 +1612,12 @@ script "ReMixerPresetSelection" (void)
 		case 100: // cubebert's Settings
 
 		// General Options
+		SetCVar("mm_shieldingmonsters", 4);
 		SetCVar("mm_invisiblemode", 0);
 		SetCVar("mm_ghostmode", 0);
 		SetCVar("mm_flightmode", 0);
 		SetCVar("mm_infightingmode", 0);
 		SetCVar("mm_performancemode", false);
-		SetCVar("mm_rarespawns", false); // Not on the menu officially, but it fits here
 
 		// Monster Spawning Options
 		SetCVar("mm_spawnmode", 2);
@@ -1742,6 +1769,7 @@ script "ReMixerPresetSelection" (void)
 		case 101: // tehvappy50's Settings
 
 		// General Options
+		SetCVar("mm_shieldingmonsters", 0);
 		SetCVar("mm_invisiblemode", 0);
 		SetCVar("mm_ghostmode", 0);
 		SetCVar("mm_flightmode", 0);

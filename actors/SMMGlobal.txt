@@ -287,3 +287,23 @@ ACTOR ForceInfightingToken : Trigger
 			Stop
 	}
 }
+
+ACTOR SamsaraMonsterShieldReductionToken : Trigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerMonsterShieldingScript",0,0,0)
+			Stop
+	}
+}
+
+ACTOR SamsaraMonsterShieldReductionTokenRemover : SamsaraMonsterShieldReductionToken
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 ACS_NamedExecuteAlways("ReMixerMonsterShieldingScript",0,4,0)
+			Stop
+	}
+}

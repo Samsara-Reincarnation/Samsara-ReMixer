@@ -6,7 +6,7 @@ OptionMenu "SamsaraMonsterMixerOptions"
     SafeCommand "Change Preset", "pukename ReMixerPresetSelection"
     StaticText ""
     StaticText "General Options", 1
-    Option "Shielding Monsters", "mm_shieldingmonsters", "OnOff"
+    Option "Shielding Monsters", "mm_shieldingmonsters", "ShieldingMonstersOptions"
     Option "Invisible Mode",     "mm_invisiblemode",     "InvisibleModeOptions"
     Option "Ghost Mode",         "mm_ghostmode",         "InvisibleModeOptions"
     Option "Flight Mode",        "mm_flightmode",        "InvisibleModeOptions"
@@ -57,6 +57,15 @@ OptionValue "ReMixerPresetOptions"
     0, "Vanilla"
     1, "Samsara"
     2, "Samsara Reincarnation"
+}
+
+OptionValue "ShieldingMonstersOptions"
+{
+    0, "On"
+    1, "On (Reduced, 25%)"
+    2, "On (Reduced, 50%)"
+    3, "On (Reduced, 75%)"
+    4, "Off"
 }
 
 OptionValue "InvisibleModeOptions"
