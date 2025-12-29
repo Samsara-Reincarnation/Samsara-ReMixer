@@ -775,6 +775,10 @@ Script "ReMixerCVarCheck" (int pick) //680
 			response = GetCVar("mm_goldeneyecorpsehitboxes");
 			break;
 
+		case 5:
+			response = GetCVar("mm_shieldingmonsters");
+			break;
+
 		case 6:
 			response = GetCVar("mm_protectorattacks") && (!GetCVar("samsara_moddedgame"));
 			break;
