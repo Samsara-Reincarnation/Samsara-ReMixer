@@ -24,4 +24,4 @@ Actor Goldfinger_AuricGoldfinger : Goldeneye_EnemyBase
 	}
 }
 
-actor Goldfinger_GoldRevolverTracer : Goldeneye_BulletTracer { Speed 64 Damage (80) }
+actor Goldfinger_GoldRevolverTracer : Goldeneye_BulletTracerEnemy { Speed 64 Damage (80) }

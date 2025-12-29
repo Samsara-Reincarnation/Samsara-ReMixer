@@ -89,6 +89,7 @@ GoldenEye 007:
 - The Chinese Nuclear Factory Guard's health has been decreased (from 100 to 50).
 - Donald "Red" Grant's health has been decreased (from 1500 to 750).
 - Dr. Julius No's health has been decreased (from 1800 to 800).
+- The Flying Circus Helicopter now deals 5 damage per tracer (decreased from 7).
 - The Gold Goldfinger Henchman's health has been decreased (from 600 to 300).
 - The Golfer's health has been decreased (from 180 to 120).
 - The Gray Goldfinger Henchman's health has been decreased (from 300 to 200).
@@ -105,6 +106,7 @@ GoldenEye 007:
 -All-
 
 * Fixed enemies not performing several checks and scripts when killed with a headshot from James Bond.
+! Enemy tracers now go through other Goldeneye enemies like in the source game.
 
 -Games-
 
