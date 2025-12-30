@@ -147,7 +147,7 @@ ACTOR MMRandomizer_CyberWarrior : SamsaraMonsterCyberneticTotalGib
 			VD52 W -1
 			Stop
 		Raise:
-			VD52 A 0 A_ChangeFlag(NOPAIN,0)
+			VD52 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD52 VUTSRQ 7
 			Goto See
