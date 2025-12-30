@@ -288,6 +288,8 @@ ACTOR ForceInfightingToken : Trigger
 	}
 }
 
+actor SamsaraMonsterShieldReductionHasNoPain: Boolean {}
+
 actor SamsaraMonsterShieldReductionTrigger : Trigger
 {
     States
@@ -327,7 +329,7 @@ actor SamsaraMonsterShieldReductionReflectionTrigger : SamsaraMonsterShieldReduc
     }
 }
 
-actor SamsaraMonsterShieldReductionNoPainTrigger : Trigger
+actor SamsaraMonsterShieldReductionNoPainTrigger : Trigger // use only if you want NOPAIN on the damage reduction modes
 {
     States
     {
@@ -335,6 +337,7 @@ actor SamsaraMonsterShieldReductionNoPainTrigger : Trigger
         TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) <= 0, "PickupStop")
         TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, "PickupStop")
         TNT1 A 0 A_ChangeFlag("NOPAIN",true)
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionHasNoPain")
         stop
     }
 }
@@ -367,7 +370,10 @@ actor SamsaraMonsterShieldReductionNoPainRemover : Trigger
     States
     {
       Pickup:
+        TNT1 A 0 A_JumpIfInventory("SamsaraMonsterShieldReductionHasNoPain",1,1)
+        stop
         TNT1 A 0 A_ChangeFlag("NOPAIN",false)
+        TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReductionHasNoPain")
         stop
     }
 }
