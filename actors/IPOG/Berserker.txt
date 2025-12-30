@@ -46,8 +46,8 @@ Actor IPOGBerserker : SamsaraMonsterHumanoidTotalGib
 		TNT1 A 0
 		Goto See
 	Pain:
-		IPO5 D 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) >= 4, 2)
-        IPO5 D 0 A_Jump(128,"Shield")
+		TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, 2)
+        TNT1 A 0 A_Jump(128,"Shield")
         IPO5 D 8 A_Pain
         Goto See
 	Pain.MightyBoot:
@@ -57,28 +57,16 @@ Actor IPOGBerserker : SamsaraMonsterHumanoidTotalGib
 		TNT1 A 0 A_Recoil(14)
 		IPO5 D 16 A_Pain
 		Goto See
-	Shield:	
-		IPO5 F 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) >= 1, "ShieldShieldReduction")
-		IPO5 F 0 A_ChangeFlag(NOPAIN,1)
-        IPO5 F 1 A_SetInvulnerable
+	Shield:
+		TNT1 A 0 A_ChangeFlag(NOPAIN,1)
+        IPO5 F 1 A_GiveInventory("SamsaraMonsterShieldReductionTrigger")
         IPO5 FFFFFF 4 A_FaceTarget
-        IPO5 F 0 A_Jump(160,"StopShield")
+        TNT1 A 0 A_Jump(160,"StopShield")
         IPO5 FFFF 4 A_FaceTarget
-        Goto Shield+3
-	StopShield:	
+        Goto Shield+2
+	StopShield:
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionRemover")
 		TNT1 A 0 A_ChangeFlag(NOPAIN,0)
-        IPO5 F 0 A_UnSetInvulnerable
-        Goto See
-	ShieldShieldReduction:
-		IPO5 F 0 A_ChangeFlag(NOPAIN,1)
-        IPO5 F 1 A_GiveInventory("SamsaraMonsterShieldReductionTrigger",1)
-        IPO5 FFFFFF 4 A_FaceTarget
-        IPO5 F 0 A_Jump(160,"StopShieldShieldReduction")
-        IPO5 FFFF 4 A_FaceTarget
-        Goto ShieldShieldReduction+2
-	StopShieldShieldReduction:	
-		TNT1 A 0 A_ChangeFlag(NOPAIN,0)
-        IPO5 F 0 A_GiveInventory("SamsaraMonsterShieldReductionRemover",1)
         Goto See
 	Death:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")

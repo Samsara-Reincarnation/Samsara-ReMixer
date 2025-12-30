@@ -327,6 +327,18 @@ actor SamsaraMonsterShieldReductionReflectionTrigger : SamsaraMonsterShieldReduc
     }
 }
 
+actor SamsaraMonsterShieldReductionNoPainTrigger : Trigger
+{
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) <= 0, "PickupStop")
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, "PickupStop")
+        TNT1 A 0 A_ChangeFlag("NOPAIN",true)
+        stop
+    }
+}
+
 actor SamsaraMonsterShieldReductionRemover : Trigger
 {
     States
@@ -347,6 +359,16 @@ actor SamsaraMonsterShieldReductionReflectionRemover : SamsaraMonsterShieldReduc
       Pickup:
         TNT1 A 0 A_UnSetReflective
         goto Super::Pickup
+    }
+}
+
+actor SamsaraMonsterShieldReductionNoPainRemover : Trigger
+{
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_ChangeFlag("NOPAIN",false)
+        stop
     }
 }
 

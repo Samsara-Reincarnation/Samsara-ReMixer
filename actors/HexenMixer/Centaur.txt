@@ -63,20 +63,18 @@ ACTOR Centaur3 : Centaur2
 			CENT A 0 A_GiveInventory("AlreadySpawned",1)
 			CENT A 0
 			Goto "Super::Spawn"
+		Melee:
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionReflectionRemover") // A_CentaurDefend can jump to Melee
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
+			Goto "Super::Melee"
 		Pain:
 			CENT G 6 A_Pain
-			CENT G 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) >= 4, "See")
-			CENT G 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) >= 1, "PainShieldReduction")
-			CENT G 6 A_SetReflectiveInvulnerable
+			TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, "See")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainTrigger")
+			CENT G 6 A_GiveInventory("SamsaraMonsterShieldReductionReflectionTrigger")
 			CENT EEE 15 A_CentaurDefend
-			CENT E 1 A_UnsetReflectiveInvulnerable
-			Goto See
-		PainShieldReduction:
-			CENT G 0 A_ChangeFlag(NOPAIN,1)
-			CENT G 6 A_GiveInventory("SamsaraMonsterShieldReductionTrigger",1)
-			CENT EEE 15 A_CentaurDefend
-			CENT E 1 A_GiveInventory("SamsaraMonsterShieldReductionRemover",1)
-			CENT G 0 A_ChangeFlag(NOPAIN,0)
+			CENT E 1 A_GiveInventory("SamsaraMonsterShieldReductionReflectionRemover")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
 			Goto See
 		Pain.ShrinkerDMG:
 			CENT G 0
@@ -334,20 +332,18 @@ ACTOR CentaurLeader3 : CentaurLeader2
 			CENT A 0 A_GiveInventory("AlreadySpawned",1)
 			CENT A 0
 			Goto "Super::Spawn"
+		Melee:
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionReflectionRemover") // A_CentaurDefend can jump to Melee
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
+			Goto "Super::Melee"
 		Pain:
 			CENT G 6 A_Pain
-			CENT G 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) >= 4, "See")
-			CENT G 0 A_JumpIf(ACS_NamedExecuteWithResult("ReMixerCVarCheck",5) >= 1, "PainShieldReduction")
-			CENT G 6 A_SetReflectiveInvulnerable
+			TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, "See")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainTrigger")
+			CENT G 6 A_GiveInventory("SamsaraMonsterShieldReductionReflectionTrigger")
 			CENT EEE 15 A_CentaurDefend
-			CENT E 1 A_UnsetReflectiveInvulnerable
-			Goto See
-		PainShieldReduction:
-			CENT G 0 A_ChangeFlag(NOPAIN,1)
-			CENT G 6 A_GiveInventory("SamsaraMonsterShieldReductionTrigger",1)
-			CENT EEE 15 A_CentaurDefend
-			CENT E 1 A_GiveInventory("SamsaraMonsterShieldReductionRemover",1)
-			CENT G 0 A_ChangeFlag(NOPAIN,0)
+			CENT E 1 A_GiveInventory("SamsaraMonsterShieldReductionReflectionRemover")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
 			Goto See
 		Death:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
