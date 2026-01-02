@@ -288,13 +288,18 @@ ACTOR ForceInfightingToken : Trigger
 	}
 }
 
-actor SamsaraMonsterShieldReductionHasNoPain: Boolean {}
+actor SamsaraMonsterShieldReductionActive : Boolean {}
+actor SamsaraMonsterShieldReductionReflectionActive : Boolean {}
+actor SamsaraMonsterShieldReductionHasNoPain : Boolean {}
 
 actor SamsaraMonsterShieldReductionTrigger : Trigger
 {
     States
     {
       Pickup:
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, "PickupStop")
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionActive")
+      PickupStart:
         TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) <= 0, "PickupInvuln")
         TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) == 1, "Pickup75Percent")
         TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) == 2, "Pickup50Percent")
@@ -324,8 +329,11 @@ actor SamsaraMonsterShieldReductionReflectionTrigger : SamsaraMonsterShieldReduc
     States
     {
       Pickup:
+        TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, "PickupStop")
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionReflectionActive")
+      PickupStart:
         TNT1 A 0 A_SetReflective
-        goto Super::Pickup
+        goto Super::PickupStart
     }
 }
 
@@ -347,6 +355,10 @@ actor SamsaraMonsterShieldReductionRemover : Trigger
     States
     {
       Pickup:
+        TNT1 A 0 A_JumpIfInventory("SamsaraMonsterShieldReductionActive",1,"PickupStart")
+        stop
+
+      PickupStart:
         TNT1 A 0 A_UnSetInvulnerable
         TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction75")
         TNT1 A 0 A_TakeInventory("SamsaraMonsterShieldReduction50")
@@ -360,8 +372,12 @@ actor SamsaraMonsterShieldReductionReflectionRemover : SamsaraMonsterShieldReduc
     States
     {
       Pickup:
+        TNT1 A 0 A_JumpIfInventory("SamsaraMonsterShieldReductionReflectionActive",1,"PickupStart")
+        stop
+
+      PickupStart:
         TNT1 A 0 A_UnSetReflective
-        goto Super::Pickup
+        goto Super::PickupStart
     }
 }
 

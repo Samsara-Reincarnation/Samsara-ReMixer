@@ -103,7 +103,7 @@ ACTOR MMRandomizer_CyberWarrior : SamsaraMonsterCyberneticTotalGib
 			VD52 P 3 Fast A_Pain
 			TNT1 A 0 A_JumpIfCloser(512, "ClosePain")
 			VD52 P 3 Fast
-			TNT1 A 0 A_Jump(96, "See")
+			TNT1 A 0 A_Jump(96, "PainToSee")
 			TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, 23)
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainTrigger")
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionTrigger")
@@ -111,6 +111,10 @@ ACTOR MMRandomizer_CyberWarrior : SamsaraMonsterCyberneticTotalGib
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionRemover")
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
 			TNT1 A 0 A_Jump(160, "SeeShield")
+			Goto See
+		PainToSee:
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionRemover")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
 			Goto See
 		Pain.MightyBoot:
 			TNT1 A 0 A_ChangeFlag("NOPAIN",1)
@@ -126,7 +130,7 @@ ACTOR MMRandomizer_CyberWarrior : SamsaraMonsterCyberneticTotalGib
 			goto See
 		ClosePain:
 			VD52 P 3
-			TNT1 A 0 A_Jump(184, "See")
+			TNT1 A 0 A_Jump(184, "ClosePainToSee")
 			TNT1 A 0 A_JumpIf(CallACS("ReMixerCVarCheck", 5) >= 4, 23)
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainTrigger")
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionTrigger")
@@ -134,6 +138,10 @@ ACTOR MMRandomizer_CyberWarrior : SamsaraMonsterCyberneticTotalGib
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionRemover")
 			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
 			TNT1 A 0 A_Jump(48, "SeeShield")
+			Goto See
+		ClosePainToSee:
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionRemover")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionNoPainRemover")
 			Goto See
 		Death:
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
