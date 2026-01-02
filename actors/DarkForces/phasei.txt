@@ -78,8 +78,8 @@ ACTOR phase1_DF : SamsaraMonsterRobotic
 			TNT1 A 0 A_ChangeFlag(NOPAIN,1) //Safe checks
 			PHA1 Q 4 A_GiveInventory("SamsaraMonsterShieldReductionReflectionTrigger")
 			PHA1 RRR 15 A_CentaurDefend
-			PHA1 Q 4 A_GiveInventory("SamsaraMonsterShieldReductionReflectionRemover")
-			TNT1 A 0 A_ChangeFlag(NOPAIN,0)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterShieldReductionReflectionRemover")
+			PHA1 Q 4 A_ChangeFlag(NOPAIN,0)
 			Goto See
 		Death:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)			
