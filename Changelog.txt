@@ -21,11 +21,11 @@ Doom:
 
 Heretic:
 
+- The golem's health has been decreased (from 80 to 40).
+- The nitrogolem's health has been decreased (from 100 to 50).
 + The Disciple of D'Sparil's health has been increased (from 180 to 250).
-- The Golem's health has been decreased (from 80 to 40).
-- The Nitrogolem's health has been decreased (from 100 to 50).
-+ The Weredragon's health has been increased (from 220 to 300).
 + The Apprentice of D'Sparil has been added as a pain elemental replacement!
++ The weredragon's health has been increased (from 220 to 300).
 
 Hexen I:
 
