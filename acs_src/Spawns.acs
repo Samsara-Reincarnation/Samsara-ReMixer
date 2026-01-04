@@ -1628,7 +1628,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Wizard3Doom"}
 			},
 			{//Pain Elemental
-				{"Wizard3Doom"}
+				{"HereticApprentice"}
 			},
 			{//Hell Knight
 				{"Beast3Doom"}
@@ -1688,7 +1688,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Wizard3Doom"}
 			},
 			{//Super Cycloptis
-				{"Wizard3Doom"}
+				{"HereticApprentice"}
 			},
 			{//Quadrumpus
 				{"Snake3Doom"}
@@ -1784,7 +1784,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Wizard3Doom"}
 			},
 			{//Reiver (Buried)
-				{"Wizard3Doom"}
+				{"HereticApprentice"}
 			},
 			{//Brown Chaos Serpent
 				{"Snake3Doom"}
@@ -2626,8 +2626,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"ChainmailEttin3"}
 			},
 			{//Imp
-				{"FireDemon3Doom"},
-				{"ChainmailEttin3"}
+				{"FireDemon3Doom"}
 			},
 			{//Chaingun Guy
 				{"FireDemon3Doom"}
@@ -2707,8 +2706,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"ChainmailEttin3"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"FireDemon3Doom"},
-				{"ChainmailEttin3"}
+				{"FireDemon3Doom"}
 			},
 			{//Flemoidus Stridicus
 				{"Centaur3Doom"}
@@ -2748,8 +2746,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FireDemon3Doom"}
 			},
 			{//Fire Gargoyle
-				{"FireDemon3Doom"},
-				{"ChainmailEttin3"}
+				{"FireDemon3Doom"}
 			},
 			{//Golem
 				{"Ettin3Doom"}
@@ -15432,8 +15429,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Imp
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
-				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Chaingun Guy
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -15513,8 +15509,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Armored Flemoidus Bipedicus
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
-				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Stridicus
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -15554,8 +15549,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Fire Gargoyle
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
-				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Golem
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}

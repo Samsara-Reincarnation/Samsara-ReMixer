@@ -1,5 +1,6 @@
 ACTOR Beast3 : BeastTwo 
 {
+	Health 300
 	DropItem "CrossbowAmmo3", 84
 	+DONTRIP
 	States

@@ -1,5 +1,6 @@
 ACTOR Wizard3 : Wizard2 
 {
+	Health 250
 	DropItem "BlasterAmmo2", 84
     DropItem "HealPack2", 4
 	States

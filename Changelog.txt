@@ -21,6 +21,10 @@ Doom:
 
 Heretic:
 
++ The Disciple of D'Sparil's health has been increased (from 180 to 250).
+- The Golem's health has been decreased (from 80 to 40).
+- The Nitrogolem's health has been decreased (from 100 to 50).
++ The Weredragon's health has been increased (from 220 to 300).
 + The Apprentice of D'Sparil has been added as a pain elemental replacement!
 
 Hexen I:
@@ -28,6 +32,7 @@ Hexen I:
 ! Hexen I slot 2 equipment drop visuals have been expanded to include Parias (Reincarnation) and Baratus' respective slot 2 weapons.
 - The Ettin no longer has a chance of dropping slot 2 or slot 4 equipment if Doom-style weapon drops are enabled.
 + The Chainmail Ettin has been added as a shotgun guy replacement!
+- The Ettin no longer has a chance to spawn as an imp replacement.
 
 Marathon:
 
