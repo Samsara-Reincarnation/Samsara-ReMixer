@@ -47,6 +47,7 @@ Sleg Infantryman - For making the Battle Droid sprites used in Xim's Star Wars D
 Perdition's Gate Enjoyer - for providing sprites for the Blood Cultists and Hectebus pain rotations
 Patrick Haslow & Matthew Hallaron - for making the Scout Trooper sprites used in Xim's Star Wars Doom
 MagicWazard & Neoworm - for making the Chainmail Ettin DECORATE and sprites respectively
+DBThanatos - for making the assets for the Apprentice of D'Sparil used in the QC:DE Heretic theme
 
 Original monsters and sprites/sounds belong to their respective owners, including:
 

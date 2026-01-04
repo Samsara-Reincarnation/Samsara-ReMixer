@@ -52,6 +52,7 @@
 #include "actors/HereticMixer/Dsparil.txt"
 #include "actors/HereticMixer/Misc.txt"
 #include "actors/HereticMixer/CyCloneGrunt.txt"
+#include "actors/HereticMixer/Apprentice.txt"
 
 // Hexen
 

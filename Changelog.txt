@@ -19,6 +19,10 @@ Doom:
 * Fixed the cyber baron using the wrong sound when dying.
 * Fixed the archon of Hell using the baron of Hell sprites when hit by the Stronghold stunner rifle.
 
+Heretic:
+
++ The Apprentice of D'Sparil has been added as a pain elemental replacement!
+
 Hexen I:
 
 ! Hexen I slot 2 equipment drop visuals have been expanded to include Parias (Reincarnation) and Baratus' respective slot 2 weapons.

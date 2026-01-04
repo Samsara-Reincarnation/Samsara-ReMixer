@@ -811,6 +811,50 @@ object HereticTeleportFog
 	frame TEL7H { light HERETICTELEPORTFOG5 }
 }
 
+// Apprentice fireball
+flickerlight APPRENTICEBALL
+{
+	color 0.6 0.6 1.0
+	size 40
+	secondarysize 48
+	chance 0.4
+}
+
+flickerlight APPRENTICEBALL_X1
+{
+	color 0.4 0.4 0.7
+	size 48
+	secondarysize 56
+	chance 0.4
+}
+
+flickerlight APPRENTICEBALL_X2
+{
+	color 0.25 0.25 0.4
+	size 56
+	secondarysize 64
+	chance 0.4
+}
+
+flickerlight APPRENTICEBALL_X3
+{
+	color 0.1 0.1 0.2
+	size 64
+	secondarysize 72
+	chance 0.4
+}
+
+object HereticApprenticeFX
+{
+	frame FX15H { light APPRENTICEBALL }
+	frame FX15I { light APPRENTICEBALL }
+	frame FX15J { light APPRENTICEBALL }
+
+	frame FX15K { light APPRENTICEBALL_X1 }
+	frame FX15L { light APPRENTICEBALL_X2 }
+	frame FX15M { light APPRENTICEBALL_X3 }
+}
+
 // -----------
 // -- Items --
 // -----------
