@@ -5,7 +5,7 @@ ACTOR HereticApprentice : Wizard3
 	Height 56
 	DropItem "CrossbowAmmo3", 84
 	DropItem "HealPack2", 4
-	BloodColor SkyBlue
+	BloodColor "0d 93 e3"
 	Tag "Apprentice of D'Sparil"
 	States
 	{
@@ -279,6 +279,7 @@ actor HereticApprentice_ShrinkEffect : HereticApprentice
 
 actor HereticApprenticeFX : MummyFX1
 {
+	Damage 6
 	Speed 12
 	States
 	{
