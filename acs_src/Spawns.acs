@@ -707,7 +707,8 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"MMRandomizer_FemaleRail"}
 			},
 			{//Super Shotgun Guy
-				{"SuperShotgunguy2"}
+				{"SuperShotgunguy2"},
+				{"Shocktrooper2_Samsara"}
 			},
 			{//Demon
 				{"DoomDemon3"},
@@ -792,10 +793,12 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"MMRandomizer_ArchonOfHell"}
 			},
 			{//Hectebus
-				{"Hectebus2"}
+				{"Hectebus2"},
+				{"Mindweaver2_Samsara"}
 			},
 			{//Belphegor
-				{"Belphegor2"}
+				{"Belphegor2"},
+				{"Vassago2_Samsara"}
 			},
 			{//Spider Mastermind
 				{"SpiderMastermind3"},
@@ -15366,7 +15369,8 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
 			},
 			{//Super Shotgun Guy
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
 			},
 			{//Demon
 				{0,0,6,0,0,6,0,0,6,0,0,6,0,0,6},
@@ -15451,10 +15455,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
 			},
 			{//Hectebus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
 			},
 			{//Belphegor
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
 			},
 			{//Spider Mastermind
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
