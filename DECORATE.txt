@@ -16,6 +16,7 @@
 #include "actors/Spawn/S-Heretic.txt"
 #include "actors/Spawn/S-Hexen.txt"
 #include "actors/Spawn/S-Strife.txt"
+#include "actors/Spawn/S-LOR.txt"
 
 
 

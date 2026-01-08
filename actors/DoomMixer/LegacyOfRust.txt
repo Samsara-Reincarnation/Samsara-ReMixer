@@ -854,7 +854,7 @@ actor Shocktrooper2Torso
 
 Actor Tyrant2_Samsara : SamsaraMonsterDemonicBoss
 {
-	Health 1000
+	Health 4000 // will get reduced to 1000
 	Radius 40
 	Height 110
 	Mass 1000

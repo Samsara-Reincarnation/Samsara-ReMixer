@@ -119,6 +119,10 @@ GoldenEye 007:
 
 -Games-
 
+Legacy of Rust/WadFusion:
+
++ Added dedicated spawn slots for the Legacy of Rust monsters.
+
 Heretic:
 
 ! The Heretic ReMixer enemies now spawn accordingly to their original spawn slots.

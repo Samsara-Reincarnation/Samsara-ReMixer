@@ -1,0 +1,101 @@
+ACTOR LegacyOfRustGhoulSpawner : ReMixerBaseSpawner
+{
+	Height 40
+	Mass 50
+	Radius 16
+	States
+	{
+		See:
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,77)
+			Goto Super::SeeWait
+	}
+}
+
+ACTOR LegacyOfRustGhoulSpawnerGenerator : LegacyOfRustGhoulSpawner { -COUNTKILL }
+
+ACTOR LegacyOfRustBansheeSpawner : ReMixerBaseSpawner
+{
+	Height 56
+	Mass 500
+	Radius 20
+	States
+	{
+		See:
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,78)
+			Goto Super::SeeWait
+	}
+}
+
+ACTOR LegacyOfRustBansheeSpawnerGenerator : LegacyOfRustBansheeSpawner { -COUNTKILL }
+
+ACTOR LegacyOfRustShocktrooperSpawner : ReMixerBaseSpawner
+{
+	Height 56
+	Mass 100
+	Radius 20
+	States
+	{
+		See:
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,79)
+			Goto Super::SeeWait
+	}
+}
+
+ACTOR LegacyOfRustShocktrooperSpawnerGenerator : LegacyOfRustShocktrooperSpawner { -COUNTKILL }
+
+ACTOR LegacyOfRustMindweaverSpawner : ReMixerBaseSpawner
+{
+	Height 64
+	Mass 600
+	Radius 64
+	States
+	{
+		See:
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,80)
+			Goto Super::SeeWait
+	}
+}
+
+ACTOR LegacyOfRustMindweaverSpawnerGenerator : LegacyOfRustMindweaverSpawner { -COUNTKILL }
+
+ACTOR LegacyOfRustVassagoSpawner : ReMixerBaseSpawner
+{
+	Height 64
+	Mass 1000
+	Radius 24
+	+BOSSDEATH
+	States
+	{
+		See:
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,81)
+			Goto Super::SeeWait
+		Continue:
+			Goto Super::BossWait
+		Death:
+			TNT1 A 6 A_BossDeath
+			Stop
+	}
+}
+
+ACTOR LegacyOfRustVassagoSpawnerGenerator : LegacyOfRustVassagoSpawner { -COUNTKILL -BOSSDEATH }
+
+ACTOR LegacyOfRustTyrantSpawner : ReMixerBaseSpawner
+{
+	Height 110
+	Mass 1000
+	Radius 40
+	+BOSSDEATH
+	States
+	{
+		See:
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,82)
+			Goto Super::SeeWait
+		Continue:
+			Goto Super::BossWait
+		Death:
+			TNT1 A 6 A_BossDeath
+			Stop
+	}
+}
+
+ACTOR LegacyOfRustTyrantSpawnerGenerator : LegacyOfRustTyrantSpawner { -COUNTKILL -BOSSDEATH }

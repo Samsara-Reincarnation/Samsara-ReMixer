@@ -85,6 +85,22 @@ o MONSTER_SLOT
 			69: Heresiarch
 			70: Korax
 			71: Pig
+
+		~ Strife ~
+			72: Stalker (Strife)
+			73: Sentinel
+			74: Reaver
+			75: Crusader
+			76: Inquisitor
+
+		~ Legacy of Rust ~
+			77: Ghoul
+			78: Banshee
+			79: Shocktrooper
+			80: Mindweaver
+			81: Vassago
+			82: Tyrant
+
 o MAXPERSLOT
 	- This variable is the slot for a decision on the monster from the slot, like spawning a zombieman variant
 
@@ -350,6 +366,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"Cyberdemon3"}
+			},
+			{//Ghoul
+				{"Ghoul2_Samsara"}
+			},
+			{//Banshee
+				{"Banshee2_Samsara"}
+			},
+			{//Shocktrooper
+				{"Shocktrooper2_Samsara"}
+			},
+			{//Mindweaver
+				{"Mindweaver2_Samsara"}
+			},
+			{//Vassago
+				{"Vassago2_Samsara"}
+			},
+			{//Tyrant
+				{"Tyrant2_Samsara"}
 			}
 		},
 		{//64
@@ -589,6 +623,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Fatso64"}
 			},
 			{//Inquisitor
+				{"Cyberdemon64"}
+			},
+			{//Ghoul
+				{"LostSoul64"}
+			},
+			{//Banshee
+				{"LostSoul64"}
+			},
+			{//Shocktrooper
+				{"DarkImp64"}
+			},
+			{//Mindweaver
+				{"Arachnotron64"}
+			},
+			{//Vassago
+				{"BaronofHell64"}
+			},
+			{//Tyrant
 				{"Cyberdemon64"}
 			}
 		},
@@ -1174,6 +1226,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Cyberdemon3"},
 				{"MMRandomizer_DarkCyberdemon"},
 				{"MMRandomizer_Annihilator"}
+			},
+			{//Ghoul
+				{"Ghoul2_Samsara"}
+			},
+			{//Banshee
+				{"Banshee2_Samsara"}
+			},
+			{//Shocktrooper
+				{"Shocktrooper2_Samsara"}
+			},
+			{//Mindweaver
+				{"Mindweaver2_Samsara"}
+			},
+			{//Vassago
+				{"Vassago2_Samsara"}
+			},
+			{//Tyrant
+				{"Tyrant2_Samsara"}
 			}
 		},
 		{//Absolution & Outcast
@@ -1434,6 +1504,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"Cyberdemon64"}
+			},
+			{//Ghoul
+				{"LostSoul64"},
+				{"Stalker64"}
+			},
+			{//Banshee
+				{"LostSoul64"},
+				{"Stalker64"}
+			},
+			{//Shocktrooper
+				{"DarkImp64"}
+			},
+			{//Mindweaver
+				{"Arachnotron64"},
+				{"Nightcrawler64"}
+			},
+			{//Vassago
+				{"BaronofHell64"}
+			},
+			{//Tyrant
+				{"Cyberdemon64"}
 			}
 		}
 	},
@@ -1677,6 +1768,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"NewSnotfolus"}
+			},
+			{//Ghoul
+				{"FlemMine2"},
+				{"NewFlemoidusGyro"}
+			},
+			{//Banshee
+				{"FlemMine2"},
+				{"NewFlemoidusGyro"}
+			},
+			{//Shocktrooper
+				{"DarkArmoredFlemoid"}
+			},
+			{//Mindweaver
+				{"NewQuadrumpus"}
+			},
+			{//Vassago
+				{"OldFlemoidusMaximusDoom"}
+			},
+			{//Tyrant
+				{"NewSnotfolus"}
 			}
 		}
 	},
@@ -1916,6 +2027,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Beast3Doom"}
 			},
 			{//Inquisitor
+				{"Minotaur3"}
+			},
+			{//Ghoul
+				{"HereticImp3"}
+			},
+			{//Banshee
+				{"HereticImp3"}
+			},
+			{//Shocktrooper
+				{"HereticImpLeader3"}
+			},
+			{//Mindweaver
+				{"Snake3Doom"},
+				{"Beast3Doom"}
+			},
+			{//Vassago
+				{"Beast3Doom"}
+			},
+			{//Tyrant
 				{"Minotaur3"}
 			}
 		}
@@ -2199,6 +2329,29 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"BarnacleWilhelm"},
 				{"UberMutant"},
 				{"BarnacleWilhelm"}
+			},
+			{//Ghoul
+				{"WolfSpectre"}
+			},
+			{//Banshee
+				{"WolfSpectre"}
+			},
+			{//Shocktrooper
+				{"WolfOfficer"}
+			},
+			{//Mindweaver
+				{"OttoGiftmacherDoom"}
+			},
+			{//Vassago
+				{"HansGrosseDoom"},
+				{"GretelGrosseDoom"}
+			},
+			{//Tyrant
+				{"DoctorSchabbs"},
+				{"AngelofDeath"},
+				{"BarnacleWilhelm"},
+				{"UberMutant"},
+				{"BarnacleWilhelm"}
 			}
 		},
 		{//Lost Episodes
@@ -2449,6 +2602,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"GerhardtVonSchreiberDoom"}
 			},
 			{//Inquisitor
+				{"ProfessorQuarkblitz"},
+				{"TheAxe"}
+			},
+			{//Ghoul
+				{"SODSpectre"},
+				{"SODSpectre2"}
+			},
+			{//Banshee
+				{"SODSpectre"},
+				{"SODSpectre2"}
+			},
+			{//Shocktrooper
+				{"SODOfficer"}
+			},
+			{//Mindweaver
+				{"GerhardtVonSchreiberDoom"}
+			},
+			{//Vassago
+				{"GeneralleutnantStahlkopfDoom"}
+			},
+			{//Tyrant
 				{"ProfessorQuarkblitz"},
 				{"TheAxe"}
 			}
@@ -2783,6 +2957,28 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"TotenkopfSchabbsMutant"},
 				{"TotenkopfNarbengesicht"}
+			},
+			{//Ghoul
+				{"TotenkopfGhost"}
+			},
+			{//Banshee
+				{"TotenkopfGhost"}
+			},
+			{//Shocktrooper
+				{"TotenkopfWaffenSS"},
+				{"TotenkopfWaffenSS2"},
+				{"TotenkopfWaffenSS3"},
+				{"TotenkopfWaffenSSOfficer"}
+			},
+			{//Mindweaver
+				{"TotenkopfTrooperChaingun"}
+			},
+			{//Vassago
+				{"TotenkopfHansGrosse"}
+			},
+			{//Tyrant
+				{"TotenkopfSchabbsMutant"},
+				{"TotenkopfNarbengesicht"}
 			}
 		}
 	},
@@ -3029,6 +3225,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"IceGuy3Doom"}
 			},
 			{//Inquisitor
+				{"Heresiarch3Doom"}
+			},
+			{//Ghoul
+				{"FireDemon3Doom"}
+			},
+			{//Banshee
+				{"FireDemon3Doom"}
+			},
+			{//Shocktrooper
+				{"FireDemon3Doom"}
+			},
+			{//Mindweaver
+				{"Dragon3Doom"}
+			},
+			{//Vassago
+				{"Demon2CDoom"}
+			},
+			{//Tyrant
 				{"Heresiarch3Doom"}
 			}
 		}
@@ -3300,6 +3514,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"ScorpionTank"}
 			},
 			{//Inquisitor
+				{"SamsaraMixerBattlelordDoom"},
+				{"SamsaraMixerOverlordDoom"}
+			},
+			{//Ghoul
+				{"SentryDrone"}
+			},
+			{//Banshee
+				{"SentryDrone"}
+			},
+			{//Shocktrooper
+				{"AssaultEnforcer"}
+			},
+			{//Mindweaver
+				{"PigCopTank"}
+			},
+			{//Vassago
+				{"MiniBattlelordDoom"}
+			},
+			{//Tyrant
 				{"SamsaraMixerBattlelordDoom"},
 				{"SamsaraMixerOverlordDoom"}
 			}
@@ -3674,6 +3907,32 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"SamsaraMixerBattlelordDoom"},
 				{"SamsaraMixerOverlordDoom"}
+			},
+			{//Ghoul
+				{"SentryDrone"},
+				{"Seagull"}
+			},
+			{//Banshee
+				{"SentryDrone"},
+				{"Seagull"}
+			},
+			{//Shocktrooper
+				{"BlueSeaMonster"},
+				{"RedSeaMonster"},
+				{"GraySeaMonster"},
+				{"YellowSeaMonster"},
+				{"DarkBlueSeaMonster"},
+				{"GreenSeaMonster"}
+			},
+			{//Mindweaver
+				{"PigCopTank"}
+			},
+			{//Vassago
+				{"MiniBattlelordDoom"}
+			},
+			{//Tyrant
+				{"SamsaraMixerBattlelordDoom"},
+				{"SamsaraMixerOverlordDoom"}
 			}
 		},
 		{//Duke Nukem 64
@@ -3942,6 +4201,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"ScorpionTank"}
 			},
 			{//Inquisitor
+				{"SamsaraMixerBattlelordDoom"},
+				{"SamsaraMixerOverlordDoom"}
+			},
+			{//Ghoul
+				{"SentryDrone"}
+			},
+			{//Banshee
+				{"SentryDrone"}
+			},
+			{//Shocktrooper
+				{"AssaultEnforcer"}
+			},
+			{//Mindweaver
+				{"ScorpionTank"}
+			},
+			{//Vassago
+				{"MiniBattlelordDoom"}
+			},
+			{//Tyrant
 				{"SamsaraMixerBattlelordDoom"},
 				{"SamsaraMixerOverlordDoom"}
 			}
@@ -4387,6 +4665,39 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"JuggernautMajor"},
 				{"JuggernautMinor"}
+			},
+			{//Ghoul
+				{"DroneMinor"},
+				{"MWasp"},
+				{"M2Tick"},
+				{"DroneMajor"},
+				{"MWasp2"},
+				{"M2TickBomb"}
+			},
+			{//Banshee
+				{"DroneMinor"},
+				{"MWasp"},
+				{"M2Tick"},
+				{"DroneMajor"},
+				{"MWasp2"},
+				{"M2TickBomb"}
+			},
+			{//Shocktrooper
+				{"TrooperMajor"},
+				{"M1TrooperMajor"}
+			},
+			{//Mindweaver
+				{"FlameCyborgMinor"},
+				{"FlameCyborgMajor"}
+			},
+			{//Vassago
+				{"HunterMajor"},
+				{"M1HunterMajor"},
+				{"MotherofAllHunters"}
+			},
+			{//Tyrant
+				{"JuggernautMajor"},
+				{"JuggernautMinor"}
 			}
 		}
 	},
@@ -4687,6 +4998,28 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"Pterodactylus"},
 				{"QArmagon"}
+			},
+			{//Ghoul
+				{"QSpikeMine"}
+			},
+			{//Banshee
+				{"QSpikeMine"}
+			},
+			{//Shocktrooper
+				{"QGremlin"}
+			},
+			{//Mindweaver
+				{"Vore"}
+			},
+			{//Vassago
+				{"QGuardian2"},
+				{"QGuardian3"},
+				{"QGuardian4"},
+				{"QMummy"}
+			},
+			{//Tyrant
+				{"Pterodactylus"},
+				{"QArmagon"}
 			}
 		}
 	},
@@ -4946,6 +5279,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"TomHall"},
 				{"NME"}
+			},
+			{//Ghoul
+				{"ExplosiveDiskJr"},
+				{"ExplosiveDiskSr"}
+			},
+			{//Banshee
+				{"ExplosiveDiskJr"},
+				{"ExplosiveDiskSr"}
+			},
+			{//Shocktrooper
+				{"OverPatrol"}
+			},
+			{//Mindweaver
+				{"MonkDeathFire"}
+			},
+			{//Vassago
+				{"GeneralDarian"}
+			},
+			{//Tyrant
+				{"TomHall"},
+				{"NME"}
 			}
 		},
 		{//Alternate
@@ -5201,6 +5555,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Ballistikraft"}
 			},
 			{//Inquisitor
+				{"TomHall"},
+				{"BigJohn"}
+			},
+			{//Ghoul
+				{"ExplosiveDiskJr"},
+				{"ExplosiveDiskSr"}
+			},
+			{//Banshee
+				{"ExplosiveDiskJr"},
+				{"ExplosiveDiskSr"}
+			},
+			{//Shocktrooper
+				{"OverPatrolAlt"}
+			},
+			{//Mindweaver
+				{"MonkDeathFireAlt"}
+			},
+			{//Vassago
+				{"GeneralDarian"}
+			},
+			{//Tyrant
 				{"TomHall"},
 				{"BigJohn"}
 			}
@@ -5516,6 +5891,30 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"CrawlerBeast"},
 				{"SpectorDemon"},
 				{"ArmoredStalker"}
+			},
+			{//Ghoul
+				{"PerScanDrone"},
+				{"PlasmaSphere"}
+			},
+			{//Banshee
+				{"PerScanDrone"},
+				{"PlasmaSphere"}
+			},
+			{//Shocktrooper
+				{"MutantBrown"}
+			},
+			{//Mindweaver
+				{"SpiderMutant"}
+			},
+			{//Vassago
+				{"ExpHumanBlue"},
+				{"CyborgWarrior"}
+			},
+			{//Tyrant
+				{"GiantStalker"},
+				{"CrawlerBeast"},
+				{"SpectorDemon"},
+				{"ArmoredStalker"}
 			}
 		}
 	},
@@ -5760,6 +6159,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"MotherSpider"}
 			},
 			{//Inquisitor
+				{"Cerberus"},
+				{"Cheogh"}
+			},
+			{//Ghoul
+				{"BloodBat"}
+			},
+			{//Banshee
+				{"BloodBat"}
+			},
+			{//Shocktrooper
+				{"BloodAcolyte","","","","CultistWellDone","CultistExtraCrispy"}
+			},
+			{//Mindweaver
+				{"Zealot","","","","CultistWellDone","CultistExtraCrispy"}
+			},
+			{//Vassago
+				{"BloodBeast"}
+			},
+			{//Tyrant
 				{"Cerberus"},
 				{"Cheogh"}
 			}
@@ -6027,6 +6445,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"StrifeInquisitor"}
+			},
+			{//Ghoul
+				{"StrifeSentinel"}
+			},
+			{//Banshee
+				{"StrifeSentinel"}
+			},
+			{//Shocktrooper
+				{"StrifeCultist"}
+			},
+			{//Mindweaver
+				{"NewAlienSpectre2"}
+			},
+			{//Vassago
+				{"NewStrifeBishop"}
+			},
+			{//Tyrant
+				{"NewAlienSpectre5"},
+				{"StrifeInquisitor"}
 			}
 		}
 	},
@@ -6282,6 +6719,29 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"RSA"},
 				{"Skaal"}
+			},
+			{//Ghoul
+				{"PatrolEyeSpawner"},
+				{"MiniBio"},
+				{"GunTurret1"}
+			},
+			{//Banshee
+				{"PatrolEyeSpawner"},
+				{"MiniBio"},
+				{"GunTurret1"}
+			},
+			{//Shocktrooper
+				{"HSD"}
+			},
+			{//Mindweaver
+				{"LSD2"}
+			},
+			{//Vassago
+				{"RotoDroid"}
+			},
+			{//Tyrant
+				{"RSA"},
+				{"Skaal"}
 			}
 		}
 	},
@@ -6533,6 +6993,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Tymok"},
 				{"Solrac"},
 				{"C7AlienTeleport"}
+			},
+			{//Ghoul
+				{"C7SectorProbe"}
+			},
+			{//Banshee
+				{"C7SectorProbe"}
+			},
+			{//Shocktrooper
+				{"Bandor"}
+			},
+			{//Mindweaver
+				{"Nerraw"}
+			},
+			{//Vassago
+				{"EniramBoss"}
+			},
+			{//Tyrant
+				{"Tymok"},
+				{"Solrac"},
+				{"C7AlienTeleport"}
 			}
 		}
 	},
@@ -6777,6 +7257,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"SubestronBoss"}
+			},
+			{//Ghoul
+				{"RMRLaserDrone"},
+				{"RMRGrenadeDrone"}
+			},
+			{//Banshee
+				{"RMRLaserDrone"},
+				{"RMRGrenadeDrone"}
+			},
+			{//Shocktrooper
+				{"UnShockTrooper"}
+			},
+			{//Mindweaver
+				{"RMREstronBig"}
+			},
+			{//Vassago
+				{"RMREstronBig"}
+			},
+			{//Tyrant
+				{"SubestronBoss"}
 			}
 		}
 	},
@@ -7020,6 +7520,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"KellDragon"}
 			},
 			{//Inquisitor
+				{"Phase3_df"}
+			},
+			{//Ghoul
+				{"DFRemote"}
+			},
+			{//Banshee
+				{"DFRemote"}
+			},
+			{//Shocktrooper
+				{"DF_Rodian"}
+			},
+			{//Mindweaver
+				{"trandoshan_1"}
+			},
+			{//Vassago
+				{"phase1_DF"}
+			},
+			{//Tyrant
 				{"Phase3_df"}
 			}
 		}
@@ -7267,6 +7785,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"IPOGMastiff"}
 			},
 			{//Inquisitor
+				{"IPOGSentinal"},
+				{"IPOGBrnourd"}
+			},
+			{//Ghoul
+				{"IPOGSentrySphere0"}
+			},
+			{//Banshee
+				{"IPOGSentrySphere0"}
+			},
+			{//Shocktrooper
+				{"IPOGBigHead"},
+				{"IPOGPriestess"}
+			},
+			{//Mindweaver
+				{"IPOGBigGuard"}
+			},
+			{//Vassago
+				{"IPOGWizard"}
+			},
+			{//Tyrant
 				{"IPOGSentinal"},
 				{"IPOGBrnourd"}
 			}
@@ -7555,6 +8093,34 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"DisruptorGuardDroid"}
 			},
 			{//Inquisitor
+				{"DisruptorGiantDisruptor"}
+			},
+			{//Ghoul
+				{"DisruptorDragonFly"},
+				{"AlienWanderer_T1"},
+				{"DsrptSilverSpikeBall"},
+				{"DsrptGoldSpikeBall"},
+				{"DsrptPsionicSpikeBall"}
+			},
+			{//Banshee
+				{"DisruptorDragonFly"},
+				{"AlienWanderer_T1"},
+				{"DsrptSilverSpikeBall"},
+				{"DsrptGoldSpikeBall"},
+				{"DsrptPsionicSpikeBall"}
+			},
+			{//Shocktrooper
+				{"DisruptorMRat"},
+				{"DisruptorTerroristDroid"}
+			},
+			{//Mindweaver
+				{"DisruptorMBrute"}
+			},
+			{//Vassago
+				{"DisruptorNDisruptor"},
+				{"DisruptorAGuardian"}
+			},
+			{//Tyrant
 				{"DisruptorGiantDisruptor"}
 			}
 		}
@@ -7970,6 +8536,29 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"WitchavenDragon"},
 				{"WTIllwhyrin"}
+			},
+			{//Ghoul
+				{"WTWillOWisp"}
+			},
+			{//Banshee
+				{"WTWillOWisp"}
+			},
+			{//Shocktrooper
+				{"WTLavaFiend"},
+				{"WTMuckDemoness"}
+			},
+			{//Mindweaver
+				{"WTCiraenSentinelSpellAndStar_2"},
+				{"WTCiraenSentinelSpell_2"},
+				{"WTCiraenSentinelBowAndStar_2"},
+				{"WTCiraenSentinelBow_2"}
+			},
+			{//Vassago
+				{"WTGreyWitch"}
+			},
+			{//Tyrant
+				{"WitchavenDragon"},
+				{"WTIllwhyrin"}
 			}
 		}
 	},
@@ -8360,6 +8949,28 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Gargantua"},
 				{"HLKingpin"},
 				{"HLPitWorm"}
+			},
+			{//Ghoul
+				{"Stukabat"}
+			},
+			{//Banshee
+				{"Stukabat"}
+			},
+			{//Shocktrooper
+				{"HLPitDrone"},
+				{"HECU_Sarge"}
+			},
+			{//Mindweaver
+				{"HLAbramsGun"},
+				{"HLBradleyGun"}
+			},
+			{//Vassago
+				{"ShockTrooper"}
+			},
+			{//Tyrant
+				{"Gargantua"},
+				{"HLKingpin"},
+				{"HLPitWorm"}
 			}
 		},
 		{//Opposing Force
@@ -8740,6 +9351,28 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Gargantua"},
 				{"HLKingpin"},
 				{"HLPitWorm"}
+			},
+			{//Ghoul
+				{"Stukabat"}
+			},
+			{//Banshee
+				{"Stukabat"}
+			},
+			{//Shocktrooper
+				{"Gonome"},
+				{"HLPitDrone"},
+				{"Vortigaunt","","","","HLHard","HLNightmare"}
+			},
+			{//Mindweaver
+				{"Voltigore"}
+			},
+			{//Vassago
+				{"ShockTrooper"}
+			},
+			{//Tyrant
+				{"Gargantua"},
+				{"HLKingpin"},
+				{"HLPitWorm"}
 			}
 		}
 	},
@@ -9067,6 +9700,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SumoSmall"}
 			},
 			{//Inquisitor
+				{"SerpentGodBig"},
+				{"SumoBig"}
+			},
+			{//Ghoul
+				{"SWHornetWasp"}
+			},
+			{//Banshee
+				{"SWHornetWasp"}
+			},
+			{//Shocktrooper
+				{"NinjaGray"},
+				{"SWHenchmanPurple"}
+			},
+			{//Mindweaver
+				{"SerpentGod"},
+				{"SWRipperBig"}
+			},
+			{//Vassago
+				{"SerpentGod"}
+			},
+			{//Tyrant
 				{"SerpentGodBig"},
 				{"SumoBig"}
 			}
@@ -9404,6 +10058,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"FireMother"}
+			},
+			{//Ghoul
+				{"CMDrone"},
+				{"CMDrone_2"}
+			},
+			{//Banshee
+				{"CMDrone"},
+				{"CMDrone_2"}
+			},
+			{//Shocktrooper
+				{"CMGangX"},
+				{"CMMung"}
+			},
+			{//Mindweaver
+				{"CMTank"}
+			},
+			{//Vassago
+				{"CMLoD"}
+			},
+			{//Tyrant
+				{"FireMother"}
 			}
 		}
 	},
@@ -9660,6 +10335,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Ammit"}
 			},
 			{//Inquisitor
+				{"PSSet"},
+				{"Selkis"}
+			},
+			{//Ghoul
+				{"ExHawk"}
+			},
+			{//Banshee
+				{"ExHawk"}
+			},
+			{//Shocktrooper
+				{"KilmaatSentry"}
+			},
+			{//Mindweaver
+				{"Magmantis"}
+			},
+			{//Vassago
+				{"ExMummy"}
+			},
+			{//Tyrant
 				{"PSSet"},
 				{"Selkis"}
 			}
@@ -10163,6 +10857,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"Assface"}
+			},
+			{//Ghoul
+				{"Mosquito"}
+			},
+			{//Banshee
+				{"Mosquito"}
+			},
+			{//Shocktrooper
+				{"DaisyNDoylie"}
+			},
+			{//Mindweaver
+				{"DoyleBike"},
+				{"DoyleBike_Green"}
+			},
+			{//Vassago
+				{"AlienHulk"},
+				{"AlienHulk_Blue"}
+			},
+			{//Tyrant
+				{"Assface"}
 			}
 		}
 	},
@@ -10485,6 +11199,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Q2Gladiator"}
 			},
 			{//Inquisitor
+				{"Q2TankBoss"},
+				{"Q2Hornet"},
+				{"Q2Carrier"}
+			},
+			{//Ghoul
+				{"Q2Flyer"}
+			},
+			{//Banshee
+				{"Q2Flyer"}
+			},
+			{//Shocktrooper
+				{"Q2Gunner"}
+			},
+			{//Mindweaver
+				{"Q2Medic"},
+				{"Q2BrainBetaClass"}
+			},
+			{//Vassago
+				{"Q2TankCommander"}
+			},
+			{//Tyrant
 				{"Q2TankBoss"},
 				{"Q2Hornet"},
 				{"Q2Carrier"}
@@ -10820,6 +11555,32 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Hexen2Death"},
 				{"Hexen2Pestilence"},
 				{"Hexen2War"}
+			},
+			{//Ghoul
+				{"Hexen2FireImp"},
+				{"Hexen2IceImp"}
+			},
+			{//Banshee
+				{"Hexen2FireImp"},
+				{"Hexen2IceImp"}
+			},
+			{//Shocktrooper
+				{"Hexen2ArcherLord"},
+				{"Hexen2SnowTiger"}
+			},
+			{//Mindweaver
+				{"Hexen2WhiteYakman"},
+				{"Hexen2BrownYakman"},
+				{"Hexen2BlackYakman"}
+			},
+			{//Vassago
+				{"Hexen2ShadowWizard"}
+			},
+			{//Tyrant
+				{"Hexen2Famine"},
+				{"Hexen2Death"},
+				{"Hexen2Pestilence"},
+				{"Hexen2War"}
 			}
 		}
 	},
@@ -11085,6 +11846,28 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Goldeneye_TrevGuard"}
 			},
 			{//Inquisitor
+				{"Goldeneye_BaronSamedi"},
+				{"Goldeneye_Xenia"}
+			},
+			{//Ghoul
+				{"Goldeneye_JetPackGuard"}
+			},
+			{//Banshee
+				{"Goldeneye_JetPackGuard"}
+			},
+			{//Shocktrooper
+				{"Goldeneye_CamGuard"}
+			},
+			{//Mindweaver
+				{"Goldeneye_ArmorGuard"}
+			},
+			{//Vassago
+				{"Goldeneye_Oddjob"},
+				{"Goldeneye_Jaws"},
+				{"Goldeneye_Mayday"},
+				{"Goldeneye_ArmorGuard"}
+			},
+			{//Tyrant
 				{"Goldeneye_BaronSamedi"},
 				{"Goldeneye_Xenia"}
 			}
@@ -11378,6 +12161,28 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Goldfinger_GoldSuit"}
 			},
 			{//Inquisitor
+				{"Goldfinger_Oddjob"}
+			},
+			{//Ghoul
+				{"Goldfinger_JetpackGuard"}
+			},
+			{//Banshee
+				{"Goldfinger_JetpackGuard"}
+			},
+			{//Shocktrooper
+				{"Goldfinger_Golfer"},
+				{"Goldfinger_CartelGuard"},
+				{"Goldfinger_WhiteSuit"}
+			},
+			{//Mindweaver
+				{"Goldfinger_AlpsGuard"}
+			},
+			{//Vassago
+				{"Goldfinger_Kisch"},
+				{"Goldfinger_MeiLei"},
+				{"Goldfinger_Ling"}
+			},
+			{//Tyrant
 				{"Goldfinger_Oddjob"}
 			}
 		}
@@ -11746,6 +12551,29 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"Catacomb3D_Nemesis"}
+			},
+			{//Ghoul
+				{"Catacomb3D_Bat"},
+				{"CatacombArmageddon_Bat"},
+				{"CatacombAbyss_Wraith"}
+			},
+			{//Banshee
+				{"Catacomb3D_Bat"},
+				{"CatacombArmageddon_Bat"},
+				{"CatacombAbyss_Wraith"}
+			},
+			{//Shocktrooper
+				{"CatacombApocalypse_Wizard"}
+			},
+			{//Mindweaver
+				{"CatacombApocalypse_WalkingTank"}
+			},
+			{//Vassago
+				{"Catacomb3D_RedDemon"},
+				{"CatacombArmageddon_TwoHeadedDemon"}
+			},
+			{//Tyrant
+				{"Catacomb3D_Nemesis"}
 			}
 		}
 	},
@@ -11981,6 +12809,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"Cyberdemon3"}
+			},
+			{//Ghoul
+				{"LostSoul3"}
+			},
+			{//Banshee
+				{"LostSoul3"}
+			},
+			{//Shocktrooper
+				{"DarkImp2"}
+			},
+			{//Mindweaver
+				{"Arachnotron3"}
+			},
+			{//Vassago
+				{"BaronofHell3"}
+			},
+			{//Tyrant
+				{"Cyberdemon3"}
 			}
 		}
 	},
@@ -12215,6 +13061,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Fatso3"}
 			},
 			{//Inquisitor
+				{"Cyberdemon3"}
+			},
+			{//Ghoul
+				{"LostSoul3"}
+			},
+			{//Banshee
+				{"LostSoul3"}
+			},
+			{//Shocktrooper
+				{"DarkImp2"}
+			},
+			{//Mindweaver
+				{"Arachnotron3"}
+			},
+			{//Vassago
+				{"BaronofHell3"}
+			},
+			{//Tyrant
 				{"Cyberdemon3"}
 			}
 		}
@@ -12498,6 +13362,29 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"BarnacleWilhelm"},
 				{"UberMutant"},
 				{"BarnacleWilhelm"}
+			},
+			{//Ghoul
+				{"WolfSpectre"}
+			},
+			{//Banshee
+				{"WolfSpectre"}
+			},
+			{//Shocktrooper
+				{"WolfOfficer"}
+			},
+			{//Mindweaver
+				{"OttoGiftmacherDoom"}
+			},
+			{//Vassago
+				{"HansGrosseDoom"},
+				{"GretelGrosseDoom"}
+			},
+			{//Tyrant
+				{"DoctorSchabbs"},
+				{"AngelofDeath"},
+				{"BarnacleWilhelm"},
+				{"UberMutant"},
+				{"BarnacleWilhelm"}
 			}
 		},
 		{//Zandronum
@@ -12773,6 +13660,29 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"OttoGiftmacherDoom"}
 			},
 			{//Inquisitor
+				{"DoctorSchabbs"},
+				{"AngelofDeath"},
+				{"BarnacleWilhelm"},
+				{"UberMutant"},
+				{"BarnacleWilhelm"}
+			},
+			{//Ghoul
+				{"WolfSpectre"}
+			},
+			{//Banshee
+				{"WolfSpectre"}
+			},
+			{//Shocktrooper
+				{"WolfOfficer"}
+			},
+			{//Mindweaver
+				{"OttoGiftmacherDoom"}
+			},
+			{//Vassago
+				{"HansGrosseDoom"},
+				{"GretelGrosseDoom"}
+			},
+			{//Tyrant
 				{"DoctorSchabbs"},
 				{"AngelofDeath"},
 				{"BarnacleWilhelm"},
@@ -13245,6 +14155,37 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Q2Carrier"},
 				{"Pterodactylus"},
 				{"QArmagon"}
+			},
+			{//Ghoul
+				{"Q2Flyer"},
+				{"QSpikeMine"}
+			},
+			{//Banshee
+				{"Q2Flyer"},
+				{"QSpikeMine"}
+			},
+			{//Shocktrooper
+				{"Q2Gunner"},
+				{"QGremlin"}
+			},
+			{//Mindweaver
+				{"Q2Medic"},
+				{"Q2BrainBetaClass"},
+				{"Vore"}
+			},
+			{//Vassago
+				{"Q2TankCommander"},
+				{"QGuardian2"},
+				{"QGuardian3"},
+				{"QGuardian4"},
+				{"QMummy"}
+			},
+			{//Tyrant
+				{"Q2TankBoss"},
+				{"Q2Hornet"},
+				{"Q2Carrier"},
+				{"Pterodactylus"},
+				{"QArmagon"}
 			}
 		}
 	},
@@ -13532,6 +14473,34 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Inquisitor
 				{"DisruptorGiantDisruptor"}
+			},
+			{//Ghoul
+				{"DisruptorDragonFly"},
+				{"AlienWanderer_T1"},
+				{"DsrptSilverSpikeBall"},
+				{"DsrptGoldSpikeBall"},
+				{"DsrptPsionicSpikeBall"}
+			},
+			{//Banshee
+				{"DisruptorDragonFly"},
+				{"AlienWanderer_T1"},
+				{"DsrptSilverSpikeBall"},
+				{"DsrptGoldSpikeBall"},
+				{"DsrptPsionicSpikeBall"}
+			},
+			{//Shocktrooper
+				{"DisruptorMRat"},
+				{"DisruptorTerroristDroid"}
+			},
+			{//Mindweaver
+				{"DisruptorMBrute"}
+			},
+			{//Vassago
+				{"DisruptorNDisruptor"},
+				{"DisruptorAGuardian"}
+			},
+			{//Tyrant
+				{"DisruptorGiantDisruptor"}
 			}
 		}
 	},
@@ -13798,6 +14767,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"NewAlienSpectre5"},
 				{"StrifeInquisitor"}
+			},
+			{//Ghoul
+				{"StrifeSentinel"}
+			},
+			{//Banshee
+				{"StrifeSentinel"}
+			},
+			{//Shocktrooper
+				{"StrifeCultist"}
+			},
+			{//Mindweaver
+				{"NewAlienSpectre2"}
+			},
+			{//Vassago
+				{"NewStrifeBishop"}
+			},
+			{//Tyrant
+				{"NewAlienSpectre5"},
+				{"StrifeInquisitor"}
 			}
 		}
 	}
@@ -14036,6 +15024,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
@@ -14276,6 +15282,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
@@ -14861,6 +15885,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},
 				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14},
 				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
 		{//Absolution & Outcast
@@ -15121,6 +16163,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Banshee
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -15364,6 +16427,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -15603,6 +16686,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -15886,6 +16988,29 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
 		{//Lost Episodes
@@ -16136,6 +17261,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -16470,6 +17616,28 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -16716,6 +17884,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -16987,6 +18173,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -17361,6 +18566,32 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
 		{//Duke Nukem 64
@@ -17629,6 +18860,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -18074,6 +19324,39 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Inquisitor
 				{0.88,0.5,1,0.94,0.75,1,0,0,1,1.13,1.25,2,1.25,1.5,3},
 				{0.88,0.5,3,0.94,0.75,3,0,0,2,1.13,1.25,2,1.25,1.5,1}
+			},
+			{//Ghoul
+				{0.88,0.5,3,0.94,0.75,3,0,0,3,1.13,1.25,2,1.25,1.5,1},
+				{0,0,3,0,0,3,0,0,3,0,0,2,0,0,-1},
+				{0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1},
+				{0.88,0.5,1,0.94,0.75,1,0,0,2,1.13,1.25,3,1.25,1.5,4},
+				{0,0,-1,0,0,-1,0,0,1,0,0,3,0,0,4},
+				{0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1}
+			},
+			{//Banshee
+				{0.88,0.5,3,0.94,0.75,3,0,0,3,1.13,1.25,2,1.25,1.5,1},
+				{0,0,3,0,0,3,0,0,3,0,0,2,0,0,-1},
+				{0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1},
+				{0.88,0.5,1,0.94,0.75,1,0,0,2,1.13,1.25,3,1.25,1.5,4},
+				{0,0,-1,0,0,-1,0,0,1,0,0,3,0,0,4},
+				{0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1}
+			},
+			{//Shocktrooper
+				{0.88,0.5,-1,0.94,0.75,-1,0,0,1,1.13,1.25,2,1.25,1.5,4},
+				{0.88,0.5,-1,0.94,0.75,-1,0,0,1,1.13,1.25,2,1.25,1.5,4}
+			},
+			{//Mindweaver
+				{0.88,0.5,4,0.94,0.75,4,0,0,3,1.13,1.25,2,1.25,1.5,1},
+				{0.88,0.5,1,0.94,0.75,2,0,0,3,1.13,1.25,3,1.25,1.5,4}
+			},
+			{//Vassago
+				{0.88,0.5,5,0.94,0.75,5,0,0,5,1.13,1.25,5,1.25,1.5,5},
+				{0.88,0.5,5,0.94,0.75,5,0,0,5,1.13,1.25,5,1.25,1.5,5},
+				{0.88,0.5,1,0.94,0.75,1,0,0,2,1.13,1.25,3,1.25,1.5,4}
+			},
+			{//Tyrant
+				{0.88,0.5,1,0.94,0.75,1,0,0,1,1.13,1.25,2,1.25,1.5,3},
+				{0.88,0.5,3,0.94,0.75,3,0,0,2,1.13,1.25,2,1.25,1.5,1}
 			}
 		}
 	},
@@ -18374,6 +19657,28 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Inquisitor
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,3},
 				{0,0,1,0,0,1,0,0,2,0,0,2,0,0,2}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Tyrant
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,3},
+				{0,0,1,0,0,1,0,0,2,0,0,2,0,0,2}
 			}
 		}
 	},
@@ -18633,6 +19938,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Inquisitor
 				{0,0,2,1.5,1.5,3,1.67,1.67,2,2.0,2.0,3,2.25,2.25,3},
 				{0,0,-1,1.2,1.2,1,1.5,1.5,1,1.6,1.6,2,1.8,1.8,3}
+			},
+			{//Ghoul
+				{0.5,0.5,2,0,0,2,1.5,1.5,2,2.0,2.0,2,5.0,5.0,2},
+				{0,0.5,0,0,0,0,0,1.5,0,0,2.0,0,0,5.0,0}
+			},
+			{//Banshee
+				{0.5,0.5,2,0,0,2,1.5,1.5,2,2.0,2.0,2,5.0,5.0,2},
+				{0,0.5,0,0,0,0,0,1.5,0,0,2.0,0,0,5.0,0}
+			},
+			{//Shocktrooper
+				{0.9,0.9,0,0,0,0,1.09,1.09,0,1.27,1.27,0,2.0,2.0,0}
+			},
+			{//Mindweaver
+				{0.8,0.8,0,0,0,0,1.2,1.2,0,1.4,1.4,0,1.6,1.6,0}
+			},
+			{//Vassago
+				{0.65,0.65,0,0,0,0,1.05,1.05,0,1.22,1.22,0,1.44,1.44,0}
+			},
+			{//Tyrant
+				{0,0,2,1.5,1.5,3,1.67,1.67,2,2.0,2.0,3,2.25,2.25,3},
+				{0,0,-1,1.2,1.2,1,1.5,1.5,1,1.6,1.6,2,1.8,1.8,3}
 			}
 		},
 		{//Alternate
@@ -18888,6 +20214,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0.8,0,0,0,0,0,1.2,0,0,1.4,0,0,1.6,0}
 			},
 			{//Inquisitor
+				{0,0,2,1.5,1.5,3,1.67,1.67,2,2.0,2.0,3,2.25,2.25,3},
+				{0,0,-1,1.2,1.2,1,1.5,1.5,1,1.6,1.6,2,1.8,1.8,3}
+			},
+			{//Ghoul
+				{0.5,0.5,2,0,0,2,1.5,1.5,2,2.0,2.0,2,5.0,5.0,2},
+				{0,0.5,0,0,0,0,0,1.5,0,0,2.0,0,0,5.0,0}
+			},
+			{//Banshee
+				{0.5,0.5,2,0,0,2,1.5,1.5,2,2.0,2.0,2,5.0,5.0,2},
+				{0,0.5,0,0,0,0,0,1.5,0,0,2.0,0,0,5.0,0}
+			},
+			{//Shocktrooper
+				{0.9,0.9,0,0,0,0,1.09,1.09,0,1.27,1.27,0,2.0,2.0,0}
+			},
+			{//Mindweaver
+				{0.8,0.8,0,0,0,0,1.2,1.2,0,1.4,1.4,0,1.6,1.6,0}
+			},
+			{//Vassago
+				{0.65,0.65,0,0,0,0,1.05,1.05,0,1.22,1.22,0,1.44,1.44,0}
+			},
+			{//Tyrant
 				{0,0,2,1.5,1.5,3,1.67,1.67,2,2.0,2.0,3,2.25,2.25,3},
 				{0,0,-1,1.2,1.2,1,1.5,1.5,1,1.6,1.6,2,1.8,1.8,3}
 			}
@@ -19203,6 +20550,30 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0.5,2,0,0.75,2,0,0,2,0,1.25,2,0,1.4,2},
 				{0,0.5,2,0,0.75,2,0,0,2,0,1.25,2,0,1.5,2},
 				{0,0.5,1,0,0.75,1,0,0,1,0,1.25,1,0,1.4,1}
+			},
+			{//Ghoul
+				{0,0.5,4,0,0.75,4,0,0,4,0,1.25,4,0,1.5,4},
+				{0,0.75,3,0,0.9,3,0,0,3,0,1.2,3,0,1.4,3}
+			},
+			{//Banshee
+				{0,0.5,4,0,0.75,4,0,0,4,0,1.25,4,0,1.5,4},
+				{0,0.75,3,0,0.9,3,0,0,3,0,1.2,3,0,1.4,3}
+			},
+			{//Shocktrooper
+				{0,0.4,0,0,0.6,0,0,0,0,0,1.33,0,0,1.5,0}
+			},
+			{//Mindweaver
+				{0,0.6,0,0,0.75,0,0,0,0,0,1.25,0,0,1.5,0}
+			},
+			{//Vassago
+				{0,0.5,0,0,0.75,0,0,0,0,0,1.25,0,0,1.5,0},
+				{0,0.5,0,0,0.75,0,0,0,0,0,1.25,0,0,1.5,0}
+			},
+			{//Tyrant
+				{0,0.5,2,0,0.66,2,0,0,2,0,1.2,2,0,1.5,2},
+				{0,0.5,2,0,0.75,2,0,0,2,0,1.25,2,0,1.4,2},
+				{0,0.5,2,0,0.75,2,0,0,2,0,1.25,2,0,1.5,2},
+				{0,0.5,1,0,0.75,1,0,0,1,0,1.25,1,0,1.4,1}
 			}
 		}
 	},
@@ -19447,6 +20818,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,1.78,0,0,2.22,0,0,3.11,0,0,3.55,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,1.2,0,0,2.0,0,0,2.4,0,0,3.2,0},
+				{0,0,0,0,1.25,0,0,2.35,0,0,2.4,0,0,3.5,0}
+			},
+			{//Ghoul
+				{0,0,0,0,1.5,0,0,2.0,0,0,3.5,0,0,5.0,0}
+			},
+			{//Banshee
+				{0,0,0,0,1.5,0,0,2.0,0,0,3.5,0,0,5.0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,1.4,0,0,2.0,0,0,2.6,0,0,3.4,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,1.4,0,0,2.0,0,0,2.6,0,0,3.4,0}
+			},
+			{//Vassago
+				{0,0,0,0,1.2,0,0,1.5,0,0,1.7,0,0,2.0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,1.2,0,0,2.0,0,0,2.4,0,0,3.2,0},
 				{0,0,0,0,1.25,0,0,2.35,0,0,2.4,0,0,3.5,0}
 			}
@@ -19714,6 +21104,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,1,0,0,2,0,0,3,0,0,4,0,0,5},
+				{0,0,5,0,0,4,0,0,3,0,0,2,0,0,1}
 			}
 		}
 	},
@@ -19969,6 +21378,29 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0.8,0,4,0.9,0,4,1.25,0,4,1.5,0,4,2.0,0,4},
+				{0.8,0,1,0.9,0,1,1.25,0,1,1.5,0,1,2.0,0,1},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+			},
+			{//Banshee
+				{0.8,0,4,0.9,0,4,1.25,0,4,1.5,0,4,2.0,0,4},
+				{0.8,0,1,0.9,0,1,1.25,0,1,1.5,0,1,2.0,0,1},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -20220,6 +21652,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
 				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
 			}
 		}
 	},
@@ -20464,6 +21916,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,5,0,0,5,0,0,4,0,0,3,0,0,2},
+				{0,0,1,0,0,2,0,0,2,0,0,3,0,0,4}
+			},
+			{//Banshee
+				{0,0,5,0,0,5,0,0,4,0,0,3,0,0,2},
+				{0,0,1,0,0,2,0,0,2,0,0,3,0,0,4}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -20707,6 +22179,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -20954,6 +22444,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,5,0,0,5,0,0,4,0,0,3,0,0,2},
+				{0,0,2,0,0,3,0,0,3,0,0,3,0,0,4}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -21242,6 +22752,34 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,7,0,0,7,0,0,6,0,0,5,0,0,-1},
+				{0,0,6,0,0,7,0,0,5,0,0,3,0,0,-1},
+				{0,0,7,0,0,7,0,0,6,0,0,4,0,0,-1},
+				{0,0,2,0,0,3,0,0,4,0,0,6,0,0,4},
+				{0,0,-1,0,0,1,0,0,2,0,0,5,0,0,7}
+			},
+			{//Banshee
+				{0,0,7,0,0,7,0,0,6,0,0,5,0,0,-1},
+				{0,0,6,0,0,7,0,0,5,0,0,3,0,0,-1},
+				{0,0,7,0,0,7,0,0,6,0,0,4,0,0,-1},
+				{0,0,2,0,0,3,0,0,4,0,0,6,0,0,4},
+				{0,0,-1,0,0,1,0,0,2,0,0,5,0,0,7}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,2,0,0,3,0,0,3,0,0,4,0,0,5},
+				{0,0,1,0,0,1,0,0,2,0,0,2,0,0,2}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -21657,6 +23195,29 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Inquisitor
 				{0,0,4,0,0,3,0,0,3,0,0,2,0,0,1},
 				{0,0,1,0,0,2,0,0,3,0,0,3,0,0,4}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,5,0,0,5,0,0,5,0,0,2,0,0,4},
+				{0,0,2,0,0,2,0,0,3,0,0,1,0,0,3}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,4,0,0,3,0,0,3,0,0,2,0,0,1},
+				{0,0,1,0,0,2,0,0,3,0,0,3,0,0,4}
 			}
 		}
 	},
@@ -22047,6 +23608,28 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0.8,5,0,0.8,5,0,0.8,5,0,0,5,0,0,5},
 				{0,0.8,3,0,0.8,3,0,0.8,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
+			},
+			{//Ghoul
+				{0,0,5,0,0,5,0,0,5,0,2.0,5,0,2.0,5}
+			},
+			{//Banshee
+				{0,0,5,0,0,5,0,0,5,0,2.0,5,0,2.0,5}
+			},
+			{//Shocktrooper
+				{0,0,1,0,0,2,0,0,2,0,2.75,1,0,2.75,2},
+				{0,0.5,3,0,0.5,3,0,0.75,3,0,0,3,0,1.5,3}
+			},
+			{//Mindweaver
+				{0,0,2,0,0,3,0,0,3,0,0,4,0,0,5},
+				{0,0,1,0,0,2,0,0,3,0,0,5,0,0,7}
+			},
+			{//Vassago
+				{0,0.6,0,0,0.6,0,0,0,0,0,0,0,0,2.0,0}
+			},
+			{//Tyrant
+				{0,0.8,5,0,0.8,5,0,0.8,5,0,0,5,0,0,5},
+				{0,0.8,3,0,0.8,3,0,0.8,3,0,0,3,0,0,3},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			}
 		},
 		{//Opposing Force
@@ -22427,6 +24010,28 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0.8,5,0,0.8,5,0,0.8,5,0,0,5,0,0,5},
 				{0,0.8,3,0,0.8,3,0,0.8,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,2.0,2.0,0,0,2.0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,2.0,2.0,0,0,2.0,0}
+			},
+			{//Shocktrooper
+				{0,0,1,0,0,2,0,0,2,2.75,2.75,1,2.75,2.75,2},
+				{0,0,4,0,0,4,0,0,4,2.0,2.0,4,2.4,2.4,4},
+				{0,0,5,0,0,5,0,0,4,0,2.0,3,2.0,2.0,3}
+			},
+			{//Mindweaver
+				{0.711,0.711,0,0.711,0.711,0,0.711,0.711,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0.6,0.6,0,0.6,0.6,0,0,0,0,0,0,0,2.0,2.0,0}
+			},
+			{//Tyrant
+				{0,0.8,5,0,0.8,5,0,0.8,5,0,0,5,0,0,5},
+				{0,0.8,3,0,0.8,3,0,0.8,3,0,0,3,0,0,3},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			}
 		}
 	},
@@ -22754,6 +24359,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -23091,6 +24717,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -23347,6 +24994,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -23850,6 +25516,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,15,0,0,15,0,0,15,0,0,15,0,0,15},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Vassago
+				{0,0,25,0,0,25,0,0,25,0,0,25,0,0,25},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -24172,6 +25858,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -24507,6 +26214,32 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,2,0,0,2,0,0,2,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -24772,6 +26505,28 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -25065,6 +26820,28 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -25433,6 +27210,29 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -25668,6 +27468,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -25902,6 +27720,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -26185,6 +28021,29 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
 		{//Zandronum
@@ -26460,6 +28319,29 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -26932,6 +28814,37 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,3,0,0,3,0,0,1,0,0,1,0,0,5},
 				{0,0,4,0,0,4,0,0,1,0,0,1,0,0,6},
 				{0,0,2,0,0,2,0,0,1,0,0,1,0,0,4}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5}
+			},
+			{//Vassago
+				{0,0,7,0,0,7,0,0,7,0,0,7,0,0,7},
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
+			},
+			{//Tyrant
+				{0,0,3,0,0,3,0,0,1,0,0,1,0,0,5},
+				{0,0,3,0,0,3,0,0,1,0,0,1,0,0,5},
+				{0,0,3,0,0,3,0,0,1,0,0,1,0,0,5},
+				{0,0,4,0,0,4,0,0,1,0,0,1,0,0,6},
+				{0,0,2,0,0,2,0,0,1,0,0,1,0,0,4}
 			}
 		}
 	},
@@ -27219,6 +29132,34 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,7,0,0,7,0,0,6,0,0,5,0,0,-1},
+				{0,0,6,0,0,7,0,0,5,0,0,3,0,0,-1},
+				{0,0,7,0,0,7,0,0,6,0,0,4,0,0,-1},
+				{0,0,2,0,0,3,0,0,4,0,0,6,0,0,4},
+				{0,0,-1,0,0,1,0,0,2,0,0,5,0,0,7}
+			},
+			{//Banshee
+				{0,0,7,0,0,7,0,0,6,0,0,5,0,0,-1},
+				{0,0,6,0,0,7,0,0,5,0,0,3,0,0,-1},
+				{0,0,7,0,0,7,0,0,6,0,0,4,0,0,-1},
+				{0,0,2,0,0,3,0,0,4,0,0,6,0,0,4},
+				{0,0,-1,0,0,1,0,0,2,0,0,5,0,0,7}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,2,0,0,3,0,0,3,0,0,4,0,0,5},
+				{0,0,1,0,0,1,0,0,2,0,0,2,0,0,2}
+			},
+			{//Tyrant
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -27483,6 +29424,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Inquisitor
+				{0,0,1,0,0,2,0,0,3,0,0,4,0,0,5},
+				{0,0,5,0,0,4,0,0,3,0,0,2,0,0,1}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,1,0,0,2,0,0,3,0,0,4,0,0,5},
 				{0,0,5,0,0,4,0,0,3,0,0,2,0,0,1}
 			}

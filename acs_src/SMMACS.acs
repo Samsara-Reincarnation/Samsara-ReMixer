@@ -5,7 +5,7 @@
 
 #define MAX_GAME_TYPES 34
 #define MAX_ALTS 5
-#define MONSTER_SLOT 77
+#define MONSTER_SLOT 83
 #define MAXPERSLOT 20
 #define MAX_ITEMS 15
 #define MAX_STRING_ITEMS 6
@@ -47,7 +47,8 @@ str monsterReplacementsStr[MONSTER_SLOT] = {
 	"mm_replace_afrit", "mm_replace_darkbishop", "mm_replace_centaur", "mm_replace_slaughtaur", "mm_replace_greenchaosserpent",
 	"mm_replace_stalker", "mm_replace_stalkerboss", "mm_replace_wendigo", "mm_replace_reiver", "mm_replace_reiverburied",
 	"mm_replace_brownchaosserpent", "mm_replace_traductus", "mm_replace_zedek", "mm_replace_menelkir", "mm_replace_heresiarch",
-	"mm_replace_korax", "mm_replace_pig", "mm_replace_strifestalker", "mm_replace_sentinel", "mm_replace_reaver", "mm_replace_crusader", "mm_replace_inquisitor"
+	"mm_replace_korax", "mm_replace_pig", "mm_replace_strifestalker", "mm_replace_sentinel", "mm_replace_reaver", "mm_replace_crusader", "mm_replace_inquisitor",
+	"mm_replace_ghoul", "mm_replace_banshee", "mm_replace_shocktrooper", "mm_replace_mindweaver", "mm_replace_vassago", "mm_replace_tyrant"
 };
 
 int gamePruneValues[MAX_GAME_TYPES][MAX_ADDON_SETS] = {
@@ -636,7 +637,7 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 	if (oldSlot != -1 && monReplForSlot != oldSlot && monReplForSlot != -1)
 	{
 		// Check for monsters with A_BossDeath calls, non-bosses should instantly call for A_KillMaster
-		if(monSlot != 15 && monSlot != 16 && monSlot != 19 && monSlot != 22 && monSlot != 23 && monSlot != 50 && monSlot != 51 && monSlot != 52 && monSlot != 66 && monSlot != 67 && monSlot != 68 && monSlot != 69 && monSlot != 70)
+		if(monSlot != 15 && monSlot != 16 && monSlot != 19 && monSlot != 22 && monSlot != 23 && monSlot != 50 && monSlot != 51 && monSlot != 52 && monSlot != 66 && monSlot != 67 && monSlot != 68 && monSlot != 69 && monSlot != 70 && monSlot != 75 && monSlot != 81 && monSlot != 82)
 		{
 			if (GetCVar("samsara_zscriptready") == 1) { GiveInventory("SamsaraCountKillDisablerZS", 1); }
 			else { GiveInventory("SamsaraCountKillDisabler", 1); }
@@ -707,6 +708,12 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 			SetActorProperty(0, APROP_RenderStyle, STYLE_Translucent);
 			SetActorProperty(0, APROP_Alpha, 0.4);
 		}
+	}
+
+	// Reduce tyrant monster health by 75%
+	if (monSlot == 82)
+	{
+		SetActorProperty(0,APROP_Health,FixedMul(GetActorProperty(0,APROP_Health),0.25));
 	}
 }
 

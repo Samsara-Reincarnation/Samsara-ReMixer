@@ -1,8 +1,8 @@
-actor Banshee_SamsaraRemixer : LostSoulSpawner replaces ID24Banshee {}
-actor Ghoul_SamsaraRemixer : LostSoulSpawner replaces ID24Ghoul {}
-actor Mindweaver_SamsaraRemixer : ArachnotronSpawner replaces ID24Mindweaver {}
-actor Shocktrooper_SamsaraRemixer : DarkImpSpawner replaces ID24PlasmaGuy {}
-actor Tyrant_SamsaraRemixer : BaronOfHellSpawner replaces ID24Tyrant {}
-actor TyrantBoss1_SamsaraRemixer : BaronOfHellSpawner replaces ID24TyrantBoss1 {}
-actor TyrantBoss2_SamsaraRemixer : BaronOfHellSpawner replaces ID24TyrantBoss2 {}
-actor Vassago_SamsaraRemixer : BelphegorSpawner replaces ID24Vassago {}
+actor Banshee_SamsaraRemixer : LegacyOfRustBansheeSpawner replaces ID24Banshee {}
+actor Ghoul_SamsaraRemixer : LegacyOfRustGhoulSpawner replaces ID24Ghoul {}
+actor Mindweaver_SamsaraRemixer : LegacyOfRustMindweaverSpawner replaces ID24Mindweaver {}
+actor Shocktrooper_SamsaraRemixer : LegacyOfRustShocktrooperSpawner replaces ID24PlasmaGuy {}
+actor Tyrant_SamsaraRemixer : LegacyOfRustTyrantSpawner replaces ID24Tyrant {}
+actor TyrantBoss1_SamsaraRemixer : LegacyOfRustTyrantSpawner replaces ID24TyrantBoss1 {}
+actor TyrantBoss2_SamsaraRemixer : LegacyOfRustTyrantSpawner replaces ID24TyrantBoss2 {}
+actor Vassago_SamsaraRemixer : LegacyOfRustVassagoSpawner replaces ID24Vassago {}
