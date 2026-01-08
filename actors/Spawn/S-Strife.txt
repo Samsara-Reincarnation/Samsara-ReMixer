@@ -7,7 +7,7 @@ ACTOR StrifeStalkerReplacer : ReMixerBaseSpawner replaces Stalker
 	States
 	{
 		See:
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,5)
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,72)
 			Goto Super::SeeWait
 	}
 }
@@ -22,7 +22,7 @@ ACTOR StrifeSentinelReplacer : ReMixerBaseSpawner replaces Sentinel
 	States
 	{
 		See:
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,9)
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,73)
 			Goto Super::SeeWait
 	}
 }
@@ -37,22 +37,7 @@ ACTOR StrifeReaverReplacer : ReMixerBaseSpawner replaces Reaver
 	States
 	{
 		See:
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,11)
-			Goto Super::SeeWait
-	}
-}
-
-ACTOR StrifeTemplarReplacer : ReMixerBaseSpawner replaces Templar
-{
-	Game Strife
-	Height 60
-	Mass 500
-	Radius 20
-	ConversationID 62, 61, 62
-	States
-	{
-		See:
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,14)
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,74)
 			Goto Super::SeeWait
 	}
 }
@@ -68,7 +53,7 @@ ACTOR StrifeCrusaderReplacer : ReMixerBaseSpawner replaces Crusader
 	States
 	{
 		See:
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,16)
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,75)
 			Goto Super::SeeWait
 		Continue:
 			Goto Super::BossWait
@@ -89,7 +74,7 @@ ACTOR StrifeInquisitorReplacer : ReMixerBaseSpawner replaces Inquisitor
 	States
 	{
 		See:
-			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,23)
+			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,76)
 			Goto Super::SeeWait
 		Continue:
 			Goto Super::BossWait
@@ -102,7 +87,6 @@ ACTOR StrifeInquisitorReplacer : ReMixerBaseSpawner replaces Inquisitor
 Actor StrifeStalkerReplacerGenerator : StrifeStalkerReplacer { -COUNTKILL }
 Actor StrifeSentinelReplacerGenerator : StrifeSentinelReplacer { -COUNTKILL }
 Actor StrifeReaverReplacerGenerator : StrifeReaverReplacer { -COUNTKILL }
-Actor StrifeTemplarReplacerGenerator : StrifeTemplarReplacer { -COUNTKILL }
 Actor StrifeCrusaderReplacerGenerator : StrifeCrusaderReplacer { -COUNTKILL -BOSSDEATH }
 Actor StrifeInquisitorReplacerGenerator : StrifeInquisitorReplacer { -COUNTKILL }
 

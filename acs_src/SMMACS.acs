@@ -5,7 +5,7 @@
 
 #define MAX_GAME_TYPES 34
 #define MAX_ALTS 5
-#define MONSTER_SLOT 72
+#define MONSTER_SLOT 77
 #define MAXPERSLOT 20
 #define MAX_ITEMS 15
 #define MAX_STRING_ITEMS 6
@@ -47,7 +47,7 @@ str monsterReplacementsStr[MONSTER_SLOT] = {
 	"mm_replace_afrit", "mm_replace_darkbishop", "mm_replace_centaur", "mm_replace_slaughtaur", "mm_replace_greenchaosserpent",
 	"mm_replace_stalker", "mm_replace_stalkerboss", "mm_replace_wendigo", "mm_replace_reiver", "mm_replace_reiverburied",
 	"mm_replace_brownchaosserpent", "mm_replace_traductus", "mm_replace_zedek", "mm_replace_menelkir", "mm_replace_heresiarch",
-	"mm_replace_korax", "mm_replace_pig"
+	"mm_replace_korax", "mm_replace_pig", "mm_replace_strifestalker", "mm_replace_sentinel", "mm_replace_reaver", "mm_replace_crusader", "mm_replace_inquisitor"
 };
 
 int gamePruneValues[MAX_GAME_TYPES][MAX_ADDON_SETS] = {

@@ -335,6 +335,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Nazi3"}
+			},
+			{//Stalker (Strife)
+				{"DoomDemon3"}
+			},
+			{//Sentinel
+				{"LostSoul3"}
+			},
+			{//Reaver
+				{"Revenant3"}
+			},
+			{//Crusader
+				{"Fatso3"}
+			},
+			{//Inquisitor
+				{"Cyberdemon3"}
 			}
 		},
 		{//64
@@ -560,6 +575,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"WolfensteinSS64"}
+			},
+			{//Stalker (Strife)
+				{"Demon64"}
+			},
+			{//Sentinel
+				{"LostSoul64"}
+			},
+			{//Reaver
+				{"Revenant64"}
+			},
+			{//Crusader
+				{"Fatso64"}
+			},
+			{//Inquisitor
+				{"Cyberdemon64"}
 			}
 		},
 		{//VDR
@@ -1111,6 +1141,39 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Nazi3"}
+			},
+			{//Stalker (Strife)
+				{"DoomDemon3"},
+				{"MMRandomizer_Maggot"},
+				{"MMRandomizer_BloodDemon"},
+				{"MMRandomizer_MechDemon"},
+				{"MMRandomizer_Satyr"},
+				{"MMRandomizer_MechBloodDemon"}
+			},
+			{//Sentinel
+				{"LostSoul3"},
+				{"MMRandomizer_ForgottenOne"},
+				{"MMRandomizer_Phantasm"},
+				{"MMRandomizer_Nightshade"},
+				{"MMRandomizer_Watcher"},
+				{"MMRandomizer_Arachnorb"}
+			},
+			{//Reaver
+				{"Revenant3"},
+				{"MMRandomizer_Fiend"},
+				{"MMRandomizer_Ghoul"},
+				{"MMRandomizer_Incarnate"}
+			},
+			{//Crusader
+				{"Fatso3"},
+				{"MMRandomizer_Hectebus"},
+				{"MMRandomizer_Cryocubus"},
+				{"MMRandomizer_Daedabus"}
+			},
+			{//Inquisitor
+				{"Cyberdemon3"},
+				{"MMRandomizer_DarkCyberdemon"},
+				{"MMRandomizer_Annihilator"}
 			}
 		},
 		{//Absolution & Outcast
@@ -1354,6 +1417,23 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"WolfensteinSS64"}
+			},
+			{//Stalker (Strife)
+				{"Demon64"},
+				{"AcidDemon64"}
+			},
+			{//Sentinel
+				{"LostSoul64"},
+				{"Stalker64"}
+			},
+			{//Reaver
+				{"Revenant64"}
+			},
+			{//Crusader
+				{"Fatso64"}
+			},
+			{//Inquisitor
+				{"Cyberdemon64"}
 			}
 		}
 	},
@@ -1581,6 +1661,22 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"YellowArmoredFlemoid"}
+			},
+			{//Stalker (Strife)
+				{"NewFlemoidusStridicus"}
+			},
+			{//Sentinel
+				{"FlemMine2"},
+				{"NewFlemoidusGyro"}
+			},
+			{//Reaver
+				{"NewQuadrumpus"}
+			},
+			{//Crusader
+				{"NewQuadrumpus"}
+			},
+			{//Inquisitor
+				{"NewSnotfolus"}
 			}
 		}
 	},
@@ -1806,6 +1902,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"CyCloneGrunt"}
+			},
+			{//Stalker (Strife)
+				{"Clink3Doom"}
+			},
+			{//Sentinel
+				{"HereticImp3"}
+			},
+			{//Reaver
+				{"Snake3Doom"}
+			},
+			{//Crusader
+				{"Beast3Doom"}
+			},
+			{//Inquisitor
+				{"Minotaur3"}
 			}
 		}
 	},
@@ -2068,6 +2179,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Wolf3D_RussianRedArmy"}
+			},
+			{//Stalker (Strife)
+				{"WolfDog"},
+				{"WolfRat"}
+			},
+			{//Sentinel
+				{"WolfSpectre"}
+			},
+			{//Reaver
+				{"WolfMutant"}
+			},
+			{//Crusader
+				{"OttoGiftmacherDoom"}
+			},
+			{//Inquisitor
+				{"DoctorSchabbs"},
+				{"AngelofDeath"},
+				{"BarnacleWilhelm"},
+				{"UberMutant"},
+				{"BarnacleWilhelm"}
 			}
 		},
 		{//Lost Episodes
@@ -2302,6 +2433,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Wolf3D_RussianRedArmy"}
+			},
+			{//Stalker (Strife)
+				{"SODDog"},
+				{"SODDogSpectre"}
+			},
+			{//Sentinel
+				{"SODSpectre"},
+				{"SODSpectre2"}
+			},
+			{//Reaver
+				{"SODBat"}
+			},
+			{//Crusader
+				{"GerhardtVonSchreiberDoom"}
+			},
+			{//Inquisitor
+				{"ProfessorQuarkblitz"},
+				{"TheAxe"}
 			}
 		},
 		{//Totenkopf SDL
@@ -2614,6 +2763,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Wolf3D_RussianRedArmy"}
+			},
+			{//Stalker (Strife)
+				{"TotenkopfDog"},
+				{"TotenkopfDog2"}
+			},
+			{//Sentinel
+				{"TotenkopfGhost"}
+			},
+			{//Reaver
+				{"TotenkopfWaffenSS"},
+				{"TotenkopfWaffenSS2"},
+				{"TotenkopfWaffenSS3"},
+				{"TotenkopfWaffenSSOfficer"}
+			},
+			{//Crusader
+				{"TotenkopfTrooperFlamethrower"}
+			},
+			{//Inquisitor
+				{"TotenkopfSchabbsMutant"},
+				{"TotenkopfNarbengesicht"}
 			}
 		}
 	},
@@ -2846,6 +3015,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Pig3"}
+			},
+			{//Stalker (Strife)
+				{"Centaur3Doom"}
+			},
+			{//Sentinel
+				{"FireDemon3Doom"}
+			},
+			{//Reaver
+				{"IceGuy3Doom"}
+			},
+			{//Crusader
+				{"IceGuy3Doom"}
+			},
+			{//Inquisitor
+				{"Heresiarch3Doom"}
 			}
 		}
 	},
@@ -3102,6 +3286,22 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"AssaultTrooper"}
+			},
+			{//Stalker (Strife)
+				{"ProtozoidEgg"}
+			},
+			{//Sentinel
+				{"SentryDrone"}
+			},
+			{//Reaver
+				{"SamsaraMixerAssaultCommander"}
+			},
+			{//Crusader
+				{"ScorpionTank"}
+			},
+			{//Inquisitor
+				{"SamsaraMixerBattlelordDoom"},
+				{"SamsaraMixerOverlordDoom"}
 			}
 		},
 		{//Life's a Beach
@@ -3452,6 +3652,28 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"BeachTrooper"}
+			},
+			{//Stalker (Strife)
+				{"ProtozoidEgg"}
+			},
+			{//Sentinel
+				{"SentryDrone"},
+				{"Seagull"}
+			},
+			{//Reaver
+				{"BlueBeachCommander"},
+				{"RedBeachCommander"},
+				{"GreenBeachCommander"},
+				{"GrayBeachCommander"},
+				{"DarkGrayBeachCommander"},
+				{"DarkBlueBeachCommander"}
+			},
+			{//Crusader
+				{"ScorpionTank"}
+			},
+			{//Inquisitor
+				{"SamsaraMixerBattlelordDoom"},
+				{"SamsaraMixerOverlordDoom"}
 			}
 		},
 		{//Duke Nukem 64
@@ -3706,6 +3928,22 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"AssaultTrooper"}
+			},
+			{//Stalker (Strife)
+				{"ProtozoidEgg"}
+			},
+			{//Sentinel
+				{"SentryDrone"}
+			},
+			{//Reaver
+				{"SamsaraMixerAssaultCommander"}
+			},
+			{//Crusader
+				{"ScorpionTank"}
+			},
+			{//Inquisitor
+				{"SamsaraMixerBattlelordDoom"},
+				{"SamsaraMixerOverlordDoom"}
 			}
 		}
 	},
@@ -4119,6 +4357,36 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Pig
 				{"Marathon_Headless"},
 				{"Marathon_Skitter"}
+			},
+			{//Stalker (Strife)
+				{"FighterMajor"},
+				{"WaterFlickta"},
+				{"DrinniolMinor"},
+				{"DrinniolMajor"},
+				{"PfhorSuperFighter"}
+			},
+			{//Sentinel
+				{"DroneMinor"},
+				{"MWasp"},
+				{"M2Tick"},
+				{"DroneMajor"},
+				{"MWasp2"},
+				{"M2TickBomb"}
+			},
+			{//Reaver
+				{"M1EnforcerMinor"},
+				{"M2EnforcerMinor"},
+				{"M1EnforcerMajor"},
+				{"M2EnforcerMajor"}
+			},
+			{//Crusader
+				{"CyborgMinor"},
+				{"CyborgMajor"},
+				{"MotherofAllCyborgs"}
+			},
+			{//Inquisitor
+				{"JuggernautMajor"},
+				{"JuggernautMinor"}
 			}
 		}
 	},
@@ -4399,6 +4667,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Zombieman3"}
+			},
+			{//Stalker (Strife)
+				{"QKnight"},
+				{"QKStatue1"},
+				{"QGremlin"}
+			},
+			{//Sentinel
+				{"QSpikeMine"}
+			},
+			{//Reaver
+				{"QOgre"},
+				{"QMultiOgre"}
+			},
+			{//Crusader
+				{"QHKnight"},
+				{"QKStatue2"}
+			},
+			{//Inquisitor
+				{"Pterodactylus"},
+				{"QArmagon"}
 			}
 		}
 	},
@@ -4641,6 +4929,23 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"ProtoGuard"}
+			},
+			{//Stalker (Strife)
+				{"MonkDrain_Weak"}
+			},
+			{//Sentinel
+				{"ExplosiveDiskJr"},
+				{"ExplosiveDiskSr"}
+			},
+			{//Reaver
+				{"OverPatrol"}
+			},
+			{//Crusader
+				{"Ballistikraft"}
+			},
+			{//Inquisitor
+				{"TomHall"},
+				{"NME"}
 			}
 		},
 		{//Alternate
@@ -4881,6 +5186,23 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"ProtoGuard"}
+			},
+			{//Stalker (Strife)
+				{"MonkDrain_Weak"}
+			},
+			{//Sentinel
+				{"ExplosiveDiskJr"},
+				{"ExplosiveDiskSr"}
+			},
+			{//Reaver
+				{"OverPatrolAlt"}
+			},
+			{//Crusader
+				{"Ballistikraft"}
+			},
+			{//Inquisitor
+				{"TomHall"},
+				{"BigJohn"}
 			}
 		}
 	},
@@ -5171,6 +5493,29 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Informant"}
+			},
+			{//Stalker (Strife)
+				{"MutantGreen"}
+			},
+			{//Sentinel
+				{"PerScanDrone"},
+				{"PlasmaSphere"}
+			},
+			{//Reaver
+				{"ReptilianWarrior"},
+				{"MechSentinel"},
+				{"StarTrooper"},
+				{"AlienProtector"}
+			},
+			{//Crusader
+				{"AcidDragon"},
+				{"BioMech"}
+			},
+			{//Inquisitor
+				{"GiantStalker"},
+				{"CrawlerBeast"},
+				{"SpectorDemon"},
+				{"ArmoredStalker"}
 			}
 		}
 	},
@@ -5400,6 +5745,23 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Cultist"}
+			},
+			{//Stalker (Strife)
+				{"AxeZombie"},
+				{"GillBeast"}
+			},
+			{//Sentinel
+				{"BloodBat"}
+			},
+			{//Reaver
+				{"HellHound"}
+			},
+			{//Crusader
+				{"MotherSpider"}
+			},
+			{//Inquisitor
+				{"Cerberus"},
+				{"Cheogh"}
 			}
 		}
 	},
@@ -5650,6 +6012,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Pig
 				{"StrifeAcolyte7"},
 				{"StrifeAcolyte8"}
+			},
+			{//Stalker (Strife)
+				{"StrifeStalker"}
+			},
+			{//Sentinel
+				{"StrifeSentinel"}
+			},
+			{//Reaver
+				{"StrifeReaver"}
+			},
+			{//Crusader
+				{"StrifeCrusader"}
+			},
+			{//Inquisitor
+				{"StrifeInquisitor"}
 			}
 		}
 	},
@@ -5887,6 +6264,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"EradArcher"}
+			},
+			{//Stalker (Strife)
+				{"BoonBitter"}
+			},
+			{//Sentinel
+				{"PatrolEyeSpawner"},
+				{"MiniBio"},
+				{"GunTurret1"}
+			},
+			{//Reaver
+				{"LSD2"}
+			},
+			{//Crusader
+				{"RepairDroid"}
+			},
+			{//Inquisitor
+				{"RSA"},
+				{"Skaal"}
 			}
 		}
 	},
@@ -6120,6 +6515,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"OBCTerrorist"}
+			},
+			{//Stalker (Strife)
+				{"Semaj"}
+			},
+			{//Sentinel
+				{"C7SectorProbe"}
+			},
+			{//Reaver
+				{"Tenaj"},
+				{"Eniram"}
+			},
+			{//Crusader
+				{"Ttocs"}
+			},
+			{//Inquisitor
+				{"Tymok"},
+				{"Solrac"},
+				{"C7AlienTeleport"}
 			}
 		}
 	},
@@ -6348,6 +6761,22 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"UnBlueSuit"}
+			},
+			{//Stalker (Strife)
+				{"BabyEstronBeast"}
+			},
+			{//Sentinel
+				{"RMRLaserDrone"},
+				{"RMRGrenadeDrone"}
+			},
+			{//Reaver
+				{"TerranCommando"}
+			},
+			{//Crusader
+				{"BigEstronBeast"}
+			},
+			{//Inquisitor
+				{"SubestronBoss"}
 			}
 		}
 	},
@@ -6577,6 +7006,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"DF_BattleDroid"}
+			},
+			{//Stalker (Strife)
+				{"gamorrean_guard"}
+			},
+			{//Sentinel
+				{"DFRemote"}
+			},
+			{//Reaver
+				{"gran___DF"}
+			},
+			{//Crusader
+				{"KellDragon"}
+			},
+			{//Inquisitor
+				{"Phase3_df"}
 			}
 		}
 	},
@@ -6809,6 +7253,22 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"IPOGPrisoner"}
+			},
+			{//Stalker (Strife)
+				{"IPOGBerserker"}
+			},
+			{//Sentinel
+				{"IPOGSentrySphere0"}
+			},
+			{//Reaver
+				{"IPOGVeekWarrior"}
+			},
+			{//Crusader
+				{"IPOGMastiff"}
+			},
+			{//Inquisitor
+				{"IPOGSentinal"},
+				{"IPOGBrnourd"}
 			}
 		}
 	},
@@ -7076,6 +7536,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"DisruptorHostageDroid"}
+			},
+			{//Stalker (Strife)
+				{"DsrptSawRobot"}
+			},
+			{//Sentinel
+				{"DisruptorDragonFly"},
+				{"AlienWanderer_T1"},
+				{"DsrptSilverSpikeBall"},
+				{"DsrptGoldSpikeBall"},
+				{"DsrptPsionicSpikeBall"}
+			},
+			{//Reaver
+				{"DisruptorTerroristDroid2"},
+				{"DisruptorTerroristElite"}
+			},
+			{//Crusader
+				{"DisruptorGuardDroid"}
+			},
+			{//Inquisitor
+				{"DisruptorGiantDisruptor"}
 			}
 		}
 	},
@@ -7463,6 +7943,33 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"TekwarSoldier"}
+			},
+			{//Stalker (Strife)
+				{"WTRedMidianWarriorSpell"},
+				{"WTRedMidianWarriorHalberd"},
+				{"WTRedMidianWarriorSword"},
+				{"WTGiryonKnight2HSword"},
+				{"WTGiryonKnight1HSword"},
+				{"WTGiryonKnightMace"},
+				{"WitchavenBrute"},
+				{"MinoDrake"}
+			},
+			{//Sentinel
+				{"WTWillOWisp"}
+			},
+			{//Reaver
+				{"WTBlueMidianWarriorSpell"},
+				{"WTBlueMidianWarriorHalberd"},
+				{"WTBlueMidianWarriorSword"},
+				{"WTArgothonianPikeAxe_2"},
+				{"WTArgothonianPikeAxe_3"}
+			},
+			{//Crusader
+				{"WTSkeletalPriestess"}
+			},
+			{//Inquisitor
+				{"WitchavenDragon"},
+				{"WTIllwhyrin"}
 			}
 		}
 	},
@@ -7824,6 +8331,35 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Combine_Soldier_AR2_Dirty"},
 				{"Combine_Elite_AR2"},
 				{"Combine_Elite_AR2_Dirty"}
+			},
+			{//Stalker (Strife)
+				{"Headcrab_Scientist"},
+				{"Headcrab_Barney"},
+				{"Headcrab_Soldier"},
+				{"Bullsquid","","","HLNormal","HLHard","HLHard"}
+			},
+			{//Sentinel
+				{"Stukabat"}
+			},
+			{//Reaver
+				{"Gonome"},
+				{"MaleAssassin1_MP5"},
+				{"MaleAssassin2_MP5"},
+				{"MaleAssassin3_MP5"},
+				{"MaleAssassin1_M40"},
+				{"MaleAssassin2_M40"},
+				{"MaleAssassin3_M40"},
+				{"HLAssassin"}
+			},
+			{//Crusader
+				{"Voltigore"},
+				{"HLAbrams"},
+				{"HLBradley"}
+			},
+			{//Inquisitor
+				{"Gargantua"},
+				{"HLKingpin"},
+				{"HLPitWorm"}
 			}
 		},
 		{//Opposing Force
@@ -8179,6 +8715,31 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Combine_Soldier_AR2_Dirty"},
 				{"Combine_Elite_AR2"},
 				{"Combine_Elite_AR2_Dirty"}
+			},
+			{//Stalker (Strife)
+				{"Bullsquid","","","HLNormal","HLHard","HLHard"},
+				{"HLPitDrone"},
+				{"Gonome"}
+			},
+			{//Sentinel
+				{"Stukabat"}
+			},
+			{//Reaver
+				{"MaleAssassin1_M40"},
+				{"MaleAssassin2_M40"},
+				{"MaleAssassin3_M40"},
+				{"MaleAssassin1_MP5"},
+				{"MaleAssassin2_MP5"},
+				{"MaleAssassin3_MP5"},
+				{"HLAssassin"}
+			},
+			{//Crusader
+				{"Voltigore"}
+			},
+			{//Inquisitor
+				{"Gargantua"},
+				{"HLKingpin"},
+				{"HLPitWorm"}
 			}
 		}
 	},
@@ -8487,6 +9048,27 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"SWRabbit"}
+			},
+			{//Stalker (Strife)
+				{"SWCoolie"},
+				{"SWRipper"}
+			},
+			{//Sentinel
+				{"SWHornetWasp"}
+			},
+			{//Reaver
+				{"NinjaOrange"},
+				{"NinjaGray"},
+				{"SWHenchmanPurple"},
+				{"SWHenchmanOrange"}
+			},
+			{//Crusader
+				{"SWRipperBabyBig"},
+				{"SumoSmall"}
+			},
+			{//Inquisitor
+				{"SerpentGodBig"},
+				{"SumoBig"}
 			}
 		}
 	},
@@ -8797,6 +9379,31 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Metacop"}
+			},
+			{//Stalker (Strife)
+				{"CMSlugg"},
+				{"Ghoulie"},
+				{"GangerMale"},
+				{"GangerFemale"},
+				{"CMGenno"},
+				{"WildMung"},
+				{"ExceptionalMung"},
+				{"PoweredGhoulie"}
+			},
+			{//Sentinel
+				{"CMDrone"},
+				{"CMDrone_2"}
+			},
+			{//Reaver
+				{"CMGangX"},
+				{"CMMung"}
+			},
+			{//Crusader
+				{"CMGangX"},
+				{"CMHellspider"}
+			},
+			{//Inquisitor
+				{"FireMother"}
 			}
 		}
 	},
@@ -9038,6 +9645,23 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"AnubisWarrior"}
+			},
+			{//Stalker (Strife)
+				{"Bastet"},
+				{"OmenWasp"}
+			},
+			{//Sentinel
+				{"ExHawk"}
+			},
+			{//Reaver
+				{"KilmaatSentry"}
+			},
+			{//Crusader
+				{"Ammit"}
+			},
+			{//Inquisitor
+				{"PSSet"},
+				{"Selkis"}
 			}
 		}
 	},
@@ -9520,6 +10144,25 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Jackelope"},
 				{"AssaultTrooper"},
 				{"AssaultCaptain"}
+			},
+			{//Stalker (Strife)
+				{"GuardDog"},
+				{"GuardDog_Blood"},
+				{"Jackelope"},
+				{"Alligator"}
+			},
+			{//Sentinel
+				{"Mosquito"}
+			},
+			{//Reaver
+				{"DaisyNDoylie"}
+			},
+			{//Crusader
+				{"DoyleDaisyBike"},
+				{"DoyleDaisyBike_Red"}
+			},
+			{//Inquisitor
+				{"Assface"}
 			}
 		}
 	},
@@ -9825,6 +10468,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Pig
 				{"QEnforcer"},
 				{"QGrunt"}
+			},
+			{//Stalker (Strife)
+				{"Q2Berserker"},
+				{"Q2Brain"},
+				{"Q2Parasite"}
+			},
+			{//Sentinel
+				{"Q2Flyer"}
+			},
+			{//Reaver
+				{"Q2IronMaiden"},
+				{"Q2Gunner"}
+			},
+			{//Crusader
+				{"Q2Gladiator"}
+			},
+			{//Inquisitor
+				{"Q2TankBoss"},
+				{"Q2Hornet"},
+				{"Q2Carrier"}
 			}
 		}
 	},
@@ -10132,6 +10795,31 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Ettin3Doom"}
+			},
+			{//Stalker (Strife)
+				{"Hexen2Scorpion"},
+				{"Hexen2StoneGolem"},
+				{"Hexen2WereJaguar"}
+			},
+			{//Sentinel
+				{"Hexen2FireImp"},
+				{"Hexen2IceImp"}
+			},
+			{//Reaver
+				{"Hexen2ArcherLord"},
+				{"Hexen2IronGolem"},
+				{"Hexen2SnowTiger"},
+				{"Hexen2Mummy"}
+			},
+			{//Crusader
+				{"Hexen2BronzeGolem"},
+				{"Hexen2MummyLord"}
+			},
+			{//Inquisitor
+				{"Hexen2Famine"},
+				{"Hexen2Death"},
+				{"Hexen2Pestilence"},
+				{"Hexen2War"}
 			}
 		}
 	},
@@ -10383,6 +11071,22 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Goldeneye_GrayGuard"}
+			},
+			{//Stalker (Strife)
+				{"Goldeneye_BlueCamGuard"}
+			},
+			{//Sentinel
+				{"Goldeneye_JetPackGuard"}
+			},
+			{//Reaver
+				{"Goldeneye_CamGuard"}
+			},
+			{//Crusader
+				{"Goldeneye_TrevGuard"}
+			},
+			{//Inquisitor
+				{"Goldeneye_BaronSamedi"},
+				{"Goldeneye_Xenia"}
 			}
 		},
 		{//Goldfinger
@@ -10657,6 +11361,24 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Goldfinger_Servant"}
+			},
+			{//Stalker (Strife)
+				{"Goldfinger_ShipyardGuard"},
+				{"Goldfinger_AirCrew"}
+			},
+			{//Sentinel
+				{"Goldfinger_JetpackGuard"}
+			},
+			{//Reaver
+				{"Goldfinger_CrabKeyGuard"},
+				{"Goldfinger_Hazmat"},
+				{"Goldfinger_SpectreGuard"}
+			},
+			{//Crusader
+				{"Goldfinger_GoldSuit"}
+			},
+			{//Inquisitor
+				{"Goldfinger_Oddjob"}
 			}
 		}
 	},
@@ -10998,6 +11720,32 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Hovertank3D_RedDemon"},
 				{"Hovertank3D_Squid"},
 				{"Hovertank3D_Hovertank"}
+			},
+			{//Stalker (Strife)
+				{"Catacomb3D_Troll"},
+				{"CatacombAbyss_Troll"},
+				{"CatacombAbyss_SkeletonWarrior"},
+				{"CatacombArmageddon_Skeleton"},
+				{"CatacombArmageddon_GiantAnt1"},
+				{"CatacombArmageddon_GiantAnt2"},
+				{"CatacombArmageddon_Viper"},
+				{"CatacombApocalypse_GoldTroll"}
+			},
+			{//Sentinel
+				{"Catacomb3D_Bat"},
+				{"CatacombArmageddon_Bat"},
+				{"CatacombAbyss_Wraith"}
+			},
+			{//Reaver
+				{"CatacombApocalypse_CyberAnt"},
+				{"CatacombApocalypse_Wizard"}
+			},
+			{//Crusader
+				{"CatacombArmageddon_Treant"},
+				{"CatacombApocalypse_CyberPox"}
+			},
+			{//Inquisitor
+				{"Catacomb3D_Nemesis"}
 			}
 		}
 	},
@@ -11218,6 +11966,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Nazi3"}
+			},
+			{//Stalker (Strife)
+				{"DoomDemon3"}
+			},
+			{//Sentinel
+				{"LostSoul3"}
+			},
+			{//Reaver
+				{"Revenant3"}
+			},
+			{//Crusader
+				{"Fatso3"}
+			},
+			{//Inquisitor
+				{"Cyberdemon3"}
 			}
 		}
 	},
@@ -11438,6 +12201,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Nazi3"}
+			},
+			{//Stalker (Strife)
+				{"DoomDemon3"}
+			},
+			{//Sentinel
+				{"LostSoul3"}
+			},
+			{//Reaver
+				{"Revenant3"}
+			},
+			{//Crusader
+				{"Fatso3"}
+			},
+			{//Inquisitor
+				{"Cyberdemon3"}
 			}
 		}
 	},
@@ -11700,6 +12478,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Wolf3D_RussianRedArmy"}
+			},
+			{//Stalker (Strife)
+				{"WolfDog"},
+				{"WolfRat"}
+			},
+			{//Sentinel
+				{"WolfSpectre"}
+			},
+			{//Reaver
+				{"WolfMutant"}
+			},
+			{//Crusader
+				{"OttoGiftmacherDoom"}
+			},
+			{//Inquisitor
+				{"DoctorSchabbs"},
+				{"AngelofDeath"},
+				{"BarnacleWilhelm"},
+				{"UberMutant"},
+				{"BarnacleWilhelm"}
 			}
 		},
 		{//Zandronum
@@ -11960,6 +12758,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"Wolf3D_RussianRedArmy"}
+			},
+			{//Stalker (Strife)
+				{"WolfDog"},
+				{"WolfRat"}
+			},
+			{//Sentinel
+				{"WolfSpectre"}
+			},
+			{//Reaver
+				{"WolfMutant"}
+			},
+			{//Crusader
+				{"OttoGiftmacherDoom"}
+			},
+			{//Inquisitor
+				{"DoctorSchabbs"},
+				{"AngelofDeath"},
+				{"BarnacleWilhelm"},
+				{"UberMutant"},
+				{"BarnacleWilhelm"}
 			}
 		}
 	},
@@ -12397,6 +13215,36 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"QEnforcer"},
 				{"QGrunt"},
 				{"Zombieman3"}
+			},
+			{//Stalker (Strife)
+				{"Q2Berserker"},
+				{"Q2Brain"},
+				{"Q2Parasite"},
+				{"QKnight"},
+				{"QKStatue1"},
+				{"QGremlin"}
+			},
+			{//Sentinel
+				{"Q2Flyer"},
+				{"QSpikeMine"}
+			},
+			{//Reaver
+				{"Q2IronMaiden"},
+				{"Q2Gunner"},
+				{"QOgre"},
+				{"QMultiOgre"}
+			},
+			{//Crusader
+				{"Q2Gladiator"},
+				{"QHKnight"},
+				{"QKStatue2"}
+			},
+			{//Inquisitor
+				{"Q2TankBoss"},
+				{"Q2Hornet"},
+				{"Q2Carrier"},
+				{"Pterodactylus"},
+				{"QArmagon"}
 			}
 		}
 	},
@@ -12664,6 +13512,26 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Pig
 				{"DisruptorHostageDroid"}
+			},
+			{//Stalker (Strife)
+				{"DsrptSawRobot"}
+			},
+			{//Sentinel
+				{"DisruptorDragonFly"},
+				{"AlienWanderer_T1"},
+				{"DsrptSilverSpikeBall"},
+				{"DsrptGoldSpikeBall"},
+				{"DsrptPsionicSpikeBall"}
+			},
+			{//Reaver
+				{"DisruptorTerroristDroid2"},
+				{"DisruptorTerroristElite"}
+			},
+			{//Crusader
+				{"DisruptorGuardDroid"}
+			},
+			{//Inquisitor
+				{"DisruptorGiantDisruptor"}
 			}
 		}
 	},
@@ -12914,6 +13782,22 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Pig
 				{"StrifeAcolyte7"},
 				{"StrifeAcolyte8"}
+			},
+			{//Stalker (Strife)
+				{"StrifeStalker"}
+			},
+			{//Sentinel
+				{"StrifeSentinel"}
+			},
+			{//Reaver
+				{"StrifeReaver"}
+			},
+			{//Crusader
+				{"StrifeCrusader"}
+			},
+			{//Inquisitor
+				{"NewAlienSpectre5"},
+				{"StrifeInquisitor"}
 			}
 		}
 	}
@@ -13137,6 +14021,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
@@ -13362,6 +14261,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
@@ -13914,6 +14828,39 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,6,0,0,6,0,0,6,0,0,6,0,0,6},
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
+			},
+			{//Sentinel
+				{0,0,6,0,0,6,0,0,6,0,0,6,0,0,6},
+				{0,0,6,0,0,6,0,0,6,0,0,6,0,0,6},
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+			},
+			{//Reaver
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+			},
+			{//Crusader
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Inquisitor
+				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},
+				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14},
+				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14}
 			}
 		},
 		{//Absolution & Outcast
@@ -14157,6 +15104,23 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Sentinel
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -14384,6 +15348,22 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -14608,6 +15588,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -14871,6 +15866,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
 		{//Lost Episodes
@@ -15104,6 +16119,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
@@ -15417,6 +16450,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -15648,6 +16701,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -15904,6 +16972,22 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
@@ -16255,6 +17339,28 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
 		{//Duke Nukem 64
@@ -16508,6 +17614,22 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -16922,6 +18044,36 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0.88,0.5,5,0.94,0.75,5,0,0,5,1.13,1.25,3,1.25,1.5,1},
+				{0.88,0.5,2,0.94,0.75,2,0,0,4,1.13,1.25,5,1.25,1.5,4},
+				{0.76,0.8,1,0.95,0.9,1,0,0,2,1.19,1.2,2,1.5,1.4,3},
+				{0.89,0.7,-1,0.96,0.8,-1,0,0,1,1.19,1.2,1,1.32,1.5,1},
+				{0.73,0.5,3,0.8,0.66,3,0,0,4,1.13,1.34,3,1.25,1.5,2}
+			},
+			{//Sentinel
+				{0.88,0.5,3,0.94,0.75,3,0,0,3,1.13,1.25,2,1.25,1.5,1},
+				{0,0,3,0,0,3,0,0,3,0,0,2,0,0,-1},
+				{0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1},
+				{0.88,0.5,1,0.94,0.75,1,0,0,2,1.13,1.25,3,1.25,1.5,4},
+				{0,0,-1,0,0,-1,0,0,1,0,0,3,0,0,4},
+				{0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1}
+			},
+			{//Reaver
+				{0.88,0.5,2,0.94,0.75,2,0,0,3,1.13,1.25,1,1.25,1.5,2},
+				{0.88,0.5,4,0.94,0.75,4,0,0,3,1.13,1.25,2,1.25,1.5,1},
+				{0.88,0.5,1,0.94,0.75,1,0,0,2,1.13,1.25,1,1.25,1.5,2},
+				{0.88,0.5,3,0.94,0.75,3,0,0,2,1.13,1.25,4,1.25,1.5,4}
+			},
+			{//Crusader
+				{0.88,0.5,4,0.94,0.75,4,0,0,3,1.13,1.25,2,1.25,1.5,1},
+				{0.88,0.5,1,0.94,0.75,2,0,0,3,1.13,1.25,4,1.25,1.5,5},
+				{0.88,0.5,1,0.94,0.75,1,0,0,1,1.13,1.25,1,1.25,1.5,2}
+			},
+			{//Inquisitor
+				{0.88,0.5,1,0.94,0.75,1,0,0,1,1.13,1.25,2,1.25,1.5,3},
+				{0.88,0.5,3,0.94,0.75,3,0,0,2,1.13,1.25,2,1.25,1.5,1}
 			}
 		}
 	},
@@ -17202,6 +18354,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,5,0,0,5,0,0,4,1.25,0,4,2.0,0,3},
+				{0,0,1,0,0,1,0,0,1,1.25,0,2,2.0,0,2},
+				{0,0,2,0,0,2,0,0,2,1.25,0,1,2.0,0,1}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,3,0,0,5,0,0,3,0,0,2,0,0,-1},
+				{0,0,-1,0,0,1,0,0,1,0,0,3,0,0,3}
+			},
+			{//Crusader
+				{0,0,4,0,0,4,0,0,3,0,0,4,0,0,2},
+				{0,0,1,0,0,1,0,0,1,0,0,2,0,0,2}
+			},
+			{//Inquisitor
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,3},
+				{0,0,1,0,0,1,0,0,2,0,0,2,0,0,2}
 			}
 		}
 	},
@@ -17444,6 +18616,23 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0.8,0.8,0,0,0,0,1.1,1.1,0,1.2,1.2,0,1.4,1.4,0}
+			},
+			{//Sentinel
+				{0.5,0.5,2,0,0,2,1.5,1.5,2,2.0,2.0,2,5.0,5.0,2},
+				{0,0.5,0,0,0,0,0,1.5,0,0,2.0,0,0,5.0,0}
+			},
+			{//Reaver
+				{0.9,0.9,0,0,0,0,1.09,1.09,0,1.27,1.27,0,2.0,2.0,0}
+			},
+			{//Crusader
+				{0,0.8,0,0,0,0,0,1.2,0,0,1.4,0,0,1.6,0}
+			},
+			{//Inquisitor
+				{0,0,2,1.5,1.5,3,1.67,1.67,2,2.0,2.0,3,2.25,2.25,3},
+				{0,0,-1,1.2,1.2,1,1.5,1.5,1,1.6,1.6,2,1.8,1.8,3}
 			}
 		},
 		{//Alternate
@@ -17684,6 +18873,23 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0.8,0.8,0,0,0,0,1.1,1.1,0,1.2,1.2,0,1.4,1.4,0}
+			},
+			{//Sentinel
+				{0.5,0.5,2,0,0,2,1.5,1.5,2,2.0,2.0,2,5.0,5.0,2},
+				{0,0.5,0,0,0,0,0,1.5,0,0,2.0,0,0,5.0,0}
+			},
+			{//Reaver
+				{0.9,0.9,0,0,0,0,1.09,1.09,0,1.27,1.27,0,2.0,2.0,0}
+			},
+			{//Crusader
+				{0,0.8,0,0,0,0,0,1.2,0,0,1.4,0,0,1.6,0}
+			},
+			{//Inquisitor
+				{0,0,2,1.5,1.5,3,1.67,1.67,2,2.0,2.0,3,2.25,2.25,3},
+				{0,0,-1,1.2,1.2,1,1.5,1.5,1,1.6,1.6,2,1.8,1.8,3}
 			}
 		}
 	},
@@ -17974,6 +19180,29 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0.4,0,0,0.6,0,0,0,0,0,1.2,0,0,1.4,0}
+			},
+			{//Stalker (Strife)
+				{0,0.4,0,0,0.6,0,0,0,0,0,1.2,0,0,1.4,0}
+			},
+			{//Sentinel
+				{0,0.5,4,0,0.75,4,0,0,4,0,1.25,4,0,1.5,4},
+				{0,0.75,3,0,0.9,3,0,0,3,0,1.2,3,0,1.4,3}
+			},
+			{//Reaver
+				{0,0.4,4,0,0.6,4,0,0,4,0,1.2,4,0,1.5,4},
+				{0,0.6,3,0,0.9,3,0,0,3,0,1.2,3,0,1.4,3},
+				{0,0.4,2,0,0.6,2,0,0,2,0,1.31,2,0,1.6,2},
+				{0,0.4,2,0,0.6,2,0,0,2,0,1.31,2,0,1.6,2}
+			},
+			{//Crusader
+				{0,0.5,5,0,0.75,5,0,0,5,0,1.25,5,0,1.5,5},
+				{0,0.4,3,0,0.6,3,0,0,3,0,1.2,3,0,1.4,4}
+			},
+			{//Inquisitor
+				{0,0.5,2,0,0.66,2,0,0,2,0,1.2,2,0,1.5,2},
+				{0,0.5,2,0,0.75,2,0,0,2,0,1.25,2,0,1.4,2},
+				{0,0.5,2,0,0.75,2,0,0,2,0,1.25,2,0,1.5,2},
+				{0,0.5,1,0,0.75,1,0,0,1,0,1.25,1,0,1.4,1}
 			}
 		}
 	},
@@ -18203,6 +19432,23 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,1.5,0,0,2.0,0,0,2.5,0,0,3.1,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,1.32,0,0,1.91,0,0,2.5,0,0,3.23,0},
+				{0,0,0,0,1.41,0,0,2.17,0,0,2.65,0,0,3.37,0}
+			},
+			{//Sentinel
+				{0,0,0,0,1.5,0,0,2.0,0,0,3.5,0,0,5.0,0}
+			},
+			{//Reaver
+				{0,0,0,0,1.35,0,0,2.0,0,0,2.7,0,0,3.0,0}
+			},
+			{//Crusader
+				{0,0,0,0,1.78,0,0,2.22,0,0,3.11,0,0,3.55,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,1.2,0,0,2.0,0,0,2.4,0,0,3.2,0},
+				{0,0,0,0,1.25,0,0,2.35,0,0,2.4,0,0,3.5,0}
 			}
 		}
 	},
@@ -18453,6 +19699,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -18690,6 +19951,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0.66,0,0,0.75,0,0,0,0,0,1.25,0,0,1.5,0,0}
+			},
+			{//Sentinel
+				{0.8,0,4,0.9,0,4,1.25,0,4,1.5,0,4,2.0,0,4},
+				{0.8,0,1,0.9,0,1,1.25,0,1,1.5,0,1,2.0,0,1},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -18923,6 +20202,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
 			}
 		}
 	},
@@ -19150,6 +20447,22 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,5,0,0,5,0,0,4,0,0,3,0,0,2},
+				{0,0,1,0,0,2,0,0,2,0,0,3,0,0,4}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -19379,6 +20692,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -19611,6 +20939,22 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -19878,6 +21222,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,7,0,0,7,0,0,6,0,0,5,0,0,-1},
+				{0,0,6,0,0,7,0,0,5,0,0,3,0,0,-1},
+				{0,0,7,0,0,7,0,0,6,0,0,4,0,0,-1},
+				{0,0,2,0,0,3,0,0,4,0,0,6,0,0,4},
+				{0,0,-1,0,0,1,0,0,2,0,0,5,0,0,7}
+			},
+			{//Reaver
+				{0,0,5,0,0,4,0,0,3,0,0,3,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,3,0,0,4}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -20266,6 +21630,33 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,4,0,0,5,0,0,4,0,0,1,0,0,2},
+				{0,0,4,0,0,5,0,0,4,0,0,1,0,0,2},
+				{0,0,4,0,0,5,0,0,4,0,0,1,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,1,0,0,4},
+				{0,0,2,0,0,2,0,0,2,0,0,1,0,0,4},
+				{0,0,2,0,0,2,0,0,2,0,0,1,0,0,4},
+				{0,0,9,0,0,9,0,0,9,0,0,3,0,0,3},
+				{0,0,3,0,0,6,0,0,6,0,0,3,0,0,9}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,8,0,0,4,0,0,2,0,0,4,0,0,2},
+				{0,0,8,0,0,4,0,0,2,0,0,4,0,0,2},
+				{0,0,8,0,0,4,0,0,2,0,0,4,0,0,2},
+				{0,0,3,0,0,3,0,0,3,0,0,9,0,0,9},
+				{0,0,3,0,0,3,0,0,3,0,0,9,0,0,9}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,4,0,0,3,0,0,3,0,0,2,0,0,1},
+				{0,0,1,0,0,2,0,0,3,0,0,3,0,0,4}
 			}
 		}
 	},
@@ -20627,6 +22018,35 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
 				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Stalker (Strife)
+				{0,0,4,0,0,4,0,0,5,0,2.0,6,0,2.0,6},
+				{0,0,3,0,0,3,0,0,3,0,2.0,2,0,2.0,2},
+				{0,0,2,0,0,2,0,0,1,0,2.0,1,0,2.0,1},
+				{0,0,1,0,0,1,0,0,2,0,3.0,2,0,3.0,3}
+			},
+			{//Sentinel
+				{0,0,5,0,0,5,0,0,5,0,2.0,5,0,2.0,5}
+			},
+			{//Reaver
+				{0,0,4,0,0,4,0,0,4,0,2.0,4,0,2.4,4},
+				{0,0.5,3,0,0.5,3,0,0.75,4,0,0,5,0,1.5,6},
+				{0,0.5,3,0,0.5,3,0,0.75,4,0,0,5,0,1.5,6},
+				{0,0.5,3,0,0.5,3,0,0.75,4,0,0,5,0,1.5,6},
+				{0,1.25,3,0,1.25,3,0,1.5,3,0,2.0,3,0,2.5,4},
+				{0,1.25,3,0,1.25,3,0,1.5,3,0,2.0,3,0,2.5,4},
+				{0,1.25,3,0,1.25,3,0,1.5,3,0,2.0,3,0,2.5,4},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0.711,5,0,0.711,5,0,0.711,5,0,0,5,0,0,5},
+				{0,0,2,0,0,3,0,0,3,0,0,4,0,0,5},
+				{0,0,1,0,0,2,0,0,3,0,0,5,0,0,7}
+			},
+			{//Inquisitor
+				{0,0.8,5,0,0.8,5,0,0.8,5,0,0,5,0,0,5},
+				{0,0.8,3,0,0.8,3,0,0.8,3,0,0,3,0,0,3},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			}
 		},
 		{//Opposing Force
@@ -20982,6 +22402,31 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
 				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+			},
+			{//Stalker (Strife)
+				{0,0,1,0,0,1,0,0,2,3.0,3.0,2,3.0,3.0,3},
+				{0,0,1,0,0,2,0,0,2,0,2.75,1,0,2.75,2},
+				{0,0,4,0,0,4,0,0,4,2.0,2.0,4,2.4,2.4,4}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,2.0,2.0,0,0,2.0,0}
+			},
+			{//Reaver
+				{1.25,1.25,3,1.25,1.25,3,1.5,1.5,3,2.0,2.0,3,2.5,2.5,4},
+				{1.25,1.25,3,1.25,1.25,3,1.5,1.5,3,2.0,2.0,3,2.5,2.5,4},
+				{0,1.25,3,0,1.25,3,0,1.5,3,0,2.0,3,0,2.5,4},
+				{0,0.5,3,0,0.5,3,0,0.75,4,0,0,5,0,1.5,6},
+				{0.5,0.5,3,0.5,0.5,3,0.75,0.75,4,0,0,5,1.5,1.5,6},
+				{0.5,0.5,3,0.5,0.5,3,0.75,0.75,4,0,0,5,1.5,1.5,6},
+				{0,0,4,0,0,4,0,0,4,2.0,2.0,4,2.4,2.4,4}
+			},
+			{//Crusader
+				{0.711,0.711,0,0.711,0.711,0,0.711,0.711,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0.8,5,0,0.8,5,0,0.8,5,0,0,5,0,0,5},
+				{0,0.8,3,0,0.8,3,0,0.8,3,0,0,3,0,0,3},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			}
 		}
 	},
@@ -21289,6 +22734,27 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
+				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -21600,6 +23066,31 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -21840,6 +23331,23 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,4,0,0,4,0,0,4,0,0,3,0,0,3},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -22323,6 +23831,25 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,16,0,0,16,0,0,16,0,0,16,0,0,16},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,9,0,0,9,0,0,9,0,0,9,0,0,9},
+				{0,0,9,0,0,9,0,0,9,0,0,9,0,0,9}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -22626,6 +24153,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
@@ -22935,6 +24482,31 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,2,0,0,2,0,0,2,0,0,0,0,0,0},
+				{0,0,2,0,0,2,0,0,2,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -23185,6 +24757,22 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
@@ -23459,6 +25047,24 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -23801,6 +25407,32 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -24021,6 +25653,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -24240,6 +25887,21 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -24503,6 +26165,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		},
 		{//Zandronum
@@ -24762,6 +26444,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
@@ -25200,6 +26902,36 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,24,0,0,24,0,0,21,0,0,21,0,0,18},
+				{0,0,24,0,0,24,0,0,21,0,0,21,0,0,18},
+				{0,0,24,0,0,24,0,0,21,0,0,21,0,0,18},
+				{0,0,55,0,0,55,0,0,44,1.25,0,44,2.0,0,33},
+				{0,0,11,0,0,11,0,0,11,1.25,0,22,2.0,0,22},
+				{0,0,22,0,0,22,0,0,22,1.25,0,11,2.0,0,11}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,2,0,0,4,0,0,8,0,0,10,0,0,2},
+				{0,0,2,0,0,4,0,0,8,0,0,10,0,0,2},
+				{0,0,3,0,0,5,0,0,9,0,0,6,0,0,-1},
+				{0,0,-1,0,0,1,0,0,3,0,0,9,0,0,3}
+			},
+			{//Crusader
+				{0,0,5,0,0,5,0,0,2,0,0,3,0,0,1},
+				{0,0,8,0,0,8,0,0,3,0,0,4,0,0,1},
+				{0,0,2,0,0,2,0,0,1,0,0,2,0,0,1}
+			},
+			{//Inquisitor
+				{0,0,3,0,0,3,0,0,1,0,0,1,0,0,5},
+				{0,0,3,0,0,3,0,0,1,0,0,1,0,0,5},
+				{0,0,3,0,0,3,0,0,1,0,0,1,0,0,5},
+				{0,0,4,0,0,4,0,0,1,0,0,1,0,0,6},
+				{0,0,2,0,0,2,0,0,1,0,0,1,0,0,4}
 			}
 		}
 	},
@@ -25467,6 +27199,26 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,7,0,0,7,0,0,6,0,0,5,0,0,-1},
+				{0,0,6,0,0,7,0,0,5,0,0,3,0,0,-1},
+				{0,0,7,0,0,7,0,0,6,0,0,4,0,0,-1},
+				{0,0,2,0,0,3,0,0,4,0,0,6,0,0,4},
+				{0,0,-1,0,0,1,0,0,2,0,0,5,0,0,7}
+			},
+			{//Reaver
+				{0,0,5,0,0,4,0,0,3,0,0,3,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,3,0,0,4}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
 	},
@@ -25717,6 +27469,22 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Pig
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,1,0,0,2,0,0,3,0,0,4,0,0,5},
+				{0,0,5,0,0,4,0,0,3,0,0,2,0,0,1}
 			}
 		}
 	}

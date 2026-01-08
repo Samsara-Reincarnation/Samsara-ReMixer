@@ -127,6 +127,12 @@ Hexen: Beyond Heretic:
 
 ! The Hexen ReMixer enemies now spawn accordingly to their original spawn slots.
 
+Strife: Quest for the Sigil:
+
++ Added dedicated spawn slots for the Strife robots.
+- Removed the Templar as a ReMixer spawn slot.
+! The Strife ReMixer enemies now spawn accordingly to their original spawn slots.
+
 -Settings-
 
 + mm_shieldingmonsters has been added, which controls whether certain monsters such as Centaurs can receive invulnerability or damage resistance after entering their pain states. It can be found in the "Samsara ReMixer Options" menu, under "General Options", with the label "Shielding Monsters".

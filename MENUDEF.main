@@ -330,6 +330,13 @@ OptionMenu "SamsaraMonsterReplacementOptions"
     Option "Heresiarch",          "mm_replace_heresiarch",        "MonsterReplacer"
     Option "Korax",               "mm_replace_korax",             "MonsterReplacer"
     Option "Pig",                 "mm_replace_pig",               "MonsterReplacer"
+    StaticText ""
+    StaticText "Strife: Quest for the Sigil", 1
+    Option "Stalker",             "mm_replace_strifestalker",     "MonsterReplacer"
+    Option "Sentinel",            "mm_replace_sentinel",          "MonsterReplacer"
+    Option "Reaver",              "mm_replace_reaver",            "MonsterReplacer"
+    Option "Crusader",            "mm_replace_crusader",          "MonsterReplacer"
+    Option "Inquisitor",          "mm_replace_inquisitor",        "MonsterReplacer"
 }
 
 OptionValue "MonsterReplacer"
@@ -407,4 +414,9 @@ OptionValue "MonsterReplacer"
     69, "Heresiarch"
     70, "Korax"
     71, "Pig"
+    72, "Stalker (Strife)"
+    73, "Sentinel"
+    74, "Reaver"
+    75, "Crusader"
+    76, "Inquisitor"
 }
