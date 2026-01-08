@@ -3,7 +3,7 @@
 #define MAXMONSTERS_CHEXORIGINAL 5
 #define MAXMONSTERS_HERETIC 15
 #define MAXMONSTERS_HEXEN 17
-#define MAXMONSTERS_STRIFE 6
+#define MAXMONSTERS_STRIFE 5
 #define MAXMONSTERS_HACX 15
 #define MAXMONSTERS_HARMONY 9
 #define MAXMONSTERS_ROTWB 19
@@ -25,7 +25,7 @@ int generatorCountersHexen[MAXMONSTERS_HEXEN];
 str SpawnersHexen[MAXMONSTERS_HEXEN] = { "EttinReplacer", "FireDemonReplacer", "CentaurReplacer", "Demon1Replacer", "Demon2Replacer", "SerpentReplacer", "SerpentLeaderReplacer", "BishopReplacer", "IceGuyReplacer", "WraithReplacer", "CentaurLeaderReplacer", "FighterBossReplacer", "MageBossReplacer", "ClericBossReplacer", "HeresiarchReplacer", "KoraxReplacer" };
 
 int generatorCountersStrife[MAXMONSTERS_STRIFE];
-str SpawnersStrife[MAXMONSTERS_STRIFE] = { "StrifeStalkerReplacer", "StrifeSentinelReplacer", "StrifeReaverReplacer", "StrifeTemplarReplacer", "StrifeCrusaderReplacer", "StrifeInquisitorReplacer" };
+str SpawnersStrife[MAXMONSTERS_STRIFE] = { "StrifeStalkerReplacer", "StrifeSentinelReplacer", "StrifeReaverReplacer", "StrifeCrusaderReplacer", "StrifeInquisitorReplacer" };
 
 int generatorCountersHacx[MAXMONSTERS_HACX];
 str SpawnersHacx[MAXMONSTERS_HACX] = { "HacxThug_SamsaraRemixer", "HacxAndroid_SamsaraRemixer", "HacxPhage_SamsaraRemixer", "HacxBuzzer_SamsaraRemixer", "HacxStealth_SamsaraRemixer", "HacxICE_SamsaraRemixer", "HacxMonstruct_SamsaraRemixer", "HacxDMan_SamsaraRemixer", "HacxMajong7_SamsaraRemixer", "HacxTerminatrix_SamsaraRemixer", "HacxMechaManiac_SamsaraRemixer", "HacxThornThing_SamsaraRemixer", "HacxMummy_SamsaraRemixer", "HacxSkeleton_SamsaraRemixer", "HacxRoamingMine_SamsaraRemixer" };
