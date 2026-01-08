@@ -890,7 +890,7 @@ Actor Tyrant2_Samsara : SamsaraMonsterDemonicBoss
 	See:
 		TNT1 A 0 A_GiveInventory("SamsaraBossSightTaunt")
 	See2:
-		VD98 A 3 A_Hoof
+		VD98 A 3 A_PlaySound("doom/cyber/hoof", CHAN_BODY)
 		VD98 ABBCC 3 A_Chase
 		VD98 D 0 A_PlaySound("doom_lor/tyrant/walk")
 		VD98 DD 3 A_Chase
