@@ -37,6 +37,7 @@
 #include "actors/DoomMixer/SpiderMaster.txt"
 #include "actors/DoomMixer/Cyberdemon.txt"
 #include "actors/DoomMixer/Misc.txt"
+#include "actors/DoomMixer/LegacyOfRust.txt"
 
 // Heretic
 
