@@ -1237,6 +1237,17 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_replace_heresiarch", -1);
 		SetCVar("mm_replace_korax", -1);
 		SetCVar("mm_replace_pig", -1);
+		SetCVar("mm_replace_strifestalker", -1);
+		SetCVar("mm_replace_sentinel", -1);
+		SetCVar("mm_replace_reaver", -1);
+		SetCVar("mm_replace_crusader", -1);
+		SetCVar("mm_replace_inquisitor", -1);
+		SetCVar("mm_replace_ghoul", -1);
+		SetCVar("mm_replace_banshee", -1);
+		SetCVar("mm_replace_shocktrooper", -1);
+		SetCVar("mm_replace_mindweaver", -1);
+		SetCVar("mm_replace_vassago", -1);
+		SetCVar("mm_replace_tyrant", -1);
 
 		// Spawn Options
 		SetCVar("mm_doom", true);
@@ -1395,6 +1406,17 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_replace_heresiarch", -1);
 		SetCVar("mm_replace_korax", -1);
 		SetCVar("mm_replace_pig", -1);
+		SetCVar("mm_replace_strifestalker", -1);
+		SetCVar("mm_replace_sentinel", -1);
+		SetCVar("mm_replace_reaver", -1);
+		SetCVar("mm_replace_crusader", -1);
+		SetCVar("mm_replace_inquisitor", -1);
+		SetCVar("mm_replace_ghoul", -1);
+		SetCVar("mm_replace_banshee", -1);
+		SetCVar("mm_replace_shocktrooper", -1);
+		SetCVar("mm_replace_mindweaver", -1);
+		SetCVar("mm_replace_vassago", -1);
+		SetCVar("mm_replace_tyrant", -1);
 
 		// Spawn Options
 		SetCVar("mm_doom", true);
@@ -1553,6 +1575,17 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_replace_heresiarch", -1);
 		SetCVar("mm_replace_korax", -1);
 		SetCVar("mm_replace_pig", -1);
+		SetCVar("mm_replace_strifestalker", -1);
+		SetCVar("mm_replace_sentinel", -1);
+		SetCVar("mm_replace_reaver", -1);
+		SetCVar("mm_replace_crusader", -1);
+		SetCVar("mm_replace_inquisitor", -1);
+		SetCVar("mm_replace_ghoul", -1);
+		SetCVar("mm_replace_banshee", -1);
+		SetCVar("mm_replace_shocktrooper", -1);
+		SetCVar("mm_replace_mindweaver", -1);
+		SetCVar("mm_replace_vassago", -1);
+		SetCVar("mm_replace_tyrant", -1);
 
 		// Spawn Options
 		SetCVar("mm_doom", true);
@@ -1711,6 +1744,17 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_replace_heresiarch", -1);
 		SetCVar("mm_replace_korax", -1);
 		SetCVar("mm_replace_pig", -1);
+		SetCVar("mm_replace_strifestalker", -1);
+		SetCVar("mm_replace_sentinel", -1);
+		SetCVar("mm_replace_reaver", -1);
+		SetCVar("mm_replace_crusader", -1);
+		SetCVar("mm_replace_inquisitor", -1);
+		SetCVar("mm_replace_ghoul", -1);
+		SetCVar("mm_replace_banshee", -1);
+		SetCVar("mm_replace_shocktrooper", -1);
+		SetCVar("mm_replace_mindweaver", -1);
+		SetCVar("mm_replace_vassago", -1);
+		SetCVar("mm_replace_tyrant", -1);
 
 		// Spawn Options
 		SetCVar("mm_doom", true);
@@ -1869,6 +1913,17 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_replace_heresiarch", -1);
 		SetCVar("mm_replace_korax", -1);
 		SetCVar("mm_replace_pig", -1);
+		SetCVar("mm_replace_strifestalker", -1);
+		SetCVar("mm_replace_sentinel", -1);
+		SetCVar("mm_replace_reaver", -1);
+		SetCVar("mm_replace_crusader", -1);
+		SetCVar("mm_replace_inquisitor", -1);
+		SetCVar("mm_replace_ghoul", -1);
+		SetCVar("mm_replace_banshee", -1);
+		SetCVar("mm_replace_shocktrooper", -1);
+		SetCVar("mm_replace_mindweaver", -1);
+		SetCVar("mm_replace_vassago", -1);
+		SetCVar("mm_replace_tyrant", -1);
 
 		// Spawn Options
 		SetCVar("mm_doom", true);
