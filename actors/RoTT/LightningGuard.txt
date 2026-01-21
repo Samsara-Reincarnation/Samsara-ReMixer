@@ -122,9 +122,9 @@ ACTOR LightningGuard : RoTTHumanoid {
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 9, "FireFlameWall")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 8, "FireDrunkMissile")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 7, "FireFirebomb")
-	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 6, "Missile2")
+	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 6, "FireBazooka")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 5, "FireHeatSeeker")
-	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 4, "FireBazooka")
+	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 4, "Missile2")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 3, "FireSplitMissile")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 2, "FireExcalibat")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 1, "FireDarkStaff")
@@ -554,14 +554,14 @@ actor HeavyGuardHeatSeeker : SamsaraSlotThreeDrop
     }
 }
 
-actor HeavyGuardBazooka : SamsaraSlotOneDrop
+actor HeavyGuardBazooka : SamsaraSlotFourDrop
 {
     +DROPPED
     +NEVERRESPAWN
     States
     {
       Spawn:
-        PBAZ A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 34)
+        PBAZ A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
         goto SpawnGameModeCheck
 
       SpawnActual:
@@ -1442,9 +1442,9 @@ ACTOR LightningGuardAlt : LightningGuard {
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 9, "FireFlameWall")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 8, "FireDrunkMissile")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 7, "FireFirebomb")
-	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 6, "Missile2")
+	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 6, "FireBazooka")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 5, "FireHeatSeeker")
-	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 4, "FireBazooka")
+	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 4, "Missile2")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 3, "FireSplitMissile")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 2, "FireExcalibat")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 1, "FireDarkStaff")

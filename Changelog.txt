@@ -41,6 +41,10 @@ Marathon:
 
 * Fixed enemies with yellow blood using the wrong color of the Duke3D blood pool when gibbed by Duke Nukem.
 
+Rise of the Triad:
+
+! To accommodate for the ROTT characters' equipment placement changes, lightning guards can now take away slot 2 equipment instead of slot 1 equipment.
+
 Blake Stone:
 
 * Fixed the High Security Genetic Guard using the wrong monster base.

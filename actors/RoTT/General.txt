@@ -342,14 +342,14 @@ Actor RoTT_BossExplosionSpawnerRising : RoTT_BossExplosionSpawner {
 	}
 }
 
-actor RoTTPistolDrop : SamsaraSlotTwoDrop
+actor RoTTPistolDrop : SamsaraSlotOneDrop
 {
     +DROPPED
     +NEVERRESPAWN
     States
     {
       Spawn:
-        PPST A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
+        PPST A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 34)
         goto SpawnGameModeCheck
 
       SpawnActual:

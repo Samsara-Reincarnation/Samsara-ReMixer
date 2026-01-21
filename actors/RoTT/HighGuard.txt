@@ -186,14 +186,14 @@ Actor HighGuardDrop {
 	}
 }
 
-actor RoTTMP40Drop : SamsaraSlotFourDrop
+actor RoTTMP40Drop : SamsaraSlotTwoDrop
 {
     +DROPPED
     +NEVERRESPAWN
     States
     {
       Spawn:
-        PM40 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 37)
+        PM40 A 0 NoDelay ACS_NamedExecuteWithResult("Samsara_SwitchableObject", 35)
         goto SpawnGameModeCheck
 
       SpawnActual:
