@@ -44,6 +44,7 @@ Marathon:
 Rise of the Triad:
 
 ! To accommodate for the ROTT characters' equipment placement changes, lightning guards can now take away slot 2 equipment instead of slot 1 equipment.
+* Fixed lightning guards not being able to take the Eradicator characters' missile launcher.
 
 Blake Stone:
 
