@@ -1,7 +1,7 @@
 Actor Ghoulie : SamsaraMonsterHumanoidTotalGib
 {
     Tag "Ghoulie"
-    Health 170
+    Health 90
     Radius 20
     Height 56
 	Mass 100
@@ -291,7 +291,7 @@ actor Ghoulie_ShrinkEffect : Ghoulie
 
 Actor PoweredGhoulie : Ghoulie
 { 
-    Health 220
+    Health 150
 	Obituary "%o was surprised by the Ghoulie's electroschism."
 	HitObituary "%o was ripped apart by a Ghoulie."
 	Tag "Powered Ghoulie"

@@ -9741,7 +9741,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Imp
 				{"CMCultie"},
 				{"CMTrooper"},
-				{"PoweredGhoulie"}
+				{"Ghoulie"}
 			},
 			{//Chaingun Guy
 				{"CMStynx"}
@@ -9845,7 +9845,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Armored Flemoidus Bipedicus
 				{"CMCultie"},
 				{"CMTrooper"},
-				{"PoweredGhoulie"}
+				{"Ghoulie"}
 			},
 			{//Flemoidus Stridicus
 				{"CMSlugg"},
@@ -9899,7 +9899,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Fire Gargoyle
 				{"CMCultie"},
 				{"CMTrooper"},
-				{"PoweredGhoulie"}
+				{"Ghoulie"}
 			},
 			{//Golem
 				{"CMTrooper"}

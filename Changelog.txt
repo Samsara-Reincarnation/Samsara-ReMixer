@@ -91,6 +91,12 @@ Shadow Warrior:
 
 * Fixed shadow ninjas not counting for kills when not gibbed.
 
+CyberMage:
+
+! The regular Ghoulie now spawns as an imp replacement instead of the Powered Ghoulie.
+- The Ghoulie's health has been decreased (from 170 to 90).
+- The Powered Ghoulie's health has been decreased (from 220 to 150).
+
 GoldenEye 007:
 
 -GoldenEye 007-
