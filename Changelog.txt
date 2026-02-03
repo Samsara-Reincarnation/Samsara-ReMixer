@@ -30,6 +30,18 @@ Heretic:
 + The Apprentice of D'Sparil has been added as a pain elemental replacement!
 + The weredragon's health has been increased (from 220 to 300).
 
+Wolfenstein 3D:
+
+-Original-
+
+! The Mutant now spawns as an imp replacement instead of being a revenant/hell knight replacement.
+! Gretel Grosse now spawns as a revenant/hell knight replacement.
+- Gretel Grosse's health has been decreased (from 1050 to 600).
+
+-Lost Episodes-
+
++ The Bat's health has been increased (from 65 to 130).
+
 Hexen I:
 
 ! Hexen I slot 2 equipment drop visuals have been expanded to include Parias (Reincarnation) and Baratus' respective slot 2 weapons.

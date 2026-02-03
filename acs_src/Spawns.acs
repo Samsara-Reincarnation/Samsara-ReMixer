@@ -2063,7 +2063,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Imp
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Chaingun Guy
 				{"WolfSS"}
@@ -2076,7 +2076,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Dark Imp
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Spectre
 				{"WolfDogSpectre"},
@@ -2093,7 +2093,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Revenant
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Cacolantern
 				{"FakeHitler"}
@@ -2102,7 +2102,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Hell Knight
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Arachnotron
 				{"OttoGiftmacherDoom"}
@@ -2117,15 +2117,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"TransGrosseDoom"}
 			},
 			{//Baron of Hell
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Hectebus
 				{"OttoGiftmacherDoom"}
 			},
 			{//Belphegor
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Spider Mastermind
 				{"GeneralFettgesicht"},
@@ -2150,7 +2148,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Flemoidus Stridicus
 				{"WolfDog"},
@@ -2170,14 +2168,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Quadrumpus
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Flemoidus Maximus
 				{"TransGrosseDoom"}
 			},
 			{//Flembrane
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Flembomination
 				{"GeneralFettgesicht"},
@@ -2195,7 +2192,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Fire Gargoyle
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Golem
 				{"WolfGuard"}
@@ -2227,10 +2224,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Ophidian
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Weredragon
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Iron Lich
 				{"TransGrosseDoom"}
@@ -2264,11 +2261,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Slaughtaur
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Green Chaos Serpent
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Stalker
 				{"WolfOfficer"},
@@ -2278,7 +2274,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSS"}
 			},
 			{//Wendigo
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Reiver
 				{"FakeHitler"}
@@ -2287,7 +2283,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Brown Chaos Serpent
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Traductus
 				{"TransGrosseDoom"}
@@ -2321,7 +2317,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Reaver
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Crusader
 				{"OttoGiftmacherDoom"}
@@ -2340,14 +2336,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Shocktrooper
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Mindweaver
 				{"OttoGiftmacherDoom"}
 			},
 			{//Vassago
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Tyrant
 				{"DoctorSchabbs"},
@@ -13096,7 +13091,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Imp
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Chaingun Guy
 				{"WolfSS"}
@@ -13109,7 +13104,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Dark Imp
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Spectre
 				{"WolfDogSpectre"},
@@ -13126,7 +13121,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Revenant
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Cacolantern
 				{"FakeHitler"}
@@ -13135,7 +13130,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Hell Knight
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Arachnotron
 				{"OttoGiftmacherDoom"}
@@ -13150,15 +13145,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"TransGrosseDoom"}
 			},
 			{//Baron of Hell
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Hectebus
 				{"OttoGiftmacherDoom"}
 			},
 			{//Belphegor
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Spider Mastermind
 				{"GeneralFettgesicht"},
@@ -13183,7 +13176,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Flemoidus Stridicus
 				{"WolfDog"},
@@ -13203,14 +13196,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Quadrumpus
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Flemoidus Maximus
 				{"TransGrosseDoom"}
 			},
 			{//Flembrane
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Flembomination
 				{"GeneralFettgesicht"},
@@ -13228,7 +13220,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Fire Gargoyle
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Golem
 				{"WolfGuard"}
@@ -13260,10 +13252,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Ophidian
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Weredragon
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Iron Lich
 				{"TransGrosseDoom"}
@@ -13297,11 +13289,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Slaughtaur
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Green Chaos Serpent
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Stalker
 				{"WolfOfficer"},
@@ -13311,7 +13302,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSS"}
 			},
 			{//Wendigo
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Reiver
 				{"FakeHitler"}
@@ -13320,7 +13311,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Brown Chaos Serpent
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Traductus
 				{"TransGrosseDoom"}
@@ -13354,7 +13345,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Reaver
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Crusader
 				{"OttoGiftmacherDoom"}
@@ -13373,14 +13364,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Shocktrooper
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Mindweaver
 				{"OttoGiftmacherDoom"}
 			},
 			{//Vassago
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Tyrant
 				{"DoctorSchabbs"},
@@ -13399,7 +13389,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Imp
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Chaingun Guy
 				{"WolfSS"}
@@ -13412,7 +13402,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Dark Imp
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Spectre
 				{"WolfDogSpectre"},
@@ -13429,7 +13419,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Revenant
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Cacolantern
 				{"FakeHitler"}
@@ -13438,7 +13428,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Hell Knight
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Arachnotron
 				{"OttoGiftmacherDoom"}
@@ -13453,15 +13443,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"TransGrosseDoom"}
 			},
 			{//Baron of Hell
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Hectebus
 				{"OttoGiftmacherDoom"}
 			},
 			{//Belphegor
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Spider Mastermind
 				{"GeneralFettgesicht"},
@@ -13486,7 +13474,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Flemoidus Stridicus
 				{"WolfDog"},
@@ -13506,14 +13494,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Quadrumpus
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Flemoidus Maximus
 				{"TransGrosseDoom"}
 			},
 			{//Flembrane
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Flembomination
 				{"GeneralFettgesicht"},
@@ -13531,7 +13518,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Fire Gargoyle
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Golem
 				{"WolfGuard"}
@@ -13563,10 +13550,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Ophidian
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Weredragon
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Iron Lich
 				{"TransGrosseDoom"}
@@ -13600,11 +13587,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRat"}
 			},
 			{//Slaughtaur
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Green Chaos Serpent
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Stalker
 				{"WolfOfficer"},
@@ -13614,7 +13600,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSS"}
 			},
 			{//Wendigo
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Reiver
 				{"FakeHitler"}
@@ -13623,7 +13609,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FakeHitler"}
 			},
 			{//Brown Chaos Serpent
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Traductus
 				{"TransGrosseDoom"}
@@ -13657,7 +13643,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Reaver
-				{"WolfMutant"}
+				{"GretelGrosseDoom"}
 			},
 			{//Crusader
 				{"OttoGiftmacherDoom"}
@@ -13676,14 +13662,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfSpectre"}
 			},
 			{//Shocktrooper
-				{"WolfOfficer"}
+				{"WolfMutant"}
 			},
 			{//Mindweaver
 				{"OttoGiftmacherDoom"}
 			},
 			{//Vassago
-				{"HansGrosseDoom"},
-				{"GretelGrosseDoom"}
+				{"HansGrosseDoom"}
 			},
 			{//Tyrant
 				{"DoctorSchabbs"},
@@ -16779,14 +16764,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Baron of Hell
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Hectebus
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Belphegor
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Spider Mastermind
@@ -16838,7 +16821,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flembrane
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flembomination
@@ -16926,7 +16908,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Slaughtaur
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Green Chaos Serpent
@@ -17008,7 +16989,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Vassago
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Tyrant
@@ -27812,14 +27792,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Baron of Hell
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Hectebus
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Belphegor
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Spider Mastermind
@@ -27871,7 +27849,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flembrane
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flembomination
@@ -27959,7 +27936,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Slaughtaur
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Green Chaos Serpent
@@ -28041,7 +28017,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Vassago
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Tyrant

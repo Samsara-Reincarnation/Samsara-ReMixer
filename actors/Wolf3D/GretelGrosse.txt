@@ -1,6 +1,6 @@
 ACTOR GretelGrosse : SamsaraMonsterHumanoidTotalGib
 {
-	Health 1050
+	Health 600
 	Radius 33
 	Height 70
 	Speed 6

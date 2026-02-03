@@ -1,6 +1,6 @@
 ACTOR SODBat : SamsaraMonsterBeastTotalGib
 {
-	Health 65
+	Health 130
 	Radius 16
 	Height 36
 	Speed 6
