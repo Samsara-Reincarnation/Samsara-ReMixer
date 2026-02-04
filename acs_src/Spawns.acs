@@ -782,6 +782,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Arch-vile
 				{"Archvile3"},
 				{"MMRandomizer_Diabolist"},
+				{"MMRandomizer_FleshWizard"},
 				{"MMRandomizer_Hierophant"}
 			},
 			{//Baron of Hell
@@ -905,6 +906,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Flemoidus Maximus
 				{"Archvile3"},
 				{"MMRandomizer_Diabolist"},
+				{"MMRandomizer_FleshWizard"},
 				{"MMRandomizer_Hierophant"}
 			},
 			{//Flembrane
@@ -1043,6 +1045,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Iron Lich
 				{"Archvile3"},
 				{"MMRandomizer_Diabolist"},
+				{"MMRandomizer_FleshWizard"},
 				{"MMRandomizer_Hierophant"}
 			},
 			{//Maulotaur
@@ -1171,16 +1174,19 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Traductus
 				{"Archvile3"},
 				{"MMRandomizer_Diabolist"},
+				{"MMRandomizer_FleshWizard"},
 				{"MMRandomizer_Hierophant"}
 			},
 			{//Zedek
 				{"Archvile3"},
 				{"MMRandomizer_Diabolist"},
+				{"MMRandomizer_FleshWizard"},
 				{"MMRandomizer_Hierophant"}
 			},
 			{//Menelkir
 				{"Archvile3"},
 				{"MMRandomizer_Diabolist"},
+				{"MMRandomizer_FleshWizard"},
 				{"MMRandomizer_Hierophant"}
 			},
 			{//Heresiarch
@@ -15429,6 +15435,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Arch-vile
 				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
 				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Baron of Hell
@@ -15552,6 +15559,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Flemoidus Maximus
 				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
 				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Flembrane
@@ -15690,6 +15698,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Iron Lich
 				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
 				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Maulotaur
@@ -15818,16 +15827,19 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Traductus
 				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
 				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Zedek
 				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
 				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Menelkir
 				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
 				{0,0,5,0,0,5,0,0,5,0,0,5,0,0,5},
+				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Heresiarch

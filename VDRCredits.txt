@@ -323,6 +323,12 @@ Sprites: id Software
 Sprite Edit: Spectator, IMX (Recolor)
 Idea Base: ZDoom Wars required sprites to allow players to tell Rail and Normal Revenants apart.
 
+Flesh Wizard:
+Code: Melvin, Ghastly Dragon (ZScript conversion)
+GLDefs: Ghastly Dragon
+Sounds: Raven Software
+Sprites: Freedoom
+
 Hectebus:
 Submitted: Tormentor667
 Code: AgentSpork, Carnevil, Ghastly

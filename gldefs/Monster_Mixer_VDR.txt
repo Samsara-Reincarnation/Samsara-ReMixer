@@ -3047,6 +3047,39 @@ object MMRandomizer_CurseBall
 	frame VE36I { light MMRandomizer_CurseBall6 }
 }
 
+pointlight MMRandomizer_FleshWizardBall1
+{
+	color 0.4 0.0 0.0
+	size 48
+}
+
+pointlight MMRandomizer_FleshWizardBall2
+{
+	color 0.7 0.0 0.0
+	size 64
+}
+
+pointlight MMRandomizer_FleshWizardBall3
+{
+	color 0.6 0.0 0.0
+	size 56
+}
+
+pointlight MMRandomizer_FleshWizardBall4
+{
+	color 0.4 0.0 0.0
+	size 32
+}
+
+object MMRandomizer_FleshWizardBall
+{
+	frame VD9AQ { light FleshWizardBall1 }
+	frame VD9AR { light FleshWizardBall1 }
+	frame VD9AS { light FleshWizardBall2 }
+	frame VD9AT { light FleshWizardBall3 }
+	frame VD9AU { light FleshWizardBall4 }
+}
+
 pointlight MMRandomizer_DemolisherChaingun_X1
 {
 	color 1.0 1.0 0.0

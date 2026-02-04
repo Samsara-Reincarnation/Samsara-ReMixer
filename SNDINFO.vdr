@@ -327,6 +327,14 @@ vdr/curse2			"Sounds/VDR/vdr_dscurse2"
 $rolloff vdr/hiesit 300 1800
 $rolloff vdr/hiedth 300 1800
 
+$random vdr/fleshwizard/tele	{ vdr/fleshwizard/tele1  vdr/fleshwizard/tele2 }
+vdr/fleshwizard/tele1			"Sounds/VDR/vdr_dwiztel1.ogg"
+vdr/fleshwizard/tele2			"Sounds/VDR/vdr_dwiztel2.ogg"
+vdr/fleshwizard/pain			"Sounds/VDR/vdr_dwizpain.ogg"
+vdr/fleshwizard/sight			"Sounds/VDR/vdr_dwizact.ogg"
+vdr/fleshwizard/active			"Sounds/VDR/vdr_dwizact.ogg"
+vdr/fleshwizard/death			"Sounds/VDR/vdr_dwizdth.ogg"
+
 vdr/ar2sit 			"Sounds/VDR/vdr_dsar2sit"
 vdr/ar2dth 			"Sounds/VDR/vdr_dsar2dth"
 vdr/firbfi 			"Sounds/VDR/vdr_dsfirbfi"

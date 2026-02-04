@@ -860,6 +860,7 @@
 #include "actors/VDR/Incarnate.txt"
 #include "actors/VDR/Diabolist.txt"
 #include "actors/VDR/Hierophant.txt"
+#include "actors/VDR/FleshWizard.txt"
 #include "actors/VDR/DarkCyberdemon.txt"
 #include "actors/VDR/Annihilator.txt"
 #include "actors/VDR/ArachnorbQueen.txt"
