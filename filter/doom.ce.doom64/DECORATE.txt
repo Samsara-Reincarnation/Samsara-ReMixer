@@ -1,0 +1,18 @@
+actor D64Archvile_SamsaraRemixer : ArchvileSpawner replaces D64Archvile_Samsara {}
+actor D64NightmareCacodemon_SamsaraRemixer : CacolanternSpawner replaces D64NightmareCacodemon_Samsara {}
+actor D64NightmareSpectre_SamsaraRemixer : BloodDemonSpawner replaces D64NightmareSpectre_Samsara {}
+actor D64AcidDemon_SamsaraRemixer : BloodDemonSpawner replaces D64AcidDemon_Samsara {}
+actor D64NightmareImp_SamsaraRemixer : DarkImpSpawner replaces D64NightmareImp_Samsara {}
+actor D64Stalker_SamsaraRemixer : LegacyOfRustGhoulSpawner replaces D64Stalker_Samsara {}
+actor D64InvisibleStalker_SamsaraRemixer : LegacyOfRustGhoulSpawner replaces D64InvisibleStalker_Samsara {}
+actor D64Nightcrawler_SamsaraRemixer : LegacyOfRustMindweaverSpawner replaces D64Nightcrawler_Samsara {}
+actor D64Resurrector_SamsaraRemixer : RandomSpawner replaces D64Resurrector_Samsara { DropItem "MotherDemon64" }
+actor D64BossEye_SamsaraRemixer : D64BossEye_Samsara replaces D64BossEye_Samsara
+{
+    DropItem "DoomImpSpawner", 255, 50
+    DropItem "DemonSpawner", 255, 40
+    DropItem "SpectreSpawner", 255, 20
+    DropItem "BloodDemonSpawner", 255, 20
+    DropItem "DarkImpSpawner", 255, 30
+    DropItem "HellKnightSpawner", 255, 40
+}

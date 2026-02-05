@@ -164,6 +164,10 @@ Strife: Quest for the Sigil:
 - Removed the Templar as a ReMixer spawn slot.
 ! The Strife ReMixer enemies now spawn accordingly to their original spawn slots.
 
+Doom 64 CE:
+
++ The realm of Doom 64 CE has opened up to the monsters! Note that support is currently exclusive to GZDoom only.
+
 -Settings-
 
 + mm_shieldingmonsters has been added, which controls whether certain monsters such as Centaurs can receive invulnerability or damage resistance after entering their pain states. It can be found in the "Samsara ReMixer Options" menu, under "General Options", with the label "Shielding Monsters".
