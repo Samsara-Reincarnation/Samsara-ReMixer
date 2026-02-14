@@ -14,6 +14,10 @@
 
 Doom:
 
+-Original-
+
+* Fixed the pain elemental using the wrong sprite when hit by Stronghold Doomguy's stunner rifle, Duke's mighty boot, and Security Officer's Tech.50 Pacifier.
+
 -Vanilla Doom Randomizer-
 
 * Fixed the cyber baron using the wrong sound when dying.
