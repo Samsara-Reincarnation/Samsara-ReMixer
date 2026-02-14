@@ -150,10 +150,6 @@ GoldenEye 007:
 
 -Games-
 
-Legacy of Rust/WadFusion:
-
-+ Added dedicated spawn slots for the Legacy of Rust monsters.
-
 Heretic:
 
 ! The Heretic ReMixer enemies now spawn accordingly to their original spawn slots.
@@ -171,6 +167,10 @@ Strife: Quest for the Sigil:
 Doom 64 CE:
 
 + The realm of Doom 64 CE has opened up to the monsters! Note that support is currently exclusive to GZDoom only.
+
+Legacy of Rust/WadFusion:
+
++ Added dedicated spawn slots for the Legacy of Rust monsters.
 
 -Settings-
 
