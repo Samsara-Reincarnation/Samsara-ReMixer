@@ -20,12 +20,12 @@ Doom:
 
 -Vanilla Doom Randomizer-
 
-* Fixed the cyber baron using the wrong sound when dying.
-* Fixed the archon of Hell using the baron of Hell sprites when hit by the Stronghold stunner rifle.
-+ The Flesh Wizard has been added as an arch-vile replacement!
-+ The Hellraiser has been added as an arch-vile replacement!
-+ Added a new version of the Belphegor with new sprites.
 ! The Legacy of Rust Shocktrooper now has a chance to spawn as a super shotgun guy replacement.
++ The Hellraiser has been added as an arch-vile replacement!
++ The Flesh Wizard has been added as an arch-vile replacement!
++ Added a new version of the Belphegor with new sprites.
+* Fixed the cyber baron using the wrong sound when dying.
+* Fixed the archon of Hell using the baron of Hell sprites when hit by Stronghold Doomguy's stunner rifle and Security Officer's Tech.50 Pacifier.
 ! The Legacy of Rust Mindweaver now has a chance to spawn as a hectebus replacement.
 ! The Legacy of Rust Vassago now has a chance to spawn as a belphegor replacement.
 
