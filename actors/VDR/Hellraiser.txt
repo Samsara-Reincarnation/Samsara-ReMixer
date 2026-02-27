@@ -20,7 +20,7 @@ ACTOR MMRandomizer_Hellraiser : Archvile3
 		Loop
 	Missile:
 		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
-		TNT1 A 0 A_Jump(96, "MissileSpawn")
+		//TNT1 A 0 A_Jump(96, "MissileSpawn")
 		VD9C E 0 BRIGHT A_PlaySound("doom/vile/start", CHAN_VOICE)
 		VD9C E 8 BRIGHT A_FaceTarget
 		VD9C F 8 BRIGHT A_VileTarget("ArchvileFire_Samsara")
@@ -28,6 +28,8 @@ ACTOR MMRandomizer_Hellraiser : Archvile3
 		VD9C O 8 BRIGHT A_VileAttack("doom/vile/Stop")
 		VD9C P 15 BRIGHT
 		Goto See
+	// Disabled for now
+	/*
 	MissileSpawn:
 		VD9C E 0 BRIGHT A_PlaySound("doom/vile/start", CHAN_VOICE)
 		VD9C E 6 BRIGHT A_FaceTarget
@@ -49,6 +51,7 @@ ACTOR MMRandomizer_Hellraiser : Archvile3
 	MissileSpawnEnd:
 		VD9C P 10 BRIGHT
 		Goto See
+	*/
 	Heal:
 		VD9C Y 15 BRIGHT
 		Goto See
