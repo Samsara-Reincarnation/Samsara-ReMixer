@@ -2,6 +2,10 @@ ACTOR MMRandomizer_Hellraiser : Archvile3
 {
 	Health 800
 	Speed 18
+	SeeSound "vdr/hellraiser/sight"
+	PainSound "vdr/hellraiser/pain"
+	DeathSound "vdr/hellraiser/death"
+	ActiveSound "vdr/hellraiser/active"
 	Tag "Hellraiser"
 	Obituary "%o's flesh was burnt off by a hellraiser."
 	States

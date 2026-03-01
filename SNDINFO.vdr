@@ -327,13 +327,18 @@ vdr/curse2			"Sounds/VDR/vdr_dscurse2"
 $rolloff vdr/hiesit 300 1800
 $rolloff vdr/hiedth 300 1800
 
+vdr/hellraiser/sight	"Sounds/VDR/vdr_hlraisst.ogg"
+vdr/hellraiser/active	"Sounds/VDR/vdr_hlraisid.ogg"
+vdr/hellraiser/pain		"Sounds/VDR/vdr_hlraispn.ogg"
+vdr/hellraiser/death	"Sounds/VDR/vdr_hlraisdt.ogg"
+
 $random vdr/fleshwizard/tele	{ vdr/fleshwizard/tele1  vdr/fleshwizard/tele2 }
-vdr/fleshwizard/tele1			"Sounds/VDR/vdr_dwiztel1.ogg"
-vdr/fleshwizard/tele2			"Sounds/VDR/vdr_dwiztel2.ogg"
-vdr/fleshwizard/pain			"Sounds/VDR/vdr_dwizpain.ogg"
-vdr/fleshwizard/sight			"Sounds/VDR/vdr_dwizact.ogg"
-vdr/fleshwizard/active			"Sounds/VDR/vdr_dwizact.ogg"
-vdr/fleshwizard/death			"Sounds/VDR/vdr_dwizdth.ogg"
+vdr/fleshwizard/tele1			"Sounds/VDR/vdr_flswzdt1.ogg"
+vdr/fleshwizard/tele2			"Sounds/VDR/vdr_flswzdt2.ogg"
+vdr/fleshwizard/pain			"Sounds/VDR/vdr_flswzdpn.ogg"
+vdr/fleshwizard/sight			"Sounds/VDR/vdr_flswzdst.ogg"
+vdr/fleshwizard/active			"Sounds/VDR/vdr_flswzdid.ogg"
+vdr/fleshwizard/death			"Sounds/VDR/vdr_flswzddt.ogg"
 
 vdr/ar2sit 			"Sounds/VDR/vdr_dsar2sit"
 vdr/ar2dth 			"Sounds/VDR/vdr_dsar2dth"
