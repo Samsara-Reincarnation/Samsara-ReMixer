@@ -113,3 +113,14 @@ Script "Incarnate_ReviveTimeMultiplier" (void)
 
 	SetResultValue(waitTimeMultiplier);
 }
+
+Script "Hellraiser_SpawnEnemies" (void)
+{
+	int angle = GetActorAngle(0) >> 16;
+	int x = GetActorX(0) + 64*cos(angle + 90.0), nx = GetActorX(0) - 64*cos(angle + 90.0);
+	int	y = GetActorY(0) + 64*sin(angle + 90.0), ny = GetActorY(0) - 64*sin(angle + 90.0);
+	int z = GetActorZ(0);
+
+	Spawn("DoomImp3Hellraiser", x, y, z, 0, angle + 90);
+	Spawn("DoomImp3Hellraiser", nx, ny, z, 0, angle + 90);
+}
