@@ -772,7 +772,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Mancubus
 				{"Fatso3"},
-				{"MMRandomizer_Hectebus"},
+				{"MMRandomizer_Pestilence"},
 				{"MMRandomizer_Cryocubus"},
 				{"MMRandomizer_Daedabus"}
 			},
@@ -1233,7 +1233,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Crusader
 				{"Fatso3"},
-				{"MMRandomizer_Hectebus"},
+				{"MMRandomizer_Pestilence"},
 				{"MMRandomizer_Cryocubus"},
 				{"MMRandomizer_Daedabus"}
 			},
