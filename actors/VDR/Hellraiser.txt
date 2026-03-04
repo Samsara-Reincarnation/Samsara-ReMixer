@@ -328,6 +328,7 @@ actor MMRandomizer_Hellraiser_ShrinkEffect : MMRandomizer_Hellraiser
 
 ACTOR DoomImp3Hellraiser : DoomImp3
 {
+	+LOOKALLAROUND
 	States
 	{
 	Spawn:

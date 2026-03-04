@@ -116,11 +116,12 @@ Script "Incarnate_ReviveTimeMultiplier" (void)
 
 Script "Hellraiser_SpawnEnemies" (void)
 {
-	int angle = GetActorAngle(0) >> 16;
-	int x = GetActorX(0) + 64*cos(angle + 90.0), nx = GetActorX(0) - 64*cos(angle + 90.0);
-	int	y = GetActorY(0) + 64*sin(angle + 90.0), ny = GetActorY(0) - 64*sin(angle + 90.0);
+	// Spawn the imps to the left and right of the hellraiser
+	int angle = GetActorAngle(0);
+	int x = GetActorX(0) + cos(angle + 0.25) * 48, nx = GetActorX(0) + cos(angle + 0.75) * 48;
+	int	y = GetActorY(0) + sin(angle + 0.25) * 48, ny = GetActorY(0) + sin(angle + 0.75) * 48;
 	int z = GetActorZ(0);
 
-	Spawn("DoomImp3Hellraiser", x, y, z, 0, angle + 90);
-	Spawn("DoomImp3Hellraiser", nx, ny, z, 0, angle + 90);
+	Spawn("DoomImp3Hellraiser", x, y, z, 0, angle>>16);
+	Spawn("DoomImp3Hellraiser", nx, ny, z, 0, angle>>16);
 }
