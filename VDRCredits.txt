@@ -488,6 +488,14 @@ Sprites: Id Software
 Sprite Edit: Tormentor667, Captain Toenail, D-Grafix (laser sprite), HorrorMovieRei (laser particles)
 Idea: Tormentor667
 
+Pestilence:
+Submitted: Kan3
+Code: Kan3
+GLDefs: Kan3
+Sounds: Kan3, The Skulltag Team
+Sprites: Id Software
+Sprite Edit: Kan3
+
 RapidFireTrooper:
 Submitted: Tormentor667
 Code: Graf Zahl, Ghastly (ZScript conversion)

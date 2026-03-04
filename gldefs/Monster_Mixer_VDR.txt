@@ -3720,14 +3720,38 @@ object MMRandomizer_CryocubusFreezeBlast
 	frame VE20E { light MMRandomizer_CRYOCUBUS_FREEZE_BLAST_X4 }
 }
 
-object MMRandomizer_HectShot
+pointlight MMRandomizer_PestFire1
 {
-	frame VE19A { light HECTSHOT }
-	frame VE19B { light HECTSHOT }
+	color 0.4 0.8 0.0
+	size 56
+}
 
-	frame VE19C { light HECTSHOT_X1 }
-	frame VE19D { light HECTSHOT_X2 }
-	frame VE19E { light HECTSHOT_X3 }
+pointlight MMRandomizer_PestFire2
+{
+	color 0.5 0.8 0.1
+	size 64
+}
+
+pointlight MMRandomizer_PestFire3
+{
+	color 0.6 0.6 0.1
+	size 56
+}
+
+pointlight MMRandomizer_PestFire4
+{
+	color 0.5 0.5 0.1
+	size 32
+}
+
+object MMRandomizer_PestShot
+{
+	frame VD9DV { light MMRandomizer_PestFire1 }
+	frame VD9DW { light MMRandomizer_PestFire1 }
+
+	frame VD9DX { light MMRandomizer_PestFire2 }
+	frame VD9DY { light MMRandomizer_PestFire3 }
+	frame VD9DZ { light MMRandomizer_PestFire4 }
 }
 
 pointlight MMRandomizer_DaedFire1

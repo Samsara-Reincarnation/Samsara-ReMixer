@@ -286,6 +286,12 @@ vdr/DAEDPAI1		"Sounds/VDR/vdr_DAEDPAI1"
 vdr/DAEDPAI2		"Sounds/VDR/vdr_DAEDPAI2"
 vdr/Daedabus/Death 		"Sounds/VDR/vdr_DAEDDEAT"
 
+vdr/Pestilence/Sight	"Sounds/VDR/vdr_PSTLCSIT"
+vdr/Pestilence/Active	"Sounds/VDR/vdr_PSTLCACT"
+vdr/Pestilence/Attack	"Sounds/VDR/vdr_PSTLCATT"
+vdr/Pestilence/Pain		"Sounds/VDR/vdr_PSTLCPAI"
+vdr/Pestilence/Death	"Sounds/VDR/vdr_PSTLCDTH"
+
 vdr/Ghoul/melee 		"Sounds/VDR/vdr_GHOULPUN"
 vdr/Ghoul/Swing 		"Sounds/VDR/vdr_GHOULSWN"
 vdr/Ghoul/attack		"Sounds/VDR/vdr_GBALLFLY"

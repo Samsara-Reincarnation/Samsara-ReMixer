@@ -2,7 +2,7 @@ ACTOR MMRandomizer_Belphegor : BaronofHell3
 {
 	Health 1500
 	MeleeDamage 15
-	BloodColor "Green"
+	BloodColor "43 93 37"
 	MeleeSound "doom/baron/melee"
 	ReactionTime 8
 	MissileType MMRandomizer_BelphegorBall
