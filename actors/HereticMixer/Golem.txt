@@ -157,7 +157,7 @@ actor Mummy2_Shrink : Mummy3
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(1.0*(user_scalex/65536.0),1.0*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("Mummy3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("Mummy3Doom", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 2 Thing_Remove(0)
@@ -229,7 +229,7 @@ actor Mummy2_ShrinkEffect : Mummy3
 
 ACTOR MummyGhost3 : MummyGhost2 
 {
-	Health 60
+	Health 120
 	//Dropitem "DefaultPinataPop"
 	DropItem "GoldWandAmmo2", 84
 	States
@@ -387,7 +387,7 @@ actor MummyGhost2_Shrink : MummyGhost3
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(1.0*(user_scalex/65536.0),1.0*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MummyGhost3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("MummyGhost3Doom", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 2 Thing_Remove(0)
@@ -599,7 +599,7 @@ actor MummyLeader2_Shrink : MummyLeader3
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(1.0*(user_scalex/65536.0),1.0*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MummyLeader3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("MummyLeader3Doom", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 2 Thing_Remove(0)
@@ -634,7 +634,7 @@ actor MummyLeader2_Shrink : MummyLeader3
 
 ACTOR MummyLeaderGhost3 : MummyLeaderGhost2
 {
-	Health 75
+	Health 150
 	//Dropitem "DefaultPinataPop"
 	DropItem "GoldWandAmmo2", 84
 	States
@@ -792,7 +792,7 @@ actor MummyLeaderGhost2_Shrink : MummyLeaderGhost3
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(1.0*(user_scalex/65536.0),1.0*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("MummyLeaderGhost3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("MummyLeaderGhost3Doom", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 2 Thing_Remove(0)

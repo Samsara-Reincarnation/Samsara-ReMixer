@@ -1,6 +1,6 @@
 ACTOR Knight3 : Knight2 
 {
-	Health 100
+	Health 150
 	DropItem "HereticKnightDrop"
 	States
 	{
@@ -176,7 +176,7 @@ actor Knight2_Shrink : Knight3
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(1.0*(user_scalex/65536.0),1.0*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("Knight3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("Knight3Doom", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 2 Thing_Remove(0)
@@ -248,7 +248,7 @@ actor Knight2_ShrinkEffect : Knight3
 
 ACTOR KnightGhost3 : KnightGhost2 
 {
-	Health 100
+	Health 150
 	//Dropitem "DefaultPinataPop"
 	DropItem "CrossbowAmmo2", 84
 	States
@@ -406,7 +406,7 @@ actor KnightGhost2_Shrink : KnightGhost3
 			"####" "#" 1 A_SetScale(0.9*(user_scalex/65536.0),0.9*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(0.95*(user_scalex/65536.0),0.95*(user_scaley/65536.0))
 			"####" "#" 1 A_SetScale(1.0*(user_scalex/65536.0),1.0*(user_scaley/65536.0))
-			"####" "#" 0 A_SpawnItemEx("KnightGhost3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
+			"####" "#" 0 A_SpawnItemEx("KnightGhost3Doom", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERPOINTERS|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 0 A_GiveToChildren("ShrunkPropertyTransfer",1)
 			TNT1 A 2 Thing_Remove(0)

@@ -33,8 +33,13 @@ Doom:
 
 Heretic:
 
+* Fixed several Heretic enemies not growing back to the correct actor after being shrunk.
 - The golem's health has been decreased (from 80 to 60).
 - The nitrogolem's health has been decreased (from 100 to 75).
++ The Undead Knight's health has been increased (from 100 to 150).
++ The golom ghost's health has been increased (from 60 to 120).
++ The nitrogolom ghost's health has been increased (from 80 to 150).
++ The gargoyle's health has been increased (from 40 to 60).
 + The Disciple of D'Sparil's health has been increased (from 180 to 250).
 + The Apprentice of D'Sparil has been added as a pain elemental replacement!
 + The weredragon's health has been increased (from 220 to 300).

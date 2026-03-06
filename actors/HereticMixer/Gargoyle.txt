@@ -1,5 +1,6 @@
 ACTOR HereticImp3 : HereticImp2
 {
+	Health 60
 	States 
 	{
 		Spawn:
