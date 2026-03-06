@@ -1,6 +1,6 @@
 ACTOR Mummy3 : Mummy2 
 {
-	Health 40
+	Health 60
 	DropItem "GoldWandAmmo2", 84
 	States
 	{
@@ -229,7 +229,7 @@ actor Mummy2_ShrinkEffect : Mummy3
 
 ACTOR MummyGhost3 : MummyGhost2 
 {
-	Health 40
+	Health 60
 	//Dropitem "DefaultPinataPop"
 	DropItem "GoldWandAmmo2", 84
 	States
@@ -422,7 +422,7 @@ actor MummyGhost2_Shrink : MummyGhost3
 
 ACTOR MummyLeader3 : MummyLeader2
 {
-	Health 50
+	Health 75
 	//Dropitem "DefaultPinataPop"
 	DropItem "HereticMummyLeaderDrop", 256, 1
 	States
@@ -634,7 +634,7 @@ actor MummyLeader2_Shrink : MummyLeader3
 
 ACTOR MummyLeaderGhost3 : MummyLeaderGhost2
 {
-	Health 50
+	Health 75
 	//Dropitem "DefaultPinataPop"
 	DropItem "GoldWandAmmo2", 84
 	States

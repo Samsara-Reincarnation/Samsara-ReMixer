@@ -1,7 +1,7 @@
 ACTOR Ettin3 : Ettin2
 {
 	Tag "Ettin"
-	Health 50
+	Health 75
     DamageFactor "QuakePistol", 1.0
     DamageFactor "MarathonPistol", 1.0
     DamageFactor "DukePistol", 1.0

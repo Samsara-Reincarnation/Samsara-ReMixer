@@ -1,7 +1,7 @@
 ACTOR FireDemon3 : FireDemon2 
 {
 	Tag "Afrit"
-    Health 40
+    Health 60
     DamageFactor "QuakePistol", 1.0
     DamageFactor "MarathonPistol", 1.0
     DamageFactor "DukePistol", 1.0

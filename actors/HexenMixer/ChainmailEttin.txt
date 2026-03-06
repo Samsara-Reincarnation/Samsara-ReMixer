@@ -1,7 +1,7 @@
 ACTOR ChainmailEttin3 : Ettin3
 {
 	Tag "Chainmail Ettin"
-	Health 75
+	Health 100
 	AttackSound ""
 	Radius 20
 	Height 56

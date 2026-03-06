@@ -3,7 +3,7 @@
 ACTOR Centaur3 : Centaur2 
 {
 	Tag "Centaur"
-    Health 100
+    Health 150
 	DamageFactor "QuakePistol", 1.0
     DamageFactor "MarathonPistol", 1.0
     DamageFactor "DukePistol", 1
@@ -275,7 +275,7 @@ actor Centaur_ShrinkEffect : Centaur3
 ACTOR CentaurLeader3 : CentaurLeader2
 {
 	Tag "Slaughtaur"
-    Health 125
+    Health 200
 	DamageFactor "QuakePistol", 1.0
     DamageFactor "MarathonPistol", 1.0
     DamageFactor "DukePistol", 1

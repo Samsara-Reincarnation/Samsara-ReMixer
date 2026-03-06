@@ -345,6 +345,7 @@ ACTOR Demon2C : Demon2B
     DamageFactor "WMCBeam", 1.0
     DamageFactor "WMCNade", 1.0
 	//Dropitem "DefaultPinataPop"
+	Health 400
 	Radius 24
     Height 64
 	-TELESTOMP
