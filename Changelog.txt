@@ -31,6 +31,10 @@ Doom:
 + The Legacy of Rust Mindweaver now has a chance to spawn as a hectebus replacement.
 + The Legacy of Rust Vassago now has a chance to spawn as a belphegor replacement.
 
+-Doom 64-
+
+* Fixed the cyberdemon's rockets dealing the incorrect amount of direct damage.
+
 Heretic:
 
 * Fixed several Heretic enemies not growing back to the correct actor after being shrunk.
