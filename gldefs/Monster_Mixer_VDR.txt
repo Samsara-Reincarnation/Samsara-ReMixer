@@ -1,12 +1,12 @@
 object MMRandomizer_PlasmaZombieBall
 {
-	frame DPLM { light PLASMABALL }
+	frame DPLM { light DOOMPLASMABALL }
 
-	frame DPLEA { light PLASMA_X1 }
-	frame DPLEB { light PLASMA_X2 }
-	frame DPLEC { light PLASMA_X2 }
-	frame DPLED { light PLASMA_X3 }
-	frame DPLEE { light PLASMA_X4 }
+	frame DPLEA { light DOOMPLASMA_X1 }
+	frame DPLEB { light DOOMPLASMA_X2 }
+	frame DPLEC { light DOOMPLASMA_X2 }
+	frame DPLED { light DOOMPLASMA_X3 }
+	frame DPLEE { light DOOMPLASMA_X4 }
 }
 
 pointlight MMRandomizer_SMALLIMPBALL
@@ -3262,23 +3262,23 @@ object MMRandomizer_Demolisher
 
 object MMRandomizer_DemolisherBFGBall
 {
-	frame DBFSA { light BFGBALL }
-	frame DBFSB { light BFGBALL }
+	frame DBFSA { light DOOMBFGBALL }
+	frame DBFSB { light DOOMBFGBALL }
 
-	frame DBFEA { light BFGBALL_X1 }
-	frame DBFEB { light BFGBALL_X2 }
-	frame DBFEC { light BFGBALL_X3 }
-	frame DBFED { light BFGBALL_X1 }
-	frame DBFEE { light BFGBALL_X4 }
-	frame DBFEF { light BFGBALL_X5 }
+	frame DBFEA { light DOOMBFGBALL_X1 }
+	frame DBFEB { light DOOMBFGBALL_X2 }
+	frame DBFEC { light DOOMBFGBALL_X3 }
+	frame DBFED { light DOOMBFGBALL_X1 }
+	frame DBFEE { light DOOMBFGBALL_X4 }
+	frame DBFEF { light DOOMBFGBALL_X5 }
 }
 
 object MMRandomizer_DemolisherBFGExtra
 {
-	frame DBFPA { light BFGBALL    }
-	frame DBFPB { light BFGBALL_X1 }
-	frame DBFPC { light BFGBALL_X4 }
-	frame DBFPD { light BFGBALL_X5 }
+	frame DBFPA { light DOOMBFGBALL    }
+	frame DBFPB { light DOOMBFGBALL_X1 }
+	frame DBFPC { light DOOMBFGBALL_X4 }
+	frame DBFPD { light DOOMBFGBALL_X5 }
 }
 
 pointlight MMRandomizer_QueenBFG
@@ -3546,20 +3546,20 @@ object MMRandomizer_DarkCyberdemonHomingBall
 
 object MMRandomizer_AnnihilatorRocket
 {
-	frame MIS2A { light ROCKET	}
+	frame MIS2A { light DOOMROCKET	}
 
-	frame MIS2B { light ROCKET_X1 }
-	frame MIS2C { light ROCKET_X2 }
-	frame MIS2D { light ROCKET_X3 }
+	frame MIS2B { light DOOMROCKET_X1 }
+	frame MIS2C { light DOOMROCKET_X2 }
+	frame MIS2D { light DOOMROCKET_X3 }
 }
 
 object MMRandomizer_AnnihilatorHomingRocket
 {
-	frame VE30A { light ROCKET	}
+	frame VE30A { light DOOMROCKET	}
 
-	frame VE25C { light ROCKET_X1 }
-	frame VE25D { light ROCKET_X2 }
-	frame VE25E { light ROCKET_X3 }
+	frame VE25C { light DOOMROCKET_X1 }
+	frame VE25D { light DOOMROCKET_X2 }
+	frame VE25E { light DOOMROCKET_X3 }
 }
 
 flickerlight2 MMRandomizer_CyberMastermindAttack1
@@ -3644,14 +3644,14 @@ object MMRandomizer_CyberMastermind
 
 object MMRandomizer_ChaingunArachnotron
 {
-	frame VD59G { light ZOMBIEATK }
-	frame VD59H { light ZOMBIEATK }
+	frame VD59G { light DOOMZOMBIEATK }
+	frame VD59H { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ChaingunSpiderBullet
 {
-	frame PFF2A { light BPUFF1 }
-	frame PFF2B { light BPUFF2 }
+	frame PFF2A { light DOOMBPUFF1 }
+	frame PFF2B { light DOOMBPUFF2 }
 }
 
 pointlight LASER_ARACHNOTRON_ATTACK
@@ -3800,118 +3800,118 @@ object MMRandomizer_BelphegorBall
 // Zombieman Variants
 object MMRandomizer_ZombiemanVariant1
 {
-	frame VD00F { light ZOMBIEATK }
+	frame VD00F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ZombiemanVariant2
 {
-	frame VD01F { light ZOMBIEATK }
+	frame VD01F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ZombiemanVariant3
 {
-	frame VD02F { light ZOMBIEATK }
+	frame VD02F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_FemaleZombie
 {
-	frame VD11F { light ZOMBIEATK }
+	frame VD11F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_RapidFireTrooper
 {
-	frame VD23F { light ZOMBIEATK }
+	frame VD23F { light DOOMZOMBIEATK }
 }
 
 // Shotgun Guy Variants
 object MMRandomizer_ShotgunGuyVariant1
 {
-	frame VD03F { light ZOMBIEATK }
+	frame VD03F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ShotgunGuyVariant2
 {
-	frame VD04F { light ZOMBIEATK }
+	frame VD04F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ShotgunGuyVariant3
 {
-	frame VD05F { light ZOMBIEATK }
+	frame VD05F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_FemaleSergeant
 {
-	frame VD12F { light ZOMBIEATK }
+	frame VD12F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_SuperShotgunGuy
 {
-	frame VD90F { light ZOMBIEATK }
+	frame VD90F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ZSpecOpsShotgun
 {
-	frame VD88F { light ZOMBIEATK }
+	frame VD88F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ZSpecOpsMachinegun
 {
-	frame VD89F { light ZOMBIEATK }
+	frame VD89F { light DOOMZOMBIEATK }
 }
 
 // Chaingun Guy Variants
 object MMRandomizer_ChaingunGuyVariant1
 {
-	frame VD06E { light ZOMBIEATK }
-	frame VD06F { light ZOMBIEATK }
+	frame VD06E { light DOOMZOMBIEATK }
+	frame VD06F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ChaingunMajor1
 {
-	frame VD07E { light ZOMBIEATK }
-	frame VD07F { light ZOMBIEATK }
+	frame VD07E { light DOOMZOMBIEATK }
+	frame VD07F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ChaingunMajor2
 {
-	frame VD08E { light ZOMBIEATK }
-	frame VD08F { light ZOMBIEATK }
+	frame VD08E { light DOOMZOMBIEATK }
+	frame VD08F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ChaingunMajor3
 {
-	frame VD09E { light ZOMBIEATK }
-	frame VD09F { light ZOMBIEATK }
+	frame VD09E { light DOOMZOMBIEATK }
+	frame VD09F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_ChaingunMajor4
 {
-	frame VD10E { light ZOMBIEATK }
-	frame VD10F { light ZOMBIEATK }
+	frame VD10E { light DOOMZOMBIEATK }
+	frame VD10F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_DoubleChaingunGuy
 {
-	frame VD33E { light ZOMBIEATK }
-	frame VD33F { light ZOMBIEATK }
+	frame VD33E { light DOOMZOMBIEATK }
+	frame VD33F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_Minigunner
 {
-	frame VD85E { light ZOMBIEATK }
-	frame VD85F { light ZOMBIEATK }
+	frame VD85E { light DOOMZOMBIEATK }
+	frame VD85F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_RocketZombie
 {
-	frame VD86F { light ZOMBIEATK }
+	frame VD86F { light DOOMZOMBIEATK }
 }
 
 object MMRandomizer_RocketZombieRocket
 {
-	frame MIS2A { light ROCKET    }
+	frame MIS2A { light DOOMROCKET    }
 
-	frame MIS2B { light ROCKET_X1 }
-	frame MIS2C { light ROCKET_X2 }
-	frame MIS2D { light ROCKET_X3 }
+	frame MIS2B { light DOOMROCKET_X1 }
+	frame MIS2C { light DOOMROCKET_X2 }
+	frame MIS2D { light DOOMROCKET_X3 }
 }

@@ -17,6 +17,7 @@ Doom:
 -Original-
 
 * Fixed the pain elemental using the wrong sprite when hit by Stronghold Doomguy's stunner rifle, Duke's mighty boot, and Security Officer's Tech.50 Pacifier.
+* Fixed some enemy attacks not having lights outside of Doom.
 
 -Vanilla Doom Randomizer-
 
@@ -30,6 +31,7 @@ Doom:
 * Fixed the archon of Hell using the baron of Hell sprites when hit by Stronghold Doomguy's stunner rifle and Security Officer's Tech.50 Pacifier.
 + The Legacy of Rust Mindweaver now has a chance to spawn as a hectebus replacement.
 + The Legacy of Rust Vassago now has a chance to spawn as a belphegor replacement.
+* Fixed some enemy attacks not having lights outside of Doom.
 
 -Doom 64-
 
