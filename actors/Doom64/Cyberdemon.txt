@@ -319,9 +319,12 @@ ACTOR BossExplosion64
 	States
 	{
 		Spawn:
-			64MI B 0
-			64MI B 3 A_PlaySound("doom64guy/rocklx", CHAN_BODY)
-			64MI CDEF 3 A_FadeOut(0.12)
-			Stop
+			64MI B 0 Light("ROCKET64_X1")
+			64MI B 3 Light("ROCKET64_X1") A_PlaySound("doom64guy/rocklx", CHAN_BODY)
+			64MI C 3 Light("ROCKET64_X2") A_FadeOut(0.12)
+			64MI D 3 Light("ROCKET64_X3") A_FadeOut(0.12)
+			64MI E 3 Light("ROCKET64_X4") A_FadeOut(0.12)
+			64MI F 3 Light("ROCKET64_X5") A_FadeOut(0.12)
+			stop
 	}
 }
