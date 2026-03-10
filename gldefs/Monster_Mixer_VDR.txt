@@ -1,14 +1,3 @@
-object MMRandomizer_PlasmaZombieBall
-{
-	frame DPLM { light DOOMPLASMABALL }
-
-	frame DPLEA { light DOOMPLASMA_X1 }
-	frame DPLEB { light DOOMPLASMA_X2 }
-	frame DPLEC { light DOOMPLASMA_X2 }
-	frame DPLED { light DOOMPLASMA_X3 }
-	frame DPLEE { light DOOMPLASMA_X4 }
-}
-
 pointlight MMRandomizer_SMALLIMPBALL
 {
 	color 1.0 0.5 0.0
@@ -3260,27 +3249,6 @@ object MMRandomizer_Demolisher
 	frame VD82R { light MMRandomizer_DemolisherExplode_X9 }
 }
 
-object MMRandomizer_DemolisherBFGBall
-{
-	frame DBFSA { light DOOMBFGBALL }
-	frame DBFSB { light DOOMBFGBALL }
-
-	frame DBFEA { light DOOMBFGBALL_X1 }
-	frame DBFEB { light DOOMBFGBALL_X2 }
-	frame DBFEC { light DOOMBFGBALL_X3 }
-	frame DBFED { light DOOMBFGBALL_X1 }
-	frame DBFEE { light DOOMBFGBALL_X4 }
-	frame DBFEF { light DOOMBFGBALL_X5 }
-}
-
-object MMRandomizer_DemolisherBFGExtra
-{
-	frame DBFPA { light DOOMBFGBALL    }
-	frame DBFPB { light DOOMBFGBALL_X1 }
-	frame DBFPC { light DOOMBFGBALL_X4 }
-	frame DBFPD { light DOOMBFGBALL_X5 }
-}
-
 pointlight MMRandomizer_QueenBFG
 {
 	color 0.0 1.0 0.0
@@ -3544,24 +3512,6 @@ object MMRandomizer_DarkCyberdemonHomingBall
 	frame VE38W { light MMRandomizer_QueenBFG_X10 }
 }
 
-object MMRandomizer_AnnihilatorRocket
-{
-	frame MIS2A { light DOOMROCKET	}
-
-	frame MIS2B { light DOOMROCKET_X1 }
-	frame MIS2C { light DOOMROCKET_X2 }
-	frame MIS2D { light DOOMROCKET_X3 }
-}
-
-object MMRandomizer_AnnihilatorHomingRocket
-{
-	frame VE30A { light DOOMROCKET	}
-
-	frame VE25C { light DOOMROCKET_X1 }
-	frame VE25D { light DOOMROCKET_X2 }
-	frame VE25E { light DOOMROCKET_X3 }
-}
-
 flickerlight2 MMRandomizer_CyberMastermindAttack1
 {
 	color 1.0 1.0 0.0
@@ -3646,12 +3596,6 @@ object MMRandomizer_ChaingunArachnotron
 {
 	frame VD59G { light DOOMZOMBIEATK }
 	frame VD59H { light DOOMZOMBIEATK }
-}
-
-object MMRandomizer_ChaingunSpiderBullet
-{
-	frame PFF2A { light DOOMBPUFF1 }
-	frame PFF2B { light DOOMBPUFF2 }
 }
 
 pointlight LASER_ARACHNOTRON_ATTACK
@@ -3905,13 +3849,4 @@ object MMRandomizer_Minigunner
 object MMRandomizer_RocketZombie
 {
 	frame VD86F { light DOOMZOMBIEATK }
-}
-
-object MMRandomizer_RocketZombieRocket
-{
-	frame MIS2A { light DOOMROCKET    }
-
-	frame MIS2B { light DOOMROCKET_X1 }
-	frame MIS2C { light DOOMROCKET_X2 }
-	frame MIS2D { light DOOMROCKET_X3 }
 }

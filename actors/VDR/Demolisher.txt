@@ -89,12 +89,18 @@ actor MMRandomizer_DemolisherBFGBall : BFGBall
 	States
 	{
 	Spawn:
-		DBFS AB 4
+		DBFS AB 4 Light("DOOMBFGBALL")
 		loop
+
 	Death:
-		DBFE AB 8
-		DBFE C 8 A_BFGSpray("MMRandomizer_DemolisherBFGExtra")
-		DBFE DEF 8
+		DBFE A 8 Light("DOOMBFGBALL_X1")
+		DBFE B 8 Light("DOOMBFGBALL_X2")
+		TNT1 A 0 A_BFGSpray("MMRandomizer_DemolisherBFGExtra")
+	DeathFinish:
+		DBFE C 8 Light("DOOMBFGBALL_X3")
+		DBFE D 8 Light("DOOMBFGBALL_X1")
+		DBFE E 8 Light("DOOMBFGBALL_X4")
+		DBFE F 8 Light("DOOMBFGBALL_X5")
 		stop
 	}
 }

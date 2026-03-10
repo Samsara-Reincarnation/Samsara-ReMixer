@@ -287,9 +287,7 @@ ACTOR MMRandomizer_RocketZombieRocket : Rocket_Samsara
 	States
 	{
 	Death:
-		MIS2 B 8 Bright A_Explode(32, 64, 0)
-		MIS2 C 6 Bright
-		MIS2 D 4 Bright
-		Stop
+		TNT1 A 0 A_Explode(32,64,0)
+		goto DeathFinish
 	}
 }

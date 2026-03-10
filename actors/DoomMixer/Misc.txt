@@ -3,8 +3,8 @@ ACTOR DoomBulletPuff_Samsara : BulletPuff
 	States
 	{
 	Spawn:
-		PFF2 A 4 Bright
-		PFF2 B 4
+		PFF2 A 4 Bright Light("DOOMBPUFF1")
+		PFF2 B 4 Light("DOOMBPUFF2")
 		// Intentional fall-through
 	Melee:
 		PFF2 CD 4

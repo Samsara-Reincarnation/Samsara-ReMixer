@@ -1,15 +1,3 @@
-object DoomBulletPuff_Samsara
-{
-	frame PFF2A { light DOOMBPUFF1 }
-	frame PFF2B { light DOOMBPUFF2 }
-}
-
-object DoomBulletPuffThruGhost_Samsara
-{
-	frame PFF2A { light DOOMBPUFF1 }
-	frame PFF2B { light DOOMBPUFF2 }
-}
-
 // Zombies
 object ZombieMan3
 {
@@ -524,16 +512,6 @@ object Archvile3
 	frame VIL2] { light ARCHRES }
 }
 
-// Cyber Rocket
-object Rocket_Samsara
-{
-	frame MIS2A { light DOOMROCKET    }
-
-	frame MIS2B { light DOOMROCKET_X1 }
-	frame MIS2C { light DOOMROCKET_X2 }
-	frame MIS2D { light DOOMROCKET_X3 }
-}
-
 // Cacolantern fireball
 object CacolanternBall3
 {
@@ -593,17 +571,4 @@ object BelphegorBall3
 object SuperShotgunGuy2
 {
 	frame GPOSF { light DOOMZOMBIEATK }
-}
-
-// LOR Shocktrooper
-object Shocktrooper2PlasmaBall
-{
-    frame PLSSA { light DOOMPLASMABALL }
-    frame PLSSB { light DOOMPLASMABALL }
-
-    frame PLSEA { light DOOMPLASMA_X1 }
-    frame PLSEB { light DOOMPLASMA_X2 }
-    frame PLSEC { light DOOMPLASMA_X2 }
-    frame PLSED { light DOOMPLASMA_X3 }
-    frame PLSEE { light DOOMPLASMA_X4 }
 }

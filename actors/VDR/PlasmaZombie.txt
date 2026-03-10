@@ -310,10 +310,14 @@ actor MMRandomizer_PlasmaZombieBall : PlasmaBall
 	States
 	{
 	Spawn:
-		DPLM AB 6 bright
+		DPLM AB 6 Bright Light("DOOMPLASMABALL")
 		loop
+
 	Death:
-		DPLE ABCDE 4 bright
+		DPLE A 4 Bright Light("DOOMPLASMA_X1")
+		DPLE BC 4 Bright Light("DOOMPLASMA_X2")
+		DPLE D 4 Bright Light("DOOMPLASMA_X3")
+		DPLE E 4 Bright Light("DOOMPLASMA_X4")
 		stop
 	}
 }
