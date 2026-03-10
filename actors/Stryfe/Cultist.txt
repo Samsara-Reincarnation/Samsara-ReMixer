@@ -156,6 +156,7 @@ Actor StrifeCultistShot1
 	Projectile
 	+THRUGHOST
 	+BRIGHT
+    -BLOODSPLATTER
 	DeathSound "strifecultist/hit"
 	States
 	{

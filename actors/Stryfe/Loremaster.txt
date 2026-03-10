@@ -244,4 +244,8 @@ actor StrifeLoremaster_ShrinkEffect : StrifeLoremaster
 	}
 }
 
-Actor NewLoreShot : LoreShot { Damage 5 }
+Actor NewLoreShot : LoreShot
+{
+    Damage 5
+    -BLOODSPLATTER
+}

@@ -645,6 +645,18 @@ object SentinelFX1
 	frame POW1J { light SNTNL_FX7 }
 }
 
+object SentinelFX3Mixer
+{
+    frame SHT1A { light SNTNL_FX1 }
+    frame SHT1B { light SNTNL_FX2 }
+
+    frame POW1F { light SNTNL_FX3 }
+    frame POW1G { light SNTNL_FX4 }
+    frame POW1H { light SNTNL_FX5 }
+    frame POW1I { light SNTNL_FX6 }
+    frame POW1J { light SNTNL_FX7 }
+}
+
 // Recycler
 flickerlight2 RECYCLERATK1
 {
@@ -781,7 +793,7 @@ object StrifeCrusader
 	frame ROB2O { light CRSDRDTH2 }
 }
 
-object FastFlameMissile
+object FastFlameMissileMixer
 {
 	frame FRBLA { light FLMMISSILE }
 	frame FRBLB { light FLMMISSILE }
@@ -794,7 +806,7 @@ object FastFlameMissile
 	frame FRBLH { light FLMMSL_X5 }
 }
 
-object CrusaderMissile
+object CrusaderMissileMixer
 {
 	frame MICRA { light MISSILE }
 
@@ -1369,7 +1381,7 @@ object SpectralLightningBall1
 	frame ZAP1F { light ARROWZAP6 }
 }
 
-object SpectralLightningBall2
+object SpectralLightningBall2Mixer
 {
 	frame ZOT3 { light ZAPBALL1 }
 
@@ -1393,7 +1405,7 @@ object SpectralLightningBigBall1
 	frame ZAP1F { light ARROWZAP6 }
 }
 
-object SpectralLightningBigBall2
+object SpectralLightningBigBall2Mixer
 {
 	frame ZOT7 { light ZAPBALL2 }
 
@@ -1429,7 +1441,7 @@ object SpectralLightningH2
 	frame ZAP1F { light ARROWZAP6 }
 }
 
-object SpectralLightningH3
+object SpectralLightningH3Mixer
 {
 	frame ZAP6 { light LIGHTNING1 }
 
@@ -1501,7 +1513,7 @@ object SpectralLightningBigV1
 	frame ZAP1F { light ARROWZAP6 }
 }
 
-object SpectralLightningBigV2
+object SpectralLightningBigV2Mixer
 {
 	frame ZOT2 { light LIGHTNING2 }
 

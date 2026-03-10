@@ -252,6 +252,7 @@ actor NewStrifeBishop_ShrinkEffect : NewStrifeBishop
 Actor NewBishopMissile : BishopMissile
 {
 	Speed 16
+    -BLOODSPLATTER
 	States
 	{
 	Spawn:

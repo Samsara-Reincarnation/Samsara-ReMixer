@@ -121,6 +121,8 @@ actor NewAlienSpectre2 : NewAlienSpectre1
 	}
 }
 
+actor SpectralLightningH3Mixer : SpectralLightningH3 replaces SpectralLightningH3 { -BLOODSPLATTER }
+
 actor NewAlienSpectre3 : NewAlienSpectre1
 {
 	Health 1200
@@ -159,6 +161,8 @@ actor NewAlienSpectre3 : NewAlienSpectre1
 	}
 }
 
+actor SpectralLightningBall2Mixer : SpectralLightningBall2 replaces SpectralLightningBall2 { -BLOODSPLATTER }
+
 actor NewAlienSpectre4 : NewAlienSpectre1
 {
 	Health 1300
@@ -196,6 +200,8 @@ actor NewAlienSpectre4 : NewAlienSpectre1
 		Goto See
 	}
 }
+
+actor SpectralLightningBigV2Mixer : SpectralLightningBigV2 replaces SpectralLightningBigV2 { -BLOODSPLATTER }
 
 actor NewAlienSpectre5 : SamsaraMonsterRemixAlienSpectre2
 {
@@ -267,3 +273,5 @@ actor NewAlienSpectre5 : SamsaraMonsterRemixAlienSpectre2
 			Wait
 	}
 }
+
+actor SpectralLightningBigBall2Mixer : SpectralLightningBigBall2 replaces SpectralLightningBigBall2 { -BLOODSPLATTER }

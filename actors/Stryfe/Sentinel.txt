@@ -53,3 +53,5 @@ Actor StrifeSentinel : Sentinel2
 		Goto See
 	}
 }
+
+actor SentinelFX3Mixer : SentinelFX3 replaces SentinelFX3 { -BLOODSPLATTER }

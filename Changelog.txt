@@ -93,6 +93,10 @@ Blake Stone:
 
 * Fixed the High Security Genetic Guard using the wrong monster base.
 
+Strife:
+
+! Enemy projectiles now have -BLOODSPLATTER in Heretic and Hexen.
+
 Corridor 7:
 
 - The Animated Probe's health has been decreased (from 100 to 20).

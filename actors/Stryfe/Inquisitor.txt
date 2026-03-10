@@ -118,6 +118,7 @@ Actor StrifeInquisitor : SamsaraMonsterRemixInquisitor
 
 ACTOR InquisitorShot2 : InquisitorShot replaces InquisitorShot
 {
+    -BLOODSPLATTER
 	States
 	{
 	Death:

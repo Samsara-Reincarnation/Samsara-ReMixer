@@ -234,5 +234,14 @@ actor Programmer3_ShrinkEffect : Programmer3
 	}
 }
 
-ACTOR SpectralLightningV1_Mix : SpectralLightningV1 replaces SpectralLightningV1 { Damage 8 }
-ACTOR SpectralLightningV2_Mix : SpectralLightningV2 replaces SpectralLightningV2 { Damage 5 }
+ACTOR SpectralLightningV1_Mix : SpectralLightningV1 replaces SpectralLightningV1
+{
+    Damage 8
+    -BLOODSPLATTER
+}
+
+ACTOR SpectralLightningV2_Mix : SpectralLightningV2 replaces SpectralLightningV2
+{
+    Damage 5
+    -BLOODSPLATTER
+}
