@@ -472,3 +472,5 @@ actor Menelkir_ShrinkEffect : MageBoss3
 			Stop
 	}
 }
+
+actor MageStaffFX22Mixer : MageStaffFX22 replaces MageStaffFX22 { +BLOODSPLATTER }

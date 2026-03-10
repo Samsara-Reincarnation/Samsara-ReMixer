@@ -354,3 +354,5 @@ ACTOR WraithBuried3 : WraithBuried2
 			stop
 	}
 }
+
+actor WraithFX6Mixer : WraithFX6 replaces WraithFX6 { +BLOODSPLATTER }

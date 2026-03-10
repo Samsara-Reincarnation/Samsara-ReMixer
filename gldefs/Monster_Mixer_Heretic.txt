@@ -672,7 +672,7 @@ flickerlight SERPENTBALL_X4
 	chance 0.5
 }
 
-object Sorcerer1FX12B
+object SorcererFX1Mixer
 {
 	frame FX14A { light SERPENTBALL }
 	frame FX14B { light SERPENTBALL }

@@ -309,6 +309,7 @@ ACTOR DragonFireball_Mix : DragonFireball
 	Projectile
 	-ACTIVATEIMPACT 
 	-ACTIVATEPCROSS
+    +BLOODSPLATTER
 	RenderStyle Add
 	DeathSound "DragonFireballExplode"
 	States

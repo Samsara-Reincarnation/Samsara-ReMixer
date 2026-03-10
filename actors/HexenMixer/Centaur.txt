@@ -588,3 +588,5 @@ actor CentaurLeader_ShrinkEffect : CentaurLeader3
 			Stop
 	}
 }
+
+actor CentaurFX2Mixer : CentaurFX2 replaces CentaurFX2 { +BLOODSPLATTER }

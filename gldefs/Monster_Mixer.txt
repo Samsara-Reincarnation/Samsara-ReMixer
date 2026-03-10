@@ -3426,7 +3426,7 @@ flickerlight STALKERSLIME_X4
 	chance 0.4
 }
 
-object SerpentFX
+object SerpentFX2Mixer
 {
 	frame SSFXA { light STALKERSLIME }
 	frame SSFXB { light STALKERSLIME }
@@ -3478,7 +3478,7 @@ flickerlight TAURBALL_X4
 	chance 0.4
 }
 
-object CentaurFX
+object CentaurFX2Mixer
 {
 	frame CTFXA { light TAURBALL }
 
@@ -3490,7 +3490,7 @@ object CentaurFX
 }
 
 // Green Chaos Serpent fireball
-flickerlight SERPENTBALL
+flickerlight SERPENTBALL_HEXEN
 {
 	color 1.0 0.95 0.0
 	size 56
@@ -3498,7 +3498,7 @@ flickerlight SERPENTBALL
 	chance 0.5
 }
 
-flickerlight SERPENTBALL_X1
+flickerlight SERPENTBALL_HEXEN_X1
 {
 	color 1.0 0.95 0.0
 	size 64
@@ -3506,7 +3506,7 @@ flickerlight SERPENTBALL_X1
 	chance 0.5
 }
 
-flickerlight SERPENTBALL_X2
+flickerlight SERPENTBALL_HEXEN_X2
 {
 	color 0.8 0.8 0.0
 	size 72
@@ -3514,7 +3514,7 @@ flickerlight SERPENTBALL_X2
 	chance 0.5
 }
 
-flickerlight SERPENTBALL_X3
+flickerlight SERPENTBALL_HEXEN_X3
 {
 	color 0.5 0.5 0.0
 	size 88
@@ -3522,7 +3522,7 @@ flickerlight SERPENTBALL_X3
 	chance 0.5
 }
 
-flickerlight SERPENTBALL_X4
+flickerlight SERPENTBALL_HEXEN_X4
 {
 	color 0.2 0.2 0.0
 	size 96
@@ -3530,17 +3530,17 @@ flickerlight SERPENTBALL_X4
 	chance 0.5
 }
 
-object Demon1FX1
+object Demon1FX2Mixer
 {
-	frame DMFXA { light SERPENTBALL }
-	frame DMFXB { light SERPENTBALL }
-	frame DMFXC { light SERPENTBALL }
+	frame DMFXA { light SERPENTBALL_HEXEN }
+	frame DMFXB { light SERPENTBALL_HEXEN }
+	frame DMFXC { light SERPENTBALL_HEXEN }
 
-	frame DMFXD { light SERPENTBALL_X1 }
-	frame DMFXE { light SERPENTBALL_X2 }
-	frame DMFXF { light SERPENTBALL_X3 }
-	frame DMFXG { light SERPENTBALL_X4 }
-	frame DMFXH { light SERPENTBALL_X4 }
+	frame DMFXD { light SERPENTBALL_HEXEN_X1 }
+	frame DMFXE { light SERPENTBALL_HEXEN_X2 }
+	frame DMFXF { light SERPENTBALL_HEXEN_X3 }
+	frame DMFXG { light SERPENTBALL_HEXEN_X4 }
+	frame DMFXH { light SERPENTBALL_HEXEN_X4 }
 }
 
 // Brown Chaos Serpent gasball
@@ -3582,7 +3582,7 @@ flickerlight CSGASBALL_X4
 	chance 0.5
 }
 
-object Demon2FX1
+object Demon2FX2Mixer
 {
 	frame D2FXA { light CSGASBALL }
 	frame D2FXB { light CSGASBALL }
@@ -3627,7 +3627,7 @@ flickerlight REAVERBALL_X3
 	secondarysize 64
 }
 
-object WraithFX1
+object WraithFX6Mixer
 {
 	frame WRBLA { light REAVERBALL }
 	frame WRBLB { light REAVERBALL }
@@ -3647,7 +3647,7 @@ flickerlight DRAGONBALL
 	chance 0.3
 }
 
-object DragonFireball
+object DragonFireball_Mix
 {
 	frame DRFXA { light DRAGONBALL }
 	frame DRFXB { light DRAGONBALL }
@@ -3695,7 +3695,7 @@ flickerlight DRAGONBALL_X4
 	chance 0.3
 }
 
-object DragonExplosion
+object DragonExplosion_Mix
 {
 	frame CFCFQ { light DRAGONBALL_X1 }
 	frame CFCFR { light DRAGONBALL_X2 }
@@ -3745,7 +3745,7 @@ flickerlight BISHOPBALL_X4
 	chance 0.3
 }
 
-object BishopFX
+object BishopFX2Mixer
 {
 	frame BPFXA { light BISHOPBALL }
 	frame BPFXB { light BISHOPBALL }
@@ -3812,7 +3812,7 @@ object FireDemon3Doom
 	frame FDMNK { light FGARGATK }
 }
 
-object FireDemonMissile
+object FireDemonMissileMixer
 {
 	frame FDMBA { light FGARG }
 
@@ -3872,7 +3872,7 @@ pointlight ICESHARD
 	size 40
 }
 
-object IceGuyFX
+object IceGuyFXMixer
 {
 	frame ICPRA { light ICEBALL }
 	frame ICPRB { light ICEBALL }
@@ -3884,7 +3884,7 @@ object IceGuyFX
 	frame ICPRG { light ICEBALL_X4 }
 }
 
-object IceGuyFX2
+object IceGuyFX2Mixer
 {
 	frame ICPRN { light ICESHARD }
 	frame ICPRO { light ICESHARD }
@@ -3979,7 +3979,7 @@ flickerlight HARCHHEAD
 	chance 0.4
 }
 
-object SorcFX1
+object SorcFX52
 {
 	frame SBS1 { light HARCHHEAD }
 }
@@ -3989,7 +3989,7 @@ object SorcFX2
 	frame SBS2 { light HARCHPURCUBE }
 }
 
-object SorcFX3
+object SorcFX32
 {
 	frame SBS3A { light HARCHGRNCUBE }
 	frame SBS3B { light HARCHGRNCUBE }
@@ -3999,7 +3999,7 @@ object SorcFX3
 	frame SBS3E { light HARCHBALL2_X3 }
 }
 
-object SorcFX4
+object SorcFX42Mixer
 {
 	frame SBS4A { light HARCHPURCUBE }
 	frame SBS4B { light HARCHPURCUBE }
@@ -4014,12 +4014,27 @@ object SorcBall1
 	frame SBMP { light HARCHPURCUBE }
 }
 
+object SorcBall11
+{
+	frame SBMP { light HARCHPURCUBE }
+}
+
 object SorcBall2
 {
 	frame SBMB { light HARCHBLUCUBE }
 }
 
+object SorcBall22
+{
+	frame SBMB { light HARCHBLUCUBE }
+}
+
 object SorcBall3
+{
+	frame SBMG { light HARCHGRNCUBE }
+}
+
+object SorcBall33
 {
 	frame SBMG { light HARCHGRNCUBE }
 }
@@ -4038,7 +4053,7 @@ object Korax3Doom
 }
 
 // Mage Boss
-object MageStaffFX2
+object MageStaffFX22Mixer
 {
 	frame MSP2A { light BSBALL }
 	frame MSP2B { light BSBALL }
@@ -4065,7 +4080,7 @@ object MageStaffFX22
 }
 
 // Fighter Boss
-object FSwordMissile2
+object FSwordMissile_Mix
 {
 	frame FSFXA { light SWORDSHOT }
 	frame FSFXB { light SWORDSHOT }
@@ -4080,27 +4095,6 @@ object FSwordMissile2
 	frame FSFXJ { light SWORDSHOT_X4 }
 	frame FSFXK { light SWORDSHOT_X5 }
 	frame FSFXL { light SWORDSHOT_X5 }
-}
-
-// Parias Boss
-object HolySpiritTraductus
-{
-	frame SPIRP { light GHOST__ }
-}
-
-object HolySpiritTraductus2
-{
-	frame SPIRP { light GHOST__ }
-}
-
-object HolySpiritTraductus3
-{
-	frame SPIRP { light GHOST__ }
-}
-
-object HolySpiritTraductus4
-{
-	frame SPIRP { light GHOST__ }
 }
 
 /////////////////////////////////////////////////

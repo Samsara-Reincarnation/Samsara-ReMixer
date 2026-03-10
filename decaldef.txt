@@ -6,6 +6,46 @@ generator CacodemonBall_Samsara			CacoScorch
 generator FatShot_Samsara				Scorch
 generator SpiderMastermind3				BulletChip
 
+// Heretic Remixer decals
+generator BeastBall2Mixer				DoomImpScorch
+generator SnakeProjA2Mixer				SnakeScorch1
+generator SnakeProjB2Mixer				SnakeScorch2
+generator HeadFX12Mixer					SnakeScorch2
+generator HeadFX32Mixer					CacoScorch
+generator SorcererFX1Mixer				RevenantScorch
+generator Sorcerer2FX3Mixer				SorcererLightning
+generator HereticImpBall2Mixer			HImpScorch
+generator MummyFX2Mixer					MummyScorch
+generator KnightAxe2Mixer				AxeScorch
+generator RedAxe2Mixer					BloodSmear
+generator WizardFX2Mixer				WizardScorch
+
+// Hexen Remixer decals
+generator SerpentFX2Mixer				DoomImpScorch
+generator CentaurFX2Mixer				CentaurScorch
+generator Demon1FX2Mixer				RevenantScorch
+generator Demon2FX2Mixer				Demon2Scorch
+generator BishopFX2Mixer				BishopScorch
+generator WraithFX6Mixer				Demon2Scorch
+generator SorcFX52						RevenantScorch
+generator SorcFX42Mixer					RevenantScorch
+generator FSwordMissile_Mix				SwordLightning
+generator FireDemonMissileMixer			FireDemonScorch
+generator DragonFireball_Mix			CacoScorch
+generator MageStaffFX22Mixer			Scorch
+
+// Strife Remixer decals
+generator SentinelFX3Mixer					PlasmaScorchLower
+generator FastFlameMissileMixer				CacoScorch
+generator CrusaderMissileMixer				BaronScorch
+generator NewBishopMissile					Scorch
+generator SpectralLightningBall2Mixer		BaronScorch
+generator SpectralLightningH3Mixer			BaronScorch
+generator SpectralLightningBigBall2Mixer	BaronScorch
+generator SpectralLightningV1_Mix			BaronScorch
+generator SpectralLightningV2_Mix			BaronScorch
+generator SpectralLightningBigV2Mixer		BaronScorch
+
 Decal CryocubusFreezeBlastMelt
 {
 	Pic BSMEAR1

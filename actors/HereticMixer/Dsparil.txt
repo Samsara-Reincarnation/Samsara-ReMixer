@@ -308,7 +308,7 @@ Actor HereticTeleportFog
 	}
 }
 
-Actor Sorcerer1FX12B : SorcererFX1 replaces SorcererFX1
+Actor SorcererFX1Mixer : SorcererFX1 replaces SorcererFX1
 {
     DeathSound "minotaur/fx3hit"
     +BLOODSPLATTER

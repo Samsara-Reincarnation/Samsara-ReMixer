@@ -435,3 +435,5 @@ actor SerpentLeader_Shrink : SerpentLeader3
 			Goto Squish
 	}
 }
+
+actor SerpentFX2Mixer : SerpentFX2 replaces SerpentFX2 { +BLOODSPLATTER }

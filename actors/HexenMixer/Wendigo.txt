@@ -81,3 +81,6 @@ ACTOR IceGuy3 : IceGuy2
 		Stop
 	}
 }
+
+actor IceGuyFXMixer : IceGuyFX replaces IceGuyFX { +BLOODSPLATTER }
+actor IceGuyFX2Mixer : IceGuyFX2 replaces IceGuyFX2 { +BLOODSPLATTER }

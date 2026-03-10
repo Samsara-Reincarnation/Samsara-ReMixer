@@ -76,6 +76,7 @@ ACTOR SorcFX32 : SorcFX3 replaces SorcFX3
 
 actor SorcFX52 : SorcFX12 replaces SorcFX12
 {
+    +BLOODSPLATTER
 	States
 	{
 		Death:
@@ -86,8 +87,11 @@ actor SorcFX52 : SorcFX12 replaces SorcFX12
 	}		
 }
 
+actor SorcFX42Mixer : SorcFX42 replaces SorcFX42 { +BLOODSPLATTER }
+
 Actor SorcBall11 : SorcBall1 replaces SorcBall1
 {
+    +BLOODSPLATTER
 	States
 	{
 		Spawn:
@@ -110,6 +114,7 @@ Actor SorcBall11 : SorcBall1 replaces SorcBall1
 
 Actor SorcBall22 : SorcBall2 replaces SorcBall2 
 {
+    +BLOODSPLATTER
 	States
 	{
 		Spawn:
@@ -132,6 +137,7 @@ Actor SorcBall22 : SorcBall2 replaces SorcBall2
 
 Actor SorcBall33 : SorcBall3 replaces SorcBall3 
 {
+    +BLOODSPLATTER
 	States
 	{
 		Spawn:

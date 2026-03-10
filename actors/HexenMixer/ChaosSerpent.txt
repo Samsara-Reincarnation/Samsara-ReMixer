@@ -292,6 +292,8 @@ actor SerpentGreen_ShrinkEffect : Demon1C
 	}
 }
 
+actor Demon1FX2Mixer : Demon1FX2 replaces Demon1FX2 { +BLOODSPLATTER }
+
 ACTOR Demon2C : Demon2B
 {
 	Tag "Brown Chaos Serpent"
@@ -586,3 +588,5 @@ actor SerpentBrown_ShrinkEffect : Demon2C
 			Stop
 	}
 }
+
+actor Demon2FX2Mixer : Demon2FX2 replaces Demon2FX2 { +BLOODSPLATTER }

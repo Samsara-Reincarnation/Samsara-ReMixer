@@ -484,6 +484,7 @@ ACTOR FSwordMissile_Mix : FSwordMissile
     DamageType "HexenQuietusFire"
 	Projectile
 	+EXTREMEDEATH
+    +BLOODSPLATTER
 	RenderStyle Add
 	DeathSound "FighterSwordExplode"
 	Obituary "$OB_MPFWEAPQUIETUS"

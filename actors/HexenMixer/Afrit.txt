@@ -261,3 +261,5 @@ actor Afrit_ShrinkEffect : FireDemon3
 			Stop
 	}
 }
+
+actor FireDemonMissileMixer : FireDemonMissile replaces FireDemonMissile { +BLOODSPLATTER }

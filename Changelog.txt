@@ -46,14 +46,14 @@ Heretic:
 * Fixed several Heretic enemies not growing back to the correct actor after being shrunk.
 - The golem's health has been decreased (from 80 to 60).
 - The nitrogolem's health has been decreased (from 100 to 75).
-+ The Undead Knight's health has been increased (from 100 to 150).
++ The undead warrior's health has been increased (from 100 to 150).
 + The golom ghost's health has been increased (from 60 to 120).
 + The nitrogolom ghost's health has been increased (from 80 to 150).
 + The gargoyle's health has been increased (from 40 to 60).
 + The Disciple of D'Sparil's health has been increased (from 180 to 250).
 + The Apprentice of D'Sparil has been added as a pain elemental replacement!
 + The weredragon's health has been increased (from 220 to 300).
-* Fixed D'Sparil's chaos serpent's fireballs not having lights.
+* Fixed D'Sparil's chaos serpent's fireballs not having decals and lights.
 ! Enemy projectiles now have +BLOODSPLATTER outside of Heretic and Hexen.
 
 Wolfenstein 3D:
@@ -78,9 +78,12 @@ Hexen I:
 - The Ettin no longer has a chance to spawn as an imp replacement.
 + The Centaur's health has been increased (from 100 to 150).
 + The Slaughtaur's health has been increased (from 125 to 200).
-* Fixed the Death Wyvern not using the correct actor when shrunk.
 + The Wendigo's health has been increased (from 250 to 300).
+* Fixed the Death Wyvern not using the correct actor when shrunk.
+* Fixed the Death Wyvern's projectiles not having decals and lights.
 + The Brown Chaos Serpent's health has been increased (from 250 to 400).
+* Fixed some of the Heresiarch's attacks not having lights.
+! Most enemy projectiles now have +BLOODSPLATTER outside of Heretic and Hexen.
 
 Marathon:
 
@@ -97,6 +100,7 @@ Blake Stone:
 
 Strife:
 
+* Fixed some enemy projectiles not having decals.
 ! Enemy projectiles now have -BLOODSPLATTER in Heretic and Hexen.
 
 Corridor 7:
