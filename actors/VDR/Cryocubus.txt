@@ -370,6 +370,7 @@ ACTOR MMRandomizer_CryocubusFreezeBlast
 	Alpha 0.75
 	PROJECTILE
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.75
 	DamageType Ice

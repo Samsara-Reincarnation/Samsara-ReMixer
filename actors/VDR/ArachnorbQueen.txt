@@ -289,6 +289,7 @@ actor MMRandomizer_QueenPlasmaBlast
 	scale .75
 	+RANDOMIZE
 	+BLOODLESSIMPACT
+    -BLOODSPLATTER
 	+NOEXTREMEDEATH
 	+BRIGHT
 	RenderStyle Add
@@ -340,6 +341,7 @@ ACTOR MMRandomizer_QueenBFG
 	PROJECTILE
 	+SEEKERMISSILE
 	+BRIGHT
+    -BLOODSPLATTER
 	Renderstyle Add
 	SeeSound "vdr/queen/fire"
 	DeathSound "vdr/queen/hit"

@@ -311,6 +311,7 @@ actor MMRandomizer_AracnorbBall
 	+SEEKERMISSILE
 	+RANDOMIZE
 	+BRIGHT
+    -BLOODSPLATTER
 	States
 	{
 		Spawn:

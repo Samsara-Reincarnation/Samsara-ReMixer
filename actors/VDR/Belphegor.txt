@@ -290,4 +290,3 @@ actor MMRandomizer_BelphegorBall : BaronBall_Samsara
 	Speed 20
 	Damage 10
 }
-

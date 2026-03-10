@@ -330,6 +330,7 @@ Actor MMRandomizer_HellsFuryBall
 	Damage 8
 	Projectile
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.7
 	SeeSound "doom/imp/attack"

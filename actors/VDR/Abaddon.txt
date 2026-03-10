@@ -330,6 +330,7 @@ Actor MMRandomizer_AbaddonBallSmall : CacodemonBall
 	Speed 16
 	FastSpeed 24
 	+BRIGHT
+    -BLOODSPLATTER
 	Decal HImpScorch
 	SeeSound "doom/caco/attack"
 	DeathSound "doom/caco/shotx"

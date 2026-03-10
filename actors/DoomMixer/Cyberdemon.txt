@@ -67,6 +67,7 @@ ACTOR Rocket_Samsara : Rocket
 	SeeSound "doom/weapons/rocklf"
 	DeathSound "doom/weapons/rocklx"
 	Decal Scorch
+    -BLOODSPLATTER
 	States
 	{
 	Spawn:

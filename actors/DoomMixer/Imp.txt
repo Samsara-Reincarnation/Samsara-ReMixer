@@ -294,6 +294,7 @@ ACTOR DoomImpBall_Samsara : DoomImpBall
 	+BRIGHT
 	+THRUGHOST
 	+FIREDAMAGE
+    -BLOODSPLATTER
 	States
 	{
 	Spawn:

@@ -312,6 +312,7 @@ ACTOR MMRandomizer_VulgarShot
 	Alpha 0.67
 	+THRUGHOST
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "VDR/vulsh1"
 	DeathSound "VDR/vulsh2"
 	Decal "DoomImpScorch"

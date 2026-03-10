@@ -279,6 +279,7 @@ ACTOR ArachnotronPlasma64
 	Projectile
 	+BRIGHT
 	+RANDOMIZE
+    -BLOODSPLATTER
 	SeeSound "doom64guy/plasmaf"
 	DeathSound "friendlyimp64/shotx"
 	Decal "PlasmaScorchLower"

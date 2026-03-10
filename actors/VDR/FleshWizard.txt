@@ -360,6 +360,7 @@ Actor MMRandomizer_FleshWizardBall
 	PROJECTILE
 	+NOGRAVITY
 	+RANDOMIZE
+    -BLOODSPLATTER
 	Decal BaronScorch
 	States
 	{

@@ -37,6 +37,10 @@ Doom:
 
 * Fixed the cyberdemon's rockets dealing the incorrect amount of direct damage.
 
+-All-
+
+! Most enemy projectiles now have -BLOODSPLATTER in Heretic and Hexen.
+
 Heretic:
 
 * Fixed several Heretic enemies not growing back to the correct actor after being shrunk.

@@ -564,6 +564,7 @@ ACTOR BaronBall_Samsara : BaronBall
 	Decal BaronScorch
 	DamageType "DoomHellNoble"
 	+BRIGHT
+    -BLOODSPLATTER
 	States
 	{
 	Spawn:

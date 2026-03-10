@@ -306,6 +306,7 @@ Actor MMRandomizer_WatcherShot
 	+THRUGHOST
 	+FORCEXYBILLBOARD
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "vdr/watatk"
 	DeathSound "vdr/wathit"
 	States

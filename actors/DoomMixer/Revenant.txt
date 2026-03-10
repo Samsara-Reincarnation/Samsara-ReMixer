@@ -320,6 +320,7 @@ actor RevenantTracerDumbfire_Samsara : RevenantTracer
 	-SEEKERMISSILE
 	+THRUGHOST
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "doom/skeleton/attack"
 	DeathSound "doom/skeleton/tracex"
 	RenderStyle Normal
@@ -341,6 +342,7 @@ actor RevenantTracerDumbfire_Samsara : RevenantTracer
 actor RevenantTracerHoming_Samsara : RevenantTracer
 {
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "doom/skeleton/attack"
 	DeathSound "doom/skeleton/tracex"
 	RenderStyle Normal

@@ -94,6 +94,7 @@ Actor MMRandomizer_DarkCyberdemonBFG10kBall
 	Scale 0.6
 	PROJECTILE
 	+BRIGHT
+    -BLOODSPLATTER
 	DamageType "Explosive"
 	Decal BFGLightning
 	SeeSound "vdr/darkcyberdemon/bfg10kfire"
@@ -137,6 +138,7 @@ Actor MMRandomizer_DarkCyberdemonHomingBall
 	+FORCERADIUSDMG
 	+SEEKERMISSILE
 	+THRUGHOST
+    -BLOODSPLATTER
 	DamageType "Explosive"
 	Decal BFGLightning
 	SeeSound "vdr/darkcyberdemon/homingbfgfire"

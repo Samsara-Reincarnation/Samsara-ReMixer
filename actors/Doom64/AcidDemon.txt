@@ -207,6 +207,7 @@ ACTOR AcidDemonAttack64
 	-NOGRAVITY
 	+BRIGHT
 	+RANDOMIZE
+    -BLOODSPLATTER
 	DeathSound "64acid/death"
 	States
 	{

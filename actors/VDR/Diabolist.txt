@@ -468,6 +468,7 @@ ACTOR MMRandomizer_DFlare
 	Projectile
 	+THRUGHOST
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "vdr/diabolus/firmfi"
 	DeathSound "vdr/diabolus/firex4"
 	States
@@ -484,6 +485,7 @@ ACTOR MMRandomizer_DFlare
 Actor MMRandomizer_DMissile : CFlameMissile
 {
 	+THRUGHOST
+    -BLOODSPLATTER
 }
 
 Actor MMRandomizer_DTracer
@@ -502,6 +504,7 @@ Actor MMRandomizer_DTracer
 	+THRUGHOST
 	+BRIGHT
 	-NOGRAVITY
+    -BLOODSPLATTER
 	Seesound "vdr/diabolus/diasht"
 	DeathSound "vdr/diabolus/firex3"
 	States
@@ -546,6 +549,7 @@ Actor MMRandomizer_DTracerPuff
 	+FLOORHUGGER
 	-NOGRAVITY
 	+BRIGHT
+    -BLOODSPLATTER
 	States
 	{
 		Spawn:
@@ -562,4 +566,5 @@ Actor MMRandomizer_DMissileTrail : CFlameFloor
 Actor MMRandomizer_DMissileCircle : CircleFlame
 {
 	+THRUGHOST
+    -BLOODSPLATTER
 }

@@ -404,6 +404,7 @@ ACTOR MMRandomizer_PaladinGrenade
 	+FORCEXYBILLBOARD
 	+DONTBLAST
 	+BRIGHT
+    -BLOODSPLATTER
 	BounceType "Doom"
 	Gravity 0.67
 	DeathSound "VDR/Paladin/Explode"
@@ -468,6 +469,7 @@ ACTOR MMRandomizer_PaladinBall
 	+FORCEXYBILLBOARD
 	+DONTBLAST
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "VDR/Paladin/Shoot"
 	DeathSound "VDR/Paladin/Hit"
 	States
@@ -498,6 +500,7 @@ actor MMRandomizer_PaladinBash
 	PROJECTILE
 	+SEEKERMISSILE
 	+DONTBLAST
+    -BLOODSPLATTER
 	States
 	{
 		Spawn:

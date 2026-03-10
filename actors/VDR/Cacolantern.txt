@@ -303,6 +303,7 @@ actor MMRandomizer_CacolanternBall
 	Damage 9
 	Projectile
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.67
 	SeeSound "doom/imp/attack"

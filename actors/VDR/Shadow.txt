@@ -329,6 +329,7 @@ ACTOR MMRandomizer_ShadowBall
 	Projectile
 	+RANDOMIZE
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle "ADD"
 	Alpha 0.75
 	SeeSound "VDR/Shadow/attack"

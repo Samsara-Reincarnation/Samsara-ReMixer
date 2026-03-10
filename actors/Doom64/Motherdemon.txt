@@ -185,6 +185,7 @@ ACTOR MotherBall64
 	+BRIGHT
 	+SEEKERMISSILE
 	+RANDOMIZE
+    -BLOODSPLATTER
 	SeeSound "skeleton64/attack"
 	DeathSound "doom64guy/explode"
 	Decal "RevenantScorch"
@@ -238,6 +239,7 @@ ACTOR MotherFire64
 	+RANDOMIZE
 	+NODAMAGETHRUST
 	+FLOORHUGGER
+    -BLOODSPLATTER
 	States
 	{
 		Spawn:

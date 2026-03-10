@@ -2367,6 +2367,7 @@ actor MMRandomizer_PoisonDrop
 	Projectile
 	-NOGRAVITY
 	+RANDOMIZE
+    -BLOODSPLATTER
 	states
 	{
 		Spawn:

@@ -96,6 +96,7 @@ Actor MMRandomizer_AfritBall
 	Damage 8
 	Projectile
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.8
 	SeeSound "doom/Imp/Attack"
@@ -122,6 +123,7 @@ Actor MMRandomizer_Comet
 	Scale 0.55
 	Projectile
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "VDR/Afrit/CometFire"
 	DeathSound "VDR/Afrit/CometHit"
 	Decal Scorch

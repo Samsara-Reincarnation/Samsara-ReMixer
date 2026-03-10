@@ -251,6 +251,7 @@ Actor RevenantTracer64
 	+BRIGHT
 	+SEEKERMISSILE
 	+RANDOMIZE
+    -BLOODSPLATTER
 	XScale 0.81
 	YScale 0.68
 	SeeSound "skeleton64/attack"

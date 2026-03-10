@@ -336,6 +336,7 @@ ACTOR ArachnotronPlasma_Samsara : ArachnotronPlasma
 	Decal ArachnotronScorch
 	DamageType "DoomSpiderPlasma"
 	+BRIGHT
+    -BLOODSPLATTER
 	States
 	{
 	Spawn:

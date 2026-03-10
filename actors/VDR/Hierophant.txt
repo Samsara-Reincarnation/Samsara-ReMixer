@@ -435,6 +435,7 @@ Actor MMRandomizer_HieroBall2 : BishopFX
 	+THRUGHOST
 	+FORCEXYBILLBOARD
 	+BRIGHT
+    -BLOODSPLATTER
 	States
 	{
 		Spawn:

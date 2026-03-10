@@ -1245,6 +1245,7 @@ actor MMRandomizer_InfernoBall
 	Damage 12
 	Projectile
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.67
 	SeeSound "doom/baron/attack"
@@ -1287,6 +1288,7 @@ actor MMRandomizer_NetherLightning
 	Projectile
 	+RIPPER
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.75
 	Scale 0.75

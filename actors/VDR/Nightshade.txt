@@ -311,6 +311,7 @@ ACTOR MMRandomizer_ShadeMissile : CacodemonBall
 	+SEEKERMISSILE
 	+FORCEXYBILLBOARD
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "vdr/nshatk"
 	DeathSound "vdr/nshexp"
 	States

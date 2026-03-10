@@ -345,6 +345,7 @@ Actor MMRandomizer_ArchonComet
 	Projectile
 	+THRUGHOST
 	+BRIGHT
+    -BLOODSPLATTER
 	Decal Scorch
 	SeeSound "vdr/firbfi"
 	DeathSound "vdr/hellex"

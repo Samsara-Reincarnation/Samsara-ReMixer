@@ -307,6 +307,7 @@ actor MMRandomizer_PlasmaZombieBall : PlasmaBall
 	SeeSound "doom/baby/attack"
 	DeathSound "doom/baby/shotx"
     DamageType "DoomPlasma"
+    -BLOODSPLATTER
 	States
 	{
 	Spawn:

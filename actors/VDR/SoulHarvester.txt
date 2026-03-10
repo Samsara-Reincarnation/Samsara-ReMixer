@@ -321,6 +321,7 @@ Actor MMRandomizer_SoulHarvesterBall
 	Damage 2
 	+SEEKERMISSILE
 	+BRIGHT
+    -BLOODSPLATTER
 	Projectile
 	RenderStyle Add
 	SeeSound "VDR/harvester/scream"

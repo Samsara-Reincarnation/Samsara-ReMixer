@@ -335,6 +335,7 @@ Actor MMRandomizer_BruiserMissile
 	DeathSound "VDR/weapons/hellex"
 	+THRUGHOST
 	+BRIGHT
+    -BLOODSPLATTER
 	Decal Scorch
 	DamageType "Explosive"
 	States

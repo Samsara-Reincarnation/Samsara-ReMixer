@@ -84,6 +84,7 @@ actor MMRandomizer_DemolisherBFGBall : BFGBall
 {
 	Decal BFGLightning
 	+BRIGHT
+    -BLOODSPLATTER
 	DeathSound "doomguy/bfgx"
     DamageType "BFG"
 	States

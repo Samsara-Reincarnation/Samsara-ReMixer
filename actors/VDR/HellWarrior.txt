@@ -338,6 +338,7 @@ Actor MMRandomizer_HellWarriorBall
 	Damage 8
 	Projectile
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.7
 	SeeSound "doom/imp/attack"
@@ -365,6 +366,7 @@ Actor MMRandomizer_HellWarriorBall2
 	+RANDOMIZE
 	+RIPPER
 	+BRIGHT
+    -BLOODSPLATTER
 	Alpha 0.8
 	Scale 0.4
 	SeeSound "doom/imp/attack"

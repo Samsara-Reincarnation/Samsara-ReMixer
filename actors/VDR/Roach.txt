@@ -402,6 +402,7 @@ Actor MMRandomizer_RoachBall : DoomImpBall
 	Speed 30
 	Decal PlasmaScorchLower
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "VDR/Roach/Fire"
 	DeathSound "VDR/Roach/Hit"
 	States

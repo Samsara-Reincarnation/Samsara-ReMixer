@@ -345,6 +345,7 @@ Actor MMRandomizer_BruiserBall
 	Projectile
 	+RANDOMIZE
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.9
 	SeeSound "doom/imp/attack"
@@ -370,6 +371,7 @@ Actor MMRandomizer_BruiserBall2
 	Projectile
 	+RANDOMIZE
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Add
 	Alpha 0.9
 	SeeSound "doom/imp/attack"
@@ -397,6 +399,7 @@ Actor MMRandomizer_BruiserFireSpawner
 	+PAINLESS
 	+FLOORHUGGER
 	+BLOODLESSIMPACT
+    -BLOODSPLATTER
 	Projectile
 	States
 	{
@@ -437,6 +440,7 @@ Actor MMRandomizer_BruiserFire
 	+NOCLIP
 	+FLOORHUGGER
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "doom/weapons/rocklx"
 	States
 	{

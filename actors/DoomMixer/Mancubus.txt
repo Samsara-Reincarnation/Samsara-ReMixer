@@ -309,6 +309,7 @@ ACTOR FatShot_Samsara : FatShot
 	+THRUGHOST
 	+FIREDAMAGE
 	+BRIGHT
+    -BLOODSPLATTER
 	RenderStyle Normal
 	SeeSound "doom/fatso/attack"
 	DeathSound "doom/fatso/shotx"

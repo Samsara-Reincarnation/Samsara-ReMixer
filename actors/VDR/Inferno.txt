@@ -320,6 +320,7 @@ ACTOR MMRandomizer_Lavaball
 	+THRUGHOST
 	+FORCEXYBILLBOARD
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "vdr/firmfi"
 	DeathSound "vdr/diabolus/firex3"
 	States

@@ -137,6 +137,7 @@ actor GhoulBall2_Samsara
 	+NOGRAVITY
 	+DROPOFF
 	+MISSILE
+    -BLOODSPLATTER
 	RenderStyle "Translucent"
 	SeeSound "doom/imp/attack"
 	DeathSound "doom/imp/shotx"
@@ -1144,6 +1145,7 @@ Actor VassagoFlame2_Samsara
 	+NOGRAVITY
 	+DROPOFF
 	+MISSILE
+    -BLOODSPLATTER
 	RenderStyle Add
 	SeeSound "doom_lor/vassago/shot"
 	DeathSound "doom_lor/vassago/shotx"

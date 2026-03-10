@@ -330,6 +330,7 @@ ACTOR MMRandomizer_GhoulMissile : RevenantTracer
 	+SEEKERMISSILE
 	+RANDOMIZE
 	+BRIGHT
+    -BLOODSPLATTER
 	SeeSound "vdr/Ghoul/attack"
 	DeathSound "vdr/Ghoul/tracex"
 	RenderStyle Add
