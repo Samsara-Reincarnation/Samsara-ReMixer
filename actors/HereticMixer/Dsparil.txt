@@ -268,9 +268,12 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 	}
 }
 
+actor Sorcerer2FX3Mixer : Sorcerer2FX3 replaces Sorcerer2FX3 { +BLOODSPLATTER }
+
 ACTOR Sorcerer2FX2B : Sorcerer2FX2 replaces Sorcerer2FX2
 {
 	ReactionTime 1
+    +BLOODSPLATTER
 	States
 	{
 		Spawn:
@@ -305,4 +308,8 @@ Actor HereticTeleportFog
 	}
 }
 
-Actor Sorcerer1FX12B : SorcererFX1 replaces SorcererFX1 { DeathSound "minotaur/fx3hit" }
+Actor Sorcerer1FX12B : SorcererFX1 replaces SorcererFX1
+{
+    DeathSound "minotaur/fx3hit"
+    +BLOODSPLATTER
+}

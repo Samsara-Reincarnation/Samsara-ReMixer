@@ -438,3 +438,6 @@ actor KnightGhost2_Shrink : KnightGhost3
 			Goto Squish
 	}
 }
+
+actor KnightAxe2Mixer : KnightAxe2 replaces KnightAxe2 { +BLOODSPLATTER }
+actor RedAxe2Mixer : RedAxe2 replaces RedAxe2 { +BLOODSPLATTER }

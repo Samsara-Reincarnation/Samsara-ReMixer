@@ -229,3 +229,5 @@ actor Wizard2_ShrinkEffect : Wizard3
 			Stop
 	}
 }
+
+actor WizardFX2Mixer : WizardFX2 replaces WizardFX2 { +BLOODSPLATTER }

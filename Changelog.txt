@@ -53,6 +53,8 @@ Heretic:
 + The Disciple of D'Sparil's health has been increased (from 180 to 250).
 + The Apprentice of D'Sparil has been added as a pain elemental replacement!
 + The weredragon's health has been increased (from 220 to 300).
+* Fixed D'Sparil's chaos serpent's fireballs not having lights.
+! Enemy projectiles now have +BLOODSPLATTER outside of Heretic and Hexen.
 
 Wolfenstein 3D:
 

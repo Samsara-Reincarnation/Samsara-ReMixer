@@ -228,3 +228,6 @@ actor Ophidian2_ShrinkEffect : Snake3
 			Stop
 	}
 }
+
+actor SnakeProjA2Mixer : SnakeProjA2 replaces SnakeProjA2 { +BLOODSPLATTER }
+actor SnakeProjB2Mixer : SnakeProjB2 replaces SnakeProjB2 { +BLOODSPLATTER }

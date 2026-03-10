@@ -824,3 +824,5 @@ actor MummyLeaderGhost2_Shrink : MummyLeaderGhost3
 			Goto Squish
 	}
 }
+
+actor MummyFX2Mixer : MummyFX2 replaces MummyFX2 { +BLOODSPLATTER }

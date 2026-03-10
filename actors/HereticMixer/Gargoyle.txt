@@ -467,3 +467,5 @@ actor HereticImpLeader2_Shrink : HereticImpLeader3
 			Goto Squish
 	}
 }
+
+actor HereticImpBall2Mixer : HereticImpBall2 replaces HereticImpBall2 { +BLOODSPLATTER }

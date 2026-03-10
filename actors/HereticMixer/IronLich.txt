@@ -24,3 +24,8 @@ ACTOR IronLich3 : IronLich2
 			Stop	
 	}
 }
+
+actor HeadFX12Mixer : HeadFX12 replaces HeadFX12 { +BLOODSPLATTER }
+actor HeadFX22Mixer : HeadFX22 replaces HeadFX22 { +BLOODSPLATTER }
+actor HeadFX32Mixer : HeadFX32 replaces HeadFX32 { +BLOODSPLATTER }
+actor HeadFX4Mixer : HeadFX4 replaces HeadFX4 { +BLOODSPLATTER }

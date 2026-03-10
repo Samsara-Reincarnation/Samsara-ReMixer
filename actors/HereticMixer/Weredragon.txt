@@ -252,3 +252,5 @@ actor WereDragon_ShrinkEffect : Beast3
 			Stop
 	}
 }
+
+actor BeastBall2Mixer : BeastBall2 replaces BeastBall2 { +BLOODSPLATTER }

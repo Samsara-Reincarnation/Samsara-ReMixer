@@ -29,7 +29,7 @@ flickerlight HIMPBALL_X3
 	chance 0.3
 }
 
-object HereticImpBall
+object HereticImpBall2Mixer
 {
 	frame FX10A { light HIMPBALL }
 	frame FX10B { light HIMPBALL }
@@ -143,7 +143,7 @@ flickerlight MUMMYBALL_X3
 	chance 0.4
 }
 
-object MummyFX1
+object MummyFX2Mixer
 {
 	frame FX15A { light MUMMYBALL }
 	frame FX15B { light MUMMYBALL }
@@ -185,7 +185,7 @@ flickerlight GREENAXE_X3
 	chance 0.3
 }
 
-object KnightAxe
+object KnightAxe2Mixer
 {
 	frame SPAXA { light GREENAXE }
 	frame SPAXB { light GREENAXE }
@@ -227,7 +227,7 @@ flickerlight REDAXE_X3
 	chance 0.3
 }
 
-object RedAxe
+object RedAxe2Mixer
 {
 	frame RAXEA { light REDAXE }
 	frame RAXEB { light REDAXE }
@@ -262,7 +262,7 @@ flickerlight DISCIPLEBALL_X2
 	chance 0.3
 }
 
-object WizardFX1
+object WizardFX2Mixer
 {
 	frame FX11A { light DISCIPLEBALL }
 	frame FX11B { light DISCIPLEBALL }
@@ -350,7 +350,7 @@ pointlight FROSTBALL_X4
 	size 40
 }
 
-object HeadFX1
+object HeadFX12Mixer
 {
 	frame FX05A { light FROSTBALL }
 	frame FX05B { light FROSTBALL }
@@ -369,7 +369,7 @@ pointlight FROSTSHARD
 	size 32
 }
 
-object HeadFX2
+object HeadFX22Mixer
 {
 	frame FX05H { light FROSTSHARD }
 	frame FX05I { light FROSTSHARD }
@@ -417,7 +417,7 @@ flickerlight LICHFIRE_X4
 	chance 0.5
 }
 
-object HeadFX3
+object HeadFX32Mixer
 {
 	frame FX06A { light LICHFIRE }
 	frame FX06B { light LICHFIRE }
@@ -526,7 +526,7 @@ flickerlight BEASTBALL_X4
 	chance 0.3
 }
 
-object BeastBall
+object BeastBall2Mixer
 {
 	frame FRB1A { light BEASTBALL }
 	frame FRB1B { light BEASTBALL }
@@ -577,7 +577,7 @@ flickerlight SNAKESHOT1_X4
 	chance 0.3
 }
 
-object SnakeProjA
+object SnakeProjA2Mixer
 {
 	frame SNFXA { light SNAKESHOT1 }
 	frame SNFXB { light SNAKESHOT1 }
@@ -621,7 +621,7 @@ flickerlight SNAKESHOT2_X3
 	chance 0.3
 }
 
-object SnakeProjB
+object SnakeProjB2Mixer
 {
 	frame SNFXJ { light SNAKESHOT2 }
 	frame SNFXK { light SNAKESHOT2 }
@@ -672,7 +672,7 @@ flickerlight SERPENTBALL_X4
 	chance 0.5
 }
 
-object SorcererFX1
+object Sorcerer1FX12B
 {
 	frame FX14A { light SERPENTBALL }
 	frame FX14B { light SERPENTBALL }
@@ -734,7 +734,7 @@ flickerlight DSPARILBALL_X5
 	chance 0.3
 }
 
-object Sorcerer2FX1
+object Sorcerer2FX3Mixer
 {
 	frame FX16A { light DSPARILBALL }
 	frame FX16B { light DSPARILBALL }
