@@ -774,7 +774,8 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Fatso3"},
 				{"MMRandomizer_Pestilence"},
 				{"MMRandomizer_Cryocubus"},
-				{"MMRandomizer_Daedabus"}
+				{"MMRandomizer_Daedabus"},
+				{"MMRandomizer_Hectebus"}
 			},
 			{//Abaddon
 				{"Abaddon2"}
@@ -1235,7 +1236,8 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Fatso3"},
 				{"MMRandomizer_Pestilence"},
 				{"MMRandomizer_Cryocubus"},
-				{"MMRandomizer_Daedabus"}
+				{"MMRandomizer_Daedabus"},
+				{"MMRandomizer_Hectebus"}
 			},
 			{//Inquisitor
 				{"Cyberdemon3"},
@@ -15430,10 +15432,11 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Mancubus
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Abaddon
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -15891,10 +15894,11 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,3,0,0,3,0,0,3,0,0,3,0,0,3}
 			},
 			{//Crusader
+				{0,0,4,0,0,4,0,0,4,0,0,4,0,0,4},
 				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1},
-				{0,0,1,0,0,1,0,0,1,0,0,1,0,0,1}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2}
 			},
 			{//Inquisitor
 				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},

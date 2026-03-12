@@ -3664,6 +3664,12 @@ object MMRandomizer_CryocubusFreezeBlast
 	frame VE20E { light MMRandomizer_CRYOCUBUS_FREEZE_BLAST_X4 }
 }
 
+object MMRandomizer_HectShot
+{
+	frame VE19A { light HECTSHOT }
+	frame VE19B { light HECTSHOT }
+}
+
 pointlight MMRandomizer_PestFire1
 {
 	color 0.4 0.8 0.0

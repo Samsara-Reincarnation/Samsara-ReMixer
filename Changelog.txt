@@ -22,7 +22,7 @@ Doom:
 -Vanilla Doom Randomizer-
 
 + The Legacy of Rust Shocktrooper now has a chance to spawn as a super shotgun guy replacement.
-- The Hectebus no longer spawns as a mancubus replacement.
++ Added a new version of the Hectebus with new sprites.
 + The Pestilence has been added as a mancubus replacement!
 + The Hellraiser has been added as an arch-vile replacement!
 + The Flesh Wizard has been added as an arch-vile replacement!

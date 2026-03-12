@@ -842,6 +842,7 @@
 #include "actors/VDR/ChaingunArachnotron.txt"
 #include "actors/VDR/LaserArachnotron.txt"
 #include "actors/VDR/Cryocubus.txt"
+#include "actors/VDR/Hectebus.txt"
 #include "actors/VDR/Pestilence.txt"
 #include "actors/VDR/Daedabus.txt"
 #include "actors/VDR/ForgottenOne.txt"
