@@ -246,7 +246,7 @@ Script "SMMGenerator_DetermineGameChoice" (void)
 			}
 			break;
 
-		case 256:
+		case 512:
 			for(selector = 0; selector < MAXMONSTERS_REKKR; selector++)
 			{
 				currentCounterForSelector = ThingCountName(SpawnersREKKR[selector],0);
@@ -461,7 +461,7 @@ Script "SMMGeneratorSelector" (void)
 			SpawnForced(StrParam(s:SpawnersROTWB[pickMonster],s:"Generator"),GetActorX(0),GetActorY(0),GetActorZ(0),newTid);
 			break;
 
-		case 256:
+		case 512:
 			do
 			{
 				rnd = random(minSelector,maxSelector);
@@ -538,7 +538,7 @@ Script "SMMReducer" (int pruneMax, int important, int monsterSlot)
 			typeCount = generatorCountersROTWB[monsterSlot];
 			break;
 
-		case 256:
+		case 512:
 			typeCount = generatorCountersREKKR[monsterSlot];
 			break;
 	}
