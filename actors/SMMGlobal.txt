@@ -399,3 +399,15 @@ actor SamsaraMonsterShieldReductionBase : PowerProtection { Powerup.Duration 0x7
 actor SamsaraMonsterShieldReduction75 : SamsaraMonsterShieldReductionBase { DamageFactor "Normal", 0.25 }
 actor SamsaraMonsterShieldReduction50 : SamsaraMonsterShieldReductionBase { DamageFactor "Normal", 0.5 }
 actor SamsaraMonsterShieldReduction25 : SamsaraMonsterShieldReductionBase { DamageFactor "Normal", 0.75 }
+
+actor SamsaraMonsterSquareVacuumProtectionTrigger : Trigger
+{
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_GiveInventory("SamsaraMonsterSquareVacuumProtection")
+        stop
+    }
+}
+
+actor SamsaraMonsterSquareVacuumProtection : PowerProtection { DamageFactor "Vacuum", 0.0 Powerup.Duration 0x7FFFFFFF }

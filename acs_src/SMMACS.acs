@@ -710,6 +710,9 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 		}
 	}
 
+	// Needed for Adventures of Square compatibility
+	if (GetCVar("samsara_currentgame") == 256) { GiveInventory("SamsaraMonsterSquareVacuumProtectionTrigger", 1); }
+
 	// Reduce tyrant monster health by 75%
 	if (monSlot == 82)
 	{
