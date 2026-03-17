@@ -7,6 +7,7 @@
 #define MAXMONSTERS_HACX 15
 #define MAXMONSTERS_HARMONY 9
 #define MAXMONSTERS_ROTWB 19
+#define MAXMONSTERS_SQUARE 24
 #define MAXMONSTERS_REKKR 18
 
 int generatorCountersDoom[MAXMONSTERS_DOOM];
@@ -35,6 +36,9 @@ str SpawnersHarmony[MAXMONSTERS_HARMONY] = { "Beastling_SamsaraRemixer", "Fallin
 
 int generatorCountersROTWB[MAXMONSTERS_ROTWB];
 str SpawnersROTWB[MAXMONSTERS_ROTWB] = { "ShotgunCat_SamsaraRemixer", "WizardCat_SamsaraRemixer", "DemonCat_SamsaraRemixer", "WizardCatBlack_SamsaraRemixer", "ChaingunCat_SamsaraRemixer", "PsychoCat_SamsaraRemixer", "ShotgunCatFloat_SamsaraRemixer", "KamikaziGuy_SamsaraRemixer", "Spidercat_SamsaraRemixer", "ChaingunCatBig_SamsaraRemixer", "OfficerCat_SamsaraRemixer", "FlyingKitty_SamsaraRemixer", "ChaingunCatBigCurl_SamsaraRemixer", "RoboCat_SamsaraRemixer", "DemonFish_SamsaraRemixer", "ShotgunCatPirate_SamsaraRemixer", "ChaingunCatBigPirate_SamsaraRemixer", "LowResHedgehog_SamsaraRemixer", "LowResChaingunCat_SamsaraRemixer" };
+
+int generatorCountersSquare[MAXMONSTERS_SQUARE];
+str SpawnersSquare[MAXMONSTERS_SQUARE] = { "KnifeJerk_SamsaraRemixer", "PaintJerk_SamsaraRemixer", "CannonJerk_SamsaraRemixer", "OoziJerk_SamsaraRemixer", "Chatterbox_SamsaraRemixer", "Shatterbox_SamsaraRemixer", "Rectangolier_SamsaraRemixer", "HexasRanger_SamsaraRemixer", "HexanSheriff_SamsaraRemixer", "Ovolt_SamsaraRemixer", "Airvolt_SamsaraRemixer", "Revolt_SamsaraRemixer", "SpyEye_SamsaraRemixer", "Spectra_SamsaraRemixer", "DarkSpectra_SamsaraRemixer", "JetpackJerk_SamsaraRemixer", "Eyescreamer_SamsaraRemixer", "Cylonder_SamsaraRemixer", "Cybandit_SamsaraRemixer", "Strongman_SamsaraRemixer", "Tritankle_SamsaraRemixer", "ColorCube_SamsaraRemixer", "MiniDestructinator_SamsaraRemixer", "Destructinator_SamsaraRemixer" };
 
 int generatorCountersREKKR[MAXMONSTERS_REKKR];
 str SpawnersREKKR[MAXMONSTERS_REKKR] = { "REKKRFormerHuman_SamsaraRemixer", "REKKRGrotesque_SamsaraRemixer", "REKKRHusk_SamsaraRemixer", "REKKRImp_SamsaraRemixer", "REKKREyeball_SamsaraRemixer", "REKKRMeanHusk_SamsaraRemixer", "REKKRMeanImp_SamsaraRemixer", "REKKRSorrow_SamsaraRemixer", "REKKRRunePorter_SamsaraRemixer", "REKKRSkelespider_SamsaraRemixer", "RERRKFormerDuke_SamsaraRemixer", "REKKRSkellyBelly_SamsaraRemixer", "REKKRTreebeast_SamsaraRemixer", "REKKRFlammenwerfer_SamsaraRemixer", "REKKRFormerKing_SamsaraRemixer", "REKKRFormerKing2_SamsaraRemixer", "REKKRDeathRaven_SamsaraRemixer", "REKKRGardien_SamsaraRemixer" };
@@ -235,6 +239,22 @@ Script "SMMGenerator_DetermineGameChoice" (void)
 			{
 				currentCounterForSelector = ThingCountName(SpawnersROTWB[selector],0);
 				generatorCountersROTWB[selector] = currentCounterForSelector;
+
+				if(currentCounterForSelector > 0)
+				{
+					minSelector = min(selector, minSelector);
+					maxSelector = max(selector, maxSelector);
+				}
+				totalTypes += currentCounterForSelector;
+				generationAmount += currentCounterForSelector*(selector+1);
+			}
+			break;
+
+		case 256:
+			for(selector = 0; selector < MAXMONSTERS_SQUARE; selector++)
+			{
+				currentCounterForSelector = ThingCountName(SpawnersSquare[selector],0);
+				generatorCountersSquare[selector] = currentCounterForSelector;
 
 				if(currentCounterForSelector > 0)
 				{
@@ -461,6 +481,20 @@ Script "SMMGeneratorSelector" (void)
 			SpawnForced(StrParam(s:SpawnersROTWB[pickMonster],s:"Generator"),GetActorX(0),GetActorY(0),GetActorZ(0),newTid);
 			break;
 
+		case 256:
+			do
+			{
+				rnd = random(minSelector,maxSelector);
+				mix = FixedMul(random(0.0,1.0),influence);
+				pickMonster = roundZandronum((rnd * (1.0 - mix)) + FixedMul(selectorBias,mix));
+				selectionAttempts++;
+			} while ((pickMonster == 22 || pickMonster == 23) && selectionAttempts < maxSelectionAttempts);
+			if(selectionAttempts >= maxSelectionAttempts)
+				terminate;
+
+			SpawnForced(StrParam(s:SpawnersSquare[pickMonster],s:"Generator"),GetActorX(0),GetActorY(0),GetActorZ(0),newTid);
+			break;
+
 		case 512:
 			do
 			{
@@ -536,6 +570,10 @@ Script "SMMReducer" (int pruneMax, int important, int monsterSlot)
 
 		case 128:
 			typeCount = generatorCountersROTWB[monsterSlot];
+			break;
+
+		case 256:
+			typeCount = generatorCountersSquare[monsterSlot];
 			break;
 
 		case 512:
