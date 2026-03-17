@@ -322,7 +322,7 @@ Actor HexenTeleportFog
 	States
 	{
 	Spawn:
-		TELE ABCDEFGHGFEDC 6 Bright
+		TELE IJKLMNOPONMLK 6 Bright
 		Stop
 	}
 }

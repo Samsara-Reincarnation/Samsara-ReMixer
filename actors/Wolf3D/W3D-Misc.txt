@@ -271,41 +271,6 @@ actor LostDualChaingunDropTrue : WolfDualChaingunDropTrue
     }
 }
 
-ACTOR WolfGoldKey : CustomInventory
-{
-	Inventory.PickupMessage "Picked up a gold key, I wonder what it goes to."
-    Inventory.PickupSound "wolfkey/pickup"
-	States
-	{
-		Spawn:
-			WKEY A -1
-			Stop
-		
-		Pickup:
-			TNT1 A 0 A_JumpIfInventory("GoldKey",1,"PickupFail")
-			TNT1 A 0 A_GiveInventory("GoldKey",1)
-			stop
-		
-		PickupFail:
-			WKEY A 1
-			fail
-	}
-}
-
-ACTOR SODGoldKey : WolfGoldKey
-{
-	States
-	{
-		Spawn:
-			SKEY A -1
-			Stop
-			
-		PickupFail:
-			SKEY A 1
-			fail
-	}
-}
-
 actor NewDukeGibs1_WolfPurple : DukeGibs1
 {
 	Translation "16:47=[200,0,204]:[64,0,64]"

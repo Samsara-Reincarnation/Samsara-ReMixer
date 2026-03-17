@@ -63,10 +63,12 @@ Wolfenstein 3D:
 ! The Mutant now spawns as an imp replacement instead of being a revenant/hell knight replacement.
 ! Gretel Grosse now spawns as a revenant/hell knight replacement.
 - Gretel Grosse's health has been decreased (from 1050 to 600).
+- Removed sprites for an unused key pickup item.
 
 -Lost Episodes-
 
 + The Bat's health has been increased (from 65 to 130).
+- Removed sprites for an unused key pickup item.
 
 Hexen I:
 
@@ -84,6 +86,8 @@ Hexen I:
 + The Brown Chaos Serpent's health has been increased (from 250 to 400).
 * Fixed some of the Heresiarch's attacks not having lights.
 ! Most enemy projectiles now have +BLOODSPLATTER outside of Heretic and Hexen.
+- Removed sprites for water, sludge, and lava splashes.
+- Removed sprites for the teleport glitter effect used in Hexen.
 
 Marathon:
 
@@ -199,6 +203,10 @@ Strife: Quest for the Sigil:
 + Added dedicated spawn slots for the Strife robots.
 - Removed the Templar as a ReMixer spawn slot.
 ! The Strife ReMixer enemies now spawn accordingly to their original spawn slots.
+
+The Adventures of Square:
+
++ The realm of The Adventures of Square has opened up to the monsters! Note that support is currently exclusive to GZDoom only.
 
 Doom 64 CE:
 

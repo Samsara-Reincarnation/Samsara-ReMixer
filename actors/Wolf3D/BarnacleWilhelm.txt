@@ -33,7 +33,6 @@ ACTOR BarnacleWilhelm : SamsaraMonsterHumanoidBoss
     DamageFactor "Mace", 1.1
     DamageFactor "DragonClaw", 1.5
 	DamageFactor "WolfEnemyBullet", 0.0
-	//Dropitem "WolfGoldKey"
 	Decal BulletChip
 	States 
 	{
