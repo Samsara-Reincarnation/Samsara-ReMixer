@@ -159,6 +159,7 @@ GoldenEye 007:
 -GoldenEye 007-
 
 + The Moonraker Elite's health has been increased (from 210 to 300).
+* Fixed Baron Samedi going to the wrong death state when headshotted by James Bond.
 
 -Goldfinger 64-
 
