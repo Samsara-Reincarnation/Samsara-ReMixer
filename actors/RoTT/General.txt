@@ -306,10 +306,14 @@ Actor RoTT_Explosion : Fboming {
 }
 
 Actor RoTT_BossExplosionSpawner : RoTT_BossDeathPlayer {
+	+INVENTORY.QUIET
 	States {
 		Spawn:
 			TNT1 AAAAA 6 A_SpawnItemEx("RoTT_Explosion", 8 * random(-8, 8), 8 * random(-8, 8), 8 * random(0, 3))
 			TNT1 AAAAAAAAA 3 A_SpawnItemEx("RoTT_Explosion", 8 * random(-8, 8), 8 * random(-8, 8), 8 * random(0, 3))
+		Stop
+		Pickup:
+			TNT1 A 0
 		Stop
 	}
 }
