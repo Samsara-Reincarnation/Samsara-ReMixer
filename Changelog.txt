@@ -97,6 +97,7 @@ Rise of the Triad:
 
 ! To accommodate for the ROTT characters' equipment placement changes, lightning guards can now take away slot 2 equipment instead of slot 1 equipment.
 * Fixed lightning guards not being able to take the Eradicator characters' missile launcher.
+! Sebastian Doyle Krist's sight states have been simplified. This removes his ability to turn when he's not attacking, but this also fixes his inability to go to his missile state.
 
 Blake Stone:
 

@@ -76,11 +76,9 @@ ACTOR SebastianKrist : RoTTBoss {
 	   Idle:
 		    KRIS A 10 A_Look
 		    Loop
-	   See:
-			TNT1 A 0 A_GiveInventory("SamsaraBossSightTaunt")
-	   SeenPlayer:
-	        TNT1 A 0 A_Chase
-		    TNT1 A 0 A_GiveInventory("KristTurnDecider", 1)
+
+// These states are disabled for now until someone can figure out why it doesn't work
+/*
 	   SeeLoop:
 	        KRIS A 1
 		    TNT1 A 0 A_JumpIfInventory("PlayTurnLeftAnim", 1, "TurnLeft")
@@ -103,7 +101,10 @@ ACTOR SebastianKrist : RoTTBoss {
 	   Straight:
 		    TNT1 A 0 A_FaceTarget
 		    TNT1 A 0 A_TakeInventory("ChargeSignal", 1)
-	   StraightLooper:
+*/
+	   See:
+			TNT1 A 0 A_GiveInventory("SamsaraBossSightTaunt")
+	   SeenPlayer:
 		    TNT1 A 0 A_PlaySound("Robot/Move", 6)
 		    TNT1 A 0 A_Chase("", "")
 	        KRIS R 2 A_CustomMissile("KristRunOver", 24, 0, 0, CMF_AIMDIRECTION)

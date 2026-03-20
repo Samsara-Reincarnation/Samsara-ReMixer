@@ -23,6 +23,31 @@ actor ColorCube_SamsaraRemixer : HellKnightSpawner replaces ColorCube_Samsara {}
 actor MiniDestructinator_SamsaraRemixer : BelphegorSpawner replaces MiniDestructinator_Samsara {}
 actor Destructinator_SamsaraRemixer : CyberdemonSpawner replaces Destructinator_Samsara {}
 
+actor EliteOoziJerk_SamsaraRemixer replaces EliteOoziJerk_Samsara
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIf(args[0] == 1, "SpawnItem1")
+		TNT1 A 0 A_JumpIf(args[0] == 2, "SpawnItem2")
+		TNT1 A 0 A_JumpIf(args[0] == 3, "SpawnItem3")
+		Goto SpawnEnd
+	SpawnItem1:
+		TNT1 A 0 A_SpawnItemEx("FloppyDiskPassword_Samsara")
+		Goto SpawnEnd
+	SpawnItem2:
+		TNT1 A 0 A_SpawnItemEx("FloppyDiskSecurityCode_Samsara")
+		Goto SpawnEnd
+	SpawnItem3:
+		TNT1 A 0 A_SpawnItemEx("FloppyDiskLaunchCode_Samsara")
+		Goto SpawnEnd
+	SpawnEnd:
+		TNT1 A 0 A_SpawnItemEx("ChaingunGuySpawner")
+		Stop
+	}
+}
+
 actor KnifeJerk_SamsaraRemixerGenerator : KnifeJerk_SamsaraRemixer { -COUNTKILL }
 actor PaintJerk_SamsaraRemixerGenerator : PaintJerk_SamsaraRemixer { -COUNTKILL }
 actor CannonJerk_SamsaraRemixerGenerator : CannonJerk_SamsaraRemixer { -COUNTKILL }
