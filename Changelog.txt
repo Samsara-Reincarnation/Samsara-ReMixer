@@ -207,17 +207,25 @@ Strife: Quest for the Sigil:
 - Removed the Templar as a ReMixer spawn slot.
 ! The Strife ReMixer enemies now spawn accordingly to their original spawn slots.
 
-The Adventures of Square:
+Legacy of Rust/WadFusion:
 
-+ The realm of The Adventures of Square has opened up to the monsters! Note that support is currently exclusive to GZDoom only.
++ Added dedicated spawn slots for the Legacy of Rust monsters.
+
+PSX Doom CE:
+
++ Added support for Corruption Cards in PSX Doom CE.
+
+PSX Final Doom CE:
+
++ Added support for Corruption Cards in PSX Final Doom CE.
 
 Doom 64 CE:
 
 + The realm of Doom 64 CE has opened up to the monsters! Note that support is currently exclusive to GZDoom only.
 
-Legacy of Rust/WadFusion:
+The Adventures of Square:
 
-+ Added dedicated spawn slots for the Legacy of Rust monsters.
++ The realm of The Adventures of Square has opened up to the monsters! Note that support is currently exclusive to GZDoom only.
 
 -Settings-
 

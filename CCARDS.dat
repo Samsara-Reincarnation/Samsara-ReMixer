@@ -1,7 +1,5 @@
 // Corruption Cards compatibility for Samsara ReMixer
 
-setupdelay 5
-
 ungroup "Former Human"
 ungroup "Hell Nobles"
 ungroup "Demon"
@@ -160,15 +158,25 @@ excludeactor KoraxReplacerGenerator
 excludeactor StrifeStalkerReplacer
 excludeactor StrifeSentinelReplacer
 excludeactor StrifeReaverReplacer
-excludeactor StrifeTemplarReplacer
 excludeactor StrifeCrusaderReplacer
 excludeactor StrifeInquisitorReplacer
 excludeactor StrifeStalkerReplacerGenerator
 excludeactor StrifeSentinelReplacerGenerator
 excludeactor StrifeReaverReplacerGenerator
-excludeactor StrifeTemplarReplacerGenerator
 excludeactor StrifeCrusaderReplacerGenerator
 excludeactor StrifeInquisitorReplacerGenerator
+excludeactor LegacyOfRustGhoulSpawner
+excludeactor LegacyOfRustBansheeSpawner
+excludeactor LegacyOfRustShocktrooperSpawner
+excludeactor LegacyOfRustMindweaverSpawner
+excludeactor LegacyOfRustVassagoSpawner
+excludeactor LegacyOfRustTyrantSpawner
+excludeactor LegacyOfRustGhoulSpawnerGenerator
+excludeactor LegacyOfRustBansheeSpawnerGenerator
+excludeactor LegacyOfRustShocktrooperSpawnerGenerator
+excludeactor LegacyOfRustMindweaverSpawnerGenerator
+excludeactor LegacyOfRustVassagoSpawnerGenerator
+excludeactor LegacyOfRustTyrantSpawnerGenerator
 
 excludeactor AlienProtector_2
 excludeactor StarTrooper_2
