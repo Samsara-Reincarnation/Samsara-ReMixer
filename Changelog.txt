@@ -121,7 +121,7 @@ Corridor 7:
 + Ttocs' health has been increased (from 150 to 500).
 - The Mechanical Warrior's health has been decreased (from 1000 to 800).
 - The Eniram Boss' health has been decreased (from 2000 to 1000).
-! Changed the Operation Body Count Terrorist sprites to have a more accurate pallete from the source game.
+! Changed the Operation Body Count Terrorist sprites to have a more accurate palette from the source game.
 
 Rebel Moon Rising:
 
