@@ -92,6 +92,7 @@ Hexen I:
 Marathon:
 
 * Fixed enemies with yellow blood using the wrong color of the Duke3D blood pool when gibbed by Duke Nukem.
+* Fixed the Skitter not using the correct blood color for the Bloody Hell death effect.
 
 Rise of the Triad:
 
