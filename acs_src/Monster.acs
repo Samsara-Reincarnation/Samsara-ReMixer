@@ -131,9 +131,9 @@ int ClassWeapons[CLASSCOUNT][9] =
         "Thunderbolt",
     },
     { // Rise of the Triad
-        "Dark Staff",
+        "notapplicable",
         "Excalibat",
-        "Split Missile",
+        "Dark Staff",
         "MP40",
         "HeatSeeker",
         "Bazooka",

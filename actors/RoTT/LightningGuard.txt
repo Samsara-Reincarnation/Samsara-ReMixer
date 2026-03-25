@@ -125,9 +125,9 @@ ACTOR LightningGuard : RoTTHumanoid {
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 6, "FireBazooka")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 5, "FireHeatSeeker")
 	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 4, "Missile2")
-	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 3, "FireSplitMissile")
-	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 2, "FireExcalibat")
-	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 1, "FireDarkStaff")
+	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 3, "Missile2") // Was for the split missile, but now unused. Maybe in the future...
+	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 2, "FireDarkStaff")
+	   TNT1 A 0 A_JumpIfInventory("StoleWeapon", 1, "FireExcalibat")
 	   Goto Missile
 	FireBazooka:
        TNT1 A 0 A_JumpIfCloser(36,6)
