@@ -435,13 +435,13 @@ Actor MakronBFGBall : BFG10KBall
 	States
 	{
       SpawnCycle1:
-        BGS1 A 0 Bright A_PlaySound("Q2Weapons/BFG10KFly",CHAN_VOICE,0.66,true)
-        BGS1 AABB 2 Bright A_SpawnItem("MakronBFGBeamSpawner",0,0)
+        TNT1 A 0 A_PlaySound("Q2Weapons/BFG10KFly",CHAN_VOICE,0.66,true)
+        BGS1 AABB 2 Bright Light("Q2BFGBALL") A_SpawnItem("MakronBFGBeamSpawner",0,0)
         loop
 
       DeathExplode:
-        BGE1 C 0 Bright A_Explode
-        BGE1 C 0 Bright A_BFGSpray("BFG10KExtra",20,10)
+        TNT1 A 0 A_Explode
+        TNT1 A 0 A_BFGSpray("BFG10KExtra",20,10)
         goto DeathFinish
 	}
 }
