@@ -45,12 +45,19 @@ Actor AttackCount : Inventory {
 	inventory.maxamount 99
 }
 
-Actor BlakeClip : Clip2 {
-	States {
-		Spawn:
-			BCLP A -1
-			Stop
-	}
+actor BlakeClip : Clip2
+{
+    States
+    {
+      Spawn:
+        BCLP A 0
+        goto SpawnGameModeCheck
+
+      SpawnActual:
+        TNT1 A 0 A_ChangeFlag("THRUACTORS",false)
+        BCLP A -1 A_ChangeFlag("NOTIMEFREEZE",false)
+        stop
+    }
 }
 
 ACTOR BlakeEnemyBulletD1 : DoomEnemyBullet

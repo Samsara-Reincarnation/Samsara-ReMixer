@@ -103,6 +103,7 @@ Rise of the Triad:
 
 Blake Stone:
 
+* Fixed ammo drops being unable to be picked up.
 * Fixed the High Security Genetic Guard using the wrong monster base.
 
 Strife:
