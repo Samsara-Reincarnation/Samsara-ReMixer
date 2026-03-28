@@ -1524,3 +1524,10 @@ object SpectralLightningBigV2Mixer
 	frame ZAP1E { light ARROWZAP5 }
 	frame ZAP1F { light ARROWZAP6 }
 }
+
+// Items
+pointlight ENERGY1
+{
+    color 0.4 1.0 0.4
+    size 16
+}
