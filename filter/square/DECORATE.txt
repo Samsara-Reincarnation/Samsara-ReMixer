@@ -20,7 +20,7 @@ actor Cybandit_SamsaraRemixer : RevenantSpawner replaces Cybandit_Samsara {}
 actor Strongman_SamsaraRemixer : HellKnightSpawner replaces Strongman_Samsara {}
 actor Tritankle_SamsaraRemixer : HellKnightSpawner replaces Tritankle_Samsara {}
 actor ColorCube_SamsaraRemixer : HellKnightSpawner replaces ColorCube_Samsara {}
-actor MiniDestructinator_SamsaraRemixer : BelphegorSpawner replaces MiniDestructinator_Samsara {}
+actor MiniDestructinator_SamsaraRemixer : BaronOfHellSpawner replaces MiniDestructinator_Samsara {}
 actor Destructinator_SamsaraRemixer : CyberdemonSpawner replaces Destructinator_Samsara {}
 
 actor EliteOoziJerk_SamsaraRemixer replaces EliteOoziJerk_Samsara

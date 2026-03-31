@@ -1,20 +1,22 @@
 Script "RoTTKrist" (void) //800
 {
-	int thisactor = ActivatorTID();
-	SetActivatorToTarget(0);
-	int target = ActivatorTID();
-	int xdiff = GetActorX(target) - GetActorX(thisactor);
-	int ydiff = GetActorY(target) - GetActorY(thisactor);
+
+	int currentx = GetActorX(0);
+	int currenty = GetActorY(0);
+	int currentangle = GetActorAngle(0);
+	SetActivator(0, AAPTR_TARGET);
+	int targetx = GetActorX(0);
+	int targety = GetActorY(0);
+	int xdiff = targetx - currentx;
+	int ydiff = targety - currenty;
 	int faceangle = VectorAngle(xdiff, ydiff);
-	int angdiff = (GetActorAngle(thisactor) - faceangle) >> 8;
-	
-	if(angdiff > 12)
-		SetResultValue(true);
-	else if(angdiff < -12)
-		SetResultValue(false);
+	int angdiff = abs(((faceangle - currentangle + 1.0) % 1.0) >> 8);
+	if(angdiff < 244 & angdiff >= 128)
+		{ SetResultValue(2); terminate; }
+	else if(angdiff > 12 & angdiff < 128)
+		{ SetResultValue(1); terminate; }
 	else
-		GiveActorInventory(thisactor, "ChargeSignal", 1);
-	SetResultValue(false);
+		{ SetResultValue(3); terminate; }
 }
 
 Script "RoTTBossScript" (int basetid, int type) //801

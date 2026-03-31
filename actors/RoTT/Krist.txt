@@ -62,49 +62,47 @@ ACTOR SebastianKrist : RoTTBoss {
    +DONTHURTSPECIES
    +NOINFIGHTING
    States {
-	   Spawn:
-			KRIS A 0
-			KRIS A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
-			KRIS A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
-			KRIS A 0 A_GiveInventory("AlreadySpawned",1)
-		Spawn2:
-	        TNT1 A 0
-		    TNT1 A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, Krist_ID, 0)
-	   SpawnLoop:
-		    KRIS A 10 A_Look
-		    Loop
-	   Idle:
-		    KRIS A 10 A_Look
-		    Loop
-
-// These states are disabled for now until someone can figure out why it doesn't work
-/*
-	   SeeLoop:
-	        KRIS A 1
-		    TNT1 A 0 A_JumpIfInventory("PlayTurnLeftAnim", 1, "TurnLeft")
-		    TNT1 A 0 A_JumpIfInventory("PlayTurnRightAnim", 1, "TurnRight")
-		    Goto Straight
-	   TurnLeft:
-		    TNT1 A 0 A_PlaySound("Krist/Turn", 6)
-	   LeftLoop:
-	        TNT1 A 0 ACS_NamedExecuteWithResult("RoTTKrist", 0)
-		    KRIS QQ 1 A_SetAngle(angle - 8)
-		    TNT1 A 0 A_JumpIfInventory("ChargeSignal", 1, "Straight")
-	        Loop
-	   TurnRight:
-	        TNT1 A 0 A_PlaySound("Krist/Turn", 6)
-	   RightLoop:
-	        TNT1 A 0 ACS_NamedExecuteWithResult("RoTTKrist", 0)
-		    KRIS BB 1 A_SetAngle(angle + 8)
-		    TNT1 A 0 A_JumpIfInventory("ChargeSignal", 1, "Straight")
-	        Loop
-	   Straight:
-		    TNT1 A 0 A_FaceTarget
-		    TNT1 A 0 A_TakeInventory("ChargeSignal", 1)
-*/
-	   See:
-			TNT1 A 0 A_GiveInventory("SamsaraBossSightTaunt")
-	   SeenPlayer:
+	Spawn:
+		KRIS A 0
+		KRIS A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+		KRIS A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+		KRIS A 0 A_GiveInventory("AlreadySpawned",1)
+	Spawn2:
+		TNT1 A 0
+		TNT1 A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, Krist_ID, 0)
+	SpawnLoop:
+		KRIS A 10 A_Look
+		Loop
+	See:
+		TNT1 A 0 A_GiveInventory("SamsaraBossSightTaunt")
+	SeenPlayer:
+		TNT1 A 0 A_GiveInventory("KristTurnDecider", 1)
+	SeeLoop:
+		KRIS A 1
+		TNT1 A 0 A_JumpIfInventory("PlayTurnLeftAnim", 1, "TurnLeft")
+		TNT1 A 0 A_JumpIfInventory("PlayTurnRightAnim", 1, "TurnRight")
+		TNT1 A 0 A_JumpIfInventory("ChargeSignal", 1, "Straight")
+		Loop
+	TurnLeft:
+		TNT1 A 0 A_PlaySound("Krist/Turn", 6)
+	LeftLoop:
+		TNT1 A 0 A_GiveInventory("KristTurnDecider", 1)
+		KRIS QQ 2 A_SetAngle(angle - 8)
+		TNT1 A 0 A_JumpIfInventory("ChargeSignal", 1, "Straight")
+		TNT1 A 0 A_JumpIfInventory("PlayTurnRightAnim", 1, "TurnRight")
+		Loop
+	TurnRight:
+		TNT1 A 0 A_PlaySound("Krist/Turn", 6)
+	RightLoop:
+		TNT1 A 0 A_GiveInventory("KristTurnDecider", 1)
+		KRIS BB 2 A_SetAngle(angle + 8)
+		TNT1 A 0 A_JumpIfInventory("ChargeSignal", 1, "Straight")
+		TNT1 A 0 A_JumpIfInventory("PlayTurnLeftAnim", 1, "TurnLeft")
+		Loop
+	Straight:
+		TNT1 A 0 A_FaceTarget
+		KRIS A 5 A_PlaySound("Robot/Move", 6)
+	StraightLooper:
 		    TNT1 A 0 A_PlaySound("Robot/Move", 6)
 		    TNT1 A 0 A_Chase("", "")
 	        KRIS R 2 A_CustomMissile("KristRunOver", 24, 0, 0, CMF_AIMDIRECTION)
@@ -193,7 +191,9 @@ ACTOR SebastianKrist : RoTTBoss {
 		Pain:
 	        TNT1 A 0 A_TakeInventory("KristMoveCounter", 10)
 	        TNT1 A 0 A_TakeInventory("AttackSwitch", 1)	
-		    TNT1 A 0 A_TakeInventory("ChargeSignal", 1)			
+		    TNT1 A 0 A_TakeInventory("ChargeSignal", 1)	
+		    TNT1 A 0 A_TakeInventory("PlayTurnLeftAnim", 1)	
+		    TNT1 A 0 A_TakeInventory("PlayTurnRightAnim", 1)	
 			KRIS A 3
 			KRIS A 3 A_Pain
 			Goto SeenPlayer
@@ -482,19 +482,21 @@ Actor KristTurnDecider : CustomInventory {
 	States {
 		Pickup:
 		Use:
-			TNT1 A 0 A_JumpIf(1 == ACS_NamedExecuteWithResult("RoTTKrist", 0), "TurnRight")
-			TNT1 A 0 A_JumpIfInventory("ChargeSignal", 1, "Straight")
+			TNT1 A 0 A_TakeInventory("PlayTurnLeftAnim", 1)
+			TNT1 A 0 A_TakeInventory("PlayTurnRightAnim", 1)
+			TNT1 A 0 A_TakeInventory("ChargeSignal", 1)
+			TNT1 A 0 A_JumpIf(CallACS("RoTTKrist") == 1, "TurnRight")
+			TNT1 A 0 A_JumpIf(CallACS("RoTTKrist") == 2, "TurnLeft")
+			TNT1 A 0 A_JumpIf(CallACS("RoTTKrist") == 3, "Straight")
+			Loop
+		Straight:
+			TNT1 A 0 A_GiveInventory("ChargeSignal", 1)
+			Stop
 		TurnLeft:
-			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_GiveInventory("PlayTurnLeftAnim", 1)
 			Stop
 		TurnRight:
-			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_GiveInventory("PlayTurnRightAnim", 1)
-			Stop
-		Straight:
-			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_TakeInventory("ChargeSignal", 1)
 			Stop
 	}
 }
