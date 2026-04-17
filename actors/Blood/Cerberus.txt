@@ -297,7 +297,7 @@ actor NapalmRocket_Cerberus : BloodNapalmRocket
 		Loop
 	Death:
 		TNT1 A 0 A_SpawnItemEx("Blower_2b",0,0,-2,0,0,-10,0,SXF_NOCHECKPOSITION)
-		TNT1 A 5 A_SpawnItemEx("Kaboom",0,0,0,0,0,1,0, SXF_CLIENTSIDE)
+		TNT1 A 5 A_SpawnItemEx("SamsaraBloodKaboom",0,0,0,0,0,1,0, SXF_CLIENTSIDE)
 		Stop
 	}
 }
