@@ -18,6 +18,10 @@ Doom:
 
 * Fixed the Nightshade using the wrong monster base.
 
+Blake Stone:
+
+- The mutated guard's health has been decreased (from 150 from 60).
+
 ----------------------------------------------------------------------------
 -------------------Reincarnation Mixer 1.2.3 Public Beta--------------------
 ----------------------------------------------------------------------------

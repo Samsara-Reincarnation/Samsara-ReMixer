@@ -1,5 +1,5 @@
 Actor MutatedGuard : SamsaraMonsterHumanoidTotalGib {
-	Health 150
+	Health 60
 	SeeSound "mutatedguard/sight"
 	DeathSound "mutatedguard/death"
 	AttackSound "Bpistol2/Fire"
