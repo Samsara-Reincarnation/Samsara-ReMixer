@@ -20,7 +20,7 @@ Doom:
 
 Blake Stone:
 
-- The mutated guard's health has been decreased (from 150 from 60).
+- The mutated guard's health has been decreased (from 150 to 60).
 
 ----------------------------------------------------------------------------
 -------------------Reincarnation Mixer 1.2.3 Public Beta--------------------
