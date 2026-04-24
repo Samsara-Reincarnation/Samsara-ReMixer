@@ -15,7 +15,6 @@ ACTOR Centaur3 : Centaur2
     DamageFactor "Wraithverge", 1.0
     DamageFactor "Normal", 1.0
 	DamageFactor "DoomDamageType", 1.0
-	DamageFactor "DoomDamageTypeNoSelfDamage", 1.0
 	DamageFactor "DoomDamageTypeStunner", 1.0
     DamageFactor "DragonClaw", 1.5
     DamageFactor "Mace", 1.0
@@ -23,7 +22,6 @@ ACTOR Centaur3 : Centaur2
     DamageFactor "PhasingZorch", 1.0
     DamageFactor "BFG", 1.0
 	DamageFactor "DoomDamageTypeBFG", 1.0
-	DamageFactor "DoomDamageTypeBFGNoSelfDamage", 1.0
     DamageFactor "BFGSpray", 1.0
 	DamageFactor "DoomDamageTypeDevastator", 1.0
     DamageFactor "Fire", 1.0
@@ -43,9 +41,7 @@ ACTOR Centaur3 : Centaur2
     DamageFactor "MarathonFusion", 1.0
     DamageFactor "DoomPlasma", 1.0
 	DamageFactor "DoomDamageTypePlasma", 1.0
-	DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 1.0
 	DamageFactor "DoomDamageTypeRepeater", 1.0
-	DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 1.0
     DamageFactor "CorvusCrossbow", 1.1
     DamageFactor "CorvusHellstaff", 1.0
     DamageFactor "CorvusHellstaffTomed", 1.0
@@ -287,7 +283,6 @@ ACTOR CentaurLeader3 : CentaurLeader2
     DamageFactor "Wraithverge", 1.0
     DamageFactor "Normal", 1.0
 	DamageFactor "DoomDamageType", 1.0
-	DamageFactor "DoomDamageTypeNoSelfDamage", 1.0
 	DamageFactor "DoomDamageTypeStunner", 1.0
     DamageFactor "DragonClaw", 1.5
     DamageFactor "Mace", 1.0
@@ -295,7 +290,6 @@ ACTOR CentaurLeader3 : CentaurLeader2
     DamageFactor "PhasingZorch", 1.0
     DamageFactor "BFG", 1.0
 	DamageFactor "DoomDamageTypeBFG", 1.0
-	DamageFactor "DoomDamageTypeBFGNoSelfDamage", 1.0
     DamageFactor "BFGSpray", 1.0
 	DamageFactor "DoomDamageTypeDevastator", 1.0
     DamageFactor "Fire", 1.0
@@ -315,9 +309,7 @@ ACTOR CentaurLeader3 : CentaurLeader2
     DamageFactor "MarathonFusion", 1.0
     DamageFactor "DoomPlasma", 1.0
 	DamageFactor "DoomDamageTypePlasma", 1.0
-	DamageFactor "DoomDamageTypePlasmaNoSelfDamage", 1.0
 	DamageFactor "DoomDamageTypeRepeater", 1.0
-	DamageFactor "DoomDamageTypeRepeaterNoSelfDamage", 1.0
     DamageFactor "CorvusCrossbow", 1.1
     DamageFactor "CorvusHellstaff", 1.0
     DamageFactor "CorvusHellstaffTomed", 1.0
