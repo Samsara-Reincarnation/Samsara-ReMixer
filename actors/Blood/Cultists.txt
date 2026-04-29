@@ -2963,7 +2963,7 @@ actor Zealot_ShrinkEffect : Zealot
 	}
 }
 
-Actor ZealotTesla : TeslaProjectile
+Actor ZealotTesla : SamsaraTeslaProjectile
 {
 	Speed 35
 	Scale 0.5
@@ -2982,7 +2982,7 @@ Actor ZealotTesla : TeslaProjectile
 }
 
 Actor TeslaProjectileBall0 : TeslaProjectileBall { Scale 0.45 }
-Actor TeslaFX_Zealot : TeslaFX { Scale 0.4 }
+Actor TeslaFX_Zealot : SamsaraTeslaFX { Scale 0.4 }
 
 Actor BloodPriest : Zealot
 {
