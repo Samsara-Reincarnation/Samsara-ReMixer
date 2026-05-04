@@ -18,6 +18,10 @@ Doom:
 
 * Fixed the Nightshade using the wrong monster base.
 
+Hexen I:
+
+! Cleaned up black pixels on belt in chainmail ettin sprites.
+
 Blake Stone:
 
 - The mutated guard's health has been decreased (from 150 to 60).
