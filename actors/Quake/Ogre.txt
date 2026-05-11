@@ -150,12 +150,16 @@ ACTOR QOgre : SamsaraMonsterDemonic
 		OGRC DEFGHI 4
 		OGRC J -1
 		Stop
+      Death.QuakeDamage:
+      Death.QuakePistol:
 	  Death.QuakeElectric:
 	  Death.NotQuadded:
 	  Death.QuakeExplosive:
 		TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForRanger")
 		TNT1 A -1 A_Jump(256,"Death")
 		wait
+      XDeath.QuakeDamage:
+      XDeath.QuakePistol:
 	  XDeath.QuakeElectric:
 	  XDeath.NotQuadded:
 	  XDeath.QuakeExplosive:

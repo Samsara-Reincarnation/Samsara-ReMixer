@@ -1232,6 +1232,8 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 			"####" "#" 0 A_GiveInventory("GoldeneyeEnemyKillAttack")
 			"####" "#" 0 ACS_NamedExecuteAlways("GoldeneyeEnemyDrops", 0, 0)
 			Goto Super::DeusXDeath
+		XDeath.QuakeDamage:
+		XDeath.QuakePistol:
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:

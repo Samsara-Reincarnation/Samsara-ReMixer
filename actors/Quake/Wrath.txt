@@ -91,9 +91,13 @@ ACTOR QWrath : SamsaraMonsterDemonic
 		WIZ5 A 0
 		Goto See
 	  Death:
+      Death.QuakeDamage:
+      Death.QuakePistol:
 	  Death.QuakeElectric:
 	  Death.NotQuadded:
 	  Death.QuakeExplosive:
+      XDeath.QuakeDamage:
+      XDeath.QuakePistol:
 	  XDeath.QuakeElectric:
 	  XDeath.NotQuadded:
 	  XDeath.QuakeExplosive:
