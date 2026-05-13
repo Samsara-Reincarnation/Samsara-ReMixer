@@ -5371,7 +5371,6 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 		Death.MightyBoot:
 		Death.DukeDamage:
 		Death.DukePistol:
-		Death.DukePlasma:
 		Death.DukeIce:
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
@@ -5689,7 +5688,6 @@ Actor SamsaraMonsterRemixEntityBoss : EntityBoss
 		Death.MightyBoot:
 		Death.DukeDamage:
 		Death.DukePistol:
-		Death.DukePlasma:
 		Death.DukeIce:
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
@@ -6408,7 +6406,6 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 		Death.MightyBoot:
 		Death.DukeDamage:
 		Death.DukePistol:
-		Death.DukePlasma:
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
 		Death.ExpanderDMGCoop:
