@@ -87,7 +87,7 @@ ACTOR LostSoul64 : SamsaraMonsterReincLostSoul
 			TNT1 A 1
 			Stop
 
-		// SamsaraMonsterGhost states
+		// SamsaraMonsterReincLostSoul states
 		Death.ZorchPistol:
 		Death.Zorch:
 		Death.ZorchKamikaze:
