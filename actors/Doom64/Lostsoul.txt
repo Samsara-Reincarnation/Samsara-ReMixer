@@ -1,4 +1,4 @@
-ACTOR LostSoul64 : SamsaraMonsterGhost
+ACTOR LostSoul64 : SamsaraMonsterReincLostSoul
 {
 	Health 60
 	Radius 16
@@ -14,6 +14,7 @@ ACTOR LostSoul64 : SamsaraMonsterGhost
 	+DONTFALL
 	+FLOAT
 	+NOGRAVITY
+	//+RETARGETAFTERSLAM // not in zandronum, which explains why we need this monster base
 	Species "SamsaraLostSoul"
 	Tag "Lost Soul"
 	Speed 8
