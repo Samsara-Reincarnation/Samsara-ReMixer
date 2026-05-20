@@ -9,7 +9,9 @@ ACTOR Wraith3 : Wraith2
 	DamageFactor "DoomDamageTypePistol", 1.0
     DamageFactor "DoomFist", 1.0
 	DamageFactor "DoomDamageTypeFist", 1.0
+	DamageFactor "PunchDagger", 1.0
     DamageFactor "ZorchPistol", 1.0
+    DamageFactor "StrifePistol", 1.0
     DamageFactor "Wraithverge", 1.0
     DamageFactor "Normal", 1.0
 	DamageFactor "DoomDamageType", 1.0
@@ -260,7 +262,9 @@ ACTOR WraithBuried3 : WraithBuried2
 	DamageFactor "DoomDamageTypePistol", 1.0
     DamageFactor "DoomFist", 1.0
 	DamageFactor "DoomDamageTypeFist", 1.0
+	DamageFactor "PunchDagger", 1.0
     DamageFactor "ZorchPistol", 1.0
+    DamageFactor "StrifePistol", 1.0
     DamageFactor "Wraithverge", 1.0
     DamageFactor "Normal", 1.0
 	DamageFactor "DoomDamageType", 1.0

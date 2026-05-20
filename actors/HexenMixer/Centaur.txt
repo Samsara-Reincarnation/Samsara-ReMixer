@@ -11,7 +11,9 @@ ACTOR Centaur3 : Centaur2
 	DamageFactor "DoomDamageTypePistol", 1
     DamageFactor "DoomFist", 1
 	DamageFactor "DoomDamageTypeFist", 1
+	DamageFactor "PunchDagger", 1
     DamageFactor "ZorchPistol", 1
+    DamageFactor "StrifePistol", 1
     DamageFactor "Wraithverge", 1.0
     DamageFactor "Normal", 1.0
 	DamageFactor "DoomDamageType", 1.0
@@ -279,7 +281,9 @@ ACTOR CentaurLeader3 : CentaurLeader2
 	DamageFactor "DoomDamageTypePistol", 1
     DamageFactor "DoomFist", 1
 	DamageFactor "DoomDamageTypeFist", 1
+	DamageFactor "PunchDagger", 1
     DamageFactor "ZorchPistol", 1
+    DamageFactor "StrifePistol", 1
     DamageFactor "Wraithverge", 1.0
     DamageFactor "Normal", 1.0
 	DamageFactor "DoomDamageType", 1.0
