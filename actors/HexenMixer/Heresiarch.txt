@@ -29,7 +29,6 @@ ACTOR Heresiarch3 : Heresiarch2
 	DamageFactor "CMDMGSHIT", 0.8	
 	DamageFactor "Disintegrate", 0.7	
 	DamageFactor "FireExplosive", 0.8
-	DamageFactor "DoomDamageTypeFireExplosive", 1 // FireExplosive did 1.1x damage outside of mixer; this now deals 1x due to FireExplosive now doing 0.8x damage
 	DamageFactor "C7Disintegrate", 0.5		
 	States
 	{
