@@ -21,6 +21,8 @@ Doom:
 Hexen I:
 
 ! Cleaned up black pixels on the belt in the chainmail ettin's sprites.
+* Fixed the player bosses not counting for kills when killed by fire.
+* Fixed the player bosses not playing the initial burn sound.
 
 Blake Stone:
 
