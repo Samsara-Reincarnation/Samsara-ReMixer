@@ -83,8 +83,8 @@ ACTOR ClericBoss3 : SamsaraMonsterRemixClericBoss
 		TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 	Death.Massacre:
 		CLER I 6 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-		CLER K 6 A_Scream
-		CLER LL 6
+		CLER J 6 A_Scream
+		CLER KL 6
 		CLER M 6 A_NoBlocking
 		CLER NOP 6
 		CLER Q -1 A_KillMaster
