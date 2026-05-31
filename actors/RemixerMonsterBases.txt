@@ -649,6 +649,7 @@ Actor SamsaraMonsterRemixDragon : Dragon
 		Death.QuakeElectric:
 		Death.NotQuadded:
 		Death.QuakeExplosive:
+		Death.QuakeLaser:
 			TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForRanger")
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
@@ -657,6 +658,7 @@ Actor SamsaraMonsterRemixDragon : Dragon
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:
+		XDeath.QuakeLaser:
 		XDeathForRanger:
 			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -1469,6 +1471,7 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 		Death.QuakeElectric:
 		Death.NotQuadded:
 		Death.QuakeExplosive:
+		Death.QuakeLaser:
 			TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForRanger")
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
@@ -1477,6 +1480,7 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:
+		XDeath.QuakeLaser:
 		XDeathForRanger:
 			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -2289,6 +2293,7 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 		Death.QuakeElectric:
 		Death.NotQuadded:
 		Death.QuakeExplosive:
+		Death.QuakeLaser:
 			TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForRanger")
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
@@ -2297,6 +2302,7 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:
+		XDeath.QuakeLaser:
 		XDeathForRanger:
 			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -3109,6 +3115,7 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 		Death.QuakeElectric:
 		Death.NotQuadded:
 		Death.QuakeExplosive:
+		Death.QuakeLaser:
 			TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForRanger")
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
@@ -3117,6 +3124,7 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:
+		XDeath.QuakeLaser:
 		XDeathForRanger:
 			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)

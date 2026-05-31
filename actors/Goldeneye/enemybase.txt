@@ -1237,6 +1237,7 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:
+		XDeath.QuakeLaser:
 		XDeathForRanger:
 			"####" "#" 0 A_GiveInventory("GoldeneyeEnemyKillAttack")
 			"####" "#" 0 ACS_NamedExecuteAlways("GoldeneyeEnemyDrops", 0, 0)

@@ -120,6 +120,7 @@ ACTOR Shambler : SamsaraMonsterDemonic
 	 Death.QuakeElectric:
 	 Death.NotQuadded:
 	 Death.QuakeExplosive:
+	 Death.QuakeLaser:
 	   TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForRanger")
 	   TNT1 A -1 A_Jump(256,"Death")
 	   wait
@@ -128,6 +129,7 @@ ACTOR Shambler : SamsaraMonsterDemonic
 	 XDeath.QuakeElectric:
 	 XDeath.NotQuadded:
 	 XDeath.QuakeExplosive:
+	 XDeath.QuakeLaser:
 	 XDeathForRanger:
 	 XDeath:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")

@@ -157,6 +157,7 @@ ACTOR AcidDemon64 : Demon64
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:
+		XDeath.QuakeLaser:
 		XDeathForRanger:
 			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForRanger

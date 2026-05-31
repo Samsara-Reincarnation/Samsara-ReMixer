@@ -912,6 +912,7 @@ Actor Q2BrainBetaClass : Q2Brain
 		Death.QuakeElectric:
 		Death.NotQuadded:
 		Death.QuakeExplosive:
+		Death.QuakeLaser:
 			TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForRanger")
 			goto Death
 		XDeath.QuakeDamage:
@@ -919,6 +920,7 @@ Actor Q2BrainBetaClass : Q2Brain
 		XDeath.QuakeElectric:
 		XDeath.NotQuadded:
 		XDeath.QuakeExplosive:
+		XDeath.QuakeLaser:
 		XDeathForRanger:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)  
 			TNT1 A 0 A_SpawnItemEx("QuakeGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)

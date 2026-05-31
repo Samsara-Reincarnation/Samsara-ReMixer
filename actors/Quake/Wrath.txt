@@ -96,11 +96,13 @@ ACTOR QWrath : SamsaraMonsterDemonic
 	  Death.QuakeElectric:
 	  Death.NotQuadded:
 	  Death.QuakeExplosive:
+	  Death.QuakeLaser:
       XDeath.QuakeDamage:
       XDeath.QuakePistol:
 	  XDeath.QuakeElectric:
 	  XDeath.NotQuadded:
 	  XDeath.QuakeExplosive:
+	  XDeath.QuakeLaser:
 	  XDeathForRanger:
 	  XDeath:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
