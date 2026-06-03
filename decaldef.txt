@@ -14,7 +14,7 @@ generator HeadFX12Mixer					SnakeScorch2
 generator HeadFX32Mixer					CacoScorch
 generator SorcererFX1Mixer				RevenantScorch
 generator Sorcerer2FX3Mixer				SorcererLightning
-generator HereticImpBall2Mixer			HImpScorch
+generator HereticImpBallTwoMixer		HImpScorch
 generator MummyFX2Mixer					MummyScorch
 generator KnightAxe2Mixer				AxeScorch
 generator RedAxe2Mixer					BloodSmear
@@ -25,7 +25,7 @@ generator SerpentFX2Mixer				DoomImpScorch
 generator CentaurFX2Mixer				CentaurScorch
 generator Demon1FX2Mixer				RevenantScorch
 generator Demon2FX2Mixer				Demon2Scorch
-generator BishopFX2Mixer				BishopScorch
+generator BishopFXTwoMixer				BishopScorch
 generator WraithFX6Mixer				Demon2Scorch
 generator SorcFX52						RevenantScorch
 generator SorcFX42Mixer					RevenantScorch

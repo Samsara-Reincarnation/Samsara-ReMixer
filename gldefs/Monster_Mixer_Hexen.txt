@@ -356,7 +356,7 @@ flickerlight BISHOPBALL_X4
 	chance 0.3
 }
 
-object BishopFX2Mixer
+object BishopFXTwoMixer
 {
 	frame BPFXA { light BISHOPBALL }
 	frame BPFXB { light BISHOPBALL }

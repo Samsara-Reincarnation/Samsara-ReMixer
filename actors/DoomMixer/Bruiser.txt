@@ -1,6 +1,6 @@
 // Hell nobles: Hell Knight and Baron of Hell
 
-ACTOR HellKnight3 : HellKnight2
+ACTOR HellKnight3 : HellKnightTwo
 {
 	SeeSound "doom/knight/sight"
 	ActiveSound "doom/knight/active"
@@ -278,7 +278,7 @@ actor HellKnight2_ShrinkEffect : HellKnight3
 	}
 }
 
-ACTOR BaronOfHell3 : BaronOfHell2
+ACTOR BaronOfHell3 : BaronOfHellTwo
 {
 	SeeSound "doom/baron/sight"
 	PainSound "doom/baron/pain"

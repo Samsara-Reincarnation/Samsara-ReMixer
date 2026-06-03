@@ -1,4 +1,4 @@
-ACTOR Knight3 : Knight2 
+ACTOR Knight3 : KnightTwo 
 {
 	Health 150
 	DropItem "HereticKnightDrop"

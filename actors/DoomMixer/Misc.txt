@@ -1429,16 +1429,26 @@ actor DarkImp2Ball : DoomImpBall_Samsara
 	}
 }
 
-ACTOR Hectebus2 : Hectebus
+// redefined for compatibility with certain wads
+ACTOR Hectebus2 : SamsaraMonsterCyberneticTotalGib
 {
 	Health 1200
+	Radius 48
+	Height 64
+	Mass 1000
+	Speed 8
 	PainChance 20
+	Monster
+	+FLOORCLIP
+	+BOSSDEATH
+	+DONTRIP
 	SeeSound "doom/fatso/sight"
 	PainSound "doom/fatso/pain"
 	DeathSound "doom/fatso/death"
 	ActiveSound "doom/fatso/active"
 	Obituary "$OB_HECTEBUS"
 	Tag "Hectebus"
+	Species "SamsaraMancubus"
 	States
 	{
 	Spawn:

@@ -234,4 +234,4 @@ actor DarkBishop_ShrinkEffect : Bishop3
 	}
 }
 
-actor BishopFX2Mixer : BishopFX2 replaces BishopFX2 { +BLOODSPLATTER }
+actor BishopFXTwoMixer : BishopFXTwo replaces BishopFXTwo { +BLOODSPLATTER }

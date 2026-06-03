@@ -29,7 +29,7 @@ flickerlight HIMPBALL_X3
 	chance 0.3
 }
 
-object HereticImpBall2Mixer
+object HereticImpBallTwoMixer
 {
 	frame FX10A { light HIMPBALL }
 	frame FX10B { light HIMPBALL }

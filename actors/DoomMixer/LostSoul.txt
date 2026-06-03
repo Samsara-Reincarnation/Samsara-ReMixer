@@ -1,4 +1,4 @@
-ACTOR LostSoul3 : LostSoul2
+ACTOR LostSoul3 : LostSoulTwo
 {
 	AttackSound "doom/skull/melee"
 	PainSound "doom/skull/pain"

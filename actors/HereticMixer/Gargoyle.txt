@@ -1,4 +1,4 @@
-ACTOR HereticImp3 : HereticImp2
+ACTOR HereticImp3 : HereticImpTwo
 {
 	Health 60
 	States 
@@ -468,4 +468,4 @@ actor HereticImpLeader2_Shrink : HereticImpLeader3
 	}
 }
 
-actor HereticImpBall2Mixer : HereticImpBall2 replaces HereticImpBall2 { +BLOODSPLATTER }
+actor HereticImpBallTwoMixer : HereticImpBallTwo replaces HereticImpBallTwo { +BLOODSPLATTER }

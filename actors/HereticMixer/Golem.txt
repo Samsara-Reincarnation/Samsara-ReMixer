@@ -420,7 +420,7 @@ actor MummyGhost2_Shrink : MummyGhost3
 	}
 }
 
-ACTOR MummyLeader3 : MummyLeader2
+ACTOR MummyLeader3 : MummyLeaderTwo
 {
 	Health 75
 	//Dropitem "DefaultPinataPop"

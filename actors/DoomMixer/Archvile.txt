@@ -1,4 +1,4 @@
-ACTOR Archvile3 : Archvile2
+ACTOR Archvile3 : ArchvileTwo
 {
 	SeeSound "doom/vile/sight"
 	PainSound "doom/vile/pain"
