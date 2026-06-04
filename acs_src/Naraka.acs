@@ -47,7 +47,7 @@ Str MonsterTiers[MAX_GAME_TYPES][MAXMODES][MAXTIERS] =
 		{ "NarakaMorph_SectorGuard", "NarakaMorph_StarTrooper", "NarakaMorph_BioMech", "NarakaMorph_SpiderMutant", "NarakaMorph_Goldfire"},
 	},
 	{
-		{ "NarakaMorph_Cultist", "NarakaMorph_Butcher", "NarakaMorph_BloodGargoyle", "NarakaMorph_BloodBeast", "NarakaMorph_Tchernobog"},
+		{ "NarakaMorph_Cultist", "NarakaMorph_BloodButcher", "NarakaMorph_BloodGargoyle", "NarakaMorph_BloodBeast", "NarakaMorph_Tchernobog"},
 	},
 	{
 		{ "NarakaMorph_Acolyte", "NarakaMorph_Templar", "NarakaMorph_Crusader", "NarakaMorph_Programmer", "NarakaMorph_Entity"},

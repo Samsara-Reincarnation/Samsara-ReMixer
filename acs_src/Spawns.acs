@@ -5977,7 +5977,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"BloodPhantasm"}
 			},
 			{//Hell Knight
-				{"Butcher"}
+				{"BloodButcher"}
 			},
 			{//Arachnotron
 				{"Zealot","","","","CultistWellDone","CultistExtraCrispy"}
@@ -6086,7 +6086,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"HellHound"}
 			},
 			{//Weredragon
-				{"Butcher"}
+				{"BloodButcher"}
 			},
 			{//Iron Lich
 				{"BloodPriest","","","","CultistWellDone","CultistExtraCrispy"}
@@ -6118,7 +6118,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"BloodBeast"}
 			},
 			{//Green Chaos Serpent
-				{"Butcher"}
+				{"BloodButcher"}
 			},
 			{//Stalker
 				{"Cultist","","","","CultistWellDone","CultistExtraCrispy"}

@@ -90,26 +90,6 @@ object MummyLeaderGhost3
 	frame MUMMY { light MUMMYATK }
 }
 
-object Mummy2
-{
-	frame MUMMY { light MUMMYATK }
-}
-
-object MummyLeader2
-{
-	frame MUMMY { light MUMMYATK }
-}
-
-object MummyGhost2
-{
-	frame MUMMY { light MUMMYATK }
-}
-
-object MummyLeaderGhost2
-{
-	frame MUMMY { light MUMMYATK }
-}
-
 // Mummy fireball
 flickerlight MUMMYBALL
 {

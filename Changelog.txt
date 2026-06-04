@@ -29,6 +29,10 @@ Blake Stone:
 
 - The mutated guard's health has been decreased (from 150 to 60).
 
+Blood:
+
+! Renamed the butcher's actor name to avoid a name conflict with other mods.
+
 -Other-
 
 * Fixed the Duke Nukem 64 version of Duke Nukem not taunting on defeating the first phase of some multi-stage bosses with the plasma cannon.
