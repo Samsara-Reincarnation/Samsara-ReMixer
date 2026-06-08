@@ -155,7 +155,7 @@ Actor Q2Makron : Q2BossBase
         JRG0 AAAAAAAAAAAAAA 1 A_SpawnItemEx("StarSparkle",random(-32,32),random(-32,32),random(0,8),0,0,random(1,4),0,SXF_CLIENTSIDE)
         JRG0 AAAAAAAAAAAAAA 1 A_SpawnItemEx("StarSparkle",random(-32,32),random(-32,32),random(0,8),0,0,random(1,4),0,SXF_CLIENTSIDE)
         JRG0 A 0 A_SetTranslucent(1)
-        JRG0 A 0 ACS_NamedExecuteWithResult("SamsaraBossMonologueSetRenderStyle", 1) // STYLE_Normal
+        JRG0 A 0 ACS_NamedExecuteWithResult("SamsaraSetRenderStyle", 1) // STYLE_Normal
         JRG0 AAAAAAAAAAAAAA 0 A_SpawnItemEx("StarSparkle",random(-32,32),random(-32,32),random(0,8),0,0,4,0,SXF_CLIENTSIDE)
         JRG0 AAAAAAAAAAAAAA 0 A_SpawnItemEx("StarSparkle",random(-32,32),random(-32,32),random(0,8),0,0,4,0,SXF_CLIENTSIDE)
         JRG0 AAAAAAAAAAAAAA 0 A_SpawnItemEx("StarSparkle",random(-32,32),random(-32,32),random(0,8),0,0,4,0,SXF_CLIENTSIDE)
