@@ -29,18 +29,18 @@ Blake Stone:
 
 - The mutated guard's health has been decreased (from 150 to 60).
 
-Corridor 7:
-
-! Changed the sprite used for the secret enemy's ammo drop.
-
 Blood:
 
 ! Renamed the butcher's actor name to avoid a name conflict with other mods.
 
+Corridor 7:
+
+! Changed the sprite used for the secret enemy's ammo drop.
+
 Witchaven:
 
-* Fixed the secret enemy not having states for being burned by Caleb's weapons.
 * Fixed the secret enemy using the wrong sprites when shrunk.
+* Fixed the secret enemy not having states for being burned by Caleb's weapons.
 
 -Other-
 
