@@ -37,6 +37,11 @@ Blood:
 
 ! Renamed the butcher's actor name to avoid a name conflict with other mods.
 
+Witchaven:
+
+* Fixed the secret enemy not having states for being burned by Caleb's weapons.
+* Fixed the secret enemy using the wrong sprites when shrunk.
+
 -Other-
 
 * Fixed the Duke Nukem 64 version of Duke Nukem not taunting on defeating the first phase of some multi-stage bosses with the plasma cannon.
