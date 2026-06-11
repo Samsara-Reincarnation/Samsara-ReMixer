@@ -1168,6 +1168,7 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_doom64spawns", 0);
 
 		// Monster Replacements
+		SetCVar("mm_replace_chance", 100);
 		SetCVar("mm_replace_zombieman", -1);
 		SetCVar("mm_replace_shotgunguy", -1);
 		SetCVar("mm_replace_imp", -1);
@@ -1337,6 +1338,7 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_doom64spawns", 0);
 
 		// Monster Replacements
+		SetCVar("mm_replace_chance", 100);
 		SetCVar("mm_replace_zombieman", -1);
 		SetCVar("mm_replace_shotgunguy", -1);
 		SetCVar("mm_replace_imp", -1);
@@ -1506,6 +1508,7 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_doom64spawns", 1);
 
 		// Monster Replacements
+		SetCVar("mm_replace_chance", 100);
 		SetCVar("mm_replace_zombieman", -1);
 		SetCVar("mm_replace_shotgunguy", -1);
 		SetCVar("mm_replace_imp", -1);
@@ -1676,6 +1679,7 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_doom64spawns", 0);
 
 		// Monster Replacements
+		SetCVar("mm_replace_chance", 100);
 		SetCVar("mm_replace_zombieman", -1);
 		SetCVar("mm_replace_shotgunguy", -1);
 		SetCVar("mm_replace_imp", -1);
@@ -1813,7 +1817,7 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_randomcycle", 1);
 		SetCVar("mm_dropmode", 0);
 		SetCVar("mm_multiply", 1);
-		SetCVar("mm_generate", 15);
+		SetCVar("mm_generate", 0);
 		SetCVar("mm_reducemonsters", 99);
 
 		// Monster Override Options
@@ -1845,26 +1849,27 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_doom64spawns", 1);
 
 		// Monster Replacements
+		SetCVar("mm_replace_chance", isZDoom() ? 20 : 100);
 		SetCVar("mm_replace_zombieman", -1);
 		SetCVar("mm_replace_shotgunguy", -1);
-		SetCVar("mm_replace_imp", -1);
-		SetCVar("mm_replace_chaingunguy", -1);
+		SetCVar("mm_replace_imp", isZDoom() ? 6 : -1);
+		SetCVar("mm_replace_chaingunguy", isZDoom() ? 4 : -1);
 		SetCVar("mm_replace_supershotgunguy", -1);
-		SetCVar("mm_replace_demon", -1);
+		SetCVar("mm_replace_demon", isZDoom() ? 8 : -1);
 		SetCVar("mm_replace_darkimp", -1);
 		SetCVar("mm_replace_spectre", -1);
 		SetCVar("mm_replace_blooddemon", -1);
 		SetCVar("mm_replace_lostsoul", -1);
-		SetCVar("mm_replace_cacodemon", -1);
+		SetCVar("mm_replace_cacodemon", isZDoom() ? 12 : -1);
 		SetCVar("mm_replace_revenant", -1);
 		SetCVar("mm_replace_cacolantern", -1);
-		SetCVar("mm_replace_painelemental", -1);
+		SetCVar("mm_replace_painelemental", isZDoom() ? 17 : -1);
 		SetCVar("mm_replace_hellknight", -1);
 		SetCVar("mm_replace_arachnotron", -1);
-		SetCVar("mm_replace_fatso", -1);
+		SetCVar("mm_replace_fatso", isZDoom() ? 20 : -1);
 		SetCVar("mm_replace_abaddon", -1);
 		SetCVar("mm_replace_archvile", -1);
-		SetCVar("mm_replace_baronofhell", -1);
+		SetCVar("mm_replace_baronofhell", isZDoom() ? 21 : -1);
 		SetCVar("mm_replace_hectebus", -1);
 		SetCVar("mm_replace_belphegor", -1);
 		SetCVar("mm_replace_spidermastermind", -1);
