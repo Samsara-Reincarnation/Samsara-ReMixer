@@ -15,9 +15,9 @@ OptionMenu "SamsaraMonsterMixerOptions"
     StaticText ""
     StaticText "Monster Spawning Options", 1
     Option "Spawn Mode",              "mm_spawnmode",      "SpawnMode"
-    Slider "Random Sets Per Map",     "mm_randomcycle",    1, 26,  1
+    Slider "Random Sets Per Map",     "mm_randomcycle",    1, 26,  1, 0
     Option "Enemy Drop Mode",         "mm_dropmode",       "DropMode"
-    Slider "Monster Multiplier",      "mm_multiply",       1, 100, 1
+    Slider "Monster Multiplier",      "mm_multiply",       1, 100, 1, 0
     Option "Monster Generation Rate", "mm_generate",       "GenerationOptions"
     Option "Monster Reducer Rate",    "mm_reducemonsters", "ReducerOptions"
     StaticText ""
