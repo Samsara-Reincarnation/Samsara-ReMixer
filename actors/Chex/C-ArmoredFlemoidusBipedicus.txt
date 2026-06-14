@@ -51,15 +51,14 @@ actor NewArmoredFlemoidusBipedicus : ArmoredFlemoidusBipedicusV3_2
         Stop
 	  XDeath:
       Death:
-        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_PlaySound("flemdie",CHAN_VOICE)
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnDebris("FlemoidGib",1)
-        TNT1 A 0 A_SpawnItem("ArmoredBipedicusBody")
-        SPOD A 10
-        SPOD ABC 7
-        SPOD D -1
-        stop
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_NoBlocking
+		TROC A 2
+		TNT1 A 0 A_PlaySound("flemdie",CHAN_VOICE)
+		SPOD B 3 A_SpawnItem("ArmoredBipedicusBody")
+		SPOD BCDEFGHIJ 3
+		SPOD K -1
+		Stop
       Pain.MightyBoot:
         TNT1 A 0 A_ChangeFlag("NOPAIN",1)
         TNT1 A 0 A_PlaySoundEx("duke/kickhit","body",0,0)
@@ -205,6 +204,7 @@ ACTOR YellowArmoredFlemoid : NewArmoredFlemoidusBipedicus
       Death:
         TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
         TNT1 A 0 A_NoBlocking
+		TRC2 A 2
         TNT1 A 0 A_PlaySound("flemdie",CHAN_VOICE)
 		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnDebris("YellowFlemoidGib",1)
         TNT1 A 0 A_SpawnItem("ArmoredBipedicusBody")
@@ -312,6 +312,7 @@ ACTOR DarkArmoredFlemoid : NewArmoredFlemoidusBipedicus
       Death:
         TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
         TNT1 A 0 A_NoBlocking
+		TRC1 A 0
         TNT1 A 0 A_PlaySound("flemdie",CHAN_VOICE)
 		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnDebris("DarkFlemoidGib",1)
         TNT1 A 0 A_SpawnItem("ArmoredBipedicusBody")

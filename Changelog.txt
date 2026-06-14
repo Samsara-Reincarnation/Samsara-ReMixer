@@ -18,6 +18,10 @@ Doom:
 
 * Fixed the Nightshade using the wrong monster base.
 
+Chex Quest:
+
++ Added new death animations made by SuperDave938 for some of the Chex Quest enemies.
+
 Hexen I:
 
 ! Cleaned up black pixels on the belt in the chainmail ettin's sprites.

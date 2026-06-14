@@ -38,14 +38,13 @@ actor FlemoidusCommonus3 : FlemoidusCommonus2
         Goto See
 	  XDeath:
       Death:
-        TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_PlaySound("flemdie",CHAN_VOICE)
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnDebris("FlemoidGib",1)
-        POSD A 10
-        POSD ABC 7
-        POSD D -1
-        stop
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 A_NoBlocking
+		POSD A 2
+		TNT1 A 0 A_PlaySound("flemdie",CHAN_VOICE)
+		POSD BCDEFGHIJ 3
+		POSD K -1
+		Stop
       Death.ZorchPistol:
       Death.Zorch:
       Death.PhasingZorch:
