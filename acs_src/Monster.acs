@@ -23,7 +23,7 @@
 #define RING_MONST_BASE_TID		1000000		// base TIDs for SW ring monsters' objects
 
 #define MAXSTEALABLEWEPS  6
-#define MAXSTEALABLESLOTS 6
+#define MAXSTEALABLESLOTS 7
 
 int ringcounter;
 int krist_id = 0;
@@ -428,10 +428,10 @@ str SlotDummies[9][MAXSTEALABLESLOTS] =
 	{"DGStrHasPlasmaRepeater", "Totenkopf_IHaveMG42", "DukeHasShrinker"},
 	{"GotWeapon2", "Wolfen_IHaveSlot2", "Totenkopf_IHaveKar98k"},
 	{"GotWeapon3", "DGStrHasAutoShotgun"},
-	{"GotWeapon4", "DGHasChaingun", "DGStrHasFlamethrower", "Wolfen_IHaveSlot4", "Totenkopf_IHaveMP40", "SamsaraDukeHasSlot4"},
+	{"GotWeapon4", "DGHasChaingun", "DGStrHasFlamethrower", "Wolfen_IHaveSlot4", "Totenkopf_IHaveMP40", "SamsaraDukeHasSlot4", "SamsaraDuke64HasSlot4"},
 	{"GotWeapon5", "DGHasRocketLauncher", "DGStrHasLandMines"},
 	{"GotWeapon6", "DGHasPlasmaRifle", "DGStrHasStunnerRifle", "Wolfen_IHaveSlot6", "Totenkopf_IHaveChaingun"},
-	{"GotWeapon7", "DGHasBFG9000", "Doom64_IHaveUnmaker", "DGStrHasPyroCannon", "SamsaraHexenHasSlot7"},
+	{"GotWeapon7", "DGHasBFG9000", "Doom64_IHaveUnmaker", "DGStrHasPyroCannon", "SamsaraHexenHasSlot7", "SamsaraClassicPariasHasSlot7"},
 };
 
 str StoleDummies[9] =
