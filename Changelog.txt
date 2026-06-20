@@ -29,6 +29,11 @@ Hexen I:
 * Fixed the player bosses not playing the initial burn sound.
 * Fixed Traductus' death animation not being played correctly.
 
+Rise of the Triad:
+
+* Fixed lightning guards being unable to take loadout and altclass weapons.
++ Lightning guards can now take away Stronghold Doomguy's homing rocket launcher and plasma repeater, Totenkopf B.J.'s flamethrower and MG42, Original Duke's shrinker and expander, and Life's a Beach Duke's shrinker and expander voodoo rings.
+
 Blake Stone:
 
 - The mutated guard's health has been decreased (from 150 to 60).

@@ -146,16 +146,24 @@ Script "LightningGuardSteal" (int action) // Lightning Guard steal script. Trust
 		{
 			if(CheckInventory(gameClassesSTR[i]) > 0)
 			{
-				for(int j = 0; j < 10; j++)
+				bool cansteal = false;
+
+				for(int j1 = 0; j1 < 10; j1++)
 				{
-					if(CheckInventory(ClassWeapons[i][j]) == true)
+					if (cansteal) { break; }
+
+					for(int j2 = 0; j2 < MAXSTEALABLEWEPS; j2++)
 					{
-						SetResultValue(1);
-						break;
-					}
-					else
-					{
-						SetResultValue(0);
+						if(CheckInventory(ClassWeapons[i][j1][j2]) == true)
+						{
+							cansteal = true;
+							SetResultValue(1);
+							break;
+						}
+						else
+						{
+							SetResultValue(0);
+						}
 					}
 				}
 			}
@@ -167,23 +175,36 @@ Script "LightningGuardSteal" (int action) // Lightning Guard steal script. Trust
 		{
 			if(CheckInventory(gameClassesSTR[k]) > 0)
 			{
-				for(int l = 9; l > -1; l--)
+				bool stolen = false;
+				int result;
+
+				for(int l1 = 9; l1 > -1; l1--)
 				{
-					//print(d:l);
-					if(CheckInventory(ClassWeapons[k][l]) == true)
+					//print(d:l1);
+					if (stolen) { break; }
+
+					for(int l2 = 0; l2 < MAXSTEALABLEWEPS; l2++)
 					{
-						//print(s:gameClassesSTR[k],s:" ",s:ClassWeapons[k][l]);
-						int result = (l+1);
-						int dummy = (l-3);
-						TakeInventory(SlotDummies[dummy],1);
-						TakeInventory(ClassWeapons[k][l], 1);
-						SetResultValue(result);
-						break;
-					}
-					else
-					{
-						//print(s:"Failure");
-						SetResultValue(0);
+						if(CheckInventory(ClassWeapons[k][l1][l2]) == true)
+						{
+							if (!stolen) // only call these once
+							{
+								for(int l3 = 0; l3 < MAXSTEALABLESLOTS; l3++) { TakeInventory(SlotDummies[l1][l3], 0x7FFFFFFF); }
+
+								result = (l1+1);
+
+								stolen = true;
+							}
+
+							//print(s:gameClassesSTR[k],s:" ",s:ClassWeapons[k][l1][l2]);
+							TakeInventory(ClassWeapons[k][l1][l2], 1);
+							SetResultValue(result);
+						}
+						else if (!stolen)
+						{
+							//print(s:"Failure");
+							SetResultValue(0);
+						}
 					}
 				}
 			}
