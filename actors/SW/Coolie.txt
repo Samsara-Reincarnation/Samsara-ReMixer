@@ -16,7 +16,7 @@ Actor SWCoolie : SamsaraMonsterBeast
   PainSound "Coolie/Pain"
   DeathSound "Coolie/Explode"
   ActiveSound "Coolie/Act"
-  Obituary "%o blown away by a Coolie."
+  Obituary "%o was blown away by a Coolie."
   Species "SWEnemies"
   Scale 0.62
   MeleeRange 68
@@ -434,7 +434,7 @@ Actor CoolieExplosion : BigMissileExplosion
 	Speed 0
 	Renderstyle Translucent
 	DamageType "Explosive"
-	Obituary "%o blown away by a Coolie."
+	Obituary "%o was blown away by a Coolie."
 	+NOGRAVITY
 	-CLIENTSIDEONLY
 	States
