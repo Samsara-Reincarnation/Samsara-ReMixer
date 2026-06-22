@@ -56,6 +56,10 @@ Shadow Warrior:
 
 * Fixed the Coolie obituary.
 
+CyberMage:
+
+* Fixed the female Gangers using the wrong sounds when killed by both Bonds' vehicles (direct collision) and RTCW B.J.'s flamethrower.
+
 -Settings-
 
 ! Decimals are no longer shown in the menu options.
