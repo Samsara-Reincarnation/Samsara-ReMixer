@@ -94,7 +94,7 @@ int ClassWeapons[CLASSCOUNT][9][MAXSTEALABLEWEPS] =
         {""},
         {""},
         {"Crusader's Longbow", "Frost Shards", "Javelin of Zeal"},
-        {"Bishop's Shortsword", "Fire Blast", "Timon's Axe"},
+        {"Bishop's Shortsword", "Wand of Embers", "Fire Blast", "Timon's Axe"},
         {"Serpent Staff", "Blight Shock", "Jotunn's Flail"},
         {"Ice Fang", "Viscerelagh", "Hammer of Retribution"},
         {"Firestorm", "Arc of Death", "Quickspell Gauntlets"},
