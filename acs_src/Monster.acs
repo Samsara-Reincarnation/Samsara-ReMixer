@@ -23,7 +23,7 @@
 #define RING_MONST_BASE_TID		1000000		// base TIDs for SW ring monsters' objects
 
 #define MAXSTEALABLEWEPS  6
-#define MAXSTEALABLESLOTS 7
+#define MAXSTEALABLESLOTS 8
 
 int ringcounter;
 int krist_id = 0;
@@ -426,11 +426,11 @@ str SlotDummies[9][MAXSTEALABLESLOTS] =
 	{"Totenkopf_IHaveScope", "DukeHasExpander", "HLOPHasBarnacleLongJump"},
 	{"DGStrHasHomingRocketLauncher", "Totenkopf_IHaveFlamethrower", "SamsaraHalfLifeAcquiredUnique1", "SamsaraHalfLifeSnarksAvailable"},
 	{"DGStrHasPlasmaRepeater", "Totenkopf_IHaveMG42", "DukeHasShrinker"},
-	{"GotWeapon2", "Wolfen_IHaveSlot2", "Totenkopf_IHaveKar98k"},
-	{"GotWeapon3", "DGStrHasAutoShotgun"},
-	{"GotWeapon4", "DGHasChaingun", "DGStrHasFlamethrower", "Wolfen_IHaveSlot4", "Totenkopf_IHaveMP40", "SamsaraDukeHasSlot4", "SamsaraDuke64HasSlot4"},
-	{"GotWeapon5", "DGHasRocketLauncher", "DGStrHasLandMines"},
-	{"GotWeapon6", "DGHasPlasmaRifle", "DGStrHasStunnerRifle", "Wolfen_IHaveSlot6", "Totenkopf_IHaveChaingun"},
+	{"GotWeapon2", "Wolfen_IHaveSlot2", "Totenkopf_IHaveKar98k", "SamsaraCatacombCanUseXTerminators"},
+	{"GotWeapon3", "DGStrHasAutoShotgun", "SamsaraCatacombCanUseBursts"},
+	{"GotWeapon4", "DGHasChaingun", "DGStrHasFlamethrower", "Wolfen_IHaveSlot4", "Totenkopf_IHaveMP40", "SamsaraDukeHasSlot4", "SamsaraDuke64HasSlot4", "SamsaraCatacombCanUseZappers"},
+	{"GotWeapon5", "DGHasRocketLauncher", "DGStrHasLandMines", "SamsaraCatacombCanUseNukes"},
+	{"GotWeapon6", "DGHasPlasmaRifle", "DGStrHasStunnerRifle", "Wolfen_IHaveSlot6", "Totenkopf_IHaveChaingun", "SamsaraCatacombCanUseBolts"},
 	{"GotWeapon7", "DGHasBFG9000", "Doom64_IHaveUnmaker", "DGStrHasPyroCannon", "SamsaraHexenHasSlot7", "SamsaraClassicPariasHasSlot7"},
 };
 
