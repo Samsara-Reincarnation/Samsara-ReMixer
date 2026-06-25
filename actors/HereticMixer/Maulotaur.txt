@@ -27,7 +27,8 @@ ACTOR Minotaur3 : Minotaur2
 	DamageFactor "SWFlame3", 0.4
     DamageFactor "RMR-BigPlasma", 0.4
 	DamageFactor "CMDMGSHIT", 0.7
-	DamageFactor "Disintegrate", 0.5	
+	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "FireExplosive", 0.7
 	DamageFactor "C7Disintegrate", 0.5			
 	States

@@ -62,7 +62,8 @@ Actor MasterZilla : SamsaraMonsterRoboticBoss
 	DamageFactor "SWFlame2Coop", 0.2
 	DamageFactor "SWFlame3", 0.6	
     DamageFactor "RMR-BigPlasma", 0.5
-	DamageFactor "Disintegrate", 0.7	
+	DamageFactor "Disintegrate", 0.7
+	DamageFactor "StrifeMauler", 0.7
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "C7Disintegrate", 0.5	
 	PainChance "ShrinkerDMG", 0

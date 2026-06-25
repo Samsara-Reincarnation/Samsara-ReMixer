@@ -59,7 +59,8 @@ Actor HLPitWorm : SamsaraMonsterAlienBoss {
 	DamageFactor "SWFlame3", 0.7
     DamageFactor "RMR-BigPlasma", 0.3		
 	DamageFactor "CMDMGSHIT", 0.7
-	DamageFactor "Disintegrate", 0.3	
+	DamageFactor "Disintegrate", 0.3
+	DamageFactor "StrifeMauler", 0.3
 	DamageFactor "C7Disintegrate", 0.3	
 	PainChance "ShrinkerDMG", 0
 	States {

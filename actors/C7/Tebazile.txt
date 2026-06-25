@@ -49,7 +49,8 @@ Actor Tebazile : SamsaraMonsterAlienBoss {
 	DamageFactor "SWFlame3", 0.7
     DamageFactor "RMR-BigPlasma", 0.3
 	DamageFactor "CMDMGSHIT", 0.7
-	DamageFactor "Disintegrate", 0.7	
+	DamageFactor "Disintegrate", 0.7
+	DamageFactor "StrifeMauler", 0.7
 	DamageFactor "RottBullet", 0.85	
 	DamageFactor "C7Disintegrate", 0.2	
 	PainChance "ShrinkerDMG", 0

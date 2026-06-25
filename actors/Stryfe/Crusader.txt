@@ -15,6 +15,7 @@ Actor StrifeCrusader : Crusader2
 			Goto Super::Spawn
 		Death:
 		Disintegrate:
+		Death.StrifeMauler:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			ROB2 G 3 A_Scream
 			ROB2 H 5 A_TossGib

@@ -61,6 +61,7 @@ Actor Cerberus : SamsaraMonsterBeastBoss
 	DamageFactor "RMR-BigPlasma", 0.3
 	DamageFactor "CMDMGSHIT", 0.6
 	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0
 	States

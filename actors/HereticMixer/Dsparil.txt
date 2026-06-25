@@ -29,7 +29,8 @@ ACTOR Sorcerer5 : Sorcerer3 replaces Sorcerer3
 	DamageFactor "SWFlame3", 0.4
     DamageFactor "RMR-BigPlasma", 0.4
 	DamageFactor "CMDMGSHIT", 0.7
-	DamageFactor "Disintegrate", 0.5	
+	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "FireExplosive", 0.7
 	DamageFactor "C7Disintegrate", 0.5		
 	States
@@ -144,7 +145,8 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 	DamageFactor "SWFlame3", 0.4
     DamageFactor "RMR-BigPlasma", 0.4
 	DamageFactor "CMDMGSHIT", 0.7
-	DamageFactor "Disintegrate", 0.5	
+	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "FireExplosive", 0.7
 	DamageFactor "C7Disintegrate", 0.5			
 	States
@@ -250,6 +252,7 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2RottDisintegrateDeath
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2DisintegrateDeath
 		Death.Nuke:

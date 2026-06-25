@@ -115,7 +115,8 @@ ACTOR BigJohn : RoTTBoss {
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, BigJohn_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.DukePlasma
-		Death.Disintegrate:
+		Disintegrate:
+		Death.StrifeMauler:
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, BigJohn_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.Disintegrate

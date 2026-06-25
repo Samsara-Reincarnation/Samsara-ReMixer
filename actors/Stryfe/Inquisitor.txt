@@ -34,6 +34,7 @@ Actor StrifeInquisitor : SamsaraMonsterRemixInquisitor
 	DamageFactor "RMR-BigPlasma", 0.5
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.7
+	DamageFactor "StrifeMauler", 0.7
 	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0
 	DamageFactor "CorvusCrossbow", 1.15
@@ -111,6 +112,7 @@ Actor StrifeInquisitor : SamsaraMonsterRemixInquisitor
 			Stop
 		// SamsaraMonsterRemixInquisitor states
 		Disintegrate:
+		Death.StrifeMauler:
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
 	}

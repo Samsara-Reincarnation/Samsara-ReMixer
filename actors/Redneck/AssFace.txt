@@ -64,6 +64,7 @@ Actor AssFace : SamsaraMonsterBeastBoss
 	DamageFactor "RMR-BigPlasma", 0.3
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.6
+	DamageFactor "StrifeMauler", 0.6
 	DamageFactor "RottBullet", 0.7
 	DamageFactor "Ice", 0.6
 	DamageFactor "FireExplosive", 0.7

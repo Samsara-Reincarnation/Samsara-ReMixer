@@ -53,6 +53,7 @@ ACTOR SamsaraMixerOverlord : SamsaraMonsterCyberneticBoss
 	DamageFactor "RMR-BigPlasma", 0.4
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.7
+	DamageFactor "StrifeMauler", 0.7
 	DamageFactor "RottExplosive", 0.75
 	DamageFactor "RottBullet", 1.0
 	DamageFactor "C7Disintegrate", 0.5

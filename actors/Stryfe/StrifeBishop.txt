@@ -60,6 +60,7 @@ Actor NewStrifeBishop : SamsaraMonsterRemixStrifeBishop
 
 		// SamsaraMonsterRemixStrifeBishop states
 		Disintegrate:
+		Death.StrifeMauler:
 		XDeath.PunchDagger:
 		XDeath.ElectricBolt:
 		XDeath.PoisonBolt:

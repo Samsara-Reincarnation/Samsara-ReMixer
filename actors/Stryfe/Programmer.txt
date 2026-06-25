@@ -69,6 +69,7 @@ ACTOR Programmer3 : SamsaraMonsterRemixProgrammer
 
 		// SamsaraMonsterRemixProgrammer states
 		Disintegrate:
+		Death.StrifeMauler:
 		XDeath.PunchDagger:
 		XDeath.ElectricBolt:
 		XDeath.PoisonBolt:

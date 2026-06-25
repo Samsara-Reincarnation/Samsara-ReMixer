@@ -231,6 +231,7 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -1068,6 +1069,7 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -1890,6 +1892,7 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -2712,6 +2715,7 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -3504,6 +3508,7 @@ Actor SamsaraMonsterRemixProgrammer : Programmer
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -4009,6 +4014,7 @@ Actor SamsaraMonsterRemixStrifeBishop : StrifeBishop
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -4514,6 +4520,7 @@ Actor SamsaraMonsterRemixLoremaster : Loremaster
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -4922,6 +4929,7 @@ Actor SamsaraMonsterRemixAlienSpectre1 : AlienSpectre1
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -5281,6 +5289,7 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -5598,6 +5607,7 @@ Actor SamsaraMonsterRemixEntityBoss : EntityBoss
 			TNT1 A -1 A_Jump(256,"PerformSpectreStuff")
 			Wait
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -5932,6 +5942,7 @@ Actor SamsaraMonsterRemixSubEntity : EntitySecond
 			TNT1 A -1 A_Jump(256,"PerformSpectreStuff")
 			Wait
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -6294,6 +6305,7 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)

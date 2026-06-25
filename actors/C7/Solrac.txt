@@ -56,7 +56,8 @@ Actor Solrac : SamsaraMonsterAlienBoss {
 	DamageFactor "SWFlame3", 0.69
     DamageFactor "RMR-BigPlasma", 0.4		
 	DamageFactor "CMDMGSHIT", 0.8
-	DamageFactor "Disintegrate", 0.8	
+	DamageFactor "Disintegrate", 0.8
+	DamageFactor "StrifeMauler", 0.8
 	DamageFactor "RottBullet", 0.7	
 	DamageFactor "C7Disintegrate", 0.5	
 	PainChance "ShrinkerDMG", 0

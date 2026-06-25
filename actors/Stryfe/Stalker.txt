@@ -72,6 +72,7 @@ Actor StrifeStalker : SamsaraMonsterRobotic
 
 		// SamsaraMonsterHumanoid states
 		Disintegrate:
+		Death.StrifeMauler:
 		XDeath.PunchDagger:
 		XDeath.ElectricBolt:
 		XDeath.PoisonBolt:

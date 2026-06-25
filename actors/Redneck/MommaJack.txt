@@ -65,6 +65,7 @@ ACTOR BigJackelope : SamsaraMonsterBeastBoss
 	DamageFactor "RMR-BigPlasma", 0.3
 	DamageFactor "CMDMGSHIT", 0.6
 	DamageFactor "Disintegrate", 0.7
+	DamageFactor "StrifeMauler", 0.7
 	DamageFactor "RottExplosive", 0.7
 	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0

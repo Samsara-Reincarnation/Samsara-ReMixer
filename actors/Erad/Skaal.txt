@@ -58,6 +58,7 @@ Actor Skaal : SamsaraMonsterBeastBoss
     DamageFactor "RMR-BigPlasma", 0.4		
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.6
+	DamageFactor "StrifeMauler", 0.6
 	DamageFactor "RottBullet", 0.8
 	DamageFactor "RottExplosive", 0.7
 	DamageFactor "FireExplosive", 0.75

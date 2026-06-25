@@ -59,7 +59,8 @@ ACTOR JuggernautMajor : SamsaraMonsterRoboticBoss
 	DamageFactor "SWFlame3", 0.7	
     DamageFactor "RMR-BigPlasma", 0.4		
 	DamageFactor "CMDMGSHIT", 0.8
-	DamageFactor "Disintegrate", 0.8	
+	DamageFactor "Disintegrate", 0.8
+	DamageFactor "StrifeMauler", 0.8
 	DamageFactor "RottBullet", 0.8
 	DamageFactor "RottExplosive", 0.8
 	DamageFactor "C7Disintegrate", 0.5	

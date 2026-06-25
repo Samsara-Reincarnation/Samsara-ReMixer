@@ -105,6 +105,7 @@ ACTOR Recycler : SamsaraMonsterRobotic
 
 	// SamsaraMonsterRobotic states
 	Disintegrate:
+	Death.StrifeMauler:
 	XDeath.PunchDagger:
 	XDeath.ElectricBolt:
 	XDeath.PoisonBolt:

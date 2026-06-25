@@ -68,6 +68,7 @@ Actor GorBoss : SamsaraMonsterCyberneticBoss
     DamageFactor "RMR-BigPlasma", 0.5
 	DamageFactor "CMDMGSHIT", 0.7	
 	DamageFactor "Disintegrate", 0.6
+	DamageFactor "StrifeMauler", 0.6
 	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0
 	States

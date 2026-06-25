@@ -344,7 +344,8 @@ ACTOR MechaHitler : SamsaraMonsterRoboticBoss
 		Death.RottDisintegrate:
 			"####" "#" -1 A_Jump(256,"Death")
 			Wait
-		Death.Disintegrate:
+		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" -1 A_Jump(256,"Death")
 			Wait
 		Death.Nuke:

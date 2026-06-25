@@ -64,6 +64,7 @@ Actor Tchernobog : SamsaraMonsterBeastBoss
 	DamageFactor "RMR-BigPlasma", 0.2
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "PSFire", 0.1
 	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0

@@ -32,6 +32,7 @@ ACTOR Wraith3 : Wraith2
     DamageFactor "Ice", 1.0
 	DamageFactor "DoomDamageTypeIce", 1.0
     DamageFactor "Disintegrate", 1.0
+	DamageFactor "StrifeMauler", 1.0
     DamageFactor "DukeDamage", 1.0
     DamageFactor "DukeExplosive", 1.0
     DamageFactor "DukeIce", 1.0
@@ -285,6 +286,7 @@ ACTOR WraithBuried3 : WraithBuried2
     DamageFactor "Ice", 1.0
 	DamageFactor "DoomDamageTypeIce", 1.0
     DamageFactor "Disintegrate", 1.0
+	DamageFactor "StrifeMauler", 1.0
     DamageFactor "DukeDamage", 1.0
     DamageFactor "DukeExplosive", 1.0
     DamageFactor "DukeIce", 1.0

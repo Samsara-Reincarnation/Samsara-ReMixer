@@ -55,7 +55,8 @@ ACTOR QArmagon : SamsaraMonsterCyberneticBoss
 	DamageFactor "SWFlame3", 0.8
     DamageFactor "RMR-BigPlasma", 0.5		
 	DamageFactor "CMDMGSHIT", 0.8	
-	DamageFactor "Disintegrate", 0.5	
+	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "C7Disintegrate", 0.5	
 	PainChance "ShrinkerDMG", 0
 	BloodType "Quake_NewParticles"

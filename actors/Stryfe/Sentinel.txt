@@ -33,6 +33,7 @@ Actor StrifeSentinel : Sentinel2
 		Goto Missile+3
 	Death:
 	Disintegrate:
+	Death.StrifeMauler:
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		SEWR D 7 A_Fall
 		SEWR E 8 Bright A_TossGib

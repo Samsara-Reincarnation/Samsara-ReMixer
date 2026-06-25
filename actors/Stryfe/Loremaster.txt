@@ -54,6 +54,7 @@ Actor StrifeLoremaster : SamsaraMonsterRemixLoremaster
 
 		// SamsaraMonsterRemixLoremaster states
 		Disintegrate:
+		Death.StrifeMauler:
 		XDeath.PunchDagger:
 		XDeath.ElectricBolt:
 		XDeath.PoisonBolt:

@@ -48,6 +48,7 @@ ACTOR phase3_DF : SamsaraMonsterRoboticBoss
     DamageFactor "RMR-BigPlasma", 0.3
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.4
+	DamageFactor "StrifeMauler", 0.4
 	DamageFactor "RottBullet", 0.6
 	DamageFactor "C7Disintegrate", 0.5	
 	DamageFactor "PoisonBolt", 0.0

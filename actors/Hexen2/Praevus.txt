@@ -372,7 +372,8 @@ Actor Hexen2Praevus : Hexen2BossBase
 		"####" "#" 0 A_RemoveChildren(true)
 		"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")
 		Goto Super::Death.RottDisintegrate
-	Death.Disintegrate:
+	Disintegrate:
+	Death.StrifeMauler:
 		"####" "#" 0 A_RemoveChildren(true)
 		"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")
 		Goto Super::Disintegrate

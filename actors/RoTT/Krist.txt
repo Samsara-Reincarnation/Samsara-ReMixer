@@ -49,6 +49,7 @@ ACTOR SebastianKrist : RoTTBoss {
    DamageFactor "RMR-BigPlasma", 0.5
    DamageFactor "CMDMGSHIT", 0.7
    DamageFactor "Disintegrate", 0.7
+   DamageFactor "StrifeMauler", 0.7
    DamageFactor "C7Disintegrate", 0.5
    PainChance "ShrinkerDMG", 0
    PainChance 13   
@@ -453,7 +454,8 @@ ACTOR SebastianKrist : RoTTBoss {
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, Krist_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.DukePlasma
-		Death.Disintegrate:
+		Disintegrate:
+		Death.StrifeMauler:
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, Krist_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.Disintegrate

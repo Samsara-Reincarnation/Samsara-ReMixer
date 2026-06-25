@@ -51,6 +51,7 @@ ACTOR QOverlord : SamsaraMonsterDemonicBoss
 	DamageFactor "RMR-BigPlasma", 0.2
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0
 	AttackSound ""

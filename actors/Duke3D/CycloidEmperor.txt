@@ -57,6 +57,7 @@ ACTOR SamsaraMixerCycloidEmperor : SamsaraMonsterCyberneticBoss
 	DamageFactor "RMR-BigPlasma", 0.3
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.8
+	DamageFactor "StrifeMauler", 0.8
 	DamageFactor "RottExplosive", 0.8
 	DamageFactor "RottBullet", 1.0
 	DamageFactor "C7Disintegrate", 0.5

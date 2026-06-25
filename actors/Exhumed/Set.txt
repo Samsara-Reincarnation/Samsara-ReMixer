@@ -63,6 +63,7 @@ Actor PSSet : SamsaraMonsterBeastBoss
     DamageFactor "RMR-BigPlasma", 0.30		
 	DamageFactor "CMDMGSHIT", 0.7	
 	DamageFactor "Disintegrate", 0.6
+	DamageFactor "StrifeMauler", 0.6
 	DamageFactor "RottExplosive", 0.8
 	DamageFactor "C7Disintegrate", 0.2	
 	PainChance "ShrinkerDMG", 0

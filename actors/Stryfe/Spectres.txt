@@ -47,6 +47,7 @@ actor NewAlienSpectre1 : SamsaraMonsterRemixAlienSpectre1
 	DamageFactor "RMR-BigPlasma", 0.3
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.6
+	DamageFactor "StrifeMauler", 0.6
 	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0
 	States
@@ -96,6 +97,7 @@ actor NewAlienSpectre1 : SamsaraMonsterRemixAlienSpectre1
 
 		// SamsaraMonsterRemixAlienSpectre1 states
 		Disintegrate:
+		Death.StrifeMauler:
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
 	}
@@ -269,6 +271,7 @@ actor NewAlienSpectre5 : SamsaraMonsterRemixAlienSpectre2
 
 		// SamsaraMonsterRemixAlienSpectre2 states
 		Disintegrate:
+		Death.StrifeMauler:
 			TNT1 A -1 A_Jump(256,"Death")
 			Wait
 	}

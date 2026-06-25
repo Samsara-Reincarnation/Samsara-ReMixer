@@ -258,7 +258,8 @@ Actor GoldFire : SamsaraMonsterHumanoidBoss {
 		Death.RottDisintegrate:
 			"####" "#" -1 A_Jump(256,"Death")
 			Wait
-		Death.Disintegrate:
+		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" -1 A_Jump(256,"Death")
 			Wait
 		Death.Nuke:

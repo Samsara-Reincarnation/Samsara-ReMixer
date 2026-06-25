@@ -163,7 +163,8 @@ Actor Geneworm : SamsaraMonsterAlienBoss
 		Death.RottDisintegrate:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.RottDisintegrate
-		Death.Disintegrate:
+		Disintegrate:
+		Death.StrifeMauler:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Disintegrate
 		Death.Nuke:

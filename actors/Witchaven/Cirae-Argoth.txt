@@ -68,6 +68,7 @@ Actor WTCiraeArgoth : SamsaraMonsterHumanoidBoss
 	DamageFactor "RMR-BigPlasma", 0.1
 	DamageFactor "CMDMGSHIT", 0.7
 	DamageFactor "Disintegrate", 0.5
+	DamageFactor "StrifeMauler", 0.5
 	DamageFactor "Fire", 0.1
 	DamageFactor "MarathonFire", 0.1
 	DamageFactor "MarathonPlasmaFire", 0.1

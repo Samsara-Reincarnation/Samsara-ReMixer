@@ -348,6 +348,7 @@ Actor Q2Makron : Q2BossBase
 			TNT1 A -1 A_SpawnItemEx("Q2Jorg",0,0,0,0,0,5,0,SXF_TRANSFERPOINTERS|SXF_NOCHECKPOSITION|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG,0,tid)
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
@@ -681,6 +682,7 @@ Actor Q2Jorg : Q2Makron
 			TNT1 A -1
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)

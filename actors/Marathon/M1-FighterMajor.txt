@@ -50,7 +50,8 @@ ACTOR M1FighterMajor : SamsaraMonsterMarathonAlien
 	DamageFactor "SWFlame3", 1.0	
     DamageFactor "RMR-BigPlasma", 0.870		
 	DamageFactor "CMDMGSHIT", 0.890
-	DamageFactor "Disintegrate", 0.868			
+	DamageFactor "Disintegrate", 0.868
+	DamageFactor "StrifeMauler", 0.868
     DamageFactor "RottBullet", 1.4		
 	DamageFactor "RottExplosive", 0.90	
     Species "MarathonEnemies"

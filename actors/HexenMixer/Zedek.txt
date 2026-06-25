@@ -25,6 +25,7 @@ ACTOR FighterBoss3 : SamsaraMonsterRemixFighterBoss
     DamageFactor "MarathonPlasmaFire", 1.0
     DamageFactor "Ice", 1.0
     DamageFactor "Disintegrate", 1.0
+	DamageFactor "StrifeMauler", 1.0
     DamageFactor "DukeDamage", 1.0
     DamageFactor "DukeExplosive", 1.0
     DamageFactor "DukeIce", 1.0
@@ -282,6 +283,7 @@ ACTOR FighterBoss3 : SamsaraMonsterRemixFighterBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Disintegrate:
+		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound", 1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
