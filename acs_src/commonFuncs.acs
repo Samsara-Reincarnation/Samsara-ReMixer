@@ -806,3 +806,10 @@ function int relativeAngleToXY(int sourceTid, int targetX, int targetY)
 
 	return sourceAngle - vangClamped;
 }
+
+Script "Samsara_Max" (int a, int b) { SetResultValue(max(a,b)); }
+Script "Samsara_Min" (int a, int b) { SetResultValue(min(a,b)); }
+Script "Samsara_Ceil" (int a) { SetResultValue(ceil(a)); }
+Script "Samsara_Floor" (int a) { SetResultValue(floor(a)); }
+Script "Samsara_Round" (int a) { SetResultValue(round(a)); }
+Script "Samsara_Exp" (int a, int b) { SetResultValue(pow(a, b)); }
