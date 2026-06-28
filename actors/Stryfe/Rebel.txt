@@ -21,6 +21,7 @@ actor StrifeBetrayedRebel : SamsaraMonsterHumanoid
 	AttackSound "strife/riflefire"
 	SeeSound "strife/rebel/sight"
 	PainSound "strife/rebel/pain"
+	CrushPainSound "acolyte/crush"
 	DeathSound "strife/rebel/death"
 	ActiveSound "strife/rebel/active"
 	Obituary "%o was gunned down by a Rebel."

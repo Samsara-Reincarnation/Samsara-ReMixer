@@ -20,7 +20,7 @@ Actor StrifeTemplar : Templar2
 	PainSound "templar/pain"
 	DeathSound "templar/death"
 	ActiveSound "templar/active"
-	CrushPainSound "misc/pcrush"
+	CrushPainSound "acolyte/crush"
 	HitObituary "$OB_TEMPLARHIT"
 	Obituary "$OB_TEMPLAR"
 	DropItem "StrifeEnergyPod2"

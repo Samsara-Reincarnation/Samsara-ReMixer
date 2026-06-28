@@ -18,6 +18,7 @@ Actor StrifeCultist : SamsaraMonsterHumanoidTotalGib
 	Obituary "%o was killed by a Cultist of the Order."
 	SeeSound "strifecultist/see"
 	PainSound "strifecultist/pain"
+	CrushPainSound "acolyte/crush"
 	DeathSound "strifecultist/death"
 	ActiveSound "strifecultist/active"
 	Tag "Cultist of the Order"

@@ -14,7 +14,7 @@ acolyte/fire			SGRIFLE
 acolyte/pain			dsagrdpn
 acolyte/die				dsagrdth
 acolyte/explode			strfslop
-acolyte/crush			dspcrush
+$alias acolyte/crush	strife/crush
 acolyte/disintegrate	DSDSRPT9
 $Random acolyte/active { acolyte/act1 acolyte/act2 acolyte/act3 acolyte/act4 }
 sentinel/sight			dssntsee
