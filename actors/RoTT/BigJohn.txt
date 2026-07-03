@@ -124,6 +124,10 @@ ACTOR BigJohn : RoTTBoss {
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, BigJohn_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.Nuke
+		Death.HexenMedusa:
+			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, BigJohn_ID, 2)
+			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
 		Ice:

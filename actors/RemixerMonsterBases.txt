@@ -314,6 +314,22 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 1)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 69 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeKillTaunt",1)
@@ -1185,6 +1201,22 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 1)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 69 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeKillTaunt",1)
@@ -2008,6 +2040,22 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 1)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 69 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeKillTaunt",1)
@@ -2831,6 +2879,22 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 1)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 69 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeKillTaunt",1)
@@ -3599,6 +3663,22 @@ Actor SamsaraMonsterRemixProgrammer : Programmer
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 69 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeRobotKill",1)
@@ -4105,6 +4185,22 @@ Actor SamsaraMonsterRemixStrifeBishop : StrifeBishop
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 69 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeRobotKill",1)
@@ -4611,6 +4707,22 @@ Actor SamsaraMonsterRemixLoremaster : Loremaster
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 69 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeRobotKill",1)
@@ -6390,6 +6502,22 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
+		Death.HexenMedusa:
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			"####" "#" 0 A_GiveInventory("EnemyZorched",1)
+			"####" "#" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+			"####" "#" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 101)
+			"####" "#" 0 A_PlaySound("Hexen/StoneTurn",CHAN_7)
+			"####" "#" 209 A_ChangeFlag("SOLID",false)
+			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 18)
+			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
+			TNT1 A 0 A_SetTranslucent(1,0)
+			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 0 A_Gravity
+			TNT1 A -1
+			Stop
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
 		Ice:

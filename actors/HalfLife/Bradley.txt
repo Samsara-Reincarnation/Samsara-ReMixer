@@ -119,6 +119,9 @@ Actor HLBradley : SamsaraMonsterRobotic
 		Death.Nuke:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Nuke
+		Death.HexenMedusa:
+			"####" A 0 A_RemoveChildren(TRUE)
+			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeRobotKill",1)
@@ -292,6 +295,9 @@ Actor HLBradleyGun : SamsaraMonsterRobotic
 		Death.Nuke:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Nuke
+		Death.HexenMedusa:
+			"####" A 0 A_RemoveChildren(TRUE)
+			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeRobotKill",1)
