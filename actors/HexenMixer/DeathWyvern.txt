@@ -94,13 +94,13 @@ ACTOR Dragon3 : SamsaraMonsterRemixDragon
 			DRAG N 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DRAG N 0 A_GiveInventory("EnemyZorched",1)
 			DRAG N 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
-			DRAG N 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 100)
+			//DRAG N 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 100)
 			DRAG N 0 A_SpawnItemEx("UniversalBloodyHellIceDeathSound",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
 			DRAG N 69 A_ChangeFlag("SOLID",false)
 			DRAG N 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 15)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellIceDeathEffect2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_SetTranslucent(1,0)
-			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			//TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_Gravity
 			TNT1 A -1
@@ -110,12 +110,12 @@ ACTOR Dragon3 : SamsaraMonsterRemixDragon
 			DRAG N 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			DRAG N 0 A_GiveInventory("EnemyZorched",1)
 			DRAG N 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
-			DRAG N 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 100)
+			//DRAG N 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 100)
 			DRAG N 0 A_ChangeFlag("SOLID",false)
 			DRAG N 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 15)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellIceDeathEffect2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_SetTranslucent(1,0)
-			TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
+			//TNT1 A 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 9000)
 			TNT1 A 0 A_NoBlocking
 			TNT1 A 0 A_Gravity
 			TNT1 A -1
