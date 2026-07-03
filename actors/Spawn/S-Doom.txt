@@ -452,3 +452,68 @@ ACTOR StealthFatsoSpawner : FatsoSpawner replaces StealthFatso {}
 ACTOR StealthRevenantSpawner : RevenantSpawner replaces StealthRevenant {}
 ACTOR StealthShotgunGuySpawner : ShotgunGuySpawner replaces StealthShotgunGuy {}
 ACTOR StealthZombiemanSpawner : ZombiemanSpawner replaces StealthZombieman {}
+
+// Bosses summoned from a spawn cube end up telefragging themselves,
+// so these are needed to ensure IOS fights work as intended
+ACTOR FatsoSpawnerForBossEye : FatsoSpawner
+{
+	States
+	{
+		Continue:
+		Death:
+		Remove:
+			TNT1 A 1 Thing_Remove(0)
+			Stop
+	}
+}
+
+ACTOR ArachnotronSpawnerForBossEye : ArachnotronSpawner
+{
+	States
+	{
+		Continue:
+		Death:
+		Remove:
+			TNT1 A 1 Thing_Remove(0)
+			Stop
+	}
+}
+
+ACTOR BaronOfHellSpawnerForBossEye : BaronOfHellSpawner
+{
+	States
+	{
+		Continue:
+		Death:
+		Remove:
+			TNT1 A 1 Thing_Remove(0)
+			Stop
+	}
+}
+
+ACTOR ArchvileSpawnerForBossEye : ArchvileSpawner
+{
+	States
+	{
+		Continue:
+		Death:
+		Remove:
+			TNT1 A 1 Thing_Remove(0)
+			Stop
+	}
+}
+
+ACTOR BossEye2ReMixer : BossEye2 replaces BossEye2
+{
+	DropItem "DoomImpSpawner", 255, 50
+	DropItem "DemonSpawner", 255, 40
+	DropItem "SpectreSpawner", 255, 30
+	DropItem "PainElementalSpawner", 255, 10
+	DropItem "CacodemonSpawner", 255, 30
+	DropItem "ArchvileSpawnerForBossEye", 255, 2
+	DropItem "RevenantSpawner", 255, 10
+	DropItem "ArachnotronSpawnerForBossEye", 255, 20
+	DropItem "FatsoSpawnerForBossEye", 255, 30
+	DropItem "HellKnightSpawner", 255, 24
+	DropItem "BaronOfHellSpawnerForBossEye", 255, 10
+}

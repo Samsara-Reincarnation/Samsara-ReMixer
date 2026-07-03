@@ -60,6 +60,12 @@ CyberMage:
 
 * Fixed the female Gangers using the wrong sounds when killed by both Bonds' vehicles (direct collision) and RTCW B.J.'s flamethrower.
 
+-Games-
+
+Doom:
+
+* Fixed the Icon of Sin's spawn cubes telefragging mancubus, arachnotron, baron of hell, and arch-vile spawners.
+
 -Settings-
 
 ! Decimals are no longer shown in the menu options.
