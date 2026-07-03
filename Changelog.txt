@@ -14,6 +14,10 @@
 
 Doom:
 
+-Original-
+
+* Fixed the shocktrooper not having NOPAIN properly removed when going to the missile state.
+
 -Vanilla Doom Randomizer-
 
 * Fixed the Nightshade using the wrong monster base.

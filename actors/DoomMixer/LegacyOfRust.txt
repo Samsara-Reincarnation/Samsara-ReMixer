@@ -537,6 +537,7 @@ Actor Shocktrooper2_Samsara : SamsaraMonsterHumanoid
 		VD96 AABBCCDD 2 Fast A_Chase
 		loop
 	Missile:
+		TNT1 A 0 A_ChangeFlag("NOPAIN",0)
 		VD96 E 10 A_FaceTarget
 		VD96 F 2 Fast A_CustomMissile("Shocktrooper2PlasmaBall",32,0,0)
 		VD96 E 4 Fast
