@@ -29,10 +29,9 @@ Chex Quest:
 
 Heretic:
 
-* Fixed the Apprentice of D'Sparil's projectile not having decals.
-+ The Chaos Serpent from Faith Renewed has been added as a hectebus and mindweaver replacement!
-+ The Draugr from Faith Renewed has been added as a dark imp and shocktrooper replacement!
-+ The Troll from Faith Renewed has been added as a belphegor and vassago replacement!
++ The draugr from Faith Renewed has been added as a dark imp and shocktrooper replacement!
++ The chaos serpent from Faith Renewed has been added as a hectebus and mindweaver replacement!
++ The troll from Faith Renewed has been added as a belphegor and vassago replacement!
 
 Hexen I:
 

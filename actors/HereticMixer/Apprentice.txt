@@ -281,7 +281,6 @@ actor HereticApprenticeFX : MummyFX1
 {
 	Damage 6
 	Speed 12
-    Decal "MummyScorch"
     +BLOODSPLATTER
 	States
 	{
