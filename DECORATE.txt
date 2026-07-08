@@ -55,6 +55,9 @@
 #include "actors/HereticMixer/Misc.txt"
 #include "actors/HereticMixer/CyCloneGrunt.txt"
 #include "actors/HereticMixer/Apprentice.txt"
+#include "actors/HereticMixer/ChaosSerpent.txt"
+#include "actors/HereticMixer/Draugr.txt"
+#include "actors/HereticMixer/Troll.txt"
 
 // Hexen
 

@@ -27,6 +27,10 @@ Chex Quest:
 
 + Added new death animations made by SuperDave938 for some of the Chex Quest enemies.
 
+Heretic:
+
+* Fixed the Apprentice of D'Sparil's projectile not having decals.
+
 Hexen I:
 
 ! Cleaned up black pixels on the belt in the chainmail ettin's sprites.

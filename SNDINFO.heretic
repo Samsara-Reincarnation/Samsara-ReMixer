@@ -167,6 +167,26 @@ $random chicken/peck		{ chicken/peck1  chicken/peck2  chicken/peck3 }
 
 Heretic/TeleportC			HRT_TLPT
 
+heretictroll/sight			hrtrosit
+heretictroll/active			hrtrosit
+heretictroll/attack			hrtroswg
+heretictroll/pain			hrtropai
+heretictroll/death			hrtrodth
+
+hereticsuperdemon/sight			hrsbtact
+hereticsuperdemon/active		hrsbtact
+hereticsuperdemon/attack		hrbitey
+hereticsuperdemon/pain			hrsbtpai
+hereticsuperdemon/death			hrsbtdth
+
+hereticdraugr/sight			hmum2sit
+hereticdraugr/active		hmum2sit
+hereticdraugr/pain			hmum2pai
+hereticdraugr/death			hmum2dth
+
+hereticdraugrproj/sight		hmum2atk
+hereticdraugrproj/death		hrmaghit
+
 // CyClone Grunt
 
 cycgrunt/sight           CYC1SIT

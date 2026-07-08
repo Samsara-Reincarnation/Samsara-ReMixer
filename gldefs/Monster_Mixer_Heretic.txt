@@ -835,6 +835,92 @@ object HereticApprenticeFX
 	frame FX15M { light APPRENTICEBALL_X3 }
 }
 
+// Faith Renewed enemies
+object HereticSuperDemonFX1
+{
+    frame FX14A { light SERPENTBALL }
+    frame FX14B { light SERPENTBALL }
+    frame FX14C { light SERPENTBALL }
+
+    frame FX14D { light SERPENTBALL_X1 }
+    frame FX14E { light SERPENTBALL_X2 }
+    frame FX14F { light SERPENTBALL_X3 }
+    frame FX14G { light SERPENTBALL_X4 }
+    frame FX14H { light SERPENTBALL_X4 }
+}
+
+flickerlight DRAUGRATK
+{
+    color 1.0 0.0 1.0
+    size 72
+    secondarySize 84
+    chance 0.4
+    attenuate 1
+}
+
+flickerlight DRAUGRBALL
+{
+    color 1.0 0.0 1.0
+    size 60
+    secondarySize 69
+    chance 0.4
+    attenuate 1
+}
+
+flickerlight DRAUGRBALL_X1
+{
+    color 0.8 0.0 0.8
+    size 69
+    secondarySize 78
+    chance 0.4
+    attenuate 1
+}
+
+flickerlight DRAUGRBALL_X2
+{
+    color 0.6 0.0 0.6
+    size 78
+    secondarySize 87
+    chance 0.4
+    attenuate 1
+}
+
+flickerlight DRAUGRBALL_X3
+{
+    color 0.4 0.0 0.4
+    size 87
+    secondarySize 96
+    chance 0.4
+    attenuate 1
+}
+
+flickerlight DRAUGRBALL_X4
+{
+    color 0.2 0.0 0.2
+    size 96
+    secondarySize 105
+    chance 0.4
+    attenuate 1
+}
+
+object HereticDraugr
+{
+    frame HX92F { light DRAUGRATK }
+    frame HX92G { light DRAUGRATK }
+}
+
+object HereticDraugrFX1
+{
+    frame HX92O { light DRAUGRBALL }
+    frame HX92P { light DRAUGRBALL }
+    frame HX92Q { light DRAUGRBALL }
+
+    frame HX92R { light DRAUGRBALL_X1 }
+    frame HX92S { light DRAUGRBALL_X2 }
+    frame HX92T { light DRAUGRBALL_X3 }
+    frame HX92U { light DRAUGRBALL_X4 }
+}
+
 // -----------
 // -- Items --
 // -----------

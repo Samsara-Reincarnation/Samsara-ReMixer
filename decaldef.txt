@@ -19,6 +19,9 @@ generator MummyFX2Mixer					MummyScorch
 generator KnightAxe2Mixer				AxeScorch
 generator RedAxe2Mixer					BloodSmear
 generator WizardFX2Mixer				WizardScorch
+generator HereticApprenticeFX			WizardScorch
+generator HereticDraugrFX1     			WizardScorch
+generator HereticSuperDemonFX1 			RevenantScorch
 
 // Hexen Remixer decals
 generator SerpentFX2Mixer				DoomImpScorch
