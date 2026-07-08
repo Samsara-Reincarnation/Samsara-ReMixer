@@ -1829,7 +1829,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Clink3Doom"}
 			},
 			{//Dark Imp
-				{"HereticImpLeader3"}
+				{"HereticDraugr"}
 			},
 			{//Spectre
 				{"KnightGhost3Doom"},
@@ -1874,10 +1874,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Beast3Doom"}
 			},
 			{//Hectebus
-				{"Beast3Doom"}
+				{"HereticSuperDemon"}
 			},
 			{//Belphegor
-				{"Beast3Doom"}
+				{"HereticTroll"}
 			},
 			{//Spider Mastermind
 				{"Sorcerer5"}
@@ -2053,14 +2053,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"HereticImp3"}
 			},
 			{//Shocktrooper
-				{"HereticImpLeader3"}
+				{"HereticDraugr"}
 			},
 			{//Mindweaver
-				{"Snake3Doom"},
-				{"Beast3Doom"}
+				{"HereticSuperDemon"}
 			},
 			{//Vassago
-				{"Beast3Doom"}
+				{"HereticTroll"}
 			},
 			{//Tyrant
 				{"Minotaur3"}
@@ -16717,7 +16716,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Mindweaver
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Vassago

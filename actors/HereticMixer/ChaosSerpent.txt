@@ -79,7 +79,7 @@ Actor HereticSuperDemon : SamsaraMonsterBeastTotalGib
 		HX91 J 6 A_Scream
 		HX91 K 6 A_NoBlocking
 		HX91 LMNO 6
-		HX91 P -1
+		HX91 P -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 		Stop
 	Pain.ShrinkerDMG:
 		HX91 E 0

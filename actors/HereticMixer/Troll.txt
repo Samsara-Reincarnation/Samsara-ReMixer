@@ -64,7 +64,7 @@ Actor HereticTroll : SamsaraMonsterBeastTotalGib
 		HX90 I 6 A_Scream
 		HX90 JK 8
 		HX90 L 8 A_NoBlocking
-		HX90 M -1
+		HX90 M -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 		Stop
 	Pain.ShrinkerDMG:
 		HX90 F 0
