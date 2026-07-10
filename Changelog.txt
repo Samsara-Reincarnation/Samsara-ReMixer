@@ -30,6 +30,7 @@ Chex Quest:
 Heretic:
 
 + The draugr from Faith Renewed has been added as a dark imp and shocktrooper replacement!
+* Killing a Disciple spawned by D'Sparil through certain means no longer kills D'Sparil as well.
 + The chaos serpent from Faith Renewed has been added as a hectebus and mindweaver replacement!
 + The troll from Faith Renewed has been added as a belphegor and vassago replacement!
 

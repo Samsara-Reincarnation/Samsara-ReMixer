@@ -13,6 +13,8 @@ Script "Heretic_SpawnDisciple" (void)
 			int missileTid = UniqueTID();
 			Thing_ChangeTID(0, missileTid);
 
+			GiveActorInventory(discipleTid, "SamsaraMonsterSpawnedByMaster", 1);
+
 			SetActorAngle(discipleTid, GetActorAngle(0));
 
 			SpawnForced("HereticTeleportFog", x, y, z, 0);
