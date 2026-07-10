@@ -285,6 +285,7 @@ actor HereticDraugrFX1
 	Mass 100
 	SeeSound "hereticdraugrproj/sight"
 	DeathSound "hereticdraugrproj/death"
+    +BLOODSPLATTER
 	States
 	{
 	Spawn:

@@ -301,4 +301,5 @@ actor HereticSuperDemonFX1 : SorcererFX1
 	Speed 15
 	Damage 8
 	DeathSound "sbthit"
+    +BLOODSPLATTER
 }
