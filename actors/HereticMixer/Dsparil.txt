@@ -258,6 +258,9 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 		Death.Nuke:
 			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2NukeDeath
+		Death.HexenPurify:
+			"####" A 0 A_KillChildren("Massacre")
+			Goto Super::Sorcerer2HexenPurifyDeath
 		Death.HexenMedusa:
 			"####" A 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2HexenMedusaDeath

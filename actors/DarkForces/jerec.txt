@@ -376,6 +376,9 @@ ACTOR JerecTrick : jerec
 		Death.Nuke:
 			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.Nuke
+		Death.HexenPurify:
+			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			Goto Super::Death.HexenPurify
 		Death.HexenMedusa:
 			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.HexenMedusa

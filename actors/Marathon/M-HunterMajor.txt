@@ -993,6 +993,9 @@ ACTOR InvisHunterMajor : HunterMajor
 		XDeath:
 			TNT1 A 0 A_SetTranslucent(1.0)
 			Goto "Super::XDeath"
+		Death.HexenPurify:
+			TNT1 A 0 A_SetTranslucent(1.0)
+			Goto "Super::Death.HexenPurify"
 		Death.HexenMedusa:
 			TNT1 A 0 A_SetTranslucent(1.0)
 			Goto "Super::Death.HexenMedusa"

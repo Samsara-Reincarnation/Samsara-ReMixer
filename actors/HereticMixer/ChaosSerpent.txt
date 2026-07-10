@@ -35,7 +35,7 @@ Actor HereticSuperDemon : SamsaraMonsterBeastTotalGib
 	MissileA:
 		HX91 E 5 A_FaceTarget
 		HX91 F 6 A_FaceTarget
-        TNT1 A 0 A_StartSound("hereticsuperdemon/attack")
+        TNT1 A 0 A_PlaySound("hereticsuperdemon/attack")
         TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, 0)
         TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, -4.5)
         TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, 4.5)
@@ -44,19 +44,19 @@ Actor HereticSuperDemon : SamsaraMonsterBeastTotalGib
 	MissileB:
 		HX91 E 5 A_FaceTarget
 		HX91 F 6 A_FaceTarget
-		TNT1 A 0 A_StartSound("hereticsuperdemon/attack")
+		TNT1 A 0 A_PlaySound("hereticsuperdemon/attack")
 		TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, frandom(0, 0))
 		TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, frandom(-21, -9))
 		HX91 G 8
 		HX91 E 5 A_FaceTarget
 		HX91 F 8 A_FaceTarget
-		TNT1 A 0 A_StartSound("hereticsuperdemon/attack")
+		TNT1 A 0 A_PlaySound("hereticsuperdemon/attack")
 		TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, frandom(0, 0))
 		TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, frandom(9, 21))
 		HX91 G 8
 		HX91 E 5 A_FaceTarget
 		HX91 F 8 A_FaceTarget
-		TNT1 A 0 A_StartSound("hereticsuperdemon/attack")
+		TNT1 A 0 A_PlaySound("hereticsuperdemon/attack")
 		TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, frandom(-10, -4.5))
 		TNT1 A 0 A_CustomMissile("HereticSuperDemonFX1", 62, 0, frandom(4.5, 10))
 		HX91 G 5

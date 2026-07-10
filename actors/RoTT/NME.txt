@@ -301,6 +301,10 @@ ACTOR NME : SamsaraMonsterRoboticBoss {
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.Nuke
+		Death.HexenPurify:
+			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			Goto Super::Death.HexenPurify
 		Death.HexenMedusa:
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)

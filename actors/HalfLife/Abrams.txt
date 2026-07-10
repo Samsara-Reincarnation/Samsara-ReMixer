@@ -119,6 +119,9 @@ Actor HLAbrams : SamsaraMonsterRobotic
 		Death.Nuke:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Nuke
+		Death.HexenPurify:
+			"####" A 0 A_RemoveChildren(TRUE)
+			Goto Super::Death.HexenPurify
 		Death.HexenMedusa:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.HexenMedusa
@@ -296,6 +299,9 @@ Actor HLAbramsGun : SamsaraMonsterRobotic
 		Death.Nuke:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Nuke
+		Death.HexenPurify:
+			"####" A 0 A_RemoveChildren(TRUE)
+			Goto Super::Death.HexenPurify
 		Death.HexenMedusa:
 			"####" A 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.HexenMedusa

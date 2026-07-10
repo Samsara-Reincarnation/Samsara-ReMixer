@@ -324,6 +324,9 @@ Actor Hexen2Eidolon : Hexen2BossBase
 		Death.Nuke:
 			"####" "#" -1 A_Jump(256,"Death")
 			Wait
+		Death.HexenPurify:
+			"####" "#" -1 A_Jump(256,"Death")
+			Wait
 		Death.HexenMedusa:
 			"####" "#" -1 A_Jump(256,"Death")
 			Wait

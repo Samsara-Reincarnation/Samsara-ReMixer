@@ -855,7 +855,7 @@ flickerlight DRAUGRATK
     size 72
     secondarySize 84
     chance 0.4
-    attenuate 1
+    //attenuate 1
 }
 
 flickerlight DRAUGRBALL
@@ -864,7 +864,7 @@ flickerlight DRAUGRBALL
     size 60
     secondarySize 69
     chance 0.4
-    attenuate 1
+    //attenuate 1
 }
 
 flickerlight DRAUGRBALL_X1
@@ -873,7 +873,7 @@ flickerlight DRAUGRBALL_X1
     size 69
     secondarySize 78
     chance 0.4
-    attenuate 1
+    //attenuate 1
 }
 
 flickerlight DRAUGRBALL_X2
@@ -882,7 +882,7 @@ flickerlight DRAUGRBALL_X2
     size 78
     secondarySize 87
     chance 0.4
-    attenuate 1
+    //attenuate 1
 }
 
 flickerlight DRAUGRBALL_X3
@@ -891,7 +891,7 @@ flickerlight DRAUGRBALL_X3
     size 87
     secondarySize 96
     chance 0.4
-    attenuate 1
+    //attenuate 1
 }
 
 flickerlight DRAUGRBALL_X4
@@ -900,7 +900,7 @@ flickerlight DRAUGRBALL_X4
     size 96
     secondarySize 105
     chance 0.4
-    attenuate 1
+    //attenuate 1
 }
 
 object HereticDraugr
