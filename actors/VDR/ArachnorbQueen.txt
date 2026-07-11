@@ -346,7 +346,7 @@ ACTOR MMRandomizer_QueenBFG
 	Renderstyle Add
 	SeeSound "vdr/queen/fire"
 	DeathSound "vdr/queen/hit"
-	Decal BFGLightning
+	Decal DoomBFGLightning
 	states
 	{
 		Spawn:

@@ -82,7 +82,7 @@ Actor MMRandomizer_Demolisher : SpiderMastermind3
 
 actor MMRandomizer_DemolisherBFGBall : BFGBall
 {
-	Decal BFGLightning
+	Decal DoomBFGLightning
 	+BRIGHT
     -BLOODSPLATTER
 	DeathSound "doomguy/bfgx"

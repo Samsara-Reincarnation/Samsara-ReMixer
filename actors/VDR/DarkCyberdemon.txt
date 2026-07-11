@@ -96,7 +96,7 @@ Actor MMRandomizer_DarkCyberdemonBFG10kBall
 	+BRIGHT
     -BLOODSPLATTER
 	DamageType "Explosive"
-	Decal BFGLightning
+	Decal DoomBFGLightning
 	SeeSound "vdr/darkcyberdemon/bfg10kfire"
 	DeathSound "doom/weapons/rocklx"
 	States
@@ -140,7 +140,7 @@ Actor MMRandomizer_DarkCyberdemonHomingBall
 	+THRUGHOST
     -BLOODSPLATTER
 	DamageType "Explosive"
-	Decal BFGLightning
+	Decal DoomBFGLightning
 	SeeSound "vdr/darkcyberdemon/homingbfgfire"
 	DeathSound "vdr/darkcyberdemon/homingbfgexp"
 	States

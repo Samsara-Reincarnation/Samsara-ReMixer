@@ -21,6 +21,7 @@ Doom:
 -Vanilla Doom Randomizer-
 
 * Fixed the Nightshade using the wrong monster base.
+* Fixed the arachnorb queen, spider-demolisher, and dark cyberdemon's projectiles using the wrong decal in Freedoom.
 * Fixed the arachnorb queen plasma blast using the wrong sprite names.
 
 Chex Quest:
