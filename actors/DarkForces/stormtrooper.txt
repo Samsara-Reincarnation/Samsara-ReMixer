@@ -51,7 +51,9 @@ ACTOR storm_trooper : SamsaraMonsterHumanoidTotalGib
 			STRM I 0 A_PlaySound("katarn/rifshot",CHAN_AUTO,1.0,0,ATTN_NORM)			
 			STRM I 5 BRIGHT A_CustomMissile("blaster_laser2_DFB",33,random(-1,1),random(-3,3),32,random(-3,3))
 			STRM H 5
-			Goto See
+			TNT1 A 0 A_Jump(170,"See")
+			TNT1 A 0 A_CPosRefire
+			Goto Missile+1
 		Pain:
 			STRM J 3
 			STRM J 3 A_Pain

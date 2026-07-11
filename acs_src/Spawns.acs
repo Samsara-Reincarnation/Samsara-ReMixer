@@ -7297,10 +7297,9 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"storm_trooper"}
 			},
 			{//Shotgun Guy
-				{"scout_trooper"}
+				{"DF_officer"}
 			},
 			{//Imp
-				{"DF_officer"},
 				{"imperial_commander"}
 			},
 			{//Chaingun Guy
@@ -7374,10 +7373,9 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"storm_trooper"}
 			},
 			{//Flemoidus Bipedicus
-				{"scout_trooper"}
+				{"DF_officer"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"DF_officer"},
 				{"imperial_commander"}
 			},
 			{//Flemoidus Stridicus
@@ -7415,7 +7413,6 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"DFRemote"}
 			},
 			{//Fire Gargoyle
-				{"DF_officer"},
 				{"imperial_commander"}
 			},
 			{//Golem
@@ -7425,7 +7422,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"gamorrean_guard"}
 			},
 			{//Nitrogolem
-				{"scout_trooper"}
+				{"DF_officer"}
 			},
 			{//Nitrogolem Ghost
 				{"gamorrean_guard"}
@@ -7480,7 +7477,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"gran___DF"}
 			},
 			{//Stalker
-				{"scout_trooper"}
+				{"DF_officer"}
 			},
 			{//Stalker Boss
 				{"hoth_trooper"}
@@ -7540,7 +7537,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"DFRemote"}
 			},
 			{//Shocktrooper
-				{"DF_Rodian"}
+				{"scout_trooper"}
 			},
 			{//Mindweaver
 				{"trandoshan_1"}
@@ -21960,8 +21957,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Imp
-				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
-				{0,0,1,0,0,1,0,0,1,0,0,2,0,0,2}
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Chaingun Guy
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -22037,8 +22033,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Armored Flemoidus Bipedicus
-				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
-				{0,0,1,0,0,1,0,0,1,0,0,2,0,0,2}
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Stridicus
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -22075,8 +22070,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Fire Gargoyle
-				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
-				{0,0,1,0,0,1,0,0,1,0,0,2,0,0,2}
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Golem
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}

@@ -5,7 +5,7 @@
 
 ACTOR scout_trooper : SamsaraMonsterHumanoidTotalGib
 {
-	Health		40
+	Health		80
 	Radius		20
 	Height		56
 	Mass		100
