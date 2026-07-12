@@ -61,6 +61,7 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 	Painsound "Goldeneye/Pain"
 	Deathsound "Goldeneye/Death"
 	Mass 1000
+	Stamina -1 // Needed for gender-related scripts
     DamageFactor "CorvusCrossbow", 1.1
     DamageFactor "DragonClaw", 1.5
     DamageFactor "WitchMelee", 1.1

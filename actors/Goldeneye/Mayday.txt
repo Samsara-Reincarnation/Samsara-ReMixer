@@ -9,6 +9,7 @@ Actor Goldeneye_Mayday : Goldeneye_EnemyBase
 	+MISSILEEVENMORE	
 	PainSound "Goldeneye/PainF"
 	DeathSound "Goldeneye/DeathF"	
+	Stamina -2 // Needed for gender-related scripts
 	States
 	{
 		Spawn:

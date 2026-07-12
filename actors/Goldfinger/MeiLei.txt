@@ -6,6 +6,7 @@ Actor Goldfinger_MeiLei : Goldeneye_EnemyBase
 	PainSound "Goldeneye/PainF"
 	DeathSound "Goldeneye/DeathF"	
 	Scale 0.95
+	Stamina -2 // Needed for gender-related scripts
 	States
 	{
 		Spawn:
