@@ -45,7 +45,7 @@ Hexen I:
 Rise of the Triad:
 
 * Fixed lightning guards being unable to take loadout and altclass weapons.
-+ Lightning guards can now take away Stronghold Doomguy's homing rocket launcher and plasma repeater, Totenkopf B.J.'s flamethrower, portable MG42, and scoped Kar98k, Original Duke's shrinker and expander, Life's a Beach Duke's shrinker and expander voodoo rings, and the Half-Life characters' long jump module and barnacle grapple.
++ Lightning guards can now take away Stronghold Doomguy's homing rocket launcher and plasma repeater, Totenkopf B.J.'s flamethrower, portable MG42, and scoped Kar98k, and the Half-Life characters' long jump module and barnacle grapple.
 
 Blake Stone:
 

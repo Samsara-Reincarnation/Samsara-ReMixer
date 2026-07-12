@@ -101,9 +101,9 @@ int ClassWeapons[CLASSCOUNT][9][MAXSTEALABLEWEPS] =
         {"Wraithverge", "Bloodscourge", "Quietus"},
     },
     { // Duke Nukem 3D
-        {"Expander"},
         {""},
-        {"Shrinker"},
+        {""},
+        {""},
         {"  Shotgun  "},
         {"Explosive Shotgun"},
         {"Chaingun Cannon", "Duke3D_M16"},
@@ -423,9 +423,9 @@ int ClassWeapons[CLASSCOUNT][9][MAXSTEALABLEWEPS] =
 
 str SlotDummies[9][MAXSTEALABLESLOTS] =
 {
-	{"Totenkopf_IHaveScope", "DukeHasExpander", "HLOPHasBarnacleLongJump"},
+	{"Totenkopf_IHaveScope", "HLOPHasBarnacleLongJump"},
 	{"DGStrHasHomingRocketLauncher", "Totenkopf_IHaveFlamethrower", "SamsaraHalfLifeAcquiredUnique1", "SamsaraHalfLifeSnarksAvailable"},
-	{"DGStrHasPlasmaRepeater", "Totenkopf_IHaveMG42", "DukeHasShrinker"},
+	{"DGStrHasPlasmaRepeater", "Totenkopf_IHaveMG42"},
 	{"GotWeapon2", "Wolfen_IHaveSlot2", "Totenkopf_IHaveKar98k", "SamsaraCatacombCanUseXTerminators"},
 	{"GotWeapon3", "DGStrHasAutoShotgun", "SamsaraCatacombCanUseBursts"},
 	{"GotWeapon4", "DGHasChaingun", "DGStrHasFlamethrower", "Wolfen_IHaveSlot4", "Totenkopf_IHaveMP40", "SamsaraDukeHasSlot4", "SamsaraDuke64HasSlot4", "SamsaraCatacombCanUseZappers"},
