@@ -61,21 +61,21 @@ Corridor 7:
 
 Star Wars: Dark Forces:
 
-+ The Scout Trooper's health has been decreased (from 40 to 80).
-! The Scout Trooper now has a chance to continue firing at the player.
-! The Scout Trooper is now a shocktrooper replacement.
 ! The Imperial Officer is now a shotgun guy replacement.
 ! The Imperial Officer now drops slot 2 equipment if Doom-style weapon drops are enabled.
 ! The Imperial Commander now always spawns as an imp replacement.
+! The Scout Trooper is now a shocktrooper replacement.
++ The Scout Trooper's health has been increased (from 40 to 80).
+! The Scout Trooper now has a chance to continue firing at the player.
+
+Disruptor:
+
+* Fixed the Mutant Elite and Nightmare Spider having swapped Compendium descriptions.
 
 Witchaven:
 
 * Fixed the secret enemy using the wrong sprites when shrunk.
 * Fixed the secret enemy not having states for being burned by Caleb's weapons.
-
-Disruptor:
-
-* Fixed the Mutant Elite and Nightmare Spider having swapped Compendium descriptions.
 
 Shadow Warrior:
 
