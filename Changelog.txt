@@ -73,6 +73,10 @@ Witchaven:
 * Fixed the secret enemy using the wrong sprites when shrunk.
 * Fixed the secret enemy not having states for being burned by Caleb's weapons.
 
+Disruptor:
+
+* Fixed the Mutant Elite and Nightmare Spider having swapped Compendium descriptions.
+
 Shadow Warrior:
 
 * Fixed the Coolie obituary.
