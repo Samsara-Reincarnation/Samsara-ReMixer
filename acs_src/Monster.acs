@@ -17,7 +17,7 @@
 #define MAXPLAYERS 64
 #define SKULLCOOLDOWNTID 1000
 
-#define CLASSCOUNT		  34
+#define CLASSCOUNT		  36
 
 #define MAX_RING_MONST 128
 #define RING_MONST_BASE_TID		1000000		// base TIDs for SW ring monsters' objects
@@ -418,6 +418,28 @@ int ClassWeapons[CLASSCOUNT][9][MAXSTEALABLEWEPS] =
         {"DeusEx_GEPGun"},
         {"DeusEx_FlameThrower"},
         {"DeusEx_MJ12PlasmaRifle"},
+    },
+    { // Kingpin
+        {""},
+        {""},
+        {""},
+        {"Kingpin_Shotgun"},
+        {"Kingpin_GrenadeLauncher"},
+        {"Kingpin_TommyGun"},
+        {"Kingpin_Bazooka"},
+        {"Kingpin_Flamethrower"},
+        {"Kingpin_HMG"},
+    },
+    { // Soldier of Fortune
+        {""},
+        {"SoF_MPistol"},
+        {"SoF_SniperRifle"},
+        {"SoF_AssaultRifle"},
+        {"SoF_Shotgun"},
+        {"SoF_Machinegun"},
+        {"SoF_Rocket"},
+        {"SoF_Slugger"},
+        {"SoF_MPG"},
     },
 };
 
