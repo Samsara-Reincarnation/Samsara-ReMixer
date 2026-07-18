@@ -66,6 +66,7 @@ Star Wars: Dark Forces:
 ! The Imperial Commander now always spawns as an imp replacement.
 ! The Scout Trooper is now a shocktrooper replacement.
 + The Scout Trooper's health has been increased (from 40 to 80).
++ The Scout Trooper's speed has been increased (from 6 to 9).
 ! The Scout Trooper now has a chance to continue firing at the player.
 
 Disruptor:

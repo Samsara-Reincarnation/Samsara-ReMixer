@@ -10,7 +10,7 @@ ACTOR scout_trooper : SamsaraMonsterHumanoidTotalGib
 	Height		56
 	Mass		100
 	Painchance	75
-	Speed		6
+	Speed		9
 	Tag 		"Scout Trooper"	
 	SeeSound	"enemies/storm/see"
 	PainSound	"imperial/pain"
