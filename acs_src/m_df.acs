@@ -50,8 +50,9 @@ Script "DFSummonClone" (void) //2527
 		case 4:
 			switch(CheckInventory("HexenClassMode"))
 			{
-				case 2: cloneClass = "Baratus_AI"; break;
-				case 1: cloneClass = "Daedolon_AI"; break;
+				case 3: cloneClass = "Baratus_AI"; break;
+				case 2: cloneClass = "Daedolon_AI"; break;
+				case 1: cloneClass = "Parias_Classic_AI"; break;
 			}
 			break;
 		case 5:
@@ -70,6 +71,14 @@ Script "DFSummonClone" (void) //2527
 				case 1: cloneClass = "TaradinoCassatt_AI"; break;
 			}
 			break;
+		case 12:
+			switch(CheckInventory("EradMode"))
+			{
+				case 3: cloneClass = "EradMarine_AI"; break;
+				case 2: cloneClass = "DanBlaze_AI"; break;
+				case 1: cloneClass = "Kamchak_AI"; break;
+			}
+			break;
 		case 16:
 			switch(CheckInventory("IpogMode"))
 			{
@@ -81,6 +90,9 @@ Script "DFSummonClone" (void) //2527
 			break;
 		case 19:
 			if(CheckInventory("HalfLifeOpposingForce")) { cloneClass = "Shephard_AI"; }
+			break;
+		case 26:
+			if(CheckInventory("Goldeneye_PlayerAltClassToken")) { cloneClass = "JamesBond_Goldfinger_AI"; }
 			break;
 	}
 
