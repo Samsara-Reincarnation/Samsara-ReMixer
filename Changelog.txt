@@ -35,6 +35,12 @@ Heretic:
 + The chaos serpent from Faith Renewed has been added as a hectebus and mindweaver replacement!
 + The troll from Faith Renewed has been added as a belphegor and vassago replacement!
 
+Wolfenstein 3D:
+
+-Lost Episodes-
+
+* Bats should now disappear/shatter properly when zorched/frozen on the ground.
+
 Hexen I:
 
 ! Cleaned up black pixels on the belt in the chainmail ettin's sprites.
