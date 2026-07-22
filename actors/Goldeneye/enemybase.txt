@@ -1093,7 +1093,7 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 			"####" "#" 0 A_GiveInventory("Goldeneye_DecAnimation_RestoreDecoupling")
 			"####" "#" 0 A_GiveInventory("Goldeneye_DecAnimation_Freeze")
 			"####" "#" 0 ACS_NamedExecuteAlways("GoldeneyeEnemyDrops", 0, 0)
-			Goto Super::Death.ZorchSpectral
+			Goto Super::Death.Zorch
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
 			"####" "#" 0 A_GiveInventory("GoldeneyeEnemyKillAttack")

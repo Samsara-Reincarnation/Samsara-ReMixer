@@ -136,15 +136,6 @@ ACTOR SODBat : SamsaraMonsterBeastTotalGib
 			SBAT O 3 A_Scream
 			SBAT P -1
 			Stop
-		Crash.ZorchPistol:
-		Crash.Zorch:
-		Crash.ZorchKamikaze:
-		Crash.PhasingZorch:
-		Crash.ZorchSpectral:
-			TNT1 A 5 A_SetTranslucent(0,0)
-			TNT1 A 5 A_NoBlocking
-			TNT1 A -1
-			Stop
 		Crash.HexenMedusa:
 			"####" "#" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 17)
 			TNT1 A 0 A_PlaySound("Hexen/StoneBreak",CHAN_7)
