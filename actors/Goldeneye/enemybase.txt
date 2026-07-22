@@ -1187,11 +1187,10 @@ Actor Goldeneye_EnemyBase : SamsaraMonsterHumanoidTotalGib
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeKillTaunt",1)
-		Ice:
 		Death.HexenIce:
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
-		Death.Ice:
+		Ice:
 			"####" "#" 0 A_GiveInventory("GoldeneyeEnemyKillAttack")
 			"####" "#" 0 A_GiveInventory("Goldeneye_DecAnimation_RestoreDecoupling")
 			"####" "#" 0 A_GiveInventory("Goldeneye_DecAnimation_Freeze")

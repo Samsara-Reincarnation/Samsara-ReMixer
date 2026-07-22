@@ -249,15 +249,14 @@ Actor Hexen2Pestilence : Hexen2BossBase
 			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
-		Ice:
 		Death.HexenIce:
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
 		Death.DoomDamageTypeIce:
-		Death.Ice:
+		Ice:
 			"####" "#" 0 A_RemoveChildren(true)
 			"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")	
-			Goto Super::Death.Ice
+			Goto Super::Ice
 	}	
 }	
 

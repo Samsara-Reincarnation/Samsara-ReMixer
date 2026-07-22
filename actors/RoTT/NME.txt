@@ -311,15 +311,14 @@ ACTOR NME : SamsaraMonsterRoboticBoss {
 			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
-		Ice:
 		Death.HexenIce:
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
 		Death.DoomDamageTypeIce:
-		Death.Ice:
+		Ice:
 			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
 			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
-			Goto Super::Death.Ice
+			Goto Super::Ice
    }
 }
 

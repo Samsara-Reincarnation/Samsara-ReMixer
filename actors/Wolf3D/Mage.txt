@@ -188,11 +188,10 @@ ACTOR Mage
 			"####" "#" 0 A_GiveInventory("FreezethrowerWeakness")
 			"####" "#" 0 A_Jump(218,"Ice")
 			"####" "#" 0 A_GiveToTarget("DukeKillTaunt",1)
-		Ice:
 		Death.HexenIce:
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
-		Death.Ice:
+		Ice:
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_GenericFreezeDeath
 			"####" "#" 70 A_ChangeFlag("SOLID",false)

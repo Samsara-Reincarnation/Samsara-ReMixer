@@ -71,17 +71,18 @@ ACTOR ChainmailEttin3 : Ettin3
 		Death.DukeIce:
 			CETN "]" 0 A_Jump(218,"Ice")
 			CETN "]" 0 A_GiveToTarget("DukeKillTaunt",1)
-		Ice:
 		Death.HexenIce:
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
-		Death.Ice:
+		Ice:
 			CETN "]" 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
 			CETN "]" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			CETN "]" 0 A_GiveInventory("EnemyZorched",1)
 			CETN "]" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			//CETN "]" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 100)
 			CETN "]" 0 A_SpawnItemEx("UniversalBloodyHellIceDeathSound",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			CETN "]" 0 A_ChangeFlag("DONTCORPSE",true)
+			CETN "]" 0 A_ChangeFlag("DONTGIB",true)
 			CETN "]" 69 A_ChangeFlag("SOLID",false)
 			CETN "]" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 15)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellIceDeathEffect2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
@@ -98,6 +99,8 @@ ACTOR ChainmailEttin3 : Ettin3
 			CETN "]" 0 A_GiveInventory("EnemyZorched",1)
 			CETN "]" 0 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			//CETN "]" 0 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 100)
+			CETN "]" 0 A_ChangeFlag("DONTCORPSE",true)
+			CETN "]" 0 A_ChangeFlag("DONTGIB",true)
 			CETN "]" 0 A_ChangeFlag("SOLID",false)
 			CETN "]" 1 ACS_NamedExecuteAlways("SamsaraDeathEffects", 0, 15)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellIceDeathEffect2",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)

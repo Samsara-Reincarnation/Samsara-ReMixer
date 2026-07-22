@@ -226,15 +226,14 @@ Actor Hexen2Famine : Hexen2BossBase
 			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
-		Ice:
 		Death.HexenIce:
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
 		Death.DoomDamageTypeIce:
-		Death.Ice:
+		Ice:
 			"####" "#" 0 A_TakeInventory("Hexen2FaminePullingToken",1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")
-			Goto Super::Death.Ice
+			Goto Super::Ice
 	}
 }
 

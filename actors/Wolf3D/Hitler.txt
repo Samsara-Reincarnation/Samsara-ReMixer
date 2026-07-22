@@ -359,12 +359,11 @@ ACTOR MechaHitler : SamsaraMonsterRoboticBoss
 			Wait
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
-		Ice:
 		Death.HexenIce:
 		Death.WTMeleeIce:
 		Death.WTRangedIce:
 		Death.DoomDamageTypeIce:
-		Death.Ice:
+		Ice:
 			"####" "#" -1 A_Jump(256,"Death")
 			Wait
 	}
