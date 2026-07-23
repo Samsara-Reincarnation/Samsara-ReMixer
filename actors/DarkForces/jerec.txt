@@ -361,26 +361,36 @@ ACTOR JerecTrick : jerec
 		Death.ZorchKamikaze:
 		Death.PhasingZorch:
 		Death.ZorchSpectral:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.Zorch
+		Death.ExpanderDMG:
+		XDeath.ExpanderDMG:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
+			Goto Super::Death.ExpanderDMG
+		Death.ExpanderDMGCoop:
+		XDeath.ExpanderDMGCoop:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
+			Goto Super::Death.ExpanderDMGCoop
 		Death.DukePlasma:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.DukePlasma
 		Death.RottDisintegrate:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.RottDisintegrate
 		Disintegrate:
 		Death.StrifeMauler:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.Disintegrate
 		Death.Nuke:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.Nuke
 		Death.HexenPurify:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.HexenPurify
 		Death.HexenMedusa:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
@@ -389,7 +399,7 @@ ACTOR JerecTrick : jerec
 		Death.WTRangedIce:
 		Death.DoomDamageTypeIce:
 		Ice:
-			"####" A 0 ACS_NamedExecuteAlways("DFDarkSide")
+			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Ice
 	}
 }

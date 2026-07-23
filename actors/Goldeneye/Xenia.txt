@@ -23,9 +23,12 @@ Actor Goldeneye_Xenia : Goldeneye_EnemyBase
 			Goto Spawn2
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMG
 		Death.ExpanderDMGCoop:
 		XDeath.ExpanderDMGCoop:
-			Goto Death
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMGCoop
 
 		// SamsaraMonsterHumanoidFemaleTotalGib states
 		Death.GETank:

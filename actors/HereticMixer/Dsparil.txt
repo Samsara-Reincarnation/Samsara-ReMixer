@@ -245,6 +245,14 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 		Death.ZorchSpectral:
 			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2ZorchDeath
+		Death.ExpanderDMG:
+		XDeath.ExpanderDMG:
+			"####" "#" 0 A_KillChildren("Massacre")
+			Goto Super::Sorcerer2ExpanderDeath
+		Death.ExpanderDMGCoop:
+		XDeath.ExpanderDMGCoop:
+			"####" "#" 0 A_KillChildren("Massacre")
+			Goto Super::Sorcerer2ExpanderCoopDeath
 		Death.DukePlasma:
 			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2DukePlasmaDeath
@@ -259,10 +267,10 @@ ACTOR Sorcerer6 : Sorcerer4 replaces Sorcerer4
 			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2NukeDeath
 		Death.HexenPurify:
-			"####" A 0 A_KillChildren("Massacre")
+			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2HexenPurifyDeath
 		Death.HexenMedusa:
-			"####" A 0 A_KillChildren("Massacre")
+			"####" "#" 0 A_KillChildren("Massacre")
 			Goto Super::Sorcerer2HexenMedusaDeath
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)

@@ -199,6 +199,18 @@ Actor Hexen2Famine : Hexen2BossBase
 			"####" "#" 0 A_TakeInventory("Hexen2FaminePullingToken",1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")
 			Goto Super::Death.Zorch
+		Death.ExpanderDMG:
+		XDeath.ExpanderDMG:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			"####" "#" 0 A_TakeInventory("Hexen2FaminePullingToken",1)
+			"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")
+			Goto Super::Death.ExpanderDMG
+		Death.ExpanderDMGCoop:
+		XDeath.ExpanderDMGCoop:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			"####" "#" 0 A_TakeInventory("Hexen2FaminePullingToken",1)
+			"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")
+			Goto Super::Death.ExpanderDMGCoop
 		Death.DukePlasma:
 			"####" "#" 0 A_TakeInventory("Hexen2FaminePullingToken",1)
 			"####" "#" 0 ACS_NamedExecuteAlways("Hexen2_BossDeath")

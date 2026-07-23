@@ -64,9 +64,12 @@ Actor Goldeneye_BaronSamedi : Goldeneye_EnemyBase
 			Stop
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMG
 		Death.ExpanderDMGCoop:
 		XDeath.ExpanderDMGCoop:
-			Goto Death
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMGCoop
 	}
 }	
 
@@ -99,9 +102,12 @@ Actor Goldeneye_BaronSamedi2 : 	Goldeneye_BaronSamedi
 			Goto Spawn2
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMG
 		Death.ExpanderDMGCoop:
 		XDeath.ExpanderDMGCoop:
-			Goto Death
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMGCoop
 	}
 }			
 
@@ -143,8 +149,11 @@ Actor Goldeneye_BaronSamediFinal : Goldeneye_EnemyBase
 			Goto Spawn2	
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMG
 		Death.ExpanderDMGCoop:
 		XDeath.ExpanderDMGCoop:
-			Goto Death
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			Goto Super::Death.ExpanderDMGCoop
 	}
-}			
+}

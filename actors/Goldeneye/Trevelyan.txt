@@ -25,6 +25,7 @@ Actor Goldeneye_Trevelyan : Goldeneye_EnemyBase
 		TNT1 A 0 A_SetShootable
       Spawn2:
         TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraBossMonologue", 29)
+        TNT1 A 0 A_GiveInventory("SamsaraBossMonologueFlagsDisabler")
         goto Super::Spawn2
 
       SpawnMonologue:
@@ -156,11 +157,14 @@ Actor Goldeneye_Trevelyan : Goldeneye_EnemyBase
       See:
         TNT1 A 0 A_GiveInventory("SamsaraBossMonologueFlagsDisabler")
         goto Super::See
-		
+
 	  Death.ExpanderDMG:
 	  XDeath.ExpanderDMG:
+		"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+		Goto Super::Death.ExpanderDMG
 	  Death.ExpanderDMGCoop:
 	  XDeath.ExpanderDMGCoop:
-		Goto Death
+		"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+		Goto Super::Death.ExpanderDMGCoop
 	}
 }	

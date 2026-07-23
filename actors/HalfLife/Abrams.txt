@@ -104,26 +104,34 @@ Actor HLAbrams : SamsaraMonsterRobotic
 		Death.ZorchKamikaze:
 		Death.PhasingZorch:
 		Death.ZorchSpectral:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Zorch
+		Death.ExpanderDMG:
+		XDeath.ExpanderDMG:
+			"####" "#" 0 A_RemoveChildren(TRUE)
+			Goto Super::Death.ExpanderDMG
+		Death.ExpanderDMGCoop:
+		XDeath.ExpanderDMGCoop:
+			"####" "#" 0 A_RemoveChildren(TRUE)
+			Goto Super::Death.ExpanderDMGCoop
 		Death.DukePlasma:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.DukePlasma
 		Death.RottDisintegrate:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.RottDisintegrate
 		Disintegrate:
 		Death.StrifeMauler:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Disintegrate
 		Death.Nuke:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.Nuke
 		Death.HexenPurify:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.HexenPurify
 		Death.HexenMedusa:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_Jump(218,"Ice")
@@ -133,7 +141,7 @@ Actor HLAbrams : SamsaraMonsterRobotic
 		Death.WTRangedIce:
 		Death.DoomDamageTypeIce:
 		Ice:
-			"####" A 0 A_RemoveChildren(TRUE)
+			"####" "#" 0 A_RemoveChildren(TRUE)
 			Goto Super::Ice
 	}
 }
