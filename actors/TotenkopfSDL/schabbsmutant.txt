@@ -103,10 +103,11 @@ ACTOR TotenkopfNeedle
 	Height 6
 	Speed 15
 	Damage (random(0,32)>>3)
+    DamageType "SchabbsSyringe"
 	Projectile
 	SeeSound "Totenkopf/SchabbsThrow"
 	DeathSound ""
-	Obituary "%o was injected with Doctor Schabb's serum."
+	Obituary "%o was injected with Doctor Schabbs' serum."
 	States
 	{
 		Spawn:
