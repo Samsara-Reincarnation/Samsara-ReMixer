@@ -165,8 +165,6 @@ ACTOR NewFlemoidusGyro : SamsaraMonsterFlemoid
 	 stop
 
 		// SamsaraMonsterFlemoid states
-		Crash.ExpanderDMG:
-          goto Death.ExpanderDMG
 		ExpanderPop:
 			"####" "#" 10
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
@@ -186,8 +184,6 @@ ACTOR NewFlemoidusGyro : SamsaraMonsterFlemoid
 			TNT1 A 0 A_GiveToTarget("DukeGibTaunt",1)
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
-		Crash.ExpanderDMGCoop:
-          goto Death.ExpanderDMGCoop
 		ExpanderPopCoop:
 			"####" "#" 10
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)

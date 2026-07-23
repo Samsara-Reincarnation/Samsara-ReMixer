@@ -326,6 +326,8 @@ ACTOR Mage
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
 			C3DM A 0
+			"####" "#" 0 A_ChangeFlag("DONTCORPSE",true)
+			"####" "#" 0 A_ChangeFlag("DONTGIB",true)
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
 			"####" "#" 0 A_SetUserVar("user_scaley", scaley*65536.0)
 			"####" "#" 0 A_PlaySound("duke/expand")
@@ -356,6 +358,8 @@ ACTOR Mage
 		Death.ExpanderDMGCoop:
 		XDeath.ExpanderDMGCoop:
 			C3DM A 0
+			"####" "#" 0 A_ChangeFlag("DONTCORPSE",true)
+			"####" "#" 0 A_ChangeFlag("DONTGIB",true)
 			"####" "#" 0 A_SetUserVar("user_scalex", scalex*65536.0)
 			"####" "#" 0 A_SetUserVar("user_scaley", scaley*65536.0)
 			"####" "#" 0 A_PlaySound("duke/expand")

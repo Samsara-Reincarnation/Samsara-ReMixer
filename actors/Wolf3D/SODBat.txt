@@ -171,10 +171,6 @@ ACTOR SODBat : SamsaraMonsterBeastTotalGib
 			TNT1 A 2
 			TNT1 A 0 Thing_Remove(0)
 			stop
-		Crash.ExpanderDMG:
-          goto Death.ExpanderDMG
-		Crash.ExpanderDMGCoop:
-          goto Death.ExpanderDMGCoop
 	}
 }
 
