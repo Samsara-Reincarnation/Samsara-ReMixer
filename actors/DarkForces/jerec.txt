@@ -382,7 +382,7 @@ ACTOR JerecTrick : jerec
 		Disintegrate:
 		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
-			Goto Super::Death.Disintegrate
+			Goto Super::Disintegrate
 		Death.Nuke:
 			"####" "#" 0 ACS_NamedExecuteAlways("DFDarkSide")
 			Goto Super::Death.Nuke

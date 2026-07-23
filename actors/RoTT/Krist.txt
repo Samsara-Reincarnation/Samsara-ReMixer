@@ -470,7 +470,7 @@ ACTOR SebastianKrist : RoTTBoss {
 		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, Krist_ID, 2)
 			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
-			Goto Super::Death.Disintegrate
+			Goto Super::Disintegrate
 		Death.Nuke:
 			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, Krist_ID, 2)
 			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)

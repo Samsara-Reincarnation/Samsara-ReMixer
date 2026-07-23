@@ -221,6 +221,8 @@ ACTOR Mage
 			"####" "#" 1 A_SetShootable
 			Goto See
 		Death.RottDisintegrate:
+			"####" "#" 0 A_ChangeFlag("DONTCORPSE",1)
+			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
 			"####" "#" 0 A_ChangeFlag("SOLID", 0)
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_Scream
@@ -253,6 +255,7 @@ ACTOR Mage
 		Death.StrifeMauler:
 			"####" "#" 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" "#" 0 A_NoBlocking
+			"####" "#" 0 A_ChangeFlag("DONTCORPSE",1)
 			"####" "#" 0 A_ChangeFlag("DONTGIB",1)
 			"####" "#" 0 ACS_NamedExecuteAlways("ExtraDeathFX",0,1)
 			"####" "#" 0 A_Scream
