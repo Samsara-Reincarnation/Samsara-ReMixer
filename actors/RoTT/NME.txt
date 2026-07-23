@@ -285,39 +285,41 @@ ACTOR NME : SamsaraMonsterRoboticBoss {
 		Death.ZorchKamikaze:
 		Death.PhasingZorch:
 		Death.ZorchSpectral:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.Zorch
 		Death.ExpanderDMG:
 		XDeath.ExpanderDMG:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.ExpanderDMG
 		Death.ExpanderDMGCoop:
 		XDeath.ExpanderDMGCoop:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 A_JumpIf(!CallACS("SamsaraDecorate", 73), "Death.DukeDamage")
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.ExpanderDMGCoop
 		Death.DukePlasma:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.DukePlasma
 		Disintegrate:
 		Death.StrifeMauler:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.Disintegrate
 		Death.Nuke:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.Nuke
 		Death.HexenPurify:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.HexenPurify
 		Death.HexenMedusa:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Death.HexenMedusa
 		Death.DukeIce:
 			"####" "#" 0 A_GiveToTarget("DukeBossKillTaunt",1)
@@ -326,8 +328,8 @@ ACTOR NME : SamsaraMonsterRoboticBoss {
 		Death.WTRangedIce:
 		Death.DoomDamageTypeIce:
 		Ice:
-			"####" A 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
-			"####" A 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
+			"####" "#" 0 ACS_NamedExecuteAlways("RoTTBossScript", 0, NME_ID, 2)
+			"####" "#" 0 A_GiveToTarget("RoTT_BossDeathPlayer", 1)
 			Goto Super::Ice
    }
 }
