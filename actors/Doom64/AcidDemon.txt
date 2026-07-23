@@ -120,37 +120,37 @@ ACTOR AcidDemon64 : Demon64
 
 		// SamsaraMonsterDemonicTotalGib states
 		ExpanderPop:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
-			Goto Super::ExpanderPop+2
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			Goto Super::ExpanderPop+1
 		ExpanderPopCoop:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
-			Goto Super::ExpanderPopCoop+2
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			Goto Super::ExpanderPopCoop+1
 		DukeGibStart:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::DukeGibStart
 		XDeathForCaleb:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForCaleb
 		XDeathForCatBitch:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForCatBitch
 		XDeathForWang:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForWang
 		XDeathForJon:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForJon
 		XDeathForLeonard:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForLeonard
 		PainkillerGib:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::PainkillerGib
 		Death.DeusExExploded:
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 		Death.DeusExDroneExploded:
 		DeusXDeath:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::DeusXDeath
 		XDeath.QuakeDamage:
 		XDeath.QuakePistol:
@@ -159,42 +159,42 @@ ACTOR AcidDemon64 : Demon64
 		XDeath.QuakeExplosive:
 		XDeath.QuakeLaser:
 		XDeathForRanger:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForRanger
 		XDeath.RottExplosive:
 		XDeathForROTT:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForROTT
 		Death.HLEgon:
 		Death.FreemanGibs:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::Death.FreemanGibs
 		Death.BittermanTrap:
 		XDeathForBitterman:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForBitterman
 		Death.Hexen2Extreme:
 		Death.Hexen2ElectricExtreme:
 		XDeathForDemoness:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeathForDemoness
 		Death.UnrealExtreme:
 		Death.UnrealRedeemer:
 		Death.UnrealShredded:
 		UnrealXDeath:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::UnrealXDeath
 		Death.RTCWExplosive:
 		RTCWXDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			Goto RTCWXDeath2
 		RTCWXDeath2:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::RTCWXDeath2
 		Death.Q3BFG:
 		XDeath.Q3Explosive:
 		XDeath.Q3Energy:
-			"####" AAAAAAAAAAAAAAAA 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
+			"####" "################" 0 A_SpawnItemEx("AcidDemonDeathAttack64", 0, 0, 34, random(-4,4), random(-4,4), random(62,120)/10.0, random(0,359))
 			Goto Super::XDeath.Q3Energy
 	}
 }

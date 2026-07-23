@@ -263,6 +263,7 @@ Actor SamsaraNarakaPawnTier1Normal : PlayerPawn
 			TNT1 A -1
 			Stop
 		Death.DukePlasma:
+			"####" "#" 0 A_ChangeFlag("DONTGIB",true)
             "####" "#" 0 A_Stop
             "####" "#" 1 A_NoBlocking
             "####" "#" 0 A_Jump(218,2)
@@ -566,6 +567,7 @@ Actor SamsaraNarakaPawnTier2Normal : PlayerPawn
 			TNT1 A -1
 			Stop
 		Death.DukePlasma:
+			"####" "#" 0 A_ChangeFlag("DONTGIB",true)
             "####" "#" 0 A_Stop
             "####" "#" 1 A_NoBlocking
             "####" "#" 0 A_Jump(218,2)
@@ -869,6 +871,7 @@ Actor SamsaraNarakaPawnTier3Normal : PlayerPawn
 			TNT1 A -1
 			Stop
 		Death.DukePlasma:
+			"####" "#" 0 A_ChangeFlag("DONTGIB",true)
             "####" "#" 0 A_Stop
             "####" "#" 1 A_NoBlocking
             "####" "#" 0 A_Jump(218,2)
@@ -1172,6 +1175,7 @@ Actor SamsaraNarakaPawnTier4Normal : PlayerPawn
 			TNT1 A -1
 			Stop
 		Death.DukePlasma:
+			"####" "#" 0 A_ChangeFlag("DONTGIB",true)
             "####" "#" 0 A_Stop
             "####" "#" 1 A_NoBlocking
             "####" "#" 0 A_Jump(218,2)
@@ -1475,6 +1479,7 @@ Actor SamsaraNarakaPawnTier5Normal : PlayerPawn
 			TNT1 A -1
 			Stop
 		Death.DukePlasma:
+			"####" "#" 0 A_ChangeFlag("DONTGIB",true)
             "####" "#" 0 A_Stop
             "####" "#" 1 A_NoBlocking
             "####" "#" 0 A_Jump(218,2)
