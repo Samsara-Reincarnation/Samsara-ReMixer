@@ -54,7 +54,8 @@ Actor WTSkeleton : WitchavenEnemyBaseMeleeSkeleton
 		WH_F W -1
 		Stop
 	Death.Nuke:
-		WH_A H 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		WH_A H 4 A_ChangeFlag("DONTGIB",true)
 		TNT1 A 0 A_Scream
 		WH_A I 4 A_NoBlocking
 		WH_A JKL 4

@@ -57,7 +57,8 @@ Actor WTSkeletalPriestess : WitchavenEnemyBaseRangedBeastLarge
 			WH_X R -1 A_KillMaster
 			Stop
 		Death.Nuke:
-			WH_X S 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			WH_X S 4 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_Scream
 			WH_X T 4 A_NoBlocking
 			WH_X UVW 4

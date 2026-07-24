@@ -82,6 +82,7 @@ Disruptor:
 
 Witchaven:
 
+! Enemies can no longer be crushed into gibs during their Death.Nuke (disintegrated by Grondoval's nuke spell) state.
 * Fixed the secret enemy using the wrong sprites when shrunk.
 * Fixed the secret enemy not having states for being burned by Caleb's weapons.
 

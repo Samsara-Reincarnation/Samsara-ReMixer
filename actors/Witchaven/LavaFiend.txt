@@ -51,7 +51,8 @@ Actor WTLavaFiend : WitchavenEnemyBaseRangedBeast
 		WH_L Q -1
 		Stop
 	Death.Nuke:
-		WH_L R 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		WH_L R 4 A_ChangeFlag("DONTGIB",true)
 		TNT1 A 0 A_Scream
 		WH_L S 4 A_NoBlocking
 		WH_L TUV 4

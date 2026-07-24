@@ -182,7 +182,8 @@ Actor WTIllwhyrin : SamsaraMonsterHumanoidBoss
 		WH_Z E -1 A_KillMaster
 		Stop
 	Death.Nuke:
-		WH_Z F 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		WH_Z F 4 A_ChangeFlag("DONTGIB",true)
 		TNT1 A 0 A_Scream
 		WH_Z G 4 A_NoBlocking
 		WH_Z HIJ 4

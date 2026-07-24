@@ -52,7 +52,8 @@ Actor MinoDrake : WitchavenEnemyBaseMeleeBeastLarge
 		WH_S S -1
 		Stop
 	Death.Nuke:
-		WH_S T 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		WH_S T 4 A_ChangeFlag("DONTGIB",true)
 		TNT1 A 0 A_Scream
 		WH_S U 4 A_NoBlocking
 		WH_S VWX 4

@@ -51,7 +51,8 @@ Actor BrownOgre : WitchavenEnemyBaseMeleeBeast
 			WH_N N -1
 			Stop
 		Death.Nuke:
-			WH_N P 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			WH_N P 4 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_Scream
 			WH_N Q 4 A_NoBlocking
 			WH_N RST 4
@@ -319,7 +320,8 @@ Actor GreenOgre : BrownOgre
 			WH_C N -1
 			Stop
 		Death.Nuke:
-			WH_C P 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			WH_C P 4 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_Scream
 			WH_C Q 4 A_NoBlocking
 			WH_C RST 4
@@ -587,7 +589,8 @@ Actor RedOgre : BrownOgre
 			WH_B N -1
 			Stop
 		Death.Nuke:
-			WH_B P 4 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			WH_B P 4 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_Scream
 			WH_B Q 4 A_NoBlocking
 			WH_B RST 4
