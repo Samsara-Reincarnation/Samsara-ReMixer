@@ -126,6 +126,8 @@ Actor MMRandomizer_Wraith : SamsaraMonsterHumanoidTotalGib
 			Loop
 		Raise:
 			VD49 A 0 A_SetUserVar("user_wraith_teleporting", 0)
+			VD49 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD49 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD49 LKJIH 8
 			Goto See

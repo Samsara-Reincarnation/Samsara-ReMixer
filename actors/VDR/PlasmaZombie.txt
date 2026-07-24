@@ -81,7 +81,8 @@ ACTOR MMRandomizer_PlasmaZombie : Shotgunguy3
 			VD24 V -1
 			Stop
 		Raise:
-			VD24 A 0
+			VD24 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD24 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD24 KJIH 5
 			Goto See

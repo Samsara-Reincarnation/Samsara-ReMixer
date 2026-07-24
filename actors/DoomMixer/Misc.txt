@@ -101,6 +101,7 @@ ACTOR Abaddon2 : Abaddon
 		Loop
 	Raise:
 		VD9V A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		VD9V A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		VD9V L 8 A_UnsetFloorClip
 		VD9V KJIHG 8
@@ -356,6 +357,7 @@ ACTOR Belphegor2 : Belphegor
 		Stop
 	Raise:
 		VD53 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		VD53 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		VD53 ONMLKJI 8
 		Goto See
@@ -657,6 +659,7 @@ ACTOR BloodDemon2 : BloodDemon
 		Loop
 	Raise:
 		VD9U A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		VD9U A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		VD9U NMLKJI 5
 		Goto See
@@ -934,6 +937,7 @@ ACTOR Cacolantern2 : Cacolantern
 		Loop
 	Raise:
 		VD9Z A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		VD9Z A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		VD9Z L 8 A_UnsetFloorClip
 		VD9Z KJIHG 8
@@ -1194,6 +1198,7 @@ ACTOR DarkImp2 : DarkImp
 		Stop
 	Raise:
 		VD20 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		VD20 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		VD20 ML 8
 		VD20 KJI 6
@@ -1516,6 +1521,7 @@ ACTOR Hectebus2 : SamsaraMonsterCyberneticTotalGib
 		Stop
 	Raise:
 		VD61 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		VD61 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		VD61 RQPONMLK 5
 		Goto See
@@ -1882,6 +1888,7 @@ ACTOR SuperShotgunGuy2 : SuperShotgunGuy
 		Stop
 	Raise:
 		GPOS A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		GPOS A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		GPOS LKJIH 5
 		Goto See

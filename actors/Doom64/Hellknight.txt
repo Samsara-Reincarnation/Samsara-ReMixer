@@ -76,6 +76,7 @@ ACTOR HellKnight64 : SamsaraMonsterDemonicTotalGib
 			Stop
 		Raise:
 			64HK A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64HK A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64HK NMLKJI 8
 			Goto See

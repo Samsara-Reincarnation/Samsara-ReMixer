@@ -88,6 +88,7 @@ Actor MMRandomizer_Abaddon : SamsaraMonsterDemonicTotalGib
 			Loop
 		Raise:
 			VD68 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD68 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD68 O 6 A_UnSetFloorClip
 			VD68 NMLKJIHG 6

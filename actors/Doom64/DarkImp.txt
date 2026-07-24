@@ -67,6 +67,7 @@ ACTOR DarkImp64 : DoomImp64
 			Stop
 		Raise:
 			64DI A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64DI A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64DI PO 8
 			64DI NML 6

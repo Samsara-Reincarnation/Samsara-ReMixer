@@ -87,6 +87,7 @@ ACTOR Fatso64 : SamsaraMonsterCyberneticTotalGib
 			Stop
 		Raise:
 			64FT A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64FT A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64FT ONMLKJ 5
 			Goto See

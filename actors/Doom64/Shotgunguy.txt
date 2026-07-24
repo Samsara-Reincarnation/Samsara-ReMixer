@@ -95,6 +95,7 @@ ACTOR ShotgunGuy64 : SamsaraMonsterHumanoid
 			Stop
 		Raise:
 			64SP A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64SP A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64SP LKJIH 5
 			Goto See

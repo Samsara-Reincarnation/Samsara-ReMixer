@@ -143,7 +143,8 @@ ACTOR MMRandomizer_Maggot : SamsaraMonsterHumanoid
 		VD39 T -1
 		Stop
 	Raise:
-		VD49 E 0
+		VD39 E 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		VD39 E 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		VD39 NMLKJI 4
 		Goto See+1

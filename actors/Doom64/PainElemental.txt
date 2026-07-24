@@ -77,7 +77,8 @@ ACTOR PainElemental64 : SamsaraMonsterReincPainElemental
 			64PN KL 5 bright
 			Stop
 		Raise:
-			64PN A 0
+			64PN A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64PN A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise") // just in case
 			64PN LKJIHGFE 8
 			Goto See

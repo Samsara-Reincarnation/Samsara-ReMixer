@@ -200,7 +200,9 @@ ACTOR Mage
 			TNT1 A 0
 			stop
 		Raise:
-			C3DM A 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
+			C3DM A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			C3DM A 0 A_GiveInventory("SamsaraSOFXFlipReset")
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			C3DM FEC 5
 			Goto See
 		ZorchRaise:

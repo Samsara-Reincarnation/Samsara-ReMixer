@@ -81,6 +81,7 @@ ACTOR Nightcrawler64 : Arachnotron64
 			Stop
 		Raise:
 			64CW A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64CW A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64CW LKJIHG 5
 			Goto See+2

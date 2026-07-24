@@ -94,6 +94,7 @@ ACTOR ZombieMan64 : SamsaraMonsterHumanoid
 			Stop
 		Raise:
 			64PO A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64PO A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64PO KJIH 5
 			Goto See

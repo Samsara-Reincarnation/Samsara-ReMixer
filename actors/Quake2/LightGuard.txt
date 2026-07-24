@@ -708,6 +708,8 @@ Actor Q2ShotgunGuard : Q2SoldierBase
 			TNT1 A -1
 			stop
 		Raise:
+			GRDC W 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			GRDC W 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			GRDC W 0 A_RemoveChildren(true)
 			GRDC W 4
 			GRDC VUTSRQPON 4
@@ -1239,6 +1241,8 @@ Actor Q2MachinegunGuard : Q2SoldierBase
 			TNT1 A -1
 			stop
 		Raise:
+			GRDC W 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			GRDC W 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			GRDC W 0 A_RemoveChildren(true)
 			GRDC W 4
 			GRDC VUTSRQPON 4
@@ -1790,6 +1794,8 @@ Actor Q2EnhancedLightGuard : Q2SoldierBase
 			TNT1 A -1
 			stop
 		Raise:
+			GRDC W 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			GRDC W 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			GRDC W 0 A_RemoveChildren(true)
 			GRDC W 4
 			GRDC VUTSRQPON 4
@@ -2319,6 +2325,8 @@ Actor Q2RipperGuard : Q2SoldierBase
 			TNT1 A -1
 			stop
 		Raise:
+			GRDC W 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			GRDC W 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			GRDC W 0 A_RemoveChildren(true)
 			GRDC W 4
 			GRDC VUTSRQPON 4
@@ -2851,6 +2859,8 @@ Actor Q2HyperBlasterGuard : Q2SoldierBase
 			TNT1 A -1
 			stop
 		Raise:
+			GRDC W 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			GRDC W 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			GRDC W 0 A_RemoveChildren(true)
 			GRDC W 4
 			GRDC VUTSRQPON 4
@@ -3404,6 +3414,8 @@ Actor Q2LaserGuard : Q2SoldierBase
 			TNT1 A -1
 			stop
 		Raise:
+			GRDC W 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			GRDC W 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			GRDC W 0 A_RemoveChildren(true)
 			GRDC W 4
 			GRDC VUTSRQPON 4

@@ -81,6 +81,7 @@ ACTOR Cacodemon64 : SamsaraMonsterDemonicTotalGib
 			Loop
 		Raise:
 			64HD A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64HD A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64HD M 8 A_UnSetFloorClip
 			64HD LKJIH 8

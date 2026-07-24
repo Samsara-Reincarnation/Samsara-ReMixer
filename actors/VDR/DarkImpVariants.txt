@@ -64,7 +64,8 @@ actor MMRandomizer_STDarkImp : DoomImp3
 			VD20 U -1
 			Stop
 		Raise:
-			VD18 A 0
+			VD18 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD18 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD18 ML 8
 			VD18 KJI 6
@@ -387,7 +388,8 @@ actor MMRandomizer_DarkDevil : MMRandomizer_STDarkImp
 			VD19 Z -1
 			stop
 		Raise:
-			VD19 A 0
+			VD19 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD19 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD19 ML 8
 			VD19 KJI 6
@@ -689,7 +691,8 @@ actor MMRandomizer_NamiDarkImp : MMRandomizer_STDarkImp
 			VD20 U -1
 			Stop
 		Raise:
-			VD20 A 0
+			VD20 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD20 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD20 ML 8
 			VD20 KJI 6
@@ -1016,7 +1019,8 @@ actor MMRandomizer_NetherDarkImp : MMRandomizer_STDarkImp
 			VD21 X -1
 			Stop
 		Raise:
-			VD21 A 0
+			VD21 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD21 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD21 PO 8
 			VD21 NML 6
@@ -1434,7 +1438,8 @@ actor MMRandomizer_VoidDarkImp : MMRandomizer_STDarkImp
 			VD20 U -1
 			Stop
 		Raise:
-			VD22 A 0
+			VD22 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD22 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD22 PO 8
 			VD22 NML 6

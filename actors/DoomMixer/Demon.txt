@@ -58,6 +58,7 @@ ACTOR DoomDemon3 : DoomDemon2
 		Loop
 	Raise:
 		SAR2 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		SAR2 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		SAR2 NMLKJI 5
 		Goto See
@@ -362,6 +363,7 @@ ACTOR Spectre3 : Spectre2
 			Stop
 		Raise:
 			SAR2 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			SAR2 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			SAR2 NMLKJI 5
 			Goto See

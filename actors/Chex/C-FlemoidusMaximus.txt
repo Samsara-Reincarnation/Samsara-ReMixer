@@ -478,7 +478,9 @@ ACTOR OldFlemoidusMaximus : NewFlemoidusMaximus
 			BOSC A 4 A_Pain
 			Goto See
 		Raise:
-		BOSC ONMLKJI 8
+		TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		BOSC O 8 A_GiveInventory("SamsaraSOFXFlipReset")
+		BOSC NMLKJI 8
 			Goto See
 	    Pain.Zorch:
 	    Pain.ZorchPistol:

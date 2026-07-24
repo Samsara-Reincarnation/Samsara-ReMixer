@@ -85,6 +85,8 @@ Actor Q2Berserker : Q2SoldierBase
 		Goto Death+3
 	Raise:
 //		"----" A 0 A_GiveInventory(ResurrectedToken,1)
+		"----" A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		"----" A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"----" A 25 A_StopSound(CHAN_BODY)
 //		"----" A 6 A_TakeInventory(ResurrectedToken,1)
 		Goto See

@@ -52,6 +52,7 @@ ACTOR NightmareSpectre64 : Spectre64
 			Loop
 		Raise:
 			64NS A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64NS A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64NS NMLKJI 5
 			Goto See

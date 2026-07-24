@@ -94,7 +94,7 @@ ACTOR TotenkopfDeathMutant : SamsaraMonsterDemonicBoss
 			TK44 L -1
 			Stop
 		Raise:
-			TK44 K 7
+			TK44 K 7 A_GiveInventory("SamsaraSOFXFlipReset")
 			TK44 J 8
 			TK44 I 7
 			TK44 A 8

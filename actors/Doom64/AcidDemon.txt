@@ -73,6 +73,7 @@ ACTOR AcidDemon64 : Demon64
 			Loop
 		Raise:
 			64AD A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			64AD A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			64AD NMLKJI 5
 			Goto See+1

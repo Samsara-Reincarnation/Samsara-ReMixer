@@ -70,7 +70,8 @@ ACTOR PainElemental3 : SamsaraMonsterReincPainElemental
 			PAN2 M 8 BRIGHT
 			Stop
 		Raise:
-			PAN2 A 0
+			PAN2 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			PAN2 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise") // just in case
 			PAN2 MLKJIH 8
 			Goto See

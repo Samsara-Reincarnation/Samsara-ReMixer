@@ -89,6 +89,9 @@ ACTOR MMRandomizer_Shadow : SamsaraMonsterHumanoid
 			VD37 G -1
 			Stop
 		Raise:
+			VD36 E 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+			VD36 E 0 A_GiveInventory("SamsaraSOFXFlipReset")
+			"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 			VD36 M 8
 			VD36 KLJI 8
 			Goto See

@@ -58,6 +58,7 @@ ACTOR Arachnotron3 : Arachnotron2
 		Stop
 	Raise:
 		BSP2 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		BSP2 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		BSP2 PONMLKJ 5
 		Goto See+1

@@ -69,9 +69,10 @@ Actor AxeZombie : SamsaraMonsterHumanoid
 		CULC H 0 A_ChangeFlag("BRIGHT",0)
 		Goto See
 	Raise:
-		TNT1 A 0 A_PlaySound("Zombie/FRaise")
-		TNT1 A 0 A_RemoveChildren(true)
-		BZOD A 0
+		BZOD A 0 A_PlaySound("Zombie/FRaise")
+		BZOD A 0 A_RemoveChildren(true)
+		BZOD A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		BZOD A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		BZOD EFGHIJK 4
 		Goto See

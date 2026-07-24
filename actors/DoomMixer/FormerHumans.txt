@@ -119,6 +119,7 @@ ACTOR ZombieMan3 : Zombieman2
 		Stop
 	Raise:
 		PSS2 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		PSS2 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		PSS2 KJIH 5
 		Goto See
@@ -405,6 +406,7 @@ ACTOR ShotGunGuy3 : ShotGunGuy2
 		Stop
 	Raise:
 		SPS2 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		SPS2 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		SPS2 LKJIH 5
 		Goto See
@@ -691,6 +693,7 @@ ACTOR ChaingunGuy3 : ChaingunGuy2
 		Stop
 	Raise:
 		D2CS A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		D2CS A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		D2CS NMLKJIH 5
 		Goto See
@@ -981,6 +984,7 @@ ACTOR Nazi3 : Nazi2
 		Stop
 	Raise:
 		SSW2 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)
+		SSW2 A 0 A_GiveInventory("SamsaraSOFXFlipReset")
 		"####" "#" 0 A_JumpIfInventory("EnemyZorched",1,"ZorchRaise")
 		SSW2 MLKJI 5
 		Goto See
