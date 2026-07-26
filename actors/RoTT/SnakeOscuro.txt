@@ -22,6 +22,7 @@ ACTOR SnakeTom : RoTTBoss {
    DamageFactor "MarathonFusion", 0.6	
    DamageFactor "WMCNade", 0.7  
    DamageFactor "RottDisintegrate", 0.0
+   DamageFactor "KingpinBleedshot", 0.0
    DamageFactor "BJSpear", 0.2
    DamageFactor "DCannonProj", 0.6
    DamageFactor "Tesla", 0.7
