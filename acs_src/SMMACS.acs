@@ -1809,7 +1809,7 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_ghostmode", 0);
 		SetCVar("mm_flightmode", 0);
 		SetCVar("mm_infightingmode", 0);
-		SetCVar("mm_performancemode", false);
+		SetCVar("mm_performancemode", isZDoom() ? false : true);
 		//SetCVar("mm_rarespawns", true);
 
 		// Monster Spawning Options
