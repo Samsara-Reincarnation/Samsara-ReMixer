@@ -294,6 +294,7 @@ slv_die1	Sounds/HalfLife/Vortigaunt/slv_die1.wav
 slv_die2	Sounds/HalfLife/Vortigaunt/slv_die2.wav
 
 slv_shoot Sounds/HalfLife/Vortigaunt/hw_shoot1.flac
+slv_shoot2 Sounds/HalfLife/Vortigaunt/slv_shoot.wav
 slv_shootzap Sounds/HalfLife/Vortigaunt/slv_zap1.wav
 slv_charge Sounds/HalfLife/Vortigaunt/slv_zap4.flac
 slv_impact Sounds/HalfLife/Vortigaunt/slv_electro4.wav

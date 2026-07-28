@@ -16,7 +16,7 @@ Actor BlueScorpion : SamsaraMonsterBeastTotalGib
 	+NOINFIGHTING
 	-COUNTKILL
 	DropItem "PowerslaveSoulPowerOrbSpawn" 256,1	
-    meleesound "bluescorpion/bite"
+    //meleesound "bluescorpion/bite"
     painsound "bluescorpion/pain"
     deathsound "bluescorpion/death"
 	Tag "Scorpion"
@@ -32,16 +32,26 @@ Actor BlueScorpion : SamsaraMonsterBeastTotalGib
 		P_BS A 5 A_Look
 		loop
     See:
+		P_BS A 0 A_JumpIfCloser(128,"SeeNoJump")
 		P_BS AABBAABB 2 A_Chase
-		P_BS A 0 A_Jump(20,1)
 		loop
+	SeeNoJump:
+		P_BS AABBAABB 2 A_Chase("Melee","")
+		goto See
+	Missile:
 		P_BS A 0 A_PlaySound("bluescorpion/jump")
-		P_BS C 0 ThrustThingZ(0,32,0,1)
-		P_BS C 16 A_Recoil(-5)  
+		P_BS C 0 ThrustThingZ(0,40,0,1)
+		P_BS C 1 A_Recoil(-6)
+		P_BS C 2
+	JumpingLoop:
+		P_BS C 1 A_CheckFloor("JumpingFinish")
 		loop
+	JumpingFinish:
+		P_BS C 0 A_Stop
+		goto SeeNoJump
     Melee:
 		P_BS A 5 A_FaceTarget
-		P_BS B 5 A_CustomMeleeAttack(Random(4,8))
+		P_BS B 5 A_CustomMeleeAttack(Random(4,8),"redmite/attack")
 		P_BS A 5 A_FaceTarget
 		goto See
     Pain:
