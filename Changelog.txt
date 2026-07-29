@@ -37,6 +37,10 @@ Heretic:
 
 Wolfenstein 3D:
 
+-Original-
+
+* Fixed the Angel of Death going to the wrong see state after firing.
+
 -Lost Episodes-
 
 * Bats should now disappear/shatter properly when zorched/frozen on the ground.

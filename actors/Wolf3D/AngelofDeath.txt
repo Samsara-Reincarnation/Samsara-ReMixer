@@ -91,7 +91,7 @@ ACTOR AngelOfDeath : SamsaraMonsterDemonicBoss
 			WADH G 20 A_PlaySound("angel/tired", CHAN_WEAPON)
 			WADH H 20 
 			WADH G 20 A_PlaySound("angel/tired", CHAN_WEAPON)
-			Goto See
+			Goto See2
 		Pain:
 			WADH D 3
 			WADH D 3 A_Pain
