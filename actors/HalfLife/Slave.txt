@@ -169,7 +169,7 @@ Actor Vortigaunt : SamsaraMonsterAlien // slave
 			HL12 X 0 A_CustomRailgun(4,0,"none","green",RGF_SILENT|RGF_NOPIERCING|RGF_FULLBRIGHT|RGF_EXPLICITANGLE,0,8,"HL_Slavepuff",user_oldangle>>16,user_oldpitch>>16,8192,5,0.0)
 			HL12 X 0 A_CustomRailgun(4,0,"none","green",RGF_SILENT|RGF_NOPIERCING|RGF_FULLBRIGHT|RGF_EXPLICITANGLE,0,8,"HL_Slavepuff",user_oldangle>>16,user_oldpitch>>16,8192,5,0.0)
 			HL12 X 0 A_CustomRailgun(4,0,"none","green",RGF_SILENT|RGF_NOPIERCING|RGF_FULLBRIGHT|RGF_EXPLICITANGLE,0,8,"HL_Slavepuff",user_oldangle>>16,user_oldpitch>>16,8192,5,0.0)
-			HL12 X 0 A_Playsound("slv_shoot")			
+			HL12 X 0 A_Playsound("slv_shoot2")			
 			HL12 XYZ 2 Bright
 			HL13 ABCDEFGH 2
 			Goto See
