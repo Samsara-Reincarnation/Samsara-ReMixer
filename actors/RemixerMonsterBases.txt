@@ -901,13 +901,14 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			"####" "#" 0 A_GiveInventory("SoF_MPG_InflationCounter")
 			Loop
 		XDeath.SoFMPGLaser:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurn:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -918,13 +919,14 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		XDeath.SoFMPGLaserAlt:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurnAlt:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -992,12 +994,12 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			Wait
 		Death.SoFExplosive:
 		XDeathSoF:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), "SoFGibStart")
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerTimer",CallACS("SoF_Decorate",17,3))
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_GiveInventory("SamsaraSOFDeathFlagTokenRemove")
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
@@ -1948,13 +1950,14 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 			"####" "#" 0 A_GiveInventory("SoF_MPG_InflationCounter")
 			Loop
 		XDeath.SoFMPGLaser:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurn:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -1965,13 +1968,14 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		XDeath.SoFMPGLaserAlt:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurnAlt:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -2039,12 +2043,12 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 			Wait
 		Death.SoFExplosive:
 		XDeathSoF:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), "SoFGibStart")
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerTimer",CallACS("SoF_Decorate",17,3))
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_GiveInventory("SamsaraSOFDeathFlagTokenRemove")
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
@@ -2955,13 +2959,14 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			"####" "#" 0 A_GiveInventory("SoF_MPG_InflationCounter")
 			Loop
 		XDeath.SoFMPGLaser:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurn:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -2972,13 +2977,14 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		XDeath.SoFMPGLaserAlt:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurnAlt:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -3046,12 +3052,12 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			Wait
 		Death.SoFExplosive:
 		XDeathSoF:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), "SoFGibStart")
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerTimer",CallACS("SoF_Decorate",17,3))
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_GiveInventory("SamsaraSOFDeathFlagTokenRemove")
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
@@ -3982,13 +3988,14 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			"####" "#" 0 A_GiveInventory("SoF_MPG_InflationCounter")
 			Loop
 		XDeath.SoFMPGLaser:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurn:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -3999,13 +4006,14 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		XDeath.SoFMPGLaserAlt:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerTimer",CallACS("SoF_Decorate",17,7))
 			TNT1 A 0 A_GiveToTarget("SoF_TVDinnerMultiplier",1)
-			TNT1 A 0 A_PlaySound("SoF/Weapons/mpg/Burst",CHAN_AUTO,1.0,false,0.25)
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterGibbedByMPG")
 		SoFGibBurnAlt:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 A_GiveInventory("SamsaraMonsterMPGGibSoundPlayer")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
 			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
@@ -4073,12 +4081,12 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			Wait
 		Death.SoFExplosive:
 		XDeathSoF:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), "SoFGibStart")
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerTimer",CallACS("SoF_Decorate",17,3))
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
+			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
+			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
 			TNT1 A 0 A_GiveInventory("SamsaraSOFDeathFlagTokenRemove")
 			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
@@ -8414,8 +8422,6 @@ Actor SamsaraMonsterMarathonAlien : SamsaraMonsterAlien
 			Stop
 		Death.SoFExplosive:
 		XDeathSoF:
-			TNT1 A 0 ACS_NamedExecuteWithResult("SamsaraActorStopSound")
-			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), "SoFGibStart")
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerTimer",CallACS("SoF_Decorate",17,3))
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
