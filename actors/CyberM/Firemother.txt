@@ -25,6 +25,7 @@ Actor Firemother : SamsaraMonsterHumanoidBoss
   DeathSound "Firemother/death"
   ActiveSound "Firemother/active"
   Obituary "%o was bewitched by the Firemother."
+  Stamina -2 // Needed for gender-related scripts
   PainChance "PhosFireCoop", 0 	
   PainChance "EradCoopGreenFire", 0
   PainChance "EradGreenFire", 0

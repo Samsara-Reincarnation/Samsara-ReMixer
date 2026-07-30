@@ -1,4 +1,4 @@
-ACTOR GretelGrosse : SamsaraMonsterHumanoidTotalGib
+ACTOR GretelGrosse : SamsaraMonsterHumanoidFemaleTotalGib
 {
 	Health 600
 	Radius 33

@@ -1,4 +1,4 @@
-Actor IPOGHuntress : SamsaraMonsterHumanoidTotalGib
+Actor IPOGHuntress : SamsaraMonsterHumanoidFemaleTotalGib
 {
 	Health 75
 	Radius 20

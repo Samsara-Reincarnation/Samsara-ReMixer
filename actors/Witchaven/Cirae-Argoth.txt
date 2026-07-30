@@ -31,6 +31,7 @@ Actor WTCiraeArgoth : SamsaraMonsterHumanoidBoss
 	PainSound ""
 	DeathSound "illwhyrin/die"
 	Obituary "%o was cursed by the empress of the Ciraen, Argoth."
+	Stamina -2 // Needed for gender-related scripts
 	DamageFactor "Mace", 1.1
 	DamageFactor "DragonClaw", 1.11
 	PainChance "MightyBoot", 0

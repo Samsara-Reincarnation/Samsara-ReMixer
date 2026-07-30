@@ -29,6 +29,7 @@ Actor WTIllwhyrin : SamsaraMonsterHumanoidBoss
 	PainSound ""
 	DeathSound "illwhyrin/die"
 	Obituary "%o was cursed by Illwhyrin."
+	Stamina -2 // Needed for gender-related scripts
 	PainChance "MightyBoot", 0
 	PainChance "MarathonStun", 0
 	PainChance "ShrinkerDMG", 0

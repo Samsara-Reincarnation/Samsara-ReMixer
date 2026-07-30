@@ -1,4 +1,4 @@
-Actor IPOGPriestess : SamsaraMonsterHumanoidTotalGib
+Actor IPOGPriestess : SamsaraMonsterHumanoidFemaleTotalGib
 {
 	Health 55
 	Radius 20

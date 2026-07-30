@@ -39,6 +39,7 @@ Wolfenstein 3D:
 
 -Original-
 
+* Fixed Gretel Grosse using the wrong monster base.
 * Fixed the Angel of Death going to the wrong see state after firing.
 
 -Lost Episodes-
@@ -80,6 +81,10 @@ Star Wars: Dark Forces:
 + The Scout Trooper's speed has been increased (from 6 to 9).
 ! The Scout Trooper now has a chance to continue firing at the player.
 
+In Pursuit of Greed:
+
+* Fixed the Huntress and Priestess using the wrong monster base.
+
 Disruptor:
 
 * Fixed the Mutant Elite and Nightmare Spider having swapped Compendium descriptions.
@@ -97,6 +102,10 @@ Shadow Warrior:
 CyberMage:
 
 * Fixed the female Gangers using the wrong sounds when killed by both Bonds' vehicles (direct collision) and RTCW B.J.'s flamethrower.
+
+Redneck Rampage:
+
+* Fixed the Vixens using the wrong monster base.
 
 -Games-
 
