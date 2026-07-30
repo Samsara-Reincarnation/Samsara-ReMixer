@@ -991,6 +991,8 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
+			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
+			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_SpawnItemEx("SoF_BloodPoolSpawnerGib",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("SoF_GibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR|SXF_SETMASTER|1048576)
 			TNT1 A 0 A_Stop
@@ -2027,6 +2029,8 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
+			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
+			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_SpawnItemEx("SoF_BloodPoolSpawnerGib",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("SoF_GibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR|SXF_SETMASTER|1048576)
 			TNT1 A 0 A_Stop
@@ -3023,6 +3027,8 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
+			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
+			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_SpawnItemEx("SoF_BloodPoolSpawnerGib",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("SoF_GibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR|SXF_SETMASTER|1048576)
 			TNT1 A 0 A_Stop
@@ -4039,6 +4045,8 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			TNT1 A 0 A_GiveToTarget("SoF_TheJuicerMultiplier",1)
 		SoFGibStart:
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
+			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
+			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_SpawnItemEx("SoF_BloodPoolSpawnerGib",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("SoF_GibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR|SXF_SETMASTER|1048576)
 			TNT1 A 0 A_Stop
@@ -8394,6 +8402,8 @@ Actor SamsaraMonsterMarathonAlien : SamsaraMonsterAlien
 			Wait
 		XDeathForJohnMullins4:
 			TNT1 A 0 A_GiveInventory("EnemyZorched",1)
+			TNT1 A 0 A_ChangeFlag("DONTCORPSE",true)
+			TNT1 A 0 A_ChangeFlag("DONTGIB",true)
 			TNT1 A 0 A_SpawnItemEx("SoF_BloodPoolSpawnerGib",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("SoF_GibSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR|SXF_SETMASTER|1048576)
 			TNT1 A 0 A_Stop
