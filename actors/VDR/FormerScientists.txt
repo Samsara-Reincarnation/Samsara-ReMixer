@@ -577,6 +577,7 @@ ACTOR MMRandomizer_ZombieScientist3 : MMRandomizer_ZombieScientist
 	Painsound "vdr/fem/pain"
 	Activesound "vdr/fem/act"
 	Deathsound "vdr/fem/death"
+	Stamina -2 // Needed for gender-related scripts
 	States
 	{
 		Spawn:
@@ -691,6 +692,15 @@ ACTOR MMRandomizer_ZombieScientist3 : MMRandomizer_ZombieScientist
 		// Fire/Ice Death states
 		Death.RTCWFire:
 			TNT1 A 0 A_PlaySound("RTCW/Enemy/BurnF",CHAN_7,1.0)
+			TNT1 A -1 A_Jump(256, "Burn")
+			Wait
+		Death.SoFFire:
+		Death.SoFPhosphorus:
+			TNT1 A 0 A_PlaySound("SoF/Speech/BurnF",CHAN_7,1.0)
+			TNT1 A 0 A_JumpIf(CallACS("SamsaraDecorate", 72), 3)
+			TNT1 A 0 A_GiveToTarget("SoF_RoastedTimer",CallACS("SoF_Decorate",17,8))
+			TNT1 A 0 A_GiveToTarget("SoF_RoastedMultiplier",1)
+			TNT1 A 0 A_SpawnItemEx("SoF_BloodPoolSpawner",0,0,0,0,0,0,0,SXF_SETMASTER|SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A -1 A_Jump(256, "Burn")
 			Wait
 	}

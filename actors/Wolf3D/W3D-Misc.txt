@@ -24,7 +24,7 @@ ACTOR MainSODRocket : MainWolfRocket
 	States
 	{
 		Spawn:
-			WRK2 A 3 A_SpawnItem("SODRocketSmoke")
+			WRK2 A 3 A_SpawnItem("SamsaraSODRocketSmoke")
 			Loop
 		Death:
 			WEX2 ABC 2 Bright
