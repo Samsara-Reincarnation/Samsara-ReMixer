@@ -107,6 +107,10 @@ Redneck Rampage:
 
 * Fixed the Vixens using the wrong monster base.
 
+Catacomb 3D:
+
+! The Water Troll is now a stalker and stalker boss replacement.
+
 -Games-
 
 Doom:
