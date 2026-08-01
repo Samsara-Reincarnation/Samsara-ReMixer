@@ -921,6 +921,7 @@ Actor CatacombAbyss_WaterTroll : SamsaraMonsterBeastTotalGib //replaces Spectre
 	+THRUGHOST
 	+MISSILEMORE
 	+LOOKALLAROUND
+	+CANTLEAVEFLOORPIC
 	PainSound "Catacomb/Monster/Pain"
 	DeathSound "Catacomb/Monster/Die3"
 	DamageFactor "Mace", 1.1

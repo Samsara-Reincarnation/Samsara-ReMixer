@@ -12484,12 +12484,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"CatacombApocalypse_CyberDemon"}
 			},
 			{//Stalker
-				{"CatacombAbyss_Mage"}
+				{"CatacombAbyss_WaterTroll"}
 			},
 			{//Stalker Boss
-				{"CatacombArmageddon_Mage1"},
-				{"CatacombArmageddon_Mage2"},
-				{"CatacombArmageddon_Succubus"}
+				{"CatacombAbyss_WaterTroll"}
 			},
 			{//Wendigo
 				{"CatacombApocalypse_CyberAnt"},
@@ -27144,8 +27142,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Stalker Boss
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Wendigo
