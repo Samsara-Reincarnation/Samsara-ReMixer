@@ -234,6 +234,24 @@ HLHEADCP1	hc_pain1
 HLHEADCP2	hc_pain2
 HLHEADCP3	hc_pain3
 
+babyheadcrab/see	hc_alrt1b
+
+$Random babyheadcrab/leap { HLHEADCL1B HLHEADCL2B HLHEADCL3B }
+HLHEADCL1B	hc_att1b
+HLHEADCL2B	hc_att2b
+HLHEADCL3B	hc_att3b
+
+$Random babyheadcrab/die { HLHEADCD1B HLHEADCD2B }
+HLHEADCD1B	hc_die1b
+HLHEADCD2B	hc_die2b
+
+babyheadcrab/hit	hc_bite0b
+
+$Random babyheadcrab/active { HLHEADCA1B HLHEADC2B HLHEADC3B }
+HLHEADC1B	hc_idle1b
+HLHEADC2B	hc_idle2b
+HLHEADC3B	hc_idle3b
+
 Shocktrooper/Idle st_idle0
 Shocktrooper/Taunt Sounds/HalfLife/Shocktrooper/st_taunt0.ogg
 $random Shocktrooper/See { Shocktrooper/See1 Shocktrooper/See2 Shocktrooper/See3 }

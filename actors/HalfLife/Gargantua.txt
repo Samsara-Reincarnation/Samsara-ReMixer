@@ -3,9 +3,9 @@ Actor Gargantua : SamsaraMonsterAlienBoss {
 	Radius 40
 	Height 110
 	Mass 99999999
-	Speed 14
+	Speed 20
 	Monster
-	Scale 0.75
+	Scale 0.8
     Species "Enemies"
 	PainChance 30
 	SeeSound "Gargantua/See"
@@ -24,6 +24,8 @@ Actor Gargantua : SamsaraMonsterAlienBoss {
 	+DONTGIB
 	Tag "Gargantua"
     Obituary "%o was killed by a Gargantua."
+	BloodColor "Khaki"
+	BloodType "HalfLifeAlienBlood"
 	PainChance "PhosFireCoop", 0 	
 	PainChance "EradCoopGreenFire", 0
 	PainChance "EradGreenFire", 0
@@ -144,54 +146,72 @@ Actor Gargantua : SamsaraMonsterAlienBoss {
 			HL12 K 4 A_Chase
 			Loop
 		Missile:
-			TNT1 A 0 A_JumpIfCloser(512,1)
+			HL00 A 0 A_ChangeFlag("NOPAIN",1)
+			HL00 A 0 A_JumpIfCloser(512,1)
 			Goto Shockwave
+			HL00 A 0 A_Playsound("Gargantua/FlameOn", CHAN_WEAPON)
 			HL00 ABCDEFG 2 A_FaceTarget
-			TNT1 A 0 A_Playsound("Gargantua/FlameOn", CHAN_WEAPON)
 		MissileLoop:
-			TNT1 A 0 A_Playsound("Gargantua/FlameRun", CHAN_WEAPON, 1.0, TRUE)
-			TNT1 A 0 A_CustomMissile("GargFlameJet",64,48)
-			TNT1 A 0 A_CustomMissile("GargFlameJet",64,-48)
-			HL01 ABCDE 1 A_FaceTarget
-			TNT1 A 0 A_JumpIfTargetInLOS("LoopCheck",150,JLOSF_DEADNOJUMP)
-			HL01 E 1
+			HL01 A 0 A_Playsound("Gargantua/FlameRun", CHAN_WEAPON, 1.0, TRUE)
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,54)
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,-54)
+			HL01 AB 1 A_FaceTarget
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,54)
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,-54)
+			HL01 CD 1 A_FaceTarget
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,54)
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,-54)
+			HL01 EA 1 A_FaceTarget
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,54)
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,-54)
+			HL01 BC 1 A_FaceTarget
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,54)
+			HL01 A 0 A_CustomMissile("GargFlameJet",64,-54)
+			HL01 DE 1 A_FaceTarget
+			HL01 A 0 A_JumpIfTargetInLOS("LoopCheck",150,JLOSF_DEADNOJUMP)
 			Goto MissileStop
 		LoopCheck:
-			TNT1 A 0 A_JumpIfCloser(512,"MissileLoop")
+			HL01 A 0 A_JumpIfCloser(512,"MissileLoop")
 		MissileStop:
-			TNT1 A 0 A_Stopsound(CHAN_WEAPON)
-			TNT1 A 0 A_Playsound("Gargantua/FlameOff", CHAN_WEAPON)
+			HL00 G 0 A_Stopsound(CHAN_WEAPON)
+			HL00 G 0 A_Playsound("Gargantua/FlameOff", CHAN_WEAPON)
 			HL00 GFEDCBA 2
+			HL12 A 0 A_ChangeFlag("NOPAIN",0)
 			Goto SeeLoop
 		ShockWave:
 			HL10 ABCDEFGHI 4 A_FaceTarget
-			TNT1 A 0 A_CustomMissile("GargantuaShockwave",0)
+			HL10 J 0 A_CustomMissile("GargantuaShockwave",0)
 			HL10 J 2 A_CustomMeleeAttack((500),"HLZombie/Claw","Gargantua/Stomp")
 			HL10 K 10
+			HL12 A 0 A_ChangeFlag("NOPAIN",0)
 			Goto SeeLoop		
 		Pain:
-			TNT1 A 0 A_Stopsound(CHAN_WEAPON)
-			TNT1 A 0 A_Pain
+			HL11 A 0 A_Stopsound(CHAN_WEAPON)
+			HL11 A 0 A_Pain
 			HL11 ABCDEF 2
 			Goto SeeLoop
 		Melee:
-			TNT1 A 0 A_PlaySound("Gargantua/Attack",6)
-			TNT1 A 0 A_Jump(128,"Melee2","Melee3")
+			HL07 A 0 A_ChangeFlag("NOPAIN",1)
+			HL07 A 0 A_PlaySound("Gargantua/Attack",6)
+			HL07 A 0 A_Jump(128,"Melee2","Melee3")
 			HL07 ABCDEFGHI 2 A_FaceTarget
 			HL07 J 2 A_CustomMeleeAttack((5*Random(5,10)),"HLZombie/Claw","HLZombie/Miss")
 			HL07 KLMNOPQRS 2
+			HL12 A 0 A_ChangeFlag("NOPAIN",0)
 			Goto SeeLoop
 		Melee2:
 			HL08 ABC 4 A_FaceTarget
-			TNT1 A 0 A_CustomMeleeAttack((5*Random(2,5)),"HLZombie/Claw","Gargantua/Step2")
-			HL08 DEFGHIJ 2 A_FaceTarget
-			TNT1 A 0 A_CustomMeleeAttack((10*Random(10,50)),"HLZombie/Claw","HLZombie/Miss")			
-			HL08 KLMNOPQRSTUV 2
+			HL08 D 2 A_CustomMeleeAttack((5*Random(2,5)),"HLZombie/Claw","Gargantua/Step2")
+			HL08 EFGHIJ 2 A_FaceTarget
+			HL08 K 2 A_CustomMeleeAttack((10*Random(10,50)),"HLZombie/Claw","HLZombie/Miss")			
+			HL08 LMNOPQRSTUV 2
+			HL12 A 0 A_ChangeFlag("NOPAIN",0)
 			Goto SeeLoop			
 		Melee3:
 			HL09 ABCD 4 A_FaceTarget
 			HL09 E 2 A_CustomMeleeAttack((10*Random(30,8)),"HLZombie/Claw","HLZombie/Miss")
 			HL09 FGHIJK 2
+			HL12 A 0 A_ChangeFlag("NOPAIN",0)
 			Goto SeeLoop
 		Death.HLLaser:
 		Death.HLExplosive:
@@ -206,14 +226,14 @@ Actor Gargantua : SamsaraMonsterAlienBoss {
 			TNT1 A 0 A_NoBlocking			
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_KillMaster
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoom",random(-32,32),random(-32,32),0,0,0,0,0,SXF_NOCHECKPOSITION)
 			HL02 ABC 10
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
-			HL02 DEF 10
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
-			HL02 GH 10
-			"####" "#####" 1 A_SetScale(scalex+0.1,scaley)
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			HL02 D 10 A_SpawnItemEx("HLMegaExplosionBoom",random(-32,32),random(-32,32),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			HL02 EF 10
+			HL02 G 10 A_SpawnItemEx("HLMegaExplosionBoom",random(-32,32),random(-32,32),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			HL02 H 10
+			HL02 HHHHHHHHHH 1 A_SetScale(scalex+0.08,scaley)
+			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoom",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
 			TNT1 A 0 A_SpawnItemEx("HLAlienGibSpawner",-16,16,0,0,0,0,0,0)
 			TNT1 A 0 A_SpawnItemEx("HLAlienGibSpawner",-16,-16,0,0,0,0,0,0)
@@ -232,14 +252,14 @@ Actor Gargantua : SamsaraMonsterAlienBoss {
 			TNT1 A 0 A_NoBlocking			
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_KillMaster
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoom",random(-32,32),random(-32,32),0,0,0,0,0,SXF_NOCHECKPOSITION)
 			HL02 ABC 10
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
-			HL02 DEF 10
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
-			HL02 GH 10
-			"####" "#####" 1 A_SetScale(scalex+0.1,scaley)
-			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoomDamage",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			HL02 D 10 A_SpawnItemEx("HLMegaExplosionBoom",random(-32,32),random(-32,32),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			HL02 EF 10
+			HL02 G 10 A_SpawnItemEx("HLMegaExplosionBoom",random(-32,32),random(-32,32),0,0,0,0,0,SXF_NOCHECKPOSITION)
+			HL02 H 10
+			HL02 HHHHHHHHHH 1 A_SetScale(scalex+0.08,scaley)
+			TNT1 A 0 A_SpawnItemEx("HLMegaExplosionBoom",random(-24,24),random(-24,24),0,0,0,0,0,SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("HLAlienGibSpawner",-16,16,0,0,0,0,0,0)
 			TNT1 A 0 A_SpawnItemEx("HLAlienGibSpawner",-16,-16,0,0,0,0,0,0)
 			TNT1 A 0 A_SpawnItemEx("HLAlienGibSpawner",16,-16,0,0,0,0,0,0)
@@ -324,7 +344,7 @@ Actor GargFlameJet
 	Projectile
 	Radius 4
 	Height 4
-	Damage (random(8,12))
+	Damage (random(4,8))
 	Speed 64
 	scale 0.75
 	DamageType Fire
