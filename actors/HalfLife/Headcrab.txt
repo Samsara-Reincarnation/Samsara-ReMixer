@@ -27,6 +27,8 @@ Actor Headcrab : SamsaraMonsterAlien
 	AttackSound "headcrab/hit"
 	BloodColor "Khaki"
 	BloodType "HalfLifeAlienBlood"
+	DamageFactor "GonarchMortar", 0	
+	PainChance "GonarchMortar", 0
 	PainChance "ShrinkerDMG", 0
 	PainChance "MightyBoot", 255
 	PainChance "MarathonStun", 255
