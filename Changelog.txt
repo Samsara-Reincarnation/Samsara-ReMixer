@@ -41,6 +41,7 @@ Wolfenstein 3D:
 
 * Fixed Gretel Grosse using the wrong monster base.
 * Fixed the Angel of Death going to the wrong see state after firing.
+* Fixed Barnacle Wilhelm's entry showing in the Lost Episodes Compendium category.
 
 -Lost Episodes-
 
