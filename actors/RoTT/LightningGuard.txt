@@ -316,7 +316,7 @@ ACTOR LightningGuard : RoTTHumanoid {
 	Burn:		
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("BurningSkeleton")	
-		TNT1 A 2 A_NoBlocking
+		TNT1 A 5 A_NoBlocking
 	    Stop
 	Death.RottExplosive:
 		TNT1 A 0 A_JumpIfHealthLower(-3,"XDeathForROTT")
@@ -333,7 +333,7 @@ ACTOR LightningGuard : RoTTHumanoid {
 		TNT1 A 0 A_Jump(128, 2)
 		TNT1 A 0 A_GiveToTarget("LudicrousGibsItem", 1)
 		TNT1 AA 0
-		TNT1 A 2 A_NoBlocking
+		TNT1 A 5 A_NoBlocking
 	   Stop
 	Pain.ShrinkerDMG:
 		LIGP A 0
@@ -1637,7 +1637,7 @@ ACTOR LightningGuardAlt : LightningGuard {
 	Burn:		
 		TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 		TNT1 A 0 A_SpawnItem("BurningSkeleton")	
-		TNT1 A 2 A_NoBlocking
+		TNT1 A 5 A_NoBlocking
 	    Stop
 	Death.RottExplosive:
 		TNT1 A 0 A_JumpIfHealthLower(-3,"XDeathForROTT")
@@ -1654,7 +1654,7 @@ ACTOR LightningGuardAlt : LightningGuard {
 		TNT1 A 0 A_Jump(128, 2)
 		TNT1 A 0 A_GiveToTarget("LudicrousGibsItem", 1)
 		TNT1 AA 0
-		TNT1 A 2 A_NoBlocking
+		TNT1 A 5 A_NoBlocking
 	   Stop		  
 	Pain.ShrinkerDMG:
 		LIGP A 0
