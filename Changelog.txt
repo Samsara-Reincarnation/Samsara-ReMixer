@@ -108,13 +108,13 @@ Half-Life:
 + The gonarch and gargantua now have NOPAIN during their attack states.
 ! A ceiling check has been added for the gonarch's mortar and jump attacks.
 - The gonarch's mortar attack no longer deals direct damage (decreased from 16-32 in multiples of 16).
-+ The gonarch's mortar attack now deals 50 splash damage in a radius of 192 map units (increased from 6-14 in a radius of 119-161 map units).
++ The gonarch's mortar attack now deals 50 splash damage in a radius of 192 map units (increased from 6-14 splash damage in a radius of 119-161 map units).
 + The gonarch's melee attack is now called twice as quickly.
 ! The gonarch now makes a sound when using its melee attack.
 ! The gonarch's death animation is now more accurate to Half-Life, and it also spawns 10 baby headcrabs.
 ! The baby headcrab now has a speed of 6 (decreased from 8), but calls A_Chase way more frequently.
 * Fixed the baby headcrab not having sounds.
-! The Apache now has a speed of 25, but calls A_Chase less frequently to accommodate for its fixed model interpolation.
+! The Apache now has a speed of 25 (increased from 15), but calls A_Chase less frequently to accommodate for its fixed model interpolation.
 + The gargantua now has a speed of 20 (increased from 14).
 ! The gargantua now has a scale of 0.8x (increased from 0.75x).
 + The gargantua's flame attack is now called five times in a burst separated by 2 tics (increased from one time separated by 5 tics).
