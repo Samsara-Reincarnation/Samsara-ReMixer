@@ -1,0 +1,17 @@
+/*Reserved frames
+
+Standing = A
+Walking = B-E
+Running = F-I
+Shooting = J-N
+Pain = O
+Melee = P-R
+Dynamite = S
+Crouching = T-U
+StrafeLeft = V-W
+StrafeRight = X-Y
+
+Death Animations typically have 5 for the first 5, and 6 each for the last 2.
+We typically put those in a separate sprite name.
+
+*/

@@ -879,6 +879,9 @@
 #include "Actors/Catacomb/Mixer_Apocalypse.txt"
 #include "Actors/Catacomb/Mixer_Hovertank3D.txt"
 
+// Outlaws
+#include "Actors/Outlaws/Core.txt"
+
 // Other stuff
 #include "actors/Naraka.txt"
 #include "actors/ReMixerAmmoPickups.txt"
