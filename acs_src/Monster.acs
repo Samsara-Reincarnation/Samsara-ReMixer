@@ -672,6 +672,7 @@ Script "ReMixer_Korax" (void)
 #include "m_sw.acs"
 #include "m_vdr.acs"
 #include "m_painkiller.acs"
+#include "m_outlaws.acs"
 
 //I have no idea why we need this. A major lag spikes occurs without this array being defined anymore, for mysterious reasons
 Str FuckYou[12][128] = 

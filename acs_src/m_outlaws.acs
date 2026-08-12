@@ -1,0 +1,4 @@
+Script "Outlaws_EnemySpeed" (int speed)
+{
+	SetActorProperty(0,APROP_Speed,speed*1.0);
+}
