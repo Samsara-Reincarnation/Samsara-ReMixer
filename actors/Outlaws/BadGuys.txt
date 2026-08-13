@@ -1,0 +1,260 @@
+Actor Outlaws_Enemy_BadGuy1 : OutlawsEnemyCore
+{
+	Health 30
+	DeathSound "Outlaws/BadGuy1/Death1"
+	PainSound "Outlaws/BadGuy1/Pain1"
+	SeeSound "Outlaws/BadGuy1/Alert"
+	States
+	{
+		Spawn:
+			OL20 A 0 
+			OL20 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL20 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL20 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",1)
+			OL20 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",5)
+			OL20 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL20 A 0 A_GiveInventory("Outlaws_Enemy_ID",1)
+			Goto Super::Spawn
+		Death:
+			OL21 A 0 A_Scream
+			OL21 A 0 A_NoBlocking
+			Goto Super::Death
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy2 : OutlawsEnemyCore
+{
+	Health 30
+	DeathSound "Outlaws/BadGuy2/Death1"
+	PainSound "Outlaws/BadGuy2/Pain1"
+	SeeSound "Outlaws/BadGuy2/Alert"
+	States
+	{
+		Spawn:
+			OL22 A 0 
+			OL22 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL22 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL22 A 0 A_GiveInventory("Outlaws_Enemy_AllowDynamite")
+			OL22 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",1)
+			OL22 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",5)
+			OL22 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL22 A 0 A_GiveInventory("Outlaws_Enemy_ID",2)
+			Goto Super::Spawn
+		Death:
+			OL23 A 0 A_Scream
+			OL23 A 0 A_NoBlocking
+			Goto Super::Death
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy3 : OutlawsEnemyCore
+{
+	Health 30
+	DeathSound "Outlaws/BadGuy3/Death1"
+	PainSound "Outlaws/BadGuy3/Pain1"
+	SeeSound "Outlaws/BadGuy3/Alert"
+	States
+	{
+		Spawn:
+			OL24 A 0 
+			OL24 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL24 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL24 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",1)
+			OL24 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",5)
+			OL24 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL24 A 0 A_GiveInventory("Outlaws_Enemy_ID",3)
+			Goto Super::Spawn
+		Death:
+			OL25 A 0 A_Scream
+			OL25 A 0 A_NoBlocking
+			Goto Super::Death
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy4 : OutlawsEnemyCore
+{
+	Health 60
+	DeathSound "Outlaws/BadGuy4/Death1"
+	PainSound "Outlaws/BadGuy4/Pain1"
+	SeeSound "Outlaws/BadGuy4/Alert"
+	States
+	{
+		Spawn:
+			OL26 A 0 
+			OL26 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL26 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL26 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",2)
+			OL26 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",4)
+			OL26 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL26 A 0 A_GiveInventory("Outlaws_Enemy_ID",4)
+			Goto Super::Spawn
+		Death:
+			OL27 A 0 A_Scream
+			OL27 A 0 A_NoBlocking
+		DeathJump:
+			"####" "#" 0 A_Jump(256,"Death1","Death2","Death3")
+		Death1:
+			"####" ABCD 4
+			"####" E -1
+			Stop
+		Death2:
+			"####" FGHIJ 4
+			"####" K -1
+			Stop
+		Death3:
+			"####" LMNO 4
+			"####" P -1
+			Stop
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy5 : OutlawsEnemyCore
+{
+	Health 60
+	DeathSound "Outlaws/BadGuy5/Death1"
+	PainSound "Outlaws/BadGuy5/Pain1"
+	SeeSound "Outlaws/BadGuy5/Alert"
+	States
+	{
+		Spawn:
+			OL28 A 0 
+			OL28 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL28 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL28 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",2)
+			OL28 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",4)
+			OL28 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL28 A 0 A_GiveInventory("Outlaws_Enemy_ID",5)
+			Goto Super::Spawn
+		Death:
+			OL29 A 0 A_Scream
+			OL29 A 0 A_NoBlocking
+		DeathJump:
+			"####" "#" 0 A_Jump(256,"Death1","Death2","Death3")
+		Death1:
+			"####" ABCD 4
+			"####" E -1
+			Stop
+		Death2:
+			"####" FGHIJ 4
+			"####" K -1
+			Stop
+		Death3:
+			"####" LMNO 4
+			"####" P -1
+			Stop
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy6 : OutlawsEnemyCore
+{
+	Health 60
+	DeathSound "Outlaws/BadGuy6/Death1"
+	PainSound "Outlaws/BadGuy6/Pain1"
+	SeeSound "Outlaws/BadGuy6/Alert"
+	States
+	{
+		Spawn:
+			OL30 A 0 
+			OL30 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL30 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL30 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",2)
+			OL30 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",4)
+			OL30 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL30 A 0 A_GiveInventory("Outlaws_Enemy_ID",6)
+			Goto Super::Spawn
+		Death:
+			OL31 A 0 A_Scream
+			OL31 A 0 A_NoBlocking
+		DeathJump:
+			"####" "#" 0 A_Jump(256,"Death1","Death2","Death3")
+		Death1:
+			"####" ABCD 4
+			"####" E -1
+			Stop
+		Death2:
+			"####" FGHIJ 4
+			"####" K -1
+			Stop
+		Death3:
+			"####" LMNO 4
+			"####" P -1
+			Stop
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy7 : OutlawsEnemyCore
+{
+	Health 100
+	DeathSound "Outlaws/BadGuy7/Death1"
+	PainSound "Outlaws/BadGuy7/Pain1"
+	SeeSound "Outlaws/BadGuy7/Alert"
+	States
+	{
+		Spawn:
+			OL32 A 0 
+			OL32 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL32 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",1)
+			OL32 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL32 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL32 A 0 A_GiveInventory("Outlaws_Enemy_ID",7)
+			Goto Super::Spawn
+		Death:
+			OL32 P 0 A_Scream
+			OL32 P 0 A_NoBlocking
+			OL32 PQRST 4
+			OL32 U -1
+			Stop
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy8 : OutlawsEnemyCore
+{
+	Health 100
+	DeathSound "Outlaws/BadGuy8/Death1"
+	PainSound "Outlaws/BadGuy8/Pain1"
+	SeeSound "Outlaws/BadGuy8/Alert"
+	States
+	{
+		Spawn:
+			OL33 A 0 
+			OL33 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL33 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",1)
+			OL33 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL33 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL33 A 0 A_GiveInventory("Outlaws_Enemy_ID",8)
+			Goto Super::Spawn
+		Death:
+			OL33 P 0 A_Scream
+			OL33 P 0 A_NoBlocking
+			OL33 PQRST 4
+			OL33 U -1
+			Stop
+	}
+}
+
+Actor Outlaws_Enemy_BadGuy9 : OutlawsEnemyCore
+{
+	Health 100
+	DeathSound "Outlaws/BadGuy1/Death1"
+	PainSound "Outlaws/BadGuy1/Pain1"
+	SeeSound "Outlaws/BadGuy1/Alert"
+	States
+	{
+		Spawn:
+			OL34 A 0 
+			OL34 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL34 A 0 A_GiveInventory("Outlaws_Enemy_StrafeType",1)
+			OL34 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL34 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL34 A 0 A_GiveInventory("Outlaws_Enemy_ID",9)
+			Goto Super::Spawn
+		Death:
+			OL34 P 0 A_Scream
+			OL34 P 0 A_NoBlocking
+			OL34 PQRST 4
+			OL34 U -1
+			Stop
+	}
+}
+
+

@@ -881,7 +881,7 @@
 
 // Outlaws
 #include "Actors/Outlaws/Core.txt"
-#include "Actors/Outlaws/SkinnyBadGuys.txt"
+#include "Actors/Outlaws/BadGuys.txt"
 
 // Other stuff
 #include "actors/Naraka.txt"
