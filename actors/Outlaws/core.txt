@@ -8,8 +8,8 @@ Pain = O
 Melee = P-R
 Dynamite = S-T
 Crouching = U-V
-StrafeLeft = W-X
-StrafeRight = Y-Z
+StrafeRun = W-X
+StrafeWalk = Y-Z
 
 Death Animations typically have 5 for the first 5, and 6 each for the last 2.
 We typically put those in a separate sprite name.
@@ -106,16 +106,16 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
 			"####" S 12 Bright //Do attack stuff
 			Goto See
 		DoStrafe:
-			"####" "#" 0 A_Jump(256,"StrafeLeft","StrafeRight")
-		StrafeLeft:
-			"####" V 4 A_ChangeVelocity(0,-2,0,CVF_RELATIVE|CVF_REPLACE)
-			"####" W 0 A_GiveInventory("Outlaws_EnemyPrimary")
-			"####" W 4 Bright A_ChangeVelocity(0,-2,0,CVF_RELATIVE|CVF_REPLACE)
+			"####" "#" 0 A_Jump(256,"StrafeRun","StrafeWalk")
+		StrafeRun:
+			"####" W 4 A_ChangeVelocity(0,2,0,CVF_RELATIVE|CVF_REPLACE)
+			"####" X 0 A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" X 4 Bright A_ChangeVelocity(0,2,0,CVF_RELATIVE|CVF_REPLACE)
 			Goto See
-		StrafeRight:
-			"####" X 4 A_ChangeVelocity(0,2,0,CVF_RELATIVE|CVF_REPLACE)
-			"####" Y 0 A_GiveInventory("Outlaws_EnemyPrimary")
-			"####" Y 4 Bright A_ChangeVelocity(0,2,0,CVF_RELATIVE|CVF_REPLACE)
+		StrafeWalk:
+			"####" Y 4 A_ChangeVelocity(0,1,0,CVF_RELATIVE|CVF_REPLACE)
+			"####" Z 0 A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" Z 4 Bright A_ChangeVelocity(0,1,0,CVF_RELATIVE|CVF_REPLACE)
 			Goto See
 			
 		//Pain state
@@ -188,12 +188,12 @@ Actor Outlaws_PlayTaunt : Trigger
 		NOLOS:
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",1,"NOLOSSkinnyGuy1")
 		NOLOSSkinnyGuy1:
-			TNT1 A 0 A_PlaySound("Outlaws/SkinnyBadGuy/NOLOS",CHAN_VOICE)
+			TNT1 A 0 A_PlaySound("Outlaws/BadGuy1/NOLOS",CHAN_VOICE)
 			Stop
 		InLOS:
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",1,"LOSSkinnyGuy1")
 		LOSSkinnyGuy1:
-			TNT1 A 0 A_PlaySound("Outlaws/SkinnyBadGuy/LOS",CHAN_VOICE)
+			TNT1 A 0 A_PlaySound("Outlaws/BadGuy1/LOS",CHAN_VOICE)
 			Stop
 		UseFail:
 			TNT1 A 0 A_TakeInventory("Outlaws_Enemy_TauntDelay",1)

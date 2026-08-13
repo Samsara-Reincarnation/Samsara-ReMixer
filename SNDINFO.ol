@@ -29,9 +29,9 @@ Outlaws/Enemy/C153		"Sounds/Outlaws/outlaws_c153.wav"
 Outlaws/Enemy/C154		"Sounds/Outlaws/outlaws_c154.wav"
 Outlaws/Enemy/C155		"Sounds/Outlaws/outlaws_c155.wav"
 
-$random Outlaws/SkinnyBadGuy/Alert { Outlaws/Enemy/C105 Outlaws/Enemy/C109 Outlaws/Enemy/C113 }
-$random Outlaws/SkinnyBadGuy/LOS { Outlaws/Enemy/C105 Outlaws/Enemy/C117 Outlaws/Enemy/C115 Outlaws/Enemy/C107 Outlaws/Enemy/C109 Outlaws/Enemy/C113 }
-$random Outlaws/SkinnyBadGuy/NOLOS { Outlaws/Enemy/C106 Outlaws/Enemy/C108 Outlaws/Enemy/C110 Outlaws/Enemy/C121 }
+$random Outlaws/BadGuy1/Alert { Outlaws/Enemy/C105 Outlaws/Enemy/C109 Outlaws/Enemy/C113 }
+$random Outlaws/BadGuy1/LOS { Outlaws/Enemy/C105 Outlaws/Enemy/C117 Outlaws/Enemy/C115 Outlaws/Enemy/C107 Outlaws/Enemy/C109 Outlaws/Enemy/C113 }
+$random Outlaws/BadGuy1/NOLOS { Outlaws/Enemy/C106 Outlaws/Enemy/C108 Outlaws/Enemy/C110 Outlaws/Enemy/C121 }
 
-Outlaws/SkinnyBadGuy/Death1		"Sounds/Outlaws/outlaws_bgy1die.WAV"
-Outlaws/SkinnyBadGuy/Pain1		"Sounds/Outlaws/outlaws_bgy1hit.WAV"
+Outlaws/BadGuy1/Death1		"Sounds/Outlaws/outlaws_bgy1die.WAV"
+Outlaws/BadGuy1/Pain1		"Sounds/Outlaws/outlaws_bgy1hit.WAV"

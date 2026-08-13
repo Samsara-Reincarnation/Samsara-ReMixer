@@ -1,9 +1,9 @@
-Actor Outlaws_Enemy_SkinnyBadGuy1 : OutlawsEnemyCore
+Actor Outlaws_Enemy_BadGuy1 : OutlawsEnemyCore
 {
 	Health 20
-	DeathSound "Outlaws/SkinnyBadGuy/Death1"
-	PainSound "Outlaws/SkinnyBadGuy/Pain1"
-	SeeSound "Outlaws/SkinnyBadGuy/Alert"
+	DeathSound "Outlaws/BadGuy1/Death1"
+	PainSound "Outlaws/BadGuy1/Pain1"
+	SeeSound "Outlaws/BadGuy1/Alert"
 	States
 	{
 		Spawn:
