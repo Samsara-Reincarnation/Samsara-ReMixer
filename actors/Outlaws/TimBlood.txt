@@ -1,18 +1,19 @@
 Actor Outlaws_Enemy_TimBlood : OutlawsEnemyCore
 {
-	Health 20
-	DeathSound "Outlaws/BadGuy1/Death1"
-	PainSound "Outlaws/BadGuy1/Pain1"
-	SeeSound "Outlaws/BadGuy1/Alert"
+	Health 250
+	DeathSound "Outlaws/BadGuy6/Death1"
+	PainSound "Outlaws/BadGuy5/Pain1"
+	SeeSound "Outlaws/TimBlood/Taunt"
 	States
 	{
 		Spawn:
 			OL40 A 0 
+			OL40 A 0 A_SetUserVar("user_speed",6)
 			OL40 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
 			OL40 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL40 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
 			OL40 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
-			OL40 A 0 A_GiveInventory("Outlaws_Enemy_ID",1)
+			OL40 A 0 A_GiveInventory("Outlaws_Enemy_ID",12)
 			Goto Super::Spawn
 		Death:
 			OL41 ABCD 4

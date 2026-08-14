@@ -291,3 +291,19 @@ $random Outlaws/BadGuy8/NOLOS { Outlaws/Enemy/C801 Outlaws/Enemy/C804 Outlaws/En
 
 Outlaws/BadGuy8/Death1		"Sounds/Outlaws/outlaws_bgy2die.WAV"
 Outlaws/BadGuy8/Pain1		"Sounds/Outlaws/outlaws_bgy2hit.WAV"
+
+Outlaws/Sanchez1			"Sounds/Outlaws/outlaws_sz01.wav"
+Outlaws/Sanchez2			"Sounds/Outlaws/outlaws_sz02.wav"
+Outlaws/Sanchez3			"Sounds/Outlaws/outlaws_sz03.wav"
+Outlaws/Sanchez4			"Sounds/Outlaws/outlaws_sz04.wav"
+Outlaws/Sanchez5			"Sounds/Outlaws/outlaws_sz05.wav"
+$random Outlaws/Sanchez/Taunt { Outlaws/Sanchez1 Outlaws/Sanchez2 Outlaws/Sanchez3 Outlaws/Sanchez4 Outlaws/Sanchez5 }
+
+Outlaws/Sanchez/Death			"Sounds/Outlaws/outlaws_szdie.wav"
+
+Outlaws/TimBlood1			"Sounds/Outlaws/outlaws_tb01.wav"
+Outlaws/TimBlood2			"Sounds/Outlaws/outlaws_tb02.wav"
+Outlaws/TimBlood3			"Sounds/Outlaws/outlaws_tb03.wav"
+Outlaws/TimBlood4			"Sounds/Outlaws/outlaws_tb04.wav"
+Outlaws/TimBlood5			"Sounds/Outlaws/outlaws_tb05.wav"
+$random Outlaws/TimBlood/Taunt { Outlaws/TimBlood1 Outlaws/TimBlood2 Outlaws/TimBlood3 Outlaws/TimBlood4 Outlaws/TimBlood5 }

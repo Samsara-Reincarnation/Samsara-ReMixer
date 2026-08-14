@@ -1,0 +1,24 @@
+Actor Outlaws_Enemy_Sanchez : OutlawsEnemyCore
+{
+	Health 280
+	DeathSound "Outlaws/Sanchez/Death"
+	PainSound "Outlaws/BadGuy2/Pain1"
+	States
+	{
+		Spawn:
+			OL37 A 0 
+			OL37 A 0 A_SetUserVar("user_speed",10)
+			OL37 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL37 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL37 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL37 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL37 A 0 A_GiveInventory("Outlaws_Enemy_ID",11)
+			Goto Super::Spawn
+		Death:
+			OL38 A 0 A_Scream
+			OL38 A 0 A_NoBlocking
+			OL38 ABCDEFGHI 4
+			OL38 J -1
+			Stop
+	}
+}
