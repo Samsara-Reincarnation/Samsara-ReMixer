@@ -89,6 +89,7 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_AllowDynamite",1,"Dynamite")
 			"####" "#" 0 A_Jump(224,2)
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_StrafeBehavior",1,"DoStrafe")
+			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",6,"Fire2FramesDual")
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",5,"Fire5Frames")
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",4,"Fire4Frames")
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",3,"Fire3Frames")
@@ -108,6 +109,10 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
 		Fire5Frames:
 			"####" JKLM 4 Bright A_FaceTarget
 			"####" N 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
+			Goto See
+		Fire2FramesDual:
+			"####" J 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" K 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
 			Goto See
 		Melee:
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_AllowMelee",1,1)
@@ -206,9 +211,11 @@ Actor Outlaws_EnemyPrimary : Trigger
 	States
 	{
 		Pickup:
-			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",12,"AttackBadTimBloodPistol")
-			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",11,"AttackBadSanchezPistol")
-			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",10,"AttackBadSlimRifle")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"AttackSlimRifle")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",13,"AttackDickFarmPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",12,"AttackTimBloodPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",11,"AttackSanchezPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",10,"AttackSlimRifle")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",9,"AttackBadGuyShotgun")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",7,"AttackBadGuyRifle")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",1,"AttackBadGuyPistol")
@@ -228,20 +235,25 @@ Actor Outlaws_EnemyPrimary : Trigger
 			TNT1 A 0 A_PlaySound("Outlaws/Rifle/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomBulletAttack(20,20,1,15,"OutlawsPuff")
 			Stop
-		AttackBadSlimRifle:
+		AttackSlimRifle:
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_PlaySound("Outlaws/Cannon/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomBulletAttack(10,10,1,20,"OutlawsPuff")
 			Stop
-		AttackBadSanchezPistol:
+		AttackSanchezPistol:
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_PlaySound("Outlaws/Cannon/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomBulletAttack(20,20,1,20,"OutlawsPuff")
 			Stop
-		AttackBadTimBloodPistol:
+		AttackTimBloodPistol:
 			TNT1 A 0 A_FaceTarget
 			TNT1 A 0 A_PlaySound("Outlaws/Cannon/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomBulletAttack(25,25,2,20,"OutlawsPuff")
+			Stop
+		AttackDickFarmPistol:
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_PlaySound("Outlaws/Cannon/Fire",CHAN_WEAPON)
+			TNT1 A 0 A_CustomBulletAttack(25,25,1,20,"OutlawsPuff")
 			Stop
 	}
 }
@@ -311,6 +323,8 @@ Actor Outlaws_PlayTaunt : Trigger
 			TNT1 A 0 A_JumpIfTargetInLOS("InLOS",0,JLOSF_DEADNOJUMP)
 			Goto NOLOS
 		NOLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"NOLOSHenry")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",13,"NOLOSDickFarm")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",12,"NOLOSTimBlood")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",11,"NOLOSSanchez")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",10,"UseFail")
@@ -353,7 +367,15 @@ Actor Outlaws_PlayTaunt : Trigger
 		NOLOSTimBlood:
 			TNT1 A 0 A_PlaySound("Outlaws/TimBlood/Taunt",CHAN_VOICE)
 			Stop
+		NOLOSDickFarm:
+			TNT1 A 0 A_PlaySound("Outlaws/DickFarm/Taunt",CHAN_VOICE)
+			Stop
+		NOLOSHenry:
+			TNT1 A 0 A_PlaySound("Outlaws/Henry/Taunt",CHAN_VOICE)
+			Stop
 		InLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"NOLOSHenry")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",13,"NOLOSDickFarm")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",12,"NOLOSTimBlood")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",11,"NOLOSSanchez")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",10,"UseFail")

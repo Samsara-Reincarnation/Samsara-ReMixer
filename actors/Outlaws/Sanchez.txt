@@ -10,7 +10,7 @@ Actor Outlaws_Enemy_Sanchez : OutlawsEnemyCore
 			OL37 A 0 A_SetUserVar("user_speed",10)
 			OL37 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
 			OL37 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
-			OL37 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL37 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",6)
 			OL37 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL37 A 0 A_GiveInventory("Outlaws_Enemy_ID",11)
 			Goto Super::Spawn

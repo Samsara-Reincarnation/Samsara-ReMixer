@@ -1,0 +1,24 @@
+//No, it's not what you think...
+Actor Outlaws_Enemy_DickFarm : OutlawsEnemyCore
+{
+	Health 250
+	DeathSound "Outlaws/BadGuy6/Death1"
+	PainSound "Outlaws/BadGuy5/Pain1"
+	SeeSound "Outlaws/DickFarm/Taunt"
+	States
+	{
+		Spawn:
+			OL42 A 0 
+			OL42 A 0 A_SetUserVar("user_speed",6)
+			OL42 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL42 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL42 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",6)
+			OL42 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL42 A 0 A_GiveInventory("Outlaws_Enemy_ID",13)
+			Goto Super::Spawn
+		Death:
+			OL43 ABCD 4
+			OL43 E -1
+			Stop
+	}
+}

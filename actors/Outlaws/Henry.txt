@@ -1,0 +1,21 @@
+Actor Outlaws_Enemy_Henry : OutlawsEnemyCore
+{
+	Health 300
+	DeathSound "Outlaws/BadGuy1/Death1"
+	PainSound "Outlaws/BadGuy1/Pain1"
+	SeeSound "Outlaws/Henry/Taunt"
+	States
+	{
+		Spawn:
+			OL39 A 0 
+			OL39 A 0 A_SetUserVar("user_speed",0)
+			OL39 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL39 A 0 A_GiveInventory("Outlaws_Enemy_ID",14)
+			Goto Super::Spawn
+		Death:
+			TNT1 A 0 A_Scream
+			TNT1 A 0 A_NoBlocking
+			TNT1 A 1 //Not using -1 because I don't want him to reanimate when resurrected. Then again, him just disappearing is already weird. Nothing I can do
+			Stop
+	}
+}

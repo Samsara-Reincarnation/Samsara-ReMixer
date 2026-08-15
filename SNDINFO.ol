@@ -307,3 +307,17 @@ Outlaws/TimBlood3			"Sounds/Outlaws/outlaws_tb03.wav"
 Outlaws/TimBlood4			"Sounds/Outlaws/outlaws_tb04.wav"
 Outlaws/TimBlood5			"Sounds/Outlaws/outlaws_tb05.wav"
 $random Outlaws/TimBlood/Taunt { Outlaws/TimBlood1 Outlaws/TimBlood2 Outlaws/TimBlood3 Outlaws/TimBlood4 Outlaws/TimBlood5 }
+
+Outlaws/DickFarm1			"Sounds/Outlaws/outlaws_fa01.wav"
+Outlaws/DickFarm2			"Sounds/Outlaws/outlaws_fa02.wav"
+Outlaws/DickFarm3			"Sounds/Outlaws/outlaws_fa03.wav"
+Outlaws/DickFarm4			"Sounds/Outlaws/outlaws_fa04.wav"
+Outlaws/DickFarm5			"Sounds/Outlaws/outlaws_fa05.wav"
+$random Outlaws/DickFarm/Taunt { Outlaws/DickFarm1 Outlaws/DickFarm2 Outlaws/DickFarm3 Outlaws/DickFarm4 Outlaws/DickFarm5 }
+
+Outlaws/Henry1			"Sounds/Outlaws/outlaws_bw01.wav"
+Outlaws/Henry2			"Sounds/Outlaws/outlaws_bw02.wav"
+Outlaws/Henry3			"Sounds/Outlaws/outlaws_bw03.wav"
+Outlaws/Henry4			"Sounds/Outlaws/outlaws_bw04.wav"
+Outlaws/Henry5			"Sounds/Outlaws/outlaws_bw05.wav"
+$random Outlaws/Henry/Taunt { Outlaws/Henry1 Outlaws/Henry2 Outlaws/Henry3 Outlaws/Henry4 Outlaws/Henry5 }
