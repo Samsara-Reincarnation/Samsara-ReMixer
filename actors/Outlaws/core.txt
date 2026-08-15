@@ -38,7 +38,6 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
 	Mass 30
 	XScale 0.67
 	YScale 0.55833
-	Speed 6
 	Monster
 	Painchance 128
 	var int user_speed;
@@ -181,7 +180,7 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
 			"####" T 16
 			Goto UnCrouch
 		Crouch2:
-			"####" TUTU 4
+			"####" TUTU 4 A_Chase("","")
 			Goto UnCrouch
 		UnCrouch:
 			"####" T 0 A_SetShootable
@@ -211,6 +210,8 @@ Actor Outlaws_EnemyPrimary : Trigger
 	States
 	{
 		Pickup:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"AttackDickFarmPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",15,"AttackSlimRifle")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"AttackSlimRifle")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",13,"AttackDickFarmPistol")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",12,"AttackTimBloodPistol")
@@ -311,18 +312,20 @@ actor Outlaws_EnemyDynamiteProjectile : Outlaws_DynamiteProjectileTimed
     }
 }
 
-Actor Outlaws_Enemy_TauntDelay : TemporaryCounter { Inventory.MaxAmount 20 }
+Actor Outlaws_Enemy_TauntDelay : TemporaryCounter { Inventory.MaxAmount 15 }
 Actor Outlaws_PlayTaunt : Trigger
 {
 	States
 	{
 		Pickup:
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_TauntDelay",1,"UseFail")
-			TNT1 A 0 A_GiveInventory("Outlaws_Enemy_TauntDelay",20)
+			TNT1 A 0 A_GiveInventory("Outlaws_Enemy_TauntDelay",15)
 			TNT1 A 0 A_Jump(224,"UseFail")
 			TNT1 A 0 A_JumpIfTargetInLOS("InLOS",0,JLOSF_DEADNOJUMP)
 			Goto NOLOS
 		NOLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"NOLOSDrDeath")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",15,"NOLOSRussell")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"NOLOSHenry")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",13,"NOLOSDickFarm")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",12,"NOLOSTimBlood")
@@ -373,7 +376,15 @@ Actor Outlaws_PlayTaunt : Trigger
 		NOLOSHenry:
 			TNT1 A 0 A_PlaySound("Outlaws/Henry/Taunt",CHAN_VOICE)
 			Stop
+		NOLOSRussell:
+			TNT1 A 0 A_PlaySound("Outlaws/Russell/Taunt",CHAN_VOICE)
+			Stop
+		NOLOSDrDeath:
+			TNT1 A 0 A_PlaySound("Outlaws/DrDeath/Taunt",CHAN_VOICE)
+			Stop
 		InLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"NOLOSDrDeath")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",15,"NOLOSRussell")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"NOLOSHenry")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",13,"NOLOSDickFarm")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",12,"NOLOSTimBlood")

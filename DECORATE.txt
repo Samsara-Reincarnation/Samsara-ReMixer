@@ -887,6 +887,8 @@
 #include "Actors/Outlaws/TimBlood.txt"
 #include "Actors/Outlaws/DickFarm.txt"
 #include "Actors/Outlaws/Henry.txt"
+#include "Actors/Outlaws/Russell.txt"
+#include "Actors/Outlaws/DrDeath.txt"
 
 // Other stuff
 #include "actors/Naraka.txt"

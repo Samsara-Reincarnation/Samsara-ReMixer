@@ -1,8 +1,8 @@
 Actor Outlaws_Enemy_Slim : OutlawsEnemyCore
 {
 	Health 200
-	DeathSound "Outlaws/BadGuy8/Death1"
-	PainSound "Outlaws/BadGuy3/Pain1"
+	DeathSound "Outlaws/BadGuy8/Death"
+	PainSound "Outlaws/BadGuy3/Pain"
 	States
 	{
 		Spawn:

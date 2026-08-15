@@ -1,8 +1,8 @@
 Actor Outlaws_Enemy_BadGuy1 : OutlawsEnemyCore
 {
 	Health 30
-	DeathSound "Outlaws/BadGuy1/Death1"
-	PainSound "Outlaws/BadGuy1/Pain1"
+	DeathSound "Outlaws/BadGuy1/Death"
+	PainSound "Outlaws/BadGuy1/Pain"
 	SeeSound "Outlaws/BadGuy1/Alert"
 	States
 	{
@@ -26,8 +26,8 @@ Actor Outlaws_Enemy_BadGuy1 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy2 : OutlawsEnemyCore
 {
 	Health 30
-	DeathSound "Outlaws/BadGuy2/Death1"
-	PainSound "Outlaws/BadGuy2/Pain1"
+	DeathSound "Outlaws/BadGuy2/Death"
+	PainSound "Outlaws/BadGuy2/Pain"
 	SeeSound "Outlaws/BadGuy2/Alert"
 	States
 	{
@@ -52,8 +52,8 @@ Actor Outlaws_Enemy_BadGuy2 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy3 : OutlawsEnemyCore
 {
 	Health 30
-	DeathSound "Outlaws/BadGuy3/Death1"
-	PainSound "Outlaws/BadGuy3/Pain1"
+	DeathSound "Outlaws/BadGuy3/Death"
+	PainSound "Outlaws/BadGuy3/Pain"
 	SeeSound "Outlaws/BadGuy3/Alert"
 	States
 	{
@@ -77,8 +77,8 @@ Actor Outlaws_Enemy_BadGuy3 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy4 : OutlawsEnemyCore
 {
 	Health 60
-	DeathSound "Outlaws/BadGuy4/Death1"
-	PainSound "Outlaws/BadGuy4/Pain1"
+	DeathSound "Outlaws/BadGuy4/Death"
+	PainSound "Outlaws/BadGuy4/Pain"
 	SeeSound "Outlaws/BadGuy4/Alert"
 	States
 	{
@@ -96,7 +96,7 @@ Actor Outlaws_Enemy_BadGuy4 : OutlawsEnemyCore
 			OL27 A 0 A_Scream
 			OL27 A 0 A_NoBlocking
 		DeathJump:
-			"####" "#" 0 A_Jump(256,"Death1","Death2","Death3")
+			"####" "#" 0 A_Jump(256,"Death","Death2","Death3")
 		Death1:
 			"####" ABCD 4
 			"####" E -1
@@ -115,8 +115,8 @@ Actor Outlaws_Enemy_BadGuy4 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy5 : OutlawsEnemyCore
 {
 	Health 60
-	DeathSound "Outlaws/BadGuy5/Death1"
-	PainSound "Outlaws/BadGuy5/Pain1"
+	DeathSound "Outlaws/BadGuy5/Death"
+	PainSound "Outlaws/BadGuy5/Pain"
 	SeeSound "Outlaws/BadGuy5/Alert"
 	States
 	{
@@ -134,7 +134,7 @@ Actor Outlaws_Enemy_BadGuy5 : OutlawsEnemyCore
 			OL29 A 0 A_Scream
 			OL29 A 0 A_NoBlocking
 		DeathJump:
-			"####" "#" 0 A_Jump(256,"Death1","Death2","Death3")
+			"####" "#" 0 A_Jump(256,"Death","Death2","Death3")
 		Death1:
 			"####" ABCD 4
 			"####" E -1
@@ -153,8 +153,8 @@ Actor Outlaws_Enemy_BadGuy5 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy6 : OutlawsEnemyCore
 {
 	Health 60
-	DeathSound "Outlaws/BadGuy6/Death1"
-	PainSound "Outlaws/BadGuy6/Pain1"
+	DeathSound "Outlaws/BadGuy6/Death"
+	PainSound "Outlaws/BadGuy6/Pain"
 	SeeSound "Outlaws/BadGuy6/Alert"
 	States
 	{
@@ -172,7 +172,7 @@ Actor Outlaws_Enemy_BadGuy6 : OutlawsEnemyCore
 			OL31 A 0 A_Scream
 			OL31 A 0 A_NoBlocking
 		DeathJump:
-			"####" "#" 0 A_Jump(256,"Death1","Death2","Death3")
+			"####" "#" 0 A_Jump(256,"Death","Death2","Death3")
 		Death1:
 			"####" ABCD 4
 			"####" E -1
@@ -191,8 +191,8 @@ Actor Outlaws_Enemy_BadGuy6 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy7 : OutlawsEnemyCore
 {
 	Health 100
-	DeathSound "Outlaws/BadGuy7/Death1"
-	PainSound "Outlaws/BadGuy7/Pain1"
+	DeathSound "Outlaws/BadGuy7/Death"
+	PainSound "Outlaws/BadGuy7/Pain"
 	SeeSound "Outlaws/BadGuy7/Alert"
 	States
 	{
@@ -217,8 +217,8 @@ Actor Outlaws_Enemy_BadGuy7 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy8 : OutlawsEnemyCore
 {
 	Health 100
-	DeathSound "Outlaws/BadGuy8/Death1"
-	PainSound "Outlaws/BadGuy8/Pain1"
+	DeathSound "Outlaws/BadGuy8/Death"
+	PainSound "Outlaws/BadGuy8/Pain"
 	SeeSound "Outlaws/BadGuy8/Alert"
 	States
 	{
@@ -243,8 +243,8 @@ Actor Outlaws_Enemy_BadGuy8 : OutlawsEnemyCore
 Actor Outlaws_Enemy_BadGuy9 : OutlawsEnemyCore
 {
 	Health 100
-	DeathSound "Outlaws/BadGuy1/Death1"
-	PainSound "Outlaws/BadGuy1/Pain1"
+	DeathSound "Outlaws/BadGuy1/Death"
+	PainSound "Outlaws/BadGuy1/Pain"
 	SeeSound "Outlaws/BadGuy1/Alert"
 	States
 	{

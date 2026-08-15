@@ -2,8 +2,8 @@
 Actor Outlaws_Enemy_DickFarm : OutlawsEnemyCore
 {
 	Health 250
-	DeathSound "Outlaws/BadGuy6/Death1"
-	PainSound "Outlaws/BadGuy5/Pain1"
+	DeathSound "Outlaws/BadGuy6/Death"
+	PainSound "Outlaws/BadGuy5/Pain"
 	SeeSound "Outlaws/DickFarm/Taunt"
 	States
 	{

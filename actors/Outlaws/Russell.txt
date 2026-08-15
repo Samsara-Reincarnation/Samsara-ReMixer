@@ -1,0 +1,23 @@
+Actor Outlaws_Enemy_Russell : OutlawsEnemyCore
+{
+	Health 250
+	DeathSound "Outlaws/BadGuy4/Death1"
+	PainSound "Outlaws/BadGuy5/Pain1"
+	SeeSound "Outlaws/Russell/Taunt"
+	States
+	{
+		Spawn:
+			OL44 A 0 
+			OL44 A 0 A_SetUserVar("user_speed",10)
+			OL44 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL44 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL44 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL44 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL44 A 0 A_GiveInventory("Outlaws_Enemy_ID",15)
+			Goto Super::Spawn
+		Death:
+			OL45 ABCD 4
+			OL45 E -1
+			Stop
+	}
+}

@@ -1,0 +1,23 @@
+Actor Outlaws_Enemy_DrDeath : OutlawsEnemyCore
+{
+	Health 1000
+	DeathSound "Outlaws/DrDeath/Death"
+	SeeSound "Outlaws/DrDeath/Taunt"
+	States
+	{
+		Spawn:
+			OL46 A 0 
+			OL46 A 0 A_SetUserVar("user_speed",6)
+			OL46 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL46 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL46 A 0 A_GiveInventory("Outlaws_Enemy_AllowMelee")
+			OL46 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",3)
+			OL46 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",2)
+			OL46 A 0 A_GiveInventory("Outlaws_Enemy_ID",16)
+			Goto Super::Spawn
+		Death:
+			OL47 ABCD 4
+			OL47 E -1
+			Stop
+	}
+}
