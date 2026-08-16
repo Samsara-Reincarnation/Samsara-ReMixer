@@ -16,7 +16,7 @@ Actor Outlaws_Enemy_Russell : OutlawsEnemyCore
 			OL44 A 0 A_GiveInventory("Outlaws_Enemy_ID",15)
 			Goto Super::Spawn
 		Death:
-			OL45 ABCD 4
+			OL45 ABCDEEEE 4 A_GiveInventory("Outlaws_Enemy_FallSound")
 			OL45 E -1
 			Stop
 	}

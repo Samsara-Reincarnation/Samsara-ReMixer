@@ -292,6 +292,8 @@ $random Outlaws/BadGuy8/NOLOS { Outlaws/Enemy/C801 Outlaws/Enemy/C804 Outlaws/En
 Outlaws/BadGuy8/Death		"Sounds/Outlaws/outlaws_bgy2die.WAV"
 Outlaws/BadGuy8/Pain		"Sounds/Outlaws/outlaws_bgy2hit.WAV"
 
+Outlaws/BadGuy/Fall			"Sounds/Outlaws/outlaws_bgfall.WAV"
+
 Outlaws/Sanchez1			"Sounds/Outlaws/outlaws_sz01.wav"
 Outlaws/Sanchez2			"Sounds/Outlaws/outlaws_sz02.wav"
 Outlaws/Sanchez3			"Sounds/Outlaws/outlaws_sz03.wav"
@@ -337,3 +339,48 @@ Outlaws/DrDeath5			"Sounds/Outlaws/outlaws_dr05.wav"
 $random Outlaws/DrDeath/Taunt { Outlaws/DrDeath1 Outlaws/DrDeath2 Outlaws/DrDeath3 Outlaws/DrDeath4 Outlaws/DrDeath5 }
 
 Outlaws/DrDeath/Death			"Sounds/Outlaws/outlaws_drdie.wav"
+Outlaws/DrDeath/Fall			"Sounds/Outlaws/outlaws_drfall.wav"
+
+Outlaws/BloodyMary1			"Sounds/Outlaws/outlaws_bm01.wav"
+Outlaws/BloodyMary2			"Sounds/Outlaws/outlaws_bm02.wav"
+Outlaws/BloodyMary3			"Sounds/Outlaws/outlaws_bm03.wav"
+Outlaws/BloodyMary4			"Sounds/Outlaws/outlaws_bm04.wav"
+Outlaws/BloodyMary5			"Sounds/Outlaws/outlaws_bm05.wav"
+$random Outlaws/BloodyMary/Taunt { Outlaws/BloodyMary1 Outlaws/BloodyMary2 Outlaws/BloodyMary3 Outlaws/BloodyMary4 Outlaws/BloodyMary5 }
+
+Outlaws/BloodyMary/Pain				"Sounds/Outlaws/outlaws_bmhit.wav"
+Outlaws/BloodyMary/Death			"Sounds/Outlaws/outlaws_bmdie.wav"
+Outlaws/BloodyMary/Fall				"Sounds/Outlaws/outlaws_bmfall.wav"
+
+Outlaws/TwoFeathers1			"Sounds/Outlaws/outlaws_tf01.wav"
+Outlaws/TwoFeathers2			"Sounds/Outlaws/outlaws_tf02.wav"
+Outlaws/TwoFeathers3			"Sounds/Outlaws/outlaws_tf03.wav"
+Outlaws/TwoFeathers4			"Sounds/Outlaws/outlaws_tf04.wav"
+Outlaws/TwoFeathers5			"Sounds/Outlaws/outlaws_tf05.wav"
+$random Outlaws/TwoFeathers/Taunt { Outlaws/TwoFeathers1 Outlaws/TwoFeathers2 Outlaws/TwoFeathers3 Outlaws/TwoFeathers4 Outlaws/TwoFeathers5 }
+
+Outlaws/TwoFeathers/Death			"Sounds/Outlaws/outlaws_szdie.wav"
+
+Outlaws/BillMorgan1			"Sounds/Outlaws/outlaws_bu01.wav"
+Outlaws/BillMorgan2			"Sounds/Outlaws/outlaws_bu02.wav"
+Outlaws/BillMorgan3			"Sounds/Outlaws/outlaws_bu03.wav"
+Outlaws/BillMorgan4			"Sounds/Outlaws/outlaws_bu04.wav"
+Outlaws/BillMorgan5			"Sounds/Outlaws/outlaws_bu05.wav"
+$random Outlaws/BillMorgan/Taunt { Outlaws/BillMorgan1 Outlaws/BillMorgan2 Outlaws/BillMorgan3 Outlaws/BillMorgan4 Outlaws/BillMorgan5 }
+
+Outlaws/DickClif1			"Sounds/Outlaws/outlaws_dd01.wav"
+Outlaws/DickClif2			"Sounds/Outlaws/outlaws_dd02.wav"
+Outlaws/DickClif3			"Sounds/Outlaws/outlaws_dd03.wav"
+Outlaws/DickClif4			"Sounds/Outlaws/outlaws_dd04.wav"
+Outlaws/DickClif5			"Sounds/Outlaws/outlaws_dd05.wav"
+$random Outlaws/DickClif/Taunt { Outlaws/DickClif1 Outlaws/DickClif2 Outlaws/DickClif3 Outlaws/DickClif4 Outlaws/DickClif5 }
+
+Outlaws/BobGraham1			"Sounds/Outlaws/outlaws_bo01.wav"
+Outlaws/BobGraham2			"Sounds/Outlaws/outlaws_bo02.wav"
+Outlaws/BobGraham3			"Sounds/Outlaws/outlaws_bo03.wav"
+Outlaws/BobGraham4			"Sounds/Outlaws/outlaws_bo04.wav"
+Outlaws/BobGraham5			"Sounds/Outlaws/outlaws_bo05.wav"
+$random Outlaws/BobGraham/Taunt { Outlaws/BobGraham1 Outlaws/BobGraham2 Outlaws/BobGraham3 Outlaws/BobGraham4 Outlaws/BobGraham5 }
+Outlaws/BobGraham/Death		"Sounds/Outlaws/outlaws_bodie.wav"
+
+Outlaws/Pistol3/Fire		"Sounds/Outlaws/outlaws_pistol3.wav"

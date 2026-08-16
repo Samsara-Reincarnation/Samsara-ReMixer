@@ -16,7 +16,7 @@ Actor Outlaws_Enemy_TimBlood : OutlawsEnemyCore
 			OL40 A 0 A_GiveInventory("Outlaws_Enemy_ID",12)
 			Goto Super::Spawn
 		Death:
-			OL41 ABCD 4
+			OL41 ABCDEEEE 4 A_GiveInventory("Outlaws_Enemy_FallSound")
 			OL41 E -1
 			Stop
 	}

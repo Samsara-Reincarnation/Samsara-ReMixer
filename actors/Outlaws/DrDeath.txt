@@ -16,7 +16,7 @@ Actor Outlaws_Enemy_DrDeath : OutlawsEnemyCore
 			OL46 A 0 A_GiveInventory("Outlaws_Enemy_ID",16)
 			Goto Super::Spawn
 		Death:
-			OL47 ABCD 4
+			OL47 ABCDEEEE 4 A_GiveInventory("Outlaws_Enemy_FallSound")
 			OL47 E -1
 			Stop
 	}

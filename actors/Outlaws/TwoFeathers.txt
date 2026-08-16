@@ -1,0 +1,37 @@
+Actor Outlaws_Enemy_TwoFeathers : OutlawsEnemyCore
+{
+	Health 500
+	DeathSound "Outlaws/TwoFeathers/Death"
+	PainSound "Outlaws/Badguy4/Pain"
+	SeeSound "Outlaws/TwoFeathers/Taunt"
+	States
+	{
+		Spawn:
+			OL48 A 0 
+			OL48 A 0 A_SetUserVar("user_speed",6)
+			OL48 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL48 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL48 A 0 A_GiveInventory("Outlaws_Enemy_AllowDynamite")
+			OL48 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL48 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",2)
+			OL48 A 0 A_GiveInventory("Outlaws_Enemy_ID",18)
+			Goto Super::Spawn
+		Death:
+			OL49 A 0 A_Scream
+			OL49 A 0 A_NoBlocking
+		DeathJump:
+			"####" "#" 0 A_Jump(256,"Death","Death2","Death3")
+		Death1:
+			"####" ABCDDDD 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" D -1
+			Stop
+		Death2:
+			"####" EFGHIIII 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" I -1
+			Stop
+		Death3:
+			"####" JKLMNNNN 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" N -1
+			Stop
+	}
+}

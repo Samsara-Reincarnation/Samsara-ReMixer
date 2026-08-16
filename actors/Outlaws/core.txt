@@ -58,6 +58,8 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
 			"####" AAAA 4 A_Chase("Melee","Missile",CHF_DONTMOVE)
 			Loop
 		AllowWalk:
+			"####" A 0 A_JumpIfInventory("Outlaws_Enemy_AllowRun",1,1)
+			Goto Walk
 			"####" "#" 0 A_Jump(64,"Walk")
 		Run:
 			"####" F 0 ACS_NamedExecuteWithResult("Outlaws_EnemySpeed",user_speed*2)
@@ -191,15 +193,15 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
 		Death:
 			"####" "#" 0 A_Jump(256,"Death1","Death2","Death3")
 		Death1:
-			"####" ABCD 4
+			"####" ABCDEEEE 4 A_GiveInventory("Outlaws_Enemy_FallSound")
 			"####" E -1
 			Stop
 		Death2:
-			"####" FGHIJ 4
+			"####" FGHIJKKKK 4 A_GiveInventory("Outlaws_Enemy_FallSound")
 			"####" K -1
 			Stop
 		Death3:
-			"####" LMNOP 4
+			"####" LMNOPQQQQ 4 A_GiveInventory("Outlaws_Enemy_FallSound")
 			"####" Q -1
 			Stop
 	}
@@ -210,7 +212,12 @@ Actor Outlaws_EnemyPrimary : Trigger
 	States
 	{
 		Pickup:
-			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"AttackDickFarmPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",21,"AttackBobGrahamPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",20,"AttackDickDynamite")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",19,"AttackBillMorganShotgun")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",18,"AttackDrDeathPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",17,"AttackDickFarmPistol")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"AttackDrDeathPistol")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",15,"AttackSlimRifle")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"AttackSlimRifle")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",13,"AttackDickFarmPistol")
@@ -256,6 +263,25 @@ Actor Outlaws_EnemyPrimary : Trigger
 			TNT1 A 0 A_PlaySound("Outlaws/Cannon/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomBulletAttack(25,25,1,20,"OutlawsPuff")
 			Stop
+		AttackDrDeathPistol:
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_PlaySound("Outlaws/Pistol/Fire",CHAN_WEAPON)
+			TNT1 A 0 A_CustomBulletAttack(20,20,1,20,"OutlawsPuff")
+			Stop
+		AttackBillMorganShotgun:
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_PlaySound("Outlaws/Double/Fire",CHAN_WEAPON)
+			TNT1 A 0 A_CustomBulletAttack(25,25,4,20,"OutlawsPuff")
+			Stop
+		AttackDickDynamite:
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_GiveInventory("Outlaws_EnemyDynamite")
+			Stop
+		AttackBobGrahamPistol:
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_PlaySound("Outlaws/Pistol3/Fire",CHAN_WEAPON)
+			TNT1 A 0 A_CustomBulletAttack(10,10,1,25,"OutlawsPuff")
+			Stop
 	}
 }
 
@@ -264,6 +290,8 @@ Actor Outlaws_EnemyMelee : Trigger
 	States
 	{
 		Pickup:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",18,"AttackStrong")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",15,"AttackMedium")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",11,"AttackWeak")
 			Stop
 		AttackWeak:
@@ -290,7 +318,13 @@ Actor Outlaws_EnemyDynamite : Trigger
 	{
 		Pickup:
 			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_CustomMissile("Outlaws_EnemyDynamiteProjectile",0,0,random(-10,10),CMF_AIMDIRECTION,random(-30,-10))
+			TNT1 A 0 A_PlaySound("Outlaws/Knife/Throw",CHAN_WEAPON)
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",19,2)
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",18,"Knife")
+			TNT1 A 0 A_CustomMissile("Outlaws_EnemyDynamiteProjectile",32,0,random(-10,10),CMF_AIMDIRECTION,random(10,30))
+			Stop
+		Knife:
+			TNT1 A 0 A_CustomMissile("Outlaws_EnemyKnifeProjectile",32,0,random(-10,10),CMF_AIMDIRECTION,random(10,30))
 			Stop
 	}
 }
@@ -312,6 +346,20 @@ actor Outlaws_EnemyDynamiteProjectile : Outlaws_DynamiteProjectileTimed
     }
 }
 
+actor Outlaws_EnemyKnifeProjectile : Outlaws_KnifeProjectile
+{
+    States
+    {
+      Spawn:
+        OL00 A 0 NoDelay A_SetArg(0,random(10,20))
+        OL00 A 0 A_ChangeVelocity(sqrt(velx*velx+vely*vely)*((args[0]*1.0)/10),0,velz*((args[0]*1.0)/10),CVF_RELATIVE|CVF_REPLACE)
+        OL00 A 0 A_SetAngle(angle+frandom(-10,10))
+        OL00 A 0 A_ChangeFlag("NOTIMEFREEZE",false)
+        OL00 A 1 A_SetPitch(pitch+15)
+        wait
+    }
+}
+
 Actor Outlaws_Enemy_TauntDelay : TemporaryCounter { Inventory.MaxAmount 15 }
 Actor Outlaws_PlayTaunt : Trigger
 {
@@ -324,6 +372,11 @@ Actor Outlaws_PlayTaunt : Trigger
 			TNT1 A 0 A_JumpIfTargetInLOS("InLOS",0,JLOSF_DEADNOJUMP)
 			Goto NOLOS
 		NOLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",21,"NOLOSBobGraham")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",20,"NOLOSDickClif")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",19,"NOLOSBillMorgan")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",18,"NOLOSTwoFeathers")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",17,"NOLOSBloodyMary")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"NOLOSDrDeath")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",15,"NOLOSRussell")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"NOLOSHenry")
@@ -382,7 +435,24 @@ Actor Outlaws_PlayTaunt : Trigger
 		NOLOSDrDeath:
 			TNT1 A 0 A_PlaySound("Outlaws/DrDeath/Taunt",CHAN_VOICE)
 			Stop
+		NOLOSTwoFeathers:
+			TNT1 A 0 A_PlaySound("Outlaws/TwoFeathers/Taunt",CHAN_VOICE)
+			Stop
+		NOLOSBillMorgan:
+			TNT1 A 0 A_PlaySound("Outlaws/BillMorgan/Taunt",CHAN_VOICE)
+			Stop
+		NOLOSDickClif:
+			TNT1 A 0 A_PlaySound("Outlaws/DickClif/Taunt",CHAN_VOICE)
+			Stop
+		NOLOSBobGraham:
+			TNT1 A 0 A_PlaySound("Outlaws/BobGraham/Taunt",CHAN_VOICE)
+			Stop
 		InLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",21,"NOLOSBobGraham")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",20,"NOLOSDickClif")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",19,"NOLOSBillMorgan")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",18,"NOLOSTwoFeathers")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",17,"NOLOSBloodyMary")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"NOLOSDrDeath")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",15,"NOLOSRussell")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",14,"NOLOSHenry")
@@ -426,5 +496,40 @@ Actor Outlaws_PlayTaunt : Trigger
 		UseFail:
 			TNT1 A 0 A_TakeInventory("Outlaws_Enemy_TauntDelay",1)
 			Stop
+	}
+}
+
+Actor Outlaws_Enemy_DoNotScream : TemporaryBoolean {}
+Actor Outlaws_Enemy_FallSound : Trigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_DoNotScream",1,"PickupFail")
+			TNT1 A 0 A_GiveInventory("Outlaws_Enemy_DoNotScream")
+			TNT1 A 0 ACS_NamedExecuteWithResult("Outlaws_EnemyScream")
+			Stop
+		PickupFail:
+			TNT1 A 0
+			Fail
+	}
+}
+Actor Outlaws_Enemy_FallSoundActivate : Trigger
+{
+	States
+	{
+		Pickup:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",18,"FallBadGuy")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",17,"FallBloodyMary")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",16,"FallDrDeath")
+		FallBadGuy:
+			TNT1 A 0 A_PlaySound("Outlaws/BadGuy/Fall",CHAN_VOICE)
+			Stop
+		FallDrDeath:
+			TNT1 A 0 A_PlaySound("Outlaws/BloodyMary/Fall",CHAN_VOICE)
+			Stop
+		FallBloodyMary:
+			TNT1 A 0 A_PlaySound("Outlaws/BloodyMary/Fall",CHAN_VOICE)
+			Stop	
 	}
 }

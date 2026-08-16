@@ -1,0 +1,37 @@
+Actor Outlaws_Enemy_BobGraham : OutlawsEnemyCore
+{
+	Health 2000
+	DeathSound "Outlaws/BobGraham/Death"
+	DeathSound "Outlaws/BadGuy4/Pain"
+	SeeSound "Outlaws/BobGraham/Taunt"
+	States
+	{
+		Spawn:
+			OL52 A 0 
+			OL52 A 0 A_SetUserVar("user_speed",6)
+			OL52 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL52 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL52 A 0 A_GiveInventory("Outlaws_Enemy_AllowMelee")
+			OL52 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",3)
+			OL52 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",2)
+			OL52 A 0 A_GiveInventory("Outlaws_Enemy_ID",21)
+			Goto Super::Spawn
+		Death:
+			OL53 A 0 A_Scream
+			OL53 A 0 A_NoBlocking
+		DeathJump:
+			"####" "#" 0 A_Jump(256,"Death","Death2","Death3")
+		Death1:
+			"####" ABCDEEEE 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" E -1
+			Stop
+		Death2:
+			"####" FGHIJKKKK 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" K -1
+			Stop
+		Death3:
+			"####" LMNOPQQQQ 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" Q -1
+			Stop
+	}
+}

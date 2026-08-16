@@ -889,6 +889,11 @@
 #include "Actors/Outlaws/Henry.txt"
 #include "Actors/Outlaws/Russell.txt"
 #include "Actors/Outlaws/DrDeath.txt"
+#include "Actors/Outlaws/BloodyMary.txt"
+#include "Actors/Outlaws/TwoFeathers.txt"
+#include "Actors/Outlaws/BillMorgan.txt"
+#include "Actors/Outlaws/DickClif.txt"
+#include "Actors/Outlaws/BobGraham.txt"
 
 // Other stuff
 #include "actors/Naraka.txt"

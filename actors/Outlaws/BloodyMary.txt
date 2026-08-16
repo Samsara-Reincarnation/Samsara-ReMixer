@@ -1,0 +1,36 @@
+Actor Outlaws_Enemy_BloodyMary : OutlawsEnemyCore
+{
+	Health 700
+	DeathSound "Outlaws/BloodyMary/Death"
+	PainSound "Outlaws/BloodyMary/Pain"
+	SeeSound "Outlaws/BloodyMary/Taunt"
+	States
+	{
+		Spawn:
+			OL50 A 0 
+			OL50 A 0 A_SetUserVar("user_speed",6)
+			OL50 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL50 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL50 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
+			OL50 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL50 A 0 A_GiveInventory("Outlaws_Enemy_ID",17)
+			Goto Super::Spawn
+		Death:
+			OL51 A 0 A_Scream
+			OL51 A 0 A_NoBlocking
+		DeathJump:
+			"####" "#" 0 A_Jump(256,"Death","Death2","Death3")
+		Death1:
+			"####" ABCDEEEE 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" E -1
+			Stop
+		Death2:
+			"####" FGHIJKKKK 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" K -1
+			Stop
+		Death3:
+			"####" LMNOPQQQQ 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" Q -1
+			Stop
+	}
+}

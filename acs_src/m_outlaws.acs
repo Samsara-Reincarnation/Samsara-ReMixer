@@ -2,3 +2,9 @@ Script "Outlaws_EnemySpeed" (int speed)
 {
 	SetActorProperty(0,APROP_Speed,speed*1.0);
 }
+
+Script "Outlaws_EnemyScream" (void)
+{
+	If(GetActorZ(0) - GetActorFloorZ(0) >= 100.0)
+		GiveInventory("Outlaws_Enemy_FallSoundActivate",1);
+}

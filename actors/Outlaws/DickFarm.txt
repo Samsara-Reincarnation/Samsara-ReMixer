@@ -17,7 +17,7 @@ Actor Outlaws_Enemy_DickFarm : OutlawsEnemyCore
 			OL42 A 0 A_GiveInventory("Outlaws_Enemy_ID",13)
 			Goto Super::Spawn
 		Death:
-			OL43 ABCD 4
+			OL43 ABCDEEEE 4 A_GiveInventory("Outlaws_Enemy_FallSound")
 			OL43 E -1
 			Stop
 	}

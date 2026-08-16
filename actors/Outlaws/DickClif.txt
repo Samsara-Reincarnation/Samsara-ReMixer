@@ -1,0 +1,25 @@
+Actor Outlaws_Enemy_DickClif : OutlawsEnemyCore
+{
+	Health 600
+	DeathSound "Outlaws/Badguy1/Death"
+	PainSound "Outlaws/Badguy1/Pain"
+	SeeSound "Outlaws/DickClif/Taunt"
+	States
+	{
+		Spawn:
+			OL54 A 0 
+			OL54 A 0 A_SetUserVar("user_speed",6)
+			OL54 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL54 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL54 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",5)
+			OL54 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL54 A 0 A_GiveInventory("Outlaws_Enemy_ID",20)
+			Goto Super::Spawn
+		Death:
+			OL54 A 0 A_Scream
+			OL54 A 0 A_NoBlocking
+			OL54 PQRSTTTT 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			OL54 T -1
+			Stop
+	}
+}
