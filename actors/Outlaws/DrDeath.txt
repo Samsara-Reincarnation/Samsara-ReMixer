@@ -1,6 +1,6 @@
 Actor Outlaws_Enemy_DrDeath : OutlawsEnemyCore
 {
-	Health 1000
+	Health 1500
 	DeathSound "Outlaws/DrDeath/Death"
 	SeeSound "Outlaws/DrDeath/Taunt"
 	States

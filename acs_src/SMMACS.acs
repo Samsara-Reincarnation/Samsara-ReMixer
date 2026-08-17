@@ -3,7 +3,7 @@
 #include "commonFuncs.acs"
 #include "remixerFuncs.acs"
 
-#define MAX_GAME_TYPES 34
+#define MAX_GAME_TYPES 37
 #define MAX_ALTS 5
 #define MONSTER_SLOT 83
 #define MAXPERSLOT 20
@@ -23,13 +23,16 @@ str gameTypesStr[MAX_GAME_TYPES] = {
 	"mm_doom", "mm_chex", "mm_heretic", "mm_wolf3d", "mm_hexen1", "mm_duke3d", "mm_marathon", "mm_quake1",
 	"mm_rott", "mm_bstone", "mm_blood", "mm_strife", "mm_erad", "mm_c7", "mm_rmr", "mm_darkf", "mm_ipog",
 	"mm_disrup", "mm_witch", "mm_halflife", "mm_sw", "mm_cm", "mm_ps", "mm_rr", "mm_quake2", "mm_hexen2",
-	"mm_goldeneye", "mm_catacomb", "mm_painkiller", "mm_unreal", "mm_rtcw", "mm_quake3", "mm_descent", "mm_deusex"
+	"mm_goldeneye", "mm_catacomb", "mm_painkiller", "mm_unreal", "mm_rtcw", "mm_quake3", "mm_descent", "mm_deusex",
+	"mm_kingpin", "mm_sof", "mm_outlaws"
 };
 
 str gameSetsStr[MAX_GAME_TYPES] = {
 	"SetDoom", "SetChex", "SetHeretic", "SetWolf3d", "SetHexen1", "SetDuke3D", "SetMarathon", "SetQuake1", "SetRoTT", "SetBStone",
 	"SetBlood", "SetStrife", "SetErad", "SetC7", "SetRmr", "SetDarkF", "SetIPOG", "SetDisrup", "SetWitch", "SetHL", "SetSW", "SetCM",
-	"SetExhumed", "SetRR", "SetQuake2", "SetHexen2", "SetGoldeneye", "SetCatacomb", "SetPainkiller", "SetUnreal", "SetRTCW", "SetQuake3", "SetDescent", "SetDeusEx"
+	"SetExhumed", "SetRR", "SetQuake2", "SetHexen2", "SetGoldeneye", "SetCatacomb", "SetPainkiller", "SetUnreal", "SetRTCW", "SetQuake3",
+	"SetDescent", "SetDeusEx", "SetKingpin", "SetSoF", "SetOutlaws"
+	
 };
 
 str monsterReplacementsStr[MONSTER_SLOT] = {
@@ -52,7 +55,7 @@ str monsterReplacementsStr[MONSTER_SLOT] = {
 };
 
 int gamePruneValues[MAX_GAME_TYPES][MAX_ADDON_SETS] = {
-	{99,99,99},{99},{73},{64,64,64},{84,84,84},{52,52,52},{68},{54},{63,63,63,63,63},{64,64},{36},{59},{53,53,53,53,53},{64},{77},{61},{68,68,68,68,68},{62},{78},{26,26},{36},{65},{54},{36},{40},{32},{28},{69},{67},{54},{32},{50},{60},{26}
+	{99,99,99},{99},{73},{64,64,64},{84,84,84},{52,52,52},{68},{54},{63,63,63,63,63},{64,64},{36},{59},{53,53,53,53,53},{64},{77},{61},{68,68,68,68,68},{62},{78},{26,26},{36},{65},{54},{36},{40},{32},{28},{69},{67},{54},{32},{50},{60},{26},{100},{100},{90}
 };
 
 str doomModes[4] = { "SetDoom", "SetDoom64", "SetDoomRandom", "SetDoom64AbsolutionOutcast" };

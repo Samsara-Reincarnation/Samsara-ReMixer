@@ -33,3 +33,6 @@ server bool mm_rtcw = true;
 server bool mm_quake3 = true;
 server bool mm_descent = true;
 server bool mm_deusex = true;
+server bool mm_kingpin = true;
+server bool mm_sof = true;
+server bool mm_outlaws = true;

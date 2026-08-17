@@ -1,6 +1,6 @@
 Actor Outlaws_Enemy_BloodyMary : OutlawsEnemyCore
 {
-	Health 700
+	Health 1000
 	DeathSound "Outlaws/BloodyMary/Death"
 	PainSound "Outlaws/BloodyMary/Pain"
 	SeeSound "Outlaws/BloodyMary/Taunt"

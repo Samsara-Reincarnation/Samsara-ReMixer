@@ -35,4 +35,7 @@ OptionMenu "SamsaraMonsterSpawnOptions"
     Option "Enable Quake III Arena",              "mm_quake3",     "OnOff"
     Option "Enable Descent",                      "mm_descent",    "OnOff"
     Option "Enable Deus Ex",                      "mm_deusex",     "OnOff"
+	Option "Enable Kingpin",                      "mm_kingpin",    "OnOff"
+	Option "Enable Soldier of Fortune",           "mm_sof",    	   "OnOff"
+	Option "Enable Outlaws",                      "mm_outlaws",    "OnOff"
 }
