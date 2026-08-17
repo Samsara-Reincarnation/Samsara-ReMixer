@@ -8,6 +8,7 @@
 // Hexen - Dragon - SamsaraMonsterBeastTotalGib
 Actor SamsaraMonsterRemixDragon : Dragon
 {
+	Accuracy -1 // Needed for SoF MPG primary stuff to work in zan
 	DamageFactor "CorvusCrossbow", 1.1
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "WitchMelee", 1.1
@@ -1036,6 +1037,7 @@ Actor SamsaraMonsterRemixDragon : Dragon
 // Hexen - Zedek - SamsaraMonsterHumanoid
 Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 {
+	Accuracy -1 // Needed for SoF MPG primary stuff to work in zan
 	DamageFactor "CorvusCrossbow", 1.1
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "WitchMelee", 1.1
@@ -2065,6 +2067,7 @@ Actor SamsaraMonsterRemixFighterBoss : FighterBoss
 // Hexen - Traductus - SamsaraMonsterHumanoid
 Actor SamsaraMonsterRemixClericBoss : ClericBoss
 {
+	Accuracy -1 // Needed for SoF MPG primary stuff to work in zan
 	DamageFactor "CorvusCrossbow", 1.1
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "WitchMelee", 1.1
@@ -3094,6 +3097,7 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 // Hexen - Menelkir - SamsaraMonsterHumanoid
 Actor SamsaraMonsterRemixMageBoss : MageBoss
 {
+	Accuracy -1 // Needed for SoF MPG primary stuff to work in zan
 	DamageFactor "CorvusCrossbow", 1.1
 	DamageFactor "DragonClaw", 1.5
 	DamageFactor "WitchMelee", 1.1
