@@ -894,6 +894,7 @@
 #include "Actors/Outlaws/BillMorgan.txt"
 #include "Actors/Outlaws/DickClif.txt"
 #include "Actors/Outlaws/BobGraham.txt"
+#include "Actors/Outlaws/Confederate.txt"
 
 // Other stuff
 #include "actors/Naraka.txt"
