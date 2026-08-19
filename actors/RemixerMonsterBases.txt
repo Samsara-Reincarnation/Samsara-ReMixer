@@ -1046,7 +1046,9 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -3122,7 +3124,9 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -4170,7 +4174,9 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -4769,7 +4775,9 @@ Actor SamsaraMonsterRemixProgrammer : Programmer
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -5368,7 +5376,9 @@ Actor SamsaraMonsterRemixStrifeBishop : StrifeBishop
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -5967,7 +5977,9 @@ Actor SamsaraMonsterRemixLoremaster : Loremaster
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -6396,7 +6408,9 @@ Actor SamsaraMonsterRemixAlienSpectre1 : AlienSpectre1
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -6774,7 +6788,9 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -8050,7 +8066,9 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
+		Death.RTCWKnife:
 		XDeath.RTCWBullet:
+		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
