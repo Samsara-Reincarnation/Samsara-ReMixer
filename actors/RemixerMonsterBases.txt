@@ -1042,7 +1042,9 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -3120,7 +3122,9 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -4170,7 +4174,9 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -4771,7 +4777,9 @@ Actor SamsaraMonsterRemixProgrammer : Programmer
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -5372,7 +5380,9 @@ Actor SamsaraMonsterRemixStrifeBishop : StrifeBishop
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -5973,7 +5983,9 @@ Actor SamsaraMonsterRemixLoremaster : Loremaster
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -6404,7 +6416,9 @@ Actor SamsaraMonsterRemixAlienSpectre1 : AlienSpectre1
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -6784,7 +6798,9 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
@@ -8062,7 +8078,9 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.UnrealSniper:
+		Death.UnrealHeadshot:
 		XDeath.UnrealSniper:
+		XDeath.UnrealHeadshot:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.RTCWBullet:
