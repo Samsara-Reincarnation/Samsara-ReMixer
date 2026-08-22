@@ -30,7 +30,7 @@ Actor Outlaws_Enemy_Difficulty : TemporaryCounter {}
 Actor Outlaws_Enemy_ID : TemporaryCounter {}
 
 //Controller definition
-Actor OutlawsEnemyCore : SamsaraMonsterHumanoid
+Actor OutlawsEnemyCore : SamsaraMonsterHumanoidTotalGib
 {
 	Height 56
 	Radius 20
