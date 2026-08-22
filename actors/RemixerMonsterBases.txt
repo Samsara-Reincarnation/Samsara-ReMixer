@@ -1053,6 +1053,10 @@ Actor SamsaraMonsterRemixDragon : Dragon
 		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 	}
 }
 
@@ -3133,6 +3137,10 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 	}
 }
 
@@ -4185,6 +4193,10 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 	}
 }
 
@@ -4786,6 +4798,10 @@ Actor SamsaraMonsterRemixProgrammer : Programmer
 		Death.RTCWKnife:
 		XDeath.RTCWBullet:
 		XDeath.RTCWKnife:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -5391,6 +5407,10 @@ Actor SamsaraMonsterRemixStrifeBishop : StrifeBishop
 		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 	}
 }
 
@@ -5994,6 +6014,10 @@ Actor SamsaraMonsterRemixLoremaster : Loremaster
 		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 	}
 }
 
@@ -6427,6 +6451,10 @@ Actor SamsaraMonsterRemixAlienSpectre1 : AlienSpectre1
 		XDeath.RTCWKnife:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 	}
 }
 
@@ -6807,6 +6835,10 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 		Death.RTCWKnife:
 		XDeath.RTCWBullet:
 		XDeath.RTCWKnife:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
@@ -8087,6 +8119,10 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 		Death.RTCWKnife:
 		XDeath.RTCWBullet:
 		XDeath.RTCWKnife:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
+		Death.OLBullet:
+		XDeath.OLBullet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 	}
