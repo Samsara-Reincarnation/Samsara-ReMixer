@@ -1030,7 +1030,9 @@ Actor SamsaraMonsterRemixDragon : Dragon
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -3114,7 +3116,9 @@ Actor SamsaraMonsterRemixClericBoss : ClericBoss
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -4170,7 +4174,9 @@ Actor SamsaraMonsterRemixMageBoss : MageBoss
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -4777,7 +4783,9 @@ Actor SamsaraMonsterRemixProgrammer : Programmer
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -5384,7 +5392,9 @@ Actor SamsaraMonsterRemixStrifeBishop : StrifeBishop
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -5991,7 +6001,9 @@ Actor SamsaraMonsterRemixLoremaster : Loremaster
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -6428,7 +6440,9 @@ Actor SamsaraMonsterRemixAlienSpectre1 : AlienSpectre1
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -6814,7 +6828,9 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
@@ -8098,7 +8114,9 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 			TNT1 A -1 A_Jump(256,"See")
 			Wait
 		Death.HLBullet:
+		Death.HLHornet:
 		XDeath.HLBullet:
+		XDeath.HLHornet:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.GEBullet:
