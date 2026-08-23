@@ -1,0 +1,29 @@
+Actor Outlaws_Enemy_Kenny : OutlawsExpansionEnemyCore
+{
+	Health 1200
+	DeathSound "Outlaws/Badguy9/Death"
+	PainSound "Outlaws/Badguy9/Pain"
+	SeeSound "Outlaws/BadGuy1/Alert"
+	States
+	{
+		Spawn:
+			OL59 A 0 
+			OL59 A 0 A_SetUserVar("user_speed",6)
+			OL59 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL59 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL59 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",3)
+			OL59 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL59 A 0 A_GiveInventory("Outlaws_Enemy_ID",23)
+			Goto Super::Spawn
+		Crouch:
+			OL60 A 0
+			Goto Super::Crouch
+		Death:
+			OL61 A 0 A_Scream
+			OL61 A 0 A_NoBlocking
+			Goto Super::Death
+		Pain:
+			OL59 "]" 0
+			Goto Super::Pain
+	}
+}

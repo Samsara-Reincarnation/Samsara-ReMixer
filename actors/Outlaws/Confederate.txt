@@ -18,6 +18,9 @@ Actor Outlaws_Enemy_Confederate : OutlawsExpansionEnemyCore
 		Crouch:
 			OL57 A 0
 			Goto Super::Crouch
+		Pain:
+			OL57 G 0
+			Goto Super::Pain
 		Death:
 			OL58 A 0 A_Scream
 			OL58 A 0 A_NoBlocking

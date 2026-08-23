@@ -282,8 +282,10 @@ $random Outlaws/BadGuy7/Alert { Outlaws/Enemy/C702 Outlaws/Enemy/C705 Outlaws/En
 $random Outlaws/BadGuy7/LOS { Outlaws/Enemy/C703 Outlaws/Enemy/C705 Outlaws/Enemy/C717 Outlaws/Enemy/C715 Outlaws/Enemy/C707 Outlaws/Enemy/C709 Outlaws/Enemy/C713 Outlaws/Enemy/C714 Outlaws/Enemy/C719 }
 $random Outlaws/BadGuy7/NOLOS { Outlaws/Enemy/C701 Outlaws/Enemy/C704 Outlaws/Enemy/C705 Outlaws/Enemy/C706 Outlaws/Enemy/C708 Outlaws/Enemy/C710 Outlaws/Enemy/C721 Outlaws/Enemy/C711 Outlaws/Enemy/C716 Outlaws/Enemy/C720 Outlaws/Enemy/C722 }
 
-Outlaws/BadGuy7/Death		"Sounds/Outlaws/outlaws_bgy1die.WAV"
+Outlaws/BadGuy7/Death1		"Sounds/Outlaws/outlaws_bgy1die.WAV"
+Outlaws/BadGuy7/Death2		"Sounds/Outlaws/outlaws_aaadie.WAV"
 Outlaws/BadGuy7/Pain		"Sounds/Outlaws/outlaws_bgy1hit.WAV"
+%random Outlaws/BadGuy7/Death { Outlaws/BadGuy7/Death1 Outlaws/BadGuy7/Death2 }
 
 $random Outlaws/BadGuy8/Alert { Outlaws/Enemy/C802 Outlaws/Enemy/C805 Outlaws/Enemy/C809 Outlaws/Enemy/C813 Outlaws/Enemy/C818 Outlaws/Enemy/C812 }
 $random Outlaws/BadGuy8/LOS { Outlaws/Enemy/C803 Outlaws/Enemy/C805 Outlaws/Enemy/C817 Outlaws/Enemy/C815 Outlaws/Enemy/C807 Outlaws/Enemy/C809 Outlaws/Enemy/C813 Outlaws/Enemy/C814 Outlaws/Enemy/C819 }
