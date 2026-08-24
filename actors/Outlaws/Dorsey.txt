@@ -1,0 +1,38 @@
+Actor Outlaws_Enemy_Dorsey : OutlawsExpansionEnemyCore
+{
+	Health 1000
+	DeathSound "Outlaws/Badguy9/Death"
+	PainSound "Outlaws/Badguy9/Pain"
+	SeeSound "Outlaws/Dorsey/Alert"
+	States
+	{
+		Spawn:
+			OL65 A 0 
+			OL65 A 0 A_SetUserVar("user_speed",6)
+			OL65 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL65 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL65 A 0 A_GiveInventory("Outlaws_Enemy_AllowTaunt")
+			OL65 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",3)
+			OL65 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL65 A 0 A_GiveInventory("Outlaws_Enemy_ID",25)
+			Goto Super::Spawn
+		See:
+			OL65 A 0
+			Goto Super::See
+		Crouch:
+			OL66 A 0
+			Goto Super::Crouch
+		Taunt:
+			OL66 IJ 4
+			Goto See
+		Pain:
+			OL66 H 0
+			Goto Super::Pain
+		Death:
+			OL67 A 0 A_Scream
+			OL67 A 0 A_NoBlocking
+			"####" ABCDEFFFF 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" F -1
+			Stop
+	}
+}

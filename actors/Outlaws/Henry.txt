@@ -8,7 +8,7 @@ Actor Outlaws_Enemy_Henry : OutlawsEnemyCore
 	{
 		Spawn:
 			OL39 A 0 
-			OL39 A 0 A_SetUserVar("user_speed",0)
+			OL39 A 0 A_SetUserVar("user_speed",6)
 			OL39 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
 			OL39 A 0 A_GiveInventory("Outlaws_Enemy_ID",14)
 			Goto Super::Spawn

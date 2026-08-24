@@ -11,13 +11,20 @@ Actor Outlaws_Enemy_Confederate : OutlawsExpansionEnemyCore
 			OL56 A 0 A_SetUserVar("user_speed",6)
 			OL56 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL56 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL56 A 0 A_GiveInventory("Outlaws_Enemy_AllowTaunt")
 			OL56 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",4)
 			OL56 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL56 A 0 A_GiveInventory("Outlaws_Enemy_ID",22)
 			Goto Super::Spawn
+		See:
+			OL56 A 0
+			Goto Super::See
 		Crouch:
 			OL57 A 0
 			Goto Super::Crouch
+		Taunt:
+			OL58 IJ 4
+			Goto See
 		Pain:
 			OL57 G 0
 			Goto Super::Pain

@@ -89,6 +89,48 @@ global int 2:alreadyshowedbs;
 // After many years, Naraka has finally arrived in Samsara (once ReMixer 2.0 arrives)!
 #include "Naraka.acs"
 
+//======================================================================================================================
+//											Set Definition Values are here
+//======================================================================================================================
+
+#DEFINE SET_DOOM 0
+#DEFINE SET_CHEX 1
+#DEFINE SET_HERETIC 2
+#DEFINE SET_WOLF3D 3
+#DEFINE SET_HEXEN1 4
+#DEFINE SET_DUKE3D 5
+#DEFINE SET_MARATHON 6
+#DEFINE SET_QUAKE1 7
+#DEFINE SET_ROTT 8
+#DEFINE SET_BSTONE 9
+#DEFINE SET_BLOOD 10
+#DEFINE SET_STRIFE 11
+#DEFINE SET_ERAD 12
+#DEFINE SET_C7 13
+#DEFINE SET_RMR 14
+#DEFINE SET_DARKF 15
+#DEFINE SET_IPOG 16
+#DEFINE SET_DISRUP 17
+#DEFINE SET_WITCH 18
+#DEFINE SET_HALFLIFE 19
+#DEFINE SET_SW 20
+#DEFINE SET_CM 21
+#DEFINE SET_PS 22
+#DEFINE SET_RR 23
+#DEFINE SET_QUAKE2 24
+#DEFINE SET_HEXEN2 25
+#DEFINE SET_GOLDENEYE 26
+#DEFINE SET_CATACOMB 27
+#DEFINE SET_PAINKILLER 28
+#DEFINE SET_UNREAL 29
+#DEFINE SET_RTCW 30
+#DEFINE SET_QUAKE3 31
+#DEFINE SET_DESCENT 32
+#DEFINE SET_DEUSEX 33
+#DEFINE SET_KINGPIN 34
+#DEFINE SET_SOF 35
+#DEFINE SET_OUTLAWS 36
+
 Script "ReMixerInit" OPEN //667
 {
 	totalMonsters = GetLevelInfo(LEVELINFO_TOTAL_MONSTERS);
@@ -232,7 +274,12 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 					//SetActorState(0,gameSetsStr[pickedSet],true);
 					break;
 
-				case 0: // Doom
+				case SET_SOF:
+				case SET_KINGPIN:
+				case SET_UNREAL:
+				case SET_PAINKILLER:
+					pickedSet = SET_DOOM;
+				case SET_DOOM: // Doom
 					int doomMode = GetCVar("mm_doommode");
 
 					switch(doomMode)
@@ -286,7 +333,9 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 							break;
 					}
 					break;
-				case 3: // Wolf3d
+				case SET_RTCW:
+					pickedSet = SET_WOLF3D;
+				case SET_WOLF3D: // Wolf3d
 					int wolfMode = GetCVar("mm_wolfmode");
 
 					switch(wolfMode)
@@ -314,7 +363,7 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 					}
 					break;
 
-				case 5:
+				case SET_DUKE3D:
 					int dukeMode = GetCVar("mm_dukemode");
 
 					switch(dukeMode)
@@ -338,12 +387,12 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 					}
 					break;
 
-				case 8:
+				case SET_ROTT:
 					int rottMode = GetCVar("mm_rottmode");
 					altSetSelect = pickRottSet();
 					break;
 
-				case 19:
+				case SET_HALFLIFE:
 					int halfLifeMode = GetCVar("mm_halflifemode");
 
 					switch(halfLifeMode)
@@ -367,12 +416,12 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 					}
 					break;
 
-				case 26:
+				case SET_GOLDENEYE:
 					int goldeneyeMode = GetCVar("mm_goldeneyemode");
 
 					if(GetCVar("samsara_zscriptready") != 1)
 					{
-						pickedSet = 8;
+						pickedSet = SET_ROTT;
 						altSetSelect = pickRottSet();
 						break;
 					}
@@ -397,12 +446,15 @@ Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 							break;
 					}
 					break;
-
-				case 30:
-					if(GetCVar("samsara_zscriptready") != 1)
-					{
-						altSetSelect = 1;
-					}
+				
+				case SET_QUAKE3:
+					pickedSet = random(0,1) == 0 ? SET_QUAKE1 : SET_QUAKE2;
+					break;
+				case SET_DESCENT:
+					pickedSet = SET_DISRUP;
+					break;
+				case SET_DEUSEX:
+					pickedSet = SET_STRIFE;
 					break;
 			}
 
