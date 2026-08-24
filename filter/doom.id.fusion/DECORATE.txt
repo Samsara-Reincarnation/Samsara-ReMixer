@@ -1,3 +1,4 @@
+actor SpiderMastermindSigil2_SamsaraRemixer : SpiderMastermindSpawner replaces SpiderMastermindSigil2 {}
 actor Banshee_SamsaraRemixer : LegacyOfRustBansheeSpawner replaces ID24Banshee {}
 actor Ghoul_SamsaraRemixer : LegacyOfRustGhoulSpawner replaces ID24Ghoul {}
 actor Mindweaver_SamsaraRemixer : LegacyOfRustMindweaverSpawner replaces ID24Mindweaver {}
