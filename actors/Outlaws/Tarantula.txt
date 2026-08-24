@@ -5,6 +5,7 @@ Actor Outlaws_Enemy_Tarantula : SamsaraMonsterBeastTotalGib
 	Health 10
 	XScale 0.67
 	YScale 0.55833
+	Speed 2
 	Monster
 	Painchance 128
 	PainChance "ShrinkerDMG", 0
