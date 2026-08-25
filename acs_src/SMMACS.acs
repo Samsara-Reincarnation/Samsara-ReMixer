@@ -1291,6 +1291,9 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_quake3", true);
 		SetCVar("mm_descent", true);
 		SetCVar("mm_deusex", true);
+		SetCVar("mm_kingpin", true);
+		SetCVar("mm_sof", true);
+		SetCVar("mm_outlaws", true);
 		break;
 
 		case 1: // Samsara
@@ -1461,6 +1464,9 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_quake3", true);
 		SetCVar("mm_descent", true);
 		SetCVar("mm_deusex", true);
+		SetCVar("mm_kingpin", true);
+		SetCVar("mm_sof", true);
+		SetCVar("mm_outlaws", true);
 		break;
 
 		case 2: // Samsara Reincarnation
@@ -1631,6 +1637,9 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_quake3", true);
 		SetCVar("mm_descent", true);
 		SetCVar("mm_deusex", true);
+		SetCVar("mm_kingpin", true);
+		SetCVar("mm_sof", true);
+		SetCVar("mm_outlaws", true);
 		break;
 
 		// Secret presets
@@ -1802,6 +1811,9 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_quake3", false);
 		SetCVar("mm_descent", false);
 		SetCVar("mm_deusex", false);
+		SetCVar("mm_kingpin", false);
+		SetCVar("mm_sof", false);
+		SetCVar("mm_outlaws", false);
 		break;
 
 		case 101: // tehvappy50's Settings
@@ -1972,6 +1984,9 @@ script "ReMixerPresetSelection" (void)
 		SetCVar("mm_quake3", false);
 		SetCVar("mm_descent", false);
 		SetCVar("mm_deusex", false);
+		SetCVar("mm_kingpin", false);
+		SetCVar("mm_sof", false);
+		SetCVar("mm_outlaws", true);
 		break;
 	}
 }
