@@ -1,0 +1,36 @@
+Actor Outlaws_Enemy_Tarantula : SamsaraMonsterBeastTotalGib
+{
+	Height 20
+	Radius 10
+	Health 10
+	XScale 0.67
+	YScale 0.55833
+	Speed 2
+	Monster
+	Painchance 128
+	PainChance "ShrinkerDMG", 0
+	Species "OutlawsEnemy"
+	States
+	{
+		Spawn:
+			OL68 A 4 A_Look
+			Loop
+		See:
+			OL68 AB 4 A_Chase
+			Loop
+		Missile:
+			OL68 C 4 A_FaceTarget
+			OL68 D 0 A_FaceTarget
+			OL68 D 4 A_CustomMeleeAttack(10,"Outlaws/Tarantula/Bite","Outlaws/Tarantula/Bite")
+			Goto See
+		Death:		
+		Death.Massacre:
+			OL68 E 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+			OL68 E 4 A_Scream
+			OL68 F 0 A_NoBlocking
+			OL68 F 0 A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffect",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+			OL68 FG 4
+			OL68 H -1
+			Stop
+	}
+}

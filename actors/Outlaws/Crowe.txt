@@ -1,0 +1,38 @@
+Actor Outlaws_Enemy_Crowe : OutlawsExpansionEnemyCore
+{
+	Health 800
+	DeathSound "Outlaws/Badguy6/Death"
+	PainSound "Outlaws/Badguy6/Pain"
+	SeeSound "Outlaws/DickFarm/Taunt"
+	States
+	{
+		Spawn:
+			OL62 A 0 
+			OL62 A 0 A_SetUserVar("user_speed",6)
+			OL62 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
+			OL62 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
+			OL62 A 0 A_GiveInventory("Outlaws_Enemy_AllowTaunt")
+			OL62 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",3)
+			OL62 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			OL62 A 0 A_GiveInventory("Outlaws_Enemy_ID",24)
+			Goto Super::Spawn
+		See:
+			OL62 A 0
+			Goto Super::See
+		Crouch:
+			OL63 A 0
+			Goto Super::Crouch
+		Taunt:
+			OL63 IJ 4
+			Goto See
+		Pain:
+			OL63 H 0
+			Goto Super::Pain
+		Death:
+			OL64 A 0 A_Scream
+			OL64 A 0 A_NoBlocking
+			"####" ABCDEFFFF 4 A_GiveInventory("Outlaws_Enemy_FallSound")
+			"####" F -1
+			Stop
+	}
+}

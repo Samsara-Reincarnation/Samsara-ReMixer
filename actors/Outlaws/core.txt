@@ -28,6 +28,8 @@ Actor Outlaws_Enemy_AllowDynamite : TemporaryBoolean {}
 Actor Outlaws_Enemy_CrouchType : TemporaryCounter {}
 Actor Outlaws_Enemy_Difficulty : TemporaryCounter {}
 Actor Outlaws_Enemy_ID : TemporaryCounter {}
+Actor Outlaws_Enemy_AllowTaunt : TemporaryBoolean {}
+Actor Outlaws_Enemy_Discovered : TemporaryBoolean {}
 
 //Controller definition
 Actor OutlawsEnemyCore : SamsaraMonsterHumanoidTotalGib
@@ -35,12 +37,13 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoidTotalGib
 	Height 56
 	Radius 20
 	Health 5
-	Mass 30
 	XScale 0.67
 	YScale 0.55833
 	Monster
 	Painchance 128
 	var int user_speed;
+	Species "OutlawsEnemy"
+	+NOINFIGHTING
 	States
 	{
 		//Idle/standing
@@ -53,7 +56,16 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoidTotalGib
 			"####" A 0 A_JumpIfInventory("Outlaws_Enemy_AllowWalk",1,"AllowWalk")
 			"####" A 0 A_JumpIfInventory("Outlaws_Enemy_AllowRun",1,"Run")
 			Goto StandingEnemy
+		//Logic used for standing enemies to move them out of monster rooms
+		DiscoverPlayer:
+			TNT1 A 0 A_CheckSight("StopWandering")
+			TNT1 A 4 A_Chase("","")
+			Loop
+		StopWandering:
+			TNT1 A 0 A_GiveInventory("Outlaws_Enemy_Discovered")
 		StandingEnemy:
+			"####" A 0 A_JumpIfInventory("Outlaws_Enemy_Discovered",1,1)
+			Goto DiscoverPlayer
 			"####" A 0 A_GiveInventory("Outlaws_PlayTaunt")
 			"####" AAAA 4 A_Chase("Melee","Missile",CHF_DONTMOVE)
 			Loop
@@ -169,7 +181,7 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoidTotalGib
 		//Pain state
 		Pain:
 			"####" "#" 0 A_Jump(224,2)
-			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_AllowCrouch",1,"Crouch")
+			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_CrouchType",1,"Crouch")
 			"####" O 4 A_Pain
 			Goto See
 			
@@ -212,6 +224,8 @@ Actor Outlaws_EnemyPrimary : Trigger
 	States
 	{
 		Pickup:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",24,"AttackCroweShotgun")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",23,"AttackKennyShotgun")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",22,"AttackBadGuyPistol")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",21,"AttackBobGrahamPistol")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",20,"AttackDickDynamite")
@@ -283,6 +297,16 @@ Actor Outlaws_EnemyPrimary : Trigger
 			TNT1 A 0 A_PlaySound("Outlaws/Pistol3/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomBulletAttack(10,10,1,25,"OutlawsPuff")
 			Stop
+		AttackKennyShotgun:
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_PlaySound("Outlaws/Pistol3/Fire",CHAN_WEAPON)
+			TNT1 A 0 A_CustomBulletAttack(20,20,5,20,"OutlawsPuff")
+			Stop
+		AttackCroweShotgun:
+			TNT1 A 0 A_FaceTarget
+			TNT1 A 0 A_PlaySound("Outlaws/Cannon/Fire",CHAN_WEAPON)
+			TNT1 A 0 A_CustomBulletAttack(25,25,4,20,"OutlawsPuff")
+			Stop
 	}
 }
 
@@ -297,17 +321,14 @@ Actor Outlaws_EnemyMelee : Trigger
 			Stop
 		AttackWeak:
 			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_PlaySound("Outlaws/Pistol/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomMeleeAttack(10,"Outlaws/Fist/Hit","Outlaws/Fist/Fire")
 			Stop
 		AttackMedium:
 			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_PlaySound("Outlaws/Pistol/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomMeleeAttack(20,"Outlaws/Fist/Hit","Outlaws/Fist/Fire")
 			Stop
 		AttackStrong:
 			TNT1 A 0 A_FaceTarget
-			TNT1 A 0 A_PlaySound("Outlaws/Pistol/Fire",CHAN_WEAPON)
 			TNT1 A 0 A_CustomMeleeAttack(30,"Outlaws/Fist/Hit","Outlaws/Fist/Fire")
 			Stop
 	}
@@ -373,6 +394,8 @@ Actor Outlaws_PlayTaunt : Trigger
 			TNT1 A 0 A_JumpIfTargetInLOS("InLOS",0,JLOSF_DEADNOJUMP)
 			Goto NOLOS
 		NOLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",25,"NOLOSDorsey")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",24,"NOLOSDickFarm")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",22,"NOLOSBadGuy1")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",21,"NOLOSBobGraham")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",20,"NOLOSDickClif")
@@ -449,7 +472,12 @@ Actor Outlaws_PlayTaunt : Trigger
 		NOLOSBobGraham:
 			TNT1 A 0 A_PlaySound("Outlaws/BobGraham/Taunt",CHAN_VOICE)
 			Stop
+		NOLOSDorsey:
+			TNT1 A 0 A_PlaySound("Outlaws/Dorsey/Taunt",CHAN_VOICE)
+			Stop
 		InLOS:
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",25,"NOLOSDorsey")
+			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",24,"NOLOSDickFarm")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",22,"NOLOSBadGuy1")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",21,"NOLOSBobGraham")
 			TNT1 A 0 A_JumpIfInventory("Outlaws_Enemy_ID",20,"NOLOSDickClif")
@@ -537,6 +565,17 @@ Actor Outlaws_Enemy_FallSoundActivate : Trigger
 	}
 }
 
+/*Reserved frames - expansion
+
+Standing = A
+Walking = B-G
+Running = H-M
+Shooting = N-Q
+ShootStrafe = R-W
+Crouching = U-V
+
+*/
+
 //Expansion controller definition
 Actor OutlawsExpansionEnemyCore : OutlawsEnemyCore
 {
@@ -574,7 +613,8 @@ Actor OutlawsExpansionEnemyCore : OutlawsEnemyCore
 			"####" L 4 A_Chase
 			"####" M 0 A_GiveInventory("Outlaws_PlayTaunt")
 			"####" M 4 A_Chase
-			Goto See
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
 		Walk:
 			"####" B 0 ACS_NamedExecuteWithResult("Outlaws_EnemySpeed",user_speed)
 			"####" B 0 A_GiveInventory("Outlaws_PlayTaunt")
@@ -589,80 +629,79 @@ Actor OutlawsExpansionEnemyCore : OutlawsEnemyCore
 			"####" F 4 A_Chase
 			"####" G 0 A_GiveInventory("Outlaws_PlayTaunt")
 			"####" G 4 A_Chase
-			Goto See
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
 			
 		//Attack based states
 		Missile:
 			"####" "#" 0 A_Jump(224,2)
-			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_StrafeBehavior",1,"DoStrafe")
-			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",6,"Fire2FramesDual")
-			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",5,"Fire5Frames")
+			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_StrafeBehavior",1,"StrafeShoot")
+			"####" "#" 0 A_Jump(224,2)
+			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_AllowTaunt",1,"Taunt")
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",4,"Fire4Frames")
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",3,"Fire3Frames")
 			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_ShootType",2,"Fire2Frames")
-		Fire2Frames:
-			"####" J 4 Bright A_FaceTarget
-			"####" K 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
-			Goto See
 		Fire3Frames:
-			"####" JK 4 Bright A_FaceTarget
-			"####" L 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
-			Goto See
+			"####" NO 4 Bright A_FaceTarget
+			"####" P 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
 		Fire4Frames:
 			"####" N 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" O 4 Bright A_FaceTarget
 			"####" P 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" Q 4 Bright A_FaceTarget
-			Goto See
-		Fire5Frames:
-			"####" JKLM 4 Bright A_FaceTarget
-			"####" N 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
-			Goto See
-		Fire2FramesDual:
-			"####" J 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
-			"####" K 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
-			Goto See
-		DoStrafe:
-			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_AllowWalk",1,1)
-			Goto StrafeRun
-			"####" "#" 0 A_Jump(256,"StrafeRun","StrafeWalk")
-		StrafeRun:
-			"####" U 0 A_GiveInventory("Outlaws_EnemyPrimary")
-			"####" U 4 Bright A_ChangeVelocity((user_speed*1.0)/3,0,velz,CVF_RELATIVE|CVF_REPLACE)
-			"####" V 0 A_GiveInventory("Outlaws_EnemyPrimary")
-			"####" V 4 Bright A_ChangeVelocity((user_speed*1.0)/3,0,velz,CVF_RELATIVE|CVF_REPLACE)
-			"####" W 0 A_GiveInventory("Outlaws_EnemyPrimary")
-			"####" W 4 Bright A_ChangeVelocity(0,(user_speed*1.0)/3,velz,CVF_RELATIVE|CVF_REPLACE)
-			Goto See
-		StrafeWalk:
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
+		StrafeShoot:
 			"####" R 0 A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" R 4 Bright A_ChangeVelocity((user_speed*1.0)/6,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			"####" S 0 A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" S 4 Bright A_ChangeVelocity((user_speed*1.0)/6,0,velz,CVF_RELATIVE|CVF_REPLACE)
 			"####" T 0 A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" T 4 Bright A_ChangeVelocity(0,(user_speed*1.0)/6,velz,CVF_RELATIVE|CVF_REPLACE)
-			Goto See
-			
+			"####" U 0 A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" U 4 Bright A_ChangeVelocity((user_speed*1.0)/3,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			"####" V 0 A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" V 4 Bright A_ChangeVelocity((user_speed*1.0)/3,0,velz,CVF_RELATIVE|CVF_REPLACE)
+			"####" W 0 A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" W 4 Bright A_ChangeVelocity(0,(user_speed*1.0)/3,velz,CVF_RELATIVE|CVF_REPLACE)
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
+		Taunt:
+			"####" IJ 4
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
+
 		//Pain state
 		Pain:
 			"####" "#" 0 A_Jump(224,2)
-			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_AllowCrouch",1,"Crouch")
+			"####" "#" 0 A_JumpIfInventory("Outlaws_Enemy_CrouchType",1,"Crouch")
 			"####" "#" 4 A_Pain
-			Goto See
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
 			
 		//Crouching state
 		Crouch:
 			"####" A 0 A_UnsetShootable
 			"####" A 0 A_ChangeFlag("NODAMAGE",true)
+			"####" A 0 A_JumpIfInventory("Outlaws_Enemy_CrouchType",2,"Crouch2")
 			"####" A 4 A_FaceTarget
 			"####" B 4 A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" C 4 A_FaceTarget
 			"####" D 4 A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" EA 4 A_FaceTarget
 		UnCrouch:
-			"####" A 0 A_SetShootable
-			"####" A 0 A_ChangeFlag("NODAMAGE",false)
-			Goto See
+			"####" "#" 0 A_SetShootable
+			"####" "#" 0 A_ChangeFlag("NODAMAGE",false)
+			"####" "#" 1 A_Jump(256,"See")
+			Wait
+		Crouch2:
+			"####" AB 4 A_FaceTarget
+			"####" C 4 Bright A_GiveInventory("Outlaws_EnemyPrimary")
+			"####" DAAAA 4 A_FaceTarget
+			"####" "#" 1 A_Jump(256,"UnCrouch")
+			Wait
 		
 		//Death States. May need to be replaced by some enemies
 		Death:

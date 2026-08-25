@@ -7,7 +7,7 @@ Actor Outlaws_Enemy_Slim : OutlawsEnemyCore
 	{
 		Spawn:
 			OL36 A 0 
-			OL36 A 0 A_SetUserVar("user_speed",0)
+			OL36 A 0 A_SetUserVar("user_speed",6)
 			OL36 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
 			OL36 A 0 A_GiveInventory("Outlaws_Enemy_ID",10)
 			Goto Super::Spawn

@@ -149,6 +149,10 @@ Doom:
 
 * Fixed the Icon of Sin's spawn cubes telefragging mancubus, arachnotron, baron of hell, and arch-vile spawners.
 
+Legacy of Rust/WadFusion:
+
+! The Spider Mastermind in Sigil II is now replaced with the spider mastermind spawner when using WadFusion v1.6.0+.
+
 -Settings-
 
 ! Decimals are no longer shown in the menu options.

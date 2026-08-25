@@ -282,8 +282,10 @@ $random Outlaws/BadGuy7/Alert { Outlaws/Enemy/C702 Outlaws/Enemy/C705 Outlaws/En
 $random Outlaws/BadGuy7/LOS { Outlaws/Enemy/C703 Outlaws/Enemy/C705 Outlaws/Enemy/C717 Outlaws/Enemy/C715 Outlaws/Enemy/C707 Outlaws/Enemy/C709 Outlaws/Enemy/C713 Outlaws/Enemy/C714 Outlaws/Enemy/C719 }
 $random Outlaws/BadGuy7/NOLOS { Outlaws/Enemy/C701 Outlaws/Enemy/C704 Outlaws/Enemy/C705 Outlaws/Enemy/C706 Outlaws/Enemy/C708 Outlaws/Enemy/C710 Outlaws/Enemy/C721 Outlaws/Enemy/C711 Outlaws/Enemy/C716 Outlaws/Enemy/C720 Outlaws/Enemy/C722 }
 
-Outlaws/BadGuy7/Death		"Sounds/Outlaws/outlaws_bgy1die.WAV"
+Outlaws/BadGuy7/Death1		"Sounds/Outlaws/outlaws_bgy1die.WAV"
+Outlaws/BadGuy7/Death2		"Sounds/Outlaws/outlaws_aaadie.WAV"
 Outlaws/BadGuy7/Pain		"Sounds/Outlaws/outlaws_bgy1hit.WAV"
+$random Outlaws/BadGuy7/Death { Outlaws/BadGuy7/Death1 Outlaws/BadGuy7/Death2 }
 
 $random Outlaws/BadGuy8/Alert { Outlaws/Enemy/C802 Outlaws/Enemy/C805 Outlaws/Enemy/C809 Outlaws/Enemy/C813 Outlaws/Enemy/C818 Outlaws/Enemy/C812 }
 $random Outlaws/BadGuy8/LOS { Outlaws/Enemy/C803 Outlaws/Enemy/C805 Outlaws/Enemy/C817 Outlaws/Enemy/C815 Outlaws/Enemy/C807 Outlaws/Enemy/C809 Outlaws/Enemy/C813 Outlaws/Enemy/C814 Outlaws/Enemy/C819 }
@@ -384,3 +386,26 @@ $random Outlaws/BobGraham/Taunt { Outlaws/BobGraham1 Outlaws/BobGraham2 Outlaws/
 Outlaws/BobGraham/Death		"Sounds/Outlaws/outlaws_bodie.wav"
 
 Outlaws/Pistol3/Fire		"Sounds/Outlaws/outlaws_pistol3.wav"
+
+Outlaws/Dorsey1				"Sounds/Outlaws/outlaws_bu06.wav"
+Outlaws/Dorsey2				"Sounds/Outlaws/outlaws_bu07.wav"
+Outlaws/Dorsey3				"Sounds/Outlaws/outlaws_bu08.wav"
+Outlaws/Dorsey4				"Sounds/Outlaws/outlaws_bu09.wav"
+Outlaws/Dorsey5				"Sounds/Outlaws/outlaws_bu10.wav"
+Outlaws/Dorsey6				"Sounds/Outlaws/outlaws_bu11.wav"
+Outlaws/Dorsey7				"Sounds/Outlaws/outlaws_bu12.wav"
+Outlaws/Dorsey8				"Sounds/Outlaws/outlaws_bu13.wav"
+Outlaws/Dorsey9				"Sounds/Outlaws/outlaws_bu14.wav"
+Outlaws/Dorsey10			"Sounds/Outlaws/outlaws_bu15.wav"
+Outlaws/Dorsey11			"Sounds/Outlaws/outlaws_bu16.wav"
+Outlaws/Dorsey12			"Sounds/Outlaws/outlaws_bu17.wav"
+Outlaws/Dorsey13			"Sounds/Outlaws/outlaws_bu18.wav"
+Outlaws/Dorsey14			"Sounds/Outlaws/outlaws_bu19.wav"
+Outlaws/Dorsey15			"Sounds/Outlaws/outlaws_bu20.wav"
+Outlaws/Dorsey15			"Sounds/Outlaws/outlaws_bu21.wav"
+Outlaws/Dorsey16			"Sounds/Outlaws/outlaws_bu22.wav"
+$random Outlaws/Dorsey/Taunt { Outlaws/Dorsey1 Outlaws/Dorsey2 Outlaws/Dorsey3 Outlaws/Dorsey4 Outlaws/Dorsey5 Outlaws/Dorsey11 Outlaws/Dorsey12 Outlaws/Dorsey13 Outlaws/Dorsey14 Outlaws/Dorsey16 }
+$random Outlaws/Dorsey/Alert { Outlaws/Dorsey6 Outlaws/Dorsey7 Outlaws/Dorsey8 Outlaws/Dorsey9 Outlaws/Dorsey10 Outlaws/Dorsey15 }
+
+Outlaws/Tarantula/Bite 		"Sounds/Outlaws/outlaws_tarbite.wav"
+Outlaws/Tarantula/Death 	"Sounds/Outlaws/outlaws_taran.wav"
