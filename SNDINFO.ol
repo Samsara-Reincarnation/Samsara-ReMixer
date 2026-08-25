@@ -305,11 +305,11 @@ $random Outlaws/Sanchez/Taunt { Outlaws/Sanchez1 Outlaws/Sanchez2 Outlaws/Sanche
 
 Outlaws/Sanchez/Death			"Sounds/Outlaws/outlaws_szdie.wav"
 
-Outlaws/TimBlood1			"Sounds/Outlaws/outlaws_tb01.wav"
-Outlaws/TimBlood2			"Sounds/Outlaws/outlaws_tb02.wav"
-Outlaws/TimBlood3			"Sounds/Outlaws/outlaws_tb03.wav"
-Outlaws/TimBlood4			"Sounds/Outlaws/outlaws_tb04.wav"
-Outlaws/TimBlood5			"Sounds/Outlaws/outlaws_tb05.wav"
+Outlaws/TimBlood1			"Sounds/Outlaws/outlaws_bt01.wav"
+Outlaws/TimBlood2			"Sounds/Outlaws/outlaws_bt02.wav"
+Outlaws/TimBlood3			"Sounds/Outlaws/outlaws_bt03.wav"
+Outlaws/TimBlood4			"Sounds/Outlaws/outlaws_bt04.wav"
+Outlaws/TimBlood5			"Sounds/Outlaws/outlaws_bt05.wav"
 $random Outlaws/TimBlood/Taunt { Outlaws/TimBlood1 Outlaws/TimBlood2 Outlaws/TimBlood3 Outlaws/TimBlood4 Outlaws/TimBlood5 }
 
 Outlaws/DickFarm1			"Sounds/Outlaws/outlaws_fa01.wav"

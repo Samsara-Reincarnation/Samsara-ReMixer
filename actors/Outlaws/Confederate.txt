@@ -23,8 +23,8 @@ Actor Outlaws_Enemy_Confederate : OutlawsExpansionEnemyCore
 			OL57 A 0
 			Goto Super::Crouch
 		Taunt:
-			OL58 IJ 4
-			Goto See
+			OL58 I 0
+			Goto Super::Taunt
 		Pain:
 			OL57 G 0
 			Goto Super::Pain
