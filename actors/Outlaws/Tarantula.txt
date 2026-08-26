@@ -16,9 +16,9 @@ Actor Outlaws_Enemy_Tarantula : SamsaraMonsterBeastTotalGib
 			OL68 A 4 A_Look
 			Loop
 		See:
-			OL68 AB 4 A_Chase
+			OL68 AB 4 A_Chase("Melee","")
 			Loop
-		Missile:
+		Melee:
 			OL68 C 4 A_FaceTarget
 			OL68 D 0 A_FaceTarget
 			OL68 D 4 A_CustomMeleeAttack(10,"Outlaws/Tarantula/Bite","Outlaws/Tarantula/Bite")
