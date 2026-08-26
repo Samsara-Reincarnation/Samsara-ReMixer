@@ -180,7 +180,7 @@ Actor HSD2Flame
 		HSD2 W 1 Bright A_FadeOut
 		Stop
 	Death:
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	}
 }

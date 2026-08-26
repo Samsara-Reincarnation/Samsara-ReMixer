@@ -180,7 +180,7 @@ Actor Hexen2DeathSkull
 			TNT1 AAAAAAAAAA 1 A_SpawnItemEx("Hexen2DeathBone",random(-50,50),random(-50,50),0,0,0,0)
 			TNT1 A 0 A_JumpIfInventory("BoneRainTimer", 0, "Death2")
 		Death2:
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 			}
 }
@@ -407,7 +407,6 @@ Actor Hexen2DeathFireCircle
 		XDeath:
 		Crash:
 			HX00 A 0 A_Explode(15+random(0,1)*10, 32, !XF_HURTSOURCE)
-			HX00 A 0 A_FadeOut
 			Stop
 	}
 }

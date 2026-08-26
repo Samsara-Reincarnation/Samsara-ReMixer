@@ -183,7 +183,7 @@ Actor BradleyTop
 			loop
 		Death:
 			TNT1 A 0 A_StopSound(CHAN_7)		
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop			
 	}
 }
@@ -367,7 +367,7 @@ Actor BradleyTopGun
 			loop
 		Death:
 			TNT1 A 0 A_StopSound(CHAN_7)		
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop			
 	}
 }

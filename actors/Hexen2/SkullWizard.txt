@@ -129,7 +129,7 @@ Actor Hexen2SkullWizard : Hexen2HumanoidBase
 			HX00 I 0 A_SpawnItemEx("Hexen2BlackSpiderSmallWizard", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
 			HX00 I 0 A_JumpIf(frandom(0.0,1.0) > 0.05, 2)
 			HX00 I 0 A_SpawnItemEx("Hexen2BlackSpiderSmallWizard", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 		Pain.ShrinkerDMG:
 			HX01 H 0
@@ -458,7 +458,7 @@ Actor Hexen2ShadowWizard : Hexen2SkullWizard
 			HX00 I 0 A_JumpIf(frandom(0.0,1.0) > 0.05, 3)
 			HX00 II 0 A_SpawnItemEx("Hexen2BlackSpiderSmallWizard", 0,0,0,0,0,0,0, SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_KillMaster
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 		Pain.ShrinkerDMG:
 			HX01 H 0
@@ -787,7 +787,7 @@ Actor Hexen2SkullShot1
 		Death:
 			HX00 A 0 A_StopSound(CHAN_BODY)
 			HX00 A 0 A_PlaySound("Hexen2/Explode", CHAN_WEAPON)
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 	}
 }

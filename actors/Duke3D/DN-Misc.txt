@@ -681,7 +681,7 @@ ACTOR OctabrainProjectile
 			OCPR ABCDEFGHIJKLMNOPQRST 3
 			Goto Death
 		Death:
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 	}
 }

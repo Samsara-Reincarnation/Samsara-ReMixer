@@ -289,7 +289,7 @@ Actor Hexen2WereJaguar : Hexen2BestialBase
 			TNT1 A 0 A_SpawnItemEx("Hexen2GibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_SpawnItemEx("Hexen2WereJaguarHead",0,0,0,random(-5,5),random(-5,5),frandom(2,6),Random(1,360),SXF_TRANSFERSCALE|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_NoBlocking
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			stop
 		Pain.ShrinkerDMG:
 			HX06 A 0
@@ -650,7 +650,7 @@ Actor Hexen2WerePanther : Hexen2WereJaguar
 			TNT1 A 0 A_SpawnItemEx("Hexen2GibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_SpawnItemEx("Hexen2WerePantherHead",0,0,0,random(-5,5),random(-5,5),frandom(2,6),Random(1,360),SXF_TRANSFERSCALE|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_NoBlocking
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			stop
 		Pain.ShrinkerDMG:
 			HX06 A 0
@@ -1019,7 +1019,7 @@ Actor Hexen2SnowTiger : Hexen2WereJaguar
 			TNT1 A 0 A_SpawnItemEx("Hexen2GibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_SpawnItemEx("Hexen2SnowTigerHead",0,0,0,random(-5,5),random(-5,5),frandom(2,6),Random(1,360),SXF_TRANSFERSCALE|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_NoBlocking
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			stop		
 		Pain.ShrinkerDMG:
 			HX06 A 0
@@ -1390,7 +1390,7 @@ Actor Hexen2WereTiger : Hexen2WereJaguar
 			TNT1 A 0 A_SpawnItemEx("Hexen2GibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_SpawnItemEx("Hexen2WereTigerHead",0,0,0,random(-5,5),random(-5,5),frandom(2,6),Random(1,360),SXF_TRANSFERSCALE|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_NoBlocking
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			stop
 		Pain.ShrinkerDMG:
 			HX06 A 0

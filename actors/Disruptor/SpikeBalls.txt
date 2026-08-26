@@ -177,7 +177,6 @@ Actor DsrptSpikeBallBomb1 {
 		Death:
 			TNT1 A 0
 			TNT1 A 5 A_Explode(4*random(2,6),70)
-			TNT1 A -1 A_FadeOut
 			stop
   }
 }
@@ -439,7 +438,7 @@ Actor DsrptSpikeBallBomb3 {
 			DS98 T 2 bright
 			DS98 UUUVVVWWWXXXYYYZZZ 1 bright 
 			DS97 AAABBBCCCDDD 1 bright 
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
   }
 }

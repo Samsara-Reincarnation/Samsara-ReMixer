@@ -89,7 +89,7 @@ ACTOR ReconPatrolVehicle : SamsaraMonsterRobotic
 			TNT1 A 1 A_Jump(128,"A")
 			TNT1 A 1 A_SpawnItemEx("SamsaraMixerPigCop",0,0,20,0,0,0,0,32)
 		A:
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 	}
 }

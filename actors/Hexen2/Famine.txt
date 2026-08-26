@@ -359,7 +359,7 @@ Actor Hexen2FamineShot
 	Death:
 		TNT1 A 0 A_PlaySound("Hexen2/Explode", CHAN_WEAPON)
 		TNT1 A 0 A_SpawnItemEx("Hexen2RedSpark")
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 		}
 }

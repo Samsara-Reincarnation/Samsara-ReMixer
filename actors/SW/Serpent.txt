@@ -1525,7 +1525,7 @@ Actor EvilSkull
 			TNT1 A 5 A_SpawnItem("EvilSkullExplosion")
 		Stop
 		Death.Shoot:
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 	}
 }

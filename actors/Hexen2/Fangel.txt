@@ -219,7 +219,7 @@ Actor Hexen2FallenAngel : Hexen2BestialBase
 			TNT1 A 0 A_Playsound("Hexen2/Gib", CHAN_5)
 			TNT1 A 0 A_SpawnItemEx("Hexen2GibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_NoBlocking
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			stop
 		Pain.ShrinkerDMG:
 			HX07 A 0

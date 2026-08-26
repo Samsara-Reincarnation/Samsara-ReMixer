@@ -92,7 +92,7 @@ Actor Hexen2StoneGolem : Hexen2ConstructBase
 			TNT1 A 0 A_SpawnItemEx("Hexen2StoneGolemHead",0,0,0,random(-5,5),random(-5,5),frandom(2,6),Random(1,360),SXF_TRANSFERSCALE|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("Hexen2StoneGolemLegs",0,0,0,velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Stone/Fall", CHAN_BODY,1.5)
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -102,7 +102,7 @@ Actor Hexen2StoneGolem : Hexen2ConstructBase
 			TNT1 A 0 A_NoBlocking
 			TNT1 AA 0 A_SpawnItemEx("Hexen2StoneGibsSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Stone/Fall", CHAN_BODY,1.5)
-			TNT1 A 5 A_FadeOut	
+			TNT1 A 5	
 			Stop
 		}
 }	
@@ -263,7 +263,7 @@ Actor Hexen2IronGolem : Hexen2StoneGolem
 			TNT1 A 0 A_SpawnItemEx("Hexen2IronGolemHead",0,0,0,random(-5,5),random(-5,5),frandom(2,6),Random(1,360),SXF_TRANSFERSCALE|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("Hexen2IronGolemLegs",0,0,0,velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Metal/Fall", CHAN_BODY,1.5)
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop	
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -273,7 +273,7 @@ Actor Hexen2IronGolem : Hexen2StoneGolem
 			TNT1 A 0 A_NoBlocking
 			TNT1 AA 0 A_SpawnItemEx("Hexen2MetalGibsSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Metal/Fall", CHAN_BODY,1.5)
-			TNT1 A 5 A_FadeOut	
+			TNT1 A 5	
 			Stop
 		}
 }		
@@ -402,7 +402,7 @@ Actor Hexen2BronzeGolem : Hexen2IronGolem
 			TNT1 A 0 A_SpawnItemEx("Hexen2BronzeGolemLegs",0,0,0,velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Metal/Fall", CHAN_BODY,1.5)
 			TNT1 A 0 A_KillMaster
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop	
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -413,7 +413,7 @@ Actor Hexen2BronzeGolem : Hexen2IronGolem
 			TNT1 AA 0 A_SpawnItemEx("Hexen2MetalGibsSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Metal/Fall", CHAN_BODY,1.5)
 			TNT1 A 0 A_KillMaster
-			TNT1 A 5 A_FadeOut	
+			TNT1 A 5	
 			Stop	
 		}
 }	
@@ -461,7 +461,7 @@ Actor Hexen2CrystalGolem : Hexen2StoneGolem
 			TNT1 A 0 A_SpawnItemEx("Hexen2CrystalGolemHead",0,0,0,random(-5,5),random(-5,5),frandom(2,6),Random(1,360),SXF_TRANSFERSCALE|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_SpawnItemEx("Hexen2CrystalGolemLegs",0,0,0,velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Crystal/Fall", CHAN_BODY,1.5)
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 		XDeath:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
@@ -471,7 +471,7 @@ Actor Hexen2CrystalGolem : Hexen2StoneGolem
 			TNT1 A 0 A_NoBlocking
 			TNT1 AA 0 A_SpawnItemEx("Hexen2CrystalGibsSpawner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_PlaySound("Hexen2/Golem/Crystal/Fall", CHAN_BODY,1.5)
-			TNT1 A 5 A_FadeOut	
+			TNT1 A 5	
 			Stop
 	}
 }

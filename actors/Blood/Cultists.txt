@@ -327,13 +327,13 @@ Actor Cultist : SamsaraMonsterHumanoid
 		YCUL N 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath2")
 		YCUB BCDEFGHI 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	Dissolve2:
 		YCUL O 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath")
 		YCUB BCDEFGHI 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	XDeath:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
@@ -1067,13 +1067,13 @@ Actor Fanatic : Cultist
 		YCUG N 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath2")
 		YCUH ABCDEFGH 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	Dissolve2:
 		YCUG O 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath")
 		YCUH ABCDEFGH 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	XDeath:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
@@ -1778,13 +1778,13 @@ Actor BloodAcolyte : Cultist
 		YCUD N 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath2")
 		YCUH QRSTUVWX 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	Dissolve2:
 		YCUD O 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath")
 		YCUH QRSTUVWX 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	XDeath:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
@@ -2508,13 +2508,13 @@ Actor Zealot : Cultist
 		YCUJ N 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath2")
 		YCUH IJKLMNOP 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	Dissolve2:
 		YCUJ O 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath")
 		YCUH IJKLMNOP 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	XDeath:
 		TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreXDeathEffect")
@@ -3177,14 +3177,14 @@ Actor BloodPriest : Zealot
 		TNT1 A 0 A_Jump(100,"ContinueDeath2")
 		YCUH YZ 5
 		CULC TUVWXY 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	Dissolve2:
 		YCUR O 200
 		TNT1 A 0 A_Jump(100,"ContinueDeath")
 		YCUH YZ 5
 		CULC TUVWXY 5
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	XDeath:
 		TNT1 A 0 A_Jump (228,"Style1")

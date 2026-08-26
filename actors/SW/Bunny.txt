@@ -66,7 +66,7 @@ Actor SWRabbit : SamsaraMonsterBeastTotalGib
 		TNT1 A 0 A_Scream
 		TNT1 A 0 A_Fall
 		TNT1 A 0 A_SpawnDebris("SWBunnyHeadGib")		
-		TNT1 A 5 A_FadeOut
+		TNT1 A 5
 		Stop
 	Death.SWFist:
 		TNT1 A 0 A_GiveToTarget("SWLoWangBloody", 1)

@@ -635,7 +635,7 @@ actor HunterMinor_Shrink : HunterMinor
 			TNT1 A 0 A_SpawnItemEx("QuakeMediumGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_Fall
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 		Death.BittermanDamage:
 			TNT1 A 0 A_JumpIfHealthLower(-50, "XDeathForBitterman")
@@ -645,7 +645,7 @@ actor HunterMinor_Shrink : HunterMinor
 			TNT1 A 0 A_SpawnItemEx("Q2MediumColorGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_Fall
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			Stop
 		Pain.Hexen2RavenDamage:
 			TNT1 A 0 A_Jump(192,"Pain")
@@ -664,7 +664,7 @@ actor HunterMinor_Shrink : HunterMinor
 			TNT1 A 0 A_SpawnItemEx("Hexen2GibSpawnerColor",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION|SXF_SETMASTER)
 			TNT1 A 0 A_KillMaster
 			TNT1 A 0 A_NoBlocking
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			stop			
 	}
 }

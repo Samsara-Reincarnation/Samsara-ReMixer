@@ -91,7 +91,7 @@ Actor MiniMechBomb
 			TNT1 A 0 A_PlaySound("minimech/die") 
 			TNT1 A 0 A_Explode(random(22,40)/Random(2,1),138)
 			TNT1 A 0 A_SpawnITemEx("EradPlasmaExplosion1")
-			TNT1 A 5 A_FadeOut
+			TNT1 A 5
 			stop
   }
 }
