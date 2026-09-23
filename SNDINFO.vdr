@@ -109,7 +109,6 @@ VDR/vulsh1              "Sounds/VDR/vdr_dsvulsh1"
 VDR/vulsh2              "Sounds/VDR/vdr_dsvulsh2"
 
 VDR/stoneimp/hit		"Sounds/VDR/vdr_SIMPMELE"
-VDR/stoneimp/impact 	"Sounds/VDR/vdr_IMP-ACT"
 
 $RANDOM VDR/CIMPSIT { VDR/CIMPSIT1 VDR/CIMPSIT2 }
 VDR/CIMPSIT1	"Sounds/VDR/vdr_CIMPSIT1"

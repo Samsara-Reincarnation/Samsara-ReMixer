@@ -6,7 +6,6 @@ ACTOR MMRandomizer_StoneImp : SamsaraMonsterFlemoid
 	Speed 6
 	Mass 400
 	Monster
-	BloodType "MMRandomizer_StoneBitsSpawner"
 	DamageFactor "Poison", 0
 	DamageFactor "PoisonBolt", 0
 	DamageFactor "PoisonCloud", 0
@@ -26,7 +25,7 @@ ACTOR MMRandomizer_StoneImp : SamsaraMonsterFlemoid
 	Tag "Stone Imp"
 	Species "SamsaraDoomImp"
 	+FLOORCLIP
-	+NOBLOODDECALS
+	+NOBLOOD
 	+NOPAIN
 	States
 	{
@@ -81,111 +80,5 @@ ACTOR MMRandomizer_StoneImp : SamsaraMonsterFlemoid
 			VD42 ML 8
 			VD42 KJI 6
 			Goto See
-	}
-}
-
-// Stone bits SFX - by Blue Shadow (the spawning code is based on Nash's nashgore code)
-
-ACTOR MMRandomizer_StoneBitsSpawner
-{
-	Mass 5
-	+NOBLOCKMAP
-	+NOGRAVITY
-	+NOTELEPORT
-	States
-	{
-		Spawn:
-			TNT1 A 0
-			Goto High
-			TNT1 A 0
-			Goto Medium
-			TNT1 A 0
-			Goto Low
-		Low:
-			TNT1 AA 0 A_SpawnItemEx("MMRandomizer_StoneBitsSmall",0,0,8,random(-4,4),random(-4,4),random(2,5),0,SXF_ABSOLUTEPOSITION|SXF_ABSOLUTEANGLE|SXF_ABSOLUTEMOMENTUM|SXF_CLIENTSIDE)
-			Goto SpawnPuff
-		Medium:
-			TNT1 AAA 0 A_SpawnItemEx("MMRandomizer_StoneBitsMedium",0,0,8,random(-4,4),random(-4,4),random(2,5),0,SXF_ABSOLUTEPOSITION|SXF_ABSOLUTEANGLE|SXF_ABSOLUTEMOMENTUM|SXF_CLIENTSIDE)
-			Goto SpawnPuff
-		High:
-			TNT1 AAAAA 0 A_SpawnItemEx("MMRandomizer_StoneBitsLarge",0,0,8,random(-4,4),random(-4,4),random(2,5),0,SXF_ABSOLUTEPOSITION|SXF_ABSOLUTEANGLE|SXF_ABSOLUTEMOMENTUM|SXF_CLIENTSIDE)
-			Goto SpawnPuff
-		SpawnPuff:
-			TNT1 A 0 A_PlaySound("VDR/stoneimp/impact")
-			TNT1 A 1 A_SpawnItemEx("DoomBulletPuff_Samsara",0,0,0,0,0,1,0,SXF_CLIENTSIDE)
-			Stop
-	}
-}
-
-ACTOR MMRandomizer_StoneBitsSmall
-{
-	Radius 2
-	Height 2
-	+NOTELEPORT
-	+NOBLOCKMAP
-	States
-	{
-		Spawn:
-			TNT1 A 0
-			TNT1 A 0 A_Jump(128, "SpawnB")
-			Goto SpawnA
-		SpawnA:
-			VE08 A 0 A_Jump(192, 1, 2, 3)
-			Goto Fade
-			VE08 E 0
-			Goto Fade
-			VE08 I 0
-			Goto Fade
-			VE08 M 0
-			Goto Fade
-		SpawnB:
-			VE08 B 0 A_Jump(128, 1)
-			Goto Fade
-			VE08 F 0
-			Goto Fade
-		Fade:
-			"####" "#" 10
-			"####" "#" 1 A_FadeOut(0.25)
-			Wait
-	}
-}
-
-ACTOR MMRandomizer_StoneBitsMedium : MMRandomizer_StoneBitsSmall
-{
-	States
-	{
-		Spawn:
-			TNT1 A 0
-			TNT1 A 0 A_Jump(256, "SpawnA", "SpawnB", "SpawnC")
-			Goto SpawnA
-		SpawnC:
-			VE08 C 0 A_Jump(192, 1, 2, 3)
-			Goto Fade
-			VE08 G 0
-			Goto Fade
-			VE08 K 0
-			Goto Fade
-			VE08 O 0
-			Goto Fade
-	}
-}
-
-ACTOR MMRandomizer_StoneBitsLarge : MMRandomizer_StoneBitsMedium
-{
-	States
-	{
-		Spawn:
-			TNT1 A 0
-			TNT1 A 0 A_Jump(256, "SpawnB", "SpawnC", "SpawnD")
-			Goto SpawnB
-		SpawnD:
-			VE08 D 0 A_Jump(192, 1, 2, 3)
-			Goto Fade
-			VE08 H 0
-			Goto Fade
-			VE08 L 0
-			Goto Fade
-			VE08 P 0
-			Goto Fade
 	}
 }
