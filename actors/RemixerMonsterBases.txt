@@ -4737,6 +4737,13 @@ Actor SamsaraMonsterRemixProgrammer : Programmer
 		Death.DeusExDroneExploded:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 		Death.SoFKnife:
 		Death.SoFKnifeThrow:
 		Death.SoFShotgun:
@@ -5344,6 +5351,13 @@ Actor SamsaraMonsterRemixStrifeBishop : StrifeBishop
 		Death.DeusExExploded:
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 		Death.DeusExDroneExploded:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.SoFKnife:
@@ -5955,6 +5969,13 @@ Actor SamsaraMonsterRemixLoremaster : Loremaster
 		Death.DeusExDroneExploded:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 		Death.SoFKnife:
 		Death.SoFKnifeThrow:
 		Death.SoFShotgun:
@@ -6394,6 +6415,13 @@ Actor SamsaraMonsterRemixAlienSpectre1 : AlienSpectre1
 		Death.DeusExDroneExploded:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 		Death.SoFKnife:
 		Death.SoFKnifeThrow:
 		Death.SoFShotgun:
@@ -6782,6 +6810,13 @@ Actor SamsaraMonsterRemixAlienSpectre2 : AlienSpectre1
 		Death.DeusExDroneExploded:
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
 		Death.SoFKnife:
 		Death.SoFKnifeThrow:
 		Death.SoFShotgun:
@@ -7168,6 +7203,13 @@ Actor SamsaraMonsterRemixEntityBoss : EntityBoss
 		Death.DeusExExploded:
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 		Death.DeusExDroneExploded:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.SoFKnife:
@@ -7584,6 +7626,13 @@ Actor SamsaraMonsterRemixSubEntity : EntitySecond
 		Death.DeusExExploded:
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 		Death.DeusExDroneExploded:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.SoFKnife:
@@ -8066,6 +8115,13 @@ Actor SamsaraMonsterRemixInquisitor : Inquisitor
 		Death.DeusExExploded:
 			TNT1 A 0 ACS_NamedExecuteAlways("DeusEx_KillScript", 0, 0, 3)
 		Death.DeusExDroneExploded:
+			TNT1 A -1 A_Jump(256, "Death")
+			Wait
+		Death.KingpinMelee:
+		Death.KingpinBleedshot:
+		Death.KingpinBullet:
+		Death.KingpinExplosive:
+			TNT1 A 0 ACS_NamedExecuteWithResult("Kingpin_ThrowMoney")
 			TNT1 A -1 A_Jump(256, "Death")
 			Wait
 		Death.SoFKnife:
