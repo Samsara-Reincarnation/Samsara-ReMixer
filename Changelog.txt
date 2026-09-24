@@ -20,8 +20,8 @@ Doom:
 
 -Vanilla Doom Randomizer-
 
-* Fixed the Nightshade using the wrong monster base.
-! The Stone Imp no longer has its' own blood type, and now has the +NOBLOOD flag.
+! The stone imp no longer has its own blood type, and now has the +NOBLOOD flag.
+* Fixed the nightshade using the wrong monster base.
 * Fixed the arachnorb queen, spider-demolisher, and dark cyberdemon's projectiles using the wrong decal in Freedoom.
 * Fixed the arachnorb queen plasma blast using the wrong sprite names.
 
@@ -55,6 +55,10 @@ Hexen I:
 * Fixed the player bosses not counting for kills when killed by fire.
 * Fixed the player bosses not playing the initial burn sound.
 * Fixed Traductus' death animation not being played correctly.
+
+Quake I:
+
+* Fixed the fiend's second melee attack not playing a sound on hit.
 
 Rise of the Triad:
 

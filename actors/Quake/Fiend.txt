@@ -69,10 +69,10 @@ ACTOR QFiend : SamsaraMonsterDemonic
 		Goto see
 	  Melee:
 		FIN4 ABCDEF 3 A_FaceTarget
-		FIN4 G 3 A_CustomMeleeAttack(random(11,17)*1,"QFiend/munch")
+		FIN4 G 3 A_CustomMeleeAttack(random(11,17),"QFiend/Munch")
 		TNT1 A 0 A_Recoil(-2)
 		FIN4 HIJKL 3 A_FaceTarget
-		FIN4 M 3 A_CustomMeleeAttack(random(11,17)*1,"Fiend/munch")
+		FIN4 M 3 A_CustomMeleeAttack(random(11,17),"QFiend/Munch")
 		FIN4 NO 3
 		Goto see
 	  Pain:
