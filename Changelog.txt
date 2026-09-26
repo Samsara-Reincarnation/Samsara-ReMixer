@@ -20,6 +20,7 @@ Doom:
 
 -Vanilla Doom Randomizer-
 
+! Renamed the ACS script names to avoid name conflicts with other mods.
 ! The stone imp no longer has its own blood type, and now has the +NOBLOOD flag.
 * Fixed the nightshade using the wrong monster base.
 * Fixed the arachnorb queen, spider-demolisher, and dark cyberdemon's projectiles using the wrong decal in Freedoom.

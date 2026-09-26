@@ -95,7 +95,7 @@ ACTOR MMRandomizer_Incarnate : Revenant3
 			VD75 N 7 A_Scream
 			VD75 O 7 A_NoBlocking
 			VD75 P 7
-			VD75 Q -1 ACS_NamedExecuteWithResult("ReMixer_SelfRevive", 115 * CallACS("Incarnate_ReviveTimeMultiplier"), 192, 3)
+			VD75 Q -1 ACS_NamedExecuteWithResult("ReMixer_SelfRevive", 115 * CallACS("VDR_Incarnate_ReviveTimeMultiplier"), 192, 3)
 			Stop
 		StakeDeath:
 			VD75 L 2

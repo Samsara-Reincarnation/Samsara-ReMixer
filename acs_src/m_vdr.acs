@@ -7,9 +7,9 @@
 str hiero_curses[HIERO_CURSENUM][3] =
 {
 	  // Giver                    // Power            // Message
-	{ "MMRandomizer_HieroWeaken", "PowerHieroWeaken", "\c[Cyan]Your weapons weaken."    }, // 0 = Weaken
-	{ "MMRandomizer_HieroAmpDMG", "PowerHieroAmpDMG", "\c[Red]Your defenses weaken."    }, // 1 = AmpDMG
-	{ "MMRandomizer_HieroSlow",   "PowerHieroSlow",   "\c[Yellow]Your legs feel heavy." }  // 2 = Slow
+	{ "MMRandomizer_HieroWeaken", "PowerHieroWeaken", "\c[Cyan]Your weapons weaken."     }, // 0 = Weaken
+	{ "MMRandomizer_HieroAmpDMG", "PowerHieroAmpDMG", "\c[Red]Your defenses weaken."     }, // 1 = AmpDMG
+	{ "MMRandomizer_HieroSlow",   "PowerHieroSlow",   "\c[Yellow]Your mobility weakens." }  // 2 = Slow
 };
 
 // ------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ str hiero_curses[HIERO_CURSENUM][3] =
 //
 // ------------------------------------------------------------------------------------------------
 
-Script "Hiero_GetShooterSpecies" (void)
+Script "VDR_Hiero_GetShooterSpecies" (void)
 {
 	str species = "Null";
 
@@ -37,12 +37,12 @@ Script "Hiero_GetShooterSpecies" (void)
 //
 // ------------------------------------------------------------------------------------------------
 
-Script "Hiero_IsCurseable" (void)
+Script "VDR_Hiero_IsCurseable" (void)
 {
 	// Shooter's species must be gotten here. Getting it down there where the species are compared
 	// is too late, since at that point, the caller/activator of the script is no longer the
 	// projectile.
-	str shootspecies = ACS_NamedExecuteWithResult("Hiero_GetShooterSpecies");
+	str shootspecies = ACS_NamedExecuteWithResult("VDR_Hiero_GetShooterSpecies");
 
 	SetResultValue(SetActivator(0, AAPTR_MASTER) &&
 
@@ -68,9 +68,9 @@ Script "Hiero_IsCurseable" (void)
 //
 // ------------------------------------------------------------------------------------------------
 
-Script "Hiero_InflictCurse" (void)
+Script "VDR_Hiero_InflictCurse" (void)
 {
-	If(ACS_NamedExecuteWithResult("Hiero_IsCurseable"))
+	If(ACS_NamedExecuteWithResult("VDR_Hiero_IsCurseable"))
 	{
 		// Change the script activator to the victim, so that everything which follows, is called
 		// by the victim/works in the context of the victim.
@@ -102,7 +102,7 @@ Script "Hiero_InflictCurse" (void)
 	}
 }
 
-Script "Incarnate_ReviveTimeMultiplier" (void)
+Script "VDR_Incarnate_ReviveTimeMultiplier" (void)
 {
 	int waitTimeMultiplier = 5;
 	int multiplierChance = Random(0,127);
@@ -114,7 +114,7 @@ Script "Incarnate_ReviveTimeMultiplier" (void)
 	SetResultValue(waitTimeMultiplier);
 }
 
-Script "Hellraiser_SpawnEnemies" (void)
+Script "VDR_Hellraiser_SpawnEnemies" (void)
 {
 	// Spawn the imps to the left and right of the hellraiser
 	int angle = GetActorAngle(0);
