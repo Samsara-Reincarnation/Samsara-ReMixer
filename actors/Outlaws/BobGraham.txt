@@ -13,7 +13,7 @@ Actor Outlaws_Enemy_BobGraham : OutlawsEnemyCore
 			OL52 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL52 A 0 A_GiveInventory("Outlaws_Enemy_AllowMelee")
 			OL52 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",3)
-			OL52 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",2)
+			//OL52 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",2)
 			OL52 A 0 A_GiveInventory("Outlaws_Enemy_ID",21)
 			Goto Super::Spawn
 		Death:

@@ -200,8 +200,9 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoidTotalGib
 			
 		//Crouching state
 		Crouch:
-			"####" T 0 A_UnsetShootable
-			"####" T 0 A_ChangeFlag("NODAMAGE",true)
+			"####" T 0 ACS_NamedExecuteWithResult("Outlaws_EnemyCrouching",16)
+			//"####" T 0 A_UnsetShootable
+			//"####" T 0 A_ChangeFlag("NODAMAGE",true)
 			"####" T 0 A_JumpIfInventory("Outlaws_Enemy_CrouchType",2,"Crouch2")
 		Crouch1:
 			"####" T 16
@@ -210,8 +211,8 @@ Actor OutlawsEnemyCore : SamsaraMonsterHumanoidTotalGib
 			"####" TUTU 4 A_Chase("","")
 			Goto UnCrouch
 		UnCrouch:
-			"####" T 0 A_SetShootable
-			"####" T 0 A_ChangeFlag("NODAMAGE",false)
+			//"####" T 0 A_SetShootable
+			//"####" T 0 A_ChangeFlag("NODAMAGE",false)
 			"####" "#" 1 A_Jump(256,"See")
 			Wait
 		
@@ -707,8 +708,9 @@ Actor OutlawsExpansionEnemyCore : OutlawsEnemyCore
 			
 		//Crouching state
 		Crouch:
-			"####" A 0 A_UnsetShootable
-			"####" A 0 A_ChangeFlag("NODAMAGE",true)
+			"####" A 0 ACS_NamedExecuteWithResult("Outlaws_EnemyCrouching",24)
+			//"####" A 0 A_UnsetShootable
+			//"####" A 0 A_ChangeFlag("NODAMAGE",true)
 			"####" A 0 A_JumpIfInventory("Outlaws_Enemy_CrouchType",3,"Crouch3")
 			"####" A 0 A_JumpIfInventory("Outlaws_Enemy_CrouchType",2,"Crouch2")
 			"####" A 4 A_FaceTarget
@@ -717,8 +719,8 @@ Actor OutlawsExpansionEnemyCore : OutlawsEnemyCore
 			"####" D 4 A_GiveInventory("Outlaws_EnemyPrimary")
 			"####" EA 4 A_FaceTarget
 		UnCrouch:
-			"####" "#" 0 A_SetShootable
-			"####" "#" 0 A_ChangeFlag("NODAMAGE",false)
+			//"####" "#" 0 A_SetShootable
+			//"####" "#" 0 A_ChangeFlag("NODAMAGE",false)
 			"####" "#" 1 A_Jump(256,"See")
 			Wait
 		Crouch2:

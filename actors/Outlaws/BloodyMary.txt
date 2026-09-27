@@ -12,7 +12,7 @@ Actor Outlaws_Enemy_BloodyMary : OutlawsEnemyCore
 			OL50 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
 			OL50 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL50 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
-			OL50 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL50 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL50 A 0 A_GiveInventory("Outlaws_Enemy_ID",17)
 			Goto Super::Spawn
 		Death:

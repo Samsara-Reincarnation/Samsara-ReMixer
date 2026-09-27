@@ -13,7 +13,7 @@ Actor Outlaws_Enemy_BadGuy1 : OutlawsEnemyCore
 			OL20 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL20 A 0 A_GiveInventory("Outlaws_Enemy_StrafeBehavior",1)
 			OL20 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",5)
-			OL20 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL20 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL20 A 0 A_GiveInventory("Outlaws_Enemy_ID",1)
 			Goto Super::Spawn
 		Death:
@@ -39,7 +39,7 @@ Actor Outlaws_Enemy_BadGuy2 : OutlawsEnemyCore
 			OL22 A 0 A_GiveInventory("Outlaws_Enemy_AllowDynamite")
 			OL22 A 0 A_GiveInventory("Outlaws_Enemy_StrafeBehavior",1)
 			OL22 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",5)
-			OL22 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL22 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL22 A 0 A_GiveInventory("Outlaws_Enemy_ID",2)
 			Goto Super::Spawn
 		Death:
@@ -64,7 +64,7 @@ Actor Outlaws_Enemy_BadGuy3 : OutlawsEnemyCore
 			OL24 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL24 A 0 A_GiveInventory("Outlaws_Enemy_StrafeBehavior",1)
 			OL24 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",5)
-			OL24 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL24 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL24 A 0 A_GiveInventory("Outlaws_Enemy_ID",3)
 			Goto Super::Spawn
 		Death:
@@ -89,7 +89,7 @@ Actor Outlaws_Enemy_BadGuy4 : OutlawsEnemyCore
 			OL26 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL26 A 0 A_GiveInventory("Outlaws_Enemy_StrafeBehavior",2)
 			OL26 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",4)
-			OL26 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL26 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL26 A 0 A_GiveInventory("Outlaws_Enemy_ID",4)
 			Goto Super::Spawn
 		Death:
@@ -129,7 +129,7 @@ Actor Outlaws_Enemy_BadGuy5 : OutlawsEnemyCore
 			OL28 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL28 A 0 A_GiveInventory("Outlaws_Enemy_StrafeBehavior",2)
 			OL28 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",4)
-			OL28 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL28 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL28 A 0 A_GiveInventory("Outlaws_Enemy_ID",5)
 			Goto Super::Spawn
 		Death:
@@ -167,7 +167,7 @@ Actor Outlaws_Enemy_BadGuy6 : OutlawsEnemyCore
 			OL30 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL30 A 0 A_GiveInventory("Outlaws_Enemy_StrafeBehavior",2)
 			OL30 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",4)
-			OL30 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL30 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL30 A 0 A_GiveInventory("Outlaws_Enemy_ID",6)
 			Goto Super::Spawn
 		Death:

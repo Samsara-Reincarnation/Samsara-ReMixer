@@ -11,7 +11,7 @@ Actor Outlaws_Enemy_BillMorgan : OutlawsEnemyCore
 			OL35 A 0 A_SetUserVar("user_speed",6)
 			OL35 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
 			OL35 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
-			OL35 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL35 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL35 A 0 A_GiveInventory("Outlaws_Enemy_ID",19)
 			Goto Super::Spawn
 		Death:

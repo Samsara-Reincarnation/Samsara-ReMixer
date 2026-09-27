@@ -8,3 +8,12 @@ Script "Outlaws_EnemyScream" (void)
 	If(GetActorZ(0) - GetActorFloorZ(0) >= 100.0)
 		GiveInventory("Outlaws_Enemy_FallSoundActivate",1);
 }
+
+Script "Outlaws_EnemyCrouching" (int delay2)
+{
+	SetActorFlag(0,"SHOOTABLE",false);
+	SetActorFlag(0,"NODAMAGE",true);
+	Delay(delay2);
+	SetActorFlag(0,"SHOOTABLE",true);
+	SetActorFlag(0,"NODAMAGE",false);
+}

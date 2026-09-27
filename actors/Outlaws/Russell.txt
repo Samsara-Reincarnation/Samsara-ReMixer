@@ -12,7 +12,7 @@ Actor Outlaws_Enemy_Russell : OutlawsEnemyCore
 			OL44 A 0 A_GiveInventory("Outlaws_Enemy_AllowWalk")
 			OL44 A 0 A_GiveInventory("Outlaws_Enemy_AllowRun")
 			OL44 A 0 A_GiveInventory("Outlaws_Enemy_ShootType",2)
-			OL44 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
+			//OL44 A 0 A_GiveInventory("Outlaws_Enemy_CrouchType",1)
 			OL44 A 0 A_GiveInventory("Outlaws_Enemy_ID",15)
 			Goto Super::Spawn
 		Death:
