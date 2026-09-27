@@ -1493,7 +1493,8 @@ Script "Goldeneye_JetPackLoop" (void)
 		int actorangle = GetActorAngle(0);
 		SpawnForced("Goldeneye_JetPackSmoke",GetActorX(0)+(FixedMul(cos(actorangle),-8.0)),GetActorY(0)+(FixedMul(sin(actorangle),-8.0)),GetActorZ(0)+28.0,smoketid,random(0,1.0));
 		SetActorVelocity(smoketid,random(-2.0,2.0),random(-2.0,2.0),random(-3.0,-2.0),0,0);
-		if(random(0,3)==0) { ThrustThingZ(0,5,0,1); }
+		if(random(0,6)==0) { ThrustThingZ(0,3,0,1); }
+		if(random(0,8)==0) { ThrustThingZ(0,3,1,0); }
 		Thing_ChangeTid(smoketid,0);
 		Delay(2);
 	}
