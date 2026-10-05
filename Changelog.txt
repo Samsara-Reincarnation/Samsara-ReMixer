@@ -16,6 +16,7 @@ Doom:
 
 -Original-
 
+! Renamed the Super Shotgun Guy sprites to avoid sprite name conflicts with other mods.
 * Fixed the shocktrooper not having NOPAIN properly removed when going to the missile state.
 
 -Vanilla Doom Randomizer-
