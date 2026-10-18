@@ -160,6 +160,14 @@ Legacy of Rust/WadFusion:
 
 ! The Spider Mastermind in Sigil II is now replaced with the spider mastermind spawner when using WadFusion v1.6.0+.
 
+PSX Doom CE/PSX Final Doom CE:
+
+* Fixed Hell knight spawners not triggering boss death specials.
+
+Doom 64 CE:
+
+* Fixed Hell knight spawners not triggering boss death specials.
+
 -Settings-
 
 ! Decimals are no longer shown in the menu options.

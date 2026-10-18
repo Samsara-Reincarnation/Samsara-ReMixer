@@ -14,5 +14,5 @@ actor D64BossEye_SamsaraRemixer : D64BossEye_Samsara replaces D64BossEye_Samsara
     DropItem "SpectreSpawner", 255, 20
     DropItem "BloodDemonSpawner", 255, 20
     DropItem "DarkImpSpawner", 255, 30
-    DropItem "HellKnightSpawner", 255, 40
+    DropItem "HellKnightSpawnerForBossEye", 255, 40
 }

@@ -7,5 +7,5 @@ actor PsxBossEye_SamsaraRemixer : PsxBossEye_Samsara replaces PsxBossEye_Samsara
     DropItem "SpectreSpawner", 255, 20
     DropItem "BloodDemonSpawner", 255, 20
     DropItem "CacodemonSpawner", 255, 30
-    DropItem "HellKnightSpawner", 255, 40
+    DropItem "HellKnightSpawnerForBossEye", 255, 40
 }
