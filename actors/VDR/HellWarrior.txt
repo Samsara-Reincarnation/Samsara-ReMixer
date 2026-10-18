@@ -93,7 +93,7 @@ Actor MMRandomizer_HellWarrior : SamsaraMonsterDemonicTotalGib
 			VD51 M 5
 			VD51 N 5 A_NoBlocking
 			VD51 OPQRS 5
-			VD51 T -1
+			VD51 T -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Raise:
 			VD51 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)

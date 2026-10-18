@@ -152,7 +152,7 @@ ACTOR MMRandomizer_CyberWarrior : SamsaraMonsterCyberneticTotalGib
 			VD52 S 7
 			VD52 T 7 A_NoBlocking
 			VD52 UV 7
-			VD52 W -1
+			VD52 W -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Raise:
 			VD52 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)

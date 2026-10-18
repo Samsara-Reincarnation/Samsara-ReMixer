@@ -52,7 +52,7 @@ ACTOR HellKnight3 : HellKnightTwo
 		BOS4 K 8
 		BOS4 L 8 A_NoBlocking
 		BOS4 MN 8
-		BOS4 O -1
+		BOS4 O -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler") // Needed for ReMixer
 		Stop
 	Raise:
 		BOS4 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)

@@ -62,7 +62,7 @@ Actor Metabot : SamsaraMonsterRobotic
         C_MB H 10 A_Scream
         C_MB I 2 A_Fall
         C_MB I 3
-        C_MB I -1
+        C_MB I -1 A_KillMaster
         Stop
 	Pain.MightyBoot:
 		TNT1 A 0 A_ChangeFlag("NOPAIN",1)

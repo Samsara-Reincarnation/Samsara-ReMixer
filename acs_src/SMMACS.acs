@@ -688,7 +688,7 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 	if (oldSlot != -1 && monReplForSlot != oldSlot && monReplForSlot != -1)
 	{
 		// Check for monsters with A_BossDeath calls, non-bosses should instantly call for A_KillMaster
-		if(monSlot != 15 && monSlot != 16 && monSlot != 19 && monSlot != 22 && monSlot != 23 && monSlot != 50 && monSlot != 51 && monSlot != 52 && monSlot != 66 && monSlot != 67 && monSlot != 68 && monSlot != 69 && monSlot != 70 && monSlot != 75 && monSlot != 81 && monSlot != 82)
+		if(monSlot != 14 && monSlot != 15 && monSlot != 16 && monSlot != 19 && monSlot != 22 && monSlot != 23 && monSlot != 50 && monSlot != 51 && monSlot != 52 && monSlot != 66 && monSlot != 67 && monSlot != 68 && monSlot != 69 && monSlot != 70 && monSlot != 75 && monSlot != 81 && monSlot != 82)
 		{
 			if (GetCVar("samsara_zscriptready") == 1) { GiveInventory("SamsaraCountKillDisablerZS", 1); }
 			else { GiveInventory("SamsaraCountKillDisabler", 1); }

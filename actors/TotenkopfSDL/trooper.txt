@@ -768,7 +768,7 @@ Actor TotenkopfTrooperPanzerschreck : SamsaraMonsterHumanoidTotalGib
 			TK32 H 7
 			TK32 I 8
 			TK32 J 7
-			TK32 K -1
+			TK32 K -1 A_KillMaster
 			Stop
 		Pain.MightyBoot:
 			TK32 A 0 A_ChangeFlag("NOPAIN",1)
@@ -976,6 +976,7 @@ actor TotenkopfTrooperPanzerschreck_Shrink : TotenkopfTrooperPanzerschreck
 			"####" A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			"####" A 0 A_PlaySound("duke/enemygib", CHAN_BODY)
 			"####" A 1 A_SpawnItemEx("DukeBloodPool",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR|SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_GiveInventory("MasterDeadToken", 1, AAPTR_Master)
 			stop
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)

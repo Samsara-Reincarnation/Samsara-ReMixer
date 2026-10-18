@@ -84,7 +84,7 @@ Actor MMRandomizer_CyberKnight : SamsaraMonsterCyberneticTotalGib
 			VD58 O 6 Bright A_NoBlocking
 			VD58 PQR 6 Bright
 			VD58 S 6
-			VD58 T -1
+			VD58 T -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Raise:
 			VD58 A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)

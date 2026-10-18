@@ -72,7 +72,7 @@ ACTOR HellKnight64 : SamsaraMonsterDemonicTotalGib
 			64HK K 8
 			64HK L 8 A_NoBlocking
 			64HK M 8
-			64HK N -1
+			64HK N -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
 			Stop
 		Raise:
 			64HK A 0 ACS_NamedExecuteWithResult("SamsaraDecorate", 38)

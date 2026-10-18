@@ -145,62 +145,62 @@ Actor AlienGrunt : SamsaraMonsterAlien
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL08 ABCDEFGHIJKLMNOPQ 4 
-			HL08 R -1
+			HL08 R -1 A_KillMaster
 			stop
 		Death2:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL10 ABCDEFGHIJ 4
-			HL10 K -1
+			HL10 K -1 A_KillMaster
 			stop
 		Death3:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL12 ABCDEFGHIJ 4
-			HL12 K -1
+			HL12 K -1 A_KillMaster
 			stop
 		Death4:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL14 ABCDEFGHIJKL 4
-			HL14 M -1
+			HL14 M -1 A_KillMaster
 			stop
 		Death5:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL16 ABCDEFGHI 4
-			HL16 J -1
+			HL16 J -1 A_KillMaster
 			stop
 		Death_2:
 			TNT1 A 0 A_Jump(256,"Death2_2","Death3_2","Death4_2","Death5_2")
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL09 ABCDEFGHIJKLMNOPQ 4 
-			HL09 R -1
+			HL09 R -1 A_KillMaster
 			stop
 		Death2_2:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL11 ABCDEFGHIJ 4
-			HL11 K -1
+			HL11 K -1 A_KillMaster
 			stop
 		Death3_2:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL13 ABCDEFGHIJ 4
-			HL13 K -1
+			HL13 K -1 A_KillMaster
 			stop
 		Death4_2:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL15 ABCDEFGHIJKL 4
-			HL15 M -1
+			HL15 M -1 A_KillMaster
 			stop
 		Death5_2:
 			TNT1 A 0 A_Scream
 			TNT1 A 0 A_NoBlocking
 			HL17 ABCDEFGHI 4
-			HL17 J -1
+			HL17 J -1 A_KillMaster
 			stop
 		Death.HLLaser:
 		Death.HLExplosive:
@@ -214,6 +214,7 @@ Actor AlienGrunt : SamsaraMonsterAlien
 		XDeath.Massacre:
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_SpawnItemEx("HLAlienGibSpawner",0,0,0,0,0,0,0,SXF_USEBLOODCOLOR)
+			TNT1 A 0 A_KillMaster
 			TNT1 A 5 A_NoBlocking
 			Stop	
 		Pain.ShrinkerDMG:

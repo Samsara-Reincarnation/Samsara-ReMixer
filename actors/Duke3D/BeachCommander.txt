@@ -119,6 +119,7 @@ ACTOR BlueBeachCommander : SamsaraMixerAssaultCommander
 			DN68 G 5 A_Scream
 			DN68 H 5 A_NoBlocking
 			DN68 IJKLMN 5
+			TNT1 A 0 A_KillMaster
 			TNT1 A -1 A_SpawnItemEx("BlueBeachCommanderCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		Pain.ShrinkerDMG:
@@ -154,7 +155,21 @@ ACTOR BlueBeachCommander : SamsaraMixerAssaultCommander
 			"####" "#" 4 A_SetScale(0.2*(user_scalex/65536.0),0.2*(user_scaley/65536.0))
 			"####" "#" 0 A_SpawnItemEx("BlueBeachCommander_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 2
-			TNT1 A 0 Thing_Remove(0)
+			TNT1 A 0 A_ChangeFlag("NODAMAGE", 1)
+			TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
+			TNT1 A 0 A_ChangeFlag("VULNERABLE", 1)
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+			Goto ShrunkLoop
+		ShrunkLoop:
+			TNT1 A 2 A_JumpIfInventory("MasterDeadToken",1,"ShrunkDie")
+			Loop
+		ShrunkDie:
+			TNT1 A 0
+			TNT1 A 1 A_Die("Shrink")
+			Stop
+		Death.Shrink:
+			TNT1 A 0
+			TNT1 A 1 A_KillMaster
 			Stop
 	}
 }
@@ -345,6 +360,7 @@ actor BlueBeachCommander_Shrink : BlueBeachCommander
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_PlaySound("duke/enemygib", CHAN_BODY)
 			TNT1 A 1 A_SpawnItemEx("DukeBloodPool_Duke",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_GiveInventory("MasterDeadToken", 1, AAPTR_Master)
 			Stop
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)
@@ -510,6 +526,7 @@ ACTOR RedBeachCommander : SamsaraMixerAssaultCommander
 			DN69 G 5 A_Scream
 			DN69 H 5 A_NoBlocking
 			DN69 IJKLMN 5
+			TNT1 A 0 A_KillMaster
 			TNT1 A -1 A_SpawnItemEx("RedBeachCommanderCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		Pain.ShrinkerDMG:
@@ -545,7 +562,21 @@ ACTOR RedBeachCommander : SamsaraMixerAssaultCommander
 			"####" "#" 4 A_SetScale(0.2*(user_scalex/65536.0),0.2*(user_scaley/65536.0))
 			"####" "#" 0 A_SpawnItemEx("RedBeachCommander_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 2
-			TNT1 A 0 Thing_Remove(0)
+			TNT1 A 0 A_ChangeFlag("NODAMAGE", 1)
+			TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
+			TNT1 A 0 A_ChangeFlag("VULNERABLE", 1)
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+			Goto ShrunkLoop
+		ShrunkLoop:
+			TNT1 A 2 A_JumpIfInventory("MasterDeadToken",1,"ShrunkDie")
+			Loop
+		ShrunkDie:
+			TNT1 A 0
+			TNT1 A 1 A_Die("Shrink")
+			Stop
+		Death.Shrink:
+			TNT1 A 0
+			TNT1 A 1 A_KillMaster
 			Stop
 	}
 }
@@ -736,6 +767,7 @@ actor RedBeachCommander_Shrink : RedBeachCommander
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_PlaySound("duke/enemygib", CHAN_BODY)
 			TNT1 A 1 A_SpawnItemEx("DukeBloodPool_Duke",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_GiveInventory("MasterDeadToken", 1, AAPTR_Master)
 			Stop
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)
@@ -901,6 +933,7 @@ ACTOR GreenBeachCommander : SamsaraMixerAssaultCommander
 			DN70 G 5 A_Scream
 			DN70 H 5 A_NoBlocking
 			DN70 IJKLMN 5
+			TNT1 A 0 A_KillMaster
 			TNT1 A -1 A_SpawnItemEx("GreenBeachCommanderCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		Pain.ShrinkerDMG:
@@ -936,7 +969,21 @@ ACTOR GreenBeachCommander : SamsaraMixerAssaultCommander
 			"####" "#" 4 A_SetScale(0.2*(user_scalex/65536.0),0.2*(user_scaley/65536.0))
 			"####" "#" 0 A_SpawnItemEx("GreenBeachCommander_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 2
-			TNT1 A 0 Thing_Remove(0)
+			TNT1 A 0 A_ChangeFlag("NODAMAGE", 1)
+			TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
+			TNT1 A 0 A_ChangeFlag("VULNERABLE", 1)
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+			Goto ShrunkLoop
+		ShrunkLoop:
+			TNT1 A 2 A_JumpIfInventory("MasterDeadToken",1,"ShrunkDie")
+			Loop
+		ShrunkDie:
+			TNT1 A 0
+			TNT1 A 1 A_Die("Shrink")
+			Stop
+		Death.Shrink:
+			TNT1 A 0
+			TNT1 A 1 A_KillMaster
 			Stop
 	}
 }
@@ -1127,6 +1174,7 @@ actor GreenBeachCommander_Shrink : GreenBeachCommander
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_PlaySound("duke/enemygib", CHAN_BODY)
 			TNT1 A 1 A_SpawnItemEx("DukeBloodPool_Duke",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_GiveInventory("MasterDeadToken", 1, AAPTR_Master)
 			Stop
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)
@@ -1292,6 +1340,7 @@ ACTOR GrayBeachCommander : SamsaraMixerAssaultCommander
 			DN71 G 5 A_Scream
 			DN71 H 5 A_NoBlocking
 			DN71 IJKLMN 5
+			TNT1 A 0 A_KillMaster
 			TNT1 A -1 A_SpawnItemEx("GrayBeachCommanderCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		Pain.ShrinkerDMG:
@@ -1327,7 +1376,21 @@ ACTOR GrayBeachCommander : SamsaraMixerAssaultCommander
 			"####" "#" 4 A_SetScale(0.2*(user_scalex/65536.0),0.2*(user_scaley/65536.0))
 			"####" "#" 0 A_SpawnItemEx("GrayBeachCommander_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 2
-			TNT1 A 0 Thing_Remove(0)
+			TNT1 A 0 A_ChangeFlag("NODAMAGE", 1)
+			TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
+			TNT1 A 0 A_ChangeFlag("VULNERABLE", 1)
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+			Goto ShrunkLoop
+		ShrunkLoop:
+			TNT1 A 2 A_JumpIfInventory("MasterDeadToken",1,"ShrunkDie")
+			Loop
+		ShrunkDie:
+			TNT1 A 0
+			TNT1 A 1 A_Die("Shrink")
+			Stop
+		Death.Shrink:
+			TNT1 A 0
+			TNT1 A 1 A_KillMaster
 			Stop
 	}
 }
@@ -1518,6 +1581,7 @@ actor GrayBeachCommander_Shrink : GrayBeachCommander
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_PlaySound("duke/enemygib", CHAN_BODY)
 			TNT1 A 1 A_SpawnItemEx("DukeBloodPool_Duke",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_GiveInventory("MasterDeadToken", 1, AAPTR_Master)
 			Stop
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)
@@ -1683,6 +1747,7 @@ ACTOR DarkGrayBeachCommander : SamsaraMixerAssaultCommander
 			DN72 G 5 A_Scream
 			DN72 H 5 A_NoBlocking
 			DN72 IJKLMN 5
+			TNT1 A 0 A_KillMaster
 			TNT1 A -1 A_SpawnItemEx("DarkGrayBeachCommanderCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		Pain.ShrinkerDMG:
@@ -1718,7 +1783,21 @@ ACTOR DarkGrayBeachCommander : SamsaraMixerAssaultCommander
 			"####" "#" 4 A_SetScale(0.2*(user_scalex/65536.0),0.2*(user_scaley/65536.0))
 			"####" "#" 0 A_SpawnItemEx("DarkGrayBeachCommander_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 2
-			TNT1 A 0 Thing_Remove(0)
+			TNT1 A 0 A_ChangeFlag("NODAMAGE", 1)
+			TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
+			TNT1 A 0 A_ChangeFlag("VULNERABLE", 1)
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+			Goto ShrunkLoop
+		ShrunkLoop:
+			TNT1 A 2 A_JumpIfInventory("MasterDeadToken",1,"ShrunkDie")
+			Loop
+		ShrunkDie:
+			TNT1 A 0
+			TNT1 A 1 A_Die("Shrink")
+			Stop
+		Death.Shrink:
+			TNT1 A 0
+			TNT1 A 1 A_KillMaster
 			Stop
 	}
 }
@@ -1909,6 +1988,7 @@ actor DarkGrayBeachCommander_Shrink : DarkGrayBeachCommander
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_PlaySound("duke/enemygib", CHAN_BODY)
 			TNT1 A 1 A_SpawnItemEx("DukeBloodPool_Duke",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_GiveInventory("MasterDeadToken", 1, AAPTR_Master)
 			Stop
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)
@@ -2074,6 +2154,7 @@ ACTOR DarkBlueBeachCommander : SamsaraMixerAssaultCommander
 			DN73 G 5 A_Scream
 			DN73 H 5 A_NoBlocking
 			DN73 IJKLMN 5
+			TNT1 A 0 A_KillMaster
 			TNT1 A -1 A_SpawnItemEx("DarkBlueBeachCommanderCorpse", 0, 0, 0, velx, vely, velz, 0, SXF_NOCHECKPOSITION|SXF_SETMASTER|SXF_TRANSFERSCALE|SXF_ABSOLUTEVELOCITY)
 			Stop
 		Pain.ShrinkerDMG:
@@ -2109,7 +2190,21 @@ ACTOR DarkBlueBeachCommander : SamsaraMixerAssaultCommander
 			"####" "#" 4 A_SetScale(0.2*(user_scalex/65536.0),0.2*(user_scaley/65536.0))
 			"####" "#" 0 A_SpawnItemEx("DarkBlueBeachCommander_Shrink", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_TRANSFERPOINTERS|SXF_TRANSFERSPECIAL|SXF_TRANSFERAMBUSHFLAG|SXF_SETMASTER,0,tid)
 			TNT1 A 2
-			TNT1 A 0 Thing_Remove(0)
+			TNT1 A 0 A_ChangeFlag("NODAMAGE", 1)
+			TNT1 A 0 A_ChangeFlag("NOPAIN", 1)
+			TNT1 A 0 A_ChangeFlag("VULNERABLE", 1)
+			TNT1 A 0 A_ChangeFlag("SHOOTABLE", 0)
+			Goto ShrunkLoop
+		ShrunkLoop:
+			TNT1 A 2 A_JumpIfInventory("MasterDeadToken",1,"ShrunkDie")
+			Loop
+		ShrunkDie:
+			TNT1 A 0
+			TNT1 A 1 A_Die("Shrink")
+			Stop
+		Death.Shrink:
+			TNT1 A 0
+			TNT1 A 1 A_KillMaster
 			Stop
 	}
 }
@@ -2300,6 +2395,7 @@ actor DarkBlueBeachCommander_Shrink : DarkBlueBeachCommander
 			TNT1 A 0 ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
 			TNT1 A 0 A_PlaySound("duke/enemygib", CHAN_BODY)
 			TNT1 A 1 A_SpawnItemEx("DukeBloodPool_Duke",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION)
+			TNT1 A 0 A_GiveInventory("MasterDeadToken", 1, AAPTR_Master)
 			Stop
 		DukeStomp:
 			"####" "#" 0 A_GiveToTarget("DukeStomp", 1)

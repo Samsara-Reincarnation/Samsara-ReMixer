@@ -62,7 +62,7 @@ Actor StrifeTemplar : Templar2
 		PGRD MN 4
 		PGRD O 4 A_TossGib
 		PGRD "PQRSTUVWXYZ[" 4
-		PGRD "\" -1
+		PGRD "\" -1 A_KillMaster
 		Stop
 	Crush:
 		PGRD "\" -1

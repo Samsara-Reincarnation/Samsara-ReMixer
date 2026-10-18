@@ -231,11 +231,17 @@ ACTOR HellKnightSpawner : ReMixerBaseSpawner replaces HellKnight
 	Mass 1000
 	Radius 24
 	SpawnID 113
+	+BOSSDEATH
 	States
 	{
 		See:
 			TNT1 A 0 ACS_NamedExecuteWithResult("ReMixerSpawnScript",2,0,14)
 			Goto Super::SeeWait
+		Continue:
+			Goto Super::BossWait
+		Death:
+			TNT1 A 6 A_BossDeath
+			Stop
 	}
 }
 
@@ -479,6 +485,18 @@ ACTOR ArachnotronSpawnerForBossEye : ArachnotronSpawner
 	}
 }
 
+ACTOR HellKnightSpawnerForBossEye : HellKnightSpawner
+{
+	States
+	{
+		Continue:
+		Death:
+		Remove:
+			TNT1 A 1 Thing_Remove(0)
+			Stop
+	}
+}
+
 ACTOR BaronOfHellSpawnerForBossEye : BaronOfHellSpawner
 {
 	States
@@ -514,6 +532,6 @@ ACTOR BossEye2ReMixer : BossEye2 replaces BossEye2
 	DropItem "RevenantSpawner", 255, 10
 	DropItem "ArachnotronSpawnerForBossEye", 255, 20
 	DropItem "FatsoSpawnerForBossEye", 255, 30
-	DropItem "HellKnightSpawner", 255, 24
+	DropItem "HellKnightSpawnerForBossEye", 255, 24
 	DropItem "BaronOfHellSpawnerForBossEye", 255, 10
 }
