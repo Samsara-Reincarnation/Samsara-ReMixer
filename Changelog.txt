@@ -72,6 +72,11 @@ Blake Stone:
 
 - The mutated guard's health has been decreased (from 150 to 60).
 
+Strife:
+
++ The Inquisitor's health has been increased (from 3750 to 4000).
+- The Inquisitor no longer takes reduced damage from attacks.
+
 Blood:
 
 ! Renamed the butcher's actor name to avoid a name conflict with other mods.
@@ -155,6 +160,15 @@ Catacomb 3D:
 Doom:
 
 * Fixed the Icon of Sin's spawn cubes telefragging mancubus, arachnotron, baron of hell, and arch-vile spawners.
+
+Heretic:
+
+! Monsters that spawn in the Gargoyle spawn slot now have 66.6% of their original health.
+! Monsters that spawn in the Weredragon spawn slot now have 50% of their original health.
+
+Strife: Quest for the Sigil:
+
+! Monsters that spawn in the Inquisitor spawn slot now have 50% of their original health.
 
 Legacy of Rust/WadFusion:
 

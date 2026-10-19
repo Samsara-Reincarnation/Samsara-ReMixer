@@ -175,6 +175,31 @@ function void applyModifierToMonster(int property, str modifierCVar)
 	}
 }
 
+function void adjustMonsterHealth(int monSlot)
+{
+	switch(monSlot)
+	{
+		// Reduce gargoyle monster health by 33%
+		case 38:
+			SetActorProperty(0,APROP_Health,max(1,FixedMul(GetActorProperty(0,APROP_Health),0.666)));
+			break;
+		// Reduce weredragon monster health by 50%
+		case 49:
+			SetActorProperty(0,APROP_Health,max(1,FixedMul(GetActorProperty(0,APROP_Health),0.50)));
+			break;
+		// Reduce inquisitor monster health by 50%
+		case 76:
+			SetActorProperty(0,APROP_Health,max(1,FixedMul(GetActorProperty(0,APROP_Health),0.50)));
+			break;
+		// Reduce tyrant monster health by 75%
+		case 82:
+			SetActorProperty(0,APROP_Health,max(1,FixedMul(GetActorProperty(0,APROP_Health),0.25)));
+			break;
+		default:
+			break;
+	}
+}
+
 Script "ReMixerSpawnScript" (int spawncode, int override, int monsterSlot) //668
 {
 	Switch(spawncode)
@@ -763,11 +788,7 @@ Script "ReMixer_PickActor" (int monGame, int monAlt, int monSlot)
 	// Needed for Adventures of Square compatibility
 	if (GetCVar("samsara_currentgame") == 256) { GiveInventory("SamsaraMonsterSquareVacuumProtectionTrigger", 1); }
 
-	// Reduce tyrant monster health by 75%
-	if (monSlot == 82)
-	{
-		SetActorProperty(0,APROP_Health,FixedMul(GetActorProperty(0,APROP_Health),0.25));
-	}
+	adjustMonsterHealth(monSlot);
 }
 
 Script "ReMixerAwakenMonster" (void)

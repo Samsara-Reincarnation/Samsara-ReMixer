@@ -1,49 +1,12 @@
 Actor StrifeInquisitor : SamsaraMonsterRemixInquisitor
 {
-	Health 3750
+	Health 4000
 	Tag "Inquisitor"
 	+BOSSDEATH
 	+DONTRIP
 	+NOINFIGHTING
 	Species "StrifeEnemies"
-	DamageFactor "Normal", 0.7
-	DamageFactor "WMCNade", 0.7
-	DamageFactor "Mace", 1.2
-	DamageFactor "BJSpear", 0.2
-	Damagefactor "Falling", 0
-	DamageFactor "DCannonProj", 0.8
-	DamageFactor "Shock", 0.3
-	DamageFactor "LifeLeech", 0.1
-	DamageFactor "CalebFire", 0.76
- 	DamageFactor "Vodoo", 0.1
-	DamageFactor "DisruptorWall", 0.3
-	DamageFactor "EradNova", 0.2
-	DamageFactor "EradGreenFire", 0.1
-	DamageFactor "EradCoopGreenFire", 0.1
-	DamageFactor "RottFire", 0.3
-	DamageFactor "HLLaser", 0.5
-	DamageFactor "WTRangedFire", 0.3
-	DamageFactor "Nuke", 0.1
-	DamageFactor "SWNuke", 0.1
-	DamageFactor "SWNukeCoop", 0.1
-	DamageFactor "SWFlame", 0.1
-	DamageFactor "SWFlameCoop", 0.1
-	DamageFactor "SWFlame2", 0.1
-	DamageFactor "SWFlame2Coop", 0.1
-	DamageFactor "SWFlame3", 0.7
-	DamageFactor "RMR-BigPlasma", 0.5
-	DamageFactor "CMDMGSHIT", 0.7
-	DamageFactor "Disintegrate", 0.7
-	DamageFactor "StrifeMauler", 0.7
-	DamageFactor "C7Disintegrate", 0.5
 	PainChance "ShrinkerDMG", 0
-	DamageFactor "CorvusCrossbow", 1.15
-	DamageFactor "DragonClaw", 1.5
-	DamageFactor "ElectricBolt", 2.0
-	DamageFactor "PoisonBolt", 0
-	DamageFactor "MarathonFusion", 2.0
-	DamageFactor "Tesla", 2.0
-	DamageFactor "CorvusHellstaffTomed", 0.2
 	PainChance "MightyBoot", 0
 	PainChance "PhosFireCoop", 0
 	PainChance "EradCoopGreenFire", 0
