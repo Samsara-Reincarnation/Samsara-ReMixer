@@ -12655,12 +12655,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Mosquito"}
 			},
 			{//Cacodemon
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Revenant
 				{"Outlaws_Enemy_Slim"},
@@ -12668,20 +12663,10 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Outlaws_Enemy_DickFarm"}
 			},
 			{//Cacolantern
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Pain Elemental
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Hell Knight
 				{"Outlaws_Enemy_Sanchez"},
@@ -12694,12 +12679,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Outlaws_Enemy_DickClif"}
 			},
 			{//Abaddon
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Arch-vile
 				{"Outlaws_Enemy_BloodyMary"},
@@ -12727,320 +12707,262 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"storm_trooper"}
 			},
 			{//Flemoidus Commonus
-				{"OldSkinnyCoot"},
-				{"BlueGroovyOldCoot"},
-				{"BrownGroovyOldCoot"},
-				{"RedPantsGroovyOldCoot"},
-				{"RedGroovyOldCoot"},
-				{"GreenGroovyOldCoot"},
-				{"GrayGroovyOldCoot"},
-				{"WhiteGroovyOldCoot"},
-				{"OrangeGroovyOldCoot"},
-				{"DarkGreenGroovyOldCoot"},
-				{"GhostGroovyOldCoot"}
+				{"Outlaws_Enemy_BadGuy1"},
+				{"Outlaws_Enemy_BadGuy2"},
+				{"Outlaws_Enemy_BadGuy3"},
+				{"Outlaws_Enemy_Tarantula"}
 			},
 			{//Flemoidus Bipedicus
-				{"BillyRayJeeter"},
-				{"BillyRayJeeter_Brown"},
-				{"BillyRayJeeter_Gray"},
-				{"BillyRayJeeter_DarkGray"},
-				{"BillyRayJeeter_Ghost"}
+				{"Outlaws_Enemy_BadGuy1"},
+				{"Outlaws_Enemy_BadGuy2"},
+				{"Outlaws_Enemy_BadGuy3"},
+				{"Outlaws_Enemy_Tarantula"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"TurdMinion"},
-				{"TurdSwampMinion"},
-				{"TurdLavaMinion"},
-				{"RedDaisyMae"},
-				{"GreenDaisyMae"},
-				{"DarkDaisyMae"},
-				{"PartiDaisyMae"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"}
 			},
 			{//Flemoidus Stridicus
-				{"GuardDog"},
-				{"GuardDog_Blood"},
-				{"Jackelope"},
-				{"Alligator"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
 			},
 			{//Larva
-				{"GuardDog"},
-				{"GuardDog_Blood"},
-				{"Jackelope"},
-				{"Alligator"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
 			},
 			{//Flem Mine
 				{"Mosquito"}
 			},
 			{//Flemoidus Cycloptis Commonus
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Super Cycloptis
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Quadrumpus
-				{"DaisyNDoylie"}
+				{"Outlaws_Enemy_Slim"},
+				{"Outlaws_Enemy_Henry"},
+				{"Outlaws_Enemy_DickFarm"}
 			},
 			{//Flemoidus Maximus
-				{"DarkGreenVixen"},
-				{"GreenVixen"},
-				{"BrownVixen"},
-				{"BlueVixen"},
-				{"RedVixen"},
-				{"SpecialVixen"}
+				{"Outlaws_Enemy_BloodyMary"},
+				{"Outlaws_Enemy_TwoFeathers"},
+				{"Outlaws_Enemy_Crowe"}
 			},
 			{//Flembrane
-				{"AlienHulk"},
-				{"AlienHulk_Blue"}
+				{"Outlaws_Enemy_BillMorgan"},
+				{"Outlaws_Enemy_Dorsey"}
 			},
 			{//Flembomination
-				{"BigJackelope"},
-				{"Queenvixen"}
+				{"Outlaws_Enemy_BobGraham"}
 			},
 			{//Snotfolus
-				{"Assface"}
+				{"Outlaws_Enemy_DrDeath"},
+				{"Outlaws_Enemy_Kenny"}
 			},
 			{//Gargoyle
 				{"Mosquito"}
 			},
 			{//Fire Gargoyle
-				{"TurdMinion"},
-				{"TurdSwampMinion"},
-				{"TurdLavaMinion"},
-				{"RedDaisyMae"},
-				{"GreenDaisyMae"},
-				{"DarkDaisyMae"},
-				{"PartiDaisyMae"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"}
 			},
 			{//Golem
-				{"OldSkinnyCoot"},
-				{"BlueGroovyOldCoot"},
-				{"BrownGroovyOldCoot"},
-				{"RedPantsGroovyOldCoot"},
-				{"RedGroovyOldCoot"},
-				{"GreenGroovyOldCoot"},
-				{"GrayGroovyOldCoot"},
-				{"WhiteGroovyOldCoot"},
-				{"OrangeGroovyOldCoot"},
-				{"DarkGreenGroovyOldCoot"},
-				{"GhostGroovyOldCoot"}
+				{"Outlaws_Enemy_BadGuy1"},
+				{"Outlaws_Enemy_BadGuy2"},
+				{"Outlaws_Enemy_BadGuy3"},
+				{"Outlaws_Enemy_Tarantula"}
 			},
 			{//Golem Ghost
-				{"GuardDog"},
-				{"GuardDog_Blood"},
-				{"Jackelope"},
-				{"Alligator"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
 			},
 			{//Nitrogolem
-				{"BillyRayJeeter"},
-				{"BillyRayJeeter_Brown"},
-				{"BillyRayJeeter_Gray"},
-				{"BillyRayJeeter_DarkGray"},
-				{"BillyRayJeeter_Ghost"}
+				{"Outlaws_Enemy_BadGuy1"},
+				{"Outlaws_Enemy_BadGuy2"},
+				{"Outlaws_Enemy_BadGuy3"},
+				{"Outlaws_Enemy_Tarantula"}
 			},
 			{//Nitrogolem Ghost
-				{"GuardDog"},
-				{"GuardDog_Blood"},
-				{"Jackelope"},
-				{"Alligator"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
 			},
 			{//Disciple of D'Sparil
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Undead Warrior
-				{"BlueFrankDoyle"},
-				{"RedFrankDoyle"},
-				{"BlackFrankDoyle"},
-				{"GreenFrankDoyle"},
-				{"BrownFrankDoyle"},
-				{"DarkGreenFrankDoyle"},
-				{"GhostFrankDoyle"},
-				{"BlueFrankDoyle_Type2"},
-				{"RedFrankDoyle_Type2"},
-				{"BlackFrankDoyle_Type2"},
-				{"GreenFrankDoyle_Type2"},
-				{"BrownFrankDoyle_Type2"},
-				{"DarkGreenFrankDoyle_Type2"},
-				{"GhostFrankDoyle_Type2"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"}
 			},
 			{//Undead Warrior Ghost
-				{"GuardDog"},
-				{"GuardDog_Blood"},
-				{"Jackelope"},
-				{"Alligator"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
 			},
 			{//Sabreclaw
-				{"GuardDog"},
-				{"GuardDog_Blood"},
-				{"Jackelope"},
-				{"Alligator"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
 			},
 			{//Ophidian
-				{"DaisyNDoylie"}
+				{"Outlaws_Enemy_Slim"},
+				{"Outlaws_Enemy_Henry"},
+				{"Outlaws_Enemy_DickFarm"}
 			},
 			{//Weredragon
-				{"SheriffHobbes"},
-				{"SheriffHobbes_Ghost"}
+				{"Outlaws_Enemy_Sanchez"},
+				{"Outlaws_Enemy_TimBlood"}
 			},
 			{//Iron Lich
-				{"DarkGreenVixen"},
-				{"GreenVixen"},
-				{"BrownVixen"},
-				{"BlueVixen"},
-				{"RedVixen"},
-				{"SpecialVixen"}
+				{"Outlaws_Enemy_BloodyMary"},
+				{"Outlaws_Enemy_TwoFeathers"},
+				{"Outlaws_Enemy_Crowe"}
 			},
 			{//Maulotaur
-				{"Assface"}
+				{"Outlaws_Enemy_DrDeath"},
+				{"Outlaws_Enemy_Kenny"}
 			},
 			{//D'Sparil
-				{"BigJackelope"},
-				{"Queenvixen"}
+				{"Outlaws_Enemy_BobGraham"}
 			},
 			{//Chicken
-				{"Jackelope"},
-				{"AssaultTrooper"},
-				{"AssaultCaptain"}
+				{"storm_trooper"}
 			},
 			{//Ettin
-				{"OldSkinnyCoot"},
-				{"BlueGroovyOldCoot"},
-				{"BrownGroovyOldCoot"},
-				{"RedPantsGroovyOldCoot"},
-				{"RedGroovyOldCoot"},
-				{"GreenGroovyOldCoot"},
-				{"GrayGroovyOldCoot"},
-				{"WhiteGroovyOldCoot"},
-				{"OrangeGroovyOldCoot"},
-				{"DarkGreenGroovyOldCoot"},
-				{"GhostGroovyOldCoot"}
+				{"Outlaws_Enemy_BadGuy1"},
+				{"Outlaws_Enemy_BadGuy2"},
+				{"Outlaws_Enemy_BadGuy3"},
+				{"Outlaws_Enemy_Tarantula"}
 			},
 			{//Afrit
 				{"Mosquito"}
 			},
 			{//Dark Bishop
-				{"BlueFrankDoyle"},
-				{"RedFrankDoyle"},
-				{"BlackFrankDoyle"},
-				{"GreenFrankDoyle"},
-				{"BrownFrankDoyle"},
-				{"DarkGreenFrankDoyle"},
-				{"GhostFrankDoyle"},
-				{"BlueFrankDoyle_Type2"},
-				{"RedFrankDoyle_Type2"},
-				{"BlackFrankDoyle_Type2"},
-				{"GreenFrankDoyle_Type2"},
-				{"BrownFrankDoyle_Type2"},
-				{"DarkGreenFrankDoyle_Type2"},
-				{"GhostFrankDoyle_Type2"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"}
 			},
 			{//Centaur
-				{"GuardDog"},
-				{"GuardDog_Blood"},
-				{"Jackelope"},
-				{"Alligator"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
 			},
 			{//Slaughtaur
-				{"AlienHulk"},
-				{"AlienHulk_Blue"}
+				{"Outlaws_Enemy_BillMorgan"},
+				{"Outlaws_Enemy_Dorsey"}
 			},
 			{//Green Chaos Serpent
-				{"SheriffHobbes"},
-				{"SheriffHobbes_Ghost"}
+				{"Outlaws_Enemy_Sanchez"},
+				{"Outlaws_Enemy_TimBlood"}
 			},
 			{//Stalker
-				{"BillyRayJeeter"},
-				{"BillyRayJeeter_Brown"},
-				{"BillyRayJeeter_Gray"},
-				{"BillyRayJeeter_DarkGray"},
-				{"BillyRayJeeter_Ghost"}
+				{"Outlaws_Enemy_BadGuy1"},
+				{"Outlaws_Enemy_BadGuy2"},
+				{"Outlaws_Enemy_BadGuy3"},
+				{"Outlaws_Enemy_Tarantula"}
 			},
 			{//Stalker Boss
-				{"BlueFrankDoyle"},
-				{"RedFrankDoyle"},
-				{"BlackFrankDoyle"},
-				{"GreenFrankDoyle"},
-				{"BrownFrankDoyle"},
-				{"DarkGreenFrankDoyle"},
-				{"GhostFrankDoyle"},
-				{"BlueFrankDoyle_Type2"},
-				{"RedFrankDoyle_Type2"},
-				{"BlackFrankDoyle_Type2"},
-				{"GreenFrankDoyle_Type2"},
-				{"BrownFrankDoyle_Type2"},
-				{"DarkGreenFrankDoyle_Type2"},
-				{"GhostFrankDoyle_Type2"}
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"}
 			},
 			{//Wendigo
-				{"DaisyNDoylie"}
+				{"Outlaws_Enemy_Slim"},
+				{"Outlaws_Enemy_Henry"},
+				{"Outlaws_Enemy_DickFarm"}
 			},
 			{//Reiver
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Reiver (Buried)
-				{"TurdUFO"},
-				{"ChickenUFO"},
-				{"CootUFO"},
-				{"DogUFO"},
-				{"PigUFO"},
-				{"BillyRayUFO"}
+				{"TurdUFO"}
 			},
 			{//Brown Chaos Serpent
-				{"DaisyNDoylie"}
+				{"Outlaws_Enemy_Slim"},
+				{"Outlaws_Enemy_Henry"},
+				{"Outlaws_Enemy_DickFarm"}
 			},
 			{//Traductus
-				{"DarkGreenVixen"},
-				{"GreenVixen"},
-				{"BrownVixen"},
-				{"BlueVixen"},
-				{"RedVixen"},
-				{"SpecialVixen"}
+				{"Outlaws_Enemy_BloodyMary"},
+				{"Outlaws_Enemy_TwoFeathers"},
+				{"Outlaws_Enemy_Crowe"}
 			},
 			{//Zedek
-				{"DarkGreenVixen"},
-				{"GreenVixen"},
-				{"BrownVixen"},
-				{"BlueVixen"},
-				{"RedVixen"},
-				{"SpecialVixen"}
+				{"Outlaws_Enemy_BloodyMary"},
+				{"Outlaws_Enemy_TwoFeathers"},
+				{"Outlaws_Enemy_Crowe"}
 			},
 			{//Menelkir
-				{"DarkGreenVixen"},
-				{"GreenVixen"},
-				{"BrownVixen"},
-				{"BlueVixen"},
-				{"RedVixen"},
-				{"SpecialVixen"}
+				{"Outlaws_Enemy_BloodyMary"},
+				{"Outlaws_Enemy_TwoFeathers"},
+				{"Outlaws_Enemy_Crowe"}
 			},
 			{//Heresiarch
-				{"Assface"}
+				{"Outlaws_Enemy_DrDeath"},
+				{"Outlaws_Enemy_Kenny"}
 			},
 			{//Korax
-				{"BigJackelope"},
-				{"Queenvixen"}
+				{"Outlaws_Enemy_BobGraham"}
 			},
 			{//Pig
-				{"Jackelope"},
-				{"AssaultTrooper"},
-				{"AssaultCaptain"}
+				{"storm_trooper"}
+			},
+			{//Stalker (Strife)
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"},
+				{"Outlaws_Enemy_Confederate"}
+			},
+			{//Sentinel
+				{"Mosquito"}
+			},
+			{//Reaver
+				{"Outlaws_Enemy_Slim"},
+				{"Outlaws_Enemy_Henry"},
+				{"Outlaws_Enemy_DickFarm"}
+			},
+			{//Crusader
+				{"Outlaws_Enemy_DickClif"}
+			},
+			{//Inquisitor
+				{"Outlaws_Enemy_DrDeath"},
+				{"Outlaws_Enemy_Kenny"}
+			},
+			{//Ghoul
+				{"Mosquito"}
+			},
+			{//Banshee
+				{"Mosquito"}
+			},
+			{//Shocktrooper
+				{"Outlaws_Enemy_BadGuy4"},
+				{"Outlaws_Enemy_BadGuy5"},
+				{"Outlaws_Enemy_BadGuy6"}
+			},
+			{//Mindweaver
+				{"Outlaws_Enemy_Russell"}
+			},
+			{//Vassago
+				{"Outlaws_Enemy_BillMorgan"},
+				{"Outlaws_Enemy_Dorsey"}
+			},
+			{//Tyrant
+				{"Outlaws_Enemy_DrDeath"},
+				{"Outlaws_Enemy_Kenny"}
 			}
 		}
 	}
@@ -25569,11 +25491,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Cacodemon
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Revenant
@@ -25582,19 +25499,9 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Cacolantern
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pain Elemental
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Hell Knight
@@ -25608,11 +25515,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Abaddon
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Arch-vile
@@ -25644,27 +25546,15 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Bipedicus
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Armored Flemoidus Bipedicus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -25685,28 +25575,17 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Cycloptis Commonus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Super Cycloptis
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Quadrumpus
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Maximus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -25716,10 +25595,10 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flembomination
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Snotfolus
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Gargoyle
@@ -25728,20 +25607,9 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Fire Gargoyle
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Golem
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -25757,7 +25625,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Nitrogolem Ghost
@@ -25767,25 +25634,9 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Disciple of D'Sparil
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Undead Warrior
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -25803,6 +25654,8 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Ophidian
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Weredragon
@@ -25812,31 +25665,19 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Iron Lich
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Maulotaur
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//D'Sparil
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Chicken
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Ettin
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -25846,17 +25687,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Dark Bishop
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -25879,51 +25709,30 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Stalker Boss
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Wendigo
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Reiver
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Reiver (Buried)
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Brown Chaos Serpent
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Traductus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -25931,28 +25740,63 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			{//Zedek
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Menelkir
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Heresiarch
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Korax
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Pig
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Stalker (Strife)
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Sentinel
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Reaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Crusader
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Inquisitor
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Ghoul
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Banshee
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Shocktrooper
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Mindweaver
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Vassago
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+			},
+			{//Tyrant
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
