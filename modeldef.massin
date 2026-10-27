@@ -10128,7 +10128,7 @@ Model HL_M40A1Clip
 
 Model HL_M40A1
 {
-   Path "models/crossbow/opp"   
+   Path "models/HalfLife/weapons/crossbow/opp"   
    Model 0 "w_m40a1.md3"
    Scale 0.6 0.6 0.6   
 	

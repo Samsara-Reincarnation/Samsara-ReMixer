@@ -566,7 +566,7 @@ Model AlienGrunt_ShrinkEffect
 
 Model HLHornetGrunt
 {
-   Path "models/hgunr"   
+   Path "models/HalfLife/weapons/hgunr"   
    Model 0 "v_hornetz.md3"   
    PITCHFROMMOMENTUM
    INHERITACTORPITCH
@@ -582,7 +582,7 @@ Model HLHornetGrunt
 
 Model HLHornetSeekerGrunt
 {
-   Path "models/hgunr"   
+   Path "models/HalfLife/weapons/hgunr"   
    Model 0 "v_hornetz.md3"   
    PITCHFROMMOMENTUM
    INHERITACTORPITCH

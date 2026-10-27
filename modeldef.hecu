@@ -3917,7 +3917,7 @@ Model HECU_Commander2_ShrinkEffect
 
 Model HLHECUGrenade
 {
-   Path "Models/Freeman/Opp/Grenade"   
+   Path "Models/HalfLife/Opp/Grenade"   
    Model 0 "grenade_toss3.md3"   
    ROTATING
    Scale 1.0 1.0 1.0          
@@ -3988,7 +3988,7 @@ Model HLHECUGrenade
 
 Model HLHECUGrenade
 {
-   Path "Models/Freeman/Opp/Grenade"   
+   Path "Models/HalfLife/Opp/Grenade"   
    Model 0 "grenade_toss1.md3"   
    ROTATING
    Scale 1.0 1.0 1.0          
@@ -4059,7 +4059,7 @@ Model HLHECUGrenade
 
 Model HLHECUGrenade_Ground
 {
-   Path "Models/Freeman/Opp/Grenade"   
+   Path "Models/HalfLife/Opp/Grenade"   
    Model 0 "grenade_toss1.md3"   
    Scale 1.0 1.0 1.0          
 
@@ -4068,7 +4068,7 @@ Model HLHECUGrenade_Ground
 
 Model HECU_Grunt1_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -4111,7 +4111,7 @@ Model HECU_Grunt1_Opp_MP5 // out of combat idle
 
 Model HECU_Grunt1_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -4158,7 +4158,7 @@ Model HECU_Grunt1_Opp_MP5 // use when he has a target
 
 Model HECU_Grunt1_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -4193,7 +4193,7 @@ Model HECU_Grunt1_Opp_MP5 // stand fire
 
 Model HECU_Grunt1_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -4228,7 +4228,7 @@ Model HECU_Grunt1_Opp_MP5 // crouch fire
 
 Model HECU_Grunt1_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -4279,7 +4279,7 @@ Model HECU_Grunt1_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Grunt1_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -4302,7 +4302,7 @@ Model HECU_Grunt1_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Grunt1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -4339,7 +4339,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -4406,7 +4406,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -4461,7 +4461,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -4543,7 +4543,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -4616,7 +4616,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -4647,7 +4647,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "torso_grenade.md3" 
@@ -4734,7 +4734,7 @@ Model HECU_Grunt1_Opp_MP5 // throw a grenade
 
 Model HECU_Grunt1_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -4817,7 +4817,7 @@ Model HECU_Grunt1_Opp_MP5 // out of combat spawn
 
 Model HECU_Grunt1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -4872,7 +4872,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -4919,7 +4919,7 @@ Model HECU_Grunt1_Opp_MP5 // wounded run
 
 Model HECU_Grunt1_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -4990,7 +4990,7 @@ Model HECU_Grunt1_Opp_MP5 // wounded walk
 
 Model HECU_Grunt1_Opp_MP5 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -5025,7 +5025,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -5132,7 +5132,7 @@ Model HECU_Grunt1_Opp_MP5
 
 Model HECU_Grunt1_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -5203,7 +5203,7 @@ Model HECU_Grunt1_Opp_MP5 // drop grenade
 
 Model HECU_Grunt1_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -5298,7 +5298,7 @@ Model HECU_Grunt1_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Grunt1_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -5397,7 +5397,7 @@ Model HECU_Grunt1_Opp_MP5 // movement without target
 
 Model HECU_Grunt1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -5440,7 +5440,7 @@ Model HECU_Grunt1_Opp_MP5_Shrink
 
 Model HECU_Grunt1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -5487,7 +5487,7 @@ Model HECU_Grunt1_Opp_MP5_Shrink
 
 Model HECU_Grunt1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -5522,7 +5522,7 @@ Model HECU_Grunt1_Opp_MP5_Shrink
 
 Model HECU_Grunt1_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -5557,7 +5557,7 @@ Model HECU_Grunt1_Opp_MP5_ShrinkEffect
 
 Model HECU_Grunt2_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -5600,7 +5600,7 @@ Model HECU_Grunt2_Opp_MP5 // out of combat idle
 
 Model HECU_Grunt2_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -5647,7 +5647,7 @@ Model HECU_Grunt2_Opp_MP5 // use when he has a target
 
 Model HECU_Grunt2_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -5682,7 +5682,7 @@ Model HECU_Grunt2_Opp_MP5 // stand fire
 
 Model HECU_Grunt2_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -5717,7 +5717,7 @@ Model HECU_Grunt2_Opp_MP5 // crouch fire
 
 Model HECU_Grunt2_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -5768,7 +5768,7 @@ Model HECU_Grunt2_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Grunt2_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -5791,7 +5791,7 @@ Model HECU_Grunt2_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Grunt2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -5828,7 +5828,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -5895,7 +5895,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -5950,7 +5950,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -6032,7 +6032,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -6105,7 +6105,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -6136,7 +6136,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "torso_grenade.md3" 
@@ -6223,7 +6223,7 @@ Model HECU_Grunt2_Opp_MP5 // throw a grenade
 
 Model HECU_Grunt2_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -6306,7 +6306,7 @@ Model HECU_Grunt2_Opp_MP5 // out of combat spawn
 
 Model HECU_Grunt2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -6361,7 +6361,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -6408,7 +6408,7 @@ Model HECU_Grunt2_Opp_MP5 // wounded run
 
 Model HECU_Grunt2_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -6479,7 +6479,7 @@ Model HECU_Grunt2_Opp_MP5 // wounded walk
 
 Model HECU_Grunt2_Opp_MP5 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -6514,7 +6514,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -6621,7 +6621,7 @@ Model HECU_Grunt2_Opp_MP5
 
 Model HECU_Grunt2_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -6692,7 +6692,7 @@ Model HECU_Grunt2_Opp_MP5 // drop grenade
 
 Model HECU_Grunt2_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -6787,7 +6787,7 @@ Model HECU_Grunt2_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Grunt2_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -6886,7 +6886,7 @@ Model HECU_Grunt2_Opp_MP5 // movement without target
 
 Model HECU_Grunt2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -6929,7 +6929,7 @@ Model HECU_Grunt2_Opp_MP5_Shrink
 
 Model HECU_Grunt2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -6976,7 +6976,7 @@ Model HECU_Grunt2_Opp_MP5_Shrink
 
 Model HECU_Grunt2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -7011,7 +7011,7 @@ Model HECU_Grunt2_Opp_MP5_Shrink
 
 Model HECU_Grunt2_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -7046,7 +7046,7 @@ Model HECU_Grunt2_Opp_MP5_ShrinkEffect
 
 Model HECU_Shotgunner1_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -7089,7 +7089,7 @@ Model HECU_Shotgunner1_Opp_MP5 // out of combat idle
 
 Model HECU_Shotgunner1_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -7136,7 +7136,7 @@ Model HECU_Shotgunner1_Opp_MP5 // use when he has a target
 
 Model HECU_Shotgunner1_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -7171,7 +7171,7 @@ Model HECU_Shotgunner1_Opp_MP5 // stand fire
 
 Model HECU_Shotgunner1_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -7206,7 +7206,7 @@ Model HECU_Shotgunner1_Opp_MP5 // crouch fire
 
 Model HECU_Shotgunner1_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -7257,7 +7257,7 @@ Model HECU_Shotgunner1_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Shotgunner1_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -7280,7 +7280,7 @@ Model HECU_Shotgunner1_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -7317,7 +7317,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -7384,7 +7384,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -7439,7 +7439,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -7521,7 +7521,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -7594,7 +7594,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -7625,7 +7625,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "torso_grenade.md3" 
@@ -7712,7 +7712,7 @@ Model HECU_Shotgunner1_Opp_MP5 // throw a grenade
 
 Model HECU_Shotgunner1_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -7795,7 +7795,7 @@ Model HECU_Shotgunner1_Opp_MP5 // out of combat spawn
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -7850,7 +7850,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -7897,7 +7897,7 @@ Model HECU_Shotgunner1_Opp_MP5 // wounded run
 
 Model HECU_Shotgunner1_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -7968,7 +7968,7 @@ Model HECU_Shotgunner1_Opp_MP5 // wounded walk
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -8003,7 +8003,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -8110,7 +8110,7 @@ Model HECU_Shotgunner1_Opp_MP5
 
 Model HECU_Shotgunner1_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -8181,7 +8181,7 @@ Model HECU_Shotgunner1_Opp_MP5 // drop grenade
 
 Model HECU_Shotgunner1_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -8276,7 +8276,7 @@ Model HECU_Shotgunner1_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Shotgunner1_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -8375,7 +8375,7 @@ Model HECU_Shotgunner1_Opp_MP5 // movement without target
 
 Model HECU_Shotgunner1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -8418,7 +8418,7 @@ Model HECU_Shotgunner1_Opp_MP5_Shrink
 
 Model HECU_Shotgunner1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -8465,7 +8465,7 @@ Model HECU_Shotgunner1_Opp_MP5_Shrink
 
 Model HECU_Shotgunner1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -8500,7 +8500,7 @@ Model HECU_Shotgunner1_Opp_MP5_Shrink
 
 Model HECU_Shotgunner1_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -8535,7 +8535,7 @@ Model HECU_Shotgunner1_Opp_MP5_ShrinkEffect
 
 Model HECU_Shotgunner2_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -8578,7 +8578,7 @@ Model HECU_Shotgunner2_Opp_MP5 // out of combat idle
 
 Model HECU_Shotgunner2_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -8625,7 +8625,7 @@ Model HECU_Shotgunner2_Opp_MP5 // use when he has a target
 
 Model HECU_Shotgunner2_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -8660,7 +8660,7 @@ Model HECU_Shotgunner2_Opp_MP5 // stand fire
 
 Model HECU_Shotgunner2_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -8695,7 +8695,7 @@ Model HECU_Shotgunner2_Opp_MP5 // crouch fire
 
 Model HECU_Shotgunner2_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -8746,7 +8746,7 @@ Model HECU_Shotgunner2_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Shotgunner2_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -8769,7 +8769,7 @@ Model HECU_Shotgunner2_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -8806,7 +8806,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -8873,7 +8873,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -8928,7 +8928,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -9010,7 +9010,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -9083,7 +9083,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -9114,7 +9114,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "torso_grenade.md3" 
@@ -9201,7 +9201,7 @@ Model HECU_Shotgunner2_Opp_MP5 // throw a grenade
 
 Model HECU_Shotgunner2_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -9284,7 +9284,7 @@ Model HECU_Shotgunner2_Opp_MP5 // out of combat spawn
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -9339,7 +9339,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -9386,7 +9386,7 @@ Model HECU_Shotgunner2_Opp_MP5 // wounded run
 
 Model HECU_Shotgunner2_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -9457,7 +9457,7 @@ Model HECU_Shotgunner2_Opp_MP5 // wounded walk
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -9492,7 +9492,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -9599,7 +9599,7 @@ Model HECU_Shotgunner2_Opp_MP5
 
 Model HECU_Shotgunner2_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -9670,7 +9670,7 @@ Model HECU_Shotgunner2_Opp_MP5 // drop grenade
 
 Model HECU_Shotgunner2_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -9765,7 +9765,7 @@ Model HECU_Shotgunner2_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Shotgunner2_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -9864,7 +9864,7 @@ Model HECU_Shotgunner2_Opp_MP5 // movement without target
 
 Model HECU_Shotgunner2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -9907,7 +9907,7 @@ Model HECU_Shotgunner2_Opp_MP5_Shrink
 
 Model HECU_Shotgunner2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -9954,7 +9954,7 @@ Model HECU_Shotgunner2_Opp_MP5_Shrink
 
 Model HECU_Shotgunner2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -9989,7 +9989,7 @@ Model HECU_Shotgunner2_Opp_MP5_Shrink
 
 Model HECU_Shotgunner2_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -10024,7 +10024,7 @@ Model HECU_Shotgunner2_Opp_MP5_ShrinkEffect
 
 Model HECU_Mask_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -10067,7 +10067,7 @@ Model HECU_Mask_Opp_MP5 // out of combat idle
 
 Model HECU_Mask_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -10114,7 +10114,7 @@ Model HECU_Mask_Opp_MP5 // use when he has a target
 
 Model HECU_Mask_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -10149,7 +10149,7 @@ Model HECU_Mask_Opp_MP5 // stand fire
 
 Model HECU_Mask_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -10184,7 +10184,7 @@ Model HECU_Mask_Opp_MP5 // crouch fire
 
 Model HECU_Mask_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -10235,7 +10235,7 @@ Model HECU_Mask_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Mask_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -10258,7 +10258,7 @@ Model HECU_Mask_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -10295,7 +10295,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -10362,7 +10362,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -10417,7 +10417,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -10499,7 +10499,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -10572,7 +10572,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -10603,7 +10603,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "torso_grenade.md3" 
@@ -10690,7 +10690,7 @@ Model HECU_Mask_Opp_MP5 // throw a grenade
 
 Model HECU_Mask_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -10773,7 +10773,7 @@ Model HECU_Mask_Opp_MP5 // out of combat spawn
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -10828,7 +10828,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -10875,7 +10875,7 @@ Model HECU_Mask_Opp_MP5 // wounded run
 
 Model HECU_Mask_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -10946,7 +10946,7 @@ Model HECU_Mask_Opp_MP5 // wounded walk
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -10981,7 +10981,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -11088,7 +11088,7 @@ Model HECU_Mask_Opp_MP5
 
 Model HECU_Mask_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -11159,7 +11159,7 @@ Model HECU_Mask_Opp_MP5 // drop grenade
 
 Model HECU_Mask_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -11254,7 +11254,7 @@ Model HECU_Mask_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Mask_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -11353,7 +11353,7 @@ Model HECU_Mask_Opp_MP5 // movement without target
 
 Model HECU_Mask_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -11396,7 +11396,7 @@ Model HECU_Mask_Opp_MP5_Shrink
 
 Model HECU_Mask_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -11443,7 +11443,7 @@ Model HECU_Mask_Opp_MP5_Shrink
 
 Model HECU_Mask_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -11478,7 +11478,7 @@ Model HECU_Mask_Opp_MP5_Shrink
 
 Model HECU_Mask_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -11513,7 +11513,7 @@ Model HECU_Mask_Opp_MP5_ShrinkEffect
 
 Model HECU_Commander1_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -11556,7 +11556,7 @@ Model HECU_Commander1_Opp_MP5 // out of combat idle
 
 Model HECU_Commander1_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -11603,7 +11603,7 @@ Model HECU_Commander1_Opp_MP5 // use when he has a target
 
 Model HECU_Commander1_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -11638,7 +11638,7 @@ Model HECU_Commander1_Opp_MP5 // stand fire
 
 Model HECU_Commander1_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -11673,7 +11673,7 @@ Model HECU_Commander1_Opp_MP5 // crouch fire
 
 Model HECU_Commander1_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -11724,7 +11724,7 @@ Model HECU_Commander1_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Commander1_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -11747,7 +11747,7 @@ Model HECU_Commander1_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -11784,7 +11784,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -11851,7 +11851,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -11906,7 +11906,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -11988,7 +11988,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -12061,7 +12061,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -12092,7 +12092,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_launch.md3"
    Model 1 "fatigues_launch.md3"  
    Model 2 "torso_launch.md3" 
@@ -12167,7 +12167,7 @@ Model HECU_Commander1_Opp_MP5 // throw a grenade
 
 Model HECU_Commander1_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -12250,7 +12250,7 @@ Model HECU_Commander1_Opp_MP5 // out of combat spawn
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -12305,7 +12305,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -12352,7 +12352,7 @@ Model HECU_Commander1_Opp_MP5 // wounded run
 
 Model HECU_Commander1_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -12423,7 +12423,7 @@ Model HECU_Commander1_Opp_MP5 // wounded walk
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -12458,7 +12458,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -12565,7 +12565,7 @@ Model HECU_Commander1_Opp_MP5
 
 Model HECU_Commander1_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -12636,7 +12636,7 @@ Model HECU_Commander1_Opp_MP5 // drop grenade
 
 Model HECU_Commander1_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -12731,7 +12731,7 @@ Model HECU_Commander1_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Commander1_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -12830,7 +12830,7 @@ Model HECU_Commander1_Opp_MP5 // movement without target
 
 Model HECU_Commander1_Opp_MP5 // sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "torso_advance.md3" 
@@ -12885,7 +12885,7 @@ Model HECU_Commander1_Opp_MP5 // sees player out of sight
 
 Model HECU_Commander1_Opp_MP5 // sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "torso_flank.md3" 
@@ -12960,7 +12960,7 @@ Model HECU_Commander1_Opp_MP5 // sees player in sight
 
 Model HECU_Commander1_Opp_MP5 // decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "torso_retreat.md3" 
@@ -13035,7 +13035,7 @@ Model HECU_Commander1_Opp_MP5 // decides to run from damage
 
 Model HECU_Commander1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -13078,7 +13078,7 @@ Model HECU_Commander1_Opp_MP5_Shrink
 
 Model HECU_Commander1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -13125,7 +13125,7 @@ Model HECU_Commander1_Opp_MP5_Shrink
 
 Model HECU_Commander1_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -13160,7 +13160,7 @@ Model HECU_Commander1_Opp_MP5_Shrink
 
 Model HECU_Commander1_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -13195,7 +13195,7 @@ Model HECU_Commander1_Opp_MP5_ShrinkEffect
 
 Model HECU_Commander2_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -13238,7 +13238,7 @@ Model HECU_Commander2_Opp_MP5 // out of combat idle
 
 Model HECU_Commander2_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -13285,7 +13285,7 @@ Model HECU_Commander2_Opp_MP5 // use when he has a target
 
 Model HECU_Commander2_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -13320,7 +13320,7 @@ Model HECU_Commander2_Opp_MP5 // stand fire
 
 Model HECU_Commander2_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -13355,7 +13355,7 @@ Model HECU_Commander2_Opp_MP5 // crouch fire
 
 Model HECU_Commander2_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -13406,7 +13406,7 @@ Model HECU_Commander2_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Commander2_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -13429,7 +13429,7 @@ Model HECU_Commander2_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -13466,7 +13466,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -13533,7 +13533,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -13588,7 +13588,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -13670,7 +13670,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -13743,7 +13743,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -13774,7 +13774,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_launch.md3"
    Model 1 "fatigues_launch.md3"  
    Model 2 "torso_launch.md3" 
@@ -13849,7 +13849,7 @@ Model HECU_Commander2_Opp_MP5 // throw a grenade
 
 Model HECU_Commander2_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -13932,7 +13932,7 @@ Model HECU_Commander2_Opp_MP5 // out of combat spawn
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -13987,7 +13987,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -14034,7 +14034,7 @@ Model HECU_Commander2_Opp_MP5 // wounded run
 
 Model HECU_Commander2_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -14105,7 +14105,7 @@ Model HECU_Commander2_Opp_MP5 // wounded walk
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -14140,7 +14140,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -14247,7 +14247,7 @@ Model HECU_Commander2_Opp_MP5
 
 Model HECU_Commander2_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -14318,7 +14318,7 @@ Model HECU_Commander2_Opp_MP5 // drop grenade
 
 Model HECU_Commander2_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -14413,7 +14413,7 @@ Model HECU_Commander2_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Commander2_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -14512,7 +14512,7 @@ Model HECU_Commander2_Opp_MP5 // movement without target
 
 Model HECU_Commander2_Opp_MP5 // sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "torso_advance.md3" 
@@ -14567,7 +14567,7 @@ Model HECU_Commander2_Opp_MP5 // sees player out of sight
 
 Model HECU_Commander2_Opp_MP5 // sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "torso_flank.md3" 
@@ -14642,7 +14642,7 @@ Model HECU_Commander2_Opp_MP5 // sees player in sight
 
 Model HECU_Commander2_Opp_MP5 // decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "torso_retreat.md3" 
@@ -14717,7 +14717,7 @@ Model HECU_Commander2_Opp_MP5 // decides to run from damage
 
 Model HECU_Commander2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -14760,7 +14760,7 @@ Model HECU_Commander2_Opp_MP5_Shrink
 
 Model HECU_Commander2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -14807,7 +14807,7 @@ Model HECU_Commander2_Opp_MP5_Shrink
 
 Model HECU_Commander2_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -14842,7 +14842,7 @@ Model HECU_Commander2_Opp_MP5_Shrink
 
 Model HECU_Commander2_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -14877,7 +14877,7 @@ Model HECU_Commander2_Opp_MP5_ShrinkEffect
 
 Model HECU_Major_Opp_MP5 // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -14920,7 +14920,7 @@ Model HECU_Major_Opp_MP5 // out of combat idle
 
 Model HECU_Major_Opp_MP5 // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -14967,7 +14967,7 @@ Model HECU_Major_Opp_MP5 // use when he has a target
 
 Model HECU_Major_Opp_MP5 // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_mp5_fire.md3"
    Model 1 "fatigues_mp5_fire.md3"  
    Model 2 "torso_fire.md3" 
@@ -15002,7 +15002,7 @@ Model HECU_Major_Opp_MP5 // stand fire
 
 Model HECU_Major_Opp_MP5 // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_mp5_cfire.md3"
    Model 1 "fatigues_mp5_cfire.md3"  
    Model 2 "torso_cfire.md3" 
@@ -15037,7 +15037,7 @@ Model HECU_Major_Opp_MP5 // crouch fire
 
 Model HECU_Major_Opp_MP5 // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "torso_cidle.md3" 
@@ -15088,7 +15088,7 @@ Model HECU_Major_Opp_MP5 // use when he has a target and standing still
 
 Model HECU_Major_Opp_MP5 // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "torso_cwait.md3" 
@@ -15111,7 +15111,7 @@ Model HECU_Major_Opp_MP5 // use when in squad sometimes for ambush
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "torso_die1.md3" 
@@ -15148,7 +15148,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "torso_die2.md3" 
@@ -15215,7 +15215,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "torso_die3.md3" 
@@ -15270,7 +15270,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "torso_die4.md3" 
@@ -15352,7 +15352,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "torso_die5.md3" 
@@ -15425,7 +15425,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "torso_die6.md3" 
@@ -15456,7 +15456,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5 // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_launch.md3"
    Model 1 "fatigues_launch.md3"  
    Model 2 "torso_launch.md3" 
@@ -15531,7 +15531,7 @@ Model HECU_Major_Opp_MP5 // throw a grenade
 
 Model HECU_Major_Opp_MP5 // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "torso_idle1.md3" 
@@ -15614,7 +15614,7 @@ Model HECU_Major_Opp_MP5 // out of combat spawn
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "torso_kick.md3" 
@@ -15669,7 +15669,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5 // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "torso_lrun.md3" 
@@ -15716,7 +15716,7 @@ Model HECU_Major_Opp_MP5 // wounded run
 
 Model HECU_Major_Opp_MP5 // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "torso_lwalk.md3" 
@@ -15787,7 +15787,7 @@ Model HECU_Major_Opp_MP5 // wounded walk
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -15822,7 +15822,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "torso_reload.md3" 
@@ -15929,7 +15929,7 @@ Model HECU_Major_Opp_MP5
 
 Model HECU_Major_Opp_MP5 // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "torso_drop.md3" 
@@ -16000,7 +16000,7 @@ Model HECU_Major_Opp_MP5 // drop grenade
 
 Model HECU_Major_Opp_MP5 // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "torso_duck.md3" 
@@ -16095,7 +16095,7 @@ Model HECU_Major_Opp_MP5 // take cover from grenade fragments
 
 Model HECU_Major_Opp_MP5 // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "torso_walk.md3" 
@@ -16194,7 +16194,7 @@ Model HECU_Major_Opp_MP5 // movement without target
 
 Model HECU_Major_Opp_MP5 // sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "torso_advance.md3" 
@@ -16249,7 +16249,7 @@ Model HECU_Major_Opp_MP5 // sees player out of sight
 
 Model HECU_Major_Opp_MP5 // sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "torso_flank.md3" 
@@ -16324,7 +16324,7 @@ Model HECU_Major_Opp_MP5 // sees player in sight
 
 Model HECU_Major_Opp_MP5 // decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "torso_retreat.md3" 
@@ -16399,7 +16399,7 @@ Model HECU_Major_Opp_MP5 // decides to run from damage
 
 Model HECU_Major_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "torso_idle2.md3" 
@@ -16442,7 +16442,7 @@ Model HECU_Major_Opp_MP5_Shrink
 
 Model HECU_Major_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "torso_run.md3" 
@@ -16489,7 +16489,7 @@ Model HECU_Major_Opp_MP5_Shrink
 
 Model HECU_Major_Opp_MP5_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -16524,7 +16524,7 @@ Model HECU_Major_Opp_MP5_Shrink
 
 Model HECU_Major_Opp_MP5_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "torso_pain.md3" 
@@ -16559,7 +16559,7 @@ Model HECU_Major_Opp_MP5_ShrinkEffect
 
 Model HECU_Grunt1_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -16602,7 +16602,7 @@ Model HECU_Grunt1_Opp_Shotgun // out of combat idle
 
 Model HECU_Grunt1_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -16649,7 +16649,7 @@ Model HECU_Grunt1_Opp_Shotgun // use when he has a target
 
 Model HECU_Grunt1_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -16684,7 +16684,7 @@ Model HECU_Grunt1_Opp_Shotgun // stand fire
 
 Model HECU_Grunt1_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -16719,7 +16719,7 @@ Model HECU_Grunt1_Opp_Shotgun // crouch fire
 
 Model HECU_Grunt1_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -16770,7 +16770,7 @@ Model HECU_Grunt1_Opp_Shotgun // use when he has a target and standing still
 
 Model HECU_Grunt1_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -16793,7 +16793,7 @@ Model HECU_Grunt1_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Grunt1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -16830,7 +16830,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -16897,7 +16897,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -16952,7 +16952,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -17034,7 +17034,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -17107,7 +17107,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -17138,7 +17138,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -17225,7 +17225,7 @@ Model HECU_Grunt1_Opp_Shotgun // throw a grenade
 
 Model HECU_Grunt1_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -17308,7 +17308,7 @@ Model HECU_Grunt1_Opp_Shotgun // out of combat spawn
 
 Model HECU_Grunt1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -17363,7 +17363,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -17410,7 +17410,7 @@ Model HECU_Grunt1_Opp_Shotgun // wounded run
 
 Model HECU_Grunt1_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -17481,7 +17481,7 @@ Model HECU_Grunt1_Opp_Shotgun // wounded walk
 
 Model HECU_Grunt1_Opp_Shotgun 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -17516,7 +17516,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -17623,7 +17623,7 @@ Model HECU_Grunt1_Opp_Shotgun
 
 Model HECU_Grunt1_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -17694,7 +17694,7 @@ Model HECU_Grunt1_Opp_Shotgun // drop grenade
 
 Model HECU_Grunt1_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -17789,7 +17789,7 @@ Model HECU_Grunt1_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Grunt1_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -17888,7 +17888,7 @@ Model HECU_Grunt1_Opp_Shotgun // movement without target
 
 Model HECU_Grunt1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -17931,7 +17931,7 @@ Model HECU_Grunt1_Opp_Shotgun_Shrink
 
 Model HECU_Grunt1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -17978,7 +17978,7 @@ Model HECU_Grunt1_Opp_Shotgun_Shrink
 
 Model HECU_Grunt1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -18013,7 +18013,7 @@ Model HECU_Grunt1_Opp_Shotgun_Shrink
 
 Model HECU_Grunt1_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -18048,7 +18048,7 @@ Model HECU_Grunt1_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Grunt2_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -18091,7 +18091,7 @@ Model HECU_Grunt2_Opp_Shotgun // out of combat idle
 
 Model HECU_Grunt2_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -18138,7 +18138,7 @@ Model HECU_Grunt2_Opp_Shotgun // use when he has a target
 
 Model HECU_Grunt2_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -18173,7 +18173,7 @@ Model HECU_Grunt2_Opp_Shotgun // stand fire
 
 Model HECU_Grunt2_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -18208,7 +18208,7 @@ Model HECU_Grunt2_Opp_Shotgun // crouch fire
 
 Model HECU_Grunt2_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -18259,7 +18259,7 @@ Model HECU_Grunt2_Opp_Shotgun // use when he has a target and standing still
 
 Model HECU_Grunt2_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -18282,7 +18282,7 @@ Model HECU_Grunt2_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Grunt2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -18319,7 +18319,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -18386,7 +18386,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -18441,7 +18441,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -18523,7 +18523,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -18596,7 +18596,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -18627,7 +18627,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -18714,7 +18714,7 @@ Model HECU_Grunt2_Opp_Shotgun // throw a grenade
 
 Model HECU_Grunt2_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -18797,7 +18797,7 @@ Model HECU_Grunt2_Opp_Shotgun // out of combat spawn
 
 Model HECU_Grunt2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -18852,7 +18852,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -18899,7 +18899,7 @@ Model HECU_Grunt2_Opp_Shotgun // wounded run
 
 Model HECU_Grunt2_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -18970,7 +18970,7 @@ Model HECU_Grunt2_Opp_Shotgun // wounded walk
 
 Model HECU_Grunt2_Opp_Shotgun 
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -19005,7 +19005,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -19112,7 +19112,7 @@ Model HECU_Grunt2_Opp_Shotgun
 
 Model HECU_Grunt2_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -19183,7 +19183,7 @@ Model HECU_Grunt2_Opp_Shotgun // drop grenade
 
 Model HECU_Grunt2_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -19278,7 +19278,7 @@ Model HECU_Grunt2_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Grunt2_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -19377,7 +19377,7 @@ Model HECU_Grunt2_Opp_Shotgun // movement without target
 
 Model HECU_Grunt2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -19420,7 +19420,7 @@ Model HECU_Grunt2_Opp_Shotgun_Shrink
 
 Model HECU_Grunt2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -19467,7 +19467,7 @@ Model HECU_Grunt2_Opp_Shotgun_Shrink
 
 Model HECU_Grunt2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -19502,7 +19502,7 @@ Model HECU_Grunt2_Opp_Shotgun_Shrink
 
 Model HECU_Grunt2_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -19537,7 +19537,7 @@ Model HECU_Grunt2_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Shotgunner1_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -19580,7 +19580,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // out of combat idle
 
 Model HECU_Shotgunner1_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -19627,7 +19627,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // use when he has a target
 
 Model HECU_Shotgunner1_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -19662,7 +19662,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // stand fire
 
 Model HECU_Shotgunner1_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -19697,7 +19697,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // crouch fire
 
 Model HECU_Shotgunner1_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -19748,7 +19748,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // use when he has a target and standing stil
 
 Model HECU_Shotgunner1_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -19771,7 +19771,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -19808,7 +19808,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -19875,7 +19875,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -19930,7 +19930,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -20012,7 +20012,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -20085,7 +20085,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -20116,7 +20116,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -20203,7 +20203,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // throw a grenade
 
 Model HECU_Shotgunner1_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -20286,7 +20286,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // out of combat spawn
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -20341,7 +20341,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -20388,7 +20388,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // wounded run
 
 Model HECU_Shotgunner1_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -20459,7 +20459,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // wounded walk
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -20494,7 +20494,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -20601,7 +20601,7 @@ Model HECU_Shotgunner1_Opp_Shotgun
 
 Model HECU_Shotgunner1_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -20672,7 +20672,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // drop grenade
 
 Model HECU_Shotgunner1_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -20767,7 +20767,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Shotgunner1_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -20866,7 +20866,7 @@ Model HECU_Shotgunner1_Opp_Shotgun // movement without target
 
 Model HECU_Shotgunner1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -20909,7 +20909,7 @@ Model HECU_Shotgunner1_Opp_Shotgun_Shrink
 
 Model HECU_Shotgunner1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -20956,7 +20956,7 @@ Model HECU_Shotgunner1_Opp_Shotgun_Shrink
 
 Model HECU_Shotgunner1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -20991,7 +20991,7 @@ Model HECU_Shotgunner1_Opp_Shotgun_Shrink
 
 Model HECU_Shotgunner1_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -21026,7 +21026,7 @@ Model HECU_Shotgunner1_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Shotgunner2_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -21069,7 +21069,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // out of combat idle
 
 Model HECU_Shotgunner2_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -21116,7 +21116,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // use when he has a target
 
 Model HECU_Shotgunner2_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -21151,7 +21151,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // stand fire
 
 Model HECU_Shotgunner2_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -21186,7 +21186,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // crouch fire
 
 Model HECU_Shotgunner2_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -21237,7 +21237,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // use when he has a target and standing stil
 
 Model HECU_Shotgunner2_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -21260,7 +21260,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -21297,7 +21297,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -21364,7 +21364,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -21419,7 +21419,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -21501,7 +21501,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -21574,7 +21574,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -21605,7 +21605,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -21692,7 +21692,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // throw a grenade
 
 Model HECU_Shotgunner2_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -21775,7 +21775,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // out of combat spawn
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -21830,7 +21830,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -21877,7 +21877,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // wounded run
 
 Model HECU_Shotgunner2_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -21948,7 +21948,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // wounded walk
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -21983,7 +21983,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -22090,7 +22090,7 @@ Model HECU_Shotgunner2_Opp_Shotgun
 
 Model HECU_Shotgunner2_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -22161,7 +22161,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // drop grenade
 
 Model HECU_Shotgunner2_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -22256,7 +22256,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Shotgunner2_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -22355,7 +22355,7 @@ Model HECU_Shotgunner2_Opp_Shotgun // movement without target
 
 Model HECU_Shotgunner2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -22398,7 +22398,7 @@ Model HECU_Shotgunner2_Opp_Shotgun_Shrink
 
 Model HECU_Shotgunner2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -22445,7 +22445,7 @@ Model HECU_Shotgunner2_Opp_Shotgun_Shrink
 
 Model HECU_Shotgunner2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -22480,7 +22480,7 @@ Model HECU_Shotgunner2_Opp_Shotgun_Shrink
 
 Model HECU_Shotgunner2_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -22515,7 +22515,7 @@ Model HECU_Shotgunner2_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Mask_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -22558,7 +22558,7 @@ Model HECU_Mask_Opp_Shotgun // out of combat idle
 
 Model HECU_Mask_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -22605,7 +22605,7 @@ Model HECU_Mask_Opp_Shotgun // use when he has a target
 
 Model HECU_Mask_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -22640,7 +22640,7 @@ Model HECU_Mask_Opp_Shotgun // stand fire
 
 Model HECU_Mask_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -22675,7 +22675,7 @@ Model HECU_Mask_Opp_Shotgun // crouch fire
 
 Model HECU_Mask_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -22726,7 +22726,7 @@ Model HECU_Mask_Opp_Shotgun // use when he has a target and standing still
 
 Model HECU_Mask_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -22749,7 +22749,7 @@ Model HECU_Mask_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -22786,7 +22786,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -22853,7 +22853,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -22908,7 +22908,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -22990,7 +22990,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -23063,7 +23063,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -23094,7 +23094,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -23181,7 +23181,7 @@ Model HECU_Mask_Opp_Shotgun // throw a grenade
 
 Model HECU_Mask_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -23264,7 +23264,7 @@ Model HECU_Mask_Opp_Shotgun // out of combat spawn
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -23319,7 +23319,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -23366,7 +23366,7 @@ Model HECU_Mask_Opp_Shotgun // wounded run
 
 Model HECU_Mask_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -23437,7 +23437,7 @@ Model HECU_Mask_Opp_Shotgun // wounded walk
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -23472,7 +23472,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -23579,7 +23579,7 @@ Model HECU_Mask_Opp_Shotgun
 
 Model HECU_Mask_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -23650,7 +23650,7 @@ Model HECU_Mask_Opp_Shotgun // drop grenade
 
 Model HECU_Mask_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -23745,7 +23745,7 @@ Model HECU_Mask_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Mask_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -23844,7 +23844,7 @@ Model HECU_Mask_Opp_Shotgun // movement without target
 
 Model HECU_Mask_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Mask_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -23887,7 +23887,7 @@ Model HECU_Mask_Opp_Shotgun_Shrink
 
 Model HECU_Mask_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -23934,7 +23934,7 @@ Model HECU_Mask_Opp_Shotgun_Shrink
 
 Model HECU_Mask_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -23969,7 +23969,7 @@ Model HECU_Mask_Opp_Shotgun_Shrink
 
 Model HECU_Mask_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -24004,7 +24004,7 @@ Model HECU_Mask_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Commander1_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -24047,7 +24047,7 @@ Model HECU_Commander1_Opp_Shotgun // out of combat idle
 
 Model HECU_Commander1_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -24094,7 +24094,7 @@ Model HECU_Commander1_Opp_Shotgun // use when he has a target
 
 Model HECU_Commander1_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -24129,7 +24129,7 @@ Model HECU_Commander1_Opp_Shotgun // stand fire
 
 Model HECU_Commander1_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -24164,7 +24164,7 @@ Model HECU_Commander1_Opp_Shotgun // crouch fire
 
 Model HECU_Commander1_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -24215,7 +24215,7 @@ Model HECU_Commander1_Opp_Shotgun // use when he has a target and standing still
 
 Model HECU_Commander1_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -24238,7 +24238,7 @@ Model HECU_Commander1_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -24275,7 +24275,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -24342,7 +24342,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -24397,7 +24397,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -24479,7 +24479,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -24552,7 +24552,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -24583,7 +24583,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -24670,7 +24670,7 @@ Model HECU_Commander1_Opp_Shotgun // throw a grenade
 
 Model HECU_Commander1_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -24753,7 +24753,7 @@ Model HECU_Commander1_Opp_Shotgun // out of combat spawn
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -24808,7 +24808,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -24855,7 +24855,7 @@ Model HECU_Commander1_Opp_Shotgun // wounded run
 
 Model HECU_Commander1_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -24926,7 +24926,7 @@ Model HECU_Commander1_Opp_Shotgun // wounded walk
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -24961,7 +24961,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -25068,7 +25068,7 @@ Model HECU_Commander1_Opp_Shotgun
 
 Model HECU_Commander1_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -25139,7 +25139,7 @@ Model HECU_Commander1_Opp_Shotgun // drop grenade
 
 Model HECU_Commander1_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -25234,7 +25234,7 @@ Model HECU_Commander1_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Commander1_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -25333,7 +25333,7 @@ Model HECU_Commander1_Opp_Shotgun // movement without target
 
 Model HECU_Commander1_Opp_Shotgun // sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "sgtorso_advance.md3" 
@@ -25388,7 +25388,7 @@ Model HECU_Commander1_Opp_Shotgun // sees player out of sight
 
 Model HECU_Commander1_Opp_Shotgun // sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "sgtorso_flank.md3" 
@@ -25463,7 +25463,7 @@ Model HECU_Commander1_Opp_Shotgun // sees player in sight
 
 Model HECU_Commander1_Opp_Shotgun // decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "sgtorso_retreat.md3" 
@@ -25538,7 +25538,7 @@ Model HECU_Commander1_Opp_Shotgun // decides to run from damage
 
 Model HECU_Commander1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -25581,7 +25581,7 @@ Model HECU_Commander1_Opp_Shotgun_Shrink
 
 Model HECU_Commander1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -25628,7 +25628,7 @@ Model HECU_Commander1_Opp_Shotgun_Shrink
 
 Model HECU_Commander1_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -25663,7 +25663,7 @@ Model HECU_Commander1_Opp_Shotgun_Shrink
 
 Model HECU_Commander1_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -25698,7 +25698,7 @@ Model HECU_Commander1_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Commander2_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -25741,7 +25741,7 @@ Model HECU_Commander2_Opp_Shotgun // out of combat idle
 
 Model HECU_Commander2_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -25788,7 +25788,7 @@ Model HECU_Commander2_Opp_Shotgun // use when he has a target
 
 Model HECU_Commander2_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -25823,7 +25823,7 @@ Model HECU_Commander2_Opp_Shotgun // stand fire
 
 Model HECU_Commander2_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -25858,7 +25858,7 @@ Model HECU_Commander2_Opp_Shotgun // crouch fire
 
 Model HECU_Commander2_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -25909,7 +25909,7 @@ Model HECU_Commander2_Opp_Shotgun // use when he has a target and standing still
 
 Model HECU_Commander2_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -25932,7 +25932,7 @@ Model HECU_Commander2_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -25969,7 +25969,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -26036,7 +26036,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -26091,7 +26091,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -26173,7 +26173,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -26246,7 +26246,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -26277,7 +26277,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -26364,7 +26364,7 @@ Model HECU_Commander2_Opp_Shotgun // throw a grenade
 
 Model HECU_Commander2_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -26447,7 +26447,7 @@ Model HECU_Commander2_Opp_Shotgun // out of combat spawn
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -26502,7 +26502,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -26549,7 +26549,7 @@ Model HECU_Commander2_Opp_Shotgun // wounded run
 
 Model HECU_Commander2_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -26620,7 +26620,7 @@ Model HECU_Commander2_Opp_Shotgun // wounded walk
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -26655,7 +26655,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -26762,7 +26762,7 @@ Model HECU_Commander2_Opp_Shotgun
 
 Model HECU_Commander2_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -26833,7 +26833,7 @@ Model HECU_Commander2_Opp_Shotgun // drop grenade
 
 Model HECU_Commander2_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -26928,7 +26928,7 @@ Model HECU_Commander2_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Commander2_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -27027,7 +27027,7 @@ Model HECU_Commander2_Opp_Shotgun // movement without target
 
 Model HECU_Commander2_Opp_Shotgun // sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "sgtorso_advance.md3" 
@@ -27082,7 +27082,7 @@ Model HECU_Commander2_Opp_Shotgun // sees player out of sight
 
 Model HECU_Commander2_Opp_Shotgun // sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "sgtorso_flank.md3" 
@@ -27157,7 +27157,7 @@ Model HECU_Commander2_Opp_Shotgun // sees player in sight
 
 Model HECU_Commander2_Opp_Shotgun // decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "sgtorso_retreat.md3" 
@@ -27232,7 +27232,7 @@ Model HECU_Commander2_Opp_Shotgun // decides to run from damage
 
 Model HECU_Commander2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -27275,7 +27275,7 @@ Model HECU_Commander2_Opp_Shotgun_Shrink
 
 Model HECU_Commander2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -27322,7 +27322,7 @@ Model HECU_Commander2_Opp_Shotgun_Shrink
 
 Model HECU_Commander2_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -27357,7 +27357,7 @@ Model HECU_Commander2_Opp_Shotgun_Shrink
 
 Model HECU_Commander2_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -27392,7 +27392,7 @@ Model HECU_Commander2_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Major_Opp_Shotgun // out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -27435,7 +27435,7 @@ Model HECU_Major_Opp_Shotgun // out of combat idle
 
 Model HECU_Major_Opp_Shotgun // use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -27482,7 +27482,7 @@ Model HECU_Major_Opp_Shotgun // use when he has a target
 
 Model HECU_Major_Opp_Shotgun // stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_MP5_fire.md3"
    Model 1 "fatigues_MP5_fire.md3"  
    Model 2 "sgtorso_fire.md3" 
@@ -27517,7 +27517,7 @@ Model HECU_Major_Opp_Shotgun // stand fire
 
 Model HECU_Major_Opp_Shotgun // crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_MP5_cfire.md3"
    Model 1 "fatigues_MP5_cfire.md3"  
    Model 2 "sgtorso_cfire.md3" 
@@ -27552,7 +27552,7 @@ Model HECU_Major_Opp_Shotgun // crouch fire
 
 Model HECU_Major_Opp_Shotgun // use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sgtorso_cidle.md3" 
@@ -27603,7 +27603,7 @@ Model HECU_Major_Opp_Shotgun // use when he has a target and standing still
 
 Model HECU_Major_Opp_Shotgun // use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sgtorso_cwait.md3" 
@@ -27626,7 +27626,7 @@ Model HECU_Major_Opp_Shotgun // use when in squad sometimes for ambush
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sgtorso_die1.md3" 
@@ -27663,7 +27663,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sgtorso_die2.md3" 
@@ -27730,7 +27730,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sgtorso_die3.md3" 
@@ -27785,7 +27785,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sgtorso_die4.md3" 
@@ -27867,7 +27867,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sgtorso_die5.md3" 
@@ -27940,7 +27940,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sgtorso_die6.md3" 
@@ -27971,7 +27971,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun // throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sgtorso_grenade.md3" 
@@ -28058,7 +28058,7 @@ Model HECU_Major_Opp_Shotgun // throw a grenade
 
 Model HECU_Major_Opp_Shotgun // out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sgtorso_idle1.md3" 
@@ -28141,7 +28141,7 @@ Model HECU_Major_Opp_Shotgun // out of combat spawn
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sgtorso_kick.md3" 
@@ -28196,7 +28196,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun // wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sgtorso_lrun.md3" 
@@ -28243,7 +28243,7 @@ Model HECU_Major_Opp_Shotgun // wounded run
 
 Model HECU_Major_Opp_Shotgun // wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sgtorso_lwalk.md3" 
@@ -28314,7 +28314,7 @@ Model HECU_Major_Opp_Shotgun // wounded walk
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -28349,7 +28349,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sgtorso_reload.md3" 
@@ -28456,7 +28456,7 @@ Model HECU_Major_Opp_Shotgun
 
 Model HECU_Major_Opp_Shotgun // drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sgtorso_drop.md3" 
@@ -28527,7 +28527,7 @@ Model HECU_Major_Opp_Shotgun // drop grenade
 
 Model HECU_Major_Opp_Shotgun // take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sgtorso_duck.md3" 
@@ -28622,7 +28622,7 @@ Model HECU_Major_Opp_Shotgun // take cover from grenade fragments
 
 Model HECU_Major_Opp_Shotgun // movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sgtorso_walk.md3" 
@@ -28721,7 +28721,7 @@ Model HECU_Major_Opp_Shotgun // movement without target
 
 Model HECU_Major_Opp_Shotgun // sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "sgtorso_advance.md3" 
@@ -28776,7 +28776,7 @@ Model HECU_Major_Opp_Shotgun // sees player out of sight
 
 Model HECU_Major_Opp_Shotgun // sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "sgtorso_flank.md3" 
@@ -28851,7 +28851,7 @@ Model HECU_Major_Opp_Shotgun // sees player in sight
 
 Model HECU_Major_Opp_Shotgun // decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "sgtorso_retreat.md3" 
@@ -28926,7 +28926,7 @@ Model HECU_Major_Opp_Shotgun // decides to run from damage
 
 Model HECU_Major_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sgtorso_idle2.md3" 
@@ -28969,7 +28969,7 @@ Model HECU_Major_Opp_Shotgun_Shrink
 
 Model HECU_Major_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sgtorso_run.md3" 
@@ -29016,7 +29016,7 @@ Model HECU_Major_Opp_Shotgun_Shrink
 
 Model HECU_Major_Opp_Shotgun_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -29051,7 +29051,7 @@ Model HECU_Major_Opp_Shotgun_Shrink
 
 Model HECU_Major_Opp_Shotgun_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sgtorso_pain.md3" 
@@ -29086,7 +29086,7 @@ Model HECU_Major_Opp_Shotgun_ShrinkEffect
 
 Model HECU_Grunt1_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -29129,7 +29129,7 @@ Model HECU_Grunt1_Opp_Saw// out of combat idle
 
 Model HECU_Grunt1_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -29176,7 +29176,7 @@ Model HECU_Grunt1_Opp_Saw// use when he has a target
 
 Model HECU_Grunt1_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -29211,7 +29211,7 @@ Model HECU_Grunt1_Opp_Saw// stand fire
 
 Model HECU_Grunt1_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -29246,7 +29246,7 @@ Model HECU_Grunt1_Opp_Saw// crouch fire
 
 Model HECU_Grunt1_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -29297,7 +29297,7 @@ Model HECU_Grunt1_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Grunt1_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -29320,7 +29320,7 @@ Model HECU_Grunt1_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Grunt1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3" 
@@ -29367,7 +29367,7 @@ Model HECU_Grunt1_Opp_SAW
 
 Model HECU_Grunt1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3" 
@@ -29454,7 +29454,7 @@ Model HECU_Grunt1_Opp_SAW
 
 Model HECU_Grunt1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3" 
@@ -29525,7 +29525,7 @@ Model HECU_Grunt1_Opp_SAW
 
 Model HECU_Grunt1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3" 
@@ -29632,7 +29632,7 @@ Model HECU_Grunt1_Opp_SAW
 
 Model HECU_Grunt1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3" 
@@ -29691,7 +29691,7 @@ Model HECU_Grunt1_Opp_SAW
 
 Model HECU_Grunt1_Opp_Saw
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -29730,7 +29730,7 @@ Model HECU_Grunt1_Opp_Saw
 
 Model HECU_Grunt1_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -29817,7 +29817,7 @@ Model HECU_Grunt1_Opp_Saw// throw a grenade
 
 Model HECU_Grunt1_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -29900,7 +29900,7 @@ Model HECU_Grunt1_Opp_Saw// out of combat spawn
 
 Model HECU_Grunt1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -29955,7 +29955,7 @@ Model HECU_Grunt1_Opp_SAW
 
 Model HECU_Grunt1_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -30002,7 +30002,7 @@ Model HECU_Grunt1_Opp_Saw// wounded run
 
 Model HECU_Grunt1_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -30073,7 +30073,7 @@ Model HECU_Grunt1_Opp_Saw// wounded walk
 
 Model HECU_Grunt1_Opp_Saw
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -30108,7 +30108,7 @@ Model HECU_Grunt1_Opp_Saw
 
 Model HECU_Grunt1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -30215,7 +30215,7 @@ Model HECU_Grunt1_Opp_SAW
 
 Model HECU_Grunt1_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -30286,7 +30286,7 @@ Model HECU_Grunt1_Opp_Saw// drop grenade
 
 Model HECU_Grunt1_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -30381,7 +30381,7 @@ Model HECU_Grunt1_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Grunt1_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -30480,7 +30480,7 @@ Model HECU_Grunt1_Opp_Saw// movement without target
 
 Model HECU_Grunt1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -30523,7 +30523,7 @@ Model HECU_Grunt1_Opp_SAW_Shrink
 
 Model HECU_Grunt1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -30570,7 +30570,7 @@ Model HECU_Grunt1_Opp_SAW_Shrink
 
 Model HECU_Grunt1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -30605,7 +30605,7 @@ Model HECU_Grunt1_Opp_SAW_Shrink
 
 Model HECU_Grunt1_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -30640,7 +30640,7 @@ Model HECU_Grunt1_Opp_SAW_ShrinkEffect
 
 Model HECU_Grunt2_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -30683,7 +30683,7 @@ Model HECU_Grunt2_Opp_Saw// out of combat idle
 
 Model HECU_Grunt2_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -30730,7 +30730,7 @@ Model HECU_Grunt2_Opp_Saw// use when he has a target
 
 Model HECU_Grunt2_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -30765,7 +30765,7 @@ Model HECU_Grunt2_Opp_Saw// stand fire
 
 Model HECU_Grunt2_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -30800,7 +30800,7 @@ Model HECU_Grunt2_Opp_Saw// crouch fire
 
 Model HECU_Grunt2_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -30851,7 +30851,7 @@ Model HECU_Grunt2_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Grunt2_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -30874,7 +30874,7 @@ Model HECU_Grunt2_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Grunt2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3" 
@@ -30921,7 +30921,7 @@ Model HECU_Grunt2_Opp_SAW
 
 Model HECU_Grunt2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3" 
@@ -31008,7 +31008,7 @@ Model HECU_Grunt2_Opp_SAW
 
 Model HECU_Grunt2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3" 
@@ -31079,7 +31079,7 @@ Model HECU_Grunt2_Opp_SAW
 
 Model HECU_Grunt2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3" 
@@ -31186,7 +31186,7 @@ Model HECU_Grunt2_Opp_SAW
 
 Model HECU_Grunt2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3" 
@@ -31245,7 +31245,7 @@ Model HECU_Grunt2_Opp_SAW
 
 Model HECU_Grunt2_Opp_Saw
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -31284,7 +31284,7 @@ Model HECU_Grunt2_Opp_Saw
 
 Model HECU_Grunt2_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -31371,7 +31371,7 @@ Model HECU_Grunt2_Opp_Saw// throw a grenade
 
 Model HECU_Grunt2_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -31454,7 +31454,7 @@ Model HECU_Grunt2_Opp_Saw// out of combat spawn
 
 Model HECU_Grunt2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -31509,7 +31509,7 @@ Model HECU_Grunt2_Opp_SAW
 
 Model HECU_Grunt2_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -31556,7 +31556,7 @@ Model HECU_Grunt2_Opp_Saw// wounded run
 
 Model HECU_Grunt2_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -31627,7 +31627,7 @@ Model HECU_Grunt2_Opp_Saw// wounded walk
 
 Model HECU_Grunt2_Opp_Saw
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -31662,7 +31662,7 @@ Model HECU_Grunt2_Opp_Saw
 
 Model HECU_Grunt2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -31769,7 +31769,7 @@ Model HECU_Grunt2_Opp_SAW
 
 Model HECU_Grunt2_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -31840,7 +31840,7 @@ Model HECU_Grunt2_Opp_Saw// drop grenade
 
 Model HECU_Grunt2_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -31935,7 +31935,7 @@ Model HECU_Grunt2_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Grunt2_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "grunt2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -32034,7 +32034,7 @@ Model HECU_Grunt2_Opp_Saw// movement without target
 
 Model HECU_Grunt2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -32077,7 +32077,7 @@ Model HECU_Grunt2_Opp_SAW_Shrink
 
 Model HECU_Grunt2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -32124,7 +32124,7 @@ Model HECU_Grunt2_Opp_SAW_Shrink
 
 Model HECU_Grunt2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -32159,7 +32159,7 @@ Model HECU_Grunt2_Opp_SAW_Shrink
 
 Model HECU_Grunt2_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Grunt2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -32194,7 +32194,7 @@ Model HECU_Grunt2_Opp_SAW_ShrinkEffect
 
 Model HECU_Shotgunner1_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -32237,7 +32237,7 @@ Model HECU_Shotgunner1_Opp_Saw// out of combat idle
 
 Model HECU_Shotgunner1_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -32284,7 +32284,7 @@ Model HECU_Shotgunner1_Opp_Saw// use when he has a target
 
 Model HECU_Shotgunner1_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -32319,7 +32319,7 @@ Model HECU_Shotgunner1_Opp_Saw// stand fire
 
 Model HECU_Shotgunner1_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -32354,7 +32354,7 @@ Model HECU_Shotgunner1_Opp_Saw// crouch fire
 
 Model HECU_Shotgunner1_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -32405,7 +32405,7 @@ Model HECU_Shotgunner1_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Shotgunner1_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -32428,7 +32428,7 @@ Model HECU_Shotgunner1_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3"
@@ -32475,7 +32475,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3" 
@@ -32562,7 +32562,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3" 
@@ -32633,7 +32633,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3" 
@@ -32740,7 +32740,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3" 
@@ -32799,7 +32799,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -32838,7 +32838,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -32925,7 +32925,7 @@ Model HECU_Shotgunner1_Opp_Saw// throw a grenade
 
 Model HECU_Shotgunner1_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -33008,7 +33008,7 @@ Model HECU_Shotgunner1_Opp_Saw// out of combat spawn
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -33063,7 +33063,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -33110,7 +33110,7 @@ Model HECU_Shotgunner1_Opp_Saw// wounded run
 
 Model HECU_Shotgunner1_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -33181,7 +33181,7 @@ Model HECU_Shotgunner1_Opp_Saw// wounded walk
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -33216,7 +33216,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -33323,7 +33323,7 @@ Model HECU_Shotgunner1_Opp_SAW
 
 Model HECU_Shotgunner1_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -33394,7 +33394,7 @@ Model HECU_Shotgunner1_Opp_Saw// drop grenade
 
 Model HECU_Shotgunner1_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -33489,7 +33489,7 @@ Model HECU_Shotgunner1_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Shotgunner1_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -33588,7 +33588,7 @@ Model HECU_Shotgunner1_Opp_Saw// movement without target
 
 Model HECU_Shotgunner1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -33631,7 +33631,7 @@ Model HECU_Shotgunner1_Opp_SAW_Shrink
 
 Model HECU_Shotgunner1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -33678,7 +33678,7 @@ Model HECU_Shotgunner1_Opp_SAW_Shrink
 
 Model HECU_Shotgunner1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -33713,7 +33713,7 @@ Model HECU_Shotgunner1_Opp_SAW_Shrink
 
 Model HECU_Shotgunner1_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -33748,7 +33748,7 @@ Model HECU_Shotgunner1_Opp_SAW_ShrinkEffect
 
 Model HECU_Shotgunner2_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -33791,7 +33791,7 @@ Model HECU_Shotgunner2_Opp_Saw// out of combat idle
 
 Model HECU_Shotgunner2_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -33838,7 +33838,7 @@ Model HECU_Shotgunner2_Opp_Saw// use when he has a target
 
 Model HECU_Shotgunner2_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -33873,7 +33873,7 @@ Model HECU_Shotgunner2_Opp_Saw// stand fire
 
 Model HECU_Shotgunner2_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -33908,7 +33908,7 @@ Model HECU_Shotgunner2_Opp_Saw// crouch fire
 
 Model HECU_Shotgunner2_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -33959,7 +33959,7 @@ Model HECU_Shotgunner2_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Shotgunner2_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -33982,7 +33982,7 @@ Model HECU_Shotgunner2_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3"
@@ -34029,7 +34029,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3" 
@@ -34116,7 +34116,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3" 
@@ -34187,7 +34187,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3"
@@ -34294,7 +34294,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3"
@@ -34353,7 +34353,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -34392,7 +34392,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -34479,7 +34479,7 @@ Model HECU_Shotgunner2_Opp_Saw// throw a grenade
 
 Model HECU_Shotgunner2_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -34562,7 +34562,7 @@ Model HECU_Shotgunner2_Opp_Saw// out of combat spawn
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -34617,7 +34617,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -34664,7 +34664,7 @@ Model HECU_Shotgunner2_Opp_Saw// wounded run
 
 Model HECU_Shotgunner2_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -34735,7 +34735,7 @@ Model HECU_Shotgunner2_Opp_Saw// wounded walk
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -34770,7 +34770,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -34877,7 +34877,7 @@ Model HECU_Shotgunner2_Opp_SAW
 
 Model HECU_Shotgunner2_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -34948,7 +34948,7 @@ Model HECU_Shotgunner2_Opp_Saw// drop grenade
 
 Model HECU_Shotgunner2_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -35043,7 +35043,7 @@ Model HECU_Shotgunner2_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Shotgunner2_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "shotgunner2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -35142,7 +35142,7 @@ Model HECU_Shotgunner2_Opp_Saw// movement without target
 
 Model HECU_Shotgunner2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -35185,7 +35185,7 @@ Model HECU_Shotgunner2_Opp_SAW_Shrink
 
 Model HECU_Shotgunner2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -35232,7 +35232,7 @@ Model HECU_Shotgunner2_Opp_SAW_Shrink
 
 Model HECU_Shotgunner2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -35267,7 +35267,7 @@ Model HECU_Shotgunner2_Opp_SAW_Shrink
 
 Model HECU_Shotgunner2_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Shotgunner2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -35302,7 +35302,7 @@ Model HECU_Shotgunner2_Opp_SAW_ShrinkEffect
 
 Model HECU_Mask_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -35345,7 +35345,7 @@ Model HECU_Mask_Opp_Saw// out of combat idle
 
 Model HECU_Mask_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -35392,7 +35392,7 @@ Model HECU_Mask_Opp_Saw// use when he has a target
 
 Model HECU_Mask_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -35427,7 +35427,7 @@ Model HECU_Mask_Opp_Saw// stand fire
 
 Model HECU_Mask_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -35462,7 +35462,7 @@ Model HECU_Mask_Opp_Saw// crouch fire
 
 Model HECU_Mask_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -35513,7 +35513,7 @@ Model HECU_Mask_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Mask_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -35536,7 +35536,7 @@ Model HECU_Mask_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3"
@@ -35583,7 +35583,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3" 
@@ -35670,7 +35670,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3" 
@@ -35741,7 +35741,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3" 
@@ -35848,7 +35848,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3" 
@@ -35907,7 +35907,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -35946,7 +35946,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -36033,7 +36033,7 @@ Model HECU_Mask_Opp_Saw// throw a grenade
 
 Model HECU_Mask_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -36116,7 +36116,7 @@ Model HECU_Mask_Opp_Saw// out of combat spawn
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -36171,7 +36171,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -36218,7 +36218,7 @@ Model HECU_Mask_Opp_Saw// wounded run
 
 Model HECU_Mask_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -36289,7 +36289,7 @@ Model HECU_Mask_Opp_Saw// wounded walk
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -36324,7 +36324,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -36431,7 +36431,7 @@ Model HECU_Mask_Opp_SAW
 
 Model HECU_Mask_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -36502,7 +36502,7 @@ Model HECU_Mask_Opp_Saw// drop grenade
 
 Model HECU_Mask_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -36597,7 +36597,7 @@ Model HECU_Mask_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Mask_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -36696,7 +36696,7 @@ Model HECU_Mask_Opp_Saw// movement without target
 
 Model HECU_Mask_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Mask_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -36739,7 +36739,7 @@ Model HECU_Mask_Opp_SAW_Shrink
 
 Model HECU_Mask_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Mask_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -36786,7 +36786,7 @@ Model HECU_Mask_Opp_SAW_Shrink
 
 Model HECU_Mask_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -36821,7 +36821,7 @@ Model HECU_Mask_Opp_SAW_Shrink
 
 Model HECU_Mask_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "mask_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -36856,7 +36856,7 @@ Model HECU_Mask_Opp_SAW_ShrinkEffect
 
 Model HECU_Commander1_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -36899,7 +36899,7 @@ Model HECU_Commander1_Opp_Saw// out of combat idle
 
 Model HECU_Commander1_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -36946,7 +36946,7 @@ Model HECU_Commander1_Opp_Saw// use when he has a target
 
 Model HECU_Commander1_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -36981,7 +36981,7 @@ Model HECU_Commander1_Opp_Saw// stand fire
 
 Model HECU_Commander1_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -37016,7 +37016,7 @@ Model HECU_Commander1_Opp_Saw// crouch fire
 
 Model HECU_Commander1_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -37067,7 +37067,7 @@ Model HECU_Commander1_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Commander1_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -37090,7 +37090,7 @@ Model HECU_Commander1_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3" 
@@ -37137,7 +37137,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3" 
@@ -37224,7 +37224,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3"
@@ -37295,7 +37295,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3" 
@@ -37402,7 +37402,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3" 
@@ -37461,7 +37461,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -37500,7 +37500,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -37587,7 +37587,7 @@ Model HECU_Commander1_Opp_Saw// throw a grenade
 
 Model HECU_Commander1_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -37670,7 +37670,7 @@ Model HECU_Commander1_Opp_Saw// out of combat spawn
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -37725,7 +37725,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -37772,7 +37772,7 @@ Model HECU_Commander1_Opp_Saw// wounded run
 
 Model HECU_Commander1_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -37843,7 +37843,7 @@ Model HECU_Commander1_Opp_Saw// wounded walk
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -37878,7 +37878,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -37985,7 +37985,7 @@ Model HECU_Commander1_Opp_SAW
 
 Model HECU_Commander1_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -38056,7 +38056,7 @@ Model HECU_Commander1_Opp_Saw// drop grenade
 
 Model HECU_Commander1_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -38151,7 +38151,7 @@ Model HECU_Commander1_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Commander1_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -38250,7 +38250,7 @@ Model HECU_Commander1_Opp_Saw// movement without target
 
 Model HECU_Commander1_Opp_Saw// sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "sawtorso_advance.md3" 
@@ -38305,7 +38305,7 @@ Model HECU_Commander1_Opp_Saw// sees player out of sight
 
 Model HECU_Commander1_Opp_Saw// sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "sawtorso_flank.md3" 
@@ -38380,7 +38380,7 @@ Model HECU_Commander1_Opp_Saw// sees player in sight
 
 Model HECU_Commander1_Opp_Saw// decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "sawtorso_retreat.md3" 
@@ -38455,7 +38455,7 @@ Model HECU_Commander1_Opp_Saw// decides to run from damage
 
 Model HECU_Commander1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -38498,7 +38498,7 @@ Model HECU_Commander1_Opp_SAW_Shrink
 
 Model HECU_Commander1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -38545,7 +38545,7 @@ Model HECU_Commander1_Opp_SAW_Shrink
 
 Model HECU_Commander1_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -38580,7 +38580,7 @@ Model HECU_Commander1_Opp_SAW_Shrink
 
 Model HECU_Commander1_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander1_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -38615,7 +38615,7 @@ Model HECU_Commander1_Opp_SAW_ShrinkEffect
 
 Model HECU_Commander2_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -38658,7 +38658,7 @@ Model HECU_Commander2_Opp_Saw// out of combat idle
 
 Model HECU_Commander2_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -38705,7 +38705,7 @@ Model HECU_Commander2_Opp_Saw// use when he has a target
 
 Model HECU_Commander2_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -38740,7 +38740,7 @@ Model HECU_Commander2_Opp_Saw// stand fire
 
 Model HECU_Commander2_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -38775,7 +38775,7 @@ Model HECU_Commander2_Opp_Saw// crouch fire
 
 Model HECU_Commander2_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -38826,7 +38826,7 @@ Model HECU_Commander2_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Commander2_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -38849,7 +38849,7 @@ Model HECU_Commander2_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3" 
@@ -38896,7 +38896,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3" 
@@ -38983,7 +38983,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3" 
@@ -39054,7 +39054,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3" 
@@ -39161,7 +39161,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3" 
@@ -39220,7 +39220,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -39259,7 +39259,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -39346,7 +39346,7 @@ Model HECU_Commander2_Opp_Saw// throw a grenade
 
 Model HECU_Commander2_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -39429,7 +39429,7 @@ Model HECU_Commander2_Opp_Saw// out of combat spawn
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -39484,7 +39484,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -39531,7 +39531,7 @@ Model HECU_Commander2_Opp_Saw// wounded run
 
 Model HECU_Commander2_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -39602,7 +39602,7 @@ Model HECU_Commander2_Opp_Saw// wounded walk
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -39637,7 +39637,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -39744,7 +39744,7 @@ Model HECU_Commander2_Opp_SAW
 
 Model HECU_Commander2_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -39815,7 +39815,7 @@ Model HECU_Commander2_Opp_Saw// drop grenade
 
 Model HECU_Commander2_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -39910,7 +39910,7 @@ Model HECU_Commander2_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Commander2_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -40009,7 +40009,7 @@ Model HECU_Commander2_Opp_Saw// movement without target
 
 Model HECU_Commander2_Opp_Saw// sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "sawtorso_advance.md3" 
@@ -40064,7 +40064,7 @@ Model HECU_Commander2_Opp_Saw// sees player out of sight
 
 Model HECU_Commander2_Opp_Saw// sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "sawtorso_flank.md3" 
@@ -40139,7 +40139,7 @@ Model HECU_Commander2_Opp_Saw// sees player in sight
 
 Model HECU_Commander2_Opp_Saw// decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "sawtorso_retreat.md3" 
@@ -40214,7 +40214,7 @@ Model HECU_Commander2_Opp_Saw// decides to run from damage
 
 Model HECU_Commander2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -40257,7 +40257,7 @@ Model HECU_Commander2_Opp_SAW_Shrink
 
 Model HECU_Commander2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -40304,7 +40304,7 @@ Model HECU_Commander2_Opp_SAW_Shrink
 
 Model HECU_Commander2_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -40339,7 +40339,7 @@ Model HECU_Commander2_Opp_SAW_Shrink
 
 Model HECU_Commander2_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "commander2_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -40374,7 +40374,7 @@ Model HECU_Commander2_Opp_SAW_ShrinkEffect
 
 Model HECU_Major_Opp_Saw// out of combat idle
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -40417,7 +40417,7 @@ Model HECU_Major_Opp_Saw// out of combat idle
 
 Model HECU_Major_Opp_Saw// use when he has a target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -40464,7 +40464,7 @@ Model HECU_Major_Opp_Saw// use when he has a target
 
 Model HECU_Major_Opp_Saw// stand fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_saw_fire.md3"
    Model 1 "fatigues_saw_fire.md3"  
    Model 2 "sawtorso_fire.md3" 
@@ -40499,7 +40499,7 @@ Model HECU_Major_Opp_Saw// stand fire
 
 Model HECU_Major_Opp_Saw// crouch fire
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_saw_cfire.md3"
    Model 1 "fatigues_saw_cfire.md3"  
    Model 2 "sawtorso_cfire.md3" 
@@ -40534,7 +40534,7 @@ Model HECU_Major_Opp_Saw// crouch fire
 
 Model HECU_Major_Opp_Saw// use when he has a target and standing still
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_cidle.md3"
    Model 1 "fatigues_cidle.md3"  
    Model 2 "sawtorso_cidle.md3" 
@@ -40585,7 +40585,7 @@ Model HECU_Major_Opp_Saw// use when he has a target and standing still
 
 Model HECU_Major_Opp_Saw// use when in squad sometimes for ambush
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_cwait.md3"
    Model 1 "fatigues_cwait.md3"  
    Model 2 "sawtorso_cwait.md3" 
@@ -40608,7 +40608,7 @@ Model HECU_Major_Opp_Saw// use when in squad sometimes for ambush
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die1.md3"
    Model 1 "fatigues_die1.md3"  
    Model 2 "sawtorso_die1.md3" 
@@ -40655,7 +40655,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die2.md3"
    Model 1 "fatigues_die2.md3"  
    Model 2 "sawtorso_die2.md3"
@@ -40742,7 +40742,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die3.md3"
    Model 1 "fatigues_die3.md3"  
    Model 2 "sawtorso_die3.md3" 
@@ -40813,7 +40813,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die4.md3"
    Model 1 "fatigues_die4.md3"  
    Model 2 "sawtorso_die4.md3" 
@@ -40920,7 +40920,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die5.md3"
    Model 1 "fatigues_die5.md3"  
    Model 2 "sawtorso_die5.md3" 
@@ -40979,7 +40979,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_die6.md3"
    Model 1 "fatigues_die6.md3"  
    Model 2 "sawtorso_die6.md3" 
@@ -41018,7 +41018,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_Saw// throw a grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_grenade.md3"
    Model 1 "fatigues_grenade.md3"  
    Model 2 "sawtorso_grenade.md3" 
@@ -41105,7 +41105,7 @@ Model HECU_Major_Opp_Saw// throw a grenade
 
 Model HECU_Major_Opp_Saw// out of combat spawn
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle1.md3"
    Model 1 "fatigues_idle1.md3"  
    Model 2 "sawtorso_idle1.md3" 
@@ -41188,7 +41188,7 @@ Model HECU_Major_Opp_Saw// out of combat spawn
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_kick.md3"
    Model 1 "fatigues_kick.md3"  
    Model 2 "sawtorso_kick.md3" 
@@ -41243,7 +41243,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_Saw// wounded run
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_lrun.md3"
    Model 1 "fatigues_lrun.md3"  
    Model 2 "sawtorso_lrun.md3" 
@@ -41290,7 +41290,7 @@ Model HECU_Major_Opp_Saw// wounded run
 
 Model HECU_Major_Opp_Saw// wounded walk
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_lwalk.md3"
    Model 1 "fatigues_lwalk.md3"  
    Model 2 "sawtorso_lwalk.md3" 
@@ -41361,7 +41361,7 @@ Model HECU_Major_Opp_Saw// wounded walk
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -41396,7 +41396,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_SAW
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_reload.md3"
    Model 1 "fatigues_reload.md3"  
    Model 2 "sawtorso_reload.md3" 
@@ -41503,7 +41503,7 @@ Model HECU_Major_Opp_SAW
 
 Model HECU_Major_Opp_Saw// drop grenade
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_drop.md3"
    Model 1 "fatigues_drop.md3"  
    Model 2 "sawtorso_drop.md3" 
@@ -41574,7 +41574,7 @@ Model HECU_Major_Opp_Saw// drop grenade
 
 Model HECU_Major_Opp_Saw// take cover from grenade fragments
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_duck.md3"
    Model 1 "fatigues_duck.md3"  
    Model 2 "sawtorso_duck.md3" 
@@ -41669,7 +41669,7 @@ Model HECU_Major_Opp_Saw// take cover from grenade fragments
 
 Model HECU_Major_Opp_Saw// movement without target
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_walk.md3"
    Model 1 "fatigues_walk.md3"  
    Model 2 "sawtorso_walk.md3" 
@@ -41768,7 +41768,7 @@ Model HECU_Major_Opp_Saw// movement without target
 
 Model HECU_Major_Opp_Saw// sees player out of sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_advance.md3"
    Model 1 "fatigues_advance.md3"  
    Model 2 "sawtorso_advance.md3" 
@@ -41823,7 +41823,7 @@ Model HECU_Major_Opp_Saw// sees player out of sight
 
 Model HECU_Major_Opp_Saw// sees player in sight
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_flank.md3"
    Model 1 "fatigues_flank.md3"  
    Model 2 "sawtorso_flank.md3" 
@@ -41898,7 +41898,7 @@ Model HECU_Major_Opp_Saw// sees player in sight
 
 Model HECU_Major_Opp_Saw// decides to run from damage
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_retreat.md3"
    Model 1 "fatigues_retreat.md3"  
    Model 2 "sawtorso_retreat.md3" 
@@ -41973,7 +41973,7 @@ Model HECU_Major_Opp_Saw// decides to run from damage
 
 Model HECU_Major_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_idle2.md3"
    Model 1 "fatigues_idle2.md3"  
    Model 2 "sawtorso_idle2.md3" 
@@ -42016,7 +42016,7 @@ Model HECU_Major_Opp_SAW_Shrink
 
 Model HECU_Major_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_run.md3"
    Model 1 "fatigues_run.md3"  
    Model 2 "sawtorso_run.md3" 
@@ -42063,7 +42063,7 @@ Model HECU_Major_Opp_SAW_Shrink
 
 Model HECU_Major_Opp_SAW_Shrink
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 
@@ -42098,7 +42098,7 @@ Model HECU_Major_Opp_SAW_Shrink
 
 Model HECU_Major_Opp_SAW_ShrinkEffect
 {
-   Path "Models/Freeman/Opp" 
+   Path "Models/HalfLife/Opp"
    Model 0 "Major_pain.md3"
    Model 1 "fatigues_pain.md3"  
    Model 2 "sawtorso_pain.md3" 

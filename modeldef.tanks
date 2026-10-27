@@ -141,7 +141,7 @@ Model BradleyTopGun
 
 Model HLAbramsRocket
 {
-   Path "models/rpgr"   
+   Path "models/HalfLife/weapons/rpgr"   
    Model 0 "rpgrocket_hl_2.md3"   
    PITCHFROMMOMENTUM
    INHERITACTORPITCH
@@ -153,7 +153,7 @@ Model HLAbramsRocket
 
 Model HLBradleyRocket
 {
-   Path "models/rpgr"   
+   Path "models/HalfLife/weapons/rpgr"   
    Model 0 "rpgrocket_hl_2.md3"   
    PITCHFROMMOMENTUM
    INHERITACTORPITCH

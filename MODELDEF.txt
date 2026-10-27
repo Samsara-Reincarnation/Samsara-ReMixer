@@ -1,6 +1,6 @@
 Model HLBullet_Enemy
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -11,7 +11,7 @@ Model HLBullet_Enemy
 
 Model HLBullet_Blackop
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -22,7 +22,7 @@ Model HLBullet_Blackop
 
 Model HLBullet_M40
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -33,7 +33,7 @@ Model HLBullet_M40
 
 Model HLBullet_Ass-Ass-In
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -44,7 +44,7 @@ Model HLBullet_Ass-Ass-In
 
 Model HLBullet_Apache
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -55,7 +55,7 @@ Model HLBullet_Apache
 
 Model HLBullet_Abrams
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -66,7 +66,7 @@ Model HLBullet_Abrams
 
 Model HLBullet_Bradley
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -77,7 +77,7 @@ Model HLBullet_Bradley
 
 Model HLBullet_Robot
 { 
-   Path "Models\Freeman\Effects"
+   Path "Models\HalfLife\Effects"
    MODEL 0 "Projectile02.md3"
    SKIN 0 "dot1.png"
    Scale 5 0.2 0.2
@@ -88,7 +88,7 @@ Model HLBullet_Robot
 
 Model HornetGunDrop
 {
-   Path "models/hgun"   
+   Path "models/HalfLife/weapons/hgun"   
    Model 0 "hgun.md3"
    Scale 0.7 0.7 0.7  
    
@@ -97,7 +97,7 @@ Model HornetGunDrop
 
 Model HLHECUM203Grenade
 {
-	Path "models/mp5r"
+	Path "models/HalfLife/weapons/mp5r"
 	Model 0 "mp5grenout.md3"
 	INHERITACTORPITCH
 	INHERITACTORROLL
@@ -1197,7 +1197,7 @@ Model blaster_laser2_REM
 
 model SpiderMastermind64Laser
 {
-	path "models"
+	path "models/Doom64"
 	model 0 "doom64laser.md3"
 	skin 0 "64LAZ0.png"
 	scale 32.0 3.0 1.0
@@ -1210,7 +1210,7 @@ model SpiderMastermind64Laser
 
 model SpiderMastermind64Laser2
 {
-	path "models"
+	path "models/Doom64"
 	model 0 "doom64laser.md3"
 	skin 0 "64LAZ0.png"
 	scale 32.0 3.0 1.0
