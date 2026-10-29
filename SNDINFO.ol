@@ -1,3 +1,4 @@
+/*
 Here is the list in a clean text block for easy copying:
 
 Outlaws/Enemy/C101		"Sounds/Outlaws/outlaws_c101.wav"
@@ -409,3 +410,4 @@ $random Outlaws/Dorsey/Alert { Outlaws/Dorsey6 Outlaws/Dorsey7 Outlaws/Dorsey8 O
 
 Outlaws/Tarantula/Bite 		"Sounds/Outlaws/outlaws_tarbite.wav"
 Outlaws/Tarantula/Death 	"Sounds/Outlaws/outlaws_taran.wav"
+*/

@@ -1,3 +1,4 @@
+/*
 Model Outlaws_EnemyDynamiteProjectile
 {
 	Path "Models/Outlaws"
@@ -21,3 +22,4 @@ Model Outlaws_EnemyKnifeProjectile
 
 	FrameIndex OL00 A 0 0
 }
+*/

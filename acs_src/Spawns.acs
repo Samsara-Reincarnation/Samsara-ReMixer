@@ -12600,6 +12600,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 	{//Soldier of Fortune
 	},
 	{//Outlaws
+/*
 		{//Main
 			{//Zombieman
 				{"Outlaws_Enemy_BadGuy1"},
@@ -12965,6 +12966,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Outlaws_Enemy_Kenny"}
 			}
 		}
+*/
 	}
 };
 
@@ -25436,6 +25438,7 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 	{//Soldier of Fortune
 	},
 	{//Outlaws
+/*
 		{//Main
 			{//Zombieman
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -25801,5 +25804,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			}
 		}
+*/
 	}
 };
