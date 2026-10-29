@@ -79,6 +79,7 @@ Strife:
 
 Blood:
 
++ The Monk has been added as a zombieman replacement!
 ! Renamed the butcher's actor name to avoid a name conflict with other mods.
 
 Corridor 7:

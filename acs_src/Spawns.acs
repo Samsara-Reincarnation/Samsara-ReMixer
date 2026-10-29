@@ -5932,7 +5932,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 	{//Blood
 		{//Main
 			{//Zombieman
-				{"Cultist","","","","CultistWellDone","CultistExtraCrispy"}
+				{"BloodMonk","","","","CultistWellDone","CultistExtraCrispy"}
 			},
 			{//Shotgun Guy
 				{"Cultist","","","","CultistWellDone","CultistExtraCrispy"}
@@ -6010,7 +6010,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Cultist"}
 			},
 			{//Flemoidus Commonus
-				{"Cultist","","","","CultistWellDone","CultistExtraCrispy"}
+				{"BloodMonk","","","","CultistWellDone","CultistExtraCrispy"}
 			},
 			{//Flemoidus Bipedicus
 				{"Cultist","","","","CultistWellDone","CultistExtraCrispy"}
@@ -6057,7 +6057,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"BloodAcolyte","","","","CultistWellDone","CultistExtraCrispy"}
 			},
 			{//Golem
-				{"Cultist","","","","CultistWellDone","CultistExtraCrispy"}
+				{"BloodMonk","","","","CultistWellDone","CultistExtraCrispy"}
 			},
 			{//Golem Ghost
 				{"ChokingHand"}
@@ -6101,7 +6101,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"Cultist"}
 			},
 			{//Ettin
-				{"Cultist","","","","CultistWellDone","CultistExtraCrispy"}
+				{"BloodMonk","","","","CultistWellDone","CultistExtraCrispy"}
 			},
 			{//Afrit
 				{"BloodBat"}
