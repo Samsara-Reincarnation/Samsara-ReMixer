@@ -1,6 +1,6 @@
 ACTOR SubmarineWilly : SamsaraMonsterHumanoidTotalGib
 {
-	Health 850
+	Health 650
 	Radius 33
 	Height 70
 	Speed 6

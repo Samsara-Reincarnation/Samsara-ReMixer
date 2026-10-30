@@ -48,8 +48,12 @@ Wolfenstein 3D:
 
 -Lost Episodes-
 
-* Bats should now disappear/shatter properly when zorched/frozen on the ground.
+! Adjusted some of the ReMixer spawns for the Lost Episodes set.
+- The bat's health has been decreased (from 130 to 65).
+- Bats no longer fly and are now grounded enemies.
 * Fixed bats not being killed properly by Duke's expander.
+- Generalleutnant Stahlkopf's health has been decreased (from 1050 to 750).
+- Submarine Willy's health has been decreased (from 850 to 650).
 
 Hexen I:
 

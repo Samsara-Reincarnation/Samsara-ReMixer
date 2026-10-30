@@ -2072,8 +2072,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Shotgun Guy
-				{"WolfOfficer"},
-				{"WolfGuard"}
+				{"WolfOfficer"}
 			},
 			{//Imp
 				{"WolfMutant"}
@@ -2157,8 +2156,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfGuard"}
 			},
 			{//Flemoidus Bipedicus
-				{"WolfOfficer"},
-				{"WolfGuard"}
+				{"WolfOfficer"}
 			},
 			{//Armored Flemoidus Bipedicus
 				{"WolfMutant"}
@@ -2215,8 +2213,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"WolfRatSpectre"}
 			},
 			{//Nitrogolem
-				{"WolfOfficer"},
-				{"WolfGuard"}
+				{"WolfOfficer"}
 			},
 			{//Nitrogolem Ghost
 				{"WolfDogSpectre"},
@@ -2280,8 +2277,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"GretelGrosseDoom"}
 			},
 			{//Stalker
-				{"WolfOfficer"},
-				{"WolfGuard"}
+				{"WolfOfficer"}
 			},
 			{//Stalker Boss
 				{"WolfSS"}
@@ -2373,7 +2369,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SODOfficer"}
 			},
 			{//Imp
-				{"SODOfficer"}
+				{"SODBat"}
 			},
 			{//Chaingun Guy
 				{"SODSS"}
@@ -2383,16 +2379,18 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Demon
 				{"SODDog"},
-				{"SODDogSpectre"}
+				{"WolfRat"}
 			},
 			{//Dark Imp
-				{"SODOfficer"}
+				{"SODBat"}
 			},
 			{//Spectre
-				{"SODDogSpectre"}
+				{"SODDogSpectre"},
+				{"WolfRatSpectre"}
 			},
 			{//Blood Demon
-				{"SODDog"}
+				{"SODDog"},
+				{"WolfRat"}
 			},
 			{//Lost Soul
 				{"SODSpectre"},
@@ -2402,7 +2400,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FireDrone"}
 			},
 			{//Revenant
-				{"SODBat"}
+				{"SubmarineWillyDoom"}
 			},
 			{//Cacolantern
 				{"FireDrone"}
@@ -2452,14 +2450,15 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SODOfficer"}
 			},
 			{//Armored Flemoidus Bipedicus
-				{"SODOfficer"}
+				{"SODBat"}
 			},
 			{//Flemoidus Stridicus
 				{"SODDog"},
-				{"SODDogSpectre"}
+				{"WolfRat"}
 			},
 			{//Larva
-				{"SODDogSpectre"}
+				{"SODDogSpectre"},
+				{"WolfRatSpectre"}
 			},
 			{//Flem Mine
 				{"SODSpectre"},
@@ -2472,7 +2471,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FireDrone"}
 			},
 			{//Quadrumpus
-				{"SODBat"}
+				{"SubmarineWillyDoom"}
 			},
 			{//Flemoidus Maximus
 				{"SubmarineWillyDoom"}
@@ -2493,19 +2492,21 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SODSpectre2"}
 			},
 			{//Fire Gargoyle
-				{"SODOfficer"}
+				{"SODBat"}
 			},
 			{//Golem
 				{"SODGuard"}
 			},
 			{//Golem Ghost
-				{"SODDogSpectre"}
+				{"SODDogSpectre"},
+				{"WolfRatSpectre"}
 			},
 			{//Nitrogolem
 				{"SODOfficer"}
 			},
 			{//Nitrogolem Ghost
-				{"SODDogSpectre"}
+				{"SODDogSpectre"},
+				{"WolfRatSpectre"}
 			},
 			{//Disciple of D'Sparil
 				{"FireDrone"}
@@ -2514,17 +2515,18 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SODSS"}
 			},
 			{//Undead Warrior Ghost
-				{"SODDogSpectre"}
+				{"SODDogSpectre"},
+				{"WolfRatSpectre"}
 			},
 			{//Sabreclaw
 				{"SODDog"},
-				{"SODDogSpectre"}
+				{"WolfRat"}
 			},
 			{//Ophidian
-				{"SODBat"}
+				{"SubmarineWillyDoom"}
 			},
 			{//Weredragon
-				{"SODBat"}
+				{"GerhardtVonSchreiberDoom"}
 			},
 			{//Iron Lich
 				{"SubmarineWillyDoom"}
@@ -2552,13 +2554,13 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Centaur
 				{"SODDog"},
-				{"SODDogSpectre"}
+				{"WolfRat"}
 			},
 			{//Slaughtaur
 				{"GeneralleutnantStahlkopfDoom"}
 			},
 			{//Green Chaos Serpent
-				{"SODBat"}
+				{"GerhardtVonSchreiberDoom"}
 			},
 			{//Stalker
 				{"SODOfficer"}
@@ -2567,7 +2569,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SODSS"}
 			},
 			{//Wendigo
-				{"SODBat"}
+				{"SubmarineWillyDoom"}
 			},
 			{//Reiver
 				{"FireDrone"}
@@ -2576,7 +2578,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"FireDrone"}
 			},
 			{//Brown Chaos Serpent
-				{"SODBat"}
+				{"GerhardtVonSchreiberDoom"}
 			},
 			{//Traductus
 				{"SubmarineWillyDoom"}
@@ -2600,14 +2602,14 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			},
 			{//Stalker (Strife)
 				{"SODDog"},
-				{"SODDogSpectre"}
+				{"WolfRat"}
 			},
 			{//Sentinel
 				{"SODSpectre"},
 				{"SODSpectre2"}
 			},
 			{//Reaver
-				{"SODBat"}
+				{"SubmarineWillyDoom"}
 			},
 			{//Crusader
 				{"GerhardtVonSchreiberDoom"}
@@ -2625,7 +2627,7 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SODSpectre2"}
 			},
 			{//Shocktrooper
-				{"SODOfficer"}
+				{"SODBat"}
 			},
 			{//Mindweaver
 				{"GerhardtVonSchreiberDoom"}
@@ -14908,7 +14910,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Shotgun Guy
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Imp
@@ -14993,7 +14994,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Bipedicus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Armored Flemoidus Bipedicus
@@ -15051,7 +15051,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Nitrogolem
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Nitrogolem Ghost
@@ -15116,7 +15115,6 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Stalker
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Stalker Boss
@@ -15218,17 +15216,19 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Demon
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Dark Imp
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Spectre
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Blood Demon
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Lost Soul
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -15291,11 +15291,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Flemoidus Stridicus
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Larva
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Flem Mine
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -15335,13 +15336,15 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Golem Ghost
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Nitrogolem
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Nitrogolem Ghost
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Disciple of D'Sparil
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -15350,11 +15353,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Undead Warrior Ghost
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Sabreclaw
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Ophidian
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -15387,8 +15391,8 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Centaur
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Slaughtaur
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -15435,8 +15439,8 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Stalker (Strife)
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+				{0,0,2,0,0,2,0,0,2,0,0,2,0,0,2},
+				{0,0,-1,0,0,1,0,0,2,0,0,2,0,0,2}
 			},
 			{//Sentinel
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
