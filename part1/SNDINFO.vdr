@@ -366,6 +366,15 @@ vdr/electricplasma/hit		"Sounds/VDR/vdr_PZAPHIT"
 vdr/demsit 					"Sounds/VDR/vdr_dsdemsit"
 vdr/demdth 					"Sounds/VDR/vdr_dsdemdth"
 
+vdr/arachnophyte/sight			"Sounds/VDR/vdr_DSAPHSIT.ogg"
+$Random vdr/arachnophyte/pain	{ vdr/DSAPHPN1 vdr/DSAPHPN2 vdr/DSAPHPN3 }
+vdr/DSAPHPN1		"Sounds/VDR/vdr_DSAPHPN1.ogg"
+vdr/DSAPHPN2		"Sounds/VDR/vdr_DSAPHPN2.ogg"
+vdr/DSAPHPN3		"Sounds/VDR/vdr_DSAPHPN3.ogg"
+vdr/arachnophyte/death			"Sounds/VDR/vdr_DSAPHDTH.ogg"
+vdr/arachnophyte/engine			"Sounds/VDR/vdr_DSAPHENG.ogg"
+$volume vdr/arachnophyte/engine 0.75
+
 vdr/darkcyberdemon/sight			"Sounds/VDR/vdr_dsdcsit"
 vdr/darkcyberdemon/active			"Sounds/VDR/vdr_dsdcact"
 vdr/darkcyberdemon/death			"Sounds/VDR/vdr_dsdcdth"
@@ -397,6 +406,11 @@ $alias vdr/annihilator/hrexp 	doomguy/stronghold/hrlexp
 $limit vdr/annihilator/hrfire	0
 $limit vdr/annihilator/hrexp	0
 $limit vdr/annihilator/hrbeep	4
+
+vdr/darkcardinal/sight			"Sounds/VDR/vdr_dcardsee.ogg"
+vdr/darkcardinal/active			"Sounds/VDR/vdr_dcardact.ogg"
+vdr/darkcardinal/pain			"Sounds/VDR/vdr_dcardpai.ogg"
+vdr/darkcardinal/death			"Sounds/VDR/vdr_dcarddth.ogg"
 
 vdr/ssgguy/attack			"Sounds/VDR/vdr_dsdshtgn"
 vdr/minigunner/attack		"Sounds/VDR/vdr_dsminign"

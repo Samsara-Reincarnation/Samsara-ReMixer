@@ -1,0 +1,91 @@
+Actor MMRandomizer_DarkCardinal : CyberDemon3
+{
+	Health 4500
+	PainChance 50
+	Mass 700
+	Speed 10
+	BloodColor "Green"
+	+DONTHARMSPECIES
+	+FLOAT
+	+NOGRAVITY
+	+DONTFALL
+	+FLOATBOB
+	SeeSound "vdr/darkcardinal/sight"
+	PainSound "vdr/darkcardinal/pain"
+	DeathSound "vdr/darkcardinal/death"
+	ActiveSound "vdr/darkcardinal/active"
+	Obituary "%o was blessed by a dark cardinal."
+	Tag "Dark Cardinal"
+	States
+	{
+	Spawn:
+		VD9G A 0
+		VD9G A 1 A_JumpIfInventory("AlreadySpawned",1,"Spawn2")
+		VD9G A 1 ACS_NamedExecuteAlways("ReMixerSpawnScript",0,1,0)
+		VD9G A 0 A_GiveInventory("AlreadySpawned",1)
+		VD9G A 0
+	Spawn2:
+		VD9G AB 4 Bright A_Look
+		Loop
+	See:
+		TNT1 A 0 A_GiveInventory("SamsaraBossSightTaunt")
+	See2:
+		VD9G AABB 2 Bright A_Chase 
+		Loop
+	Missile:
+		VD9G C 4 Bright A_FaceTarget
+		VD9G D 5 Bright A_CustomMissile("MMRandomizer_CardinalRocket",42,-30,0)
+		VD9G C 4 Bright A_FaceTarget
+		VD9G D 5 Bright A_CustomMissile("MMRandomizer_CardinalRocket",42,-30,0)
+		VD9G C 4 Bright
+		Goto See2
+	Pain:
+		VD9G P 4 Bright A_Pain
+		Goto See2
+	Death:
+		VD9G E 0 Bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		VD9G E 8 Bright A_ChangeFlag("FLOATBOB",false)
+		VD9G E 0 Bright A_SpawnItemEx("UniversalBloodyHellGoreXDeathEffectForBosses",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+		VD9G F 8 Bright A_Scream
+		VD9G G 8 Bright A_NoBlocking
+		VD9G H 8 Bright A_Explode
+		VD9G IJKL 8 Bright
+		TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+		Stop
+	Death.Massacre:
+		VD9G E 0 Bright ACS_NamedExecuteAlways("Samsara_KillCount", 0, 0)
+		VD9G E 8 Bright A_ChangeFlag("FLOATBOB",false)
+		VD9G F 8 Bright A_Scream
+		VD9G G 8 Bright A_NoBlocking
+		VD9G H 8 Bright A_Explode
+		VD9G IJKL 8 Bright
+		TNT1 A -1 ACS_NamedExecuteWithResult("SamsaraBossDeathToggler")
+		Stop
+	}
+}
+
+Actor MMRandomizer_CardinalRocket
+{
+	Projectile
+	Radius 11
+	Height 8
+	Speed 20
+	Damage 20
+	+RANDOMIZE
+	-BLOODSPLATTER
+	DamageType "Explosive"
+	Decal Scorch
+	SeeSound "doom/weapons/rocklf"
+	DeathSound "doom/weapons/rocklx"
+	States
+	{
+	Spawn:
+		VD9G MN 4 Bright
+		Loop
+	Death:
+		VD9G O 8 Bright A_Explode
+		VD9G Q 6 Bright
+		VD9G R 4 Bright
+		Stop
+	}
+}

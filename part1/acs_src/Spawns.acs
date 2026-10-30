@@ -807,12 +807,14 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SpiderMastermind3"},
 				{"MMRandomizer_ArachnorbQueen"},
 				{"MMRandomizer_CyberMastermind"},
-				{"MMRandomizer_Demolisher"}
+				{"MMRandomizer_Demolisher"},
+				{"MMRandomizer_Arachnophyte"}
 			},
 			{//Cyberdemon
 				{"Cyberdemon3"},
 				{"MMRandomizer_DarkCyberdemon"},
-				{"MMRandomizer_Annihilator"}
+				{"MMRandomizer_Annihilator"},
+				{"MMRandomizer_DarkCardinal"}
 			},
 			{//Wolfenstein SS
 				{"Nazi3"}
@@ -924,12 +926,14 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 				{"SpiderMastermind3"},
 				{"MMRandomizer_ArachnorbQueen"},
 				{"MMRandomizer_CyberMastermind"},
-				{"MMRandomizer_Demolisher"}
+				{"MMRandomizer_Demolisher"},
+				{"MMRandomizer_Arachnophyte"}
 			},
 			{//Snotfolus
 				{"Cyberdemon3"},
 				{"MMRandomizer_DarkCyberdemon"},
-				{"MMRandomizer_Annihilator"}
+				{"MMRandomizer_Annihilator"},
+				{"MMRandomizer_DarkCardinal"}
 			},
 			{//Gargoyle
 				{"LostSoul3"},
@@ -1055,13 +1059,15 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Maulotaur
 				{"Cyberdemon3"},
 				{"MMRandomizer_DarkCyberdemon"},
-				{"MMRandomizer_Annihilator"}
+				{"MMRandomizer_Annihilator"},
+				{"MMRandomizer_DarkCardinal"}
 			},
 			{//D'Sparil
 				{"SpiderMastermind3"},
 				{"MMRandomizer_ArachnorbQueen"},
 				{"MMRandomizer_CyberMastermind"},
-				{"MMRandomizer_Demolisher"}
+				{"MMRandomizer_Demolisher"},
+				{"MMRandomizer_Arachnophyte"}
 			},
 			{//Chicken
 				{"Nazi3"}
@@ -1199,13 +1205,15 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Heresiarch
 				{"Cyberdemon3"},
 				{"MMRandomizer_DarkCyberdemon"},
-				{"MMRandomizer_Annihilator"}
+				{"MMRandomizer_Annihilator"},
+				{"MMRandomizer_DarkCardinal"}
 			},
 			{//Korax
 				{"SpiderMastermind3"},
 				{"MMRandomizer_ArachnorbQueen"},
 				{"MMRandomizer_CyberMastermind"},
-				{"MMRandomizer_Demolisher"}
+				{"MMRandomizer_Demolisher"},
+				{"MMRandomizer_Arachnophyte"}
 			},
 			{//Pig
 				{"Nazi3"}
@@ -1242,7 +1250,8 @@ str monsterSelectStr[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_STR
 			{//Inquisitor
 				{"Cyberdemon3"},
 				{"MMRandomizer_DarkCyberdemon"},
-				{"MMRandomizer_Annihilator"}
+				{"MMRandomizer_Annihilator"},
+				{"MMRandomizer_DarkCardinal"}
 			},
 			{//Ghoul
 				{"Ghoul2_Samsara"}
@@ -13645,12 +13654,14 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Cyberdemon
 				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14}
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10}
 			},
 			{//Wolfenstein SS
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
@@ -13762,12 +13773,14 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 			},
 			{//Snotfolus
 				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14}
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10}
 			},
 			{//Gargoyle
 				{0,0,6,0,0,6,0,0,6,0,0,6,0,0,6},
@@ -13892,10 +13905,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Maulotaur
 				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14}
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10}
 			},
 			{//D'Sparil
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -14036,10 +14051,12 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Heresiarch
 				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14}
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10}
 			},
 			{//Korax
+				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -14079,8 +14096,9 @@ int monsterSelectStat[MAX_GAME_TYPES][MAX_ALTS][MONSTER_SLOT][MAXPERSLOT][MAX_IT
 			},
 			{//Inquisitor
 				{0,0,50,0,0,50,0,0,50,0,0,50,0,0,50},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14},
-				{0,0,14,0,0,14,0,0,14,0,0,14,0,0,14}
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10},
+				{0,0,10,0,0,10,0,0,10,0,0,10,0,0,10}
 			},
 			{//Ghoul
 				{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}

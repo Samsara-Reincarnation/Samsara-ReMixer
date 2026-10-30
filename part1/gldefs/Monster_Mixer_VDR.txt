@@ -3592,6 +3592,72 @@ object MMRandomizer_CyberMastermind
 	frame VD91T { light MMRandomizer_CyberMastermindExplode7 }
 }
 
+FlickerLight2 MMRandomizer_ArachnophyteWalk
+{
+	color 0.4 0.2 0.1
+	size 120
+	secondarySize 140
+	interval 0.5
+	offset 0 30 0
+}
+
+FlickerLight2 MMRandomizer_ArachnophyteAttack
+{
+	color 0.6 0.4 0.2
+	size 130
+	secondarySize 160
+	interval 0.1
+	offset 0 40 0
+}
+
+PointLight MMRandomizer_ArachnophyteDeath1
+{
+	color 0.6 0.3 0.1
+	size 150
+	offset 0 40 0
+}
+
+PointLight MMRandomizer_ArachnophyteDeath2
+{
+	color 0.6 0.3 0.1
+	size 200
+	offset 0 40 0
+}
+
+PointLight MMRandomizer_ArachnophyteDeath3
+{
+	color 0.6 0.3 0.1
+	size 170
+	offset 0 40 0
+}
+
+PointLight MMRandomizer_ArachnophyteDeath4
+{
+	color 0.4 0.2 0.1
+	size 140
+	offset 0 40 0
+}
+
+PointLight MMRandomizer_ArachnophyteDeath5
+{
+	color 0.3 0.1 0.0
+	size 110
+	offset 0 40 0
+}
+
+Object MMRandomizer_Arachnophyte
+{
+	Frame VD9HA { Light MMRandomizer_ArachnophyteWalk }
+	Frame VD9HB { Light MMRandomizer_ArachnophyteWalk }
+	Frame VD9HC { Light MMRandomizer_ArachnophyteAttack }
+	Frame VD9HD { Light MMRandomizer_ArachnophyteAttack }
+	Frame VD9HF { Light MMRandomizer_ArachnophyteDeath1 }
+	Frame VD9HG { Light MMRandomizer_ArachnophyteDeath2 }
+	Frame VD9HH { Light MMRandomizer_ArachnophyteDeath3 }
+	Frame VD9HI { Light MMRandomizer_ArachnophyteDeath4 }
+	Frame VD9HJ { Light MMRandomizer_ArachnophyteDeath5 }
+}
+
 object MMRandomizer_ChaingunArachnotron
 {
 	frame VD59G { light DOOMZOMBIEATK }
@@ -3745,6 +3811,103 @@ object MMRandomizer_BelphegorBall
 	frame DMP1T { light BARONBALL_X1 }
 	frame DMP1U { light BARONBALL_X2 }
 	frame DMP1V { light BARONBALL_X3 }
+}
+
+PointLight MMRandomizer_DCardinal1
+{
+	Color 0.4 0.7 0.4
+	Size 128
+}
+
+PointLight MMRandomizer_DCardinal2
+{
+	Color 0.7 1.0 0.7
+	Size 172
+}
+
+PointLight MMRandomizer_DCardinal3
+{
+	Color 0.3 0.6 0.3
+	Size 136
+}
+
+PointLight MMRandomizer_DCardinal4
+{
+	Color 0.2 0.5 0.2
+	Size 144
+}
+
+PointLight MMRandomizer_DCardinal5
+{
+	Color 0.2 0.5 0.2
+	Size 152
+}
+
+PointLight MMRandomizer_DCardinal6
+{
+	Color 0.1 0.3 0.1
+	Size 160
+}
+
+PointLight MMRandomizer_DCardinal7
+{
+	Color 0.1 0.2 0.1
+	Size 168
+}
+
+object MMRandomizer_DarkCardinal
+{
+	Frame VD9GA { Light MMRandomizer_DCardinal1 }
+	Frame VD9GB { Light MMRandomizer_DCardinal1 }
+	Frame VD9GC { Light MMRandomizer_DCardinal1 }
+	Frame VD9GD { Light MMRandomizer_DCardinal2 }
+	Frame VD9GE { Light MMRandomizer_DCardinal1 }
+	Frame VD9GF { Light MMRandomizer_DCardinal1 }
+	Frame VD9GG { Light MMRandomizer_DCardinal3 }
+	Frame VD9GH { Light MMRandomizer_DCardinal4 }
+	Frame VD9GI { Light MMRandomizer_DCardinal5 }
+	Frame VD9GJ { Light MMRandomizer_DCardinal6 }
+	Frame VD9GK { Light MMRandomizer_DCardinal7 }
+	Frame VD9GP { Light MMRandomizer_DCardinal1 }
+}
+
+PointLight MMRandomizer_DC_GreenRocket
+{
+	Color 0.0 1.0 0.0
+	Size 84
+}
+
+FlickerLight MMRandomizer_DC_GreenRocket_X1
+{
+	Color 0.6 0.9 0.6
+	Size 96
+	SecondarySize 108
+	Chance 0.3
+}
+
+FlickerLight MMRandomizer_DC_GreenRocket_X2
+{
+	Color 0.45 0.6 0.45
+	Size 120
+	SecondarySize 132
+	Chance 0.3
+}
+
+FlickerLight MMRandomizer_DC_GreenRocket_X3
+{
+	Color 0.2 0.3 0.2
+	Size 144
+	SecondarySize 156
+	Chance 0.3
+}
+
+Object MMRandomizer_CardinalRocket
+{
+	Frame VD9GM { Light MMRandomizer_DC_GreenRocket }
+	Frame VD9GN { Light MMRandomizer_DC_GreenRocket }
+	Frame VD9GO { Light MMRandomizer_DC_GreenRocket_X1 }
+	Frame VD9GQ { Light MMRandomizer_DC_GreenRocket_X2 }
+	Frame VD9GR { Light MMRandomizer_DC_GreenRocket_X3 }
 }
 
 // Zombieman Variants

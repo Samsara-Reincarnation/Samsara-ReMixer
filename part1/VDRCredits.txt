@@ -38,6 +38,14 @@ Sprites: Id Software, Raven Software, Wolfendoom
 Sprite Edit: Eriance
 Idea Base: Doom Cyberdemon
 
+Arachnophyte:
+Submitted: Tormentor667
+Code: Xaser, Quasar, Ghastly (ZScript conversion), DeVloek (Update)
+GLDefs: Dreadopp, DeVloek
+Sounds: id Software
+Sprites: id Software
+Sprite Edit: Xaser, Quasar, DeVloek
+
 Arachnorb:
 Submitted: Jimmy91
 Decorate: Jimmy91
@@ -189,6 +197,15 @@ GLDefs: Ghastly_dragon, Virtue, Gothic
 Sounds: Id Software, Ghastly_dragon
 Sprites: Id Software, Freedoom, Amuscaria
 Sprite Edit: Vegeta, Aerial, Tormentor667
+
+Dark Cardinal:
+Submitted: zrrion the insect
+Code: zrrion the insect, Gothic(zscript conversion)
+GLDEFs: Gothic
+Sounds: Doom, Doom 64 & Diablo, mixed by Gothic
+Sprites: Id Software, Espi, Kristus
+Sprite Edit: Jimmy, zrrion the insect, Tsran908, Gothic
+Idea Base: mixing the Afrit & Thamuz
 
 Dark Cyberdemon:
 Decorate: DBThanatos, Aerial

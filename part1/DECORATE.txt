@@ -868,9 +868,11 @@
 #include "actors/VDR/Hellraiser.txt"
 #include "actors/VDR/DarkCyberdemon.txt"
 #include "actors/VDR/Annihilator.txt"
+#include "actors/VDR/DarkCardinal.txt"
 #include "actors/VDR/ArachnorbQueen.txt"
 #include "actors/VDR/Demolisher.txt"
 #include "actors/VDR/CyberMastermind.txt"
+#include "actors/VDR/Arachnophyte.txt"
 
 // Catacomb series
 #include "Actors/Catacomb/Mixer_3D.txt"

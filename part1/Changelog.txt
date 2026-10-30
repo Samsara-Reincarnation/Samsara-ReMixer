@@ -26,6 +26,8 @@ Doom:
 * Fixed the nightshade using the wrong monster base.
 * Fixed the arachnorb queen, spider-demolisher, and dark cyberdemon's projectiles using the wrong decal in Freedoom.
 * Fixed the arachnorb queen plasma blast using the wrong sprite names.
++ The Arachnophyte has been added as a spider mastermind replacement!
++ The Dark Cardinal has been added as a cyberdemon replacement!
 
 Chex Quest:
 
