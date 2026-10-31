@@ -148,7 +148,7 @@ Actor AlienProtector : StarTrooper
 			Goto Continue1
 		Death.Massacre:
 			TNT1 A 0 A_JumpIfInventory("FakedOnce", 1, "Continue1.Massacre")
-			TNT1 A 0 A_Jump(160, "FakeDeath")
+			//TNT1 A 0 A_Jump(160, "FakeDeath")
 			Goto Continue1.Massacre
 		Continue1:
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
@@ -173,8 +173,10 @@ Actor AlienProtector : StarTrooper
 			BS25 R 115
 			TNT1 A 0 A_GiveInventory("FakedOnce", 1)
 		GetUp:
+			BS25 R 10
+			BS25 R 0 A_JumpIfCloser(24,"GetUp")
 			TNT1 A 0 A_ChangeFlag("SOLID",true)
-			TNT1 A 0 A_SetShootable
+			//TNT1 A 0 A_SetShootable
 			TNT1 A 0 A_StopSound(0)
 			TNT1 A 0 A_StopSound(1)
 			TNT1 A 0 A_StopSound(2)
@@ -423,10 +425,12 @@ actor AlienProtector_ShrinkEffect : AlienProtector
 
 Actor AlienProtector_2 : AlienProtector
 {
+	SeeSound ""
 	States
 	{
 		Spawn:
 			BS25 A 0
+			BS25 A 0 A_GiveInventory("FakedOnce", 1)
 			BS25 A 0 A_GiveInventory("MultiplyOverflowToken", 1)
 			goto Super::Spawn
 	}

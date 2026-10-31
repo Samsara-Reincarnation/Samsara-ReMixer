@@ -165,7 +165,7 @@ Actor StarTrooper : SamsaraMonsterHumanoid
 			Goto Continue1
 		Death.Massacre:
 			TNT1 A 0 A_JumpIfInventory("FakedOnce", 1, "Continue1.Massacre")
-			TNT1 A 0 A_Jump(128, "FakeDeath")
+			//TNT1 A 0 A_Jump(128, "FakeDeath")
 			Goto Continue1.Massacre
 		Continue1:
 			TNT1 A 0 A_SpawnItem("UniversalBloodyHellGoreDeathEffect")
@@ -190,8 +190,10 @@ Actor StarTrooper : SamsaraMonsterHumanoid
 			BSE3 S 115
 			TNT1 A 0 A_GiveInventory("FakedOnce", 1)
 		GetUp:
+			BSE3 S 10
+			BSE3 S 0 A_JumpIfCloser(24,"GetUp")
 			TNT1 A 0 A_ChangeFlag("SOLID",true)
-			TNT1 A 0 A_SetShootable
+			//TNT1 A 0 A_SetShootable
 			TNT1 A 0 A_StopSound(0)
 			TNT1 A 0 A_StopSound(1)
 			TNT1 A 0 A_StopSound(2)
@@ -448,10 +450,12 @@ actor StarTrooper_ShrinkEffect : StarTrooper
 
 Actor StarTrooper_2 : StarTrooper
 {
+	SeeSound ""
 	States
 	{
 		Spawn:
-			BSE3 A 0
+			BSE3 A 0 
+			BSE3 A 0 A_GiveInventory("FakedOnce", 1)
 			BSE3 A 0 A_GiveInventory("MultiplyOverflowToken", 1)
 			goto Super::Spawn
 	}
