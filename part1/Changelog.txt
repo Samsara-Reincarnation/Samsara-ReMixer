@@ -26,8 +26,8 @@ Doom:
 * Fixed the nightshade using the wrong monster base.
 * Fixed the arachnorb queen, spider-demolisher, and dark cyberdemon's projectiles using the wrong decal in Freedoom.
 * Fixed the arachnorb queen plasma blast using the wrong sprite names.
-+ The Arachnophyte has been added as a spider mastermind replacement!
-+ The Dark Cardinal has been added as a cyberdemon replacement!
++ The arachnophyte has been added as a spider mastermind replacement!
++ The dark cardinal has been added as a cyberdemon replacement!
 
 Chex Quest:
 
@@ -77,6 +77,10 @@ Rise of the Triad:
 Blake Stone:
 
 - The mutated guard's health has been decreased (from 150 to 60).
+! The Massacre damage type now forces S.T.A.R. troopers and alien protectors to die even if they haven't faked their deaths.
+! S.T.A.R. troopers and alien protectors will now only get up from a faked death if their target is at least 24 map units away.
+! S.T.A.R. troopers and alien protectors no longer make their sight sound after getting up from a faked death.
+* S.T.A.R. troopers and alien protectors no longer fake their deaths more than once.
 
 Strife:
 
